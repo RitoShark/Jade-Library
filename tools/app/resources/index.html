@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Library Extractor</title>
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Inline boot-guard runs synchronously at parse time. It:
+         1. Installs fallback click handlers on the wizard buttons so they
+            always close the wizard even if the ES-module bootstrap fails.
+         2. Wires window.onerror / unhandledrejection to a visible banner
+            so we can see what's broken without opening dev tools.
+         setup.js later replaces window.__wizardSave with a version that
+         actually persists the entered paths. -->
+    <script>
+    (function () {
+        function showError(msg) {
+            var banner = document.getElementById('boot-error');
+            if (!banner) {
+                // Banner element not parsed yet — defer to DOMContentLoaded
+                document.addEventListener('DOMContentLoaded', function () {
+                    showError(msg);
+                });
+                return;
+            }
+            banner.hidden = false;
+            banner.textContent = (banner.textContent ? banner.textContent + '\n' : '') + msg;
+        }
+
+        window.addEventListener('error', function (e) {
+            var msg = 'Error: ' + (e.message || e.error || 'unknown');
+            if (e.filename) msg += ' @ ' + e.filename + ':' + (e.lineno || '?');
+            showError(msg);
+        });
+        window.addEventListener('unhandledrejection', function (e) {
+            var reason = e.reason;
+            var msg = 'Unhandled: ' + (reason && reason.stack ? reason.stack : String(reason));
+            showError(msg);
+        });
+
+        // Fallback wizard handlers — always work regardless of module state.
+        // setup.js overrides __wizardSave with a persisting version later.
+        window.__wizardSkip = function () {
+            var w = document.getElementById('setup-wizard');
+            if (w) w.hidden = true;
+        };
+        window.__wizardSave = function () {
+            // Default: just close. setup.js will replace this once it loads.
+            window.__wizardSkip();
+        };
+
+        // Document-level click delegation so the buttons respond even if
+        // direct addEventListener never ran. Walks up to the nearest element
+        // with an id so clicks on child nodes of the button still count.
+        document.addEventListener('click', function (e) {
+            var t = e.target;
+            while (t && t !== document && !t.id) t = t.parentNode;
+            if (!t || !t.id) return;
+            if (t.id === 'wizard-skip') window.__wizardSkip();
+            else if (t.id === 'wizard-save') window.__wizardSave();
+        });
+    })();
+    </script>
+</head>
+<body>
+    <!-- Background ghost wordmark, matches jadeALT-cover.html -->
+    <div class="ghost-wordmark">LIBRARY</div>
+
+    <!-- Visible error banner. Populated by bootstrap's catch handler so the
+         user doesn't need to open devtools to see why the app didn't load. -->
+    <div id="fatal-error-banner" class="fatal-error-banner" hidden></div>
+
+    <!-- Inline fallback handlers so the wizard buttons work even if the main
+         JS bundle fails to load. setup.js overrides these with richer
+         versions once it loads. -->
+    <script>
+        window.__wizardSkip = function () {
+            const w = document.getElementById('setup-wizard');
+            if (w) w.hidden = true;
+        };
+        window.__wizardSave = function () {
+            // No-op fallback. setup.js replaces this with the real saver.
+            const w = document.getElementById('setup-wizard');
+            if (w) w.hidden = true;
+        };
+    </script>
+
+    <!-- Visible error banner (filled in by bootstrap on failure) -->
+    <div id="boot-error" class="boot-error" hidden></div>
+
+    <!-- App shell -->
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="app-header-left">
+                <div class="app-icon-chip">
+                    <img src="icons/jadejade.ico" alt="Jade" onerror="this.style.display='none'">
+                </div>
+                <div class="app-title-block">
+                    <span class="app-title">JADE LIBRARY</span>
+                    <span class="app-subtitle">Material extraction toolkit</span>
+                </div>
+            </div>
+            <nav class="app-tabs" id="app-tabs">
+                <button class="app-tab active" data-tab="extract">Extract</button>
+                <button class="app-tab" data-tab="diff">Diff</button>
+                <button class="app-tab" data-tab="preview">Preview</button>
+                <button class="app-tab" data-tab="index">Index</button>
+                <button class="app-tab" data-tab="settings">Settings</button>
+            </nav>
+        </header>
+
+        <!-- Tab content panels — only one visible at a time -->
+        <main class="app-content">
+            <!-- ── Extract tab ── -->
+            <section class="tab-panel active" data-panel="extract">
+                <div class="panel-card">
+                    <h2 class="panel-title">Extraction Pipeline</h2>
+                    <p class="panel-subtitle">Walk champion WADs and emit StaticMaterialDef snippets.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">League install path</label>
+                        <div class="form-input-group">
+                            <input type="text" id="league-path" placeholder="C:\Riot Games\League of Legends\Game" />
+                            <button class="btn btn-secondary" id="league-path-browse">Browse</button>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">Champion filter (optional)</label>
+                        <input type="text" id="champion-filter" placeholder="e.g. Ahri" />
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="start-extract">Start Extraction</button>
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <h2 class="panel-title">Progress</h2>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" id="extract-progress-fill" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="extract-progress-text">Idle</p>
+                    <div class="log-panel" id="extract-log"></div>
+                </div>
+            </section>
+
+            <!-- ── Diff tab ── -->
+            <section class="tab-panel" data-panel="diff">
+                <div class="panel-card">
+                    <h2 class="panel-title">Diff Viewer</h2>
+                    <p class="panel-subtitle">Review changes from the last extraction run.</p>
+                    <div id="diff-content">
+                        <p class="empty-state">Run an extraction first.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Preview tab ── -->
+            <section class="tab-panel" data-panel="preview">
+                <div class="panel-card">
+                    <h2 class="panel-title">Preview Image Submission</h2>
+                    <p class="panel-subtitle">Add a screenshot for a material so the Jade browser can show it.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">Material</label>
+                        <select id="preview-material-select">
+                            <option value="">— Select a material —</option>
+                        </select>
+                    </div>
+
+                    <div id="preview-drop-zone" class="drop-zone">
+                        <p>Drag &amp; drop a PNG / JPG / WEBP here</p>
+                        <p class="drop-zone-hint">or click to browse</p>
+                        <input type="file" id="preview-file-input" accept="image/png,image/jpeg,image/webp" hidden />
+                    </div>
+
+                    <div id="preview-preview" class="preview-thumb" hidden></div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="save-preview" disabled>Save preview</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Index tab ── -->
+            <section class="tab-panel" data-panel="index">
+                <div class="panel-card">
+                    <h2 class="panel-title">Index Rebuild</h2>
+                    <p class="panel-subtitle">Scan all materials and regenerate index.json with versions and metadata.</p>
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="rebuild-index">Rebuild index.json</button>
+                        <button class="btn btn-secondary" id="clean-index">Delete index.json</button>
+                    </div>
+                    <div class="log-panel" id="index-log"></div>
+                </div>
+            </section>
+
+            <!-- ── Settings tab ── -->
+            <section class="tab-panel" data-panel="settings">
+                <div class="panel-card">
+                    <h2 class="panel-title">Tool Paths</h2>
+                    <p class="panel-subtitle">Local CLI binaries used by the extraction pipeline.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">ritobin.exe</label>
+                        <div class="form-input-group">
+                            <input type="text" id="ritobin-path" placeholder="C:\path\to\ritobin.exe" />
+                            <button class="btn btn-secondary" data-tool-browse="ritobin">Browse</button>
+                        </div>
+                        <span class="form-hint" id="ritobin-status">Not set</span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">wad-extract.exe</label>
+                        <div class="form-input-group">
+                            <input type="text" id="wad-extract-path" placeholder="C:\path\to\wad-extract.exe" />
+                            <button class="btn btn-secondary" data-tool-browse="wad-extract">Browse</button>
+                        </div>
+                        <span class="form-hint" id="wad-extract-status">Not set</span>
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <h2 class="panel-title">Hash Files</h2>
+                    <p class="panel-subtitle">League hash tables for resolving WAD paths and bin field names.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">Hashes folder</label>
+                        <div class="form-input-group">
+                            <input type="text" id="hashes-path" placeholder="C:\Users\...\AppData\Roaming\FrogTools\hashes" />
+                            <button class="btn btn-secondary" data-tool-browse="hashes">Browse</button>
+                        </div>
+                        <span class="form-hint" id="hashes-status">Not set</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-secondary" id="use-jade-hashes">Use Jade's existing hashes folder</button>
+                        <button class="btn btn-primary" id="install-hashes">Install from Community Dragon</button>
+                    </div>
+                    <div class="log-panel" id="hashes-log"></div>
+                </div>
+
+                <div class="panel-card">
+                    <h2 class="panel-title">Library Repo</h2>
+                    <p class="panel-subtitle">Local jade-library folder where extracted materials get written.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">Repo path</label>
+                        <div class="form-input-group">
+                            <input type="text" id="repo-path" placeholder="C:\Users\...\jadelibrary" />
+                            <button class="btn btn-secondary" data-tool-browse="repo">Browse</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer / status bar -->
+        <footer class="app-footer">
+            <span id="app-footer-status">Ready</span>
+        </footer>
+    </div>
+
+    <!-- Setup wizard overlay (shown when config is incomplete) -->
+    <div id="setup-wizard" class="wizard-overlay" hidden>
+        <div class="wizard-card">
+            <h2 class="wizard-title">First-run setup</h2>
+            <p class="wizard-subtitle">
+                The library tool needs paths to a few CLI binaries before you can run an extraction.
+                You can change these later from the Settings tab.
+            </p>
+            <div id="wizard-body"></div>
+            <div class="wizard-actions">
+                <button class="btn btn-secondary" id="wizard-skip">Skip for now</button>
+                <button class="btn btn-primary" id="wizard-save">Save &amp; Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/neutralino.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

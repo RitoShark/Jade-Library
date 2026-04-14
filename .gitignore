@@ -1,0 +1,13 @@
+tools/app/config.json
+tools/app/hashes/
+tools/app/logs/
+tools/app/dist/
+tools/app/bin/
+tools/app/temp/
+tools/app/.tmp/
+tools/app/diff.json
+tools/app/neutralinojs.log
+tools/app/*.log
+node_modules/
+.DS_Store
+Thumbs.db
