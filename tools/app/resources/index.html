@@ -106,6 +106,7 @@
                 <button class="app-tab active" data-tab="extract">Extract</button>
                 <button class="app-tab" data-tab="diff">Diff</button>
                 <button class="app-tab" data-tab="preview">Preview</button>
+                <button class="app-tab" data-tab="manage">Manage</button>
                 <button class="app-tab" data-tab="index">Index</button>
                 <button class="app-tab" data-tab="settings">Settings</button>
             </nav>
@@ -181,6 +182,39 @@
 
                     <div class="form-actions">
                         <button class="btn btn-primary" id="save-preview" disabled>Save preview</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Manage tab ── -->
+            <section class="tab-panel" data-panel="manage">
+                <div class="panel-card">
+                    <h2 class="panel-title">Bulk Actions</h2>
+                    <p class="panel-subtitle">Rerun the category classifier over every existing material. Useful after tweaking the classifier rules.</p>
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="reclassify-all">Reclassify all materials</button>
+                        <button class="btn btn-secondary" id="manage-refresh">Refresh list</button>
+                    </div>
+                    <div class="log-panel" id="manage-log"></div>
+                </div>
+
+                <div class="panel-card">
+                    <h2 class="panel-title">Material Editor</h2>
+                    <p class="panel-subtitle">Browse all materials and edit their metadata directly.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">Filter</label>
+                        <input type="text" id="manage-filter" placeholder="e.g. ahri, skin77, fur..." />
+                    </div>
+
+                    <div class="manage-split">
+                        <div class="manage-list" id="manage-list">
+                            <div class="empty-state">Loading…</div>
+                        </div>
+
+                        <div class="manage-editor" id="manage-editor">
+                            <div class="empty-state">Select a material to edit</div>
+                        </div>
                     </div>
                 </div>
             </section>

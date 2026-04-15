@@ -10,6 +10,7 @@ import { initExtractTab } from './extractor.js';
 import { initDiffTab } from './differ.js';
 import { initPreviewTab } from './previewSubmit.js';
 import { initIndexTab } from './indexBuilder.js';
+import { initManageTab } from './manage.js';
 
 const NEUTRALINO_AVAILABLE = typeof Neutralino !== 'undefined';
 
@@ -31,6 +32,7 @@ function setupTabRouting() {
                 case 'extract':  initExtractTab();  break;
                 case 'diff':     initDiffTab();     break;
                 case 'preview':  initPreviewTab();  break;
+                case 'manage':   initManageTab();   break;
                 case 'index':    initIndexTab();    break;
                 case 'settings': initSettingsTab(); break;
             }

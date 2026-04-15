@@ -72,13 +72,14 @@ function log(msg, kind = '') {
     logEl.scrollTop = logEl.scrollHeight;
 }
 
+// Keep in sync with the categories exported by classifier.js
 const DEFAULT_CATEGORIES = [
+    { id: 'dissolve',   name: 'Dissolve Effects' },
     { id: 'toon',       name: 'Toon Shading' },
     { id: 'glass',      name: 'Glass & Refraction' },
-    { id: 'fur',        name: 'Fur & Hair' },
-    { id: 'dissolve',   name: 'Dissolve Effects' },
-    { id: 'glow',       name: 'Glow & Emissive' },
     { id: 'distortion', name: 'Distortion' },
+    { id: 'glow',       name: 'Glow & Emissive' },
+    { id: 'body',       name: 'Body & Character' },
     { id: 'special',    name: 'Special' },
 ];
 
@@ -115,7 +116,7 @@ export async function rebuildIndex(repoPath) {
                 const path = relParts.join('/');
                 const champion = detectChampion(relParts, meta);
                 const skin = detectSkin(relParts, meta);
-                if (champion && champion !== 'general') champions.add(champion);
+                if (champion) champions.add(champion);
 
                 let hasPreview = false;
                 for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
@@ -180,12 +181,21 @@ export async function rebuildIndex(repoPath) {
     };
 }
 
-// First path segment is the champion name (or "general" for curated ones).
-// Falls back to whatever snippet.json says if the layout doesn't match.
+// First path segment is the champion name, or `null` for curated
+// materials living under `materials/general/...`. The Jade browser
+// treats `champion === null` as "no champion" for the General bucket
+// filter, so we must NOT emit the literal string "general" here.
 function detectChampion(relParts, meta) {
-    if (meta?.source?.champion) return String(meta.source.champion).toLowerCase();
-    if (relParts.length >= 2) return relParts[0].toLowerCase();
-    return 'general';
+    if (relParts.length >= 2) {
+        const first = relParts[0].toLowerCase();
+        if (first === 'general') return null;
+        return first;
+    }
+    if (meta?.source?.champion) {
+        const c = String(meta.source.champion).toLowerCase();
+        return c === 'general' ? null : c;
+    }
+    return null;
 }
 
 // Skin segment — matches `skin<N>` anywhere in the path, or uses

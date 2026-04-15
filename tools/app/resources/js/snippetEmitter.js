@@ -6,6 +6,8 @@
 // gives us exact control over the output shape, which matters because we want
 // snippet.txt to be copy-pasted directly into a champion's .bin file.
 
+import { classifyFromMaterial } from './classifier.js';
+
 export async function emitSnippet(material, repoPath /*, jsonToTextFn */) {
     if (!repoPath) throw new Error('repo path not configured');
     if (!material.id) throw new Error('material has no id');
@@ -28,7 +30,7 @@ export async function emitSnippet(material, repoPath /*, jsonToTextFn */) {
     const meta = {
         id: material.id,
         name: humanizeName(material.id),
-        category: classifyCategory(material),
+        category: classifyFromMaterial(material),
         version: 1,
         updatedAt: new Date().toISOString(),
         description: '',
@@ -232,16 +234,8 @@ function humanizeName(id) {
         .replace(/\b\w/g, c => c.toUpperCase());
 }
 
-function classifyCategory(material) {
-    const name = (material.id || '').toLowerCase();
-    if (name.includes('toon')) return 'toon';
-    if (name.includes('glass') || name.includes('refract')) return 'glass';
-    if (name.includes('fur') || name.includes('hair')) return 'fur';
-    if (name.includes('dissolve') || name.includes('burn')) return 'dissolve';
-    if (name.includes('glow') || name.includes('emissive')) return 'glow';
-    if (name.includes('distort')) return 'distortion';
-    return 'special';
-}
+// Classification is implemented in classifier.js and shared with the
+// Manage tab's reclassifier so both entry points produce identical results.
 
 async function ensureDir(path) {
     if (typeof Neutralino === 'undefined') return;
