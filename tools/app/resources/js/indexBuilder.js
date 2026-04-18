@@ -118,14 +118,19 @@ export async function rebuildIndex(repoPath) {
                 const skin = detectSkin(relParts, meta);
                 if (champion) champions.add(champion);
 
+                // Both thumb.* and preview.* count as "has preview".
+                // thumb.* is the curated / manual-insert convention;
+                // preview.* is what the full extractor auto-attaches.
                 let hasPreview = false;
-                for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
-                    try {
-                        const stats = await Neutralino.filesystem.getStats(
-                            `${dir}/preview.${ext}`
-                        );
-                        if (stats?.size > 0) { hasPreview = true; break; }
-                    } catch (e) {}
+                outer: for (const stem of ['thumb', 'preview']) {
+                    for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
+                        try {
+                            const stats = await Neutralino.filesystem.getStats(
+                                `${dir}/${stem}.${ext}`
+                            );
+                            if (stats?.size > 0) { hasPreview = true; break outer; }
+                        } catch (e) {}
+                    }
                 }
 
                 materials.push({

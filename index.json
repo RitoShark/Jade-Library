@@ -25857,7 +25857,7 @@
       "skin": null,
       "description": "Cel-shaded look with outline and rim lighting. ToonShadePower controls shading sharpness, ToonOutlineControl adjusts outline thickness, ToonRimControl sets rim intensity and falloff.",
       "tags": [],
-      "hasPreview": false,
+      "hasPreview": true,
       "userSlots": [
         "Diffuse_Texture"
       ],
