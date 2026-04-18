@@ -1,0 +1,64 @@
+{
+  "id": "ww-oias-body-inst",
+  "name": "Ww Oias Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:27.499Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ww_oias_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "Gold_Matcap.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "Varus_Skin69_ColorMask_TX_CM.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "Iridescence_MAT_TX_CM.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "Varus_Skin69_AdditiveScroll_TX_CM.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "Varus_Skin69_AdditiveScrollMask_TX_CM.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    },
+    {
+      "name": "black.SKINS_Varus_Skin69.tex",
+      "updatedAt": "2026-04-17T18:03:27.492Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin69",
+    "bin": "data/characters/varus/skins/skin69.bin",
+    "entryKey": "Characters/Varus/Skins/Skin69/Materials/WW_OIAS_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin69",
+      "bin": "data/characters/varus/skins/skin69.bin"
+    }
+  ]
+}

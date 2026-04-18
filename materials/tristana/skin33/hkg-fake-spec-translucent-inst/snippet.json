@@ -1,0 +1,25 @@
+{
+  "id": "hkg-fake-spec-translucent-inst",
+  "name": "Hkg Fake Spec Translucent Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:33.705Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_fake_spec_translucent_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tristana",
+    "skin": "skin33",
+    "bin": "data/tristana_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39.bin",
+    "entryKey": "Characters/Tristana/Skins/Skin33/Materials/HKG_FakeSpec_Translucent_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tristana",
+      "skin": "skin33",
+      "bin": "data/tristana_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39.bin"
+    }
+  ]
+}

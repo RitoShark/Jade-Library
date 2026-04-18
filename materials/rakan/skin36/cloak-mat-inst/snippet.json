@@ -1,0 +1,52 @@
+{
+  "id": "cloak-mat-inst",
+  "name": "Cloak Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:18.247Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloak_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin36_R_Corrupt_Trail.tex",
+      "updatedAt": "2026-04-17T17:47:18.238Z"
+    },
+    {
+      "name": "Rakan_Skin36_Cape_Masks_02.tex",
+      "updatedAt": "2026-04-17T17:47:18.238Z"
+    },
+    {
+      "name": "Rakan_Skin05_Wing_Dissolve.tex",
+      "updatedAt": "2026-04-17T17:47:18.239Z"
+    },
+    {
+      "name": "Rakan_Skin05_Cape_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:18.239Z"
+    },
+    {
+      "name": "Rakan_Skin36_Mask03.tex",
+      "updatedAt": "2026-04-17T17:47:18.239Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin36",
+    "bin": "data/characters/rakan/skins/skin36.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin36/Materials/Cloak_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin36",
+      "bin": "data/characters/rakan/skins/skin36.bin"
+    }
+  ]
+}

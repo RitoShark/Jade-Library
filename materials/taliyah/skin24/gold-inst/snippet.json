@@ -1,0 +1,64 @@
+{
+  "id": "gold-inst",
+  "name": "Gold Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.772Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gold_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "MatCap_Metal.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "Taliyah_Skin24_ColorMask_TX_CM.SKINS_Taliyah_Skin24.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "Taliyah_Skin24_Iridescence_MAT_TX_CM.SKINS_Taliyah_Skin24.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "Taliyah_Skin24_AdditiveScroll_TX_CM.SKINS_Taliyah_Skin24.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "Taliyah_Skin24_AdditiveScrollMask_TX_CM.SKINS_Taliyah_Skin24.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    },
+    {
+      "name": "black.tex",
+      "updatedAt": "2026-04-17T17:59:45.763Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin24",
+    "bin": "data/characters/taliyah/skins/skin24.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin24/Materials/Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin24",
+      "bin": "data/characters/taliyah/skins/skin24.bin"
+    }
+  ]
+}

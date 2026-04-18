@@ -1,0 +1,36 @@
+{
+  "id": "bloom-hand-r-inst",
+  "name": "Bloom Hand R Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:07.277Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_hand_r_inst",
+  "textureFiles": [
+    {
+      "name": "Warwick_Skin56_BloomHandR.SKINS_Warwick_Skin56.tex",
+      "updatedAt": "2026-04-17T18:07:07.270Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin56",
+    "bin": "data/characters/warwick/skins/skin56.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin56/Materials/Bloom_HandR_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin56",
+      "bin": "data/characters/warwick/skins/skin56.bin"
+    }
+  ]
+}

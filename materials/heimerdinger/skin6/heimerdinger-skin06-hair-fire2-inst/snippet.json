@@ -1,0 +1,36 @@
+{
+  "id": "heimerdinger-skin06-hair-fire2-inst",
+  "name": "Heimerdinger Skin06 Hair Fire2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:34.712Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_heimerdinger_skin06_hair_fire2_inst",
+  "textureFiles": [
+    {
+      "name": "Heimerdinger_Skin06_TX_HairFire.tex",
+      "updatedAt": "2026-04-17T17:21:34.707Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Heimerdinger",
+    "skin": "skin6",
+    "bin": "data/characters/heimerdinger/skins/skin6.bin",
+    "entryKey": "Characters/Heimerdinger/Skins/Skin6/Materials/Heimerdinger_Skin06_HairFire2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Heimerdinger",
+      "skin": "skin6",
+      "bin": "data/characters/heimerdinger/skins/skin6.bin"
+    }
+  ]
+}

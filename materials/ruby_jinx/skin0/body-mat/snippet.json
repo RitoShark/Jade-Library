@@ -1,0 +1,36 @@
+{
+  "id": "body-mat",
+  "name": "Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:38.721Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:49:38.710Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ruby_Jinx",
+    "skin": "skin0",
+    "bin": "data/characters/ruby_jinx_monkey/skins/skin0.bin",
+    "entryKey": "Characters/Ruby_Jinx_Monkey/Skins/Skin0/Materials/Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Ruby_Jinx",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_jinx_monkey/skins/skin0.bin"
+    }
+  ]
+}

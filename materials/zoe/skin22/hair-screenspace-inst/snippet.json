@@ -1,0 +1,44 @@
+{
+  "id": "hair-screenspace-inst",
+  "name": "Hair Screenspace Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:00.917Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_screenspace_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin22_Materials_Hair.tex",
+      "updatedAt": "2026-04-17T18:14:00.911Z"
+    },
+    {
+      "name": "Zoe_Skin22_Hair_Tail_Mask.tex",
+      "updatedAt": "2026-04-17T18:14:00.911Z"
+    },
+    {
+      "name": "Zoe_Skin22_Materials_Color.tex",
+      "updatedAt": "2026-04-17T18:14:00.911Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin22",
+    "bin": "data/characters/zoe/skins/skin22.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin22/Materials/Hair_Screenspace_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin22",
+      "bin": "data/characters/zoe/skins/skin22.bin"
+    }
+  ]
+}

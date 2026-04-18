@@ -1,0 +1,36 @@
+{
+  "id": "bloom-axe-inst",
+  "name": "Bloom Axe Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:23.754Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_axe_inst",
+  "textureFiles": [
+    {
+      "name": "Olaf_Skin16_Idle_VFX_Texture_Map.tex",
+      "updatedAt": "2026-04-17T17:44:23.749Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Olaf",
+    "skin": "skin16",
+    "bin": "data/characters/olafaxe/skins/skin16.bin",
+    "entryKey": "Characters/OlafAxe/Skins/Skin16/Materials/bloom_axe_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Olaf",
+      "skin": "skin16",
+      "bin": "data/characters/olafaxe/skins/skin16.bin"
+    }
+  ]
+}

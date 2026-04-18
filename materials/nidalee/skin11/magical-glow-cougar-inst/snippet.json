@@ -1,0 +1,48 @@
+{
+  "id": "magical-glow-cougar-inst",
+  "name": "Magical Glow Cougar Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:05.999Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_magical_glow_cougar_inst",
+  "textureFiles": [
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:43:05.991Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:43:05.991Z"
+    },
+    {
+      "name": "Nidalee_Dawnbringer_Cougar_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:05.991Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:05.991Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin11",
+    "bin": "data/characters/nidaleecougar/skins/skin11.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin11/Materials/MagicalGlowCougar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin11",
+      "bin": "data/characters/nidaleecougar/skins/skin11.bin"
+    }
+  ]
+}

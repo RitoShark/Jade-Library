@@ -1,0 +1,53 @@
+{
+  "id": "teeth-glow-inst",
+  "name": "Teeth Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:24.951Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_teeth_glow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:33.129Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:33.129Z"
+    },
+    {
+      "name": "CaitlynTrap_Skin22_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:33.129Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:33.129Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin22",
+    "bin": "data/characters/caitlyntrap/skins/skin22.bin",
+    "entryKey": "Characters/CaitlynTrap/Skins/Skin22/Materials/TeethGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin22",
+      "bin": "data/characters/caitlyntrap/skins/skin22.bin"
+    },
+    {
+      "champion": "Ruby_Caitlyn",
+      "skin": "skin22",
+      "bin": "data/characters/caitlyntrap/skins/skin22.bin"
+    }
+  ]
+}

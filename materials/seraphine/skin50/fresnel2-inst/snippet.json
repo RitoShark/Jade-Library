@@ -1,0 +1,56 @@
+{
+  "id": "fresnel2-inst",
+  "name": "Fresnel2 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:06.709Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    },
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    },
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    },
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    },
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    },
+    {
+      "name": "black.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.703Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin50",
+    "bin": "data/characters/seraphine/skins/skin50.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin50/Materials/Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin50",
+      "bin": "data/characters/seraphine/skins/skin50.bin"
+    }
+  ]
+}

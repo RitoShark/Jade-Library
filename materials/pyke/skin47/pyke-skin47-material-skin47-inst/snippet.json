@@ -1,0 +1,36 @@
+{
+  "id": "pyke-skin47-material-skin47-inst",
+  "name": "Pyke Skin47 Material Skin47 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:17.507Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_skin47_material_skin47_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin47_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:17.501Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin47",
+    "bin": "data/characters/pyke/skins/skin47.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin47/Materials/Pyke_Skin47_Material_Skin47_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin47",
+      "bin": "data/characters/pyke/skins/skin47.bin"
+    }
+  ]
+}

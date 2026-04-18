@@ -1,0 +1,60 @@
+{
+  "id": "galio-skin40-body-toon-shading-base-mat-inst",
+  "name": "Galio Skin40 Body Toon Shading Base Mat Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:37.884Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_galio_skin40_body_toon_shading_base_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "Galio_Skin40_ToonAlpha_TX_CM.SKINS_Galio_Skin40.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "Galio_Skin40_Matcap_TX_CM.SKINS_Galio_Skin40.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "Galio_Skin40_ToonShading_TX_CM.SKINS_Galio_Skin40.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    },
+    {
+      "name": "Galio_Skin40_ToonShading_TX_CM.SKINS_Galio_Skin40.tex",
+      "updatedAt": "2026-04-17T17:19:37.878Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Galio",
+    "skin": "skin40",
+    "bin": "data/characters/galio/skins/skin40.bin",
+    "entryKey": "Characters/Galio/Skins/Skin40/Materials/Galio_skin40_Body_ToonShading_baseMat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Galio",
+      "skin": "skin40",
+      "bin": "data/characters/galio/skins/skin40.bin"
+    }
+  ]
+}

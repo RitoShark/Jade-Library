@@ -1,0 +1,303 @@
+"jadelib_jayce_skin35_anomaly_mask_inst" = StaticMaterialDef {
+    name: string = "jadelib_jayce_skin35_anomaly_mask_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/Base_plasma_noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/Jayce_Skin35_Body_Anomaly_Mask.SKINS_Jayce_Skin35.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/Jayce_Skin35_Noise_TX_CM.SKINS_Jayce_Skin35.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Flowmap"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/Jayce_Skin35_Flowmap_TX_CM.SKINS_Jayce_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "HolesMask_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Color_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin35-anomaly-mask-inst/Jayce_Skin3_Red_Anomaly_Gradient.SKINS_Jayce_Skin35.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bloom_Power"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Out_Alpha_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Alpha_Bias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Body_Height"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Texture_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveIntensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "rimOffset"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMin"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "modelHeight"
+            value: vec4 = { 275, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMax"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Speed"
+            value: vec4 = { 0, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Scale"
+            value: vec4 = { 50, 50, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Intensity"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Speed"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 4, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+            value: vec4 = { 1.3250000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesEdge_Color"
+            value: vec4 = { 0.6235294342041016, 0.1921568661928177, 0.32156863808631897, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesScaling_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed"
+            value: vec4 = { 0, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed2"
+            value: vec4 = { 0, -0.03999999910593033, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor"
+            value: vec4 = { 0.3019607961177826, 0.7843137383460999, 0.9921568632125854, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Scale"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.800000011920929, 0.250980406999588, 0.4431372582912445, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE_TRANSITION"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT_ON_DISSOLVE"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISSOLVE_OUT_ALPHA"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_RIM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALBEDO_REMAP"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCREENSPACE_ON"
+            on: bool = false
+            Group: string = "ScreenSpace"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "GRADIENT_ON"
+            Group: string = "Gradient"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_ON"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_SROULLING"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FRESNEL_ON"
+            Group: string = "Fresnel"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIONAL_BLOOM_MASK"
+            on: bool = false
+            Group: string = "Bloom"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Crepe_Anomaly_Mask"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                Enabled: bool = false
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = NotMaterialDriver {
+                        mDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "JayceIsMelee"
+                        }
+                    }
+                    OnValue: vec4 = { 0.800000011920929, 0.25, 0.4399999976158142, 1 }
+                    OffValue: vec4 = { 1, 0.5600000023841858, 0.3799999952316284, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "FresnelColor"
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = NotMaterialDriver {
+                        mDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "JayceIsMelee"
+                        }
+                    }
+                    OnValue: vec4 = { 0.30000001192092896, 0.7799999713897705, 0.9900000095367432, 1 }
+                    OffValue: vec4 = { 0.9900000095367432, 0.5899999737739563, 0.49000000953674316, 1 }
+                    TurnOnTimeSec: f32 = 0.699999988079071
+                    TurnOffTimeSec: f32 = 0.699999988079071
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Gradient_Color_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = NotMaterialDriver {
+                            mDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "JayceIsMelee"
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Jayce/Skins/Skin35/Jayce_Skin3_Blue_Anomaly_Gradient.SKINS_Jayce_Skin35.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "JayceIsMelee"
+                        }
+                        TextureName: string = "ASSETS/Characters/Jayce/Skins/Skin35/Jayce_Skin3_Red_Anomaly_Gradient.SKINS_Jayce_Skin35.tex"
+                    }
+                }
+            }
+        }
+    }
+}

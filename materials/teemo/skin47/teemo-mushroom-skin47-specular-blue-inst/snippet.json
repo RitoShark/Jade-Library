@@ -1,0 +1,40 @@
+{
+  "id": "teemo-mushroom-skin47-specular-blue-inst",
+  "name": "Teemo Mushroom Skin47 Specular Blue Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:43.530Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_teemo_mushroom_skin47_specular_blue_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin47_MatCap_Jelly.tex",
+      "updatedAt": "2026-04-17T18:00:43.525Z"
+    },
+    {
+      "name": "TeemoMushroom_Skin47_MatCap_Mask.tex",
+      "updatedAt": "2026-04-17T18:00:43.525Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin47",
+    "bin": "data/characters/teemomushroom/skins/skin47.bin",
+    "entryKey": "Characters/TeemoMushroom/Skins/Skin47/Materials/Teemo_Mushroom_Skin47_Specular_Blue_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin47",
+      "bin": "data/characters/teemomushroom/skins/skin47.bin"
+    }
+  ]
+}

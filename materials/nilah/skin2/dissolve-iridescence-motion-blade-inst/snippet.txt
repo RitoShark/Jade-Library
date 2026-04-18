@@ -1,0 +1,136 @@
+"jadelib_dissolve_iridescence_motion_blade_inst" = StaticMaterialDef {
+    name: string = "jadelib_dissolve_iridescence_motion_blade_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-blade-inst/Nilah_Skin02_Material_GradientTX.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-blade-inst/Base_plasma_noise.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-blade-inst/velvet_Nrm_pyke.SKINS_Mordekaiser_Skin54.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-blade-inst/Nilah_Blade_TX_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pan_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-blade-inst/Nilah_Skin02_Blade_TX_CM.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_UV_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Film_Depth"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.09749999642372131, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { -0.004999999888241291, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 1, 0.39000535011291504, 0.4000000059604645, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rotation_Center"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rotation_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Power"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distort_Amount"
+            value: vec4 = { 0.07999999821186066, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Speed"
+            value: vec4 = { 0, 0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.8039215803146362, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ROTATION"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PAN"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Iridescence_Motion"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

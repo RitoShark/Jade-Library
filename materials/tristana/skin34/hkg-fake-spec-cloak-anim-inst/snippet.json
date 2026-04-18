@@ -1,0 +1,52 @@
+{
+  "id": "hkg-fake-spec-cloak-anim-inst",
+  "name": "Hkg Fake Spec Cloak Anim Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:32.872Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_fake_spec_cloak_anim_inst",
+  "textureFiles": [
+    {
+      "name": "Tristana_Skin33_TX_Deform_Mask.tex",
+      "updatedAt": "2026-04-17T18:01:32.866Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:01:32.866Z"
+    },
+    {
+      "name": "bigglow02.tex",
+      "updatedAt": "2026-04-17T18:01:32.866Z"
+    },
+    {
+      "name": "Tristana_Skin33_TX_MatCap_Mask.tex",
+      "updatedAt": "2026-04-17T18:01:32.866Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:01:32.866Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tristana",
+    "skin": "skin34",
+    "bin": "data/characters/tristana/skins/skin34.bin",
+    "entryKey": "Characters/Tristana/Skins/Skin34/Materials/HKG_FakeSpec_CloakAnim_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tristana",
+      "skin": "skin34",
+      "bin": "data/characters/tristana/skins/skin34.bin"
+    }
+  ]
+}

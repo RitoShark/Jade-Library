@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:56.835Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Katarina_Skin47_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:56.830Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:28:56.830Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Katarina",
+    "skin": "skin47",
+    "bin": "data/characters/katarina/skins/skin47.bin",
+    "entryKey": "Characters/Katarina/Skins/Skin47/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Katarina",
+      "skin": "skin47",
+      "bin": "data/characters/katarina/skins/skin47.bin"
+    }
+  ]
+}

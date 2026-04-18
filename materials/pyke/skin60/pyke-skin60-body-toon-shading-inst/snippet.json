@@ -1,0 +1,60 @@
+{
+  "id": "pyke-skin60-body-toon-shading-inst",
+  "name": "Pyke Skin60 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:19.698Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_skin60_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    },
+    {
+      "name": "Gradient_test_03.tex",
+      "updatedAt": "2026-04-17T17:46:19.691Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin60",
+    "bin": "data/characters/pyke/skins/skin60.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin60/Materials/Pyke_Skin60_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin60",
+      "bin": "data/characters/pyke/skins/skin60.bin"
+    }
+  ]
+}

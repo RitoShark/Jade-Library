@@ -1,0 +1,36 @@
+{
+  "id": "vex-flame-arm-inst",
+  "name": "Vex Flame Arm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:05.113Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vex_flame_arm_inst",
+  "textureFiles": [
+    {
+      "name": "Malzahar_Skin38_Material.tex",
+      "updatedAt": "2026-04-17T17:37:05.107Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin38",
+    "bin": "data/characters/malzahar/skins/skin38.bin",
+    "entryKey": "Characters/Malzahar/Skins/Skin38/Materials/Vex_Flame_Arm_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin38",
+      "bin": "data/characters/malzahar/skins/skin38.bin"
+    }
+  ]
+}

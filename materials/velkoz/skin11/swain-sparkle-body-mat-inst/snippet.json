@@ -1,0 +1,44 @@
+{
+  "id": "swain-sparkle-body-mat-inst",
+  "name": "Swain Sparkle Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:35.257Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_swain_sparkle_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Velkoz_Skin11_W_ScreamingHellPortalBackground.tex",
+      "updatedAt": "2026-04-17T18:04:35.250Z"
+    },
+    {
+      "name": "Velkoz_Skin11_Idle_Tentacle_Mask.tex",
+      "updatedAt": "2026-04-17T18:04:35.250Z"
+    },
+    {
+      "name": "Velkoz_Skin11_Idle_Tentacle_Mask.tex",
+      "updatedAt": "2026-04-17T18:04:35.250Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Velkoz",
+    "skin": "skin11",
+    "bin": "data/characters/velkoz/skins/skin11.bin",
+    "entryKey": "Characters/Velkoz/Skins/Skin11/Materials/Swain_Sparkle_Body_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Velkoz",
+      "skin": "skin11",
+      "bin": "data/characters/velkoz/skins/skin11.bin"
+    }
+  ]
+}

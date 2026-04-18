@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:03.086Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin81_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:03.078Z"
+    },
+    {
+      "name": "MasterYi_Skin52_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:03.078Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin81",
+    "bin": "data/characters/masteryi/skins/skin81.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin81/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin81",
+      "bin": "data/characters/masteryi/skins/skin81.bin"
+    }
+  ]
+}

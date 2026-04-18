@@ -1,0 +1,56 @@
+{
+  "id": "crystal-red-inst",
+  "name": "Crystal Red Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.278Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crystal_red_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    },
+    {
+      "name": "Briar_Skin02_Weapon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.273Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin2",
+    "bin": "data/characters/briar/skins/skin2.bin",
+    "entryKey": "Characters/Briar/Skins/Skin2/Materials/Crystal_Red_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin2",
+      "bin": "data/characters/briar/skins/skin2.bin"
+    }
+  ]
+}

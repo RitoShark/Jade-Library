@@ -1,0 +1,39 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:38.709Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Jinx_Skin40_Props_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:25:50.782Z"
+    },
+    {
+      "name": "Jinx_Skin40_Props_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:25:50.782Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jinx",
+    "skin": "skin40",
+    "bin": "data/characters/jinxmine/skins/skin40.bin",
+    "entryKey": "Characters/JinxMine/Skins/Skin40/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jinx",
+      "skin": "skin40",
+      "bin": "data/characters/jinxmine/skins/skin40.bin"
+    },
+    {
+      "champion": "Ruby_Jinx",
+      "skin": "skin40",
+      "bin": "data/characters/jinxmine/skins/skin40.bin"
+    }
+  ]
+}

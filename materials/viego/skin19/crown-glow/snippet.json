@@ -1,0 +1,31 @@
+{
+  "id": "crown-glow",
+  "name": "Crown Glow",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:36.319Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crown_glow",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin19",
+    "bin": "data/characters/viego/skins/skin19.bin",
+    "entryKey": "Characters/Viego/Skins/Skin19/Materials/Crown_Glow"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin19",
+      "bin": "data/characters/viego/skins/skin19.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "mid-form-inst",
+  "name": "Mid Form Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:53.337Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mid_form_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "Ahri_Skin27_MidForm_MAT.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.331Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin30",
+    "bin": "data/characters/ahri/skins/skin30.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin30/Materials/MidForm_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin30",
+      "bin": "data/characters/ahri/skins/skin30.bin"
+    }
+  ]
+}

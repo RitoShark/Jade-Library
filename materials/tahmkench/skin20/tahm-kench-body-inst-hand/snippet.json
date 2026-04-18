@@ -1,0 +1,36 @@
+{
+  "id": "tahm-kench-body-inst-hand",
+  "name": "Tahm Kench Body Inst Hand",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.527Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tahm_kench_body_inst_hand",
+  "textureFiles": [
+    {
+      "name": "TahmKench_Skin20_Body_Hand_Glow.tex",
+      "updatedAt": "2026-04-17T17:59:29.521Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TahmKench",
+    "skin": "skin20",
+    "bin": "data/characters/tahmkench/skins/skin20.bin",
+    "entryKey": "Characters/TahmKench/Skins/Skin20/Materials/TahmKench_body_inst_Hand"
+  },
+  "usedBy": [
+    {
+      "champion": "TahmKench",
+      "skin": "skin20",
+      "bin": "data/characters/tahmkench/skins/skin20.bin"
+    }
+  ]
+}

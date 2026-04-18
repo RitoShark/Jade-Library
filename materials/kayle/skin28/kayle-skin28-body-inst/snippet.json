@@ -1,0 +1,38 @@
+{
+  "id": "kayle-skin28-body-inst",
+  "name": "Kayle Skin28 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:35.099Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kayle_skin28_body_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:35.091Z"
+    },
+    {
+      "name": "Kayle_Skin24_Wing_Fire_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:35.091Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:29:35.091Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin28",
+    "bin": "data/characters/kayle/skins/skin28.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin28/Materials/Kayle_Skin28_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin28",
+      "bin": "data/characters/kayle/skins/skin28.bin"
+    }
+  ]
+}

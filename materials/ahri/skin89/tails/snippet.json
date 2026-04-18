@@ -1,0 +1,52 @@
+{
+  "id": "tails",
+  "name": "Tails",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:08.652Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tails",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin89_Tails_RMSA_TX_CM.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.645Z"
+    },
+    {
+      "name": "Ahri_Skin89_Tails_Mask.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.645Z"
+    },
+    {
+      "name": "Ahri_Skin89_Tails_RMSA_TX_CM.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.645Z"
+    },
+    {
+      "name": "black.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.645Z"
+    },
+    {
+      "name": "black.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.645Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin89",
+    "bin": "data/characters/ahri/skins/skin89.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin89/Materials/Tails"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin89",
+      "bin": "data/characters/ahri/skins/skin89.bin"
+    }
+  ]
+}

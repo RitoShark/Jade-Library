@@ -1,0 +1,36 @@
+{
+  "id": "aurelion-sol-skin31-star-uvoffset-inst",
+  "name": "Aurelion Sol Skin31 Star Uvoffset Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.299Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aurelion_sol_skin31_star_uvoffset_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin31",
+    "bin": "data/characters/aurelionsol/skins/skin31.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin31/Materials/AurelionSol_Skin31_Star_UVOffset_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin31",
+      "bin": "data/characters/aurelionsol/skins/skin31.bin"
+    },
+    {
+      "champion": "Kayn",
+      "skin": "skin20",
+      "bin": "data/characters/kayn/skins/skin20.bin"
+    }
+  ]
+}

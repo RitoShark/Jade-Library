@@ -1,0 +1,36 @@
+{
+  "id": "pyke-skin45-material-r-recast-inst",
+  "name": "Pyke Skin45 Material R Recast Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:16.582Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_skin45_material_r_recast_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin45_EmpoweredForm_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:16.576Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin45",
+    "bin": "data/characters/pyke/skins/skin45.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin45/Materials/Pyke_Skin45_Material_R_Recast_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin45",
+      "bin": "data/characters/pyke/skins/skin45.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:02.231Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:08:02.224Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:08:02.224Z"
+    },
+    {
+      "name": "Xerath_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:08:02.224Z"
+    },
+    {
+      "name": "Fresnel_Mask.tex",
+      "updatedAt": "2026-04-17T18:08:02.224Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xerath",
+    "skin": "skin17",
+    "bin": "data/characters/xerath/skins/skin17.bin",
+    "entryKey": "Characters/Xerath/Skins/Skin17/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xerath",
+      "skin": "skin17",
+      "bin": "data/characters/xerath/skins/skin17.bin"
+    }
+  ]
+}

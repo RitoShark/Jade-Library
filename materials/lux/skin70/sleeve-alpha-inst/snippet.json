@@ -1,0 +1,48 @@
+{
+  "id": "sleeve-alpha-inst",
+  "name": "Sleeve Alpha Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.956Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sleeve_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin70_Sleeve_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:59.951Z"
+    },
+    {
+      "name": "Lux_Skin70_TX_Sleeve_Mask.tex",
+      "updatedAt": "2026-04-17T17:35:59.951Z"
+    },
+    {
+      "name": "Lux_Skin70_TX_Sleeve_Mask.tex",
+      "updatedAt": "2026-04-17T17:35:59.951Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.951Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin70",
+    "bin": "data/characters/lux/skins/skin70.bin",
+    "entryKey": "Characters/Lux/Skins/Skin70/Materials/SleeveAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin70",
+      "bin": "data/characters/lux/skins/skin70.bin"
+    }
+  ]
+}

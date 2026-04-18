@@ -1,0 +1,44 @@
+{
+  "id": "nautilus-screenspace-weapon-inst",
+  "name": "Nautilus Screenspace Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:12.354Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nautilus_screenspace_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Nautilus_Skin28_Star.tex",
+      "updatedAt": "2026-04-17T17:42:12.341Z"
+    },
+    {
+      "name": "Nautilus_material_Mask_1.tex",
+      "updatedAt": "2026-04-17T17:42:12.341Z"
+    },
+    {
+      "name": "common_Black.tex",
+      "updatedAt": "2026-04-17T17:42:12.341Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nautilus",
+    "skin": "skin28",
+    "bin": "data/characters/nautilus/skins/skin28.bin",
+    "entryKey": "Characters/Nautilus/Skins/Skin28/Materials/Nautilus_Screenspace_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nautilus",
+      "skin": "skin28",
+      "bin": "data/characters/nautilus/skins/skin28.bin"
+    }
+  ]
+}

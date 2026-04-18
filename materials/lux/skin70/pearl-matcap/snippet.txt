@@ -1,0 +1,172 @@
+"jadelib_pearl_matcap" = StaticMaterialDef {
+    name: string = "jadelib_pearl_matcap"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/pearl-matcap/Lux_Skin70_Matcap.SKINS_Lux_Skin70.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/pearl-matcap/Lux_Skin70_TX_Sphere_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "EvolvingPassiveTex"
+            texturePath: string = "assets/jadelib/pearl-matcap/lava_mask.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+            value: vec4 = { 0, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGBA_Mask_Values"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.9799954295158386, 0.7400014996528625, 0.8500038385391235, 0.5300068855285645 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Intensity"
+            value: vec4 = { 0.019999999552965164, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_TEX_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "EXCLUDE_R_FROM_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_Diff_Mask_Alpha"
+                    blendEnable: bool = true
+                    PolygonDepthBiasEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "RGBA_Mask_Values"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 1
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 1, 0, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 2
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0, 1, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 3
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0, 0, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 4
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {}
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 5
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 1, 1, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+        }
+    }
+}

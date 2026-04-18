@@ -1,0 +1,89 @@
+"jadelib_scrolling_uvs_inst" = StaticMaterialDef {
+    name: string = "jadelib_scrolling_uvs_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/Akali_Base_flame_tile.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "BloomGradient_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/color-flamesword.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/Akali_Skin02_TX_CM_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Brightness"
+            value: vec4 = { 0.05000000074505806, 0.05000000074505806, 0.05000000074505806, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Fresnel_Size"
+            value: vec4 = { 15.400036811828613, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.25999999046325684, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_UV_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollRate"
+            value: vec4 = { 0, 0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomUV"
+            value: vec4 = { 0.9175000190734863, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL_MASK"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_Masked_ColorDodge"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

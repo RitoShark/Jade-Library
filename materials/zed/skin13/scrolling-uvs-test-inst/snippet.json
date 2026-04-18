@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-test-inst",
+  "name": "Scrolling Uvs Test Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:16.050Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_test_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T18:12:16.041Z"
+    },
+    {
+      "name": "BC_TestTexture.tex",
+      "updatedAt": "2026-04-17T18:12:16.041Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:12:16.041Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin13",
+    "bin": "data/characters/zedshadow/skins/skin13.bin",
+    "entryKey": "Characters/ZedShadow/Skins/Skin13/Materials/ScrollingUVsTest_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin13",
+      "bin": "data/characters/zedshadow/skins/skin13.bin"
+    }
+  ]
+}

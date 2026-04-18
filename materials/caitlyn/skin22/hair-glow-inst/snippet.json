@@ -1,0 +1,48 @@
+{
+  "id": "hair-glow-inst",
+  "name": "Hair Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:26.977Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_glow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.971Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.971Z"
+    },
+    {
+      "name": "Caitlyn_Skin22_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:26.971Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.971Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin22",
+    "bin": "data/characters/caitlyn/skins/skin22.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin22/Materials/HairGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin22",
+      "bin": "data/characters/caitlyn/skins/skin22.bin"
+    }
+  ]
+}

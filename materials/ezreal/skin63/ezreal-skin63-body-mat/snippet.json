@@ -1,0 +1,38 @@
+{
+  "id": "ezreal-skin63-body-mat",
+  "name": "Ezreal Skin63 Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:01.965Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_ezreal_skin63_body_mat",
+  "textureFiles": [
+    {
+      "name": "Ezreal_Skin63_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:18:01.960Z"
+    },
+    {
+      "name": "Ezreal_Skin63_Body_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:18:01.960Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:01.960Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin63",
+    "bin": "data/characters/ezreal/skins/skin63.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin63/Materials/Ezreal_Skin63_Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin63",
+      "bin": "data/characters/ezreal/skins/skin63.bin"
+    }
+  ]
+}

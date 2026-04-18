@@ -1,0 +1,64 @@
+{
+  "id": "kaisa-skin63-horn-mat",
+  "name": "Kaisa Skin63 Horn Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:34.841Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin63_horn_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "Kaisa_Skin59_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "Kaisa_Skin59_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "Kaisa_Skin59_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:34.834Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin63",
+    "bin": "data/characters/kaisa/skins/skin63.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin63/Materials/Kaisa_Skin63_Horn_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin63",
+      "bin": "data/characters/kaisa/skins/skin63.bin"
+    }
+  ]
+}

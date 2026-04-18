@@ -1,0 +1,200 @@
+"jadelib_darius_skin67_weapon_inst" = StaticMaterialDef {
+    name: string = "jadelib_darius_skin67_weapon_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Main_Texture"
+            texturePath: string = "assets/jadelib/darius-skin67-weapon-inst/Darius_Skin67_Weapon_TX_CM.SKINS_Darius_Skin67.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Secondary_Texture"
+            texturePath: string = "assets/jadelib/darius-skin67-weapon-inst/Darius_Skin67_RedWeapon_TX_CM.SKINS_Darius_Skin67.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/darius-skin67-weapon-inst/Darius_Skin67_Mask02_TX_CM.SKINS_Darius_Skin67.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Transition_Value"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.42500001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Power"
+            value: vec4 = { 1.375, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Value"
+            value: vec4 = { 14, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 1, 0.9799954295158386, 0.7700007557868958, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Value"
+            value: vec4 = { 1.274999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.03999389708042145, 1, 0.7499961853027344, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/MechaKingdom_Jax"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Transition_Value"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "dariushemomax"
+                    }
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = AllTrueMaterialDriver {
+                        mDrivers: list[pointer] = {
+                            HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "dariushemomax"
+                            }
+                            NotMaterialDriver {
+                                mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            }
+                        }
+                    }
+                    mColorOn: vec4 = { 0.8236209750175476, 0, 0.1116044893860817, 1 }
+                    mColorOff: vec4 = { 0.003921568859368563, 1, 0.6475471258163452, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Value"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = AllTrueMaterialDriver {
+                        mDrivers: list[pointer] = {
+                            HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "dariushemomax"
+                            }
+                            NotMaterialDriver {
+                                mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            }
+                        }
+                    }
+                    mOnValue: f32 = 1.5
+                    mOffValue: f32 = 1.274999976158142
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = AllTrueMaterialDriver {
+                        mDrivers: list[pointer] = {
+                            HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "dariushemomax"
+                            }
+                            NotMaterialDriver {
+                                mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            }
+                        }
+                    }
+                    mOnValue: f32 = 0.5
+                    mOffValue: f32 = 0.42500001192092896
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Power"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = AllTrueMaterialDriver {
+                        mDrivers: list[pointer] = {
+                            HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "dariushemomax"
+                            }
+                            NotMaterialDriver {
+                                mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            }
+                        }
+                    }
+                    mOnValue: f32 = 1.5
+                    mOffValue: f32 = 1.375
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = AllTrueMaterialDriver {
+                        mDrivers: list[pointer] = {
+                            HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "dariushemomax"
+                            }
+                            NotMaterialDriver {
+                                mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            }
+                        }
+                    }
+                    mColorOn: vec4 = { 0.4291905164718628, 0, 0.058152131736278534, 1 }
+                    mColorOff: vec4 = { 1, 0.9799954295158386, 0.7700007557868958, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "dariushemomax"
+                        }
+                        TextureName: string = "ASSETS/Characters/Darius/Skins/Skin67/Particles/Darius_Skin67_MaskWE.SKINS_Darius_Skin67.tex"
+                    }
+                }
+            }
+        }
+    }
+}

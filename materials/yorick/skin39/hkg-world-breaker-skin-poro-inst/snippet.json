@@ -1,0 +1,36 @@
+{
+  "id": "hkg-world-breaker-skin-poro-inst",
+  "name": "Hkg World Breaker Skin Poro Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:34.782Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_world_breaker_skin_poro_inst",
+  "textureFiles": [
+    {
+      "name": "YorickGhoulMelee_Skin30_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:34.777Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin39",
+    "bin": "data/characters/yorickghoulmelee/skins/skin39.bin",
+    "entryKey": "Characters/YorickGhoulMelee/Skins/Skin39/Materials/HKG_WorldBreakerSkin_Poro_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin39",
+      "bin": "data/characters/yorickghoulmelee/skins/skin39.bin"
+    }
+  ]
+}

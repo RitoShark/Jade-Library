@@ -1,0 +1,44 @@
+{
+  "id": "hkg-eyes-blink-mat-inst",
+  "name": "Hkg Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:03.090Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:03.083Z"
+    },
+    {
+      "name": "Warwick_skin35_Eyes_Mask.tex",
+      "updatedAt": "2026-04-17T18:07:03.084Z"
+    },
+    {
+      "name": "Warwick_skin35_Eyes_Blink.tex",
+      "updatedAt": "2026-04-17T18:07:03.084Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin35",
+    "bin": "data/characters/warwick/skins/skin35.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin35/Materials/HKG_Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin35",
+      "bin": "data/characters/warwick/skins/skin35.bin"
+    }
+  ]
+}

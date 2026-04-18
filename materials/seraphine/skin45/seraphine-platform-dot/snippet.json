@@ -1,0 +1,34 @@
+{
+  "id": "seraphine-platform-dot",
+  "name": "Seraphine Platform Dot",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:06.123Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_seraphine_platform_dot",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin43_Platform_Layer0_Mask.SKINS_Seraphine_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:06.118Z"
+    },
+    {
+      "name": "Seraphine_Skin43_Platform_Layer0.SKINS_Seraphine_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:06.118Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin45",
+    "bin": "data/characters/seraphine/skins/skin45.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin45/Materials/Seraphine_Platform_Dot"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin45",
+      "bin": "data/characters/seraphine/skins/skin45.bin"
+    }
+  ]
+}

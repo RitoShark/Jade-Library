@@ -1,0 +1,246 @@
+"jadelib_viego_skin35_body_toon_shading_inst" = StaticMaterialDef {
+    name: string = "jadelib_viego_skin35_body_toon_shading_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex_Mask"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Mask"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/MatCap_ToonPlastic.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingTex"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/ToonShading.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingOutlineTex"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/OutlineToneMap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingRimTex"
+            texturePath: string = "assets/jadelib/viego-skin35-body-toon-shading-inst/Gradient_Water_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Pitch"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Yaw"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollStrength_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Color_Tint_R"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeed_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexTile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapTintColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirectionOverride"
+            value: vec4 = { 0.41999998688697815, 0.41999998688697815, 0.41999998688697815, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonShadePower"
+            value: vec4 = { 7.224999904632568, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonOutlineControl"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonRimControl"
+            value: vec4 = { 0.6000000238418579, 0.30000001192092896, 0.2199999988079071, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorBase"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorOutline"
+            value: vec4 = { 0.08999770879745483, 0.08999770879745483, 0.3000076413154602, 0.9799954295158386 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorRim"
+            value: vec4 = { 0.5097428560256958, 0.3184252679347992, 0.22880902886390686, 0.40784314274787903 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Color_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_SPHERICAL_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "RIM_COLOR_ON"
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            Group: string = "Toon"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "TintColorBase"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Viego/Spells/ViegoEAbility/ViegoEMist"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0.20000000298023224, 0.30000001192092896, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 1, 1, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "ToonOutlineControl"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Viego/Spells/ViegoEAbility/ViegoEMist"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0.800000011920929, 0, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0.20000000298023224, 0.20000000298023224, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "TintColorOutline"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Viego/Spells/ViegoEAbility/ViegoEMist"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0, 0.30000001192092896, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.09000000357627869, 0.09000000357627869, 0.09000000357627869, 0.9800000190734863 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "TintColorRim"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Viego/Spells/ViegoEAbility/ViegoEMist"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0, 0.30000001192092896, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.05000000074505806, 0.15000000596046448, 0.28999999165534973, 0.4099999964237213 }
+                    }
+                }
+            }
+        }
+    }
+}

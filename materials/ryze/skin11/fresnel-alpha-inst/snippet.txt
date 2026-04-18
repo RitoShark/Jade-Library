@@ -1,0 +1,132 @@
+"jadelib_fresnel_alpha_inst" = StaticMaterialDef {
+    name: string = "jadelib_fresnel_alpha_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/fresnel-alpha-inst/Generic_Noise.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.6823529601097107, 0.8274509906768799, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Size"
+            value: vec4 = { 7.320542335510254, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias"
+            value: vec4 = { 0.06499999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 2.328549861907959, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { -0.44999998807907104, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+            value: vec4 = { 0.4424999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.5960784554481506, 0.7254902124404907, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_ScrollSpeed"
+            value: vec4 = { 0, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Override"
+            value: vec4 = { 0.8025000095367432, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIONAL_MASKING"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelAlpha_Scrolling"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                Enabled: bool = false
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Override"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        mTurnOnTimeSec: f32 = 0
+                        mTurnOffTimeSec: f32 = -5
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.056910570710897446
+                            0.857723593711853
+                            1
+                        }
+                        values: list[f32] = {
+                            0
+                            0.5
+                            0.5
+                            0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

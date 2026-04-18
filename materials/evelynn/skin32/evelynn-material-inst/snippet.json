@@ -1,0 +1,42 @@
+{
+  "id": "evelynn-material-inst",
+  "name": "Evelynn Material Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:17.925Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_evelynn_material_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin32_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:17.918Z"
+    },
+    {
+      "name": "whitebox.tex",
+      "updatedAt": "2026-04-17T17:17:17.918Z"
+    },
+    {
+      "name": "Evelynn_Skin32_Shadow_MaskTX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:17.918Z"
+    },
+    {
+      "name": "Evelynn_Skin32_Shadow_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:17.918Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin32",
+    "bin": "data/characters/evelynn/skins/skin32.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin32/Materials/Evelynn_Material_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin32",
+      "bin": "data/characters/evelynn/skins/skin32.bin"
+    }
+  ]
+}

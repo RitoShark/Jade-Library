@@ -1,0 +1,36 @@
+{
+  "id": "bloom-rainbow-inst",
+  "name": "Bloom Rainbow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:25.880Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_rainbow_inst",
+  "textureFiles": [
+    {
+      "name": "Rainbow_Mask.tex",
+      "updatedAt": "2026-04-17T17:18:25.872Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin27",
+    "bin": "88d146f2bff8b700.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin27/Materials/Bloom_Rainbow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin27",
+      "bin": "88d146f2bff8b700.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "blast-shield-inst",
+  "name": "Blast Shield Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.337Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blast_shield_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.330Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin19",
+    "bin": "data/characters/gnar/skins/skin19.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin19/Materials/BlastShield_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin19",
+      "bin": "data/characters/gnar/skins/skin19.bin"
+    }
+  ]
+}

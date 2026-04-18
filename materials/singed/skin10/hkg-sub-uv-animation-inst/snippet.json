@@ -1,0 +1,30 @@
+{
+  "id": "hkg-sub-uv-animation-inst",
+  "name": "Hkg Sub Uv Animation Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:36.342Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_sub_uv_animation_inst",
+  "textureFiles": [
+    {
+      "name": "Singed_Skin10_R_05.tex",
+      "updatedAt": "2026-04-17T17:54:36.331Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Singed",
+    "skin": "skin10",
+    "bin": "data/singed_skins_skin10_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18.bin",
+    "entryKey": "Characters/Singed/Skins/Skin10/Materials/HKG_SubUV_Animation_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Singed",
+      "skin": "skin10",
+      "bin": "data/singed_skins_skin10_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18.bin"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+"jadelib_fresnel_alpha_inst" = StaticMaterialDef {
+    name: string = "jadelib_fresnel_alpha_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/fresnel-alpha-inst/Zoe_Skin02_Hair_Mask3.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.08235294371843338, 0.658823549747467, 0.8313725590705872, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Size"
+            value: vec4 = { 15.840009689331055, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias"
+            value: vec4 = { -0.9300000071525574, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 8.005000114440918, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { -0.5400000214576721, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+            value: vec4 = { 0.9024999737739563, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 2, 6, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0, 1, 0.9686274528503418, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_ScrollSpeed"
+            value: vec4 = { 0, 1.2000000476837158, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Override"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIONAL_MASKING"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelAlpha_Scrolling"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

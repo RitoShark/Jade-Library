@@ -1,0 +1,52 @@
+{
+  "id": "hair",
+  "name": "Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:53.674Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:53.665Z"
+    },
+    {
+      "name": "Zeri_Skin40_Hair_Mask.SKINS_Zeri_Skin40.tex",
+      "updatedAt": "2026-04-17T18:12:53.665Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:53.665Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:53.665Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:53.665Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin40",
+    "bin": "data/characters/zeri/skins/skin40.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin40/Materials/Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin40",
+      "bin": "data/characters/zeri/skins/skin40.bin"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "shoulder-inst",
+  "name": "Shoulder Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:08.305Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shoulder_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin88_Shoulder_TurbulDeform_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "Ahri_Skin88_Steam_Mask_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "Ahri_Skin88_Shoulder_TurbulDeform_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "Ahri_Skin88_CaseTexture01_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:08.299Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin88",
+    "bin": "data/characters/ahri/skins/skin88.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin88/Materials/Shoulder_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin88",
+      "bin": "data/characters/ahri/skins/skin88.bin"
+    }
+  ]
+}

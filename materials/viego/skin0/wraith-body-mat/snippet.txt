@@ -1,0 +1,132 @@
+"jadelib_wraith_body_mat" = StaticMaterialDef {
+    name: string = "jadelib_wraith_body_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/wraith-body-mat/Viego_Wraith_Noise_TX.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FX_ColorRamp"
+            texturePath: string = "assets/jadelib/wraith-body-mat/Viego_Smoke_TX.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Screenspace_Tiles"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FGColor"
+            value: vec4 = { 0.05882352963089943, 1, 0.6392157077789307, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Modifier"
+            value: vec4 = { 1.7000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Input"
+            value: vec4 = { 1.600000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Texture_Activation"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_ScrollSpeed"
+            value: vec4 = { 0.05000000074505806, 0.019999999552965164, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Tile"
+            value: vec4 = { 3, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_R_Tile"
+            value: vec4 = { 1.2000000476837158, 2.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Speed_X"
+            value: vec4 = { 0.15000000596046448, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Speed_Y"
+            value: vec4 = { -0.16500000655651093, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLUE_CH_MASK"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_GLOW"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Viego/MistBody"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Texture_Activation"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {}
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEMist"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+        }
+    }
+}

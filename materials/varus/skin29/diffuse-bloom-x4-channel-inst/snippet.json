@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-x4-channel-inst",
+  "name": "Diffuse Bloom X4 Channel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:20.526Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_x4_channel_inst",
+  "textureFiles": [
+    {
+      "name": "Varus_Skin16_Idle_GlowMask.tex",
+      "updatedAt": "2026-04-17T18:03:20.513Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin29",
+    "bin": "data/characters/varus/skins/skin29.bin",
+    "entryKey": "Characters/Varus/Skins/Skin29/Materials/Diffuse_Bloom_X4_Channel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin29",
+      "bin": "data/characters/varus/skins/skin29.bin"
+    }
+  ]
+}

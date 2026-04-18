@@ -1,0 +1,68 @@
+{
+  "id": "xerath-skin32-corrupted-fx-inst",
+  "name": "Xerath Skin32 Corrupted Fx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:08.966Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xerath_skin32_corrupted_fx_inst",
+  "textureFiles": [
+    {
+      "name": "Xerath_Skin32_TurbulDeform_TX_CM.SKINS_Xerath_Skin32.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "Ahri_Skin88_Tail_Mask_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "Base_Wave_Foam_Stylized_01.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "CaseTexture03.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:08:08.960Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xerath",
+    "skin": "skin32",
+    "bin": "data/characters/xerath/skins/skin32.bin",
+    "entryKey": "Characters/Xerath/Skins/Skin32/Materials/Xerath_Skin32_CorruptedFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xerath",
+      "skin": "skin32",
+      "bin": "data/characters/xerath/skins/skin32.bin"
+    }
+  ]
+}

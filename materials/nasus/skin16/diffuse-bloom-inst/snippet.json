@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:43.864Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin16_R_Ulti_TXT.tex",
+      "updatedAt": "2026-04-17T17:41:43.857Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin16",
+    "bin": "data/characters/nasus/skins/skin16.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin16/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin16",
+      "bin": "data/characters/nasus/skins/skin16.bin"
+    }
+  ]
+}

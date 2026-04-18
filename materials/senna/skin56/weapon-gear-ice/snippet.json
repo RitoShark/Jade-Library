@@ -1,0 +1,56 @@
+{
+  "id": "weapon-gear-ice",
+  "name": "Weapon Gear Ice",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:32.871Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_gear_ice",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    },
+    {
+      "name": "Ice_RMA.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:32.865Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin56",
+    "bin": "data/characters/senna/skins/skin56.bin",
+    "entryKey": "Characters/Senna/Skins/Skin56/Materials/Weapon_Gear_Ice"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin56",
+      "bin": "data/characters/senna/skins/skin56.bin"
+    }
+  ]
+}

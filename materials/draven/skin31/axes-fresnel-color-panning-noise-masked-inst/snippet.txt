@@ -1,0 +1,157 @@
+"jadelib_axes_fresnel_color_panning_noise_masked_inst" = StaticMaterialDef {
+    name: string = "jadelib_axes_fresnel_color_panning_noise_masked_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Transform_Texture"
+            texturePath: string = "assets/jadelib/axes-fresnel-color-panning-noise-masked-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "PanningTexture"
+            texturePath: string = "assets/jadelib/axes-fresnel-color-panning-noise-masked-inst/Draven_Skin29_Axes_MaterialMask.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "PanningNoiseScale"
+            value: vec4 = { 1.5, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panning_FresnelSize"
+            value: vec4 = { 14.800074577331543, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 1, 0.9176470637321472, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "PanningNoise_ScrollSpeed"
+            value: vec4 = { 0.30000001192092896, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Master_Blend"
+            value: vec4 = { 0.6825000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorFresnelSize"
+            value: vec4 = { 0.6809574961662292, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "PanningNoise_Color"
+            value: vec4 = { 1, 0.9058823585510254, 0.1725490242242813, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_Fresnel_color"
+            value: vec4 = { 0.7176470756530762, 0.5490196347236633, 0.3137255012989044, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 1.5499999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Transform_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_NOISE_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADD_FRESNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelColor_PanningNoise_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "ColorFresnelSize"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "DravenSpinningAttack"
+                    }
+                    mOnValue: f32 = 3
+                    mOffValue: f32 = 0.6000000238418579
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Color_Fresnel_color"
+                Enabled: bool = false
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "DravenSpinningAttack"
+                    }
+                    mColorOn: vec4 = { 1, 0.800000011920929, 0.3333333432674408, 1 }
+                    mColorOff: vec4 = { 0.5960784554481506, 0.6352941393852234, 1, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomColorFresnelSize"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "DravenSpinningAttack"
+                    }
+                    mOnValue: f32 = 0.6800000071525574
+                    mOffValue: f32 = 0.10000000149011612
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "DravenSpinningAttack"
+                    }
+                    mOnValue: f32 = 1.5499999523162842
+                    mOffValue: f32 = 0.699999988079071
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+        }
+    }
+}

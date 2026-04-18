@@ -1,0 +1,36 @@
+{
+  "id": "naafiri-skin29-outline-inst",
+  "name": "Naafiri Skin29 Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:45.064Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin29_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:45.057Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin29",
+    "bin": "data/characters/naafiri/skins/skin29.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin29/Materials/Naafiri_Skin29_Outline_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin29",
+      "bin": "data/characters/naafiri/skins/skin29.bin"
+    }
+  ]
+}

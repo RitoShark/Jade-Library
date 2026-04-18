@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:04.536Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Malzahar_Skin18_Idle_Bloom_Mult.tex",
+      "updatedAt": "2026-04-17T17:37:04.531Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin21",
+    "bin": "data/characters/malzahar/skins/skin21.bin",
+    "entryKey": "Characters/Malzahar/Skins/Skin21/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin21",
+      "bin": "data/characters/malzahar/skins/skin21.bin"
+    }
+  ]
+}

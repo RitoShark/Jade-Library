@@ -1,0 +1,40 @@
+{
+  "id": "aatrox-recall-dissolve-inst",
+  "name": "Aatrox Recall Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:08.511Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_recall_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin09_Recall_Gradient_Body.tex",
+      "updatedAt": "2026-04-17T17:06:08.505Z"
+    },
+    {
+      "name": "Aatrox_Skin09_Recall_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:08.505Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin10",
+    "bin": "data/characters/aatrox/skins/skin10.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin10/Materials/Aatrox_Recall_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin10",
+      "bin": "data/characters/aatrox/skins/skin10.bin"
+    }
+  ]
+}

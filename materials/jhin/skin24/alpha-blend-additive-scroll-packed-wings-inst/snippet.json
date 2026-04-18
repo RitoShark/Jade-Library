@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-wings-inst",
+  "name": "Alpha Blend Additive Scroll Packed Wings Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:21.090Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_wings_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:25:21.081Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:25:21.081Z"
+    },
+    {
+      "name": "Jhin_Skin24_Recall_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:25:21.081Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:21.081Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin24",
+    "bin": "data/characters/jhin/skins/skin24.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin24/Materials/AlphaBlend_Additive_Scroll_Packed_Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin24",
+      "bin": "data/characters/jhin/skins/skin24.bin"
+    }
+  ]
+}

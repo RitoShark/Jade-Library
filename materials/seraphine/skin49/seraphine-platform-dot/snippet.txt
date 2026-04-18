@@ -1,0 +1,60 @@
+"jadelib_seraphine_platform_dot" = StaticMaterialDef {
+    name: string = "jadelib_seraphine_platform_dot"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scrolling_Texture"
+            texturePath: string = "assets/jadelib/seraphine-platform-dot/Seraphine_Skin43_Platform_Layer0_Mask.SKINS_Seraphine_Skin43.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Texture"
+            texturePath: string = "assets/jadelib/seraphine-platform-dot/Seraphine_Skin43_Platform_Layer0.SKINS_Seraphine_Skin43.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 1, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed"
+            value: vec4 = { 0, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tint_Color"
+            value: vec4 = { 0.07304494082927704, 0.993514895439148, 1, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_MultiAlpha"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

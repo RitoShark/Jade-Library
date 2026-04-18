@@ -1,0 +1,36 @@
+{
+  "id": "bloom-weapon-inst",
+  "name": "Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:25.607Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Varus_Skin44_Materials_WP.tex",
+      "updatedAt": "2026-04-17T18:03:25.601Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin46",
+    "bin": "data/characters/varus/skins/skin46.bin",
+    "entryKey": "Characters/Varus/Skins/Skin46/Materials/Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin46",
+      "bin": "data/characters/varus/skins/skin46.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "gragas-skin29-glass-inst",
+  "name": "Gragas Skin29 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:37.043Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gragas_skin29_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.038Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.038Z"
+    },
+    {
+      "name": "MatCap_BS0.tex",
+      "updatedAt": "2026-04-17T17:20:37.038Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.038Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.038Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin29",
+    "bin": "data/characters/gragas/skins/skin29.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin29/Materials/Gragas_Skin29_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin29",
+      "bin": "data/characters/gragas/skins/skin29.bin"
+    }
+  ]
+}

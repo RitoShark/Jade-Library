@@ -1,0 +1,64 @@
+{
+  "id": "hkg-mat-cap-fish-crystal-inst",
+  "name": "Hkg Mat Cap Fish Crystal Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.537Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_fish_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.528Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin42",
+    "bin": "data/characters/nami/skins/skin42.bin",
+    "entryKey": "Characters/Nami/Skins/Skin42/Materials/HKG_MatCap_FishCrystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin42",
+      "bin": "data/characters/nami/skins/skin42.bin"
+    }
+  ]
+}

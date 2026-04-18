@@ -1,0 +1,56 @@
+{
+  "id": "zoe-crystal-hair-inst",
+  "name": "Zoe Crystal Hair Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:57.706Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_crystal_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin09_TailMask.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    },
+    {
+      "name": "Zoe_Skin16_FresnelGradient_1.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    },
+    {
+      "name": "Zoe_Skin16_Bokeh_Color.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    },
+    {
+      "name": "Zoe_Skin09_Emote_portal_tex.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    },
+    {
+      "name": "Zoe_Skin16_beam_01.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    },
+    {
+      "name": "Zoe_Skin09_SS_Boxes_Gradient.tex",
+      "updatedAt": "2026-04-17T18:13:57.700Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin16",
+    "bin": "data/characters/zoe/skins/skin16.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin16/Materials/Zoe_Crystal_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin16",
+      "bin": "data/characters/zoe/skins/skin16.bin"
+    }
+  ]
+}

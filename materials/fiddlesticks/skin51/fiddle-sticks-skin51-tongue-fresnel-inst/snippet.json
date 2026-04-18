@@ -1,0 +1,34 @@
+{
+  "id": "fiddle-sticks-skin51-tongue-fresnel-inst",
+  "name": "Fiddle Sticks Skin51 Tongue Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:33.290Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fiddle_sticks_skin51_tongue_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "FiddleSticks_Skin51_Body_TX_CM.Chroma_Fiddlesticks_FloraFatalis.tex",
+      "updatedAt": "2026-04-17T17:18:33.284Z"
+    },
+    {
+      "name": "FiddleSticks_Skin46_Tongue_Mask_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:33.284Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin51",
+    "bin": "data/characters/fiddlesticks/skins/skin51.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin51/Materials/FiddleSticks_Skin51_Tongue_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin51",
+      "bin": "data/characters/fiddlesticks/skins/skin51.bin"
+    }
+  ]
+}

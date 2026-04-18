@@ -1,0 +1,44 @@
+{
+  "id": "ceramic-mat-00-inst",
+  "name": "Ceramic Mat 00 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:06.768Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ceramic_mat_00_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin33_Props_MatCap.tex",
+      "updatedAt": "2026-04-17T17:31:06.762Z"
+    },
+    {
+      "name": "KindredWolf_Skin33_Mask.tex",
+      "updatedAt": "2026-04-17T17:31:06.762Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:31:06.762Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin33",
+    "bin": "data/characters/kindredwolf/skins/skin33.bin",
+    "entryKey": "Characters/KindredWolf/Skins/Skin33/Materials/Ceramic_Mat_00_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin33",
+      "bin": "data/characters/kindredwolf/skins/skin33.bin"
+    }
+  ]
+}

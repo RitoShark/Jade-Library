@@ -1,0 +1,48 @@
+{
+  "id": "vertex-glow-mat-inst",
+  "name": "Vertex Glow Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:22.426Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vertex_glow_mat_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:22.413Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:22.413Z"
+    },
+    {
+      "name": "Shyvana_Skin04_TX_CM.Shyvana_Rework.tex",
+      "updatedAt": "2026-04-17T17:54:22.413Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:22.413Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shyvana",
+    "skin": "skin4",
+    "bin": "data/characters/shyvana/skins/skin4.bin",
+    "entryKey": "Characters/Shyvana/Skins/Skin4/Materials/VertexGlow_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shyvana",
+      "skin": "skin4",
+      "bin": "data/characters/shyvana/skins/skin4.bin"
+    }
+  ]
+}

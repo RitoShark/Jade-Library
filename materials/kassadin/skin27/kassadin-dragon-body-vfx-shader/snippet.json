@@ -1,0 +1,44 @@
+{
+  "id": "kassadin-dragon-body-vfx-shader",
+  "name": "Kassadin Dragon Body Vfx Shader",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:24.673Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kassadin_dragon_body_vfx_shader",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin24_DragonVFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:24.666Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK1_StarMask.tex",
+      "updatedAt": "2026-04-17T17:28:24.666Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK2_Fresnel.tex",
+      "updatedAt": "2026-04-17T17:28:24.666Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kassadin",
+    "skin": "skin27",
+    "bin": "data/characters/kassadin/skins/skin27.bin",
+    "entryKey": "Characters/Kassadin/Skins/Skin27/Materials/Kassadin_DragonBodyVFX_Shader"
+  },
+  "usedBy": [
+    {
+      "champion": "Kassadin",
+      "skin": "skin27",
+      "bin": "data/characters/kassadin/skins/skin27.bin"
+    }
+  ]
+}

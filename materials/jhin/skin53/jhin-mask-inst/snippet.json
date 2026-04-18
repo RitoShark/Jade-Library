@@ -1,0 +1,31 @@
+{
+  "id": "jhin-mask-inst",
+  "name": "Jhin Mask Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:25.534Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jhin_mask_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin53",
+    "bin": "data/characters/jhin/skins/skin53.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin53/Materials/Jhin_Mask_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin53",
+      "bin": "data/characters/jhin/skins/skin53.bin"
+    }
+  ]
+}

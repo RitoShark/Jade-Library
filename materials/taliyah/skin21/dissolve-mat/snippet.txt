@@ -1,0 +1,126 @@
+"jadelib_dissolve_mat" = StaticMaterialDef {
+    name: string = "jadelib_dissolve_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/dissolve-mat/3026_Base_Mask01.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/dissolve-mat/Blank.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.6399939060211182, 0.3799954354763031, 0.8200045824050903, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_DISSOLVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Diffuse_Maps"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "taliyahrsurfing"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "taliyahrsurfing"
+                                    }
+                                    mDelayOff: f32 = 5
+                                }
+                                mOnValue: f32 = 0
+                                mOffValue: f32 = 1
+                                mTurnOnTimeSec: f32 = 2
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+        }
+    }
+}

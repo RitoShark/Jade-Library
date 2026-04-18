@@ -1,0 +1,107 @@
+"jadelib_gradient_mapped_fresnel_inst" = StaticMaterialDef {
+    name: string = "jadelib_gradient_mapped_fresnel_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Masks"
+            texturePath: string = "assets/jadelib/gradient-mapped-fresnel-inst/Ahri_Skin14_TX_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/gradient-mapped-fresnel-inst/Default_DoubleGradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "WP_Base_Texture"
+            texturePath: string = "assets/jadelib/gradient-mapped-fresnel-inst/Ahri_Skin14_Ult_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "WP_Top_Texture"
+            texturePath: string = "assets/jadelib/gradient-mapped-fresnel-inst/Ahri_Skin14_Z_Background01.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Outer"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Ss_Fresnel_Color"
+            value: vec4 = { 1, 0.6509804129600525, 0.9450980424880981, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Ss_Fresnel_Size"
+            value: vec4 = { 0.25, 0.75, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed_X"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed_Y"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bias_Outer"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WP_Top_Scale"
+            value: vec4 = { 6, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WP_Alpha_Bias"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ss_scroll"
+            value: vec4 = { 0.10000000149011612, 0.10000000149011612, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "WORLD_PROJECTION"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/GradientMappedFresnel_ScrollingOverlay"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "WORLD_PROJECTION"
+            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                mScriptName: string = "AhriR"
+            }
+        }
+    }
+}

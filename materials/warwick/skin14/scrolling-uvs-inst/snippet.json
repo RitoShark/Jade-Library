@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:02.928Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Warwick_Skin10_Ribbon_Shimmer.tex",
+      "updatedAt": "2026-04-17T18:07:02.922Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin14",
+    "bin": "data/characters/warwick/skins/skin14.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin14/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin14",
+      "bin": "data/characters/warwick/skins/skin14.bin"
+    }
+  ]
+}

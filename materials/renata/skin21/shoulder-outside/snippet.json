@@ -1,0 +1,44 @@
+{
+  "id": "shoulder-outside",
+  "name": "Shoulder Outside",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.664Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shoulder_outside",
+  "textureFiles": [
+    {
+      "name": "Renata_Skin21_Glass_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:21.657Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:21.657Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:48:21.657Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin21",
+    "bin": "data/characters/renata/skins/skin21.bin",
+    "entryKey": "Characters/Renata/Skins/Skin21/Materials/Shoulder_Outside"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin21",
+      "bin": "data/characters/renata/skins/skin21.bin"
+    }
+  ]
+}

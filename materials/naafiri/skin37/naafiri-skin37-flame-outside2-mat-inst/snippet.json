@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-skin37-flame-outside2-mat-inst",
+  "name": "Naafiri Skin37 Flame Outside2 Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:46.988Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin37_flame_outside2_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.982Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.982Z"
+    },
+    {
+      "name": "Naafiri_Skin37_Flame_Outside_TX_CM.Chroma_Naafiri_WarHounds.tex",
+      "updatedAt": "2026-04-17T17:40:46.982Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.982Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin37",
+    "bin": "data/characters/naafiri/skins/skin37.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin37/Materials/Naafiri_Skin37_FlameOutside2_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin37",
+      "bin": "data/characters/naafiri/skins/skin37.bin"
+    }
+  ]
+}

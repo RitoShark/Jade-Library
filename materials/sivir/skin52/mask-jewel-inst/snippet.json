@@ -1,0 +1,36 @@
+{
+  "id": "mask-jewel-inst",
+  "name": "Mask Jewel Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.488Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mask_jewel_inst",
+  "textureFiles": [
+    {
+      "name": "Sivir_Skin50_Mask_Jewel.tex",
+      "updatedAt": "2026-04-17T17:55:10.482Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin52",
+    "bin": "data/characters/sivir/skins/skin52.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin52/Materials/Mask_Jewel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin52",
+      "bin": "data/characters/sivir/skins/skin52.bin"
+    }
+  ]
+}

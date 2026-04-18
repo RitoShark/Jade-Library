@@ -1,0 +1,48 @@
+{
+  "id": "ramhorn-fx",
+  "name": "Ramhorn Fx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:42.711Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ramhorn_fx",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:02:42.705Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:02:42.705Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.705Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:02:42.705Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Udyr",
+    "skin": "skin10",
+    "bin": "data/characters/udyr/skins/skin10.bin",
+    "entryKey": "Characters/Udyr/Skins/Skin10/Materials/RamhornFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Udyr",
+      "skin": "skin10",
+      "bin": "data/characters/udyr/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+"jadelib_demon_arm" = StaticMaterialDef {
+    name: string = "jadelib_demon_arm"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/demon-arm/Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_UV_Range"
+            texturePath: string = "assets/jadelib/demon-arm/Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask01"
+            texturePath: string = "assets/jadelib/demon-arm/lava_actual.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask02"
+            texturePath: string = "assets/jadelib/demon-arm/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask03"
+            texturePath: string = "assets/jadelib/demon-arm/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Change_Texture"
+            texturePath: string = "assets/jadelib/demon-arm/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.6627451181411743, 0.06666667014360428, 0.07450980693101883, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 2.4000000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.6078431606292725, 0, 0.007843137718737125, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_01"
+            value: vec4 = { 0.30000001192092896, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_02"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_03"
+            value: vec4 = { 0.699999988079071, 0.699999988079071, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGB_Mask_View"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Change_Val"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 5
+                    mTurnOnTimeSec: f32 = 4
+                    mTurnOffTimeSec: f32 = 2
+                }
+            }
+        }
+    }
+}

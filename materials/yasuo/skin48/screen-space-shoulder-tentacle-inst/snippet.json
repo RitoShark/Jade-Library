@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-shoulder-tentacle-inst",
+  "name": "Screen Space Shoulder Tentacle Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:12.287Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_shoulder_tentacle_inst",
+  "textureFiles": [
+    {
+      "name": "Yasuo_Skin48_HairFlow.tex",
+      "updatedAt": "2026-04-17T18:09:12.279Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin48",
+    "bin": "data/characters/yasuo/skins/skin48.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin48/Materials/ScreenSpace_Shoulder_Tentacle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin48",
+      "bin": "data/characters/yasuo/skins/skin48.bin"
+    }
+  ]
+}

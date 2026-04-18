@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-win-lv1-inst",
+  "name": "Matcap Iridescent Holographic Win Lv1 Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:44.392Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_win_lv1_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "Kayle_Skin87_Wings1_HoloMask_TX_CM.Chroma_Kayle_SpiritBlossom_Holo.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "Kayle_Iridescence_Lv1.Chroma_Kayle_SpiritBlossom_Holo.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    },
+    {
+      "name": "Generic_Noise3.tex",
+      "updatedAt": "2026-04-17T17:29:44.383Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin87",
+    "bin": "data/characters/kayle/skins/skin87.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin87/Materials/Matcap_Iridescent_Holographic_Win_LV1_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin87",
+      "bin": "data/characters/kayle/skins/skin87.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "aatrox-skin01-banner-inst",
+  "name": "Aatrox Skin01 Banner Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:07.892Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_skin01_banner_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin01_I_Banner.tex",
+      "updatedAt": "2026-04-17T17:06:07.887Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin1",
+    "bin": "data/characters/aatrox/skins/skin1.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin1/Materials/Aatrox_Skin01_Banner_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin1",
+      "bin": "data/characters/aatrox/skins/skin1.bin"
+    }
+  ]
+}

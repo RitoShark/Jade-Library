@@ -1,0 +1,114 @@
+"jadelib_panning_hardlight_visor" = StaticMaterialDef {
+    name: string = "jadelib_panning_hardlight_visor"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Add2_Pan"
+            texturePath: string = "assets/jadelib/panning-hardlight-visor/Jinx_Skin20_CubesMult3.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Add1_Pan"
+            texturePath: string = "assets/jadelib/panning-hardlight-visor/JinxMine_Skin20_holo-scroll.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blend1_Pan"
+            texturePath: string = "assets/jadelib/panning-hardlight-visor/Jinx_Skin20_Project_Diamond.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blend2_Pan"
+            texturePath: string = "assets/jadelib/panning-hardlight-visor/JinxMine_Skin20_holo-scroll.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "CapeMask"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add2_Scale"
+            value: vec4 = { 6, 12, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add2_ScrollSpeed"
+            value: vec4 = { 2, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add1_Scale"
+            value: vec4 = { 3, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add1_ScrollSpeed"
+            value: vec4 = { 1, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend1_Scale"
+            value: vec4 = { 1, 15, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend1_ScrollSpeed"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend2_Scale"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend2_ScrollSpeed"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend1_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend2_Color"
+            value: vec4 = { 0.14999619126319885, 0.0800030529499054, 0.22000457346439362, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Add1_Color"
+            value: vec4 = { 0.7372549176216125, 1, 0.1725490242242813, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Add2_Color"
+            value: vec4 = { 0.24313725531101227, 1, 0.24313725531101227, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/2Blend_2Add_Pan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

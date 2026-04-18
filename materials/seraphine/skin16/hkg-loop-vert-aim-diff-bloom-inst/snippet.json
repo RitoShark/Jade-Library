@@ -1,0 +1,31 @@
+{
+  "id": "hkg-loop-vert-aim-diff-bloom-inst",
+  "name": "Hkg Loop Vert Aim Diff Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:04.309Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_loop_vert_aim_diff_bloom_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin16",
+    "bin": "data/characters/seraphine/skins/skin16.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin16/Materials/HKG_LoopVertAim_Diff_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin16",
+      "bin": "data/characters/seraphine/skins/skin16.bin"
+    }
+  ]
+}

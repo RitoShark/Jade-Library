@@ -1,0 +1,250 @@
+"jadelib_aurelion_sol_skin36_ceramic_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_aurelion_sol_skin36_ceramic_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Vertex_Deform_Tex"
+            texturePath: string = "assets/jadelib/aurelion-sol-skin36-ceramic-mat-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "BloomMask_Texture"
+            texturePath: string = "assets/jadelib/aurelion-sol-skin36-ceramic-mat-inst/white.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/aurelion-sol-skin36-ceramic-mat-inst/Amumu_Skin34_TibbersApple_MC.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "OutlineMask_Texture"
+            texturePath: string = "assets/jadelib/aurelion-sol-skin36-ceramic-mat-inst/AurelionSol_Skin31_TX_CM_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/aurelion-sol-skin36-ceramic-mat-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 0.41762417554855347, 0.547539472579956, 0.729411780834198, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularTintColor"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineController"
+            value: vec4 = { 0.4000000059604645, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 0.8500000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveController"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveStrength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainTexUV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlipbookSize"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flipbook_NumberSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineMask_Strength"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 0.5, 1, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_DEFORM_TEX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ANIMATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_R_MASK_ON_DEFORM"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_MatCap_RMA_VertexDeform"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "OutlineColor"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "AurelionSolRAnnouncement"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                                    }
+                                }
+                            }
+                            mValue: pointer = LerpVec4LogicDriver {
+                                BoolDriver: pointer = FloatComparisonMaterialDriver {
+                                    mOperator: u32 = 1
+                                    mValueA: pointer = FloatLiteralMaterialDriver {}
+                                    mValueB: pointer = SineMaterialDriver {
+                                        mDriver: pointer = TimeMaterialDriver {
+                                            LoopTimeAsFraction: bool = false
+                                        }
+                                        mFrequency: f32 = 2
+                                    }
+                                }
+                                OnValue: vec4 = { 0.8500000238418579, 0.5799999833106995, 0.3700000047683716, 1 }
+                                OffValue: vec4 = { 0.5, 0.4099999964237213, 0.6000000238418579, 0 }
+                                TurnOnTimeSec: f32 = 0.4000000059604645
+                                TurnOffTimeSec: f32 = 0.4000000059604645
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.25999999046325684, 0.25, 0.8600000143051147, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "OutlineController"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "AurelionSolRAnnouncement"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                                    }
+                                }
+                            }
+                            mValue: pointer = LerpVec4LogicDriver {
+                                BoolDriver: pointer = FloatComparisonMaterialDriver {
+                                    mOperator: u32 = 1
+                                    mValueA: pointer = FloatLiteralMaterialDriver {}
+                                    mValueB: pointer = SineMaterialDriver {
+                                        mDriver: pointer = TimeMaterialDriver {
+                                            LoopTimeAsFraction: bool = false
+                                        }
+                                        mFrequency: f32 = 2
+                                    }
+                                }
+                                OnValue: vec4 = { 0.30000001192092896, 1, 0, 0 }
+                                OffValue: vec4 = { 0, 1, 0, 0 }
+                                TurnOnTimeSec: f32 = 0.4000000059604645
+                                TurnOffTimeSec: f32 = 0.4000000059604645
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 1, 0, 0 }
+                    }
+                }
+            }
+        }
+    }
+}

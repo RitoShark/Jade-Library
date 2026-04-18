@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-submesh-willump-recall-inst",
+  "name": "Hkg Mat Cap Submesh Willump Recall Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:20.773Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_submesh_willump_recall_inst",
+  "textureFiles": [
+    {
+      "name": "TwistedFate_Skin36_Willump_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:20.767Z"
+    },
+    {
+      "name": "TwistedFate_Skin36_RecallMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:20.767Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TwistedFate",
+    "skin": "skin36",
+    "bin": "data/characters/twistedfate/skins/skin36.bin",
+    "entryKey": "Characters/TwistedFate/Skins/Skin36/Materials/HKG_MatCap_submesh_WillumpRecall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TwistedFate",
+      "skin": "skin36",
+      "bin": "data/characters/twistedfate/skins/skin36.bin"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+"jadelib_kayle_skin54_wings_lvl6" = StaticMaterialDef {
+    name: string = "jadelib_kayle_skin54_wings_lvl6"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/kayle-skin54-wings-lvl6/Kayle_Skin54_Wings_lvl6_mask.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/kayle-skin54-wings-lvl6/Kayle_Skin54_Wings_lvl1_gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 3.0999999046325684, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Rate"
+            value: vec4 = { 0.10000000149011612, 23, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color"
+            value: vec4 = { 1, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+            value: vec4 = { 0.7099999785423279, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Sharpness"
+            value: vec4 = { 14.080780029296875, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Sharpness"
+            value: vec4 = { 0.0010000000474974513, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_COLORDODGE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDATIVE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LERP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Scrolling_ColorDodge_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_Bias"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "KayleEnrage"
+                    }
+                    mOnValue: f32 = 0.800000011920929
+                    mTurnOnTimeSec: f32 = 0.5
+                    mTurnOffTimeSec: f32 = 2
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KayleEnrage"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KayleEnrage"
+                                }
+                                mOffValue: f32 = 1
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveCeremony"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KaylePassiveCeremony"
+                                }
+                                mOnValue: f32 = 12
+                                mOffValue: f32 = 2
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveRank3"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KaylePassiveRank3"
+                                }
+                                mOnValue: f32 = 0.699999988079071
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "KayleEnrage"
+                    }
+                    mColorOn: vec4 = { 0.8274509906768799, 0.9137254953384399, 0.03529411926865578, 1 }
+                    mColorOff: vec4 = { 0.007843137718737125, 0.003921568859368563, 0.003921568859368563, 0 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Scrolling_Rate"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "KayleEnrage"
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_SmoothStep"
+                Enabled: bool = false
+                driver: pointer = TimeMaterialDriver {}
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Mask_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KayleEnrage"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KayleEnrage"
+                                }
+                                mOnValue: f32 = 0.800000011920929
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveRank3"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KaylePassiveRank3"
+                                }
+                                mOnValue: f32 = 1.25
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveRank3"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {}
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+        }
+    }
+}

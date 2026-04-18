@@ -1,0 +1,672 @@
+"jadelib_ahri_crystal_tails_inst" = StaticMaterialDef {
+    name: string = "jadelib_ahri_crystal_tails_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/ahri-crystal-tails-inst/Ahri_Skin60_RainbowGradient_3.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Lines_Texture"
+            texturePath: string = "assets/jadelib/ahri-crystal-tails-inst/Ahri_Skin60_Screenspace_Lines.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/ahri-crystal-tails-inst/Ahri_Skin60_TailMask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/ahri-crystal-tails-inst/Ahri_Skin60_FresnelGradient_1.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Parallax_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Lines_ScrollSpeed"
+            value: vec4 = { 0.05000000074505806, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Blend_Multiplier"
+            value: vec4 = { 1.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lines_Color"
+            value: vec4 = { 0.13725490868091583, 0.4117647111415863, 0.5843137502670288, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bias"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainColor"
+            value: vec4 = { 0.24313725531101227, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ColorIntensity"
+            value: vec4 = { 0.2750000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lines_Intensity"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GradientFresnel_Intensity"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lines_Tiling"
+            value: vec4 = { 7, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RainbowIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveMaskColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveMask_Value"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Ahri_Popstar_Crystal"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "SS_Blend_Multiplier"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 0.800000011920929
+                            mOffValue: f32 = 0.25
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 0.25
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 1.2000000476837158
+                            mOffValue: f32 = 0.47999998927116394
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0.800000011920929
+                            mOffValue: f32 = 0.47999998927116394
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Lines_Color"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.5568627715110779, 0.7333333492279053, 1, 1 }
+                                    { 0.8823529481887817, 0.5764706134796143, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 7.5
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    0.10499999672174454
+                                    0.21666666865348816
+                                    0.30666667222976685
+                                    0.3933333456516266
+                                    0.4883333444595337
+                                    0.5916666388511658
+                                    0.6866666674613953
+                                    0.7766666412353516
+                                    0.8666666746139526
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 1, 0, 0.9843137264251709, 1 }
+                                    { 0, 1, 0.5490196347236633, 1 }
+                                    { 0, 0, 1, 1 }
+                                    { 1, 0, 0.3176470696926117, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.615686297416687, 1, 1 }
+                                    { 0.6431372761726379, 0.027450980618596077, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.7019608020782471, 1, 1 }
+                                    { 1, 1, 1, 1 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                Enabled: bool = false
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 2.5
+                            mOffValue: f32 = 0.5
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 0.5
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "MainColor"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriTumble"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.7960784435272217, 1, 1 }
+                                    { 0.26274511218070984, 0.6823529601097107, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 0.7450980544090271, 0.8470588326454163, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell3"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.3499999940395355
+                                mTurnOffTimeSec: f32 = 0.800000011920929
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.08235294371843338, 1, 0.9725490212440491, 1 }
+                                    { 1, 0, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell1"
+                                        "Spell2"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.10000000149011612
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 0, 0.48235294222831726, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriSoulCrusher"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 0.12941177189350128, 1, 0.41960784792900085, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 7.5
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    0.10499999672174454
+                                    0.21666666865348816
+                                    0.30666667222976685
+                                    0.3933333456516266
+                                    0.4883333444595337
+                                    0.5916666388511658
+                                    0.6866666674613953
+                                    0.7766666412353516
+                                    0.8666666746139526
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 1, 0, 0.9843137264251709, 1 }
+                                    { 0, 1, 0.5490196347236633, 1 }
+                                    { 0, 0, 1, 1 }
+                                    { 1, 0, 0.3176470696926117, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.615686297416687, 1, 1 }
+                                    { 0.6431372761726379, 0.027450980618596077, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.7019608020782471, 1, 1 }
+                                    { 1, 1, 1, 1 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "ColorIntensity"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 0.75
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0.30000001192092896
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell3"
+                                }
+                            }
+                            mOnValue: f32 = 0.949999988079071
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.3499999940395355
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell1"
+                                    "Spell2"
+                                }
+                            }
+                            mOnValue: f32 = 0.800000011920929
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriSoulCrusher"
+                            }
+                            mOnValue: f32 = 0.47999998927116394
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = 0.5
+                            mOffValue: f32 = 0.20000000298023224
+                            mTurnOnTimeSec: f32 = 5
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Lines_Intensity"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 11
+                            mOffValue: f32 = 10
+                            mTurnOnTimeSec: f32 = 0.15000000596046448
+                            mTurnOffTimeSec: f32 = 0.15000000596046448
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 10
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.10000000149011612
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = 0.20000000298023224
+                            mOffValue: f32 = 10
+                            mTurnOnTimeSec: f32 = 0.6499999761581421
+                            mTurnOffTimeSec: f32 = 0.10000000149011612
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "FacetFresnelColor"
+                Enabled: bool = false
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.3490196168422699, 0.8196078538894653, 0.9882352948188782, 1 }
+                                    { 0.42352941632270813, 0.6745098233222961, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mOnValue: f32 = 8
+                                mTurnOnTimeSec: f32 = 7.5
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    0.10499999672174454
+                                    0.21666666865348816
+                                    0.30666667222976685
+                                    0.3933333456516266
+                                    0.4883333444595337
+                                    0.5916666388511658
+                                    0.6866666674613953
+                                    0.7766666412353516
+                                    0.8666666746139526
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 0.8313725590705872, 1, 1 }
+                                    { 0, 0.9019607901573181, 1, 1 }
+                                    { 0, 1, 0.5490196347236633, 1 }
+                                    { 0, 0, 1, 1 }
+                                    { 0, 0.7333333492279053, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.615686297416687, 1, 1 }
+                                    { 0, 0.48235294222831726, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.7019608020782471, 1, 1 }
+                                    { 1, 1, 1, 1 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "GradientFresnel_Intensity"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 3.8499999046325684
+                            mOffValue: f32 = 3.25
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 1.5
+                            mOffValue: f32 = 3.25
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "SS_ScrollSpeed"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 0.15000000596046448
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Bias"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "death"
+                        }
+                    }
+                    mOnValue: f32 = 0.20000000298023224
+                    mOffValue: f32 = 0.029999999329447746
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "RainbowIntensity"
+                Enabled: bool = false
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0.4000000059604645
+                            mOffValue: f32 = 0.6000000238418579
+                            mTurnOnTimeSec: f32 = 0.5
+                            mTurnOffTimeSec: f32 = 0.5
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = 3
+                            mOffValue: f32 = 0.6000000238418579
+                            mTurnOnTimeSec: f32 = 0.5
+                            mTurnOffTimeSec: f32 = 0.5
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

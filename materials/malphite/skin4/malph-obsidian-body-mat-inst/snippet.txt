@@ -1,0 +1,223 @@
+"jadelib_malph_obsidian_body_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_malph_obsidian_body_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Blend_Texture"
+            texturePath: string = "assets/jadelib/malph-obsidian-body-mat-inst/Malphite_Skin04_W_Malphite_Blend.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpaceTexture"
+            texturePath: string = "assets/jadelib/malph-obsidian-body-mat-inst/Malphite_Base_P_Glowing_Fire.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "MaskedBlendMult"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSScale"
+            value: vec4 = { 6, 6, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 1, 0.4599984884262085, 0.2899976968765259, 0.45000380277633667 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0.10000000149011612, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSFresnelSize"
+            value: vec4 = { 0.30000001192092896, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnels_Blend"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorFresnelSize"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_Fresnel_color"
+            value: vec4 = { 1, 0.11764705926179886, 0.003921568859368563, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_SS_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Masked_Blend"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnels_Blend"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "MalphiteShieldRemoval"
+                        }
+                        mOnValue: f32 = 0.5
+                        mTurnOnTimeSec: f32 = 0.20000000298023224
+                        mTurnOffTimeSec: f32 = 0.20000000298023224
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            2.070582628250122
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "MalphiteShieldRemoval"
+                        }
+                        mOnValue: f32 = 0.10000000149011612
+                        mTurnOnTimeSec: f32 = 0.20000000298023224
+                        mTurnOffTimeSec: f32 = 0.20000000298023224
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            2.070582628250122
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "MaskedBlendMult"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MalphiteCleave"
+                                }
+                                mTurnOnTimeSec: f32 = 0.5
+                                mTurnOffTimeSec: f32 = 0.5
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MalphiteThunderclap"
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.10000000149011612
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "MalphiteShieldRemoval"
+                        }
+                        TextureName: string = "ASSETS/Characters/Malphite/Skins/Skin04/Malphite_Skin04_P_Damaged.tex"
+                    }
+                }
+            }
+        }
+    }
+}

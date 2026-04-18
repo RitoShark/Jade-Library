@@ -1,0 +1,31 @@
+{
+  "id": "outline-vfxweapon",
+  "name": "Outline Vfxweapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:59.378Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_vfxweapon",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin37",
+    "bin": "data/characters/soraka/skins/skin37.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin37/Materials/Outline_Vfxweapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin37",
+      "bin": "data/characters/soraka/skins/skin37.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dissolve-out-inst-inst",
+  "name": "Dissolve Out Inst Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:06.348Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_out_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Gwen_Base_R_SmokeErode.tex",
+      "updatedAt": "2026-04-17T17:21:06.339Z"
+    },
+    {
+      "name": "Gwen_Base_W_color-hold.tex",
+      "updatedAt": "2026-04-17T17:21:06.339Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gwen",
+    "skin": "skin0",
+    "bin": "data/characters/gwen/skins/skin0.bin",
+    "entryKey": "Characters/Gwen/Skins/Skin0/Materials/Dissolve_out_Inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gwen",
+      "skin": "skin0",
+      "bin": "data/characters/gwen/skins/skin0.bin"
+    }
+  ]
+}

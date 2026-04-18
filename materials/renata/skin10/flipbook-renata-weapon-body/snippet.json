@@ -1,0 +1,40 @@
+{
+  "id": "flipbook-renata-weapon-body",
+  "name": "Flipbook Renata Weapon Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:20.651Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_renata_weapon_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:48:20.645Z"
+    },
+    {
+      "name": "Renata_Skin10_Weapon_Body_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:20.645Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin10",
+    "bin": "data/characters/renata/skins/skin10.bin",
+    "entryKey": "Characters/Renata/Skins/Skin10/Materials/Flipbook_Renata_Weapon_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin10",
+      "bin": "data/characters/renata/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "lillia-skin51-ult-horn-inst",
+  "name": "Lillia Skin51 Ult Horn Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:05.637Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lillia_skin51_ult_horn_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:34:05.617Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:05.617Z"
+    },
+    {
+      "name": "Lillia_Skin51_UltBody_TX_CM.Chroma_Lillia_PetalsofSpring.tex",
+      "updatedAt": "2026-04-17T17:34:05.617Z"
+    },
+    {
+      "name": "Lillia_Skin46_Hornoutline_mask_TX_CM.SKINS_Lillia_Skin46.tex",
+      "updatedAt": "2026-04-17T17:34:05.617Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin51",
+    "bin": "data/characters/lillia/skins/skin51.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin51/Materials/Lillia_Skin51_UltHorn_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin51",
+      "bin": "data/characters/lillia/skins/skin51.bin"
+    }
+  ]
+}

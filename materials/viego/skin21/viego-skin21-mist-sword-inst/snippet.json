@@ -1,0 +1,56 @@
+{
+  "id": "viego-skin21-mist-sword-inst",
+  "name": "Viego Skin21 Mist Sword Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:36.938Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin21_mist_sword_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin21_Crown_Sword_ESkill_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    },
+    {
+      "name": "Viego_Skin21_Crown_Sword_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:05:36.931Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin21",
+    "bin": "data/characters/viego/skins/skin21.bin",
+    "entryKey": "Characters/Viego/Skins/Skin21/Materials/Viego_Skin21_MistSword_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin21",
+      "bin": "data/characters/viego/skins/skin21.bin"
+    }
+  ]
+}

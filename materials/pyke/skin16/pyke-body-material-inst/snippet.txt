@@ -1,0 +1,172 @@
+"jadelib_pyke_body_material_inst" = StaticMaterialDef {
+    name: string = "jadelib_pyke_body_material_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpaceTexture"
+            texturePath: string = "assets/jadelib/pyke-body-material-inst/Pyke_Skin16_Hologram.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSScale"
+            value: vec4 = { 8, 7, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSFresnelSize"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 1, 0.23529411852359772, 0.003921568859368563, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Master_Blend"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseAlpha"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Alpha_Mult"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_SS_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScreenSpace_FresnelMasked_AlphaMult"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Master_Blend"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "PykeW"
+                                }
+                                mTurnOnTimeSec: f32 = 0.5
+                                mTurnOffTimeSec: f32 = 0.5
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "PykeW"
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.10000000149011612
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "PykeW"
+                        }
+                        mOnValue: f32 = 3
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            2.070582628250122
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

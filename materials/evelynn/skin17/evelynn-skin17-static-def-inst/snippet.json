@@ -1,0 +1,42 @@
+{
+  "id": "evelynn-skin17-static-def-inst",
+  "name": "Evelynn Skin17 Static Def Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:11.781Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_evelynn_skin17_static_def_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:11.774Z"
+    },
+    {
+      "name": "common_color-hold.tex",
+      "updatedAt": "2026-04-17T17:17:11.774Z"
+    },
+    {
+      "name": "Evelynn_Skin15_Mask_v02.tex",
+      "updatedAt": "2026-04-17T17:17:11.774Z"
+    },
+    {
+      "name": "Evelynn_Skin17_ShadowForm_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:11.774Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin17",
+    "bin": "data/characters/evelynn/skins/skin17.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin17/Materials/EvelynnSkin17_staticDef_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin17",
+      "bin": "data/characters/evelynn/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ora-inst",
+  "name": "Ora Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:11.775Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ora_inst",
+  "textureFiles": [
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:06:11.770Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin16",
+    "bin": "data/characters/aatrox/skins/skin16.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin16/Materials/Ora_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin16",
+      "bin": "data/characters/aatrox/skins/skin16.bin"
+    }
+  ]
+}

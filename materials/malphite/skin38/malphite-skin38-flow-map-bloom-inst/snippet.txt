@@ -1,0 +1,162 @@
+"jadelib_malphite_skin38_flow_map_bloom_inst" = StaticMaterialDef {
+    name: string = "jadelib_malphite_skin38_flow_map_bloom_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap"
+            texturePath: string = "assets/jadelib/malphite-skin38-flow-map-bloom-inst/Malphite_Skin37_CloudFM_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/malphite-skin38-flow-map-bloom-inst/white.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Specular_Mask"
+            texturePath: string = "assets/jadelib/malphite-skin38-flow-map-bloom-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Frequency"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Speed"
+            value: vec4 = { 0.9125000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir"
+            value: vec4 = { 5, 5, 0.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Frequency"
+            value: vec4 = { 0.7749999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { 0.38499999046325684, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+            value: vec4 = { 0.32499998807907104, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorIntensity"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 1, 0.23137255012989044, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.5215686559677124, 0.3019607961177826, 0.7019608020782471, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Noise_Tiling_Speed"
+            value: vec4 = { 1, 3, 0.20000000298023224, -0.10000000149011612 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir_Intensity"
+            value: vec4 = { 0.24500000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 1.774999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Intensity"
+            value: vec4 = { 0.987500011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Color"
+            value: vec4 = { 1, 0.7372549176216125, 0.5372549295425415, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "APPLY_FLOWMAP_TO_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWDIRECTIONSWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Flowmap_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "malphiteshieldremoval"
+                        }
+                        TextureName: string = "ASSETS/Characters/Malphite/Skins/Skin38/Particles/Malphite_Skin38_Tex_Red.tex"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+"jadelib_hair_bvfx_inst" = StaticMaterialDef {
+    name: string = "jadelib_hair_bvfx_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/hair-bvfx-inst/DrMundo_Skin06_Particles_1_234.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Mask"
+            texturePath: string = "assets/jadelib/hair-bvfx-inst/Nasus_Skin45_HairMask_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0.1921568661928177, 0.501960813999176, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.3300000429153442, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_ScrollSpeed"
+            value: vec4 = { 0.05000000074505806, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Color"
+            value: vec4 = { 0, 1, 0, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_Alpha_Bloom_Diff"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

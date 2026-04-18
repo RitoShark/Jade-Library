@@ -1,0 +1,52 @@
+{
+  "id": "vex-skin29-shadow-mat",
+  "name": "Vex Skin29 Shadow Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:56.518Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vex_skin29_shadow_mat",
+  "textureFiles": [
+    {
+      "name": "Vex_Skin29_NM_TX_CM.SKINS_Vex_Skin29.tex",
+      "updatedAt": "2026-04-17T18:04:56.512Z"
+    },
+    {
+      "name": "Vex_Skin29_ColorMask_TX_CM.SKINS_Vex_Skin29.tex",
+      "updatedAt": "2026-04-17T18:04:56.512Z"
+    },
+    {
+      "name": "Gradient_test_04.tex",
+      "updatedAt": "2026-04-17T18:04:56.512Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:04:56.512Z"
+    },
+    {
+      "name": "Vex_Skin29_RMA_TX_CM.SKINS_Vex_Skin29.tex",
+      "updatedAt": "2026-04-17T18:04:56.512Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin29",
+    "bin": "data/characters/vex/skins/skin29.bin",
+    "entryKey": "Characters/Vex/Skins/Skin29/Materials/Vex_Skin29_Shadow_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin29",
+      "bin": "data/characters/vex/skins/skin29.bin"
+    }
+  ]
+}

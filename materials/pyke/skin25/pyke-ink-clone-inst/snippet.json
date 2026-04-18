@@ -1,0 +1,44 @@
+{
+  "id": "pyke-ink-clone-inst",
+  "name": "Pyke Ink Clone Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:15.521Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_ink_clone_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:15.510Z"
+    },
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:46:15.510Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:46:15.510Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin25",
+    "bin": "data/characters/pyke/skins/skin25.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin25/Materials/Pyke_InkClone_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin25",
+      "bin": "data/characters/pyke/skins/skin25.bin"
+    }
+  ]
+}

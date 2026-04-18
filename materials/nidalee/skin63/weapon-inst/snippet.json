@@ -1,0 +1,36 @@
+{
+  "id": "weapon-inst",
+  "name": "Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:03.791Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin58_CMask.SKINS_Nidalee_Skin58.tex",
+      "updatedAt": "2026-04-17T17:43:03.786Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin63",
+    "bin": "data/characters/nidalee/skins/skin63.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin63/Materials/Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin63",
+      "bin": "data/characters/nidalee/skins/skin63.bin"
+    }
+  ]
+}

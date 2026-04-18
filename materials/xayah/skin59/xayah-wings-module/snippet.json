@@ -1,0 +1,64 @@
+{
+  "id": "xayah-wings-module",
+  "name": "Xayah Wings Module",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:43.180Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xayah_wings_module",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "Xayah_Skin57_Wing_TX_CM_ScrollMask.SKINS_Xayah_Skin57.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "Xayah_Skin57_Wing_TX_CM_MaskInner.SKINS_Xayah_Skin57.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:43.170Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin59",
+    "bin": "data/characters/xayah/skins/skin59.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin59/Materials/Xayah_Wings_Module"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin59",
+      "bin": "data/characters/xayah/skins/skin59.bin"
+    }
+  ]
+}

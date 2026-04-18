@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:32.445Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin34_Glass_Matcap.tex",
+      "updatedAt": "2026-04-17T17:34:32.438Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:32.438Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin34",
+    "bin": "data/characters/lissandra/skins/skin34.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin34/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin34",
+      "bin": "data/characters/lissandra/skins/skin34.bin"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+"jadelib_sylas_chains_inst" = StaticMaterialDef {
+    name: string = "jadelib_sylas_chains_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "texture_scroll"
+            texturePath: string = "assets/jadelib/sylas-chains-inst/Sylas_Skin13_Particles_2_12.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "fresnel_color_ult"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollRate"
+            value: vec4 = { 0, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_size_ult"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias_ult"
+            value: vec4 = { 0.10000000149011612, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollRate_ult"
+            value: vec4 = { 0.5, -0.10000000149011612, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ULTIMATE"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Sylas_Chains"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "SylasRBuff"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sylas/Skins/Skin19/Sylas_Skin19_Chain_Lock_R_TX_CM.tex"
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "ULTIMATE"
+            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                mScriptName: string = "SylasRBuff"
+            }
+        }
+    }
+}

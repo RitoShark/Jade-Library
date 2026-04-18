@@ -1,0 +1,82 @@
+"jadelib_ekko_skin52_glass_inst" = StaticMaterialDef {
+    name: string = "jadelib_ekko_skin52_glass_inst"
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Color1"
+            value: vec4 = { 0.06999313086271286, 0.009994659572839737, 0.14999619126319885, 0.08999770879745483 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Color2"
+            value: vec4 = { 1, 0.8745098114013672, 0.3607843220233917, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Inner"
+            value: vec4 = { 58.400875091552734, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Outer"
+            value: vec4 = { 4.649275302886963, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Roughness"
+            value: vec4 = { 6.699999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { -0.125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunColor"
+            value: vec4 = { 0.9098039269447327, 0.0470588244497776, 0.6823529601097107, 0.6901960968971252 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Intensity"
+            value: vec4 = { 2.3125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Bias"
+            value: vec4 = { 0.7400000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Style2_Color1"
+            value: vec4 = { 1, 0.9254902005195618, 0.5411764979362488, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Style2_Color2"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DIFFERENT_STYLE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Glass"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

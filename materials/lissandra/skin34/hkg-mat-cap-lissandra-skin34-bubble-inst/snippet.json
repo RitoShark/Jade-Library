@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-lissandra-skin34-bubble-inst",
+  "name": "Hkg Mat Cap Lissandra Skin34 Bubble Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:32.513Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_lissandra_skin34_bubble_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin34_MatCap_Bubble_05.tex",
+      "updatedAt": "2026-04-17T17:34:32.508Z"
+    },
+    {
+      "name": "Lissandra_Skin34_MatCap_Bubble_05.tex",
+      "updatedAt": "2026-04-17T17:34:32.508Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin34",
+    "bin": "data/characters/lissandra/skins/skin34.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin34/Materials/HKG_MatCap_Lissandra_Skin34_Bubble_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin34",
+      "bin": "data/characters/lissandra/skins/skin34.bin"
+    }
+  ]
+}

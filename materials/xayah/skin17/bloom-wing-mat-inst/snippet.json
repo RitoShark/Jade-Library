@@ -1,0 +1,36 @@
+{
+  "id": "bloom-wing-mat-inst",
+  "name": "Bloom Wing Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:37.335Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_wing_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Xayah_Skin17_Passive_Wing_AvatarBloom.tex",
+      "updatedAt": "2026-04-17T18:07:37.329Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin17",
+    "bin": "data/characters/xayah/skins/skin17.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin17/Materials/Bloom_Wing_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin17",
+      "bin": "data/characters/xayah/skins/skin17.bin"
+    }
+  ]
+}

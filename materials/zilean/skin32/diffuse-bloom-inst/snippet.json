@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:36.647Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:36.640Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin32",
+    "bin": "data/characters/zilean/skins/skin32.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin32/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin32",
+      "bin": "data/characters/zilean/skins/skin32.bin"
+    }
+  ]
+}

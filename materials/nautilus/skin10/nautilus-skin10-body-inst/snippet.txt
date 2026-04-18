@@ -1,0 +1,183 @@
+"jadelib_nautilus_skin10_body_inst" = StaticMaterialDef {
+    name: string = "jadelib_nautilus_skin10_body_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap"
+            texturePath: string = "assets/jadelib/nautilus-skin10-body-inst/Nautilus_Skin09_TX_Flowmap.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/nautilus-skin10-body-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Specular_Mask"
+            texturePath: string = "assets/jadelib/nautilus-skin10-body-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Frequency"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Speed"
+            value: vec4 = { 0.17499999701976776, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Speed"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir"
+            value: vec4 = { 3, 2.700000047683716, 2.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Frequency"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { -0.09000000357627869, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+            value: vec4 = { 0.6549999713897705, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorIntensity"
+            value: vec4 = { 5.099999904632568, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color_Intensity"
+            value: vec4 = { 7.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 0.6392157077789307, 0.23529411852359772, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.7647058963775635, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Noise_Tiling_Speed"
+            value: vec4 = { 1, 3, 0.20000000298023224, -0.10000000149011612 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 1.0499999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Intensity"
+            value: vec4 = { 0.3199999928474426, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Color"
+            value: vec4 = { 0.0010000000474974513, 0.0010000000474974513, 0.0010000000474974513, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "APPLY_FLOWMAP_TO_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWDIRECTIONSWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Flowmap_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Anim_Scale_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "Recall"
+                        }
+                    }
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 2
+                    mTurnOnTimeSec: f32 = 4
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Anim_Wave_Dir_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "Recall"
+                        }
+                    }
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 1
+                    mTurnOnTimeSec: f32 = 4
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-alpha-add-inst",
+  "name": "Diffuse Alpha Add Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:03.209Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_add_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:06:03.201Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viktor",
+    "skin": "skin2",
+    "bin": "data/characters/viktor/skins/skin2.bin",
+    "entryKey": "Characters/Viktor/Skins/Skin2/Materials/Diffuse_Alpha_add_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viktor",
+      "skin": "skin2",
+      "bin": "data/characters/viktor/skins/skin2.bin"
+    }
+  ]
+}

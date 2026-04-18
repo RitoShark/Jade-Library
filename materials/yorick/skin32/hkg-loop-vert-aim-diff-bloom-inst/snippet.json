@@ -1,0 +1,31 @@
+{
+  "id": "hkg-loop-vert-aim-diff-bloom-inst",
+  "name": "Hkg Loop Vert Aim Diff Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:32.089Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_loop_vert_aim_diff_bloom_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin32",
+    "bin": "data/characters/yorick/skins/skin32.bin",
+    "entryKey": "Characters/Yorick/Skins/Skin32/Materials/HKG_LoopVertAim_Diff_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin32",
+      "bin": "data/characters/yorick/skins/skin32.bin"
+    }
+  ]
+}

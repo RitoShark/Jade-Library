@@ -1,0 +1,48 @@
+{
+  "id": "sona-skin36-sleeves",
+  "name": "Sona Skin36 Sleeves",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:12.551Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin36_sleeves",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:12.545Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:12.545Z"
+    },
+    {
+      "name": "Sona_Skin36_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:56:12.545Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:12.545Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin36",
+    "bin": "data/characters/sona/skins/skin36.bin",
+    "entryKey": "Characters/Sona/Skins/Skin36/Materials/Sona_Skin36_Sleeves"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin36",
+      "bin": "data/characters/sona/skins/skin36.bin"
+    }
+  ]
+}

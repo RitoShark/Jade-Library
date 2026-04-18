@@ -1,0 +1,48 @@
+{
+  "id": "malphite-passive-break-inst",
+  "name": "Malphite Passive Break Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:49.021Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_malphite_passive_break_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:49.014Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:49.014Z"
+    },
+    {
+      "name": "malphite_skin09_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:36:49.014Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:49.014Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin9",
+    "bin": "data/characters/malphite/skins/skin9.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin9/Materials/Malphite_Passive_Break_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin9",
+      "bin": "data/characters/malphite/skins/skin9.bin"
+    }
+  ]
+}

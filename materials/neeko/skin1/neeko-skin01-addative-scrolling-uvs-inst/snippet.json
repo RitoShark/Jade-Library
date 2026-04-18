@@ -1,0 +1,48 @@
+{
+  "id": "neeko-skin01-addative-scrolling-uvs-inst",
+  "name": "Neeko Skin01 Addative Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:33.901Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_neeko_skin01_addative_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:33.895Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:33.895Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:33.895Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:33.895Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin1",
+    "bin": "data/neeko_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin1/Materials/Neeko_Skin01_Addative_ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin1",
+      "bin": "data/neeko_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin"
+    }
+  ]
+}

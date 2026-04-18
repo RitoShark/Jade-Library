@@ -1,0 +1,36 @@
+{
+  "id": "kayle-skin78-sword-bloom",
+  "name": "Kayle Skin78 Sword Bloom",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.320Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin78_sword_bloom",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin78_Sword_Alpha_TX_CM.SKINS_Kayle_Skin78.tex",
+      "updatedAt": "2026-04-17T17:29:43.315Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin78",
+    "bin": "data/characters/kayle/skins/skin78.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin78/Materials/Kayle_Skin78_Sword_bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin78",
+      "bin": "data/characters/kayle/skins/skin78.bin"
+    }
+  ]
+}

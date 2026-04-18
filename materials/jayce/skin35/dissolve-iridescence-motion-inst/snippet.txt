@@ -1,0 +1,170 @@
+"jadelib_dissolve_iridescence_motion_inst" = StaticMaterialDef {
+    name: string = "jadelib_dissolve_iridescence_motion_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-inst/EDG_Rainbow.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-inst/Base_plasma_noise.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-inst/velvet_NM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/dissolve-iridescence-motion-inst/Nilah_Orb_TX_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pan_Texture"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_UV_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Film_Depth"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.014999999664723873, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rotation_Center"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rotation_Speed"
+            value: vec4 = { 0.550000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Power"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distort_Amount"
+            value: vec4 = { 0.07000000029802322, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.3333333432674408, 1, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ROTATION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PAN"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Iridescence_Motion"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "JayceIsMelee"
+                    }
+                    OnValue: vec4 = { 0.9100000262260437, 0.2800000011920929, 0.41999998688697815, 1 }
+                    OffValue: vec4 = { 0.2199999988079071, 0.3199999928474426, 0.9100000262260437, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = NotMaterialDriver {
+                            mDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "JayceIsMelee"
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Jayce/Skins/Skin35/Jayce_Skin35_WeaponOrb_Crossbow_TX_CM.SKINS_Jayce_Skin35.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "JayceIsMelee"
+                        }
+                        TextureName: string = "ASSETS/Characters/Jayce/Skins/Skin35/Jayce_Skin35_WeaponOrb_TX_CM.SKINS_Jayce_Skin35.tex"
+                    }
+                }
+            }
+        }
+    }
+}

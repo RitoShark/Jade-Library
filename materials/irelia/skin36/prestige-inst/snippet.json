@@ -1,0 +1,42 @@
+{
+  "id": "prestige-inst",
+  "name": "Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:35.832Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Skin36_Mask_CM.tex",
+      "updatedAt": "2026-04-17T17:22:35.826Z"
+    },
+    {
+      "name": "Irelia_Skin36_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:22:35.826Z"
+    },
+    {
+      "name": "Lux_Skin40_1Q_SmokeErode.tex",
+      "updatedAt": "2026-04-17T17:22:35.826Z"
+    },
+    {
+      "name": "Irelia_Skin36_Mask_CM.tex",
+      "updatedAt": "2026-04-17T17:22:35.826Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin36",
+    "bin": "data/characters/irelia/skins/skin36.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin36/Materials/Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin36",
+      "bin": "data/characters/irelia/skins/skin36.bin"
+    }
+  ]
+}

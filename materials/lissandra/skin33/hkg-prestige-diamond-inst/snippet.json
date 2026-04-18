@@ -1,0 +1,57 @@
+{
+  "id": "hkg-prestige-diamond-inst",
+  "name": "Hkg Prestige Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.481Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_prestige_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:31.599Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:31.599Z"
+    },
+    {
+      "name": "Lissandra_Skin33_Eclipse_colorGrad_03.tex",
+      "updatedAt": "2026-04-17T17:34:31.599Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:31.599Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:31.599Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin33",
+    "bin": "data/characters/lissandra/skins/skin33.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin33/Materials/HKG_Prestige_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin33",
+      "bin": "data/characters/lissandra/skins/skin33.bin"
+    },
+    {
+      "champion": "Sivir",
+      "skin": "skin51",
+      "bin": "data/characters/sivir/skins/skin51.bin"
+    }
+  ]
+}

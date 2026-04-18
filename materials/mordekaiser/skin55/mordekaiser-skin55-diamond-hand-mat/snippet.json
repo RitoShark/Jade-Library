@@ -1,0 +1,64 @@
+{
+  "id": "mordekaiser-skin55-diamond-hand-mat",
+  "name": "Mordekaiser Skin55 Diamond Hand Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:55.646Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_skin55_diamond_hand_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "Winterblessed_Warwick_colorBlue_01.SKINS_Mordekaiser_Skin55.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "blue.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:55.640Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin55",
+    "bin": "data/characters/mordekaiser/skins/skin55.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin55/Materials/Mordekaiser_Skin55_DiamondHand_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin55",
+      "bin": "data/characters/mordekaiser/skins/skin55.bin"
+    }
+  ]
+}

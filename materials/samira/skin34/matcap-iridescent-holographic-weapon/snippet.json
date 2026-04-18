@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-weapon",
+  "name": "Matcap Iridescent Holographic Weapon",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:25.714Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_weapon",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "Samira_Skin34_Weapon_Mask_TX_CM.Chroma_Samira_HighNoon_Paragon.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T17:51:25.709Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Samira",
+    "skin": "skin34",
+    "bin": "data/characters/samira/skins/skin34.bin",
+    "entryKey": "Characters/Samira/Skins/Skin34/Materials/Matcap_Iridescent_Holographic_Weapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Samira",
+      "skin": "skin34",
+      "bin": "data/characters/samira/skins/skin34.bin"
+    }
+  ]
+}

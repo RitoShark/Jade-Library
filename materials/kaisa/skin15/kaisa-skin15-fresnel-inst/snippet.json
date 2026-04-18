@@ -1,0 +1,45 @@
+{
+  "id": "kaisa-skin15-fresnel-inst",
+  "name": "Kaisa Skin15 Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:34.812Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin15_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Kaisa_Skin15_Gold_Gradient_2.tex",
+      "updatedAt": "2026-04-17T17:26:28.842Z"
+    },
+    {
+      "name": "Kaisa_Skin15_R_ShieldMult.tex",
+      "updatedAt": "2026-04-17T17:26:28.842Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin15",
+    "bin": "data/characters/kaisa/skins/skin15.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin15/Materials/Kaisa_Skin15_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin15",
+      "bin": "data/characters/kaisa/skins/skin15.bin"
+    },
+    {
+      "champion": "Senna",
+      "skin": "skin9",
+      "bin": "data/characters/senna/skins/skin9.bin"
+    }
+  ]
+}

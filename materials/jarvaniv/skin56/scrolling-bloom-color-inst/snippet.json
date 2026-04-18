@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-bloom-color-inst",
+  "name": "Scrolling Bloom Color Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:00.985Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_bloom_color_inst",
+  "textureFiles": [
+    {
+      "name": "JarvanIV_Skin56_TX_Gradient.Chroma_JarvanIV_SSG.tex",
+      "updatedAt": "2026-04-17T17:24:00.980Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin56",
+    "bin": "data/characters/jarvaniv/skins/skin56.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin56/Materials/ScrollingBloomColor_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin56",
+      "bin": "data/characters/jarvaniv/skins/skin56.bin"
+    }
+  ]
+}

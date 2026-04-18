@@ -1,0 +1,64 @@
+{
+  "id": "blitzcrank-skin73-tube",
+  "name": "Blitzcrank Skin73 Tube",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:12.441Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin73_tube",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "Blitzcrank_Skin73_Iridescence_TX_CM.Chroma_Blitzcrank_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.435Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin73",
+    "bin": "data/characters/blitzcrank/skins/skin73.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin73/Materials/Blitzcrank_Skin73_Tube"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin73",
+      "bin": "data/characters/blitzcrank/skins/skin73.bin"
+    }
+  ]
+}

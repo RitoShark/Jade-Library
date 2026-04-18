@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:02.911Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Kalista_Skin14_Spear_B01.tex",
+      "updatedAt": "2026-04-17T17:27:02.904Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kalista",
+    "skin": "skin17",
+    "bin": "data/characters/kalista/skins/skin17.bin",
+    "entryKey": "Characters/Kalista/Skins/Skin17/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kalista",
+      "skin": "skin17",
+      "bin": "data/characters/kalista/skins/skin17.bin"
+    }
+  ]
+}

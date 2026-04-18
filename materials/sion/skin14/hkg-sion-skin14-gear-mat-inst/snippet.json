@@ -1,0 +1,36 @@
+{
+  "id": "hkg-sion-skin14-gear-mat-inst",
+  "name": "Hkg Sion Skin14 Gear Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:48.529Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_sion_skin14_gear_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Sion_Skin14_Gear_MAT_Mask.tex",
+      "updatedAt": "2026-04-17T17:54:48.521Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sion",
+    "skin": "skin14",
+    "bin": "data/characters/sion/skins/skin14.bin",
+    "entryKey": "Characters/Sion/Skins/Skin14/Materials/HKG_Sion_Skin14_Gear_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sion",
+      "skin": "skin14",
+      "bin": "data/characters/sion/skins/skin14.bin"
+    }
+  ]
+}

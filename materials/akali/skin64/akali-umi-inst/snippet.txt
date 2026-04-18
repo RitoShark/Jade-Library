@@ -1,0 +1,91 @@
+"jadelib_akali_umi_inst" = StaticMaterialDef {
+    name: string = "jadelib_akali_umi_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/akali-umi-inst/Akali_Skin61_Umi_Galaxy.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask1"
+            texturePath: string = "assets/jadelib/akali-umi-inst/Akali_Skin61_Umi_Mask.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask2"
+            texturePath: string = "assets/jadelib/akali-umi-inst/Akali_Skin61_Umi_FresnelMask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { -0.029999999329447746, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color"
+            value: vec4 = { 0.08235294371843338, 0.9098039269447327, 0.7450980544090271, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Scale"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 2.000999927520752, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_LOCAL_SPACE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Darkstar"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

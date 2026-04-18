@@ -1,0 +1,76 @@
+"jadelib_sylas_r_absorbed_gradient_inst" = StaticMaterialDef {
+    name: string = "jadelib_sylas_r_absorbed_gradient_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Masks"
+            texturePath: string = "assets/jadelib/sylas-r-absorbed-gradient-inst/white.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/sylas-r-absorbed-gradient-inst/Default_DoubleGradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Base_Texture"
+            texturePath: string = "assets/jadelib/sylas-r-absorbed-gradient-inst/Sylas_Base_TX_CM.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed_X"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed_Y"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Outer"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bias_Outer"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaBias"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/GradientMappedFresnel"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

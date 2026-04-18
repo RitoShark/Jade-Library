@@ -1,0 +1,25 @@
+{
+  "id": "mat-blitzcrank-skin29-glass-inst",
+  "name": "Mat Blitzcrank Skin29 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:10.829Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_mat_blitzcrank_skin29_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin29",
+    "bin": "data/blitzcrank_skins_skin29_skins_skin30_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin29/Materials/Mat_Blitzcrank_Skin29_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin29",
+      "bin": "data/blitzcrank_skins_skin29_skins_skin30_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35.bin"
+    }
+  ]
+}

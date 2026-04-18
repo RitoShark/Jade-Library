@@ -1,0 +1,36 @@
+{
+  "id": "weapon-glow",
+  "name": "Weapon Glow",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:12.643Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_glow",
+  "textureFiles": [
+    {
+      "name": "Jax_Skin13_Weapon_Mask.tex",
+      "updatedAt": "2026-04-17T17:24:12.639Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin13",
+    "bin": "data/characters/jax/skins/skin13.bin",
+    "entryKey": "Characters/Jax/Skins/Skin13/Materials/Weapon_Glow"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin13",
+      "bin": "data/characters/jax/skins/skin13.bin"
+    }
+  ]
+}

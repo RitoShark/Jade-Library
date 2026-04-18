@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:28.511Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin34_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:28.505Z"
+    },
+    {
+      "name": "Sylas_Skin34_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:58:28.505Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:58:28.505Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin34",
+    "bin": "data/characters/sylas/skins/skin34.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin34/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin34",
+      "bin": "data/characters/sylas/skins/skin34.bin"
+    }
+  ]
+}

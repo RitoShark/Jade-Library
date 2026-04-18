@@ -1,0 +1,36 @@
+{
+  "id": "tail-vfx",
+  "name": "Tail Vfx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:07.654Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tail_vfx",
+  "textureFiles": [
+    {
+      "name": "Zac_Skin14_Q_Air_swoosh.SKINS_Warwick_Skin58.tex",
+      "updatedAt": "2026-04-17T18:07:07.647Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin58",
+    "bin": "data/characters/warwick/skins/skin58.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin58/Materials/Tail_VFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin58",
+      "bin": "data/characters/warwick/skins/skin58.bin"
+    }
+  ]
+}

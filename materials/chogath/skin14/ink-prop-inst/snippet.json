@@ -1,0 +1,44 @@
+{
+  "id": "ink-prop-inst",
+  "name": "Ink Prop Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:19.136Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_prop_inst",
+  "textureFiles": [
+    {
+      "name": "ChoGath_Skin14_Recall_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:14:19.121Z"
+    },
+    {
+      "name": "Chogath_Skin14_Ink_Mask.tex",
+      "updatedAt": "2026-04-17T17:14:19.121Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:19.121Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Chogath",
+    "skin": "skin14",
+    "bin": "data/characters/chogath/skins/skin14.bin",
+    "entryKey": "Characters/Chogath/Skins/Skin14/Materials/Ink_Prop_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Chogath",
+      "skin": "skin14",
+      "bin": "data/characters/chogath/skins/skin14.bin"
+    }
+  ]
+}

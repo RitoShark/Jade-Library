@@ -1,0 +1,44 @@
+{
+  "id": "anivia-cosmic-body-inst",
+  "name": "Anivia Cosmic Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:45.015Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_anivia_cosmic_body_inst",
+  "textureFiles": [
+    {
+      "name": "Anivia_Skin25_Cosmic_StarryBackdrop.tex",
+      "updatedAt": "2026-04-17T17:08:45.010Z"
+    },
+    {
+      "name": "Anivia_Skin17_Material_Mult.tex",
+      "updatedAt": "2026-04-17T17:08:45.010Z"
+    },
+    {
+      "name": "Anivia_Skin17_Material_Mutl_Fresnel.tex",
+      "updatedAt": "2026-04-17T17:08:45.010Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Anivia",
+    "skin": "skin25",
+    "bin": "data/characters/anivia/skins/skin25.bin",
+    "entryKey": "Characters/Anivia/Skins/Skin25/Materials/Anivia_Cosmic_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Anivia",
+      "skin": "skin25",
+      "bin": "data/characters/anivia/skins/skin25.bin"
+    }
+  ]
+}

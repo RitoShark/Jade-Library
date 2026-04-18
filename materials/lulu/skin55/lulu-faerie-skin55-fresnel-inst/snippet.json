@@ -1,0 +1,36 @@
+{
+  "id": "lulu-faerie-skin55-fresnel-inst",
+  "name": "Lulu Faerie Skin55 Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:23.328Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lulu_faerie_skin55_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "LuluFaerie_Skin55_Fresnel_Mask_TX_CM.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:23.321Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin55",
+    "bin": "data/characters/lulufaerie/skins/skin55.bin",
+    "entryKey": "Characters/LuluFaerie/Skins/Skin55/Materials/LuluFaerie_Skin55_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin55",
+      "bin": "data/characters/lulufaerie/skins/skin55.bin"
+    }
+  ]
+}

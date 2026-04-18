@@ -1,0 +1,48 @@
+{
+  "id": "fizz-bloom-weapon-inst",
+  "name": "Fizz Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:17.887Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fizz_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:17.880Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:17.880Z"
+    },
+    {
+      "name": "Fizz_Skin30_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:19:17.880Z"
+    },
+    {
+      "name": "Fizz_Skin26_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:19:17.880Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fizz",
+    "skin": "skin30",
+    "bin": "data/characters/fizz/skins/skin30.bin",
+    "entryKey": "Characters/Fizz/Skins/Skin30/Materials/Fizz_Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fizz",
+      "skin": "skin30",
+      "bin": "data/characters/fizz/skins/skin30.bin"
+    }
+  ]
+}

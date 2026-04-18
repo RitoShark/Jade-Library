@@ -1,0 +1,31 @@
+{
+  "id": "ekko-skin56-diffuse-scrolling-inst",
+  "name": "Ekko Skin56 Diffuse Scrolling Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:36.977Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ekko_skin56_diffuse_scrolling_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin56",
+    "bin": "data/characters/ekko/skins/skin56.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin56/Materials/Ekko_Skin56_Diffuse_Scrolling_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin56",
+      "bin": "data/characters/ekko/skins/skin56.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:52.292Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:18:52.285Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:18:52.285Z"
+    },
+    {
+      "name": "Fiora_Skin51_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:18:52.285Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:52.285Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fiora",
+    "skin": "skin51",
+    "bin": "data/characters/fiora/skins/skin51.bin",
+    "entryKey": "Characters/Fiora/Skins/Skin51/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fiora",
+      "skin": "skin51",
+      "bin": "data/characters/fiora/skins/skin51.bin"
+    }
+  ]
+}

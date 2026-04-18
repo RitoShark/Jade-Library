@@ -1,0 +1,86 @@
+"jadelib_blitzcrank_skin66_arm_glass_innerlayer_new" = StaticMaterialDef {
+    name: string = "jadelib_blitzcrank_skin66_arm_glass_innerlayer_new"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/blitzcrank-skin66-arm-glass-innerlayer-new/Blitzcrank_Skin66_MatCap02_Hand_Glass_TX_CM.SKINS_Blitzcrank_Skin66.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Trans_Color_Tex"
+            texturePath: string = "assets/jadelib/blitzcrank-skin66-arm-glass-innerlayer-new/Blitzcrank_Skin66_MatCap01_Body_Glass_TX_CM.SKINS_Blitzcrank_Skin66.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Jelly_Diff_Mask"
+            texturePath: string = "assets/jadelib/blitzcrank-skin66-arm-glass-innerlayer-new/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 0.3174999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 8, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Translucent_Val"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Direction"
+            value: vec4 = { -0.20000000298023224, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Distortion"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Lambert"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_Translucent_Jelly"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-jelly-inst",
+  "name": "Hkg Mat Cap Translucent Jelly Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:26.295Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_jelly_inst",
+  "textureFiles": [
+    {
+      "name": "Bard_Skin18_Ball_MC.tex",
+      "updatedAt": "2026-04-17T17:11:26.290Z"
+    },
+    {
+      "name": "Bard_Skin18_TransCol.tex",
+      "updatedAt": "2026-04-17T17:11:26.290Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:11:26.290Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin18",
+    "bin": "data/characters/bard/skins/skin18.bin",
+    "entryKey": "Characters/Bard/Skins/Skin18/Materials/HKG_MatCap_Translucent_Jelly_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin18",
+      "bin": "data/characters/bard/skins/skin18.bin"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+"jadelib_nidalee_cougar_dark_star_body_inst" = StaticMaterialDef {
+    name: string = "jadelib_nidalee_cougar_dark_star_body_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/nidalee-cougar-dark-star-body-inst/NidaleeCougar_Skin18_M_Dark_Star_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask1"
+            texturePath: string = "assets/jadelib/nidalee-cougar-dark-star-body-inst/NidaleeCougar_Skin18_Screnspace_Masks_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask2"
+            texturePath: string = "assets/jadelib/nidalee-cougar-dark-star-body-inst/NidaleeCougar_Skin18_Fresnel_Masks_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 11.144499778747559, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { 0.20000000298023224, 0.029999999329447746, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color"
+            value: vec4 = { 0.08627451211214066, 0.3607843220233917, 0.95686274766922, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Scale"
+            value: vec4 = { 3, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Rate"
+            value: vec4 = { 0.8100000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.6009624600410461, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+            value: vec4 = { -0.5950000286102295, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_LOCAL_SPACE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Darkstar"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

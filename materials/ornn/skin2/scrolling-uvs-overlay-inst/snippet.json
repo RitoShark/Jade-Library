@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-overlay-inst",
+  "name": "Scrolling Uvs Overlay Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.287Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_overlay_inst",
+  "textureFiles": [
+    {
+      "name": "Ornn_Skin02_Horn_Mask.tex",
+      "updatedAt": "2026-04-17T17:44:55.282Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin2",
+    "bin": "data/characters/ornn/skins/skin2.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin2/Materials/ScrollingUVs_Overlay_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin2",
+      "bin": "data/characters/ornn/skins/skin2.bin"
+    }
+  ]
+}

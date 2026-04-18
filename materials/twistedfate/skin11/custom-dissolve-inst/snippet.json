@@ -1,0 +1,40 @@
+{
+  "id": "custom-dissolve-inst",
+  "name": "Custom Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:20.416Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_custom_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "TwistedFate_Skin11_Z_Teleport_Position_Gradient.tex",
+      "updatedAt": "2026-04-17T18:02:20.406Z"
+    },
+    {
+      "name": "TwistedFate_Skin11_Z_dissolve_alpha.tex",
+      "updatedAt": "2026-04-17T18:02:20.406Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TwistedFate",
+    "skin": "skin11",
+    "bin": "data/characters/twistedfate/skins/skin11.bin",
+    "entryKey": "Characters/TwistedFate/Skins/Skin11/Materials/CustomDissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TwistedFate",
+      "skin": "skin11",
+      "bin": "data/characters/twistedfate/skins/skin11.bin"
+    }
+  ]
+}

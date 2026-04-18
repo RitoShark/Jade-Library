@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:39.479Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin19_BloomMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:39.471Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin19",
+    "bin": "data/characters/kogmaw/skins/skin19.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin19/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin19",
+      "bin": "data/characters/kogmaw/skins/skin19.bin"
+    }
+  ]
+}

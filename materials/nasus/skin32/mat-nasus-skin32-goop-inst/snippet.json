@@ -1,0 +1,40 @@
+{
+  "id": "mat-nasus-skin32-goop-inst",
+  "name": "Mat Nasus Skin32 Goop Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:44.782Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mat_nasus_skin32_goop_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin32_Matcap_Nasus_Goop.tex",
+      "updatedAt": "2026-04-17T17:41:44.775Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:44.775Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin32",
+    "bin": "data/characters/nasus/skins/skin32.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin32/Materials/Mat_Nasus_Skin32_Goop_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin32",
+      "bin": "data/characters/nasus/skins/skin32.bin"
+    }
+  ]
+}

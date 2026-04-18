@@ -1,0 +1,38 @@
+{
+  "id": "morgana-skin80-body-inst",
+  "name": "Morgana Skin80 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:26.388Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_morgana_skin80_body_inst",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin80_TX_CM.SKINS_Morgana_Skin80.tex",
+      "updatedAt": "2026-04-17T17:40:26.381Z"
+    },
+    {
+      "name": "Morgana_Skin80_Mask_TX_CM.SKINS_Morgana_Skin80.tex",
+      "updatedAt": "2026-04-17T17:40:26.381Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:26.381Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin80",
+    "bin": "data/characters/morgana/skins/skin80.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin80/Materials/Morgana_Skin80_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin80",
+      "bin": "data/characters/morgana/skins/skin80.bin"
+    }
+  ]
+}

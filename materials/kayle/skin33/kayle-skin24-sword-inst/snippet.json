@@ -1,0 +1,42 @@
+{
+  "id": "kayle-skin24-sword-inst",
+  "name": "Kayle Skin24 Sword Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:45.462Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kayle_skin24_sword_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin33_swords.tex",
+      "updatedAt": "2026-04-17T17:29:45.454Z"
+    },
+    {
+      "name": "Kayle_Skin33_Wing_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:45.454Z"
+    },
+    {
+      "name": "Kayle_Skin33_Wing_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:45.454Z"
+    },
+    {
+      "name": "Kayle_Skin33_R_Viewcone_mult.tex",
+      "updatedAt": "2026-04-17T17:29:45.454Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin33",
+    "bin": "data/kayle_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39_skins_skin40_skins_skin41.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin33/Materials/Kayle_Skin24_Sword_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin33",
+      "bin": "data/kayle_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39_skins_skin40_skins_skin41.bin"
+    }
+  ]
+}

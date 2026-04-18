@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:22.540Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin24_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:22.534Z"
+    },
+    {
+      "name": "Kassadin_Skin24_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:22.534Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:28:22.534Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kassadin",
+    "skin": "skin24",
+    "bin": "data/characters/kassadin/skins/skin24.bin",
+    "entryKey": "Characters/Kassadin/Skins/Skin24/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kassadin",
+      "skin": "skin24",
+      "bin": "data/characters/kassadin/skins/skin24.bin"
+    }
+  ]
+}

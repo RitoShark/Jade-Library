@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-hair-inst",
+  "name": "Screen Space Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:12.990Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Yasuo_Skin53_HairFlow.tex",
+      "updatedAt": "2026-04-17T18:09:12.982Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin53",
+    "bin": "data/characters/yasuo/skins/skin53.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin53/Materials/ScreenSpace_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin53",
+      "bin": "data/characters/yasuo/skins/skin53.bin"
+    }
+  ]
+}

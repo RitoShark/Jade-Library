@@ -1,0 +1,45 @@
+{
+  "id": "mat-blitzcrank-skin29-jelly-inst-inst",
+  "name": "Mat Blitzcrank Skin29 Jelly Inst Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:18.824Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mat_blitzcrank_skin29_jelly_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Blitzcrank_Skin29_MatCap_Jelly_01.tex",
+      "updatedAt": "2026-04-17T17:12:10.830Z"
+    },
+    {
+      "name": "Blitzcrank_Skin29_Robot_Gloss_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:12:10.830Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin29",
+    "bin": "data/characters/blitzcrank/skins/skin29.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin29/Materials/Mat_Blitzcrank_Skin29_Jelly_inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin29",
+      "bin": "data/characters/blitzcrank/skins/skin29.bin"
+    },
+    {
+      "champion": "Lulu",
+      "skin": "skin26",
+      "bin": "data/characters/lulu/skins/skin26.bin"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:00.947Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin41_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:00.942Z"
+    },
+    {
+      "name": "LeeSin_Skin41_TM_Mask.tex",
+      "updatedAt": "2026-04-17T17:33:00.942Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin41",
+    "bin": "data/characters/leesin/skins/skin41.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin41/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin41",
+      "bin": "data/characters/leesin/skins/skin41.bin"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+"jadelib_screen_space_shoulder_tentacle_inst" = StaticMaterialDef {
+    name: string = "jadelib_screen_space_shoulder_tentacle_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpaceTexture"
+            texturePath: string = "assets/jadelib/screen-space-shoulder-tentacle-inst/Yasuo_Skin48_HairFlow.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 2.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSScale"
+            value: vec4 = { 8, 8, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSFresnelSize"
+            value: vec4 = { 5.400000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 0.0941176488995552, 0.3333333432674408, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0, -0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Master_Blend"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorFresnelSize"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_Fresnel_color"
+            value: vec4 = { 0.0235294122248888, 1, 0.9372549057006836, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_SS_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScreenSpace_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Master_Blend"
+                Enabled: bool = false
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "YasuoQ2"
+                    }
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                Enabled: bool = false
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "YasuoQ2"
+                        }
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            2.070582628250122
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

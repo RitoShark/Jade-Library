@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-glass-inst",
+  "name": "Fresnel Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:25.536Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Bard_Skin14_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:11:25.531Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:11:25.531Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin14",
+    "bin": "data/characters/bard/skins/skin14.bin",
+    "entryKey": "Characters/Bard/Skins/Skin14/Materials/Fresnel_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin14",
+      "bin": "data/characters/bard/skins/skin14.bin"
+    }
+  ]
+}

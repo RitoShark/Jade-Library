@@ -1,0 +1,60 @@
+{
+  "id": "lux-skin56-body-toon-shading-inst",
+  "name": "Lux Skin56 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.701Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lux_skin56_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    },
+    {
+      "name": "Gradient_test_02.tex",
+      "updatedAt": "2026-04-17T17:35:59.695Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin56",
+    "bin": "data/characters/lux/skins/skin56.bin",
+    "entryKey": "Characters/Lux/Skins/Skin56/Materials/Lux_Skin56_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin56",
+      "bin": "data/characters/lux/skins/skin56.bin"
+    }
+  ]
+}

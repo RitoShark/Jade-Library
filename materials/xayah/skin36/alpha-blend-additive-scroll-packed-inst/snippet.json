@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:38.097Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:07:38.091Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:07:38.091Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:38.091Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:07:38.091Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin36",
+    "bin": "data/characters/xayah/skins/skin36.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin36/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin36",
+      "bin": "data/characters/xayah/skins/skin36.bin"
+    }
+  ]
+}

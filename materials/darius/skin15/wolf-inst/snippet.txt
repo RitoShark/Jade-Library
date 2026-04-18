@@ -1,0 +1,375 @@
+"jadelib_wolf_inst" = StaticMaterialDef {
+    name: string = "jadelib_wolf_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/wolf-inst/Darius_Skin15_P_Mat_Mask.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.6470588445663452, 0.05098039284348488, 0.1921568661928177, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Size"
+            value: vec4 = { 0.720954954624176, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 7.885075092315674, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { -0.20999999344348907, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+            value: vec4 = { 0.5049999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 1, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.8156862854957581, 0.3686274588108063, 0.10588235408067703, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_ScrollSpeed"
+            value: vec4 = { -0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Override"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIONAL_MASKING"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelAlpha_Scrolling"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                Enabled: bool = false
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Override"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.7248069047927856
+                                    0.7929030656814575
+                                    0.9045208692550659
+                                    0.9776769280433655
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.02649041637778282
+                                    1
+                                    1
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = AllTrueMaterialDriver {
+                                    mDrivers: list[pointer] = {
+                                        IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "taunt"
+                                            }
+                                        }
+                                        FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                                mAnimationName: hash = "taunt"
+                                            }
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 0.05000000074505806
+                                            }
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 10
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.10025926679372787
+                                    0.23544007539749146
+                                    0.6168348789215088
+                                    0.6871598958969116
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.02649041637778282
+                                    1
+                                    1
+                                    -0.002483084099367261
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Joke"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.08365856856107712
+                                    0.24706055223941803
+                                    0.7723923325538635
+                                    0.9776769280433655
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.003278312971815467
+                                    1
+                                    1
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Dance"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.08365856856107712
+                                    0.24706055223941803
+                                    0.7723923325538635
+                                    0.9776769280433655
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.003278312971815467
+                                    1
+                                    1
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Run_Homeguard_RunIn"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 3
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.07499440759420395
+                                    0.1734151393175125
+                                    0.34784814715385437
+                                    0.44699668884277344
+                                    1.0049227476119995
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.04384121298789978
+                                    1
+                                    1
+                                    -0.002483084099367261
+                                    0.0036593738477677107
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell3"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 5
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.010316007770597935
+                                    0.02331201545894146
+                                    0.15987448394298553
+                                    0.17480772733688354
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.03372541815042496
+                                    0.7508279085159302
+                                    0.7508279085159302
+                                    -0.002483084099367261
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 10
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.00656931335106492
+                                    0.01597045548260212
+                                    0.18623588979244232
+                                    0.24990858137607574
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.009073012508451939
+                                    1
+                                    1
+                                    -0.002483084099367261
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Respawn"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 3
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.029664138332009315
+                                    0.11625958234071732
+                                    0.3852948844432831
+                                    0.44699668884277344
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    1
+                                    1
+                                    1
+                                    0.003311615902930498
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "death"
+                                    }
+                                }
+                                mOnValue: f32 = 0
+                                mOffValue: f32 = 1
+                                mTurnOnTimeSec: f32 = 3
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.041914451867341995
+                                    0.12669232487678528
+                                    0.3040224015712738
+                                    0.9974172115325928
+                                }
+                                values: list[f32] = {
+                                    -0.027399221435189247
+                                    0.020110569894313812
+                                    1
+                                    1
+                                    0.0012366784503683448
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

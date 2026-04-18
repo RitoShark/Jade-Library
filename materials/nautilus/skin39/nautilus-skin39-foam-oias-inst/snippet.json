@@ -1,0 +1,68 @@
+{
+  "id": "nautilus-skin39-foam-oias-inst",
+  "name": "Nautilus Skin39 Foam Oias Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:12.831Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nautilus_skin39_foam_oias_inst",
+  "textureFiles": [
+    {
+      "name": "Nautilus_Skin39_Noise_Turbulence_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Water_Mask_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Noise_Turbulence_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Water_Flow_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "Nautilus_Skin39_ScrollTexCombo_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Black_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:12.820Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nautilus",
+    "skin": "skin39",
+    "bin": "data/characters/nautilus/skins/skin39.bin",
+    "entryKey": "Characters/Nautilus/Skins/Skin39/Materials/Nautilus_Skin39_Foam_OIAS_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nautilus",
+      "skin": "skin39",
+      "bin": "data/characters/nautilus/skins/skin39.bin"
+    }
+  ]
+}

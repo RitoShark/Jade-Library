@@ -1,0 +1,52 @@
+{
+  "id": "prestige-diamond-shield-crystal-inst",
+  "name": "Prestige Diamond Shield Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:35.121Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_diamond_shield_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:35.115Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:35.115Z"
+    },
+    {
+      "name": "Leona_Skin53_DiamondColorA_TX_CM.Prestige2_AnimaSquad_Leona.tex",
+      "updatedAt": "2026-04-17T17:33:35.115Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:35.115Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:35.115Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin53",
+    "bin": "data/characters/leona/skins/skin53.bin",
+    "entryKey": "Characters/Leona/Skins/Skin53/Materials/Prestige_Diamond_ShieldCrystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin53",
+      "bin": "data/characters/leona/skins/skin53.bin"
+    }
+  ]
+}

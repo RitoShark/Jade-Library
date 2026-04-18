@@ -1,0 +1,36 @@
+{
+  "id": "lillia-skin46-horn-inst",
+  "name": "Lillia Skin46 Horn Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:00.635Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lillia_skin46_horn_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:00.629Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin46",
+    "bin": "data/characters/lillia/skins/skin46.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin46/Materials/Lillia_Skin46_Horn_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin46",
+      "bin": "data/characters/lillia/skins/skin46.bin"
+    }
+  ]
+}

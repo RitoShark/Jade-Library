@@ -1,0 +1,40 @@
+{
+  "id": "scrolling-ribbon",
+  "name": "Scrolling Ribbon",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:25.511Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_ribbon",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin20_Mask_Trail01d.tex",
+      "updatedAt": "2026-04-17T17:52:25.505Z"
+    },
+    {
+      "name": "Senna_Skin16_E_5_5.tex",
+      "updatedAt": "2026-04-17T17:52:25.505Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin20",
+    "bin": "data/characters/senna/skins/skin20.bin",
+    "entryKey": "Characters/Senna/Skins/Skin20/Materials/Scrolling_Ribbon"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin20",
+      "bin": "data/characters/senna/skins/skin20.bin"
+    }
+  ]
+}

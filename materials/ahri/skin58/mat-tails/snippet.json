@@ -1,0 +1,48 @@
+{
+  "id": "mat-tails",
+  "name": "Mat Tails",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:55.090Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mat_tails",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin07_TailColor_Rainbow.tex",
+      "updatedAt": "2026-04-17T17:06:55.085Z"
+    },
+    {
+      "name": "Ahri_Skin07_TailColor_Rainbow.tex",
+      "updatedAt": "2026-04-17T17:06:55.085Z"
+    },
+    {
+      "name": "Ahri_Skin7_Tails_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:55.085Z"
+    },
+    {
+      "name": "Ahri_Skin7_Tails_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:55.085Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin58",
+    "bin": "data/characters/ahri/skins/skin58.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin58/Materials/MAT_Tails"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin58",
+      "bin": "data/characters/ahri/skins/skin58.bin"
+    }
+  ]
+}

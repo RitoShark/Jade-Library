@@ -1,0 +1,101 @@
+"jadelib_fresnel_masked_body_gear0_inst" = StaticMaterialDef {
+    name: string = "jadelib_fresnel_masked_body_gear0_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Masks"
+            texturePath: string = "assets/jadelib/fresnel-masked-body-gear0-inst/Senna_Skin56_Form1_TX_CM_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DiffuseTexture"
+            texturePath: string = "assets/jadelib/fresnel-masked-body-gear0-inst/Senna_Skin60_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FresnelRamp"
+            texturePath: string = "assets/jadelib/fresnel-masked-body-gear0-inst/ramp02.tex"
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "miniMasks"
+            texturePath: string = "assets/jadelib/fresnel-masked-body-gear0-inst/Senna_Skin56_Form1_TX_CM_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "color1"
+            value: vec4 = { 0.3996643126010895, 0.41818875074386597, 0.7009078860282898, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "POW"
+            value: vec4 = { 2.799999952316284, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MIN"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MAX"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Ramp"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "COLOR_OR_DIFFUSE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelMasked_new"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "DiffuseTexture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Senna/Skins/Skin60/Senna_Skin60_Form2_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

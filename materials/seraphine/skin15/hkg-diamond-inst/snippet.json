@@ -1,0 +1,52 @@
+{
+  "id": "hkg-diamond-inst",
+  "name": "Hkg Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:04.077Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:04.071Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:04.071Z"
+    },
+    {
+      "name": "Seraphine_Skin15_Mat_Jelly_01.tex",
+      "updatedAt": "2026-04-17T17:53:04.071Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:04.071Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:04.071Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin15",
+    "bin": "data/characters/seraphine/skins/skin15.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin15/Materials/HKG_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin15",
+      "bin": "data/characters/seraphine/skins/skin15.bin"
+    }
+  ]
+}

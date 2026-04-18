@@ -1,0 +1,25 @@
+{
+  "id": "vayne-skin28-glass-inst",
+  "name": "Vayne Skin28 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:40.759Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_vayne_skin28_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin28",
+    "bin": "data/characters/vayne/skins/skin28.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin28/Materials/VayneSkin28_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin28",
+      "bin": "data/characters/vayne/skins/skin28.bin"
+    }
+  ]
+}

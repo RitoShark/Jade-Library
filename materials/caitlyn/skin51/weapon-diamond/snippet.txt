@@ -1,0 +1,96 @@
+"jadelib_weapon_diamond" = StaticMaterialDef {
+    name: string = "jadelib_weapon_diamond"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/weapon-diamond/Caitlyn_Skin51_Diamond_Mask_TX_CM.SKINS_Caitlyn_Skin51.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/weapon-diamond/Caitlyn_Skin51_Gun_Diamond_Mask_TX_CM.SKINS_Caitlyn_Skin51.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "EvolvingPassiveTex"
+            texturePath: string = "assets/jadelib/weapon-diamond/Caitlyn_Skin51_Gun_Diamond_Mask_TX_CM.SKINS_Caitlyn_Skin51.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+            value: vec4 = { 0, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGBA_Mask_Values"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.6916456818580627, 0.17140460014343262, 0.8256656527519226, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_TEX_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "EXCLUDE_R_FROM_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_Diff_Mask_Alpha"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

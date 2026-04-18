@@ -1,0 +1,42 @@
+{
+  "id": "jarvan-iv-skin54-crystal",
+  "name": "Jarvan Iv Skin54 Crystal",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:58.643Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_jarvan_iv_skin54_crystal",
+  "textureFiles": [
+    {
+      "name": "JarvanIV_Skin54_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:58.636Z"
+    },
+    {
+      "name": "JarvanIV_Skin54_Crystal_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:58.636Z"
+    },
+    {
+      "name": "JarvanIV_Skin54_CrystalMask_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:58.636Z"
+    },
+    {
+      "name": "JarvanIV_Skin54_Star_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:58.636Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin54",
+    "bin": "data/characters/jarvaniv/skins/skin54.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin54/Materials/JarvanIV_Skin54_Crystal"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin54",
+      "bin": "data/characters/jarvaniv/skins/skin54.bin"
+    }
+  ]
+}

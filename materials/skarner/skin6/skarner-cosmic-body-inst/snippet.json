@@ -1,0 +1,44 @@
+{
+  "id": "skarner-cosmic-body-inst",
+  "name": "Skarner Cosmic Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:33.578Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_skarner_cosmic_body_inst",
+  "textureFiles": [
+    {
+      "name": "Skarner_Rework_Skin06_M_Dark_Star_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:55:33.572Z"
+    },
+    {
+      "name": "Skarner_Rework_Skin05_Mask_01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:55:33.572Z"
+    },
+    {
+      "name": "Skarner_Rework_Skin05_Mask_02_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:55:33.572Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Skarner",
+    "skin": "skin6",
+    "bin": "data/characters/skarner/skins/skin6.bin",
+    "entryKey": "Characters/Skarner/Skins/Skin6/Materials/Skarner_Cosmic_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Skarner",
+      "skin": "skin6",
+      "bin": "data/characters/skarner/skins/skin6.bin"
+    }
+  ]
+}

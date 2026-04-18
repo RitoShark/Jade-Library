@@ -1,0 +1,48 @@
+{
+  "id": "yone-ink-katana-inst",
+  "name": "Yone Ink Katana Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:04.349Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_ink_katana_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:10:04.330Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:10:04.330Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:04.330Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:10:04.330Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin35",
+    "bin": "16e545aaf6f6b5b9.bin",
+    "entryKey": "Characters/Yone/Skins/Skin35/Materials/Yone_Ink_Katana_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin35",
+      "bin": "16e545aaf6f6b5b9.bin"
+    }
+  ]
+}

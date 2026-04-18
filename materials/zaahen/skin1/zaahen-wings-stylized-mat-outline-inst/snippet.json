@@ -1,0 +1,68 @@
+{
+  "id": "zaahen-wings-stylized-mat-outline-inst",
+  "name": "Zaahen Wings Stylized Mat Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:19.935Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zaahen_wings_stylized_mat_outline_inst",
+  "textureFiles": [
+    {
+      "name": "Material_ZH_Wings_TurbulDeform.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "red.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "Base_Wave_Foam_Stylized_01.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "Ahri_Skin88_Vertex_Deform_Noise_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:11:19.928Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zaahen",
+    "skin": "skin1",
+    "bin": "data/characters/zaahen/skins/skin1.bin",
+    "entryKey": "Characters/Zaahen/Skins/Skin1/Materials/Zaahen_Wings_StylizedMat_Outline_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zaahen",
+      "skin": "skin1",
+      "bin": "data/characters/zaahen/skins/skin1.bin"
+    }
+  ]
+}

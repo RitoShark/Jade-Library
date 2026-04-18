@@ -1,0 +1,52 @@
+{
+  "id": "ice-cube-a",
+  "name": "Ice Cube A",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:54.291Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ice_cube_a",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:54.280Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:54.281Z"
+    },
+    {
+      "name": "Renata_Skin21_DiamondTexture_2.SKINS_Zeri_Skin40.tex",
+      "updatedAt": "2026-04-17T18:12:54.281Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:54.281Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:54.281Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin40",
+    "bin": "data/characters/zeri/skins/skin40.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin40/Materials/IceCubeA"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin40",
+      "bin": "data/characters/zeri/skins/skin40.bin"
+    }
+  ]
+}

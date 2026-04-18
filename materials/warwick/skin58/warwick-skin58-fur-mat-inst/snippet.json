@@ -1,0 +1,48 @@
+{
+  "id": "warwick-skin58-fur-mat-inst",
+  "name": "Warwick Skin58 Fur Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:07.494Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_warwick_skin58_fur_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:07.485Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:07.485Z"
+    },
+    {
+      "name": "Warwick_Skin58_Fur_TX_CM.SKINS_Warwick_Skin58.tex",
+      "updatedAt": "2026-04-17T18:07:07.485Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:07.485Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin58",
+    "bin": "data/characters/warwick/skins/skin58.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin58/Materials/Warwick_Skin58_Fur_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin58",
+      "bin": "data/characters/warwick/skins/skin58.bin"
+    }
+  ]
+}

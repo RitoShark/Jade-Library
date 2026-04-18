@@ -1,0 +1,31 @@
+{
+  "id": "weapon-texture-swap-mat-inst",
+  "name": "Weapon Texture Swap Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:49.379Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_texture_swap_mat_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gangplank",
+    "skin": "skin21",
+    "bin": "data/gangplank_skins_skin21_skins_skin22.bin",
+    "entryKey": "Characters/Gangplank/Skins/Skin21/Materials/Weapon_TextureSwap_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gangplank",
+      "skin": "skin21",
+      "bin": "data/gangplank_skins_skin21_skins_skin22.bin"
+    }
+  ]
+}

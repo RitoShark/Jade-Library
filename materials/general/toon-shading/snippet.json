@@ -1,0 +1,22 @@
+{
+  "id": "toon-shading",
+  "name": "Toon Shading",
+  "category": "toon",
+  "featured": true,
+  "version": 1,
+  "updatedAt": "2026-04-13T16:30:00Z",
+  "description": "Cel-shaded look with outline and rim lighting. ToonShadePower controls shading sharpness, ToonOutlineControl adjusts outline thickness, ToonRimControl sets rim intensity and falloff.",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": "Main skin texture -- replace with your champion's diffuse map"
+    }
+  ],
+  "materialName": "jadelib_toon_shading",
+  "textureFiles": [
+    { "name": "ToonShading.tex",    "updatedAt": "2026-04-13T16:30:00Z" },
+    { "name": "OutlineToneMap.tex", "updatedAt": "2026-04-13T16:30:00Z" }
+  ],
+  "snippetFile": "snippet.txt"
+}

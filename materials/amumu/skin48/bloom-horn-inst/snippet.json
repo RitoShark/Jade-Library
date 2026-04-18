@@ -1,0 +1,36 @@
+{
+  "id": "bloom-horn-inst",
+  "name": "Bloom Horn Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:30.538Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_horn_inst",
+  "textureFiles": [
+    {
+      "name": "Amumu_Skin44_Mask_Horn_Avatar.tex",
+      "updatedAt": "2026-04-17T17:08:30.533Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Amumu",
+    "skin": "skin48",
+    "bin": "data/characters/amumu/skins/skin48.bin",
+    "entryKey": "Characters/Amumu/Skins/Skin48/Materials/Bloom_Horn_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Amumu",
+      "skin": "skin48",
+      "bin": "data/characters/amumu/skins/skin48.bin"
+    }
+  ]
+}

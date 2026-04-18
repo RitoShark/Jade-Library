@@ -1,0 +1,49 @@
+{
+  "id": "janna-body-crystal-mat-inst",
+  "name": "Janna Body Crystal Mat Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:37.615Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_janna_body_crystal_mat_inst",
+  "textureFiles": [
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:23:15.193Z"
+    },
+    {
+      "name": "Material_Mask_2.tex",
+      "updatedAt": "2026-04-17T17:23:15.193Z"
+    },
+    {
+      "name": "Material_Mask.tex",
+      "updatedAt": "2026-04-17T17:23:15.193Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin36",
+    "bin": "data/characters/janna/skins/skin36.bin",
+    "entryKey": "Characters/Janna/Skins/Skin36/Materials/Janna_Body_Crystal_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin36",
+      "bin": "data/characters/janna/skins/skin36.bin"
+    },
+    {
+      "champion": "Zyra",
+      "skin": "skin7",
+      "bin": "691f2fb1f07d431d.bin"
+    }
+  ]
+}

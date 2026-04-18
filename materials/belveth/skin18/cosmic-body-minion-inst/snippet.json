@@ -1,0 +1,44 @@
+{
+  "id": "cosmic-body-minion-inst",
+  "name": "Cosmic Body Minion Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:55.132Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cosmic_body_minion_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin18_M_Dark_Star_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:11:55.125Z"
+    },
+    {
+      "name": "Minions_Mask1.tex",
+      "updatedAt": "2026-04-17T17:11:55.125Z"
+    },
+    {
+      "name": "Minions_Mask2.tex",
+      "updatedAt": "2026-04-17T17:11:55.125Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Belveth",
+    "skin": "skin18",
+    "bin": "data/characters/belvethvoidling/skins/skin18.bin",
+    "entryKey": "Characters/BelvethVoidling/Skins/Skin18/Materials/Cosmic_Body_Minion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Belveth",
+      "skin": "skin18",
+      "bin": "data/characters/belvethvoidling/skins/skin18.bin"
+    }
+  ]
+}

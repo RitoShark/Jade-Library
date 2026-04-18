@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-bloom-inst",
+  "name": "Multi Mask Panner Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:01.116Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:01.082Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:01.082Z"
+    },
+    {
+      "name": "Tryndamere_Skin18_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:01.082Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:01.082Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tryndamere",
+    "skin": "skin18",
+    "bin": "data/characters/tryndamere/skins/skin18.bin",
+    "entryKey": "Characters/Tryndamere/Skins/Skin18/Materials/MultiMask_Panner_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tryndamere",
+      "skin": "skin18",
+      "bin": "data/characters/tryndamere/skins/skin18.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ww-gnar-big-body-inst",
+  "name": "Ww Gnar Big Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.768Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ww_gnar_big_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "GnarBig_Skin41_Matcap_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "GnarBig_Skin41_ColorMask_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "GnarBig_Skin41_Material_Iridescence_Mat_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "GnarBig_Skin41_AdditiveScroll_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "GnarBig_Skin41_AdditiveScrollMask_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.762Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin42",
+    "bin": "data/characters/gnarbig/skins/skin42.bin",
+    "entryKey": "Characters/GnarBig/Skins/Skin42/Materials/WW_GnarBig_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin42",
+      "bin": "data/characters/gnarbig/skins/skin42.bin"
+    }
+  ]
+}

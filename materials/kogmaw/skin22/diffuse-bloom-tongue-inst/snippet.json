@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-tongue-inst",
+  "name": "Diffuse Bloom Tongue Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:39.678Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_tongue_inst",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin19_Tongue_BloomMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:39.671Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin22",
+    "bin": "data/characters/kogmaw/skins/skin22.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin22/Materials/Diffuse_Bloom_TONGUE_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin22",
+      "bin": "data/characters/kogmaw/skins/skin22.bin"
+    }
+  ]
+}

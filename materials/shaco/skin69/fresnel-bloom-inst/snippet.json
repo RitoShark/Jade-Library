@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-inst",
+  "name": "Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:53.540Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Shaco_Skin69_TX_CM.Chroma_Shaco_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:53:53.535Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:53.535Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin69",
+    "bin": "data/characters/shaco/skins/skin69.bin",
+    "entryKey": "Characters/Shaco/Skins/Skin69/Materials/Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin69",
+      "bin": "data/characters/shaco/skins/skin69.bin"
+    }
+  ]
+}

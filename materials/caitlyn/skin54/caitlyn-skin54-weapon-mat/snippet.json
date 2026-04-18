@@ -1,0 +1,64 @@
+{
+  "id": "caitlyn-skin54-weapon-mat",
+  "name": "Caitlyn Skin54 Weapon Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:31.921Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_caitlyn_skin54_weapon_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "MatCap_Metal.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "Caitlyn_Skin54_Weapon_ColorMask_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "Taliyah_Skin24_Iridescence_MAT_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "Taliyah_Skin24_AdditiveScroll_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "Caitlyn_Skin54_Weapon_AdditiveScrollMask_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:31.915Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin54",
+    "bin": "data/characters/caitlyn/skins/skin54.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin54/Materials/Caitlyn_Skin54_Weapon_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin54",
+      "bin": "data/characters/caitlyn/skins/skin54.bin"
+    }
+  ]
+}

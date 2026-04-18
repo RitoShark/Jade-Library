@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-energy-inst",
+  "name": "Alpha Blend Additive Scroll Packed Energy Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:21.222Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_energy_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:04:21.213Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:04:21.213Z"
+    },
+    {
+      "name": "Veigar_Skin37_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:04:21.213Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:21.213Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Veigar",
+    "skin": "skin37",
+    "bin": "data/characters/veigar/skins/skin37.bin",
+    "entryKey": "Characters/Veigar/Skins/Skin37/Materials/AlphaBlend_Additive_Scroll_Packed_Energy_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Veigar",
+      "skin": "skin37",
+      "bin": "data/characters/veigar/skins/skin37.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "weapon-inst",
+  "name": "Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:20.774Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:20.767Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:20.767Z"
+    },
+    {
+      "name": "Jax_Skin39_Weapon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:24:20.767Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:20.767Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin39",
+    "bin": "data/characters/jax/skins/skin39.bin",
+    "entryKey": "Characters/Jax/Skins/Skin39/Materials/Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin39",
+      "bin": "data/characters/jax/skins/skin39.bin"
+    }
+  ]
+}

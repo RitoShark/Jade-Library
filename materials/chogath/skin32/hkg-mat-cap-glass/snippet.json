@@ -1,0 +1,25 @@
+{
+  "id": "hkg-mat-cap-glass",
+  "name": "Hkg Mat Cap Glass",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:19.120Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_mat_cap_glass",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Chogath",
+    "skin": "skin32",
+    "bin": "0825f1f3937b9ce7.bin",
+    "entryKey": "Characters/Chogath/Skins/Skin32/Materials/HKG_MatCap_Glass"
+  },
+  "usedBy": [
+    {
+      "champion": "Chogath",
+      "skin": "skin32",
+      "bin": "0825f1f3937b9ce7.bin"
+    }
+  ]
+}

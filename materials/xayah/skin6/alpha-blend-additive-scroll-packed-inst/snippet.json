@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:43.434Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:43.427Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:43.427Z"
+    },
+    {
+      "name": "Xayah_Skin06_Ult_Wing_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:07:43.427Z"
+    },
+    {
+      "name": "Xayah_Skin04_Homeguard_Wings_Alpha.tex",
+      "updatedAt": "2026-04-17T18:07:43.427Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin6",
+    "bin": "data/characters/xayah/skins/skin6.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin6/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin6",
+      "bin": "data/characters/xayah/skins/skin6.bin"
+    }
+  ]
+}

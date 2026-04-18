@@ -1,0 +1,117 @@
+"jadelib_zac_metal_body" = StaticMaterialDef {
+    name: string = "jadelib_zac_metal_body"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/zac-metal-body/Zac_Skin07_MetalMask.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_Bounce_Color"
+            value: vec4 = { 0.5058823823928833, 1, 0.7529411911964417, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_CoreShadow_Color"
+            value: vec4 = { 0.239215686917305, 0.250980406999588, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_Base_Color"
+            value: vec4 = { 0.1411764770746231, 0.21960784494876862, 0.23529411852359772, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_CoreShadow_Value"
+            value: vec4 = { 0.375, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_Spec_Value"
+            value: vec4 = { 0.8224999904632568, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_Spec_Color"
+            value: vec4 = { 0.5137255191802979, 0.3764705955982208, 0.3764705955982208, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Metal_Master_SmoothStep"
+            value: vec4 = { -0.05000000074505806, 0.75, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Glow_Color"
+            value: vec4 = { 0.9450980424880981, 0.14901961386203766, 0.07450980693101883, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Noise_Tile"
+            value: vec4 = { 1.5, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Scroll_Speed"
+            value: vec4 = { 0.10000000149011612, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Pulse_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Pulse_Low_High"
+            value: vec4 = { 1, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fire_Emmisive_Low_High"
+            value: vec4 = { 1, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecMap_SmoothStep"
+            value: vec4 = { 0, 0.800000011920929, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_color"
+            value: vec4 = { 0.2235294133424759, 0.15294118225574493, 0.16078431904315948, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_size"
+            value: vec4 = { 5.5, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_METAL"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_SPECMAP"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ZacMetal"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

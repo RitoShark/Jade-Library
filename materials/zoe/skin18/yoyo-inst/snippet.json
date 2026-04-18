@@ -1,0 +1,48 @@
+{
+  "id": "yoyo-inst",
+  "name": "Yoyo Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:58.750Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yoyo_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:58.744Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:58.744Z"
+    },
+    {
+      "name": "Zoe_Skin18_Main_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:13:58.744Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:58.744Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin18",
+    "bin": "data/characters/zoe/skins/skin18.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin18/Materials/Yoyo_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin18",
+      "bin": "data/characters/zoe/skins/skin18.bin"
+    }
+  ]
+}

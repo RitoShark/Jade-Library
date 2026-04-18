@@ -1,0 +1,40 @@
+{
+  "id": "scrolling-uvs-alpha-bloom-diff-inst",
+  "name": "Scrolling Uvs Alpha Bloom Diff Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:11.837Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_alpha_bloom_diff_inst",
+  "textureFiles": [
+    {
+      "name": "Yasuo_Skin35_Scroll_T.tex",
+      "updatedAt": "2026-04-17T18:09:11.831Z"
+    },
+    {
+      "name": "Yasuo_Skin35_Mat_Gradient.tex",
+      "updatedAt": "2026-04-17T18:09:11.831Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin35",
+    "bin": "data/characters/yasuo/skins/skin35.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin35/Materials/ScrollingUVs_Alpha_Bloom_Diff_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin35",
+      "bin": "data/characters/yasuo/skins/skin35.bin"
+    }
+  ]
+}

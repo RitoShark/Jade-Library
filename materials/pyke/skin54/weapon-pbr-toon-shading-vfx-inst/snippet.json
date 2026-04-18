@@ -1,0 +1,44 @@
+{
+  "id": "weapon-pbr-toon-shading-vfx-inst",
+  "name": "Weapon Pbr Toon Shading Vfx Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:19.138Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_pbr_toon_shading_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin54_egoVFX_Weapon_Wings_01.tex",
+      "updatedAt": "2026-04-17T17:46:19.132Z"
+    },
+    {
+      "name": "Pyke_Skin54_Black_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:19.132Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:19.132Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin54",
+    "bin": "data/characters/pyke/skins/skin54.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin54/Materials/Weapon_PBR_ToonShading_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin54",
+      "bin": "data/characters/pyke/skins/skin54.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "flow-map-wave-inst",
+  "name": "Flow Map Wave Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.669Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flow_map_wave_inst",
+  "textureFiles": [
+    {
+      "name": "TahmKench_Skin30_Wave_Flowmap.tex",
+      "updatedAt": "2026-04-17T17:59:29.660Z"
+    },
+    {
+      "name": "TahmKench_Skin30_TX_Cloud_CM.tex",
+      "updatedAt": "2026-04-17T17:59:29.660Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:29.661Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TahmKench",
+    "skin": "skin30",
+    "bin": "data/characters/tahmkench/skins/skin30.bin",
+    "entryKey": "Characters/TahmKench/Skins/Skin30/Materials/FlowMap_Wave_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TahmKench",
+      "skin": "skin30",
+      "bin": "data/characters/tahmkench/skins/skin30.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "camille-bodysuit-screen-space-pan-masked-inst01",
+  "name": "Camille Bodysuit Screen Space Pan Masked Inst01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:20.488Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_camille_bodysuit_screen_space_pan_masked_inst01",
+  "textureFiles": [
+    {
+      "name": "Hecarim_Skin24_Bodysuit_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:21:20.482Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin24",
+    "bin": "data/characters/hecarim/skins/skin24.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin24/Materials/Camille_Bodysuit_ScreenSpace_Pan_Masked_inst01"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin24",
+      "bin": "data/characters/hecarim/skins/skin24.bin"
+    }
+  ]
+}

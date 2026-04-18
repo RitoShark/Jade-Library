@@ -1,0 +1,44 @@
+{
+  "id": "blitzcrank-skin66-machine",
+  "name": "Blitzcrank Skin66 Machine",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:11.890Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin66_machine",
+  "textureFiles": [
+    {
+      "name": "Chogath_skin14_FM.SKINS_Blitzcrank_Skin66.tex",
+      "updatedAt": "2026-04-17T17:12:11.885Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.885Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.885Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin66",
+    "bin": "data/characters/blitzcrank/skins/skin66.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin66/Materials/Blitzcrank_Skin66_Machine"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin66",
+      "bin": "data/characters/blitzcrank/skins/skin66.bin"
+    }
+  ]
+}

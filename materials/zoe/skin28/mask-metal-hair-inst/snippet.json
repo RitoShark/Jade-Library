@@ -1,0 +1,56 @@
+{
+  "id": "mask-metal-hair-inst",
+  "name": "Mask Metal Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:03.203Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mask_metal_hair_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    },
+    {
+      "name": "Zoe_Skin22_Hair_Gold_RMA.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:14:03.196Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin28",
+    "bin": "data/characters/zoe/skins/skin28.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin28/Materials/Mask_Metal_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin28",
+      "bin": "data/characters/zoe/skins/skin28.bin"
+    }
+  ]
+}

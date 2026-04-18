@@ -1,0 +1,56 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.270Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:21.263Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin17",
+    "bin": "data/characters/gnar/skins/skin17.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin17/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin17",
+      "bin": "data/characters/gnar/skins/skin17.bin"
+    }
+  ]
+}

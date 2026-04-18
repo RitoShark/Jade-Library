@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-cape-glow-inst",
+  "name": "Scrolling Uvs Cape Glow Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.042Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_cape_glow_inst",
+  "textureFiles": [
+    {
+      "name": "Taliyah_Skin11_CapeGlow_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.035Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin18",
+    "bin": "data/characters/taliyah/skins/skin18.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin18/Materials/ScrollingUVs_CapeGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin18",
+      "bin": "data/characters/taliyah/skins/skin18.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-sub-mesh-tranlucent",
+  "name": "Hkg Mat Cap Sub Mesh Tranlucent",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.175Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_sub_mesh_tranlucent",
+  "textureFiles": [
+    {
+      "name": "Ornn_Skin14_Snowball_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:55.169Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:55.169Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin14",
+    "bin": "data/characters/ornn/skins/skin14.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin14/Materials/HKG_MatCap_subMesh_Tranlucent"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin14",
+      "bin": "data/characters/ornn/skins/skin14.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "fresnel-alpha-inst",
+  "name": "Fresnel Alpha Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:04.047Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin02_Hair_Mask3.tex",
+      "updatedAt": "2026-04-17T18:14:04.040Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin3",
+    "bin": "data/characters/zoe/skins/skin3.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin3/Materials/FresnelAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin3",
+      "bin": "data/characters/zoe/skins/skin3.bin"
+    }
+  ]
+}

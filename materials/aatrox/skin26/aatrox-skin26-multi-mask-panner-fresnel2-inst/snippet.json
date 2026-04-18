@@ -1,0 +1,48 @@
+{
+  "id": "aatrox-skin26-multi-mask-panner-fresnel2-inst",
+  "name": "Aatrox Skin26 Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:16.120Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_skin26_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:06:16.113Z"
+    },
+    {
+      "name": "Aatrox_Skin21_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:06:16.113Z"
+    },
+    {
+      "name": "Aatrox_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:16.113Z"
+    },
+    {
+      "name": "Aatrox_Skin21_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:06:16.113Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin26",
+    "bin": "data/characters/aatrox/skins/skin26.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin26/Materials/Aatrox_Skin26_MultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin26",
+      "bin": "data/characters/aatrox/skins/skin26.bin"
+    }
+  ]
+}

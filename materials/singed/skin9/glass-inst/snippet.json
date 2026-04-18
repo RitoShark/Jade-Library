@@ -1,0 +1,25 @@
+{
+  "id": "glass-inst",
+  "name": "Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:36.330Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Singed",
+    "skin": "skin9",
+    "bin": "data/characters/singed/skins/skin9.bin",
+    "entryKey": "Characters/Singed/Skins/Skin9/Materials/Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Singed",
+      "skin": "skin9",
+      "bin": "data/characters/singed/skins/skin9.bin"
+    }
+  ]
+}

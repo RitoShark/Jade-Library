@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-inst",
+  "name": "Dark Star Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:51.244Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin18_EmpQ_Stars.tex",
+      "updatedAt": "2026-04-17T17:27:51.239Z"
+    },
+    {
+      "name": "Karma_Skin08_MAT_Mask.tex",
+      "updatedAt": "2026-04-17T17:27:51.239Z"
+    },
+    {
+      "name": "Karma_Skin08_MAT_Mask.tex",
+      "updatedAt": "2026-04-17T17:27:51.239Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin18",
+    "bin": "data/characters/karma/skins/skin18.bin",
+    "entryKey": "Characters/Karma/Skins/Skin18/Materials/DarkStar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin18",
+      "bin": "data/characters/karma/skins/skin18.bin"
+    }
+  ]
+}

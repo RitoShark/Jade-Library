@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-tint-inst",
+  "name": "Diffuse Tint Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:04.403Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_tint_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin0",
+    "bin": "545d165b9aae47b4.bin",
+    "entryKey": "Characters/Yone/Skins/Skin0/Materials/Diffuse_Tint_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin0",
+      "bin": "545d165b9aae47b4.bin"
+    }
+  ]
+}

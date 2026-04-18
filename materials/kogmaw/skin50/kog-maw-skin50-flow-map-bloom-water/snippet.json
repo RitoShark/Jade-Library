@@ -1,0 +1,44 @@
+{
+  "id": "kog-maw-skin50-flow-map-bloom-water",
+  "name": "Kog Maw Skin50 Flow Map Bloom Water",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:48.809Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kog_maw_skin50_flow_map_bloom_water",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin46_TX_FlowMap.tex",
+      "updatedAt": "2026-04-17T17:31:48.803Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:48.803Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:48.803Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin50",
+    "bin": "data/characters/kogmaw/skins/skin50.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin50/Materials/KogMaw_Skin50_FlowMap_Bloom_Water"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin50",
+      "bin": "data/characters/kogmaw/skins/skin50.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "xayah-weapon-module",
+  "name": "Xayah Weapon Module",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:43.507Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xayah_weapon_module",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:43.500Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:43.500Z"
+    },
+    {
+      "name": "Xayah_Skin60_TX_CM.Chroma_Xayah_BattleAcademia.tex",
+      "updatedAt": "2026-04-17T18:07:43.500Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:43.500Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin60",
+    "bin": "data/characters/xayah/skins/skin60.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin60/Materials/Xayah_Weapon_Module"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin60",
+      "bin": "data/characters/xayah/skins/skin60.bin"
+    }
+  ]
+}

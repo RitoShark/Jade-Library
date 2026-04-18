@@ -1,0 +1,56 @@
+{
+  "id": "dresspatten-inst",
+  "name": "Dresspatten Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:23.206Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dresspatten_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    },
+    {
+      "name": "Mel_Skin10_DressMask_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    },
+    {
+      "name": "Mel_Skin11_DressPatten_TX_CM.Chroma_Mel_WinterBlessed.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    },
+    {
+      "name": "black.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    },
+    {
+      "name": "black.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    },
+    {
+      "name": "black.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.201Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mel",
+    "skin": "skin11",
+    "bin": "data/characters/mel/skins/skin11.bin",
+    "entryKey": "Characters/Mel/Skins/Skin11/Materials/Dresspatten_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mel",
+      "skin": "skin11",
+      "bin": "data/characters/mel/skins/skin11.bin"
+    }
+  ]
+}

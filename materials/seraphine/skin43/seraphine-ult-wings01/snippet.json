@@ -1,0 +1,41 @@
+{
+  "id": "seraphine-ult-wings01",
+  "name": "Seraphine Ult Wings01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:24.313Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_seraphine_ult_wings01",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin43_UltWings_TX_Mask.SKINS_Seraphine_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.898Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin43",
+    "bin": "data/characters/seraphine/skins/skin43.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin43/Materials/Seraphine_UltWings01"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin43",
+      "bin": "data/characters/seraphine/skins/skin43.bin"
+    },
+    {
+      "champion": "Strawberry_Seraphine",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_seraphine/skins/skin0.bin"
+    }
+  ]
+}

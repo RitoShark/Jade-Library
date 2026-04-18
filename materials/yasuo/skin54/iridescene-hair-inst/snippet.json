@@ -1,0 +1,48 @@
+{
+  "id": "iridescene-hair-inst",
+  "name": "Iridescene Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:13.799Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_iridescene_hair_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:09:13.786Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:09:13.786Z"
+    },
+    {
+      "name": "Yasuo_Skin54_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:09:13.786Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:13.786Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin54",
+    "bin": "data/characters/yasuo/skins/skin54.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin54/Materials/IridesceneHair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin54",
+      "bin": "data/characters/yasuo/skins/skin54.bin"
+    }
+  ]
+}

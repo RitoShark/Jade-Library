@@ -1,0 +1,60 @@
+{
+  "id": "shaco-skin43-body-toon-shading-inst",
+  "name": "Shaco Skin43 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:50.853Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shaco_skin43_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    },
+    {
+      "name": "Gradient_test_04.tex",
+      "updatedAt": "2026-04-17T17:53:50.847Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin43",
+    "bin": "data/characters/shaco/skins/skin43.bin",
+    "entryKey": "Characters/Shaco/Skins/Skin43/Materials/Shaco_Skin43_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin43",
+      "bin": "data/characters/shaco/skins/skin43.bin"
+    }
+  ]
+}

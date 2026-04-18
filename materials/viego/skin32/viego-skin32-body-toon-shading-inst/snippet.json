@@ -1,0 +1,60 @@
+{
+  "id": "viego-skin32-body-toon-shading-inst",
+  "name": "Viego Skin32 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:38.415Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin32_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    },
+    {
+      "name": "Gradient_Water_01.tex",
+      "updatedAt": "2026-04-17T18:05:38.409Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin32",
+    "bin": "data/characters/viego/skins/skin32.bin",
+    "entryKey": "Characters/Viego/Skins/Skin32/Materials/Viego_Skin32_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin32",
+      "bin": "data/characters/viego/skins/skin32.bin"
+    }
+  ]
+}

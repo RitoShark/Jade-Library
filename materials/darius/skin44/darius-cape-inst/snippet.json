@@ -1,0 +1,36 @@
+{
+  "id": "darius-cape-inst",
+  "name": "Darius Cape Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:52.105Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_darius_cape_inst",
+  "textureFiles": [
+    {
+      "name": "Darius_Skin43_Demon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:14:52.098Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin44",
+    "bin": "data/characters/darius/skins/skin44.bin",
+    "entryKey": "Characters/Darius/Skins/Skin44/Materials/Darius_Cape_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin44",
+      "bin": "data/characters/darius/skins/skin44.bin"
+    }
+  ]
+}

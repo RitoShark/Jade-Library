@@ -1,0 +1,38 @@
+{
+  "id": "diana-skin61-beads-mat",
+  "name": "Diana Skin61 Beads Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:28.036Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_diana_skin61_beads_mat",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin61_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:28.029Z"
+    },
+    {
+      "name": "Diana_Skin54_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:28.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:28.029Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin61",
+    "bin": "data/characters/diana/skins/skin61.bin",
+    "entryKey": "Characters/Diana/Skins/Skin61/Materials/Diana_Skin61_Beads_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin61",
+      "bin": "data/characters/diana/skins/skin61.bin"
+    }
+  ]
+}

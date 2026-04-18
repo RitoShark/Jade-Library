@@ -1,0 +1,64 @@
+{
+  "id": "ezreal-skin59-hand-mat",
+  "name": "Ezreal Skin59 Hand Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:58.128Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ezreal_skin59_hand_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "Ezreal_Skin44_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "Ezreal_Skin44_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:58.122Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin59",
+    "bin": "data/characters/ezreal/skins/skin59.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin59/Materials/Ezreal_Skin59_Hand_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin59",
+      "bin": "data/characters/ezreal/skins/skin59.bin"
+    }
+  ]
+}

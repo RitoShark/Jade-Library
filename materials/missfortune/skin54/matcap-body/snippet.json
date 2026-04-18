@@ -1,0 +1,52 @@
+{
+  "id": "matcap-body",
+  "name": "Matcap Body",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:57.872Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:57.867Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:57.867Z"
+    },
+    {
+      "name": "MissFortune_Skin50_matcap.tex",
+      "updatedAt": "2026-04-17T17:38:57.867Z"
+    },
+    {
+      "name": "MissFortune_Skin54_Mask.tex",
+      "updatedAt": "2026-04-17T17:38:57.867Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:57.867Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin54",
+    "bin": "data/characters/missfortune/skins/skin54.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin54/Materials/Matcap_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin54",
+      "bin": "data/characters/missfortune/skins/skin54.bin"
+    }
+  ]
+}

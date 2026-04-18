@@ -1,0 +1,48 @@
+{
+  "id": "magical-panning-inst",
+  "name": "Magical Panning Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:57.053Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_magical_panning_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:57.048Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:57.048Z"
+    },
+    {
+      "name": "Ashe_Skin18_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:09:57.048Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:57.048Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin18",
+    "bin": "data/characters/ashe/skins/skin18.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin18/Materials/MagicalPanning_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin18",
+      "bin": "data/characters/ashe/skins/skin18.bin"
+    }
+  ]
+}

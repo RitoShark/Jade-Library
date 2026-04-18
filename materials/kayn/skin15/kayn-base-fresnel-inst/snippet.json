@@ -1,0 +1,64 @@
+{
+  "id": "kayn-base-fresnel-inst",
+  "name": "Kayn Base Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.035Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayn_base_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "Kayn_Skin15_Base_Materials.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.029Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin15",
+    "bin": "data/characters/kayn/skins/skin15.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin15/Materials/Kayn_Base_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin15",
+      "bin": "data/characters/kayn/skins/skin15.bin"
+    }
+  ]
+}

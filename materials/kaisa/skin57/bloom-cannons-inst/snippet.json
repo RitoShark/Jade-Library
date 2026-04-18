@@ -1,0 +1,36 @@
+{
+  "id": "bloom-cannons-inst",
+  "name": "Bloom Cannons Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:31.907Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_cannons_inst",
+  "textureFiles": [
+    {
+      "name": "Kaisa_Skin48_Bloom_Cannons.tex",
+      "updatedAt": "2026-04-17T17:26:31.901Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin57",
+    "bin": "data/characters/kaisa/skins/skin57.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin57/Materials/Bloom_Cannons_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin57",
+      "bin": "data/characters/kaisa/skins/skin57.bin"
+    }
+  ]
+}

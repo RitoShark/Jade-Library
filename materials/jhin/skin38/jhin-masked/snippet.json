@@ -1,0 +1,44 @@
+{
+  "id": "jhin-masked",
+  "name": "Jhin Masked",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:25.090Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jhin_masked",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:25.083Z"
+    },
+    {
+      "name": "Jhin_Skin36_TX_Outline_Mask.tex",
+      "updatedAt": "2026-04-17T17:25:25.083Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:25.083Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin38",
+    "bin": "data/characters/jhin/skins/skin38.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin38/Materials/Jhin_Masked"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin38",
+      "bin": "data/characters/jhin/skins/skin38.bin"
+    }
+  ]
+}

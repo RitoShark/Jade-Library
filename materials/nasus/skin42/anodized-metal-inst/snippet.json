@@ -1,0 +1,40 @@
+{
+  "id": "anodized-metal-inst",
+  "name": "Anodized Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:46.905Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_anodized_metal_inst",
+  "textureFiles": [
+    {
+      "name": "fringe.tex",
+      "updatedAt": "2026-04-17T17:41:46.899Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:46.899Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin42",
+    "bin": "data/characters/nasus/skins/skin42.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin42/Materials/AnodizedMetal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin42",
+      "bin": "data/characters/nasus/skins/skin42.bin"
+    }
+  ]
+}

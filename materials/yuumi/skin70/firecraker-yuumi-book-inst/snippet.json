@@ -1,0 +1,64 @@
+{
+  "id": "firecraker-yuumi-book-inst",
+  "name": "Firecraker Yuumi Book Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:12.221Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_firecraker_yuumi_book_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "MatCap_Metal.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "Yuumi_Skin70_ColorMask_Weapon_TX_CM.SKINS_Yuumi_Skin70.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "Yuumi_Skin70_Material_Iridescence_Mat_TX_CM.SKINS_Yuumi_Skin70.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "Yuumi_Skin70_AdditiveScroll_TX_CM.SKINS_Yuumi_Skin70.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "Yuumi_Skin70_AdditiveScrollMask_Weapon_TX_CM.SKINS_Yuumi_Skin70.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:12.214Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin70",
+    "bin": "data/characters/yuumi/skins/skin70.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin70/Material/Firecraker_Yuumi_Book_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin70",
+      "bin": "data/characters/yuumi/skins/skin70.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "char-glass-diffuse-inst",
+  "name": "Char Glass Diffuse Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:11.259Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_char_glass_diffuse_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise3.tex",
+      "updatedAt": "2026-04-17T17:12:11.254Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin51",
+    "bin": "data/characters/blitzcrank/skins/skin51.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin51/Materials/CHAR_Glass_Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin51",
+      "bin": "data/characters/blitzcrank/skins/skin51.bin"
+    }
+  ]
+}

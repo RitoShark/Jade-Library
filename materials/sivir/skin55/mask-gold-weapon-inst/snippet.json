@@ -1,0 +1,56 @@
+{
+  "id": "mask-gold-weapon-inst",
+  "name": "Mask Gold Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.606Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mask_gold_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    },
+    {
+      "name": "Sivir_Skin50_RMA.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:10.598Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin55",
+    "bin": "data/characters/sivir/skins/skin55.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin55/Materials/Mask_Gold_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin55",
+      "bin": "data/characters/sivir/skins/skin55.bin"
+    }
+  ]
+}

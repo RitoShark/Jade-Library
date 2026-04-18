@@ -1,0 +1,36 @@
+{
+  "id": "diana-bloom-mat-inst",
+  "name": "Diana Bloom Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:18.052Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diana_bloom_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:18.044Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin2",
+    "bin": "data/characters/diana/skins/skin2.bin",
+    "entryKey": "Characters/Diana/Skins/Skin2/Materials/Diana_Bloom_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin2",
+      "bin": "data/characters/diana/skins/skin2.bin"
+    }
+  ]
+}

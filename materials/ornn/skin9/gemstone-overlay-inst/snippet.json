@@ -1,0 +1,36 @@
+{
+  "id": "gemstone-overlay-inst",
+  "name": "Gemstone Overlay Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.734Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gemstone_overlay_inst",
+  "textureFiles": [
+    {
+      "name": "Ornn_Skin02_Horn_Mask.tex",
+      "updatedAt": "2026-04-17T17:44:55.728Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin9",
+    "bin": "data/characters/ornn/skins/skin9.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin9/Materials/Gemstone_Overlay_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin9",
+      "bin": "data/characters/ornn/skins/skin9.bin"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "riven-prestige-inst",
+  "name": "Riven Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:09.420Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_riven_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Riven_Skin45_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:49:09.411Z"
+    },
+    {
+      "name": "Riven_Skin45_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:49:09.411Z"
+    },
+    {
+      "name": "Riven_Skin45_Noise.tex",
+      "updatedAt": "2026-04-17T17:49:09.411Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:49:09.411Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Riven",
+    "skin": "skin45",
+    "bin": "data/characters/riven/skins/skin45.bin",
+    "entryKey": "Characters/Riven/Skins/Skin45/Materials/Riven_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Riven",
+      "skin": "skin45",
+      "bin": "data/characters/riven/skins/skin45.bin"
+    }
+  ]
+}

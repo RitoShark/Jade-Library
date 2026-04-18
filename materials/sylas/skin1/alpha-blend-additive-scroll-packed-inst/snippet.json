@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:26.937Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:58:26.929Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:58:26.929Z"
+    },
+    {
+      "name": "Sylas_Skin01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:26.929Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:58:26.929Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin1",
+    "bin": "data/characters/sylas/skins/skin1.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin1/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin1",
+      "bin": "data/characters/sylas/skins/skin1.bin"
+    }
+  ]
+}

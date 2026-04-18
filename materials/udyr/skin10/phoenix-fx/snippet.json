@@ -1,0 +1,48 @@
+{
+  "id": "phoenix-fx",
+  "name": "Phoenix Fx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:42.804Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_phoenix_fx",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:02:42.797Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:02:42.797Z"
+    },
+    {
+      "name": "Udyr_Skin10_SubmeshArms_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:42.797Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:02:42.797Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Udyr",
+    "skin": "skin10",
+    "bin": "data/characters/udyr/skins/skin10.bin",
+    "entryKey": "Characters/Udyr/Skins/Skin10/Materials/PhoenixFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Udyr",
+      "skin": "skin10",
+      "bin": "data/characters/udyr/skins/skin10.bin"
+    }
+  ]
+}

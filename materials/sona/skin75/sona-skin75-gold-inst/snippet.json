@@ -1,0 +1,64 @@
+{
+  "id": "sona-skin75-gold-inst",
+  "name": "Sona Skin75 Gold Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:27.720Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin75_gold_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "MatCap_Metal.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "Sona_Skin75_Weapon_Mask_Blue_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "Yuumi_Skin70_Material_Iridescence_Mat_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "Yuumi_Skin70_AdditiveScroll_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "Sona_Skin75_Weapon_Mask_Green_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:27.712Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin75",
+    "bin": "data/characters/sona/skins/skin75.bin",
+    "entryKey": "Characters/Sona/Skins/Skin75/Materials/Sona_Skin75_Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin75",
+      "bin": "data/characters/sona/skins/skin75.bin"
+    }
+  ]
+}

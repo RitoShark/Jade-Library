@@ -1,0 +1,90 @@
+"jadelib_specular_fresnel_masked_inst" = StaticMaterialDef {
+    name: string = "jadelib_specular_fresnel_masked_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/specular-fresnel-masked-inst/Kassadin_Skin30_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/specular-fresnel-masked-inst/Kassadin_Skin24_Mask_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/specular-fresnel-masked-inst/Default_Gradient.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.9143511056900024, 0.3794003129005432, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Bias"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLightOffset"
+            value: vec4 = { -0.41999998688697815, -0.41999998688697815, -0.41999998688697815, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0.886274516582489, 0.9098039269447327, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 0.5, 0.5, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Specular_Fresnel_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

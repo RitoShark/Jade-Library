@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-simple-inst",
+  "name": "Scrolling Uvs Simple Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:45.438Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_simple_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin36_Mask_Mt.tex",
+      "updatedAt": "2026-04-17T17:41:45.428Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin36",
+    "bin": "data/characters/nasus/skins/skin36.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin36/Materials/ScrollingUVs_Simple_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin36",
+      "bin": "data/characters/nasus/skins/skin36.bin"
+    }
+  ]
+}

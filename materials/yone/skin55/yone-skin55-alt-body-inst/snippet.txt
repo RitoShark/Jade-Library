@@ -1,0 +1,146 @@
+"jadelib_yone_skin55_alt_body_inst" = StaticMaterialDef {
+    name: string = "jadelib_yone_skin55_alt_body_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap"
+            texturePath: string = "assets/jadelib/yone-skin55-alt-body-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/yone-skin55-alt-body-inst/Yone_Skin55_Mask02_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Specular_Mask"
+            texturePath: string = "assets/jadelib/yone-skin55-alt-body-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Frequency"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Frequency"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorIntensity"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 0.7557793259620667, 0.1445029377937317, 0.008804455399513245, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Noise_Tiling_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+            value: vec4 = { 0.0949999988079071, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "APPLY_FLOWMAP_TO_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWDIRECTIONSWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Flowmap_Bloom"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

@@ -1,0 +1,64 @@
+{
+  "id": "bloom-inst",
+  "name": "Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:08.751Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "Zed_Skin013_Weapons_Mask_Bloom.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:08.745Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin13",
+    "bin": "data/characters/zed/skins/skin13.bin",
+    "entryKey": "Characters/Zed/Skins/Skin13/Materials/Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin13",
+      "bin": "data/characters/zed/skins/skin13.bin"
+    }
+  ]
+}

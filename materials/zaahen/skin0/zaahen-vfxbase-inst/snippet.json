@@ -1,0 +1,40 @@
+{
+  "id": "zaahen-vfxbase-inst",
+  "name": "Zaahen Vfxbase Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:18.894Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zaahen_vfxbase_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Base_R_body_mask.tex",
+      "updatedAt": "2026-04-17T18:11:18.836Z"
+    },
+    {
+      "name": "Zaahen_Base_DissolveGradient1.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:18.836Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zaahen",
+    "skin": "skin0",
+    "bin": "data/characters/zaahen/skins/skin0.bin",
+    "entryKey": "Characters/Zaahen/Skins/Skin0/Materials/Zaahen_VFXBase_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zaahen",
+      "skin": "skin0",
+      "bin": "data/characters/zaahen/skins/skin0.bin"
+    }
+  ]
+}

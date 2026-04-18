@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:25.297Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Vladimir_Skin10_WaterTest2.tex",
+      "updatedAt": "2026-04-17T18:06:25.263Z"
+    },
+    {
+      "name": "Vladimir_Skin10_WaterTest1.tex",
+      "updatedAt": "2026-04-17T18:06:25.263Z"
+    },
+    {
+      "name": "VladTest2.tex",
+      "updatedAt": "2026-04-17T18:06:25.263Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vladimir",
+    "skin": "skin10",
+    "bin": "data/characters/vladimir/skins/skin10.bin",
+    "entryKey": "Characters/Vladimir/Skins/Skin10/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vladimir",
+      "skin": "skin10",
+      "bin": "data/characters/vladimir/skins/skin10.bin"
+    }
+  ]
+}

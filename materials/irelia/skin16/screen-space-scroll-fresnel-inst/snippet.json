@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-scroll-fresnel-inst",
+  "name": "Screen Space Scroll Fresnel Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:34.269Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_scroll_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Skin16_Hologram_Lines.tex",
+      "updatedAt": "2026-04-17T17:22:34.263Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin16",
+    "bin": "data/characters/irelia/skins/skin16.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin16/Materials/ScreenSpaceScroll_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin16",
+      "bin": "data/characters/irelia/skins/skin16.bin"
+    }
+  ]
+}

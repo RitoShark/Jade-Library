@@ -1,0 +1,36 @@
+{
+  "id": "vfx-mesh-fresnel",
+  "name": "Vfx Mesh Fresnel",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:14.463Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vfx_mesh_fresnel",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.451Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin55",
+    "bin": "data/characters/yasuo/skins/skin55.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin55/Materials/VFX_Mesh_Fresnel"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin55",
+      "bin": "data/characters/yasuo/skins/skin55.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "body-diffuse-inst",
+  "name": "Body Diffuse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:19.249Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_diffuse_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin4",
+    "bin": "data/characters/rakan/skins/skin4.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin4/Materials/Body_Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin4",
+      "bin": "data/characters/rakan/skins/skin4.bin"
+    }
+  ]
+}

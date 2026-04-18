@@ -1,0 +1,52 @@
+{
+  "id": "zed-crystal-inst",
+  "name": "Zed Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:15.336Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zed_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:15.326Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:15.326Z"
+    },
+    {
+      "name": "Camille_Skin32_DiamondColor_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:15.326Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:15.326Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:15.326Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin69",
+    "bin": "data/characters/zed/skins/skin69.bin",
+    "entryKey": "Characters/Zed/Skins/Skin69/Materials/Zed_Crystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin69",
+      "bin": "data/characters/zed/skins/skin69.bin"
+    }
+  ]
+}

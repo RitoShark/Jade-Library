@@ -1,0 +1,60 @@
+{
+  "id": "gwen-skin21-body-toon-shading-inst",
+  "name": "Gwen Skin21 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:06.706Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gwen_skin21_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    },
+    {
+      "name": "Gwen_Skin20_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:21:06.700Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gwen",
+    "skin": "skin21",
+    "bin": "data/characters/gwen/skins/skin21.bin",
+    "entryKey": "Characters/Gwen/Skins/Skin21/Materials/Gwen_Skin21_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gwen",
+      "skin": "skin21",
+      "bin": "data/characters/gwen/skins/skin21.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "janna-skin56-cloth",
+  "name": "Janna Skin56 Cloth",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:26.298Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_janna_skin56_cloth",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin61_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:26.293Z"
+    },
+    {
+      "name": "Janna_Skin61_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:26.293Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:26.293Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin61",
+    "bin": "data/characters/janna/skins/skin61.bin",
+    "entryKey": "Characters/Janna/Skins/Skin61/Materials/JannaSkin56_Cloth"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin61",
+      "bin": "data/characters/janna/skins/skin61.bin"
+    }
+  ]
+}

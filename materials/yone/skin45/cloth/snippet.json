@@ -1,0 +1,44 @@
+{
+  "id": "cloth",
+  "name": "Cloth",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:05.438Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloth",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin45_Cloth_Matcap.tex",
+      "updatedAt": "2026-04-17T18:10:05.430Z"
+    },
+    {
+      "name": "Yone_Skin45_Cloth_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:05.430Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T18:10:05.430Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin45",
+    "bin": "data/characters/yone/skins/skin45.bin",
+    "entryKey": "Characters/Yone/Skins/Skin45/Materials/Cloth"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin45",
+      "bin": "data/characters/yone/skins/skin45.bin"
+    }
+  ]
+}

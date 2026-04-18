@@ -1,0 +1,48 @@
+{
+  "id": "alpha-scroll-02-inst",
+  "name": "Alpha Scroll 02 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:58.301Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_scroll_02_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:33:58.295Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:33:58.295Z"
+    },
+    {
+      "name": "Lillia_Skin36_Body_TX_CM.Chroma_Lillia_FaerieCourt_2024.tex",
+      "updatedAt": "2026-04-17T17:33:58.295Z"
+    },
+    {
+      "name": "Lillia_Skin36_Idle_Mask_01.Chroma_Lillia_FaerieCourt_2024.tex",
+      "updatedAt": "2026-04-17T17:33:58.295Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin36",
+    "bin": "data/characters/lillia/skins/skin36.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin36/Materials/Alpha_Scroll_02_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin36",
+      "bin": "data/characters/lillia/skins/skin36.bin"
+    }
+  ]
+}

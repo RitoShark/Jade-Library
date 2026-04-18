@@ -1,0 +1,52 @@
+{
+  "id": "prestige-diamond",
+  "name": "Prestige Diamond",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.645Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_diamond",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:48:21.640Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:21.640Z"
+    },
+    {
+      "name": "Renata_Skin21_DiamondTexture_2.tex",
+      "updatedAt": "2026-04-17T17:48:21.640Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:21.640Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:21.640Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin21",
+    "bin": "data/characters/renata/skins/skin21.bin",
+    "entryKey": "Characters/Renata/Skins/Skin21/Materials/Prestige_Diamond"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin21",
+      "bin": "data/characters/renata/skins/skin21.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ult-wings-lunar-wraith",
+  "name": "Ult Wings Lunar Wraith",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:22.817Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ult_wings_lunar_wraith",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin10_Wings_Gradient_Map.tex",
+      "updatedAt": "2026-04-17T17:40:22.809Z"
+    },
+    {
+      "name": "Morgana_Skin10_Wing_Energy.tex",
+      "updatedAt": "2026-04-17T17:40:22.810Z"
+    },
+    {
+      "name": "Morgana_Skin10_Wings_Gradient_Map.tex",
+      "updatedAt": "2026-04-17T17:40:22.810Z"
+    },
+    {
+      "name": "Morgana_Skin10_Wings_Gradient_Map.tex",
+      "updatedAt": "2026-04-17T17:40:22.810Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin10",
+    "bin": "data/characters/morgana/skins/skin10.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin10/Materials/Ult_Wings_LunarWraith"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin10",
+      "bin": "data/characters/morgana/skins/skin10.bin"
+    }
+  ]
+}

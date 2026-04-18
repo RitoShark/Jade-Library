@@ -1,0 +1,44 @@
+{
+  "id": "nidalee-cougar-dark-star-body-inst",
+  "name": "Nidalee Cougar Dark Star Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:06.259Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_cougar_dark_star_body_inst",
+  "textureFiles": [
+    {
+      "name": "NidaleeCougar_Skin18_M_Dark_Star_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:06.253Z"
+    },
+    {
+      "name": "NidaleeCougar_Skin18_Screnspace_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:06.253Z"
+    },
+    {
+      "name": "NidaleeCougar_Skin18_Fresnel_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:06.253Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin18",
+    "bin": "data/characters/nidaleecougar/skins/skin18.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin18/Materials/NidaleeCougar_DarkStar_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin18",
+      "bin": "data/characters/nidaleecougar/skins/skin18.bin"
+    }
+  ]
+}

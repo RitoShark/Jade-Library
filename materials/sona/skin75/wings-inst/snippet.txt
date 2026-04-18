@@ -1,0 +1,121 @@
+"jadelib_wings_inst" = StaticMaterialDef {
+    name: string = "jadelib_wings_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/wings-inst/Sona_Skin75_P_Test_03.SKINS_Sona_Skin75.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/wings-inst/Sona_Skin75_Assets_1_117.SKINS_Sona_Skin75.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.3333333432674408, 1, 0.49803921580314636, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Mult"
+            value: vec4 = { 4.650000095367432, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Fresnel_Bloom_Basic"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "3710476564"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0.44999998807907104, 1, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "754232724"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.6700000166893005, 1, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "146370332"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.33000001311302185, 1, 0.5, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {}
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Color"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "3710476564"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sona/Skins/Skin75/Particles/Sona_Skin75_P_Test_03.SKINS_Sona_Skin75.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "754232724"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sona/Skins/Skin75/Particles/Sona_Skin75_P_Test_09.SKINS_Sona_Skin75.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "146370332"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sona/Skins/Skin75/Particles/Sona_Skin75_P_Test_08.SKINS_Sona_Skin75.tex"
+                    }
+                }
+            }
+        }
+    }
+}

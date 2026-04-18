@@ -1,0 +1,44 @@
+{
+  "id": "frost-mat",
+  "name": "Frost Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.284Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_frost_mat",
+  "textureFiles": [
+    {
+      "name": "Taliyah_Skin21_MatCap2_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.278Z"
+    },
+    {
+      "name": "Taliyah_Skin21_FrostMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.278Z"
+    },
+    {
+      "name": "Taliyah_Skin21_FrostMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.278Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin21",
+    "bin": "data/characters/taliyah/skins/skin21.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin21/Materials/Frost_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin21",
+      "bin": "data/characters/taliyah/skins/skin21.bin"
+    }
+  ]
+}

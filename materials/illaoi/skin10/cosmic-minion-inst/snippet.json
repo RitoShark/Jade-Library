@@ -1,0 +1,44 @@
+{
+  "id": "cosmic-minion-inst",
+  "name": "Cosmic Minion Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:03.173Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cosmic_minion_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Base_BA_VoidBackground_04.tex",
+      "updatedAt": "2026-04-17T17:22:03.162Z"
+    },
+    {
+      "name": "Material_Mask1.tex",
+      "updatedAt": "2026-04-17T17:22:03.162Z"
+    },
+    {
+      "name": "Material_Mask2.tex",
+      "updatedAt": "2026-04-17T17:22:03.162Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Illaoi",
+    "skin": "skin10",
+    "bin": "data/characters/illaoiminion/skins/skin10.bin",
+    "entryKey": "Characters/IllaoiMinion/Skins/Skin10/Materials/Cosmic_Minion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Illaoi",
+      "skin": "skin10",
+      "bin": "data/characters/illaoiminion/skins/skin10.bin"
+    }
+  ]
+}

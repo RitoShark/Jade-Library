@@ -1,0 +1,48 @@
+{
+  "id": "thresh-pulsefire-mat-inst",
+  "name": "Thresh Pulsefire Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:12.894Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_thresh_pulsefire_mat_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:01:12.888Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:01:12.888Z"
+    },
+    {
+      "name": "Thresh_Skin13_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:01:12.888Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:12.888Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin13",
+    "bin": "data/characters/thresh/skins/skin13.bin",
+    "entryKey": "Characters/Thresh/Skins/Skin13/Materials/Thresh_Pulsefire_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin13",
+      "bin": "data/characters/thresh/skins/skin13.bin"
+    }
+  ]
+}

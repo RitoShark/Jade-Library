@@ -1,0 +1,38 @@
+{
+  "id": "gold-fresnel-masked-inst",
+  "name": "Gold Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:54.394Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_gold_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Vex_Skin20_TX_CM.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:54.386Z"
+    },
+    {
+      "name": "Vex_Skin20_Mask_03.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:54.386Z"
+    },
+    {
+      "name": "black.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:54.386Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin20",
+    "bin": "data/characters/vex/skins/skin20.bin",
+    "entryKey": "Characters/Vex/Skins/Skin20/Materials/Gold_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin20",
+      "bin": "data/characters/vex/skins/skin20.bin"
+    }
+  ]
+}

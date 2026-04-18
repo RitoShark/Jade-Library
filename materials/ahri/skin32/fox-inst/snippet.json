@@ -1,0 +1,64 @@
+{
+  "id": "fox-inst",
+  "name": "Fox Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:53.590Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fox_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "Ahri_Skin32_FoxTail_MAT.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:53.584Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin32",
+    "bin": "data/characters/ahri/skins/skin32.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin32/Materials/Fox_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin32",
+      "bin": "data/characters/ahri/skins/skin32.bin"
+    }
+  ]
+}

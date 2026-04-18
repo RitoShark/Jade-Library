@@ -1,0 +1,48 @@
+{
+  "id": "master-yi-skin116-cloak",
+  "name": "Master Yi Skin116 Cloak",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:58.862Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin116_cloak",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:58.855Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:58.855Z"
+    },
+    {
+      "name": "MasterYi_Skin116_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:58.855Z"
+    },
+    {
+      "name": "MasterYi_Skin116_ClockFresnelMask_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:58.855Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin116",
+    "bin": "data/characters/masteryi/skins/skin116.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin116/Materials/MasterYi_Skin116_Cloak"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin116",
+      "bin": "data/characters/masteryi/skins/skin116.bin"
+    }
+  ]
+}

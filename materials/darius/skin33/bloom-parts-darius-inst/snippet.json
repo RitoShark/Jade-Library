@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-darius-inst",
+  "name": "Bloom Parts Darius Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:51.890Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_darius_inst",
+  "textureFiles": [
+    {
+      "name": "Kayne_Skin33_Idle_Bloom_Mask01.tex",
+      "updatedAt": "2026-04-17T17:14:51.884Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin33",
+    "bin": "data/characters/darius/skins/skin33.bin",
+    "entryKey": "Characters/Darius/Skins/Skin33/Materials/Bloom_Parts_Darius_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin33",
+      "bin": "data/characters/darius/skins/skin33.bin"
+    }
+  ]
+}

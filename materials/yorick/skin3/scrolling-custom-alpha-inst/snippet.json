@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-custom-alpha-inst",
+  "name": "Scrolling Custom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:31.892Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_custom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Yorick_Skin03_Cape_Mask01.tex",
+      "updatedAt": "2026-04-17T18:10:31.886Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin3",
+    "bin": "data/characters/yorick/skins/skin3.bin",
+    "entryKey": "Characters/Yorick/Skins/Skin3/Materials/ScrollingCustomAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin3",
+      "bin": "data/characters/yorick/skins/skin3.bin"
+    }
+  ]
+}

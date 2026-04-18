@@ -1,0 +1,36 @@
+{
+  "id": "bloom-energy",
+  "name": "Bloom Energy",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:43.798Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_energy",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:03:43.792Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin55",
+    "bin": "data/characters/vayne/skins/skin55.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin55/Materials/Bloom_Energy"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin55",
+      "bin": "data/characters/vayne/skins/skin55.bin"
+    }
+  ]
+}

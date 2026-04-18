@@ -1,0 +1,40 @@
+{
+  "id": "fire-mask-bloom-inst",
+  "name": "Fire Mask Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:57.409Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fire_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "JarvanIV_Skin35_Material_Gradient.tex",
+      "updatedAt": "2026-04-17T17:23:57.403Z"
+    },
+    {
+      "name": "JarvanIV_Skin39_Alpha_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:57.403Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin39",
+    "bin": "data/characters/jarvaniv/skins/skin39.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin39/Materials/Fire_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin39",
+      "bin": "data/characters/jarvaniv/skins/skin39.bin"
+    }
+  ]
+}

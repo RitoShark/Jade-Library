@@ -1,0 +1,36 @@
+{
+  "id": "yorick-big-ghoul-skin12-glow-effect-mat-inst",
+  "name": "Yorick Big Ghoul Skin12 Glow Effect Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:32.566Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yorick_big_ghoul_skin12_glow_effect_mat_inst",
+  "textureFiles": [
+    {
+      "name": "YorickBigGhoul_Skin12_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:32.560Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin12",
+    "bin": "data/characters/yorickbigghoul/skins/skin12.bin",
+    "entryKey": "Characters/YorickBigGhoul/Skins/Skin12/Materials/YorickBigGhoul_Skin12_GlowEffect_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin12",
+      "bin": "data/characters/yorickbigghoul/skins/skin12.bin"
+    }
+  ]
+}

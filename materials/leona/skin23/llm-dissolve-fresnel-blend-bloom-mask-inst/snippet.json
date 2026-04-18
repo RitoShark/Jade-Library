@@ -1,0 +1,56 @@
+{
+  "id": "llm-dissolve-fresnel-blend-bloom-mask-inst",
+  "name": "Llm Dissolve Fresnel Blend Bloom Mask Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:32.519Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_llm_dissolve_fresnel_blend_bloom_mask_inst",
+  "textureFiles": [
+    {
+      "name": "Leona_Skin10_SmokeErode_01.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    },
+    {
+      "name": "Leona_Skin23_Equipment_TX_CM_RMA.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.512Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin23",
+    "bin": "data/characters/leona/skins/skin23.bin",
+    "entryKey": "Characters/Leona/Skins/Skin23/Materials/LLM_Dissolve_Fresnel_Blend_Bloom_Mask_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin23",
+      "bin": "data/characters/leona/skins/skin23.bin"
+    }
+  ]
+}

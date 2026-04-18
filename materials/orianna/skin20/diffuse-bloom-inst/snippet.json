@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:36.313Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "glow_map_2.tex",
+      "updatedAt": "2026-04-17T17:44:36.307Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Orianna",
+    "skin": "skin20",
+    "bin": "data/characters/orianna/skins/skin20.bin",
+    "entryKey": "Characters/Orianna/Skins/Skin20/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Orianna",
+      "skin": "skin20",
+      "bin": "data/characters/orianna/skins/skin20.bin"
+    }
+  ]
+}

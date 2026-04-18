@@ -1,0 +1,44 @@
+{
+  "id": "lucian-skin62-body-inst",
+  "name": "Lucian Skin62 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:01.110Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lucian_skin62_body_inst",
+  "textureFiles": [
+    {
+      "name": "Lucian_Skin62_Matcap_TX_CM.SKINS_Lucian_Skin62.tex",
+      "updatedAt": "2026-04-17T17:35:01.104Z"
+    },
+    {
+      "name": "Lucian_Skin62_Mask_TX_CM.SKINS_Lucian_Skin62.tex",
+      "updatedAt": "2026-04-17T17:35:01.104Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:35:01.104Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin62",
+    "bin": "data/characters/lucian/skins/skin62.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin62/Materials/LucianSkin62_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin62",
+      "bin": "data/characters/lucian/skins/skin62.bin"
+    }
+  ]
+}

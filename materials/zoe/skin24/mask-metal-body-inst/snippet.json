@@ -1,0 +1,50 @@
+{
+  "id": "mask-metal-body-inst",
+  "name": "Mask Metal Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:01.547Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_mask_metal_body_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    },
+    {
+      "name": "Zoe_Skin24_Main_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    },
+    {
+      "name": "Zoe_Skin22_E_portal_tex.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    },
+    {
+      "name": "Zoe_Skin24_Body_Mask.tex",
+      "updatedAt": "2026-04-17T18:14:01.538Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin24",
+    "bin": "data/characters/zoe/skins/skin24.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin24/Materials/Mask_Metal_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin24",
+      "bin": "data/characters/zoe/skins/skin24.bin"
+    }
+  ]
+}

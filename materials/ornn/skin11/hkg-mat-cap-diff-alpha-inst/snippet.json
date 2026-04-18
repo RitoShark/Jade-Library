@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.039Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Ornn_Skin11_MatCap_Jelly_01.tex",
+      "updatedAt": "2026-04-17T17:44:55.033Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:55.033Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin11",
+    "bin": "data/characters/ornn/skins/skin11.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin11/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin11",
+      "bin": "data/characters/ornn/skins/skin11.bin"
+    }
+  ]
+}

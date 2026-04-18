@@ -1,0 +1,44 @@
+{
+  "id": "akali-umi-inst",
+  "name": "Akali Umi Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:54.824Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akali_umi_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin61_Umi_Galaxy.tex",
+      "updatedAt": "2026-04-17T17:07:54.819Z"
+    },
+    {
+      "name": "Akali_Skin61_Umi_Mask.tex",
+      "updatedAt": "2026-04-17T17:07:54.819Z"
+    },
+    {
+      "name": "Akali_Skin61_Umi_FresnelMask.tex",
+      "updatedAt": "2026-04-17T17:07:54.819Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin61",
+    "bin": "data/characters/akali/skins/skin61.bin",
+    "entryKey": "Characters/Akali/Skins/Skin61/Materials/Akali_Umi_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin61",
+      "bin": "data/characters/akali/skins/skin61.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "rakan-body-masked-inst",
+  "name": "Rakan Body Masked Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:17.369Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rakan_body_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin22_P_BodyMask01.tex",
+      "updatedAt": "2026-04-17T17:47:17.363Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin22",
+    "bin": "data/characters/rakan/skins/skin22.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin22/Materials/Rakan_Body_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin22",
+      "bin": "data/characters/rakan/skins/skin22.bin"
+    }
+  ]
+}

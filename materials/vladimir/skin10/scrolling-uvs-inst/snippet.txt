@@ -1,0 +1,168 @@
+"jadelib_scrolling_uvs_inst" = StaticMaterialDef {
+    name: string = "jadelib_scrolling_uvs_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bottom_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/Vladimir_Skin10_WaterTest2.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Top_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/Vladimir_Skin10_WaterTest1.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Mask"
+            texturePath: string = "assets/jadelib/scrolling-uvs-inst/VladTest2.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Dir2"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Low_Quality_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bounds"
+            value: vec4 = { 0.20000000298023224, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 0.3149999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_ScrollSpeed"
+            value: vec4 = { -0.029999999329447746, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_ScrollSpeed"
+            value: vec4 = { 0, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Scale"
+            value: vec4 = { 0.5, 0.8999999761581421, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_AlphaIntensity"
+            value: vec4 = { 0.887499988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_AlphaIntensity"
+            value: vec4 = { 0.5024999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_AlphaIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Rate"
+            value: vec4 = { 0.009999999776482582, -0.1599999964237213, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_UVScale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_UVScale"
+            value: vec4 = { 1.2999999523162842, 2.799999952316284, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tint"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Intensity"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Line_Thick"
+            value: vec4 = { 0.6179999709129333, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Tiling"
+            value: vec4 = { 16, 1, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DIFFUSEHOLD_USING_BCHANNEL"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_WOBBLE_PANNING_LINE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_COLOR_MASK"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_MultiLayer_Alpha_Bloom_Wobble"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Top_AlphaIntensity"
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mFrequency: f32 = 0.6000000238418579
+                    mScale: f32 = 0.5
+                    mBias: f32 = 1.5
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bottom_AlphaIntensity"
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mScale: f32 = 0.25
+                    mBias: f32 = 0.75
+                }
+            }
+        }
+    }
+}

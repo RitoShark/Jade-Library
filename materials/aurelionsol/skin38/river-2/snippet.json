@@ -1,0 +1,96 @@
+{
+  "id": "river-2",
+  "name": "River 2",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:44.967Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_river_2",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin38_TX_CM_White.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_Riverline_TX_CM.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_Water_Distortion.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.959Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin38",
+    "bin": "data/characters/aurelionsol/skins/skin38.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin38/Materials/River_2"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin38",
+      "bin": "data/characters/aurelionsol/skins/skin38.bin"
+    }
+  ]
+}

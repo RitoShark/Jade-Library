@@ -1,0 +1,220 @@
+"jadelib_llm_dissolve_fresnel_blend_gold_inst" = StaticMaterialDef {
+    name: string = "jadelib_llm_dissolve_fresnel_blend_gold_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Grid_Texture"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/21.AprilFools2025.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Crystal_Texture"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/CrystalPattern.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Texture"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/Default_Grid.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DiffuseTexture"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/Lucian_Skin19_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/Lucian_Skin19_E_OilySmoke_erode.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Materials"
+            texturePath: string = "assets/jadelib/llm-dissolve-fresnel-blend-gold-inst/Lucian_Skin19_TX_GM.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "MoveIntensity"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEndPoint"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveStartPoint"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panning_Params"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Crystal_Params"
+            value: vec4 = { 2, 2, 0.20000000298023224, 0.20000000298023224 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mat_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_A"
+            value: vec4 = { 0.17000076174736023, 1, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Grid_Contrast"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Tiling"
+            value: vec4 = { 2, 3, 0, 0.10000000149011612 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.2725000381469727, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 0.729411780834198, 0.501960813999176, 0.2235294133424759, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Mutliplier"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLightOffset"
+            value: vec4 = { 1.2000000476837158, -0.6000000238418579, -0.6000000238418579, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec"
+            value: vec4 = { 20, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 128, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Spec_Intensity"
+            value: vec4 = { 1.4199999570846558, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 1, 0.8274509906768799, 0.41960784792900085, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec_Intensity"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EnvMap_Intensity"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIRECTIONALDISSOLUTION"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DESATURATE_REFLECTION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MULTIPLY_DIFFUSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LQ_LIGHTING"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/LLM_Dissolve_Fresnel_Blend"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        mOnValue: f32 = 0
+                        mOffValue: f32 = 1
+                        mTurnOnTimeSec: f32 = 2.5
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            -0.00015564876957796514
+                            0.3045075237751007
+                            0.6663988828659058
+                            0.8602375984191895
+                            1.0020121335983276
+                        }
+                        values: list[f32] = {
+                            -0.2325945645570755
+                            0.07760442793369293
+                            0.45047205686569214
+                            1.0085476636886597
+                            1.253426194190979
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "horse-inst",
+  "name": "Horse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:02.145Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_horse_inst",
+  "textureFiles": [
+    {
+      "name": "Lucian_Skin72_Pearl_Matcap_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.137Z"
+    },
+    {
+      "name": "Lucian_Skin72_Horse_MatCap_Mask_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.137Z"
+    },
+    {
+      "name": "Lucian_Skin72_Horse_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.137Z"
+    },
+    {
+      "name": "Lucian_Skin72_Horse_FresnelMask_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.137Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin72",
+    "bin": "data/characters/lucian/skins/skin72.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin72/Materials/Horse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin72",
+      "bin": "data/characters/lucian/skins/skin72.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "gragas-skin29-weapon-inst",
+  "name": "Gragas Skin29 Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:37.031Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gragas_skin29_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin29_Weapon_TX_MASK.tex",
+      "updatedAt": "2026-04-17T17:20:37.027Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin29",
+    "bin": "data/characters/gragas/skins/skin29.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin29/Materials/Gragas_Skin29_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin29",
+      "bin": "data/characters/gragas/skins/skin29.bin"
+    }
+  ]
+}

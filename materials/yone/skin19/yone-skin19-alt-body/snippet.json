@@ -1,0 +1,36 @@
+{
+  "id": "yone-skin19-alt-body",
+  "name": "Yone Skin19 Alt Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:10.098Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin19_alt_body",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin19_Alt_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:10:10.093Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin19",
+    "bin": "data/yone_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25.bin",
+    "entryKey": "Characters/Yone/Skins/Skin19/Materials/Yone_Skin19_Alt_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin19",
+      "bin": "data/yone_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pyke-skin02-recall-throne",
+  "name": "Pyke Skin02 Recall Throne",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:15.125Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_pyke_skin02_recall_throne",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin02_Prop_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:15.119Z"
+    },
+    {
+      "name": "Pyke_Skin01_SandThrone_Noise.tex",
+      "updatedAt": "2026-04-17T17:46:15.119Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:15.119Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin2",
+    "bin": "data/characters/pyke/skins/skin2.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin2/Materials/Pyke_Skin02_Recall_Throne"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin2",
+      "bin": "data/characters/pyke/skins/skin2.bin"
+    }
+  ]
+}

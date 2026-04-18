@@ -1,0 +1,64 @@
+{
+  "id": "sheath-inst",
+  "name": "Sheath Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:11.267Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sheath_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "Yasuo_Skin17_SheathMask_TX_Scroll.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "Yasuo_Skin17_SheathMask_TX_ScrollMask.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:11.260Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin25",
+    "bin": "data/characters/yasuo/skins/skin25.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin25/Materials/Sheath_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin25",
+      "bin": "data/characters/yasuo/skins/skin25.bin"
+    }
+  ]
+}

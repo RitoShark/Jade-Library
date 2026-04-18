@@ -1,0 +1,31 @@
+{
+  "id": "blitzcrank-skin66-spiral-new",
+  "name": "Blitzcrank Skin66 Spiral New",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:11.591Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin66_spiral_new",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin66",
+    "bin": "data/characters/blitzcrank/skins/skin66.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin66/Materials/Blitzcrank_Skin66_Spiral_New"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin66",
+      "bin": "data/characters/blitzcrank/skins/skin66.bin"
+    }
+  ]
+}

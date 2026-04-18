@@ -1,0 +1,25 @@
+{
+  "id": "screen-overlay-inst",
+  "name": "Screen Overlay Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:56.473Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_screen_overlay_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin0",
+    "bin": "e5cae2a16488d2a4.bin",
+    "entryKey": "Characters/Akali/Skins/Skin0/Materials/Screen_Overlay_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin0",
+      "bin": "e5cae2a16488d2a4.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "soraka-skin15-wing-trails-inst",
+  "name": "Soraka Skin15 Wing Trails Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:54.614Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_soraka_skin15_wing_trails_inst",
+  "textureFiles": [
+    {
+      "name": "Soraka_Skin15_Z_Material_Wings_Mask.tex",
+      "updatedAt": "2026-04-17T17:56:54.608Z"
+    },
+    {
+      "name": "Soraka_Skin15_Z_Material_Wings_GradientColor.tex",
+      "updatedAt": "2026-04-17T17:56:54.608Z"
+    },
+    {
+      "name": "Soraka_Skin15_Z_Material_Wings_DissolveMask.tex",
+      "updatedAt": "2026-04-17T17:56:54.608Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin15",
+    "bin": "data/characters/soraka/skins/skin15.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin15/Materials/Soraka_Skin15_Wing_Trails_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin15",
+      "bin": "data/characters/soraka/skins/skin15.bin"
+    }
+  ]
+}

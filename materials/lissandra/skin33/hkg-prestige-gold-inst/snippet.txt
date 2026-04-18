@@ -1,0 +1,159 @@
+"jadelib_hkg_prestige_gold_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_prestige_gold_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Materials"
+            texturePath: string = "assets/jadelib/hkg-prestige-gold-inst/Lissandra_Skin33_RMSA_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/hkg-prestige-gold-inst/Lissandra_Skin33_FlowingSpecular_Mask_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_Texture"
+            texturePath: string = "assets/jadelib/hkg-prestige-gold-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/hkg-prestige-gold-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Transform_Texture"
+            texturePath: string = "assets/jadelib/hkg-prestige-gold-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Spec_Intensity"
+            value: vec4 = { 1.4199999570846558, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec_Intensity"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "USE_COLUMN_SPECULAR_FLOW"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "USE_PARTTERN_SPECULAR_FLOW"
+            value: vec4 = { 0.9449999928474426, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Column_Specular_Scroll_Speed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pattern_Specular_Scroll_Speed"
+            value: vec4 = { 0.11999999731779099, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pattern_UV_Tilling"
+            value: vec4 = { 2.9000000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0.5499961972236633, 0.7900053262710571, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EnvMap_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLightOffset"
+            value: vec4 = { 0, 0, -0.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Bias"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.3803921639919281, 0.4000000059604645, 0.7490196228027344, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color_Intensity"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Power"
+            value: vec4 = { 2.200000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Texture_Scale"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Transform_Factor"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "MULTIPLY_DIFFUSE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DESATURATE_REFLECTION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LQ_LIGHTING"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM_TEXTURE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_TRANSLATION"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/LLM_Prestige_Gold"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

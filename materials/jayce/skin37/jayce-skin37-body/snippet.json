@@ -1,0 +1,38 @@
+{
+  "id": "jayce-skin37-body",
+  "name": "Jayce Skin37 Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:43.297Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_jayce_skin37_body",
+  "textureFiles": [
+    {
+      "name": "Jayce_Skin37_TX_CM.Chroma_Jayce_WorldsWinner.tex",
+      "updatedAt": "2026-04-17T17:24:43.292Z"
+    },
+    {
+      "name": "Jayce_Skin34_Mask_TX_CM.SKINS_Jayce_Skin34.tex",
+      "updatedAt": "2026-04-17T17:24:43.292Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:24:43.292Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin37",
+    "bin": "data/characters/jayce/skins/skin37.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin37/Materials/Jayce_Skin37_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin37",
+      "bin": "data/characters/jayce/skins/skin37.bin"
+    }
+  ]
+}

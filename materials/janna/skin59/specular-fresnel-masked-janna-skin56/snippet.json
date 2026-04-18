@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-janna-skin56",
+  "name": "Specular Fresnel Masked Janna Skin56",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:23.146Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_janna_skin56",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin59_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:23.141Z"
+    },
+    {
+      "name": "Janna_Skin59_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:23.141Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:23.141Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin59",
+    "bin": "data/characters/janna/skins/skin59.bin",
+    "entryKey": "Characters/Janna/Skins/Skin59/Materials/Specular_Fresnel_Masked_JannaSkin56"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin59",
+      "bin": "data/characters/janna/skins/skin59.bin"
+    }
+  ]
+}

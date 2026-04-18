@@ -1,0 +1,36 @@
+{
+  "id": "bloom-diffuse-inst",
+  "name": "Bloom Diffuse Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:50.964Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_diffuse_inst",
+  "textureFiles": [
+    {
+      "name": "Rengar_Skin30_Weapon_bloom.tex",
+      "updatedAt": "2026-04-17T17:48:50.936Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rengar",
+    "skin": "skin30",
+    "bin": "data/characters/rengar/skins/skin30.bin",
+    "entryKey": "Characters/Rengar/Skins/Skin30/Materials/Bloom_Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rengar",
+      "skin": "skin30",
+      "bin": "data/characters/rengar/skins/skin30.bin"
+    }
+  ]
+}

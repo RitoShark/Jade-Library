@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:37.341Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "Galio_Skin39_HoloMask_TX_CM.Chroma_Galio_Mythmaker_Paragon.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T17:19:37.329Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Galio",
+    "skin": "skin39",
+    "bin": "data/characters/galio/skins/skin39.bin",
+    "entryKey": "Characters/Galio/Skins/Skin39/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Galio",
+      "skin": "skin39",
+      "bin": "data/characters/galio/skins/skin39.bin"
+    }
+  ]
+}

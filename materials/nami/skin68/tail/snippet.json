@@ -1,0 +1,44 @@
+{
+  "id": "tail",
+  "name": "Tail",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:29.817Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tail",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:29.811Z"
+    },
+    {
+      "name": "Noise76.tex",
+      "updatedAt": "2026-04-17T17:41:29.811Z"
+    },
+    {
+      "name": "Nami_Skin68_Tail_Scolling_MAT.SKINS_Nami_Skin68.tex",
+      "updatedAt": "2026-04-17T17:41:29.811Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin68",
+    "bin": "data/characters/nami/skins/skin68.bin",
+    "entryKey": "Characters/Nami/Skins/Skin68/Materials/Tail"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin68",
+      "bin": "data/characters/nami/skins/skin68.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:22.930Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "common_Black.tex",
+      "updatedAt": "2026-04-17T17:41:22.921Z"
+    },
+    {
+      "name": "common_Black.tex",
+      "updatedAt": "2026-04-17T17:41:22.921Z"
+    },
+    {
+      "name": "Nami_Skin10_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:22.921Z"
+    },
+    {
+      "name": "common_Black.tex",
+      "updatedAt": "2026-04-17T17:41:22.921Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin10",
+    "bin": "data/characters/nami/skins/skin10.bin",
+    "entryKey": "Characters/Nami/Skins/Skin10/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin10",
+      "bin": "data/characters/nami/skins/skin10.bin"
+    }
+  ]
+}

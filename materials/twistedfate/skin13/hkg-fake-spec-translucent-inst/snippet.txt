@@ -1,0 +1,82 @@
+"jadelib_hkg_fake_spec_translucent_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_fake_spec_translucent_inst"
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Color1"
+            value: vec4 = { 0, 0.2668803036212921, 0.08766308426856995, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Color2"
+            value: vec4 = { 0.8183565735816956, 1, 0.8928664326667786, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Inner"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size_Outer"
+            value: vec4 = { 0.3299500048160553, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glass_Roughness"
+            value: vec4 = { 4.360000133514404, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 0.16500000655651093, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunColor"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Style2_Color1"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Style2_Color2"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DIFFERENT_STYLE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Glass"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

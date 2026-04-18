@@ -1,0 +1,44 @@
+{
+  "id": "flow-map-collar-inst",
+  "name": "Flow Map Collar Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.793Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flow_map_collar_inst",
+  "textureFiles": [
+    {
+      "name": "TahmKench_Skin30_TX_Flowmap.tex",
+      "updatedAt": "2026-04-17T17:59:29.786Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:29.786Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:29.786Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TahmKench",
+    "skin": "skin30",
+    "bin": "data/characters/tahmkench/skins/skin30.bin",
+    "entryKey": "Characters/TahmKench/Skins/Skin30/Materials/FlowMap_Collar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TahmKench",
+      "skin": "skin30",
+      "bin": "data/characters/tahmkench/skins/skin30.bin"
+    }
+  ]
+}

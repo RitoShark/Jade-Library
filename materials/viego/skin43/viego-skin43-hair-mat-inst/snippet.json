@@ -1,0 +1,64 @@
+{
+  "id": "viego-skin43-hair-mat-inst",
+  "name": "Viego Skin43 Hair Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:41.733Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin43_hair_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:41.695Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/Viego_Skin43_Hair_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "wings-mat",
+  "name": "Wings Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:55.406Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_wings_mat",
+  "textureFiles": [
+    {
+      "name": "Quinn_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:55.399Z"
+    },
+    {
+      "name": "Quinn_Skin17_Mat_Texture.tex",
+      "updatedAt": "2026-04-17T17:46:55.399Z"
+    },
+    {
+      "name": "Quinn_Skin14_Texture.tex",
+      "updatedAt": "2026-04-17T17:46:55.399Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Quinn",
+    "skin": "skin17",
+    "bin": "data/characters/quinn/skins/skin17.bin",
+    "entryKey": "Characters/Quinn/Skins/Skin17/Materials/Wings_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Quinn",
+      "skin": "skin17",
+      "bin": "data/characters/quinn/skins/skin17.bin"
+    }
+  ]
+}

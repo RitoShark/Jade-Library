@@ -1,0 +1,104 @@
+"jadelib_hyper_sword_inst" = StaticMaterialDef {
+    name: string = "jadelib_hyper_sword_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hyper-sword-inst/Garen_Skin23_SwordMask_2.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/hyper-sword-inst/Gradient_test_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Intensity"
+            value: vec4 = { 0.15000000596046448, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color"
+            value: vec4 = { 0.30980393290519714, 0.20392157137393951, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+            value: vec4 = { 0.10499999672174454, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Sharpness"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Sharpness"
+            value: vec4 = { 0.0010000000474974513, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_COLORDODGE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDATIVE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LERP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Scrolling_ColorDodge_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

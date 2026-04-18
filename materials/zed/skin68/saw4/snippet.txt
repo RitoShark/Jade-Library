@@ -1,0 +1,765 @@
+"jadelib_saw4" = StaticMaterialDef {
+    name: string = "jadelib_saw4"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Tint_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Tint"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Tint_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle1_Base"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle1_Base"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.5874999761581421
+                                            0.6000000238418579
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.987500011920929
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle2_Base"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle2_Base"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.39830508828163147
+                                            0.4067796468734741
+                                            0.43220338225364685
+                                            0.4406779706478119
+                                            0.7203390002250671
+                                            0.7288135886192322
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.987500011920929
+                                            0
+                                            0.03750000149011612
+                                            0.574999988079071
+                                            0.987500011920929
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "1992017568"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "1992017568"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.17669172585010529
+                                            0.18045112490653992
+                                            0.3233082592487335
+                                            0.49624061584472656
+                                            0.5225563645362854
+                                            0.6879699230194092
+                                            0.9624060392379761
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.987500011920929
+                                            0
+                                            0.4749999940395355
+                                            0.4000000059604645
+                                            0.4000000059604645
+                                            0.949999988079071
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "312987756"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "312987756"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.02777777798473835
+                                            0.1111111119389534
+                                            0.1388888955116272
+                                            0.1666666716337204
+                                            0.3888888955116272
+                                            0.4166666567325592
+                                            0.4444444477558136
+                                            0.5833333134651184
+                                            0.6111111044883728
+                                            0.9722222089767456
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.012500000186264515
+                                            0.012500000186264515
+                                            0.02500000037252903
+                                            0.02500000037252903
+                                            0.125
+                                            0.4000000059604645
+                                            0.15000000596046448
+                                            0.21250000596046448
+                                            0.23749999701976776
+                                            0.4000000059604645
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle_In"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle_In"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.1111111119389534
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.012500000186264515
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "2150220431"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "2150220431"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.004385964944958687
+                                            0.008771929889917374
+                                            0.017543859779834747
+                                            0.021929824724793434
+                                            0.030701754614710808
+                                            0.035087719559669495
+                                            0.04385964944958687
+                                            0.048245612531900406
+                                            0.05701754242181778
+                                            0.061403509229421616
+                                            0.07017543911933899
+                                            0.07456140220165253
+                                            0.0833333358168602
+                                            0.08771929889917374
+                                            0.09649122506380081
+                                            0.10087719559669495
+                                            0.10964912176132202
+                                            0.11403508484363556
+                                            0.12280701845884323
+                                            0.12719298899173737
+                                            0.13596491515636444
+                                            0.14035087823867798
+                                            0.14912280440330505
+                                            0.1535087674856186
+                                            0.16228070855140686
+                                            0.1666666716337204
+                                            0.17543859779834747
+                                            0.179824560880661
+                                            0.18859648704528809
+                                            0.19298245012760162
+                                            0.2017543911933899
+                                            0.20614035427570343
+                                            0.21052631735801697
+                                            0.2149122804403305
+                                            0.22368420660495758
+                                            0.22807016968727112
+                                            0.2368421107530594
+                                            0.24122807383537292
+                                            0.25
+                                            0.25438597798347473
+                                            0.2587719261646271
+                                            0.26754385232925415
+                                            0.46929824352264404
+                                            0.4736842215061188
+                                            0.5657894611358643
+                                            0.6535087823867798
+                                            0.6842105388641357
+                                            0.8552631735801697
+                                            0.859649121761322
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.42500001192092896
+                                            0.44999998807907104
+                                            0.4749999940395355
+                                            0.5
+                                            0.5249999761581421
+                                            0.550000011920929
+                                            0.574999988079071
+                                            0.6000000238418579
+                                            0.625
+                                            0.6499999761581421
+                                            0.675000011920929
+                                            0.699999988079071
+                                            0.7250000238418579
+                                            0.75
+                                            0.7749999761581421
+                                            0.800000011920929
+                                            0.824999988079071
+                                            0.8500000238418579
+                                            0.875
+                                            0.8999999761581421
+                                            0.925000011920929
+                                            0.949999988079071
+                                            0.9750000238418579
+                                            0
+                                            0.02500000037252903
+                                            0.05000000074505806
+                                            0.07500000298023224
+                                            0.10000000149011612
+                                            0.125
+                                            0.15000000596046448
+                                            0.17499999701976776
+                                            0.20000000298023224
+                                            0.21250000596046448
+                                            0.23749999701976776
+                                            0.26249998807907104
+                                            0.2874999940395355
+                                            0.3125
+                                            0.3375000059604645
+                                            0.36250001192092896
+                                            0.38749998807907104
+                                            0.4000000059604645
+                                            0.4124999940395355
+                                            0.987500011920929
+                                            0
+                                            0.26249998807907104
+                                            0.4000000059604645
+                                            0.5
+                                            0.987500011920929
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "2214865958"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "2214865958"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.4375
+                                            0.46875
+                                            0.484375
+                                            0.96875
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.9624999761581421
+                                            0.987500011920929
+                                            0
+                                            0.38749998807907104
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "3360734367"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "3360734367"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.3125
+                                            0.3333333432674408
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.800000011920929
+                                            0.987500011920929
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "689877916"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "689877916"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.4375
+                                            0.46875
+                                            0.484375
+                                            0.96875
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.9624999761581421
+                                            0.987500011920929
+                                            0
+                                            0.38749998807907104
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "3329715753"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "3329715753"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.3125
+                                            0.3333333432674408
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.800000011920929
+                                            0.987500011920929
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Run_Base"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Run_Base"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.9900000095367432
+                                            0.9909999966621399
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.5
+                                            1
+                                            0
+                                            0.10000000149011612
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Run_Fast"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Run_Fast"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.5833333134651184
+                                            0.6000000238418579
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            1
+                                            0
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Run_Fast_In"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Run_Fast_In"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.032258063554763794
+                                            0.09677419066429138
+                                            0.16129031777381897
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.4000000059604645
+                                            0.05000000074505806
+                                            0.0625
+                                            0.07500000298023224
+                                            0.4000000059604645
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.1550000011920929
+                                        0.31166666746139526
+                                        0.5133333206176758
+                                        0.7900000214576721
+                                        0.9633333086967468
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.9871976971626282, 0.8040894269943237, 0.7348592281341553, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 1, 1, 1, 0 }
+                                        { 0.6989395022392273, 0.21499961614608765, 0.09739833325147629, 0 }
+                                        { 0.30644693970680237, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 1, 1, 0 }
+                    }
+                }
+            }
+        }
+    }
+}

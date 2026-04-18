@@ -1,0 +1,52 @@
+{
+  "id": "hkg-body-diamond-inst",
+  "name": "Hkg Body Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:27.693Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_body_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:27.687Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:27.687Z"
+    },
+    {
+      "name": "Senna_Skin27_MatCap.tex",
+      "updatedAt": "2026-04-17T17:52:27.687Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:27.687Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:27.687Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin27",
+    "bin": "data/characters/senna/skins/skin27.bin",
+    "entryKey": "Characters/Senna/Skins/Skin27/Materials/HKG_Body_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin27",
+      "bin": "data/characters/senna/skins/skin27.bin"
+    }
+  ]
+}

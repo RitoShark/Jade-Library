@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-pet-inst",
+  "name": "Diffuse Bloom Pet Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:20.654Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_pet_inst",
+  "textureFiles": [
+    {
+      "name": "TwistedFate_Skin13_Pet_glow.tex",
+      "updatedAt": "2026-04-17T18:02:20.648Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TwistedFate",
+    "skin": "skin13",
+    "bin": "data/characters/twistedfate/skins/skin13.bin",
+    "entryKey": "Characters/TwistedFate/Skins/Skin13/Materials/Diffuse_Bloom_Pet_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TwistedFate",
+      "skin": "skin13",
+      "bin": "data/characters/twistedfate/skins/skin13.bin"
+    }
+  ]
+}

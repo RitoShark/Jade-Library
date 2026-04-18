@@ -1,0 +1,52 @@
+{
+  "id": "hair-inst",
+  "name": "Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:22.051Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_inst",
+  "textureFiles": [
+    {
+      "name": "XinZhaoRework_Skin21_Z_CapeBackground.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.042Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin20_HairMask_TX_CM.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.042Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin20_Z_HairMult_TX_CM.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.042Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin21_Z_Gradient.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.042Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:22.042Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "XinZhao",
+    "skin": "skin21",
+    "bin": "data/characters/xinzhao/skins/skin21.bin",
+    "entryKey": "Characters/XinZhao/Skins/Skin21/Materials/Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "XinZhao",
+      "skin": "skin21",
+      "bin": "data/characters/xinzhao/skins/skin21.bin"
+    }
+  ]
+}

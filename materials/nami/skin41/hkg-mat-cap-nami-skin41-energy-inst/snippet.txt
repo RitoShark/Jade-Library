@@ -1,0 +1,146 @@
+"jadelib_hkg_mat_cap_nami_skin41_energy_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_nami_skin41_energy_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bottom_Texture"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-nami-skin41-energy-inst/Nami_Skin41_Cloud_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Top_Texture"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-nami-skin41-energy-inst/Nami_Skin41_BodyEnergy_TX_CM.tex"
+            addressU: u32 = 3
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-nami-skin41-energy-inst/Nami_Skin41_CloudMask_TX_CM.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Dir2"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Low_Quality_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bounds"
+            value: vec4 = { 0.30000001192092896, 0.4000000059604645, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 0.0949999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_ScrollSpeed"
+            value: vec4 = { 0.20000000298023224, 0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_ScrollSpeed"
+            value: vec4 = { 0.10000000149011612, 0.4000000059604645, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_AlphaIntensity"
+            value: vec4 = { 0.8774999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_AlphaIntensity"
+            value: vec4 = { 0.7649999856948853, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_AlphaIntensity"
+            value: vec4 = { 0.9549999833106995, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Rate"
+            value: vec4 = { 0.20000000298023224, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Top_UVScale"
+            value: vec4 = { 4, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bottom_UVScale"
+            value: vec4 = { 5, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tint"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Line_Thick"
+            value: vec4 = { 0.6179999709129333, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Tiling"
+            value: vec4 = { 16, 1, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DIFFUSEHOLD_USING_BCHANNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_WOBBLE_PANNING_LINE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_COLOR_MASK"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_MultiLayer_Alpha_Bloom_Wobble"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

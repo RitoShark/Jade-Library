@@ -1,0 +1,40 @@
+{
+  "id": "soft-edges-fresnel-inst",
+  "name": "Soft Edges Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:16.184Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_soft_edges_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "ZedShadow_Skin31_ShadowEyes_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:16.178Z"
+    },
+    {
+      "name": "ZedShadow_Skin31_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:16.178Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin31",
+    "bin": "data/characters/zedshadow/skins/skin31.bin",
+    "entryKey": "Characters/ZedShadow/Skins/Skin31/Materials/SoftEdges_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin31",
+      "bin": "data/characters/zedshadow/skins/skin31.bin"
+    }
+  ]
+}

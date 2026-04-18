@@ -1,0 +1,44 @@
+{
+  "id": "sion-cosmic-body-inst",
+  "name": "Sion Cosmic Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:51.991Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sion_cosmic_body_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin45_Q_StarryBackdrop_02.tex",
+      "updatedAt": "2026-04-17T17:54:51.986Z"
+    },
+    {
+      "name": "Sion_Skin40_Texture_Material_Mask_Body_Alpha.tex",
+      "updatedAt": "2026-04-17T17:54:51.986Z"
+    },
+    {
+      "name": "Sion_Skin40_Texture_Material_Mask_Body.tex",
+      "updatedAt": "2026-04-17T17:54:51.986Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sion",
+    "skin": "skin45",
+    "bin": "data/characters/sion/skins/skin45.bin",
+    "entryKey": "Characters/Sion/Skins/Skin45/Materials/Sion_Cosmic_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sion",
+      "skin": "skin45",
+      "bin": "data/characters/sion/skins/skin45.bin"
+    }
+  ]
+}

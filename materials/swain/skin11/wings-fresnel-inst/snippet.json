@@ -1,0 +1,36 @@
+{
+  "id": "wings-fresnel-inst",
+  "name": "Wings Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:59.365Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "SwainDemonForm_base_TX_Mask4.tex",
+      "updatedAt": "2026-04-17T17:57:59.356Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin11",
+    "bin": "data/characters/swaindemonform/skins/skin11.bin",
+    "entryKey": "Characters/SwainDemonForm/Skins/Skin11/Materials/wings_fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin11",
+      "bin": "data/characters/swaindemonform/skins/skin11.bin"
+    }
+  ]
+}

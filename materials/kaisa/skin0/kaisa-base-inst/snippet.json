@@ -1,0 +1,34 @@
+{
+  "id": "kaisa-base-inst",
+  "name": "Kaisa Base Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:28.150Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kaisa_base_inst",
+  "textureFiles": [
+    {
+      "name": "Kaisa_base_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:28.145Z"
+    },
+    {
+      "name": "Kaisa_Base_TX_MS.tex",
+      "updatedAt": "2026-04-17T17:26:28.145Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin0",
+    "bin": "98b46c3f3618b0fa.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin0/Materials/KaisaBase_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin0",
+      "bin": "98b46c3f3618b0fa.bin"
+    }
+  ]
+}

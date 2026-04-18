@@ -1,0 +1,64 @@
+{
+  "id": "hkg-dragon-scale-inst",
+  "name": "Hkg Dragon Scale Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:49.460Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_dragon_scale_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "Graves_Skin42_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.454Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Graves",
+    "skin": "skin42",
+    "bin": "data/characters/graves/skins/skin42.bin",
+    "entryKey": "Characters/Graves/Skins/Skin42/Materials/HKG_DragonScale_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Graves",
+      "skin": "skin42",
+      "bin": "data/characters/graves/skins/skin42.bin"
+    }
+  ]
+}

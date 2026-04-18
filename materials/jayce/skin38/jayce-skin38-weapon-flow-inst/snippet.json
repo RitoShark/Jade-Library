@@ -1,0 +1,48 @@
+{
+  "id": "jayce-skin38-weapon-flow-inst",
+  "name": "Jayce Skin38 Weapon Flow Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:45.141Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jayce_skin38_weapon_flow_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:45.133Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:24:45.133Z"
+    },
+    {
+      "name": "Jayce_Skin38_Weapon_range_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:45.133Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:24:45.133Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin38",
+    "bin": "data/jayce_skins_skin38_skins_skin39_skins_skin40_skins_skin41_skins_skin42_skins_skin43_skins_skin44_skins_skin45_skins_skin46.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin38/Materials/Jayce_Skin38_Weapon_Flow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin38",
+      "bin": "data/jayce_skins_skin38_skins_skin39_skins_skin40_skins_skin41_skins_skin42_skins_skin43_skins_skin44_skins_skin45_skins_skin46.bin"
+    }
+  ]
+}

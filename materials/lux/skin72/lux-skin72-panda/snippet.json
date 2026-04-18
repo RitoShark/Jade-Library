@@ -1,0 +1,38 @@
+{
+  "id": "lux-skin72-panda",
+  "name": "Lux Skin72 Panda",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:00.288Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lux_skin72_panda",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin72_TX_CM.SKINS_Lux_Skin72.tex",
+      "updatedAt": "2026-04-17T17:36:00.282Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:36:00.282Z"
+    },
+    {
+      "name": "black.SKINS_Lux_Skin72.tex",
+      "updatedAt": "2026-04-17T17:36:00.282Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin72",
+    "bin": "data/characters/lux/skins/skin72.bin",
+    "entryKey": "Characters/Lux/Skins/Skin72/Materials/Lux_Skin72_Panda"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin72",
+      "bin": "data/characters/lux/skins/skin72.bin"
+    }
+  ]
+}

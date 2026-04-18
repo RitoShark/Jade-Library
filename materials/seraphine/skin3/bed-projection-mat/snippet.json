@@ -1,0 +1,36 @@
+{
+  "id": "bed-projection-mat",
+  "name": "Bed Projection Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:05.276Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bed_projection_mat",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin03_Caustic2.tex",
+      "updatedAt": "2026-04-17T17:53:05.271Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin3",
+    "bin": "data/characters/seraphine/skins/skin3.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin3/Materials/BedProjection_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin3",
+      "bin": "data/characters/seraphine/skins/skin3.bin"
+    }
+  ]
+}

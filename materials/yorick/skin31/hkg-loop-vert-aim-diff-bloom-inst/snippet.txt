@@ -1,0 +1,73 @@
+"jadelib_hkg_loop_vert_aim_diff_bloom_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_loop_vert_aim_diff_bloom_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Intensity"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Line_Thick"
+            value: vec4 = { 0.33250001072883606, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Speed"
+            value: vec4 = { 1.0199999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Tiling"
+            value: vec4 = { 1, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_UV_Dir"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Shape_Color"
+            value: vec4 = { 0.7843137383460999, 0.43921568989753723, 0.3019607961177826, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertAnim_Line_Tiny"
+            value: vec4 = { 0.029999999329447746, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_LoopVertAim_Diff_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

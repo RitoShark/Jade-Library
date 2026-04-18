@@ -1,0 +1,36 @@
+{
+  "id": "yorick-skin13-glow-effect-mat-inst",
+  "name": "Yorick Skin13 Glow Effect Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:30.268Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yorick_skin13_glow_effect_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Yorick_Skin12_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:30.262Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin13",
+    "bin": "data/characters/yorick/skins/skin13.bin",
+    "entryKey": "Characters/Yorick/Skins/Skin13/Materials/Yorick_Skin13_GlowEffect_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin13",
+      "bin": "data/characters/yorick/skins/skin13.bin"
+    }
+  ]
+}

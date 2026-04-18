@@ -1,0 +1,36 @@
+{
+  "id": "hkg-basic-fresnel-bloom-inst",
+  "name": "Hkg Basic Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:27.561Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_basic_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin11_TX_N.tex",
+      "updatedAt": "2026-04-17T17:10:27.556Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin15",
+    "bin": "data/characters/aurelionsol/skins/skin15.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin15/Materials/HKG_Basic_Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin15",
+      "bin": "data/characters/aurelionsol/skins/skin15.bin"
+    }
+  ]
+}

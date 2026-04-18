@@ -1,0 +1,56 @@
+{
+  "id": "llm-dissolve-fresnel-blend-gold-inst",
+  "name": "Llm Dissolve Fresnel Blend Gold Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:17.853Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_llm_dissolve_fresnel_blend_gold_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    },
+    {
+      "name": "Rakan_Skin27_Feathers_RMA.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:47:17.846Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin27",
+    "bin": "data/characters/rakan/skins/skin27.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin27/Materials/LLM_Dissolve_Fresnel_Blend_Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin27",
+      "bin": "data/characters/rakan/skins/skin27.bin"
+    }
+  ]
+}

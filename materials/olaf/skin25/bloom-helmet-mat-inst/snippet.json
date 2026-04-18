@@ -1,0 +1,36 @@
+{
+  "id": "bloom-helmet-mat-inst",
+  "name": "Bloom Helmet Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:22.687Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_helmet_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Olaf_Skin25_Helmet_03.tex",
+      "updatedAt": "2026-04-17T17:44:22.674Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Olaf",
+    "skin": "skin25",
+    "bin": "8d043a12251aa3e4.bin",
+    "entryKey": "Characters/Olaf/Skins/Skin25/Materials/Bloom_Helmet_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Olaf",
+      "skin": "skin25",
+      "bin": "8d043a12251aa3e4.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "aircraft-base-alpha-mult-inst-2-inst",
+  "name": "Aircraft Base Alpha Mult Inst 2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:15.630Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aircraft_base_alpha_mult_inst_2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:15.624Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:15.624Z"
+    },
+    {
+      "name": "Janna_Skin46_DiamondTexture_1.tex",
+      "updatedAt": "2026-04-17T17:23:15.624Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:15.624Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:15.624Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin46",
+    "bin": "data/characters/janna/skins/skin46.bin",
+    "entryKey": "Characters/Janna/Skins/Skin46/Materials/Aircraft_Base_Alpha_mult_inst_2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin46",
+      "bin": "data/characters/janna/skins/skin46.bin"
+    }
+  ]
+}

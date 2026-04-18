@@ -1,0 +1,97 @@
+"jadelib_recall_trees" = StaticMaterialDef {
+    name: string = "jadelib_recall_trees"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpaceTexture"
+            texturePath: string = "assets/jadelib/recall-trees/Lucian_Skin09_InterlaceScanLines.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 5.440659999847412, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSScale"
+            value: vec4 = { 1, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSFresnelSize"
+            value: vec4 = { 1.56090247631073, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 0.2699931263923645, 0.4899977147579193, 1, 0.17999541759490967 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0, -0.009999999776482582, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Master_Blend"
+            value: vec4 = { 0.3149999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorFresnelSize"
+            value: vec4 = { 0.30098000168800354, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_Fresnel_color"
+            value: vec4 = { 0.330006867647171, 0.5900053381919861, 0.9400015473365784, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_SS_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScreenSpace_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

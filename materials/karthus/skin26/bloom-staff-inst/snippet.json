@@ -1,0 +1,36 @@
+{
+  "id": "bloom-staff-inst",
+  "name": "Bloom Staff Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:09.765Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_staff_inst",
+  "textureFiles": [
+    {
+      "name": "Karthus_Skin26_Texture_Mask_Staff.tex",
+      "updatedAt": "2026-04-17T17:28:09.759Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karthus",
+    "skin": "skin26",
+    "bin": "data/characters/karthus/skins/skin26.bin",
+    "entryKey": "Characters/Karthus/Skins/Skin26/Materials/Bloom_Staff_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karthus",
+      "skin": "skin26",
+      "bin": "data/characters/karthus/skins/skin26.bin"
+    }
+  ]
+}

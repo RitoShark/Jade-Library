@@ -1,0 +1,48 @@
+{
+  "id": "wings-inst",
+  "name": "Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:19.255Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Rakan_Skin47.tex",
+      "updatedAt": "2026-04-17T17:47:19.249Z"
+    },
+    {
+      "name": "black.SKINS_Rakan_Skin47.tex",
+      "updatedAt": "2026-04-17T17:47:19.249Z"
+    },
+    {
+      "name": "Rakan_Skin47_Wing_TX_CM.SKINS_Rakan_Skin47.tex",
+      "updatedAt": "2026-04-17T17:47:19.249Z"
+    },
+    {
+      "name": "black.SKINS_Rakan_Skin47.tex",
+      "updatedAt": "2026-04-17T17:47:19.249Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin47",
+    "bin": "data/characters/rakan/skins/skin47.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin47/Materials/Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin47",
+      "bin": "data/characters/rakan/skins/skin47.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-alpha-mult-inst",
+  "name": "Diffuse Alpha Mult Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:18.469Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_mult_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin27",
+    "bin": "data/nidalee_skins_skin27_skins_skin28.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin27/Materials/Diffuse_Alpha_mult_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin27",
+      "bin": "data/nidalee_skins_skin27_skins_skin28.bin"
+    }
+  ]
+}

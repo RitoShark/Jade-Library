@@ -1,0 +1,36 @@
+{
+  "id": "yone-skin58-body-bloom-inst",
+  "name": "Yone Skin58 Body Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:07.207Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin58_body_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin58_CoatMask_Body.tex",
+      "updatedAt": "2026-04-17T18:10:07.202Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin58",
+    "bin": "data/characters/yone/skins/skin58.bin",
+    "entryKey": "Characters/Yone/Skins/Skin58/Materials/Yone_Skin58_Body_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin58",
+      "bin": "data/characters/yone/skins/skin58.bin"
+    }
+  ]
+}

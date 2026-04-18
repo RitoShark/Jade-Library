@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-hair-inst",
+  "name": "Alpha Blend Additive Scroll Packed Hair Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:42.378Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_hair_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:12:42.367Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:12:42.367Z"
+    },
+    {
+      "name": "Zeri_SpikedHair_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:42.367Z"
+    },
+    {
+      "name": "Zeri_HairGradient.tex",
+      "updatedAt": "2026-04-17T18:12:42.367Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin0",
+    "bin": "data/characters/zeri/skins/skin0.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin0/Materials/AlphaBlend_Additive_Scroll_Packed_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin0",
+      "bin": "data/characters/zeri/skins/skin0.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rotate-rumble-inst",
+  "name": "Rotate Rumble Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:54.153Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rotate_rumble_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin11",
+    "bin": "data/characters/rumble/skins/skin11.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin11/Materials/Rotate_Rumble_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin11",
+      "bin": "data/characters/rumble/skins/skin11.bin"
+    }
+  ]
+}

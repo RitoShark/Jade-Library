@@ -1,0 +1,112 @@
+"jadelib_treds_rumble_inst" = StaticMaterialDef {
+    name: string = "jadelib_treds_rumble_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.501960813999176, 0.501960813999176, 0.501960813999176, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "XScroll_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "YScroll_Rate"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Scrolling"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Scroll_Rate"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                            mOperator: u32 = 1
+                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 50
+                            }
+                        }
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            1.0015969276428223
+                        }
+                        values: list[vec4] = {
+                            { 0, 0, 0, 0 }
+                            { 0, 1, 0, 0 }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "YScroll_Rate"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                            mOperator: u32 = 1
+                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 100
+                            }
+                        }
+                        mTurnOnTimeSec: f32 = 0
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[f32] = {
+                            0
+                            0.5034838914871216
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

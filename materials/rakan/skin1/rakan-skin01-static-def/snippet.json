@@ -1,0 +1,44 @@
+{
+  "id": "rakan-skin01-static-def",
+  "name": "Rakan Skin01 Static Def",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:16.655Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rakan_skin01_static_def",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:47:16.649Z"
+    },
+    {
+      "name": "stars.tex",
+      "updatedAt": "2026-04-17T17:47:16.649Z"
+    },
+    {
+      "name": "Xayah_Skin01_NebulaClouds_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:16.649Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin1",
+    "bin": "data/characters/rakan/skins/skin1.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin1/Materials/RakanSkin01_staticDef"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin1",
+      "bin": "data/characters/rakan/skins/skin1.bin"
+    }
+  ]
+}

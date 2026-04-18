@@ -1,0 +1,40 @@
+{
+  "id": "kayle-wings-static",
+  "name": "Kayle Wings Static",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:33.003Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_wings_static",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin15_Wings_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:29:32.996Z"
+    },
+    {
+      "name": "KayleTranslucentGradient.tex",
+      "updatedAt": "2026-04-17T17:29:32.996Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin17",
+    "bin": "data/characters/kayle/skins/skin17.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin17/Materials/Kayle_Wings_Static"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin17",
+      "bin": "data/characters/kayle/skins/skin17.bin"
+    }
+  ]
+}

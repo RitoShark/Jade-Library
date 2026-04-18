@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-twitch-inst",
+  "name": "Bloom Parts Twitch Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:32.349Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_twitch_inst",
+  "textureFiles": [
+    {
+      "name": "Twitch_Skin36_Mask.tex",
+      "updatedAt": "2026-04-17T18:02:32.334Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Twitch",
+    "skin": "skin36",
+    "bin": "data/characters/twitch/skins/skin36.bin",
+    "entryKey": "Characters/Twitch/Skins/Skin36/Materials/Bloom_Parts_Twitch_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Twitch",
+      "skin": "skin36",
+      "bin": "data/characters/twitch/skins/skin36.bin"
+    }
+  ]
+}

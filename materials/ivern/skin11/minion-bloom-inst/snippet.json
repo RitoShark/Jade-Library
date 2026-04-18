@@ -1,0 +1,36 @@
+{
+  "id": "minion-bloom-inst",
+  "name": "Minion Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:53.259Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_minion_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "IvernMinion_Skin11_bloom_mask.tex",
+      "updatedAt": "2026-04-17T17:22:53.254Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ivern",
+    "skin": "skin11",
+    "bin": "data/characters/ivernminion/skins/skin11.bin",
+    "entryKey": "Characters/IvernMinion/Skins/Skin11/Materials/Minion_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ivern",
+      "skin": "skin11",
+      "bin": "data/characters/ivernminion/skins/skin11.bin"
+    }
+  ]
+}

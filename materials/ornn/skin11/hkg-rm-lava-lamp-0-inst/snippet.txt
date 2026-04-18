@@ -1,0 +1,150 @@
+"jadelib_hkg_rm_lava_lamp_0_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_rm_lava_lamp_0_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Sub_Texture"
+            texturePath: string = "assets/jadelib/hkg-rm-lava-lamp-0-inst/Ornn_Skin11_Horn_MAT.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 0.3330000042915344, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend_X_4"
+            value: vec4 = { 60, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Local_Pos"
+            value: vec4 = { 0, 145, 20, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Offset_0"
+            value: vec4 = { -27, 47, 30, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_animDis_0"
+            value: vec4 = { 0, 0, 5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Radius_0"
+            value: vec4 = { 20, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Plane_Height_0"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Time_0"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Scale_Narrow_0"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Offset_1"
+            value: vec4 = { -35, 66, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_animDis_1"
+            value: vec4 = { -5, -10, 30, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Capsule_End_1"
+            value: vec4 = { 20, -5, 40, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Radius_1"
+            value: vec4 = { 8, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Time_1"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Scale_Narrow_1"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Offset_2"
+            value: vec4 = { -43, 60, -45, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_animDis_2"
+            value: vec4 = { 0, 10, 60, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Radius_2"
+            value: vec4 = { 22, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Time_2"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Scale_Narrow_2"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Offset_3"
+            value: vec4 = { -60, 72, 35, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_animDis_3"
+            value: vec4 = { -15, -5, -90, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Radius_3"
+            value: vec4 = { 20, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Time_3"
+            value: vec4 = { 0.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "A_Scale_Narrow_3"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "PLANE_SPHERE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_RM_LavaLamp"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

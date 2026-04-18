@@ -1,0 +1,68 @@
+{
+  "id": "cloud-weapon",
+  "name": "Cloud Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:25.589Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloud_weapon",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin66_CloudWeapon_TurbulDeform_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "Sona_Skin66_MaskCloudWP_TX_CM01.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "Sona_Skin66_Noise.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "Sona_Skin66_CloudWeaponAdditiveScrollCombo_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "Sona_Skin66_Vertex_Deform_Noise01.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:25.581Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/characters/sona/skins/skin66.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/CloudWeapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/characters/sona/skins/skin66.bin"
+    }
+  ]
+}

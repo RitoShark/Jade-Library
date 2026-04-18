@@ -1,0 +1,36 @@
+{
+  "id": "irelia-skin50-blades-passive-inst",
+  "name": "Irelia Skin50 Blades Passive Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:38.229Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_skin50_blades_passive_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Skin45_Weapon03.tex",
+      "updatedAt": "2026-04-17T17:22:38.222Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin50",
+    "bin": "data/characters/irelia/skins/skin50.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin50/Materials/Irelia_Skin50_Blades_Passive_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin50",
+      "bin": "data/characters/irelia/skins/skin50.bin"
+    }
+  ]
+}

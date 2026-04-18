@@ -1,0 +1,36 @@
+{
+  "id": "idle-bloom-inst",
+  "name": "Idle Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:56.052Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_idle_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Katarina_Skin21_bloomMask.tex",
+      "updatedAt": "2026-04-17T17:28:56.047Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Katarina",
+    "skin": "skin21",
+    "bin": "data/characters/katarina/skins/skin21.bin",
+    "entryKey": "Characters/Katarina/Skins/Skin21/Materials/Idle_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Katarina",
+      "skin": "skin21",
+      "bin": "data/characters/katarina/skins/skin21.bin"
+    }
+  ]
+}

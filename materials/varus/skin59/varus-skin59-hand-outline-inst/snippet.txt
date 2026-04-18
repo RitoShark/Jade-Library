@@ -1,0 +1,92 @@
+"jadelib_varus_skin59_hand_outline_inst" = StaticMaterialDef {
+    name: string = "jadelib_varus_skin59_hand_outline_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/varus-skin59-hand-outline-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Thickness"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 0.3000076413154602, 0.9799954295158386, 0.6500037908554077, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0.14901961386203766, 0.800000011920929, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_GRADIENT_COLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM_MAP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA_CHANNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Outline"
+                    blendEnable: bool = true
+                    PolygonDepthBiasEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    windingToCull: u32 = 0
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Outline_Color"
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Varus/Spells/VarusPassiveBuffDisplay"
+                    }
+                    OnValue: vec4 = { 1, 0.7300000190734863, 0.3499999940395355, 1 }
+                    OffValue: vec4 = { 0.75, 0.9300000071525574, 0.44999998807907104, 1 }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "shaco-box-skin44-body-toon-shading-inst",
+  "name": "Shaco Box Skin44 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:53.943Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shaco_box_skin44_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    },
+    {
+      "name": "Gradient_Water_01.tex",
+      "updatedAt": "2026-04-17T17:53:53.938Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin44",
+    "bin": "data/characters/shacobox/skins/skin44.bin",
+    "entryKey": "Characters/ShacoBox/Skins/Skin44/Materials/ShacoBox_Skin44_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin44",
+      "bin": "data/characters/shacobox/skins/skin44.bin"
+    }
+  ]
+}

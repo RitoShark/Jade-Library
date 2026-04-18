@@ -1,0 +1,48 @@
+{
+  "id": "kha-cloud-alpha-blend-additive-scroll-packed-inst",
+  "name": "Kha Cloud Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:37.535Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kha_cloud_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:30:37.528Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:30:37.528Z"
+    },
+    {
+      "name": "Khazix_Skin69_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:30:37.528Z"
+    },
+    {
+      "name": "Khazix_Skin69_R_Black_RGB.tex",
+      "updatedAt": "2026-04-17T17:30:37.528Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Khazix",
+    "skin": "skin69",
+    "bin": "data/characters/khazix/skins/skin69.bin",
+    "entryKey": "Characters/Khazix/Skins/Skin69/Materials/Kha_Cloud_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Khazix",
+      "skin": "skin69",
+      "bin": "data/characters/khazix/skins/skin69.bin"
+    }
+  ]
+}

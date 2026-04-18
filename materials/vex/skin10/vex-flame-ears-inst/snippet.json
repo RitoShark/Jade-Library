@@ -1,0 +1,36 @@
+{
+  "id": "vex-flame-ears-inst",
+  "name": "Vex Flame Ears Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:54.325Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vex_flame_ears_inst",
+  "textureFiles": [
+    {
+      "name": "Zac_Skin14_Trail_Materials.tex",
+      "updatedAt": "2026-04-17T18:04:54.316Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin10",
+    "bin": "data/characters/vex/skins/skin10.bin",
+    "entryKey": "Characters/Vex/Skins/Skin10/Materials/Vex_Flame_Ears_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin10",
+      "bin": "data/characters/vex/skins/skin10.bin"
+    }
+  ]
+}

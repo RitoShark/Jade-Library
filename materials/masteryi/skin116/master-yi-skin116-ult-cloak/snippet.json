@@ -1,0 +1,48 @@
+{
+  "id": "master-yi-skin116-ult-cloak",
+  "name": "Master Yi Skin116 Ult Cloak",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:58.734Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin116_ult_cloak",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:58.725Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:58.725Z"
+    },
+    {
+      "name": "MasterYi_Skin116_Ult_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:58.725Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:58.725Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin116",
+    "bin": "data/characters/masteryi/skins/skin116.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin116/Materials/MasterYi_Skin116_UltCloak"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin116",
+      "bin": "data/characters/masteryi/skins/skin116.bin"
+    }
+  ]
+}

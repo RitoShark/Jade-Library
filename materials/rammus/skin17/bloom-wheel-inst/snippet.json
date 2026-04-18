@@ -1,0 +1,36 @@
+{
+  "id": "bloom-wheel-inst",
+  "name": "Bloom Wheel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:33.140Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_wheel_inst",
+  "textureFiles": [
+    {
+      "name": "Rammus_PB_Skin17_AVATAR_03_Rammus_Skin17.tex",
+      "updatedAt": "2026-04-17T17:47:33.134Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rammus",
+    "skin": "skin17",
+    "bin": "data/characters/rammus/skins/skin17.bin",
+    "entryKey": "Characters/Rammus/Skins/Skin17/Materials/Bloom_Wheel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rammus",
+      "skin": "skin17",
+      "bin": "data/characters/rammus/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+"jadelib_diffuse_alpha_inst" = StaticMaterialDef {
+    name: string = "jadelib_diffuse_alpha_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Alpha"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Alpha"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Ult_Windup"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Ult_Windup"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.5868448615074158
+                                        0.9612113833427429
+                                    }
+                                    values: list[f32] = {
+                                        1
+                                        0.15158747136592865
+                                        0.021385548636317253
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Ult_Winddown"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Ult_Winddown"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.5060728788375854
+                                        1
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        0.8669527769088745
+                                        1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-zac-skin33-glass-inst",
+  "name": "Hkg Mat Cap Zac Skin33 Glass Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:43.661Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_zac_skin33_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Zac_Skin33_Glass_MAT_TX_CM.SKINS_Zac_Skin33.tex",
+      "updatedAt": "2026-04-17T18:11:43.649Z"
+    },
+    {
+      "name": "Zac_Skin33_Mask_Glass_TX_CM.SKINS_Zac_Skin33.tex",
+      "updatedAt": "2026-04-17T18:11:43.649Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin33",
+    "bin": "data/characters/zac/skins/skin33.bin",
+    "entryKey": "Characters/Zac/Skins/Skin33/Materials/HKG_MatCap_Zac_Skin33_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin33",
+      "bin": "data/characters/zac/skins/skin33.bin"
+    }
+  ]
+}

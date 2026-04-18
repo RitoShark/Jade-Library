@@ -1,0 +1,76 @@
+"jadelib_nidalee_cougar_skin48_outline_inst" = StaticMaterialDef {
+    name: string = "jadelib_nidalee_cougar_skin48_outline_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/nidalee-cougar-skin48-outline-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Thickness"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 1, 0.7298542857170105, 0.11911192536354065, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.9108567833900452, 0.18768596649169922, 0.7959868907928467, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_GRADIENT_COLOR"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM_MAP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA_CHANNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Outline"
+                    blendEnable: bool = true
+                    PolygonDepthBiasEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    windingToCull: u32 = 0
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

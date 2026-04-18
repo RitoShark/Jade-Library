@@ -1,0 +1,52 @@
+{
+  "id": "crystal-water",
+  "name": "Crystal Water",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:41.926Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crystal_water",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:41.919Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:41.919Z"
+    },
+    {
+      "name": "Qiyana_Skin50_WaterMark_TX_CM.SKINS_Qiyana_Skin50.tex",
+      "updatedAt": "2026-04-17T17:46:41.919Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:41.919Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:41.919Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin50",
+    "bin": "data/characters/qiyana/skins/skin50.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin50/Materials/CrystalWater"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin50",
+      "bin": "data/characters/qiyana/skins/skin50.bin"
+    }
+  ]
+}

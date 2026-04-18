@@ -1,0 +1,44 @@
+{
+  "id": "body-normal-q2",
+  "name": "Body Normal Q2",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:17.866Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_normal_q2",
+  "textureFiles": [
+    {
+      "name": "Yasuo_Skin87_TX_CM.SKINS_Yasuo_Skin87.tex",
+      "updatedAt": "2026-04-17T18:09:17.858Z"
+    },
+    {
+      "name": "Yasuo_Skin87_FresnelMask_Normal_TX_CM.SKINS_Yasuo_Skin87.tex",
+      "updatedAt": "2026-04-17T18:09:17.858Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:17.858Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin87",
+    "bin": "data/characters/yasuo/skins/skin87.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin87/Materials/Body_Normal_Q2"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin87",
+      "bin": "data/characters/yasuo/skins/skin87.bin"
+    }
+  ]
+}

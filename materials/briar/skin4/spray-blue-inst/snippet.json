@@ -1,0 +1,56 @@
+{
+  "id": "spray-blue-inst",
+  "name": "Spray Blue Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.660Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_spray_blue_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    },
+    {
+      "name": "Briar_Skin04_Spray_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.655Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin4",
+    "bin": "data/characters/briar/skins/skin4.bin",
+    "entryKey": "Characters/Briar/Skins/Skin4/Materials/Spray_Blue_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin4",
+      "bin": "data/characters/briar/skins/skin4.bin"
+    }
+  ]
+}

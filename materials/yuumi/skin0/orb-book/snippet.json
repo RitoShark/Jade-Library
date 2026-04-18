@@ -1,0 +1,64 @@
+{
+  "id": "orb-book",
+  "name": "Orb Book",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:07.936Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_orb_book",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "Yuumi_book_TX_TintColor_MSK.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "Yuumi_book_TX_MSK.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:07.929Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin0",
+    "bin": "data/characters/yuumi/skins/skin0.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin0/Materials/Orb_Book"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin0",
+      "bin": "data/characters/yuumi/skins/skin0.bin"
+    }
+  ]
+}

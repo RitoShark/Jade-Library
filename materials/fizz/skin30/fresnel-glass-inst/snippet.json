@@ -1,0 +1,48 @@
+{
+  "id": "fresnel-glass-inst",
+  "name": "Fresnel Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:17.641Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:17.618Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:17.618Z"
+    },
+    {
+      "name": "Fizz_Skin30_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:19:17.618Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:19:17.618Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fizz",
+    "skin": "skin30",
+    "bin": "data/characters/fizz/skins/skin30.bin",
+    "entryKey": "Characters/Fizz/Skins/Skin30/Materials/Fresnel_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fizz",
+      "skin": "skin30",
+      "bin": "data/characters/fizz/skins/skin30.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "renekton-skin33-blade-inst",
+  "name": "Renekton Skin33 Blade Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:42.334Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_renekton_skin33_blade_inst",
+  "textureFiles": [
+    {
+      "name": "Renekton_Skin33_R_Sky_01.tex",
+      "updatedAt": "2026-04-17T17:48:42.328Z"
+    },
+    {
+      "name": "Renekton_Skin33_3026Vertical_Mask2_Wispy.tex",
+      "updatedAt": "2026-04-17T17:48:42.328Z"
+    },
+    {
+      "name": "DefaultColorOverlifetime.tex",
+      "updatedAt": "2026-04-17T17:48:42.328Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin33",
+    "bin": "data/characters/renekton/skins/skin33.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin33/Materials/Renekton_skin33_Blade_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin33",
+      "bin": "data/characters/renekton/skins/skin33.bin"
+    }
+  ]
+}

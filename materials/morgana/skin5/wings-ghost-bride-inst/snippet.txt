@@ -1,0 +1,322 @@
+"jadelib_wings_ghost_bride_inst" = StaticMaterialDef {
+    name: string = "jadelib_wings_ghost_bride_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Level16_Gradient_Texture"
+            texturePath: string = "assets/jadelib/wings-ghost-bride-inst/Morgana_Skin05_Ult_Wing_Gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/wings-ghost-bride-inst/Morgana_Skin05_W_IndicatorMult.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/wings-ghost-bride-inst/Morgana_Skin05_Ult_Wing_Gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Rage_Gradient_Texture"
+            texturePath: string = "assets/jadelib/wings-ghost-bride-inst/Morgana_Skin05_Ult_Wing_Gradient.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Transform_Level_16"
+            value: vec4 = { 0.8500000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Intensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Scale"
+            value: vec4 = { 2, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Rate"
+            value: vec4 = { -0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.5333333611488342, 0, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GradientSwap_Blend"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rage_Blend"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wing_Contrast_Clamp"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "FIREWINGS"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Kayle_Wings"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Rage_Blend"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaR"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaR"
+                                }
+                                mOnValue: f32 = 0.20000000298023224
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaPassiveHealVFX"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaPassiveHealVFX"
+                                }
+                                mOnValue: f32 = 0.25
+                                mTurnOnTimeSec: f32 = 0.699999988079071
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Mask_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaR"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaR"
+                                }
+                                mOnValue: f32 = 3.5
+                                mTurnOnTimeSec: f32 = 0.5
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaPassiveHealVFX"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaPassiveHealVFX"
+                                }
+                                mTurnOnTimeSec: f32 = 0.5
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.10000000149011612
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaR"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaR"
+                                }
+                                mOnValue: f32 = 0.3499999940395355
+                                mTurnOnTimeSec: f32 = 0.20000000298023224
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaPassiveHealVFX"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaPassiveHealVFX"
+                                }
+                                mOnValue: f32 = 0.25
+                                mTurnOnTimeSec: f32 = 0.25
+                                mTurnOffTimeSec: f32 = 0.25
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "MULT_COLOR"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "MorganaR"
+                    }
+                    mColorOn: vec4 = { 0.027450980618596077, 1, 0.4156862795352936, 1 }
+                    mColorOff: vec4 = { 0.13725490868091583, 0.886274516582489, 1, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Gradient_Transform_Level_16"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaR"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaR"
+                                }
+                                mOnValue: f32 = 0.20000000298023224
+                                mTurnOnTimeSec: f32 = 0.15000000596046448
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaPassiveHealVFX"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaPassiveHealVFX"
+                                }
+                                mOnValue: f32 = 0.699999988079071
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.009999999776482582
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaR"
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "MorganaR"
+                                    }
+                                    mTurnOnTimeSec: f32 = 3
+                                    mTurnOffTimeSec: f32 = 0.5
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.0416666679084301
+                                        0.21166667342185974
+                                        0.4233333468437195
+                                        0.9066666960716248
+                                    }
+                                    values: list[vec4] = {
+                                        { 0.0117647061124444, 0.1921568661928177, 0.21176470816135406, 1 }
+                                        { 0.2078431397676468, 0.3137255012989044, 0.2980392277240753, 1 }
+                                        { 0, 0.1882352977991104, 0.16470588743686676, 1 }
+                                        { 0.062745101749897, 0.2549019753932953, 0.24313725531101227, 1 }
+                                        { 0.2862745225429535, 0.7137255072593689, 1, 1 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "MorganaPassiveHealVFX"
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "MorganaPassiveHealVFX"
+                                    }
+                                    mTurnOnTimeSec: f32 = 0.699999988079071
+                                    mTurnOffTimeSec: f32 = 0
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.0033333334140479565
+                                        0.3285907804965973
+                                        0.9766666889190674
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0, 0, 1 }
+                                        { 0.019607843831181526, 0.3176470696926117, 0.3176470696926117, 1 }
+                                        { 0, 0, 0, 1 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.20000000298023224
+                    }
+                }
+            }
+        }
+    }
+}

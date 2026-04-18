@@ -1,0 +1,34 @@
+{
+  "id": "crown-fresnel-inst",
+  "name": "Crown Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:54.865Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_crown_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_Skin12_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:09:54.860Z"
+    },
+    {
+      "name": "Ashe_Skin11_Z_ColorHold.tex",
+      "updatedAt": "2026-04-17T17:09:54.860Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin12",
+    "bin": "data/characters/ashe/skins/skin12.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin12/Materials/CrownFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin12",
+      "bin": "data/characters/ashe/skins/skin12.bin"
+    }
+  ]
+}

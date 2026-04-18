@@ -1,0 +1,48 @@
+{
+  "id": "senna-skin72-flame-hair-outside-mat-inst",
+  "name": "Senna Skin72 Flame Hair Outside Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:34.513Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_senna_skin72_flame_hair_outside_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:34.506Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:34.506Z"
+    },
+    {
+      "name": "Senna_Skin72_FlameHair_TX_CM.SKINS_Senna_Skin72.tex",
+      "updatedAt": "2026-04-17T17:52:34.506Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:34.506Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin72",
+    "bin": "data/characters/senna/skins/skin72.bin",
+    "entryKey": "Characters/Senna/Skins/Skin72/Materials/Senna_Skin72_FlameHairOutside_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin72",
+      "bin": "data/characters/senna/skins/skin72.bin"
+    }
+  ]
+}

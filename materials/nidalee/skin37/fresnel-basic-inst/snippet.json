@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:09.590Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "NidaleeCougar_Skin37_Cougar_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:09.583Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:43:09.583Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin37",
+    "bin": "data/characters/nidaleecougar/skins/skin37.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin37/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin37",
+      "bin": "data/characters/nidaleecougar/skins/skin37.bin"
+    }
+  ]
+}

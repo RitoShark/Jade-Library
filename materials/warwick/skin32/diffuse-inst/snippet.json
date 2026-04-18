@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-inst",
+  "name": "Diffuse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:03.003Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin32",
+    "bin": "data/characters/warwick/skins/skin32.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin32/Materials/Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin32",
+      "bin": "data/characters/warwick/skins/skin32.bin"
+    }
+  ]
+}

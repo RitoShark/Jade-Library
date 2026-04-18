@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-ghost-katana-inst",
+  "name": "Matcap Iridescent Holographic Ghost Katana Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:08.049Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_ghost_katana_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "Yone_Skin76_Swords_Mask_TX_CM.Chroma_Yone_Inkshadow_Paragon.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "Yone_Skin76_Gradient.Chroma_Yone_Inkshadow_Paragon.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    },
+    {
+      "name": "flowmapCircle2.tex",
+      "updatedAt": "2026-04-17T18:10:08.042Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin76",
+    "bin": "data/characters/yone/skins/skin76.bin",
+    "entryKey": "Characters/Yone/Skins/Skin76/Materials/Matcap_Iridescent_Holographic_GhostKatana_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin76",
+      "bin": "data/characters/yone/skins/skin76.bin"
+    }
+  ]
+}

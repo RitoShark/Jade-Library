@@ -1,0 +1,48 @@
+{
+  "id": "flame-hair-2-inst",
+  "name": "Flame Hair 2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:35.117Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flame_hair_2_inst",
+  "textureFiles": [
+    {
+      "name": "Velkoz_Skin04_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:04:35.111Z"
+    },
+    {
+      "name": "Velkoz_Skin08_Bloom_Mask_5.tex",
+      "updatedAt": "2026-04-17T18:04:35.111Z"
+    },
+    {
+      "name": "Velkoz_Skin08_Idle_Mask_red_1.tex",
+      "updatedAt": "2026-04-17T18:04:35.111Z"
+    },
+    {
+      "name": "Velkoz_Skin08_Bloom_Mask_5.tex",
+      "updatedAt": "2026-04-17T18:04:35.111Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Velkoz",
+    "skin": "skin10",
+    "bin": "data/characters/velkoz/skins/skin10.bin",
+    "entryKey": "Characters/Velkoz/Skins/Skin10/Materials/Flame_Hair_2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Velkoz",
+      "skin": "skin10",
+      "bin": "data/characters/velkoz/skins/skin10.bin"
+    }
+  ]
+}

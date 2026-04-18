@@ -1,0 +1,48 @@
+{
+  "id": "jayce-skin38-weapon-exchange-inst",
+  "name": "Jayce Skin38 Weapon Exchange Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:43.673Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jayce_skin38_weapon_exchange_inst",
+  "textureFiles": [
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:24:43.664Z"
+    },
+    {
+      "name": "Jayce_Skin38_Weapon_matcap_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:43.664Z"
+    },
+    {
+      "name": "Jayce_Skin38_ChangeA_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:43.664Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:24:43.664Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin38",
+    "bin": "data/characters/jayce/skins/skin38.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin38/Materials/Jayce_Skin38_Weapon_Exchange_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin38",
+      "bin": "data/characters/jayce/skins/skin38.bin"
+    }
+  ]
+}

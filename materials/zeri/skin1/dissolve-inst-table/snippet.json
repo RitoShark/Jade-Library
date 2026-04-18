@@ -1,0 +1,40 @@
+{
+  "id": "dissolve-inst-table",
+  "name": "Dissolve Inst Table",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:43.056Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_inst_table",
+  "textureFiles": [
+    {
+      "name": "ground_pool_erosion.tex",
+      "updatedAt": "2026-04-17T18:12:43.046Z"
+    },
+    {
+      "name": "Zeri_Skin1_Props_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:43.046Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin1",
+    "bin": "data/characters/zeri/skins/skin1.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin1/Materials/Dissolve_inst_Table"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin1",
+      "bin": "data/characters/zeri/skins/skin1.bin"
+    }
+  ]
+}

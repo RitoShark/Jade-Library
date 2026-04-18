@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-lu-lu-faerise-skin32-jelly01",
+  "name": "Hkg Mat Cap Lu Lu Faerise Skin32 Jelly01",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:23.206Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_lu_lu_faerise_skin32_jelly01",
+  "textureFiles": [
+    {
+      "name": "Lulu_Skin26_MatCap_Jelly_01.tex",
+      "updatedAt": "2026-04-17T17:35:23.201Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:35:23.201Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin32",
+    "bin": "data/characters/lulufaerie/skins/skin32.bin",
+    "entryKey": "Characters/LuluFaerie/Skins/Skin32/Materials/HKG_MatCap_LuLuFaerise_Skin32_Jelly01"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin32",
+      "bin": "data/characters/lulufaerie/skins/skin32.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "sylas-r-absorbed-gradient-inst",
+  "name": "Sylas R Absorbed Gradient Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:31.148Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_r_absorbed_gradient_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:58:31.140Z"
+    },
+    {
+      "name": "Default_DoubleGradient.tex",
+      "updatedAt": "2026-04-17T17:58:31.140Z"
+    },
+    {
+      "name": "Sylas_Base_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:31.140Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin0",
+    "bin": "data/sylas_skins_skin0_skins_skin10_skins_skin11_skins_skin12_skins_skin8_skins_skin9.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin0/Materials/Sylas_R_Absorbed_Gradient_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin0",
+      "bin": "data/sylas_skins_skin0_skins_skin10_skins_skin11_skins_skin12_skins_skin8_skins_skin9.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:19.084Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin27_Glow_Mask.tex",
+      "updatedAt": "2026-04-17T17:36:19.077Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin35",
+    "bin": "data/characters/malphite/skins/skin35.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin35/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin35",
+      "bin": "data/characters/malphite/skins/skin35.bin"
+    }
+  ]
+}

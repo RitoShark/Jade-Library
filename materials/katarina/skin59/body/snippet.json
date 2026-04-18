@@ -1,0 +1,56 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:59.147Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    },
+    {
+      "name": "lava_actual.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:59.141Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Katarina",
+    "skin": "skin59",
+    "bin": "data/characters/katarina/skins/skin59.bin",
+    "entryKey": "Characters/Katarina/Skins/Skin59/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Katarina",
+      "skin": "skin59",
+      "bin": "data/characters/katarina/skins/skin59.bin"
+    }
+  ]
+}

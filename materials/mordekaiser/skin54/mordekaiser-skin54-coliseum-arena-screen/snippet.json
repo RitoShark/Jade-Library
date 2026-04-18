@@ -1,0 +1,31 @@
+{
+  "id": "mordekaiser-skin54-coliseum-arena-screen",
+  "name": "Mordekaiser Skin54 Coliseum Arena Screen",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:54.589Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_skin54_coliseum_arena_screen",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin54",
+    "bin": "data/characters/mordekaiser/skins/skin54.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin54/Materials/Mordekaiser_Skin54_Coliseum_Arena_Screen"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin54",
+      "bin": "data/characters/mordekaiser/skins/skin54.bin"
+    }
+  ]
+}

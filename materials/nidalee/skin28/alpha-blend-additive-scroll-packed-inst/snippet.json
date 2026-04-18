@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:07.503Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:43:07.493Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:43:07.493Z"
+    },
+    {
+      "name": "NidaleeCougar_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:07.493Z"
+    },
+    {
+      "name": "NidaleeCougar_Skin27_Material_Mask.tex",
+      "updatedAt": "2026-04-17T17:43:07.493Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin28",
+    "bin": "data/characters/nidaleecougar/skins/skin28.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin28/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin28",
+      "bin": "data/characters/nidaleecougar/skins/skin28.bin"
+    }
+  ]
+}

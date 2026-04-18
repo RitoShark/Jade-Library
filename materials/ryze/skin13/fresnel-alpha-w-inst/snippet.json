@@ -1,0 +1,36 @@
+{
+  "id": "fresnel-alpha-w-inst",
+  "name": "Fresnel Alpha W Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:08.493Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_alpha_w_inst",
+  "textureFiles": [
+    {
+      "name": "common_SRU_Order_wispies.tex",
+      "updatedAt": "2026-04-17T17:51:08.486Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ryze",
+    "skin": "skin13",
+    "bin": "data/characters/ryze/skins/skin13.bin",
+    "entryKey": "Characters/Ryze/Skins/Skin13/Materials/FresnelAlpha_W_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ryze",
+      "skin": "skin13",
+      "bin": "data/characters/ryze/skins/skin13.bin"
+    }
+  ]
+}

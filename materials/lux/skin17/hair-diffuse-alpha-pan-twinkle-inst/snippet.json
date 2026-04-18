@@ -1,0 +1,45 @@
+{
+  "id": "hair-diffuse-alpha-pan-twinkle-inst",
+  "name": "Hair Diffuse Alpha Pan Twinkle Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:52.509Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_diffuse_alpha_pan_twinkle_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin17_Hair_Twinkle_Mask.tex",
+      "updatedAt": "2026-04-17T17:35:55.811Z"
+    },
+    {
+      "name": "Lux_Skin17_Hair_Noise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:55.811Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin17",
+    "bin": "data/characters/lux/skins/skin17.bin",
+    "entryKey": "Characters/Lux/Skins/Skin17/Materials/HAIR_Diffuse_Alpha_Pan_Twinkle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin17",
+      "bin": "data/characters/lux/skins/skin17.bin"
+    },
+    {
+      "champion": "Ruby_Lux",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_lux/skins/skin0.bin"
+    }
+  ]
+}

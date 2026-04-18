@@ -1,0 +1,64 @@
+{
+  "id": "yuumi-book-cover-inst",
+  "name": "Yuumi Book Cover Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:10.817Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yuumi_book_cover_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "Yuumi_Skin49_Material_Tex.SKINS_Yuumi_Skin49.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "Yuumi_Skin49_Book_TX_Mask.SKINS_Yuumi_Skin49.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:10.812Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin58",
+    "bin": "data/characters/yuumi/skins/skin58.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin58/Materials/Yuumi_Book_Cover_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin58",
+      "bin": "data/characters/yuumi/skins/skin58.bin"
+    }
+  ]
+}

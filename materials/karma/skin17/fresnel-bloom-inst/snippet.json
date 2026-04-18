@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-inst",
+  "name": "Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:51.235Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:27:51.229Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:27:51.229Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin17",
+    "bin": "data/characters/karma/skins/skin17.bin",
+    "entryKey": "Characters/Karma/Skins/Skin17/Materials/Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin17",
+      "bin": "data/characters/karma/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "cloth",
+  "name": "Cloth",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:53.758Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloth",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:53.751Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:53.751Z"
+    },
+    {
+      "name": "Zeri_Skin40_TX_CM.SKINS_Zeri_Skin40.tex",
+      "updatedAt": "2026-04-17T18:12:53.751Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:53.751Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin40",
+    "bin": "data/characters/zeri/skins/skin40.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin40/Materials/Cloth"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin40",
+      "bin": "data/characters/zeri/skins/skin40.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "lillia-skin50-flower-inst",
+  "name": "Lillia Skin50 Flower Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:05.001Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lillia_skin50_flower_inst",
+  "textureFiles": [
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:34:04.994Z"
+    },
+    {
+      "name": "Lillia_Skin46_Weapon_Mask_TX_CM.SKINS_Lillia_Skin46.tex",
+      "updatedAt": "2026-04-17T17:34:04.994Z"
+    },
+    {
+      "name": "Lillia_Skin50_Weapon_TX_CM.Chroma_Lillia_PetalsofSpring.tex",
+      "updatedAt": "2026-04-17T17:34:04.994Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:34:04.994Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin50",
+    "bin": "data/characters/lillia/skins/skin50.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin50/Materials/Lillia_Skin50_Flower_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin50",
+      "bin": "data/characters/lillia/skins/skin50.bin"
+    }
+  ]
+}

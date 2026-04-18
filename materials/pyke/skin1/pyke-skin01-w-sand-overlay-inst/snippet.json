@@ -1,0 +1,38 @@
+{
+  "id": "pyke-skin01-w-sand-overlay-inst",
+  "name": "Pyke Skin01 W Sand Overlay Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:14.327Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_pyke_skin01_w_sand_overlay_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:14.321Z"
+    },
+    {
+      "name": "Pyke_Skin01_SandClone_Noise.tex",
+      "updatedAt": "2026-04-17T17:46:14.321Z"
+    },
+    {
+      "name": "Pyke_Skin01_SandClone_Texture.tex",
+      "updatedAt": "2026-04-17T17:46:14.321Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin1",
+    "bin": "data/characters/pyke/skins/skin1.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin1/Materials/Pyke_Skin01_W_SandOverlay_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin1",
+      "bin": "data/characters/pyke/skins/skin1.bin"
+    }
+  ]
+}

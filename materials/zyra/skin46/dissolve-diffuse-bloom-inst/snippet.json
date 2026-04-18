@@ -1,0 +1,40 @@
+{
+  "id": "dissolve-diffuse-bloom-inst",
+  "name": "Dissolve Diffuse Bloom Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:42.270Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "color-hold_2.TFT_Set15.tex",
+      "updatedAt": "2026-04-17T18:14:42.264Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.TFT_Set15.tex",
+      "updatedAt": "2026-04-17T18:14:42.264Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zyra",
+    "skin": "skin46",
+    "bin": "data/characters/zyraseed/skins/skin46.bin",
+    "entryKey": "Characters/ZyraSeed/Skins/Skin46/Materials/Dissolve_Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zyra",
+      "skin": "skin46",
+      "bin": "data/characters/zyraseed/skins/skin46.bin"
+    }
+  ]
+}

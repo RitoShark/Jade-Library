@@ -1,0 +1,31 @@
+{
+  "id": "zilean-skin24-rotate-inst",
+  "name": "Zilean Skin24 Rotate Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:34.779Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zilean_skin24_rotate_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin24",
+    "bin": "data/characters/zilean/skins/skin24.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin24/Materials/ZileanSkin24_Rotate_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin24",
+      "bin": "data/characters/zilean/skins/skin24.bin"
+    }
+  ]
+}

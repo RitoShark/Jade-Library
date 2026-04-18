@@ -1,0 +1,36 @@
+{
+  "id": "zac-metal-bloblet-inst",
+  "name": "Zac Metal Bloblet Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:45.554Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zac_metal_bloblet_inst",
+  "textureFiles": [
+    {
+      "name": "ZacRebirthBloblet_Skin07_MetalMask.tex",
+      "updatedAt": "2026-04-17T18:11:45.547Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin10",
+    "bin": "data/characters/zacrebirthbloblet/skins/skin10.bin",
+    "entryKey": "Characters/ZacRebirthBloblet/Skins/Skin10/Materials/Zac_Metal_Bloblet_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin10",
+      "bin": "data/characters/zacrebirthbloblet/skins/skin10.bin"
+    }
+  ]
+}

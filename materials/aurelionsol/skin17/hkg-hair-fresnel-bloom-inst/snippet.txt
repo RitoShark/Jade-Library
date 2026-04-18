@@ -1,0 +1,77 @@
+"jadelib_hkg_hair_fresnel_bloom_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_hair_fresnel_bloom_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hkg-hair-fresnel-bloom-inst/AurelionSol_Skin11_TX_N.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.8274509906768799, 1, 0.95686274766922, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_R"
+            value: vec4 = { 0, 0.14999619126319885, 1, 0.17999541759490967 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity_R"
+            value: vec4 = { 0.07999999821186066, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_G"
+            value: vec4 = { 0, 0.13333334028720856, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity_G"
+            value: vec4 = { 8.079999923706055, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERTED_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Basic_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

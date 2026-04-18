@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-skin12-vfxblades-inst",
+  "name": "Naafiri Skin12 Vfxblades Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:41.636Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin12_vfxblades_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:40:41.631Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:40:41.631Z"
+    },
+    {
+      "name": "Naafiri_Skin12_BladesVFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:41.631Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:40:41.631Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin12",
+    "bin": "data/characters/naafiri/skins/skin12.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin12/Materials/Naafiri_Skin12_VFXBlades_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin12",
+      "bin": "data/characters/naafiri/skins/skin12.bin"
+    }
+  ]
+}

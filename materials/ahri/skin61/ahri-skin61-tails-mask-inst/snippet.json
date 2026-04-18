@@ -1,0 +1,40 @@
+{
+  "id": "ahri-skin61-tails-mask-inst",
+  "name": "Ahri Skin61 Tails Mask Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:55.709Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_skin61_tails_mask_inst",
+  "textureFiles": [
+    {
+      "name": "AhriTwirl2.tex",
+      "updatedAt": "2026-04-17T17:06:55.704Z"
+    },
+    {
+      "name": "AhriTwirl3.tex",
+      "updatedAt": "2026-04-17T17:06:55.704Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin61",
+    "bin": "data/characters/ahri/skins/skin61.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin61/Materials/Ahri_Skin61_TailsMask_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin61",
+      "bin": "data/characters/ahri/skins/skin61.bin"
+    }
+  ]
+}

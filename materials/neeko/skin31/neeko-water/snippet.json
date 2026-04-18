@@ -1,0 +1,44 @@
+{
+  "id": "neeko-water",
+  "name": "Neeko Water",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:32.499Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_neeko_water",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin31_Water_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:32.493Z"
+    },
+    {
+      "name": "Neeko_Skin31_Mask_02_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:32.493Z"
+    },
+    {
+      "name": "MatCap_BS0.tex",
+      "updatedAt": "2026-04-17T17:42:32.493Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin31",
+    "bin": "data/characters/neeko/skins/skin31.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin31/Materials/Neeko_Water"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin31",
+      "bin": "data/characters/neeko/skins/skin31.bin"
+    }
+  ]
+}

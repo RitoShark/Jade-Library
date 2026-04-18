@@ -1,0 +1,40 @@
+{
+  "id": "kayle-skin56-wings-lvl6",
+  "name": "Kayle Skin56 Wings Lvl6",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:40.975Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin56_wings_lvl6",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin56_Wings_lvl6_mask.tex",
+      "updatedAt": "2026-04-17T17:29:40.968Z"
+    },
+    {
+      "name": "Kayle_Skin56_Wings_lvl1_gradient.tex",
+      "updatedAt": "2026-04-17T17:29:40.968Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin56",
+    "bin": "data/characters/kayle/skins/skin56.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin56/Materials/Kayle_Skin56_Wings_Lvl6"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin56",
+      "bin": "data/characters/kayle/skins/skin56.bin"
+    }
+  ]
+}

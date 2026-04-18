@@ -1,0 +1,31 @@
+{
+  "id": "mordekaiser-skin44-distortion-inst",
+  "name": "Mordekaiser Skin44 Distortion Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:53.960Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_skin44_distortion_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin44",
+    "bin": "data/characters/mordekaiser/skins/skin44.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin44/Materials/Mordekaiser_Skin44_Distortion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin44",
+      "bin": "data/characters/mordekaiser/skins/skin44.bin"
+    }
+  ]
+}

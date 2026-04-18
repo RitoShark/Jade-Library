@@ -1,0 +1,36 @@
+{
+  "id": "bloom-braid-inst",
+  "name": "Bloom Braid Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:09.729Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_braid_inst",
+  "textureFiles": [
+    {
+      "name": "Leesin_Skin68_Braid_Mask_TX_CM.SKINS_LeeSin_Skin68.tex",
+      "updatedAt": "2026-04-17T17:33:09.721Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin68",
+    "bin": "data/characters/leesin/skins/skin68.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin68/Materials/Bloom_Braid_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin68",
+      "bin": "data/characters/leesin/skins/skin68.bin"
+    }
+  ]
+}

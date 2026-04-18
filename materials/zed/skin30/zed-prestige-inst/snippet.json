@@ -1,0 +1,42 @@
+{
+  "id": "zed-prestige-inst",
+  "name": "Zed Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:09.371Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_zed_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Zed_Skin30_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:09.365Z"
+    },
+    {
+      "name": "Zed_Skin30_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:09.365Z"
+    },
+    {
+      "name": "Zed_Skin30_W_SmokeErode.tex",
+      "updatedAt": "2026-04-17T18:12:09.365Z"
+    },
+    {
+      "name": "Zed_Skin30_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:09.365Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin30",
+    "bin": "data/characters/zed/skins/skin30.bin",
+    "entryKey": "Characters/Zed/Skins/Skin30/Materials/Zed_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin30",
+      "bin": "data/characters/zed/skins/skin30.bin"
+    }
+  ]
+}

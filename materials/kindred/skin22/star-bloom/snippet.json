@@ -1,0 +1,36 @@
+{
+  "id": "star-bloom",
+  "name": "Star Bloom",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:03.270Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_star_bloom",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:03.266Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin22",
+    "bin": "data/characters/kindred/skins/skin22.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin22/Materials/Star_Bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin22",
+      "bin": "data/characters/kindred/skins/skin22.bin"
+    }
+  ]
+}

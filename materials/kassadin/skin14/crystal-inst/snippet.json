@@ -1,0 +1,42 @@
+{
+  "id": "crystal-inst",
+  "name": "Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:20.310Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin14_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:20.300Z"
+    },
+    {
+      "name": "Kassadin_Skin14_Crystal_Normal.tex",
+      "updatedAt": "2026-04-17T17:28:20.300Z"
+    },
+    {
+      "name": "Kassadin_Skin14_Crystal_Mask.tex",
+      "updatedAt": "2026-04-17T17:28:20.300Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:28:20.300Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kassadin",
+    "skin": "skin14",
+    "bin": "data/characters/kassadin/skins/skin14.bin",
+    "entryKey": "Characters/Kassadin/Skins/Skin14/Materials/Crystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kassadin",
+      "skin": "skin14",
+      "bin": "data/characters/kassadin/skins/skin14.bin"
+    }
+  ]
+}

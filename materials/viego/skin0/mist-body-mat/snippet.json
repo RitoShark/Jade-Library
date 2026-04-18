@@ -1,0 +1,40 @@
+{
+  "id": "mist-body-mat",
+  "name": "Mist Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:35.572Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mist_body_mat",
+  "textureFiles": [
+    {
+      "name": "Viego_Base_Noise_TX.tex",
+      "updatedAt": "2026-04-17T18:05:35.566Z"
+    },
+    {
+      "name": "Viego_Smoke_TX.tex",
+      "updatedAt": "2026-04-17T18:05:35.566Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin0",
+    "bin": "data/characters/viego/skins/skin0.bin",
+    "entryKey": "Characters/Viego/Skins/Skin0/Materials/MistBody_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin0",
+      "bin": "data/characters/viego/skins/skin0.bin"
+    }
+  ]
+}

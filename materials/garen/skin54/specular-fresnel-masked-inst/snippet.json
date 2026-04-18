@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:06.336Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Garen_Skin54_TX_CM.Chroma_Garen_Darkin.tex",
+      "updatedAt": "2026-04-17T17:20:06.330Z"
+    },
+    {
+      "name": "Garen_Skin46_Mask_TX_CM.SKINS_Garen_Skin46.tex",
+      "updatedAt": "2026-04-17T17:20:06.330Z"
+    },
+    {
+      "name": "Default_Gradient.SKINS_Garen_Skin46.tex",
+      "updatedAt": "2026-04-17T17:20:06.330Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin54",
+    "bin": "data/characters/garen/skins/skin54.bin",
+    "entryKey": "Characters/Garen/Skins/Skin54/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin54",
+      "bin": "data/characters/garen/skins/skin54.bin"
+    }
+  ]
+}

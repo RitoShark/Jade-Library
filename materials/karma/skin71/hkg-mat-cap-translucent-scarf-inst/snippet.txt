@@ -1,0 +1,115 @@
+"jadelib_hkg_mat_cap_translucent_scarf_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_translucent_scarf_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Trans_Color_Tex"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-scarf-inst/Darkstar_Lava.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-scarf-inst/Karma_Skin70_Matcap_TX_CM.SKINS_Karma_Skin70.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Jelly_Diff_Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-scarf-inst/Karma_Skin70_PatternMask_TX_CM.SKINS_Karma_Skin70.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 3.075000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+            value: vec4 = { 1.1100000143051147, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Translucent_Val"
+            value: vec4 = { 2.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Direction"
+            value: vec4 = { 0, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Distortion"
+            value: vec4 = { 0.28999999165534973, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Lambert"
+            value: vec4 = { 0.36500000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0.3653925359249115, 0.23324941098690033, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_Translucent"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Karma/Spells/KarmaMantraAbility/KarmaMantra"
+                    }
+                    mOnValue: f32 = 5
+                    mOffValue: f32 = 4
+                    mTurnOnTimeSec: f32 = 0.20000000298023224
+                    mTurnOffTimeSec: f32 = 0.20000000298023224
+                }
+            }
+        }
+    }
+}

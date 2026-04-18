@@ -1,0 +1,55 @@
+{
+  "id": "prestige-inst",
+  "name": "Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:18.864Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    },
+    {
+      "name": "Kaisa_Skin27_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    },
+    {
+      "name": "Kaisa_Skin27_ShaderMaterial.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    },
+    {
+      "name": "Kaisa_Skin27_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:26:28.926Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin27",
+    "bin": "data/characters/kaisa/skins/skin27.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin27/Materials/Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin27",
+      "bin": "data/characters/kaisa/skins/skin27.bin"
+    },
+    {
+      "champion": "Lulu",
+      "skin": "skin27",
+      "bin": "data/characters/lulu/skins/skin27.bin"
+    }
+  ]
+}

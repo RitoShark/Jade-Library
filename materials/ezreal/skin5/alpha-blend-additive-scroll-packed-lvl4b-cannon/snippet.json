@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-lvl4b-cannon",
+  "name": "Alpha Blend Additive Scroll Packed Lvl4b Cannon",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:53.846Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_lvl4b_cannon",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:17:53.839Z"
+    },
+    {
+      "name": "Blank.tex",
+      "updatedAt": "2026-04-17T17:17:53.839Z"
+    },
+    {
+      "name": "Ezreal_Skin05_Cannon_Lv4_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:53.839Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:17:53.839Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin5",
+    "bin": "data/characters/ezreal/skins/skin5.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin5/Materials/AlphaBlend_Additive_Scroll_Packed_Lvl4B_Cannon"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin5",
+      "bin": "data/characters/ezreal/skins/skin5.bin"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "hair-main",
+  "name": "Hair Main",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:46.285Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_main",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin38_TX_CM_Hairroll_Mask.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Generated_Noise.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Generated_Noise.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM_Gradient2.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM_Hairbloom.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM_Hairfrenalcolor.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM_FreHair_Mask.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_Casetextures_TX_CM.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM_New_Hair_Mask.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:46.275Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin38",
+    "bin": "data/characters/aurelionsol/skins/skin38.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin38/Materials/Hair_Main"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin38",
+      "bin": "data/characters/aurelionsol/skins/skin38.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "jinx-skin60-hood-mat-inst",
+  "name": "Jinx Skin60 Hood Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:49.509Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jinx_skin60_hood_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "Jinx_Skin60_HoodNeon_TX_CM.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "Jinx_Skin60_HoodNeon_TX_CM.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    },
+    {
+      "name": "Jinx_Skin60_Body02_TX_CM.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:25:49.500Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jinx",
+    "skin": "skin60",
+    "bin": "data/characters/jinx/skins/skin60.bin",
+    "entryKey": "Characters/Jinx/Skins/Skin60/Materials/Jinx_Skin60_Hood_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jinx",
+      "skin": "skin60",
+      "bin": "data/characters/jinx/skins/skin60.bin"
+    }
+  ]
+}

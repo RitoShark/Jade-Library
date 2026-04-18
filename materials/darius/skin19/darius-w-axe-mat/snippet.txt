@@ -1,0 +1,163 @@
+"jadelib_darius_w_axe_mat" = StaticMaterialDef {
+    name: string = "jadelib_darius_w_axe_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpaceTexture"
+            texturePath: string = "assets/jadelib/darius-w-axe-mat/Darius_Skin16_W_Arm_ScreenSpace_glow.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSScale"
+            value: vec4 = { 12, 12, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SSFresnelSize"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 1, 0.23529411852359772, 0.003921568859368563, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0.30000001192092896, -0.800000011920929, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Master_Blend"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_SS_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScreenSpace_Pan_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "DariusNoxianTacticsONH"
+                        }
+                        mTurnOffTimeSec: f32 = 0.20000000298023224
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.11231468617916107
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            0.9711582660675049
+                            1.0811007022857666
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Master_Blend"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "DariusNoxianTacticsONH"
+                        }
+                        mTurnOffTimeSec: f32 = 0.20000000298023224
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.13896562159061432
+                            0.9365902543067932
+                        }
+                        values: list[f32] = {
+                            0
+                            0.9803200960159302
+                            0.9986438751220703
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "DariusNoxianTacticsONH"
+                                }
+                                DelayedBoolMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "Recall"
+                                    }
+                                    mDelayOn: f32 = 0.15000000596046448
+                                }
+                                HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "Dariushemomax"
+                                }
+                                DelayedBoolMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "SuperRecall"
+                                    }
+                                    mDelayOn: f32 = 0.15000000596046448
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Darius/Skins/Skin19/Darius_Skin19_W_Override_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

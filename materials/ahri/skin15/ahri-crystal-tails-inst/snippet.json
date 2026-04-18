@@ -1,0 +1,48 @@
+{
+  "id": "ahri-crystal-tails-inst",
+  "name": "Ahri Crystal Tails Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:50.673Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_crystal_tails_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin15_RainbowGradient_3.tex",
+      "updatedAt": "2026-04-17T17:06:50.665Z"
+    },
+    {
+      "name": "Ahri_Skin15_Screenspace_Lines.tex",
+      "updatedAt": "2026-04-17T17:06:50.665Z"
+    },
+    {
+      "name": "Ahri_Skin15_TailMask.tex",
+      "updatedAt": "2026-04-17T17:06:50.665Z"
+    },
+    {
+      "name": "Ahri_Skin15_FresnelGradient_1.tex",
+      "updatedAt": "2026-04-17T17:06:50.665Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin15",
+    "bin": "data/characters/ahri/skins/skin15.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin15/Materials/Ahri_Crystal_Tails_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin15",
+      "bin": "data/characters/ahri/skins/skin15.bin"
+    }
+  ]
+}

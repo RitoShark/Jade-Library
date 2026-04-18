@@ -1,0 +1,94 @@
+"jadelib_zoe_skin38_l_arm_inst" = StaticMaterialDef {
+    name: string = "jadelib_zoe_skin38_l_arm_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/zoe-skin38-l-arm-inst/DarkStar_Texture.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask1"
+            texturePath: string = "assets/jadelib/zoe-skin38-l-arm-inst/Zoe_Skin33_PurpleArm2_TX_CM.SKINS_Zoe_Skin33.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask2"
+            texturePath: string = "assets/jadelib/zoe-skin38-l-arm-inst/Zoe_Skin33_PurpleArm_TX_CM.SKINS_Zoe_Skin33.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { 0, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color"
+            value: vec4 = { 0.7723506689071655, 0.4941176474094391, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Scale"
+            value: vec4 = { 5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 1.600000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_LOCAL_SPACE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Darkstar"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

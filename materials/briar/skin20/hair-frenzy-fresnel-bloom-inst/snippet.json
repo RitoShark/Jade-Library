@@ -1,0 +1,36 @@
+{
+  "id": "hair-frenzy-fresnel-bloom-inst",
+  "name": "Hair Frenzy Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.345Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_frenzy_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Briar_Skin20_ColorMask_Fresnel_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.339Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin20",
+    "bin": "data/characters/briar/skins/skin20.bin",
+    "entryKey": "Characters/Briar/Skins/Skin20/Material/Hair_Frenzy_Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin20",
+      "bin": "data/characters/briar/skins/skin20.bin"
+    }
+  ]
+}

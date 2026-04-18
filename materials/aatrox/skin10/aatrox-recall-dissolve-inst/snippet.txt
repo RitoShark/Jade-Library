@@ -1,0 +1,163 @@
+"jadelib_aatrox_recall_dissolve_inst" = StaticMaterialDef {
+    name: string = "jadelib_aatrox_recall_dissolve_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/aatrox-recall-dissolve-inst/Aatrox_Skin09_Recall_Gradient_Body.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/aatrox-recall-dissolve-inst/Aatrox_Skin09_Recall_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { -0.07750000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+            value: vec4 = { 0.10499999672174454, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.9254902005195618, 0.7450980544090271, 0.45490196347236633, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.4424999952316284, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_DISSOLVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Diffuse_Maps"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8.199999809265137
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.21308031678199768
+                                    0.5798177123069763
+                                    0.7116017937660217
+                                    0.8037293553352356
+                                    0.914823055267334
+                                    0.9905170798301697
+                                    1.1976070404052734
+                                    1.2101657390594482
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1.1252528429031372
+                                    1.11436128616333
+                                    0.7917538285255432
+                                    0.38462746143341064
+                                    0.03407173231244087
+                                    -0.21621982753276825
+                                    -0.21985352039337158
+                                    0.9986113905906677
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall_Winddown"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 4
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.010090777650475502
+                                    0.010090777650475502
+                                    0.20314671099185944
+                                    0.23463250696659088
+                                    0.2567182183265686
+                                    0.31409040093421936
+                                    1.2174432277679443
+                                }
+                                values: list[f32] = {
+                                    1.2402721643447876
+                                    -0.21985352039337158
+                                    -0.21985352039337158
+                                    -0.06596459448337555
+                                    0.8394335508346558
+                                    0.9887434840202332
+                                    1.0016649961471558
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

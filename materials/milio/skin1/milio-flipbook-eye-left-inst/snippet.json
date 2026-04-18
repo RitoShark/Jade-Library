@@ -1,0 +1,30 @@
+{
+  "id": "milio-flipbook-eye-left-inst",
+  "name": "Milio Flipbook Eye Left Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:33.357Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_milio_flipbook_eye_left_inst",
+  "textureFiles": [
+    {
+      "name": "Milio_Skin01_Firebuddy_Eyes_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:33.352Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin1",
+    "bin": "data/characters/milio/skins/skin1.bin",
+    "entryKey": "Characters/Milio/Skins/Skin1/Materials/Milio_Flipbook_Eye_Left_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin1",
+      "bin": "data/characters/milio/skins/skin1.bin"
+    }
+  ]
+}

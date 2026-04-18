@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:07.374Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "Warwick_Skin57_Mask.Chroma_Paragon_Crepe.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "SRI_Icon_Noise.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T18:07:07.362Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin57",
+    "bin": "data/characters/warwick/skins/skin57.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin57/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin57",
+      "bin": "data/characters/warwick/skins/skin57.bin"
+    }
+  ]
+}

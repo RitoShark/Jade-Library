@@ -1,0 +1,56 @@
+{
+  "id": "glass-inst",
+  "name": "Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:16.731Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_glass_inst",
+  "textureFiles": [
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:16.725Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Maokai",
+    "skin": "skin29",
+    "bin": "data/characters/maokai/skins/skin29.bin",
+    "entryKey": "Characters/Maokai/Skins/Skin29/Materials/Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Maokai",
+      "skin": "skin29",
+      "bin": "data/characters/maokai/skins/skin29.bin"
+    }
+  ]
+}

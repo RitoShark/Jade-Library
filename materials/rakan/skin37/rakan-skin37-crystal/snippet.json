@@ -1,0 +1,49 @@
+{
+  "id": "rakan-skin37-crystal",
+  "name": "Rakan Skin37 Crystal",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.436Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rakan_skin37_crystal",
+  "textureFiles": [
+    {
+      "name": "Diamond.tex",
+      "updatedAt": "2026-04-17T17:47:18.536Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:18.536Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:47:18.536Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin37",
+    "bin": "data/characters/rakan/skins/skin37.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin37/Materials/RakanSkin37_Crystal"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin37",
+      "bin": "data/characters/rakan/skins/skin37.bin"
+    },
+    {
+      "champion": "Yone",
+      "skin": "skin46",
+      "bin": "data/characters/yone/skins/skin46.bin"
+    }
+  ]
+}

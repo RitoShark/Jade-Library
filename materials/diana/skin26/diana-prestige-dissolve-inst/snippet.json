@@ -1,0 +1,50 @@
+{
+  "id": "diana-prestige-dissolve-inst",
+  "name": "Diana Prestige Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:18.094Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_diana_prestige_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    },
+    {
+      "name": "Diana_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    },
+    {
+      "name": "Diana_Skin25_z_dissolve_01.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    },
+    {
+      "name": "Diana_Skin26_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:15:18.089Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin26",
+    "bin": "data/characters/diana/skins/skin26.bin",
+    "entryKey": "Characters/Diana/Skins/Skin26/Materials/Diana_Prestige_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin26",
+      "bin": "data/characters/diana/skins/skin26.bin"
+    }
+  ]
+}

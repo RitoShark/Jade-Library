@@ -1,0 +1,36 @@
+{
+  "id": "bloom-hair-inst",
+  "name": "Bloom Hair Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:44.114Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin68_colorGrad_05.SKINS_Zac_Skin33.tex",
+      "updatedAt": "2026-04-17T18:11:44.107Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin37",
+    "bin": "data/characters/zac/skins/skin37.bin",
+    "entryKey": "Characters/Zac/Skins/Skin37/Materials/Bloom_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin37",
+      "bin": "data/characters/zac/skins/skin37.bin"
+    }
+  ]
+}

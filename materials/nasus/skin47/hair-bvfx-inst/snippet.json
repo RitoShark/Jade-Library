@@ -1,0 +1,40 @@
+{
+  "id": "hair-bvfx-inst",
+  "name": "Hair Bvfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:47.734Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_bvfx_inst",
+  "textureFiles": [
+    {
+      "name": "DrMundo_Skin06_Particles_1_234.tex",
+      "updatedAt": "2026-04-17T17:41:47.728Z"
+    },
+    {
+      "name": "Nasus_Skin45_HairMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:47.729Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin47",
+    "bin": "data/characters/nasus/skins/skin47.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin47/Materials/HairBVFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin47",
+      "bin": "data/characters/nasus/skins/skin47.bin"
+    }
+  ]
+}

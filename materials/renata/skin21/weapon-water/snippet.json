@@ -1,0 +1,44 @@
+{
+  "id": "weapon-water",
+  "name": "Weapon Water",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.054Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_water",
+  "textureFiles": [
+    {
+      "name": "AlphaTest.tex",
+      "updatedAt": "2026-04-17T17:48:21.048Z"
+    },
+    {
+      "name": "AlphaTest.tex",
+      "updatedAt": "2026-04-17T17:48:21.048Z"
+    },
+    {
+      "name": "Renata_Skin21_Weapon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:21.048Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin21",
+    "bin": "data/characters/renata/skins/skin21.bin",
+    "entryKey": "Characters/Renata/Skins/Skin21/Materials/Weapon_Water"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin21",
+      "bin": "data/characters/renata/skins/skin21.bin"
+    }
+  ]
+}

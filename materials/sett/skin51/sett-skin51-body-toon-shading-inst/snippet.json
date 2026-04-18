@@ -1,0 +1,60 @@
+{
+  "id": "sett-skin51-body-toon-shading-inst",
+  "name": "Sett Skin51 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:31.453Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sett_skin51_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    },
+    {
+      "name": "Sett_Skin51_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:31.447Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin51",
+    "bin": "data/characters/sett/skins/skin51.bin",
+    "entryKey": "Characters/Sett/Skins/Skin51/Materials/Sett_Skin51_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin51",
+      "bin": "data/characters/sett/skins/skin51.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-staff-inst",
+  "name": "Bloom Staff Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:57.512Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_staff_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin42_E_White.tex",
+      "updatedAt": "2026-04-17T17:35:57.505Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin43",
+    "bin": "data/characters/lux/skins/skin43.bin",
+    "entryKey": "Characters/Lux/Skins/Skin43/Materials/Bloom_Staff_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin43",
+      "bin": "data/characters/lux/skins/skin43.bin"
+    }
+  ]
+}

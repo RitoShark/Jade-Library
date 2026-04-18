@@ -1,0 +1,44 @@
+{
+  "id": "snowman-cosmic-body-inst",
+  "name": "Snowman Cosmic Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:09.716Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_snowman_cosmic_body_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin35_R_StarryBackdrop_02.tex",
+      "updatedAt": "2026-04-17T17:44:09.709Z"
+    },
+    {
+      "name": "Nunu_Snowman_Skin35_FX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:09.709Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:09.709Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin36",
+    "bin": "data/characters/nunu/skins/skin36.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin36/Materials/Snowman_Cosmic_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin36",
+      "bin": "data/characters/nunu/skins/skin36.bin"
+    }
+  ]
+}

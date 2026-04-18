@@ -1,0 +1,52 @@
+{
+  "id": "diamond-wings-inst",
+  "name": "Diamond Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:57.380Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diamond_wings_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:57:57.373Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:57:57.373Z"
+    },
+    {
+      "name": "Swain_Skin33_Wings_Diamond_TX_CM.Prestige2_Matcha_Swain.tex",
+      "updatedAt": "2026-04-17T17:57:57.373Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:57:57.373Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:57:57.373Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin33",
+    "bin": "data/characters/swain/skins/skin33.bin",
+    "entryKey": "Characters/Swain/Skins/Skin33/Materials/Diamond_Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin33",
+      "bin": "data/characters/swain/skins/skin33.bin"
+    }
+  ]
+}

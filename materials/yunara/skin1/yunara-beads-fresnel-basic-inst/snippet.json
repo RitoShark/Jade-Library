@@ -1,0 +1,34 @@
+{
+  "id": "yunara-beads-fresnel-basic-inst",
+  "name": "Yunara Beads Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:43.230Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_yunara_beads_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Yunara_Skin01_Weapon_TX_CM.Yunara.tex",
+      "updatedAt": "2026-04-17T18:10:43.224Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T18:10:43.224Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yunara",
+    "skin": "skin1",
+    "bin": "data/characters/yunara/skins/skin1.bin",
+    "entryKey": "Characters/Yunara/Skins/Skin1/Materials/Yunara_Beads_Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yunara",
+      "skin": "skin1",
+      "bin": "data/characters/yunara/skins/skin1.bin"
+    }
+  ]
+}

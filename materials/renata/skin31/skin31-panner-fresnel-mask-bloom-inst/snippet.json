@@ -1,0 +1,36 @@
+{
+  "id": "skin31-panner-fresnel-mask-bloom-inst",
+  "name": "Skin31 Panner Fresnel Mask Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.729Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_skin31_panner_fresnel_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Renata_Base_Material_Liquid_Mask1.SKINS_Renata_CARE_Skin31.tex",
+      "updatedAt": "2026-04-17T17:48:21.723Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin31",
+    "bin": "data/characters/renata/skins/skin31.bin",
+    "entryKey": "Characters/Renata/Skins/Skin31/Materials/Skin31_Panner_Fresnel_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin31",
+      "bin": "data/characters/renata/skins/skin31.bin"
+    }
+  ]
+}

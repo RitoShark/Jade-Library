@@ -1,0 +1,41 @@
+{
+  "id": "ashe-skin63-flame-horn-inst",
+  "name": "Ashe Skin63 Flame Horn Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:30.296Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin63_flame_horn_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_Skin63_Material_Flame_Horn_01.tex",
+      "updatedAt": "2026-04-17T17:10:02.666Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin63",
+    "bin": "data/characters/ashe/skins/skin63.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin63/Materials/Ashe_Skin63_Flame_Horn_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin63",
+      "bin": "data/characters/ashe/skins/skin63.bin"
+    },
+    {
+      "champion": "Caitlyn",
+      "skin": "skin48",
+      "bin": "data/characters/caitlyn/skins/skin48.bin"
+    }
+  ]
+}

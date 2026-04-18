@@ -1,0 +1,48 @@
+{
+  "id": "cloth-pieces-alpha-blend-additive-scroll-packed-inst",
+  "name": "Cloth Pieces Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:55.078Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloth_pieces_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:27:55.072Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:27:55.072Z"
+    },
+    {
+      "name": "Karma_Skin59_Assets_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:27:55.072Z"
+    },
+    {
+      "name": "Karma_Skin59_Mask_A_TX_CIothes.tex",
+      "updatedAt": "2026-04-17T17:27:55.072Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin59",
+    "bin": "data/characters/karma/skins/skin59.bin",
+    "entryKey": "Characters/Karma/Skins/Skin59/Materials/ClothPieces_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin59",
+      "bin": "data/characters/karma/skins/skin59.bin"
+    }
+  ]
+}

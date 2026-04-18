@@ -1,0 +1,288 @@
+"jadelib_ui_base_ho_l_ahri_skin86_inst" = StaticMaterialDef {
+    name: string = "jadelib_ui_base_ho_l_ahri_skin86_inst"
+    type: u32 = 3
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "UI_Secondary_Texture"
+            texturePath: string = "assets/jadelib/ui-base-ho-l-ahri-skin86-inst/ahriLoadMaskPacked.SKINS_Ahri_HoL.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMaskColor_SliceUV_Offset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMaskColor_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMaskColor_SliceUV"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMaskColor_SmoothMinMax"
+            value: vec4 = { 1, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMaskColor_Sides_Rotation"
+            value: vec4 = { 16, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_Sides_Rotation"
+            value: vec4 = { 16, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_SliceUV_Offset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_SliceUV"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_ShapeMask_SmoothMinMax"
+            value: vec4 = { 1, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_G_RotationAngle"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_RotationAngle"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Primary_RotationAngle"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_R_RotationAngle"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Primary_UVRotation_Offset"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Primary_UVRorationSpeed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flipbook_Frame"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Primary_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flibook_TileSize"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flipbook_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_DistortionControl"
+            value: vec4 = { 0.05000000074505806, 0.004999999888241291, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_R_UVRorationSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_R_Tint"
+            value: vec4 = { 1, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_UVRotation_Offset"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_R_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_R_ScrollSpeed"
+            value: vec4 = { 0.5, -0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_G_UVRorationSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_UVRorationSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_G_Tint"
+            value: vec4 = { 0, 1, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_G_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_G_ScrollSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondady_B_MaskStrength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_Tex_TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DesaturationValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GlowPulseFrequency"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGBGlowMinMaxValue"
+            value: vec4 = { 0.8500000238418579, 1.149999976158142, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaGlowMinMaxValue"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_ScrollSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_Mask_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_Mask_ScrollSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UI_Secondary_B_Mask_UVRorationSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shine_FrequencySpeed"
+            value: vec4 = { 10, 8, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shine_Direction"
+            value: vec4 = { 0.5, -0.699999988079071, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shine_Strength"
+            value: vec4 = { 0.019999999552965164, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shine_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "UI_SHAPESMASK_ALPHA_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SHAPESMASK_COLOR_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_RGB_ROTATION_ANIMATION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_PRIMARY_ROTATION_ANIMATION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SHINE_ADDITIVE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DESATURATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "GLOW_PULSE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_BLEND_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDAY_G_DISTORTION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDAY_R_DISTORTION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_PRIMARY_FLIPBOOKANIM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_B_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_B_MASK_ROTATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_RGB_SCROLL_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_PRIMARY_ROTATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_B_MASK_ON_UI_PRIMARY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_B_MASK_SCROLL_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_SECONDARY_RGB_ROTATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "UI_PRIMARY_FLIPBOOK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SHINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_ON_PRIMARY"
+        }
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/UI/UI_BaseShader"
+                    depthEnable: bool = false
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sett-skin67-fur-onsen-inst",
+  "name": "Sett Skin67 Fur Onsen Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:32.223Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sett_skin67_fur_onsen_inst",
+  "textureFiles": [
+    {
+      "name": "Sett_Skin67_TurbulDeform_TX_CM.SKINS_Sett_Skin67.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "Sett_Skin67_Mask_TX_CM.SKINS_Sett_Skin67.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "Sett_Skin67_WaterShapeMask_TX_CM.SKINS_Sett_Skin67.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "Sett_Skin67_AdditiveScrollCombo_TX_CM.SKINS_Sett_Skin67.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "CaseTexture03.SKINS_Sett_Skin67.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:32.216Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin67",
+    "bin": "data/characters/sett/skins/skin67.bin",
+    "entryKey": "Characters/Sett/Skins/Skin67/Materials/Sett_Skin67_Fur_Onsen_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin67",
+      "bin": "data/characters/sett/skins/skin67.bin"
+    }
+  ]
+}

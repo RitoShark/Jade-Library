@@ -1,0 +1,48 @@
+{
+  "id": "tails-mat-inst",
+  "name": "Tails Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:53.993Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tails_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin39_Z_CrystalMatT.tex",
+      "updatedAt": "2026-04-17T17:06:53.986Z"
+    },
+    {
+      "name": "Ahri_Skin39_Z_CrystalMatT.tex",
+      "updatedAt": "2026-04-17T17:06:53.986Z"
+    },
+    {
+      "name": "Ahri_Skin39_Z_Gradient01.tex",
+      "updatedAt": "2026-04-17T17:06:53.986Z"
+    },
+    {
+      "name": "Ahri_Skin28_Z_Gradient02.tex",
+      "updatedAt": "2026-04-17T17:06:53.986Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin39",
+    "bin": "data/characters/ahri/skins/skin39.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin39/Materials/Tails_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin39",
+      "bin": "data/characters/ahri/skins/skin39.bin"
+    }
+  ]
+}

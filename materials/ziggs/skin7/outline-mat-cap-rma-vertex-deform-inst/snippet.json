@@ -1,0 +1,52 @@
+{
+  "id": "outline-mat-cap-rma-vertex-deform-inst",
+  "name": "Outline Mat Cap Rma Vertex Deform Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:24.620Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_mat_cap_rma_vertex_deform_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:24.614Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:24.614Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:13:24.614Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:24.614Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:24.614Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ziggs",
+    "skin": "skin7",
+    "bin": "data/characters/ziggs/skins/skin7.bin",
+    "entryKey": "Characters/Ziggs/Skins/Skin7/Materials/Outline_MatCap_RMA_VertexDeform_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ziggs",
+      "skin": "skin7",
+      "bin": "data/characters/ziggs/skins/skin7.bin"
+    }
+  ]
+}

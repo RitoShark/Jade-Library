@@ -1,0 +1,103 @@
+"jadelib_bloom_parts_umbrella_inst" = StaticMaterialDef {
+    name: string = "jadelib_bloom_parts_umbrella_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/black.SKINS_Fizz_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_UV_Range"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/Fizz_Skin35_Mat_02.SKINS_Fizz_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask01"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/Fizz_Skin35_Wave_MAT_05.SKINS_Fizz_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask02"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/Zeri_Skin10_Coat_TZ_Mask.SKINS_Fizz_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask03"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/Zeri_Skin10_Coat_TZ_Mask.SKINS_Fizz_Skin35.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Change_Texture"
+            texturePath: string = "assets/jadelib/bloom-parts-umbrella-inst/black.SKINS_Fizz_Skin35.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0, 1, 0.7499961853027344, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_01"
+            value: vec4 = { 0, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_02"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_03"
+            value: vec4 = { 0.699999988079071, 0.699999988079071, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGB_Mask_View"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Change_Val"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

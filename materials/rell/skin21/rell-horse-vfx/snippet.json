@@ -1,0 +1,36 @@
+{
+  "id": "rell-horse-vfx",
+  "name": "Rell Horse Vfx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:03.740Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rell_horse_vfx",
+  "textureFiles": [
+    {
+      "name": "Rell_Skin20_Horse_Noise.tex",
+      "updatedAt": "2026-04-17T17:48:03.734Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rell",
+    "skin": "skin21",
+    "bin": "data/characters/rell/skins/skin21.bin",
+    "entryKey": "Characters/Rell/Skins/Skin21/Materials/Rell_Horse_VFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Rell",
+      "skin": "skin21",
+      "bin": "data/characters/rell/skins/skin21.bin"
+    }
+  ]
+}

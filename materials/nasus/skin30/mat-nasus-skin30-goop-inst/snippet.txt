@@ -1,0 +1,111 @@
+"jadelib_mat_nasus_skin30_goop_inst" = StaticMaterialDef {
+    name: string = "jadelib_mat_nasus_skin30_goop_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_03"
+            texturePath: string = "assets/jadelib/mat-nasus-skin30-goop-inst/Nasus_Skin30_Matcap_Nasus_Goop.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/mat-nasus-skin30-goop-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "AnimPivotPos"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShakeAtten"
+            value: vec4 = { 480, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShake"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimSpeed"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Trans_Color"
+            value: vec4 = { 1.2000000476837158, 0.10000000149011612, 0.6000000238418579, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightPos"
+            value: vec4 = { 0, 350, -300, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LNearAtten"
+            value: vec4 = { 100, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LFarAtten"
+            value: vec4 = { 394.239990234375, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_DIFFUSE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_LuLu_Skin26"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "NasusR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Nasus/Skins/Skin30/Nasus_Skin30_Ultimate_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

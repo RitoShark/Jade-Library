@@ -1,0 +1,44 @@
+{
+  "id": "nidalee-cougar-cosmic-ball-inst",
+  "name": "Nidalee Cougar Cosmic Ball Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:06.997Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_cougar_cosmic_ball_inst",
+  "textureFiles": [
+    {
+      "name": "Cosmic_StarryBackdrop.StrawberryRebuild.tex",
+      "updatedAt": "2026-04-17T17:43:06.989Z"
+    },
+    {
+      "name": "Nidalee_Skin18_Recall_MaskBall.tex",
+      "updatedAt": "2026-04-17T17:43:06.989Z"
+    },
+    {
+      "name": "3161color-hold.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:43:06.989Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin26",
+    "bin": "data/characters/nidaleecougar/skins/skin26.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin26/Materials/NidaleeCougar_Cosmic_Ball_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin26",
+      "bin": "data/characters/nidaleecougar/skins/skin26.bin"
+    }
+  ]
+}

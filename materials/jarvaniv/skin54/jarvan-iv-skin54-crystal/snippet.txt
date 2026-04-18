@@ -1,0 +1,147 @@
+"jadelib_jarvan_iv_skin54_crystal" = StaticMaterialDef {
+    name: string = "jadelib_jarvan_iv_skin54_crystal"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diff_Tex"
+            texturePath: string = "assets/jadelib/jarvan-iv-skin54-crystal/JarvanIV_Skin54_TX_CM.SKINS_JarvanIV_Skin54.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "crys_Tex"
+            texturePath: string = "assets/jadelib/jarvan-iv-skin54-crystal/JarvanIV_Skin54_Crystal_TX_CM.SKINS_JarvanIV_Skin54.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Tex"
+            texturePath: string = "assets/jadelib/jarvan-iv-skin54-crystal/JarvanIV_Skin54_CrystalMask_TX_CM.SKINS_JarvanIV_Skin54.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "PannerNoise_Texture"
+            texturePath: string = "assets/jadelib/jarvan-iv-skin54-crystal/JarvanIV_Skin54_Star_TX_CM.SKINS_JarvanIV_Skin54.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "MaskGIntensIty"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaskBIntensity"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecIntensity"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "crack_color"
+            value: vec4 = { 1, 0.7070115208625793, 0.7027542591094971, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecColor"
+            value: vec4 = { 1, 0.851148247718811, 0.4271152913570404, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 0.6219424605369568, 0, 0.18139925599098206, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MoveIntensity"
+            value: vec4 = { 7.675000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scrollrate"
+            value: vec4 = { 0.20000000298023224, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Color"
+            value: vec4 = { 0.9741359353065491, 0.877561628818512, 0.5711604356765747, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Intensity"
+            value: vec4 = { 1.600000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaskUVScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 30, 30, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCROLL_TEX"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Hextech_Crystal"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Noise_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = RemapFloatMaterialDriver {
+                        mDriver: pointer = SineMaterialDriver {
+                            mDriver: pointer = TimeMaterialDriver {}
+                            mFrequency: f32 = 2
+                        }
+                        mMinValue: f32 = -1
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.925000011920929
+                        }
+                        values: list[vec4] = {
+                            { 0.69544517993927, 0.5956664085388184, 0.21989776194095612, 1 }
+                            { 0.9770199060440063, 0.8626230359077454, 0.5378652811050415, 1 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

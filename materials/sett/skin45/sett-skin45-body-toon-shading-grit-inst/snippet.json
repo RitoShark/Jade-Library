@@ -1,0 +1,60 @@
+{
+  "id": "sett-skin45-body-toon-shading-grit-inst",
+  "name": "Sett Skin45 Body Toon Shading Grit Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:30.857Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sett_skin45_body_toon_shading_grit_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    },
+    {
+      "name": "Sett_Skin45_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:30.851Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin45",
+    "bin": "data/characters/sett/skins/skin45.bin",
+    "entryKey": "Characters/Sett/Skins/Skin45/Materials/Sett_Skin45_Body_ToonShading_Grit_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin45",
+      "bin": "data/characters/sett/skins/skin45.bin"
+    }
+  ]
+}

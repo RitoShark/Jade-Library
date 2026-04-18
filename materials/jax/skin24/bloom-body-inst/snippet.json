@@ -1,0 +1,36 @@
+{
+  "id": "bloom-body-inst",
+  "name": "Bloom Body Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:14.108Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_body_inst",
+  "textureFiles": [
+    {
+      "name": "Jax_Skin22_Material_Mask_01.tex",
+      "updatedAt": "2026-04-17T17:24:14.102Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin24",
+    "bin": "data/characters/jax/skins/skin24.bin",
+    "entryKey": "Characters/Jax/Skins/Skin24/Materials/Bloom_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin24",
+      "bin": "data/characters/jax/skins/skin24.bin"
+    }
+  ]
+}

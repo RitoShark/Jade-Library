@@ -1,0 +1,36 @@
+{
+  "id": "bloom-vfxstaff",
+  "name": "Bloom Vfxstaff",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:59.806Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_vfxstaff",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:59.799Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin43",
+    "bin": "data/characters/soraka/skins/skin43.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin43/Materials/Bloom_Vfxstaff"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin43",
+      "bin": "data/characters/soraka/skins/skin43.bin"
+    }
+  ]
+}

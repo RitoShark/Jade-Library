@@ -1,0 +1,44 @@
+{
+  "id": "braum-skin57-ice2-inst",
+  "name": "Braum Skin57 Ice2 Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:49.971Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_braum_skin57_ice2_inst",
+  "textureFiles": [
+    {
+      "name": "Braum_Skin51_ShieldMatCap_TX_CM.SKINS_Braum_Skin51.tex",
+      "updatedAt": "2026-04-17T17:12:49.965Z"
+    },
+    {
+      "name": "Braum_Skin51_ShieldMask_TX_CM.SKINS_Braum_Skin51.tex",
+      "updatedAt": "2026-04-17T17:12:49.965Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:12:49.965Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Braum",
+    "skin": "skin57",
+    "bin": "data/characters/braum/skins/skin57.bin",
+    "entryKey": "Characters/Braum/Skins/Skin57/Materials/Braum_Skin57_Ice2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Braum",
+      "skin": "skin57",
+      "bin": "data/characters/braum/skins/skin57.bin"
+    }
+  ]
+}

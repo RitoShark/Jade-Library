@@ -1,0 +1,64 @@
+{
+  "id": "master-yi-skin96-horn-inst",
+  "name": "Master Yi Skin96 Horn Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:06.501Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin96_horn_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "MasterYi_Skin96_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "MasterYi_Skin96_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:06.492Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin96",
+    "bin": "data/characters/masteryi/skins/skin96.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin96/Materials/MasterYi_Skin96_Horn_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin96",
+      "bin": "data/characters/masteryi/skins/skin96.bin"
+    }
+  ]
+}

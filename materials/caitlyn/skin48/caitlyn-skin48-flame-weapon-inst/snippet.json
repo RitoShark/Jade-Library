@@ -1,0 +1,36 @@
+{
+  "id": "caitlyn-skin48-flame-weapon-inst",
+  "name": "Caitlyn Skin48 Flame Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:30.257Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_caitlyn_skin48_flame_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Caitlyn_Skin48_Materials_Flame.tex",
+      "updatedAt": "2026-04-17T17:13:30.248Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin48",
+    "bin": "data/characters/caitlyn/skins/skin48.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin48/Materials/Caitlyn_Skin48_Flame_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin48",
+      "bin": "data/characters/caitlyn/skins/skin48.bin"
+    }
+  ]
+}

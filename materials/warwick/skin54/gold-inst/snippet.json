@@ -1,0 +1,50 @@
+{
+  "id": "gold-inst",
+  "name": "Gold Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:06.344Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_gold_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    },
+    {
+      "name": "Warwick_Skin54_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    },
+    {
+      "name": "Warwick_Skin45_Idle_SmokeErode.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    },
+    {
+      "name": "Warwick_Skin45_texturemult.tex",
+      "updatedAt": "2026-04-17T18:07:06.336Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin54",
+    "bin": "data/characters/warwick/skins/skin54.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin54/Materials/Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin54",
+      "bin": "data/characters/warwick/skins/skin54.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-packmate-skin13-vfxblades-inst",
+  "name": "Naafiri Packmate Skin13 Vfxblades Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:47.725Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_packmate_skin13_vfxblades_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:40:47.696Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:40:47.696Z"
+    },
+    {
+      "name": "NaafiriPackmate_Skin13_BladesVFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:47.696Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:40:47.696Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin13",
+    "bin": "data/characters/naafiripackmate/skins/skin13.bin",
+    "entryKey": "Characters/NaafiriPackmate/Skins/Skin13/Materials/NaafiriPackmate_Skin13_VFXBlades_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin13",
+      "bin": "data/characters/naafiripackmate/skins/skin13.bin"
+    }
+  ]
+}

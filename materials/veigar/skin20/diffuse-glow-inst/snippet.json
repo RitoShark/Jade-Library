@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-glow-inst",
+  "name": "Diffuse Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:15.296Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_glow_inst",
+  "textureFiles": [
+    {
+      "name": "Veigar_Skin13_GlowMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:04:15.289Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Veigar",
+    "skin": "skin20",
+    "bin": "data/characters/veigar/skins/skin20.bin",
+    "entryKey": "Characters/Veigar/Skins/Skin20/Materials/DiffuseGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Veigar",
+      "skin": "skin20",
+      "bin": "data/characters/veigar/skins/skin20.bin"
+    }
+  ]
+}

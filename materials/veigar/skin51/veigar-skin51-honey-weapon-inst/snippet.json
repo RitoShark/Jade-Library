@@ -1,0 +1,56 @@
+{
+  "id": "veigar-skin51-honey-weapon-inst",
+  "name": "Veigar Skin51 Honey Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:24.320Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_veigar_skin51_honey_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:04:24.312Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Veigar",
+    "skin": "skin51",
+    "bin": "data/characters/veigar/skins/skin51.bin",
+    "entryKey": "Characters/Veigar/Skins/Skin51/Materials/Veigar_Skin51_Honey_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Veigar",
+      "skin": "skin51",
+      "bin": "data/characters/veigar/skins/skin51.bin"
+    }
+  ]
+}

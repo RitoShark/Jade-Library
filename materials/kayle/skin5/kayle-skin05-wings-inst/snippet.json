@@ -1,0 +1,48 @@
+{
+  "id": "kayle-skin05-wings-inst",
+  "name": "Kayle Skin05 Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:40.220Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin05_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin05_Wing_Rage_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:40.212Z"
+    },
+    {
+      "name": "Kayle_Skin_05_Scroll_V02.tex",
+      "updatedAt": "2026-04-17T17:29:40.212Z"
+    },
+    {
+      "name": "Kayle_Skin05_Wing_Rage_Gradient_V02.tex",
+      "updatedAt": "2026-04-17T17:29:40.212Z"
+    },
+    {
+      "name": "Kayle_Skin05_Wing_Rage_Gradient_V02.tex",
+      "updatedAt": "2026-04-17T17:29:40.212Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin5",
+    "bin": "data/characters/kayle/skins/skin5.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin5/Materials/Kayle_Skin05_Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin5",
+      "bin": "data/characters/kayle/skins/skin5.bin"
+    }
+  ]
+}

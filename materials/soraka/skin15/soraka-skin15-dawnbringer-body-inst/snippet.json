@@ -1,0 +1,44 @@
+{
+  "id": "soraka-skin15-dawnbringer-body-inst",
+  "name": "Soraka Skin15 Dawnbringer Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:54.630Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_soraka_skin15_dawnbringer_body_inst",
+  "textureFiles": [
+    {
+      "name": "Soraka_Skin15_Z_Material_StarPattern_1.tex",
+      "updatedAt": "2026-04-17T17:56:54.625Z"
+    },
+    {
+      "name": "Soraka_Skin15_Scrolling_Mask.tex",
+      "updatedAt": "2026-04-17T17:56:54.625Z"
+    },
+    {
+      "name": "Soraka_Skin15_Fesnel_Mask.tex",
+      "updatedAt": "2026-04-17T17:56:54.625Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin15",
+    "bin": "data/characters/soraka/skins/skin15.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin15/Materials/Soraka_Skin15_Dawnbringer_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin15",
+      "bin": "data/characters/soraka/skins/skin15.bin"
+    }
+  ]
+}

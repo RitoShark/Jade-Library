@@ -1,0 +1,64 @@
+{
+  "id": "ashe-skin76-human-bow",
+  "name": "Ashe Skin76 Human Bow",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:03.485Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin76_human_bow",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "Ashe_Skin76_Gold_Matcap_TX_CM.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "Ashe_Skin76_Weapons_Mask_TX_CM.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:03.478Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin76",
+    "bin": "data/characters/ashe/skins/skin76.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin76/Materials/AsheSkin76_HumanBow"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin76",
+      "bin": "data/characters/ashe/skins/skin76.bin"
+    }
+  ]
+}

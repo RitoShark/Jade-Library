@@ -1,0 +1,44 @@
+{
+  "id": "diamond-body-inst",
+  "name": "Diamond Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:08.536Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diamond_body_inst",
+  "textureFiles": [
+    {
+      "name": "Yuumi_Skin50_Diamond_Body_TX_CM.SKINS_Yuumi_Skin50.tex",
+      "updatedAt": "2026-04-17T18:11:08.531Z"
+    },
+    {
+      "name": "Yuumi_Skin50__Body_Mask_TX_CM.SKINS_Yuumi_Skin50.tex",
+      "updatedAt": "2026-04-17T18:11:08.531Z"
+    },
+    {
+      "name": "Yuumi_Skin50__Body_Fresnel_Mask_TX_CM.SKINS_Yuumi_Skin50.tex",
+      "updatedAt": "2026-04-17T18:11:08.531Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin50",
+    "bin": "data/characters/yuumi/skins/skin50.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin50/Materials/Diamond_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin50",
+      "bin": "data/characters/yuumi/skins/skin50.bin"
+    }
+  ]
+}

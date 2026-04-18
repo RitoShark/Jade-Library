@@ -1,0 +1,220 @@
+"jadelib_evelynn_body" = StaticMaterialDef {
+    name: string = "jadelib_evelynn_body"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap"
+            texturePath: string = "assets/jadelib/evelynn-body/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/evelynn-body/Evelynn_Skin52_Mask_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Specular_Mask"
+            texturePath: string = "assets/jadelib/evelynn-body/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 64, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Frequency"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Speed"
+            value: vec4 = { 0.512499988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir"
+            value: vec4 = { 5, 5, 5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Frequency"
+            value: vec4 = { 1.287500023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColorIntensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 1, 0.330006867647171, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.8956130146980286, 0.2057068794965744, 0.1119249239563942, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Noise_Tiling_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir_Intensity"
+            value: vec4 = { 0.29249998927116394, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutLine_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "APPLY_FLOWMAP_TO_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWDIRECTIONSWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Flowmap_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Anim_Wave_Dir_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 0.2919999957084656
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Evelynn/Spells/EvelynnStealthRing"
+                                }
+                                IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Evelynn/Skins/Skin54/Evelynn_Skin54_Shadow_TX_CM.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Evelynn/Spells/EvelynnStealthRing"
+                                }
+                                IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Evelynn/Skins/Skin52/Evelynn_Skin52_ShadowMask_TX_CM.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "FlowMap"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Evelynn/Spells/EvelynnStealthRing"
+                                }
+                                IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Evelynn/Skins/Skin52/Evelynn_Skin52_Shadow_FresnelMask_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

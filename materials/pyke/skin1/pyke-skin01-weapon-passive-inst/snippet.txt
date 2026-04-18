@@ -1,0 +1,86 @@
+"jadelib_pyke_skin01_weapon_passive_inst" = StaticMaterialDef {
+    name: string = "jadelib_pyke_skin01_weapon_passive_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/pyke-skin01-weapon-passive-inst/Pyke_Skin01_Weapon_Mask.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Color1"
+            value: vec4 = { 0.8699931502342224, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color2"
+            value: vec4 = { 0.6000000238418579, 0.45000380277633667, 0.14999619126319885, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollingScale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollingRate"
+            value: vec4 = { 0.009999999776482582, 0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomColor"
+            value: vec4 = { 1, 0.7019608020782471, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DiffuseBlend"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Fake_PaintedFresnel"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DiffuseBlend"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "pykepassivevfx"
+                    }
+                    mTurnOnTimeSec: f32 = 0.20000000298023224
+                    mTurnOffTimeSec: f32 = 0.20000000298023224
+                }
+            }
+        }
+    }
+}

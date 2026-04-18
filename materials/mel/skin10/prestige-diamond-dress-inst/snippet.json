@@ -1,0 +1,52 @@
+{
+  "id": "prestige-diamond-dress-inst",
+  "name": "Prestige Diamond Dress Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:23.039Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_diamond_dress_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:23.034Z"
+    },
+    {
+      "name": "Mel_Skin10_Diamond_IridescnetTex_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.034Z"
+    },
+    {
+      "name": "Mel_Skin10_IridescnetTex_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.034Z"
+    },
+    {
+      "name": "Mel_Skin10_Diamond_Mask_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:23.034Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:23.034Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mel",
+    "skin": "skin10",
+    "bin": "data/characters/mel/skins/skin10.bin",
+    "entryKey": "Characters/Mel/Skins/Skin10/Materials/Prestige_Diamond_Dress_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mel",
+      "skin": "skin10",
+      "bin": "data/characters/mel/skins/skin10.bin"
+    }
+  ]
+}

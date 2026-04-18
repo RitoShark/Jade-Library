@@ -1,0 +1,60 @@
+{
+  "id": "obisidian-material",
+  "name": "Obisidian Material",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:30.732Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_obisidian_material",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "Sylas_Skin53_Mask2_TX_CM.SKINS_Sylas_Skin53.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "Sylas_Skin53_gradient.SKINS_Sylas_Skin53.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "SRI_Icon_Noise.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T17:58:30.726Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin53",
+    "bin": "data/characters/sylas/skins/skin53.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin53/Materials/Obisidian_material"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin53",
+      "bin": "data/characters/sylas/skins/skin53.bin"
+    }
+  ]
+}

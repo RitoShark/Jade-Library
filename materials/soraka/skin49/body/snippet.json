@@ -1,0 +1,31 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:59.844Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin49",
+    "bin": "data/characters/soraka/skins/skin49.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin49/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin49",
+      "bin": "data/characters/soraka/skins/skin49.bin"
+    }
+  ]
+}

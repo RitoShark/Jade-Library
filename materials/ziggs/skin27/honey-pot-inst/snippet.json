@@ -1,0 +1,56 @@
+{
+  "id": "honey-pot-inst",
+  "name": "Honey Pot Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:23.015Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_honey_pot_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    },
+    {
+      "name": "Honey_RMA.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:23.008Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ziggs",
+    "skin": "skin27",
+    "bin": "data/characters/ziggs/skins/skin27.bin",
+    "entryKey": "Characters/Ziggs/Skins/Skin27/Materials/Honey_Pot_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ziggs",
+      "skin": "skin27",
+      "bin": "data/characters/ziggs/skins/skin27.bin"
+    }
+  ]
+}

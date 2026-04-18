@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:09.378Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:51:09.372Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:51:09.372Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:09.372Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:51:09.372Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ryze",
+    "skin": "skin20",
+    "bin": "data/ryze_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin",
+    "entryKey": "Characters/Ryze/Skins/Skin20/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ryze",
+      "skin": "skin20",
+      "bin": "data/ryze_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin"
+    }
+  ]
+}

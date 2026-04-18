@@ -1,0 +1,44 @@
+{
+  "id": "weapon-screen-space",
+  "name": "Weapon Screen Space",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:42.179Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_screen_space",
+  "textureFiles": [
+    {
+      "name": "Qiyana_Skin50_MaskF_TX_CM.SKINS_Qiyana_Skin50.tex",
+      "updatedAt": "2026-04-17T17:46:42.174Z"
+    },
+    {
+      "name": "Qiyana_Skin50_Weapon_Mask.SKINS_Qiyana_Skin50.tex",
+      "updatedAt": "2026-04-17T17:46:42.174Z"
+    },
+    {
+      "name": "DefaultColorOverlifetime.tex",
+      "updatedAt": "2026-04-17T17:46:42.174Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin50",
+    "bin": "data/characters/qiyana/skins/skin50.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin50/Materials/Weapon_ScreenSpace"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin50",
+      "bin": "data/characters/qiyana/skins/skin50.bin"
+    }
+  ]
+}

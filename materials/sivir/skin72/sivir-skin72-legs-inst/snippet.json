@@ -1,0 +1,48 @@
+{
+  "id": "sivir-skin72-legs-inst",
+  "name": "Sivir Skin72 Legs Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:11.913Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sivir_skin72_legs_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:11.907Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:11.907Z"
+    },
+    {
+      "name": "Sivir_Skin72_TX_CM.SKINS_Sivir_Skin72.tex",
+      "updatedAt": "2026-04-17T17:55:11.907Z"
+    },
+    {
+      "name": "Sivir_Skin72_OutlineMask_TX_CM.SKINS_Sivir_Skin72.tex",
+      "updatedAt": "2026-04-17T17:55:11.907Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin72",
+    "bin": "data/characters/sivir/skins/skin72.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin72/Materials/Sivir_Skin72_Legs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin72",
+      "bin": "data/characters/sivir/skins/skin72.bin"
+    }
+  ]
+}

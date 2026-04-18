@@ -1,0 +1,90 @@
+"jadelib_smoke_test2_inst" = StaticMaterialDef {
+    name: string = "jadelib_smoke_test2_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DistortionTexture"
+            texturePath: string = "assets/jadelib/smoke-test2-inst/Smoke_Test.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/smoke-test2-inst/Generic_Noise3.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Brightness"
+            value: vec4 = { 7.275000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bounds"
+            value: vec4 = { 0.10000000149011612, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Scale_Outer"
+            value: vec4 = { 1.2809799909591675, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Scale_Innner"
+            value: vec4 = { 9.280855178833008, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortAmount"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Red_Channel_Scale"
+            value: vec4 = { 1.25, 1.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Red_Channel_Scroll_rate"
+            value: vec4 = { 0.20000000298023224, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortUVScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortScrollSpeed"
+            value: vec4 = { 0.10000000149011612, 0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Number"
+            value: vec4 = { 0.027499999850988388, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_BUFFER"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Scrolling_Smoke"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

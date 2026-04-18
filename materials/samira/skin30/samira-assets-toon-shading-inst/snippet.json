@@ -1,0 +1,60 @@
+{
+  "id": "samira-assets-toon-shading-inst",
+  "name": "Samira Assets Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:25.583Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_samira_assets_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    },
+    {
+      "name": "Samira_Skin30_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:51:25.577Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Samira",
+    "skin": "skin30",
+    "bin": "data/characters/samira/skins/skin30.bin",
+    "entryKey": "Characters/Samira/Skins/Skin30/Materials/Samira_Assets_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Samira",
+      "skin": "skin30",
+      "bin": "data/characters/samira/skins/skin30.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "axes-fresnel-color-panning-noise-masked-inst",
+  "name": "Axes Fresnel Color Panning Noise Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:54.990Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_axes_fresnel_color_panning_noise_masked_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:54.983Z"
+    },
+    {
+      "name": "Draven_Skin29_Axes_MaterialMask.tex",
+      "updatedAt": "2026-04-17T17:15:54.983Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Draven",
+    "skin": "skin29",
+    "bin": "data/characters/draven/skins/skin29.bin",
+    "entryKey": "Characters/Draven/Skins/Skin29/Materials/Axes_FresnelColor_PanningNoise_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Draven",
+      "skin": "skin29",
+      "bin": "data/characters/draven/skins/skin29.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "weapon-bloom-mat-inst",
+  "name": "Weapon Bloom Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.040Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_bloom_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Gnar_Skin14_Weapon_Bloom_Mask.tex",
+      "updatedAt": "2026-04-17T17:20:21.034Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin14",
+    "bin": "data/characters/gnar/skins/skin14.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin14/Materials/Weapon_Bloom_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin14",
+      "bin": "data/characters/gnar/skins/skin14.bin"
+    }
+  ]
+}

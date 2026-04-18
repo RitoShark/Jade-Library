@@ -1,0 +1,36 @@
+{
+  "id": "hkg-hair-fresnel-bloom-inst",
+  "name": "Hkg Hair Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:23.059Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_hair_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin11_TX_N.tex",
+      "updatedAt": "2026-04-17T17:10:23.054Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin11",
+    "bin": "data/characters/aurelionsol/skins/skin11.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin11/Materials/HKG_Hair_Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin11",
+      "bin": "data/characters/aurelionsol/skins/skin11.bin"
+    }
+  ]
+}

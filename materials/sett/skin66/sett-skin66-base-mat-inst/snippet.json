@@ -1,0 +1,64 @@
+{
+  "id": "sett-skin66-base-mat-inst",
+  "name": "Sett Skin66 Base Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:32.131Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sett_skin66_base_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "Sett_Skin66_Base_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "Aatrox_Skin33_Blood_Scroll_Mask.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "Sett_Skin66_Base_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:32.120Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin66",
+    "bin": "data/characters/sett/skins/skin66.bin",
+    "entryKey": "Characters/Sett/Skins/Skin66/Materials/Sett_Skin66_Base_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin66",
+      "bin": "data/characters/sett/skins/skin66.bin"
+    }
+  ]
+}

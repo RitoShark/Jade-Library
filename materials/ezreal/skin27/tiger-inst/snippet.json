@@ -1,0 +1,36 @@
+{
+  "id": "tiger-inst",
+  "name": "Tiger Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:48.199Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tiger_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:17:48.194Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin27",
+    "bin": "data/characters/ezreal/skins/skin27.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin27/Materials/Tiger_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin27",
+      "bin": "data/characters/ezreal/skins/skin27.bin"
+    }
+  ]
+}

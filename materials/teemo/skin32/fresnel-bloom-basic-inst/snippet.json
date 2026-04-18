@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:43.200Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin32_Mushroom_TX_CM.Chroma_Teemo_LittleDevil_ASU.tex",
+      "updatedAt": "2026-04-17T18:00:43.195Z"
+    },
+    {
+      "name": "common_color-hold.ASU_Teemo.tex",
+      "updatedAt": "2026-04-17T18:00:43.195Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin32",
+    "bin": "data/characters/teemomushroom/skins/skin32.bin",
+    "entryKey": "Characters/TeemoMushroom/Skins/Skin32/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin32",
+      "bin": "data/characters/teemomushroom/skins/skin32.bin"
+    }
+  ]
+}

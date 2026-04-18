@@ -1,0 +1,44 @@
+{
+  "id": "duck-up-down",
+  "name": "Duck Up Down",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:17.513Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_duck_up_down",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:17.507Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:17.507Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:17.507Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin59",
+    "bin": "data/characters/threshlantern/skins/skin59.bin",
+    "entryKey": "Characters/ThreshLantern/Skins/Skin59/Materials/DuckUpDown"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin59",
+      "bin": "data/characters/threshlantern/skins/skin59.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "wings-inst",
+  "name": "Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:40.110Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    },
+    {
+      "name": "Material_Texture_mult_Wings_RMA.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:40.102Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin28",
+    "bin": "data/characters/kogmaw/skins/skin28.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin28/Materials/Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin28",
+      "bin": "data/characters/kogmaw/skins/skin28.bin"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-inst",
+  "name": "Fresnel Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:08.867Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Ryze_Skin29_TX_CM.SKINS_Ryze_Skin29.tex",
+      "updatedAt": "2026-04-17T17:51:08.862Z"
+    },
+    {
+      "name": "Ryze_Skin29_Mask_TX_CM.SKINS_Ryze_Skin29.tex",
+      "updatedAt": "2026-04-17T17:51:08.862Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ryze",
+    "skin": "skin29",
+    "bin": "data/characters/ryze/skins/skin29.bin",
+    "entryKey": "Characters/Ryze/Skins/Skin29/Materials/Fresnel_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ryze",
+      "skin": "skin29",
+      "bin": "data/characters/ryze/skins/skin29.bin"
+    }
+  ]
+}

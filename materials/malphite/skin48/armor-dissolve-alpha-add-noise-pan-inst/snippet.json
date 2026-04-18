@@ -1,0 +1,48 @@
+{
+  "id": "armor-dissolve-alpha-add-noise-pan-inst",
+  "name": "Armor Dissolve Alpha Add Noise Pan Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:43.477Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_armor_dissolve_alpha_add_noise_pan_inst",
+  "textureFiles": [
+    {
+      "name": "blackbox.tex",
+      "updatedAt": "2026-04-17T17:36:43.470Z"
+    },
+    {
+      "name": "Malphite_Skin48_PassiveArmor_TX_CM.SKINS_Malphite_Skin48.tex",
+      "updatedAt": "2026-04-17T17:36:43.470Z"
+    },
+    {
+      "name": "Malphite_Skin37_E_White.SKINS_Malphite_Skin48.tex",
+      "updatedAt": "2026-04-17T17:36:43.470Z"
+    },
+    {
+      "name": "Malphite_Skin48_W_light_wall_mult_01_01.SKINS_Malphite_Skin48.tex",
+      "updatedAt": "2026-04-17T17:36:43.470Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin48",
+    "bin": "data/characters/malphite/skins/skin48.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin48/Materials/Armor_Dissolve_Alpha_Add_Noise_Pan_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin48",
+      "bin": "data/characters/malphite/skins/skin48.bin"
+    }
+  ]
+}

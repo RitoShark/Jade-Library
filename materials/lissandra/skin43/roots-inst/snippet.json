@@ -1,0 +1,44 @@
+{
+  "id": "roots-inst",
+  "name": "Roots Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:34.890Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_roots_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin43_MatCap_TX_CM.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:34.881Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:34.881Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:34:34.881Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin43",
+    "bin": "data/characters/lissandra/skins/skin43.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin43/Materials/Roots_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin43",
+      "bin": "data/characters/lissandra/skins/skin43.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "hkg-mat-cap-masked-inst",
+  "name": "Hkg Mat Cap Masked Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:54.160Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_masked_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:50:54.154Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin13",
+    "bin": "data/characters/rumble/skins/skin13.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin13/Materials/HKG_MatCap_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin13",
+      "bin": "data/characters/rumble/skins/skin13.bin"
+    }
+  ]
+}

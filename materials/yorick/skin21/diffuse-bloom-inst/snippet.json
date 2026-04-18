@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:30.794Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Yorick_Skin21_Weapon_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:30.787Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin21",
+    "bin": "data/characters/yorick/skins/skin21.bin",
+    "entryKey": "Characters/Yorick/Skins/Skin21/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin21",
+      "bin": "data/characters/yorick/skins/skin21.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "saw6",
+  "name": "Saw6",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:14.187Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_saw6",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin68",
+    "bin": "data/characters/zed/skins/skin68.bin",
+    "entryKey": "Characters/Zed/Skins/Skin68/Materials/Saw6"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin68",
+      "bin": "data/characters/zed/skins/skin68.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "arch-specular-fresnel-inst",
+  "name": "Arch Specular Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:54.520Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_arch_specular_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Soraka_Skin09_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:56:54.502Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:56:54.502Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin10",
+    "bin": "data/characters/soraka/skins/skin10.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin10/Materials/ARCH_Specular_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin10",
+      "bin": "data/characters/soraka/skins/skin10.bin"
+    }
+  ]
+}

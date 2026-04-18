@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:06.772Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin50_Bloom_Mat.SKINS_Seraphine_Skin50.tex",
+      "updatedAt": "2026-04-17T17:53:06.766Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin55",
+    "bin": "data/characters/seraphine/skins/skin55.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin55/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin55",
+      "bin": "data/characters/seraphine/skins/skin55.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-arm-fresnel-inst",
+  "name": "Multi Mask Arm Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:29.079Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_arm_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:29.074Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:29.074Z"
+    },
+    {
+      "name": "FiddleSticks_Skin35_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:18:29.074Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:18:29.074Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin35",
+    "bin": "data/characters/fiddlesticks/skins/skin35.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin35/Materials/MultiMask_Arm_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin35",
+      "bin": "data/characters/fiddlesticks/skins/skin35.bin"
+    }
+  ]
+}

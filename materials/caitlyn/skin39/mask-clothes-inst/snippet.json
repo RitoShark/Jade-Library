@@ -1,0 +1,50 @@
+{
+  "id": "mask-clothes-inst",
+  "name": "Mask Clothes Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:29.889Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_mask_clothes_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    },
+    {
+      "name": "Caitlyn_Skin39_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    },
+    {
+      "name": "Caitlyn_Skin39_Particles_Noise.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    },
+    {
+      "name": "Caitlyn_Skin39_Materials_Mask_Clothes.tex",
+      "updatedAt": "2026-04-17T17:13:29.882Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin39",
+    "bin": "data/characters/caitlyn/skins/skin39.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin39/Materials/Mask_Clothes_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin39",
+      "bin": "data/characters/caitlyn/skins/skin39.bin"
+    }
+  ]
+}

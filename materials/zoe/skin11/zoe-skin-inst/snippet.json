@@ -1,0 +1,44 @@
+{
+  "id": "zoe-skin-inst",
+  "name": "Zoe Skin Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:56.134Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_skin_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin11_beam_01.tex",
+      "updatedAt": "2026-04-17T18:13:56.128Z"
+    },
+    {
+      "name": "Zoe_Skin09_Material_Mask_1.tex",
+      "updatedAt": "2026-04-17T18:13:56.128Z"
+    },
+    {
+      "name": "Zoe_Skin09_Material_Mask_2.tex",
+      "updatedAt": "2026-04-17T18:13:56.128Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin11",
+    "bin": "data/characters/zoe/skins/skin11.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin11/Materials/Zoe_Skin_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin11",
+      "bin": "data/characters/zoe/skins/skin11.bin"
+    }
+  ]
+}

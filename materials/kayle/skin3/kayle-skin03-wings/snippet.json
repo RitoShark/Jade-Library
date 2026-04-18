@@ -1,0 +1,48 @@
+{
+  "id": "kayle-skin03-wings",
+  "name": "Kayle Skin03 Wings",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:35.889Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin03_wings",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin03_Wing_Rage_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:35.882Z"
+    },
+    {
+      "name": "Kayle_Base_Fire_tile.tex",
+      "updatedAt": "2026-04-17T17:29:35.882Z"
+    },
+    {
+      "name": "Kayle_Base_Wing_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:35.882Z"
+    },
+    {
+      "name": "Kayle_Skin03_Wing_Rage_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:35.882Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin3",
+    "bin": "data/characters/kayle/skins/skin3.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin3/Materials/Kayle_Skin03_Wings"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin3",
+      "bin": "data/characters/kayle/skins/skin3.bin"
+    }
+  ]
+}

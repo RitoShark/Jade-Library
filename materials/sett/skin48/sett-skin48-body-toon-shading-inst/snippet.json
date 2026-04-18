@@ -1,0 +1,60 @@
+{
+  "id": "sett-skin48-body-toon-shading-inst",
+  "name": "Sett Skin48 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:31.123Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sett_skin48_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    },
+    {
+      "name": "Sett_Skin48_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:31.118Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin48",
+    "bin": "data/characters/sett/skins/skin48.bin",
+    "entryKey": "Characters/Sett/Skins/Skin48/Materials/Sett_Skin48_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin48",
+      "bin": "data/characters/sett/skins/skin48.bin"
+    }
+  ]
+}

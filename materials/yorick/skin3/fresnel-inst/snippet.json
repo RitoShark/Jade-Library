@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-inst",
+  "name": "Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:32.608Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Yorick_Skin03_Wraith_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:10:32.601Z"
+    },
+    {
+      "name": "Yorick_Skin03_Wraith_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:32.601Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin3",
+    "bin": "data/characters/yorickbigghoul/skins/skin3.bin",
+    "entryKey": "Characters/YorickBigGhoul/Skins/Skin3/Materials/Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin3",
+      "bin": "data/characters/yorickbigghoul/skins/skin3.bin"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+"jadelib_toon_shading" = StaticMaterialDef {
+    Name: string = "jadelib_toon_shading"
+    SamplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            AddressU: u32 = 1
+            AddressV: u32 = 1
+            AddressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingTex"
+            texturePath: string = "assets/jadelib/toon-shading/ToonShading.tex"
+            AddressU: u32 = 1
+            AddressV: u32 = 1
+            AddressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingOutlineTex"
+            texturePath: string = "assets/jadelib/toon-shading/OutlineToneMap.tex"
+            AddressU: u32 = 1
+            AddressV: u32 = 1
+            AddressW: u32 = 1
+        }
+    }
+    ParamValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            Name: string = "ToonShadePower"
+            Value: vec4 = { 8.39999962, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "ToonOutlineControl"
+            Value: vec4 = { 0, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "ToonRimControl"
+            Value: vec4 = { 1, 0.300000012, 0.100000001, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "TintColorBase"
+            Value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "TintColorOutline"
+            Value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "TintColorRim"
+            Value: vec4 = { 0.0150759136, 0.549019635, 0.344335079, 0.501960814 }
+        }
+        StaticMaterialShaderParamDef {
+            Name: string = "Rim_Color_Strength"
+            Value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    Switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            Name: string = "RIM_COLOR_ON"
+        }
+        StaticMaterialSwitchDef {
+            Name: string = "OUTLINE_ON"
+        }
+    }
+    ShaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    Techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            Name: string = "normal"
+            Passes: list[embed] = {
+                StaticMaterialPassDef {
+                    Shader: link = 0x54d82cba
+                    BlendEnable: bool = true
+                    SrcColorBlendFactor: u32 = 6
+                    SrcAlphaBlendFactor: u32 = 6
+                    DstColorBlendFactor: u32 = 7
+                    DstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    ChildTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            Name: string = "transition"
+            ParentName: string = "normal"
+            ShaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

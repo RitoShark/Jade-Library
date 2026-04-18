@@ -1,0 +1,43 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:15.372Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:23.425Z"
+    },
+    {
+      "name": "Morgana_Skin26_GoldFresnelMasks.tex",
+      "updatedAt": "2026-04-17T17:40:23.425Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:23.425Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin26",
+    "bin": "data/characters/morgana/skins/skin26.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin26/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin26",
+      "bin": "data/characters/morgana/skins/skin26.bin"
+    },
+    {
+      "champion": "Syndra",
+      "skin": "skin54",
+      "bin": "data/characters/syndra/skins/skin54.bin"
+    }
+  ]
+}

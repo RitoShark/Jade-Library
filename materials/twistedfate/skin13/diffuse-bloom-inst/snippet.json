@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:20.682Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "TwistedFate_Diffuse_Bloom.tex",
+      "updatedAt": "2026-04-17T18:02:20.677Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TwistedFate",
+    "skin": "skin13",
+    "bin": "data/characters/twistedfate/skins/skin13.bin",
+    "entryKey": "Characters/TwistedFate/Skins/Skin13/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TwistedFate",
+      "skin": "skin13",
+      "bin": "data/characters/twistedfate/skins/skin13.bin"
+    }
+  ]
+}

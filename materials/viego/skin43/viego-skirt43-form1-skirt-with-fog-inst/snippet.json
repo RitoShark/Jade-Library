@@ -1,0 +1,68 @@
+{
+  "id": "viego-skirt43-form1-skirt-with-fog-inst",
+  "name": "Viego Skirt43 Form1 Skirt With Fog Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:39.992Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skirt43_form1_skirt_with_fog_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin43_SF_Fog_TurbulDeform_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "Viego_Skin43_Body_Mask2_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "Mask.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "SkirtFog_SrcollCombo.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "Viego_Skin43_CaseTexture03_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:39.943Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/Viego_Skirt43_Form1_Skirt_WithFog_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "blitzcrank-skin73-hand-tube-red",
+  "name": "Blitzcrank Skin73 Hand Tube Red",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:12.498Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin73_hand_tube_red",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "Blitzcrank_Skin73_HandRed_TX_CM.Chroma_Blitzcrank_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.490Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin73",
+    "bin": "data/characters/blitzcrank/skins/skin73.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin73/Materials/Blitzcrank_Skin73_HandTubeRed"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin73",
+      "bin": "data/characters/blitzcrank/skins/skin73.bin"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+"jadelib_body" = StaticMaterialDef {
+    name: string = "jadelib_body"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Grid_Texture"
+            texturePath: string = "assets/jadelib/body/21.AprilFools2025.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Crystal_Texture"
+            texturePath: string = "assets/jadelib/body/CrystalPattern.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Texture"
+            texturePath: string = "assets/jadelib/body/Default_Grid.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DiffuseTexture"
+            texturePath: string = "assets/jadelib/body/Diana_Skin65_TX_CM.SKINS_Diana_Skin65.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/body/Diana_Skin65_DemonFormMask_TX_CM.SKINS_Diana_Skin65.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Materials"
+            texturePath: string = "assets/jadelib/body/Diana_Skin65_MaskB_TX_CM.SKINS_Diana_Skin65.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "MoveIntensity"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEndPoint"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveStartPoint"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panning_Params"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Crystal_Params"
+            value: vec4 = { 2, 2, 0.20000000298023224, 0.20000000298023224 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mat_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_A"
+            value: vec4 = { 0.17000076174736023, 1, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Grid_Contrast"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Tiling"
+            value: vec4 = { 2, 3, 0, 0.10000000149011612 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Mutliplier"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLightOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec"
+            value: vec4 = { 6, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 15, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Spec_Intensity"
+            value: vec4 = { 3.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0.8648813366889954, 0.7761806845664978, 0.9968261122703552, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MinSpec_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EnvMap_Intensity"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIRECTIONALDISSOLUTION"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DESATURATE_REFLECTION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MULTIPLY_DIFFUSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LQ_LIGHTING"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/LLM_Dissolve_Fresnel_Blend"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

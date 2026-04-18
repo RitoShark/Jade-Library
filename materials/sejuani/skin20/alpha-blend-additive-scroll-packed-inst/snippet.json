@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:37.984Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:51:37.978Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:51:37.978Z"
+    },
+    {
+      "name": "Sejuani_Skin20_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:51:37.978Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:37.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sejuani",
+    "skin": "skin20",
+    "bin": "data/characters/sejuani/skins/skin20.bin",
+    "entryKey": "Characters/Sejuani/Skins/Skin20/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sejuani",
+      "skin": "skin20",
+      "bin": "data/characters/sejuani/skins/skin20.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "fresnel-hand-inst",
+  "name": "Fresnel Hand Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:16.824Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_hand_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "Maokai_Skin33_TX_Mask_Hand.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:16.818Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Maokai",
+    "skin": "skin34",
+    "bin": "data/characters/maokai/skins/skin34.bin",
+    "entryKey": "Characters/Maokai/Skins/Skin34/Materials/Fresnel_Hand_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Maokai",
+      "skin": "skin34",
+      "bin": "data/characters/maokai/skins/skin34.bin"
+    }
+  ]
+}

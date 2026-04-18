@@ -1,0 +1,44 @@
+{
+  "id": "leona-skin50-body-mat",
+  "name": "Leona Skin50 Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:33.332Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leona_skin50_body_mat",
+  "textureFiles": [
+    {
+      "name": "Leona_Skin50_MatCap2_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:33.325Z"
+    },
+    {
+      "name": "Leona_Skin50_BodyMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:33.325Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:33:33.325Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin50",
+    "bin": "data/characters/leona/skins/skin50.bin",
+    "entryKey": "Characters/Leona/Skins/Skin50/Materials/Leona_Skin50_Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin50",
+      "bin": "data/characters/leona/skins/skin50.bin"
+    }
+  ]
+}

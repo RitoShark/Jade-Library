@@ -1,0 +1,36 @@
+{
+  "id": "akshan-skin20-cape-bloom",
+  "name": "Akshan Skin20 Cape Bloom",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:07.565Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akshan_skin20_cape_bloom",
+  "textureFiles": [
+    {
+      "name": "Akshan_Skin20_Idle_Mat.tex",
+      "updatedAt": "2026-04-17T17:08:07.557Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin20",
+    "bin": "data/characters/akshan/skins/skin20.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin20/Materials/Akshan_Skin20_Cape_Bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin20",
+      "bin": "data/characters/akshan/skins/skin20.bin"
+    }
+  ]
+}

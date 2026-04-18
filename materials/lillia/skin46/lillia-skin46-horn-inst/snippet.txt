@@ -1,0 +1,171 @@
+"jadelib_lillia_skin46_horn_inst" = StaticMaterialDef {
+    name: string = "jadelib_lillia_skin46_horn_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/lillia-skin46-horn-inst/black.SKINS_Lissandra_Skin43.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Core_Color"
+            value: vec4 = { 0.4773174524307251, 0.2547798752784729, 0.045197222381830215, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GreenChannel_Scale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Accent_Color"
+            value: vec4 = { 0.800000011920929, 0.8399938941001892, 0.11000228673219681, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Accent_Mask_Bias"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Basic_FresnelHighlights_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 2
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 3
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Core_Color"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 2
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.47999998927116394, 0.25, 0.05000000074505806, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Accent_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 2
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.800000011920929, 0.6700000166893005, 0.03999999910593033, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 3
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.9800000190734863, 0.8600000143051147, 0.14000000059604645, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 1, 1, 0 }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 2
+                        }
+                        TextureName: string = "ASSETS/Characters/Lillia/Skins/Skin46/Lillia_Skin46_horn_mask_Mask.SKINS_Lillia_Skin46.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 3
+                        }
+                        TextureName: string = "ASSETS/Characters/Lillia/Skins/Skin46/Lillia_Skin46_horn_mask_Mask.SKINS_Lillia_Skin46.tex"
+                    }
+                }
+            }
+        }
+    }
+}

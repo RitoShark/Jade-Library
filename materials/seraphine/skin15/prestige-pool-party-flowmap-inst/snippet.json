@@ -1,0 +1,48 @@
+{
+  "id": "prestige-pool-party-flowmap-inst",
+  "name": "Prestige Pool Party Flowmap Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:04.111Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_pool_party_flowmap_inst",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin15_SkirtMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:04.106Z"
+    },
+    {
+      "name": "haishui.tex",
+      "updatedAt": "2026-04-17T17:53:04.106Z"
+    },
+    {
+      "name": "shatan.tex",
+      "updatedAt": "2026-04-17T17:53:04.106Z"
+    },
+    {
+      "name": "crossline.tex",
+      "updatedAt": "2026-04-17T17:53:04.106Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin15",
+    "bin": "data/characters/seraphine/skins/skin15.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin15/Materials/Prestige_PoolParty_Flowmap_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin15",
+      "bin": "data/characters/seraphine/skins/skin15.bin"
+    }
+  ]
+}

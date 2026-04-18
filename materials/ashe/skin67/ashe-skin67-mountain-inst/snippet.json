@@ -1,0 +1,41 @@
+{
+  "id": "ashe-skin67-mountain-inst",
+  "name": "Ashe Skin67 Mountain Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:23.804Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin67_mountain_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:09:54.695Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin67",
+    "bin": "data/ashe_skins_skin67_skins_skin68_skins_skin69_skins_skin70_skins_skin71_skins_skin72_skins_skin73_skins_skin74_skins_skin75.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin67/Materials/Ashe_Skin67_Mountain_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin67",
+      "bin": "data/ashe_skins_skin67_skins_skin68_skins_skin69_skins_skin70_skins_skin71_skins_skin72_skins_skin73_skins_skin74_skins_skin75.bin"
+    },
+    {
+      "champion": "Olaf",
+      "skin": "skin44",
+      "bin": "data/olaf_skins_skin44_skins_skin45_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin"
+    }
+  ]
+}

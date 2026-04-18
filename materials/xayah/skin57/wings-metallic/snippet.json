@@ -1,0 +1,56 @@
+{
+  "id": "wings-metallic",
+  "name": "Wings Metallic",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:41.933Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_metallic",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    },
+    {
+      "name": "Xayah_Skin57_Wing_RMA.SKINS_Xayah_Skin57.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    },
+    {
+      "name": "Xayah_Skin57_Wing_RMA.SKINS_Xayah_Skin57.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:41.925Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin57",
+    "bin": "data/characters/xayah/skins/skin57.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin57/Materials/Wings_metallic"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin57",
+      "bin": "data/characters/xayah/skins/skin57.bin"
+    }
+  ]
+}

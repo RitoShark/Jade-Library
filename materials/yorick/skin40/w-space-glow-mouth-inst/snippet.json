@@ -1,0 +1,44 @@
+{
+  "id": "w-space-glow-mouth-inst",
+  "name": "W Space Glow Mouth Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:34.893Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_w_space_glow_mouth_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin05_EmpQ_Stars.tex",
+      "updatedAt": "2026-04-17T18:10:34.886Z"
+    },
+    {
+      "name": "black.SKINS_Yorick_Skin40.tex",
+      "updatedAt": "2026-04-17T18:10:34.886Z"
+    },
+    {
+      "name": "Yorick_Skin40_maskW1.SKINS_Yorick_Skin40.tex",
+      "updatedAt": "2026-04-17T18:10:34.886Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin40",
+    "bin": "data/characters/yorickwghoul/skins/skin40.bin",
+    "entryKey": "Characters/YorickWGhoul/Skins/Skin40/Materials/W_Space_Glow_Mouth_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin40",
+      "bin": "data/characters/yorickwghoul/skins/skin40.bin"
+    }
+  ]
+}

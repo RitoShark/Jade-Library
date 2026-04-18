@@ -1,0 +1,60 @@
+{
+  "id": "leblanc-cape-mat-inst",
+  "name": "Leblanc Cape Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:34.682Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leblanc_cape_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "Leblanc_Skin57_Cape_Mask_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "Leblanc_Skin57_Holochroma_Gradient.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "SRI_Icon_Noise.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    },
+    {
+      "name": "Leblanc_Skin57_Cape_Flowmap_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:34.673Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin57",
+    "bin": "data/characters/leblanc/skins/skin57.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin57/Materials/Leblanc_Cape_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin57",
+      "bin": "data/characters/leblanc/skins/skin57.bin"
+    }
+  ]
+}

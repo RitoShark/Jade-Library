@@ -1,0 +1,48 @@
+{
+  "id": "wings-inst",
+  "name": "Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:26.183Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin07_Wing_Gradient16.tex",
+      "updatedAt": "2026-04-17T17:40:26.175Z"
+    },
+    {
+      "name": "Morgana_Base_R_TrailMult.tex",
+      "updatedAt": "2026-04-17T17:40:26.175Z"
+    },
+    {
+      "name": "Morgana_Skin07_Wing_Gradient16.tex",
+      "updatedAt": "2026-04-17T17:40:26.175Z"
+    },
+    {
+      "name": "Morgana_Skin07_Wing_Gradient16.tex",
+      "updatedAt": "2026-04-17T17:40:26.175Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin7",
+    "bin": "data/characters/morgana/skins/skin7.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin7/Materials/Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin7",
+      "bin": "data/characters/morgana/skins/skin7.bin"
+    }
+  ]
+}

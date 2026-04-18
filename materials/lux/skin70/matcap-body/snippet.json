@@ -1,0 +1,52 @@
+{
+  "id": "matcap-body",
+  "name": "Matcap Body",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:00.239Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:00.233Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:36:00.233Z"
+    },
+    {
+      "name": "Lux_Skin70_Matcap.SKINS_Lux_Skin70.tex",
+      "updatedAt": "2026-04-17T17:36:00.233Z"
+    },
+    {
+      "name": "Lux_Skin70_TX_CM_Mask.SKINS_Lux_Skin70.tex",
+      "updatedAt": "2026-04-17T17:36:00.233Z"
+    },
+    {
+      "name": "EDG_Rainbow.tex",
+      "updatedAt": "2026-04-17T17:36:00.233Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin70",
+    "bin": "data/characters/lux/skins/skin70.bin",
+    "entryKey": "Characters/Lux/Skins/Skin70/Materials/Matcap_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin70",
+      "bin": "data/characters/lux/skins/skin70.bin"
+    }
+  ]
+}

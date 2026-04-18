@@ -1,0 +1,48 @@
+{
+  "id": "custom-fresnel-inst",
+  "name": "Custom Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:03.116Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_custom_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:22:03.110Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:22:03.110Z"
+    },
+    {
+      "name": "Illaoi_Skin09_E_Tentacle_Diffuse.tex",
+      "updatedAt": "2026-04-17T17:22:03.110Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:03.110Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Illaoi",
+    "skin": "skin9",
+    "bin": "data/characters/illaoi/skins/skin9.bin",
+    "entryKey": "Characters/Illaoi/Skins/Skin9/Materials/CustomFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Illaoi",
+      "skin": "skin9",
+      "bin": "data/characters/illaoi/skins/skin9.bin"
+    }
+  ]
+}

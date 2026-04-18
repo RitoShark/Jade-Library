@@ -1,0 +1,40 @@
+{
+  "id": "wings-glow-skin78",
+  "name": "Wings Glow Skin78",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.665Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_glow_skin78",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin78_WingsMask_TX_CM.SKINS_Kayle_Skin78.tex",
+      "updatedAt": "2026-04-17T17:29:43.651Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:43.651Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin78",
+    "bin": "data/characters/kayle/skins/skin78.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin78/Materials/Wings_glow_Skin78"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin78",
+      "bin": "data/characters/kayle/skins/skin78.bin"
+    }
+  ]
+}

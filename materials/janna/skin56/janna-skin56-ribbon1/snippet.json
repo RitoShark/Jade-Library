@@ -1,0 +1,38 @@
+{
+  "id": "janna-skin56-ribbon1",
+  "name": "Janna Skin56 Ribbon1",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:19.983Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_janna_skin56_ribbon1",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin56_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:19.978Z"
+    },
+    {
+      "name": "Janna_Skin56_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:19.978Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:19.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin56",
+    "bin": "data/characters/janna/skins/skin56.bin",
+    "entryKey": "Characters/Janna/Skins/Skin56/Materials/JannaSkin56_Ribbon1"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin56",
+      "bin": "data/characters/janna/skins/skin56.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "irelia-anodized-metal-inst",
+  "name": "Irelia Anodized Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:38.205Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_anodized_metal_inst",
+  "textureFiles": [
+    {
+      "name": "Iridescence_Irelia_Skin05.tex",
+      "updatedAt": "2026-04-17T17:22:38.198Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:38.198Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin5",
+    "bin": "data/characters/irelia/skins/skin5.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin5/Materials/Irelia_AnodizedMetal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin5",
+      "bin": "data/characters/irelia/skins/skin5.bin"
+    }
+  ]
+}

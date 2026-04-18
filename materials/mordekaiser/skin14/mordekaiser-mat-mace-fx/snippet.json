@@ -1,0 +1,48 @@
+{
+  "id": "mordekaiser-mat-mace-fx",
+  "name": "Mordekaiser Mat Mace Fx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:51.074Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_mat_mace_fx",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.067Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.067Z"
+    },
+    {
+      "name": "Mordekaiser_Skin14_MaceFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:39:51.067Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.067Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin14",
+    "bin": "data/characters/mordekaiser/skins/skin14.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin14/Materials/Mordekaiser_MAT_MaceFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin14",
+      "bin": "data/characters/mordekaiser/skins/skin14.bin"
+    }
+  ]
+}

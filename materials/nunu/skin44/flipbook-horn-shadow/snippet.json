@@ -1,0 +1,45 @@
+{
+  "id": "flipbook-horn-shadow",
+  "name": "Flipbook Horn Shadow",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:19.884Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_horn_shadow",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Nunu_Skin44.tex",
+      "updatedAt": "2026-04-17T17:44:10.958Z"
+    },
+    {
+      "name": "Nunu_Skin44_Willump_TX_CM.SKINS_Nunu_Skin44.tex",
+      "updatedAt": "2026-04-17T17:44:10.958Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin44",
+    "bin": "data/characters/nunu/skins/skin44.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin44/Materials/Flipbook_HornShadow"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin44",
+      "bin": "data/characters/nunu/skins/skin44.bin"
+    },
+    {
+      "champion": "Pyke",
+      "skin": "skin64",
+      "bin": "data/characters/pyke/skins/skin64.bin"
+    }
+  ]
+}

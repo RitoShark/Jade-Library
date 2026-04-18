@@ -1,0 +1,193 @@
+"jadelib_kayle_peacock_feathers_inst" = StaticMaterialDef {
+    name: string = "jadelib_kayle_peacock_feathers_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Level16_Gradient_Texture"
+            texturePath: string = "assets/jadelib/kayle-peacock-feathers-inst/Gradient_test_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/kayle-peacock-feathers-inst/Generic_Noise.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/kayle-peacock-feathers-inst/Gradient_test_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Rage_Gradient_Texture"
+            texturePath: string = "assets/jadelib/kayle-peacock-feathers-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Transform_Level_16"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scrolling_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.6941176652908325, 0.4117647111415863, 0.019607843831181526, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GradientSwap_Blend"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rage_Blend"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wing_Contrast_Clamp"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "FIREWINGS"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Kayle_Wings"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KayleEnrage"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KayleEnrage"
+                                    mDeactivateEarlySeconds: f32 = 1
+                                }
+                                mOnValue: f32 = 3
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveCeremony"
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KaylePassiveCeremony"
+                                    mDeactivateEarlySeconds: f32 = 1
+                                }
+                                mOnValue: f32 = 2
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "KaylePassiveRank3"
+                                mDeactivateEarlySeconds: f32 = 1
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "KaylePassiveRank3"
+                                }
+                                mOnValue: f32 = 2
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "KayleEnrage"
+                    }
+                    mColorOn: vec4 = { 0.6901960968971252, 0.4117647111415863, 0.01568627543747425, 1 }
+                    mColorOff: vec4 = { 0.6784313917160034, 0.43529412150382996, 0.0117647061124444, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "KayleEnrage"
+                        }
+                        TextureName: string = "ASSETS/Characters/Kayle/Skins/Skin44/Kayle_Skin44_Peacock_Wings_TX_CM.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "KaylePassiveRank3"
+                        }
+                        TextureName: string = "ASSETS/Characters/Kayle/Skins/Skin44/Kayle_Skin44_Peacock_Wings_TX_CM.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                            mAnimationNames: list[hash] = {
+                                "Evolve1"
+                                "Evolve2"
+                                "Evolve3"
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Kayle/Skins/Skin44/Kayle_Skin44_Peacock_Wings_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

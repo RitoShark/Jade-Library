@@ -1,0 +1,36 @@
+{
+  "id": "yorick-skin58-body-inst",
+  "name": "Yorick Skin58 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:35.413Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yorick_skin58_body_inst",
+  "textureFiles": [
+    {
+      "name": "YorickWGhoul_Skin50_TX_Mask.SKINS_Yorick_Skin50.tex",
+      "updatedAt": "2026-04-17T18:10:35.405Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yorick",
+    "skin": "skin58",
+    "bin": "data/characters/yorickwghoul/skins/skin58.bin",
+    "entryKey": "Characters/YorickWGhoul/Skins/Skin58/Yorick_Skin58_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yorick",
+      "skin": "skin58",
+      "bin": "data/characters/yorickwghoul/skins/skin58.bin"
+    }
+  ]
+}

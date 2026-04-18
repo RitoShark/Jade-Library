@@ -1,0 +1,25 @@
+{
+  "id": "ekko-skin48-glass-inst",
+  "name": "Ekko Skin48 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:36.928Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_ekko_skin48_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin48",
+    "bin": "data/characters/ekko/skins/skin48.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin48/Materials/Ekko_Skin48_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin48",
+      "bin": "data/characters/ekko/skins/skin48.bin"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "milio-flipbook-buddy-recall-eyes-inst",
+  "name": "Milio Flipbook Buddy Recall Eyes Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:34.121Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_milio_flipbook_buddy_recall_eyes_inst",
+  "textureFiles": [
+    {
+      "name": "Milio_Skin20_Firebuddy_Eyes_TX_CM.SKINS_Milio_Skin20.tex",
+      "updatedAt": "2026-04-17T17:38:34.116Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin20",
+    "bin": "data/characters/milio/skins/skin20.bin",
+    "entryKey": "Characters/Milio/Skins/Skin20/Materials/Milio_Flipbook_BuddyRecall_Eyes_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin20",
+      "bin": "data/characters/milio/skins/skin20.bin"
+    }
+  ]
+}

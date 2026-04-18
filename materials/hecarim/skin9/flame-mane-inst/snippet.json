@@ -1,0 +1,48 @@
+{
+  "id": "flame-mane-inst",
+  "name": "Flame Mane Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:23.127Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flame_mane_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.117Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.118Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.118Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.118Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin9",
+    "bin": "data/characters/hecarim/skins/skin9.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin9/Materials/FlameMane_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin9",
+      "bin": "data/characters/hecarim/skins/skin9.bin"
+    }
+  ]
+}

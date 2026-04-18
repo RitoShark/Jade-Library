@@ -1,0 +1,36 @@
+{
+  "id": "flame-in-inst",
+  "name": "Flame In Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:55.880Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flame_in_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin68_Material.tex",
+      "updatedAt": "2026-04-17T17:07:55.875Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin69",
+    "bin": "data/characters/akali/skins/skin69.bin",
+    "entryKey": "Characters/Akali/Skins/Skin69/Materials/Flame_In_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin69",
+      "bin": "data/characters/akali/skins/skin69.bin"
+    }
+  ]
+}

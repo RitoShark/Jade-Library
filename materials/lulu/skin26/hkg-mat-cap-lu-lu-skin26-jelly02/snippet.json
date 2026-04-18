@@ -1,0 +1,50 @@
+{
+  "id": "hkg-mat-cap-lu-lu-skin26-jelly02",
+  "name": "Hkg Mat Cap Lu Lu Skin26 Jelly02",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.012Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_lu_lu_skin26_jelly02",
+  "textureFiles": [
+    {
+      "name": "Lulu_Skin26_MatCap_Jelly_02.tex",
+      "updatedAt": "2026-04-17T17:35:18.825Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:35:18.825Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin26",
+    "bin": "data/characters/lulu/skins/skin26.bin",
+    "entryKey": "Characters/Lulu/Skins/Skin26/Materials/HKG_MatCap_LuLu_Skin26_Jelly02"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin26",
+      "bin": "data/characters/lulu/skins/skin26.bin"
+    },
+    {
+      "champion": "Lux",
+      "skin": "skin19",
+      "bin": "data/characters/lux/skins/skin19.bin"
+    },
+    {
+      "champion": "Ornn",
+      "skin": "skin11",
+      "bin": "data/characters/ornn/skins/skin11.bin"
+    }
+  ]
+}

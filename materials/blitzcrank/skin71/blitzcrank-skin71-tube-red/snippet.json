@@ -1,0 +1,64 @@
+{
+  "id": "blitzcrank-skin71-tube-red",
+  "name": "Blitzcrank Skin71 Tube Red",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:12.274Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin71_tube_red",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "Blitzcrank_Skin71_Iridescence_TX_CM.Chroma_Blitzcrank_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.269Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin71",
+    "bin": "data/characters/blitzcrank/skins/skin71.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin71/Materials/Blitzcrank_Skin71_TubeRed"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin71",
+      "bin": "data/characters/blitzcrank/skins/skin71.bin"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+"jadelib_fresnel_bloom_basic_inst" = StaticMaterialDef {
+    name: string = "jadelib_fresnel_bloom_basic_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/fresnel-bloom-basic-inst/Nocturne_Skin16_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/fresnel-bloom-basic-inst/Material_Inst.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 3, 0.800000011920929, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Mult"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Fresnel_Bloom_Basic"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "NocturneUmbraBlades"
+                    }
+                    mOnValue: f32 = 0.6000000238418579
+                    mOffValue: f32 = 1
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "NocturneUmbraBlades"
+                        }
+                        mOnValue: f32 = 10
+                        mTurnOnTimeSec: f32 = 0.30000001192092896
+                        mTurnOffTimeSec: f32 = 0.30000001192092896
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.1568627506494522, 0.6274510025978088, 1, 1 }
+                            { 1, 0.43921568989753723, 0.7764706015586853, 1 }
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "NocturneUmbraBlades"
+                        }
+                        TextureName: string = "ASSETS/Characters/Nocturne/Skins/Skin16/Nocturne_Skin16_P_Fresnel_Mask.tex"
+                    }
+                }
+            }
+        }
+    }
+}

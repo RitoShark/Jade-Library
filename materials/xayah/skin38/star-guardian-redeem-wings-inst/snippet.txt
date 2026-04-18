@@ -1,0 +1,283 @@
+"jadelib_star_guardian_redeem_wings_inst" = StaticMaterialDef {
+    name: string = "jadelib_star_guardian_redeem_wings_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture_2"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin38_Wing_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Transition_Texture"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin04_Pack_Transition_Wings.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin04_Z_SS_Tex_Wings.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask1"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin04_Wing_Scrolling_TX_Mask.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FresnelColor"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin04_Wing_Fesnel_TX_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FresnelColor_2"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-wings-inst/Xayah_Skin04_Wing_Light_Fesnel_TX_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TransitionValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 5, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { 0.009999999776482582, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+            value: vec4 = { -0.36000001430511475, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 3.262500047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 1.212499976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.95686274766922, 0.4588235318660736, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Scale"
+            value: vec4 = { 3, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Rate"
+            value: vec4 = { 0.009999999776482582, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelTransition"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Dissolve"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/StarGuardian_Xayah_Texture_Transition"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "TransitionValue"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahFeatherTracker"
+                            }
+                            mTurnOffTimeSec: f32 = 0.4000000059604645
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "2320800117"
+                                    }
+                                }
+                                mOnValue: f32 = 2
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    1.2644728422164917
+                                    1.4948259592056274
+                                    1.5251243114471436
+                                    1.6064112186431885
+                                    1.9793028831481934
+                                    1.9793028831481934
+                                }
+                                values: list[f32] = {
+                                    0.009554202668368816
+                                    0.009554202668368816
+                                    0.3294769525527954
+                                    0.7896398305892944
+                                    0.9561749696731567
+                                    0.9824699759483337
+                                    0.009554202668368816
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "FresnelTransition"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahFeatherTracker"
+                            }
+                            mTurnOffTimeSec: f32 = 0.4000000059604645
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahPassiveActive"
+                            }
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "XayahW"
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 1 }
+                            { 0.0313725508749485, 0, 1, 1 }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Shadow_Dissolve"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOffValue: f32 = -1
+                            mTurnOnTimeSec: f32 = 6
+                            mTurnOffTimeSec: f32 = 0.5
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mDelayOn: f32 = 3.799999952316284
+                            }
+                            mOffValue: f32 = -1
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahPassiveActive"
+                            }
+                            mOnValue: f32 = 3
+                            mOffValue: f32 = 1.2100000381469727
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.10000000149011612
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahW"
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1.2100000381469727
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.10000000149011612
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Dodge_Bias"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "XayahPassiveActive"
+                    }
+                    mOnValue: f32 = 0.25
+                    mOffValue: f32 = -0.36000001430511475
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 1.25
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "XayahPassiveActive"
+                    }
+                    mOnValue: f32 = 5
+                    mOffValue: f32 = 3.26200008392334
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                }
+            }
+        }
+    }
+}

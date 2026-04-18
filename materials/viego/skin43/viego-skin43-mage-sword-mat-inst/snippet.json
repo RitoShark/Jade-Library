@@ -1,0 +1,64 @@
+{
+  "id": "viego-skin43-mage-sword-mat-inst",
+  "name": "Viego Skin43 Mage Sword Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:39.733Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin43_mage_sword_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "Viego_Skin43_Mage_Support_Sword_Scroll_Mat_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "Viego_Skin43_Mage_Support_Sword_Scroll_Mask_Mat_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.726Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/ViegoSkin43_MageSword_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

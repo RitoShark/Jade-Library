@@ -1,0 +1,36 @@
+{
+  "id": "bloom-tail-inst",
+  "name": "Bloom Tail Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:07.321Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_tail_inst",
+  "textureFiles": [
+    {
+      "name": "Warwick_Skin56_Idle_Tail.SKINS_Warwick_Skin56.tex",
+      "updatedAt": "2026-04-17T18:07:07.315Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin56",
+    "bin": "data/characters/warwick/skins/skin56.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin56/Materials/Bloom_Tail_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin56",
+      "bin": "data/characters/warwick/skins/skin56.bin"
+    }
+  ]
+}

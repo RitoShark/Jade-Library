@@ -1,0 +1,40 @@
+{
+  "id": "malph-body-mat-inst",
+  "name": "Malph Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:17.357Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_malph_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Base_W_Malphite_Blend.tex",
+      "updatedAt": "2026-04-17T17:36:17.351Z"
+    },
+    {
+      "name": "Malphite_Base_P_Glowing_Fire.tex",
+      "updatedAt": "2026-04-17T17:36:17.351Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin0",
+    "bin": "data/characters/malphite/skins/skin0.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin0/Materials/Malph_Body_mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin0",
+      "bin": "data/characters/malphite/skins/skin0.bin"
+    }
+  ]
+}

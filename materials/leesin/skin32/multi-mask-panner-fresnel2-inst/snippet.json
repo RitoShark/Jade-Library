@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-fresnel2-inst",
+  "name": "Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:59.561Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:32:59.552Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:32:59.552Z"
+    },
+    {
+      "name": "LeeSin_Skin32_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:32:59.552Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:32:59.552Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin32",
+    "bin": "data/characters/leesin/skins/skin32.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin32/Materials/MultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin32",
+      "bin": "data/characters/leesin/skins/skin32.bin"
+    }
+  ]
+}

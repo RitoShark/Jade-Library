@@ -1,0 +1,242 @@
+"jadelib_star_guardian_redeem_main_inst" = StaticMaterialDef {
+    name: string = "jadelib_star_guardian_redeem_main_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture_2"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/Xayah_Skin38_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Transition_Texture"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/Xayah_Skin04_Pack_Transition_Main.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/Xayah_Skin38_W_Background01.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask1"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/black.SKINS_Lissandra_Skin43.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FresnelColor"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FresnelColor_2"
+            texturePath: string = "assets/jadelib/star-guardian-redeem-main-inst/gradient_x4.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TransitionValue"
+            value: vec4 = { 1.125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.2750000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.9529411792755127, 0.6627451181411743, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blue_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelTransition"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Dissolve"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/StarGuardian_Xayah_Texture_Transition"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "TransitionValue"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "XayahFeatherTracker"
+                            }
+                            mOnValue: f32 = 2
+                            mTurnOffTimeSec: f32 = 0.4000000059604645
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mDelayOn: f32 = 6.5
+                            }
+                            mOnValue: f32 = 2
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall_Winddown"
+                                    }
+                                }
+                                mOnValue: f32 = 2
+                                mTurnOnTimeSec: f32 = 6
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.06360875815153122
+                                    0.18392011523246765
+                                    0.28491440415382385
+                                    0.570209801197052
+                                    0.6752438545227051
+                                    0.9713798761367798
+                                    0.9915787577629089
+                                }
+                                values: list[f32] = {
+                                    0.009554202668368816
+                                    1
+                                    1
+                                    1
+                                    0.9123499393463135
+                                    0.13226430118083954
+                                    0.009554202668368816
+                                    0.009554202668368816
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "2320800117"
+                                    }
+                                }
+                                mOnValue: f32 = 2
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    1.376144289970398
+                                    1.4892578125
+                                    1.5672461986541748
+                                    1.6387293338775635
+                                    2.0075812339782715
+                                    2.0075812339782715
+                                }
+                                values: list[f32] = {
+                                    0.009554202668368816
+                                    0.0007891958230175078
+                                    0.1629418283700943
+                                    0.7545797824859619
+                                    1
+                                    1
+                                    0.05337923765182495
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "XayahW"
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 1 }
+                            { 0.0313725508749485, 0, 1, 1 }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Shadow_Dissolve"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "death"
+                        }
+                    }
+                    mOffValue: f32 = -1
+                    mTurnOnTimeSec: f32 = 6
+                    mTurnOffTimeSec: f32 = 0.5
+                }
+            }
+        }
+    }
+}

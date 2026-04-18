@@ -1,0 +1,38 @@
+{
+  "id": "master-yi-skin100-dragon-hands-feet-mat",
+  "name": "Master Yi Skin100 Dragon Hands Feet Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:44.089Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_master_yi_skin100_dragon_hands_feet_mat",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin100_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:37:44.080Z"
+    },
+    {
+      "name": "MasterYi_Skin100_DLimbs_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:37:44.080Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:44.080Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin100",
+    "bin": "data/characters/masteryi/skins/skin100.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin100/Materials/MasterYi_Skin100_Dragon_HandsFeet_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin100",
+      "bin": "data/characters/masteryi/skins/skin100.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "master-yi-ult-weapon",
+  "name": "Master Yi Ult Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:58.548Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_ult_weapon",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:37:58.540Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:37:58.540Z"
+    },
+    {
+      "name": "MasterYi_Skin116_Weapon_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:58.540Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:58.540Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin116",
+    "bin": "data/characters/masteryi/skins/skin116.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin116/Materials/MasterYi_UltWeapon"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin116",
+      "bin": "data/characters/masteryi/skins/skin116.bin"
+    }
+  ]
+}

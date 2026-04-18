@@ -1,0 +1,48 @@
+{
+  "id": "master-yi-skin116-horn",
+  "name": "Master Yi Skin116 Horn",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:00.811Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin116_horn",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:00.803Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:00.803Z"
+    },
+    {
+      "name": "MasterYi_Skin116_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:38:00.803Z"
+    },
+    {
+      "name": "MasterYi_Skin116_HornFresnelMask_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:38:00.803Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin116",
+    "bin": "data/characters/masteryi/skins/skin116.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin116/Materials/MasterYi_Skin116_Horn"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin116",
+      "bin": "data/characters/masteryi/skins/skin116.bin"
+    }
+  ]
+}

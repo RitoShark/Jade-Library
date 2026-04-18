@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-archon-inst",
+  "name": "Dark Star Archon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:47.490Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_archon_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin13_EmpQ_Stars.tex",
+      "updatedAt": "2026-04-17T17:27:47.483Z"
+    },
+    {
+      "name": "Karma_Skin08_MAT_ArchonMask.tex",
+      "updatedAt": "2026-04-17T17:27:47.483Z"
+    },
+    {
+      "name": "Karma_Skin08_MAT_ArchonMask.tex",
+      "updatedAt": "2026-04-17T17:27:47.483Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin13",
+    "bin": "data/characters/karma/skins/skin13.bin",
+    "entryKey": "Characters/Karma/Skins/Skin13/Materials/DarkStar_Archon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin13",
+      "bin": "data/characters/karma/skins/skin13.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "dissolve-alpha-add-noise-pan-inst",
+  "name": "Dissolve Alpha Add Noise Pan Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:18.774Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_alpha_add_noise_pan_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin25_Add_Noise.tex",
+      "updatedAt": "2026-04-17T17:36:18.767Z"
+    },
+    {
+      "name": "Malphite_Skin25_PassiveArmor_Masks.tex",
+      "updatedAt": "2026-04-17T17:36:18.767Z"
+    },
+    {
+      "name": "Malphite_Skin25_SS_Noise.tex",
+      "updatedAt": "2026-04-17T17:36:18.767Z"
+    },
+    {
+      "name": "Malphite_Skin25_PassiveArmor_Erosion.tex",
+      "updatedAt": "2026-04-17T17:36:18.767Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin25",
+    "bin": "data/characters/malphite/skins/skin25.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin25/Materials/Dissolve_Alpha_Add_Noise_Pan_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin25",
+      "bin": "data/characters/malphite/skins/skin25.bin"
+    }
+  ]
+}

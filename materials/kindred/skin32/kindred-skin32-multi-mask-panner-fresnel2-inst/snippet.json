@@ -1,0 +1,48 @@
+{
+  "id": "kindred-skin32-multi-mask-panner-fresnel2-inst",
+  "name": "Kindred Skin32 Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:05.697Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kindred_skin32_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:05.691Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:05.691Z"
+    },
+    {
+      "name": "Kindred_Skin32_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:05.691Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:05.691Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin32",
+    "bin": "data/characters/kindred/skins/skin32.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin32/Materials/Kindred_Skin32_MultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin32",
+      "bin": "data/characters/kindred/skins/skin32.bin"
+    }
+  ]
+}

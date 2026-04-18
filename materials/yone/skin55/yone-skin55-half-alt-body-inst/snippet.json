@@ -1,0 +1,44 @@
+{
+  "id": "yone-skin55-half-alt-body-inst",
+  "name": "Yone Skin55 Half Alt Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.526Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin55_half_alt_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.518Z"
+    },
+    {
+      "name": "Yone_Skin55_AltMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:10:06.518Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.518Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin55",
+    "bin": "data/characters/yone/skins/skin55.bin",
+    "entryKey": "Characters/Yone/Skins/Skin55/Materials/Yone_Skin55_HalfAlt_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin55",
+      "bin": "data/characters/yone/skins/skin55.bin"
+    }
+  ]
+}

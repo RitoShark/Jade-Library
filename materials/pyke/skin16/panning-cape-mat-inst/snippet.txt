@@ -1,0 +1,115 @@
+"jadelib_panning_cape_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_panning_cape_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Add2_Pan"
+            texturePath: string = "assets/jadelib/panning-cape-mat-inst/common_empty32.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Add1_Pan"
+            texturePath: string = "assets/jadelib/panning-cape-mat-inst/common_empty32.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blend1_Pan"
+            texturePath: string = "assets/jadelib/panning-cape-mat-inst/common_empty32.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blend2_Pan"
+            texturePath: string = "assets/jadelib/panning-cape-mat-inst/common_empty32.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "CapeMask"
+            texturePath: string = "assets/jadelib/panning-cape-mat-inst/common_empty32.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add2_Scale"
+            value: vec4 = { 1, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add2_ScrollSpeed"
+            value: vec4 = { 0, -0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add1_Scale"
+            value: vec4 = { 1, 15, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add1_ScrollSpeed"
+            value: vec4 = { 0, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend1_Scale"
+            value: vec4 = { 1, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend1_ScrollSpeed"
+            value: vec4 = { 0, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend2_Scale"
+            value: vec4 = { 1, 85, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Blend2_ScrollSpeed"
+            value: vec4 = { 0, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend1_Color"
+            value: vec4 = { 0.9960784316062927, 0.886274516582489, 0.250980406999588, 0.30980393290519714 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend2_Color"
+            value: vec4 = { 0.545098066329956, 0.11764705926179886, 0.11764705926179886, 0.2705882489681244 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Add1_Color"
+            value: vec4 = { 0.9960784316062927, 0, 0, 0.5490196347236633 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Add2_Color"
+            value: vec4 = { 1, 0, 0, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/2Blend_2Add_Pan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

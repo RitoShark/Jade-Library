@@ -1,0 +1,64 @@
+{
+  "id": "aatrox-skin36-body-mat",
+  "name": "Aatrox Skin36 Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:20.257Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_skin36_body_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "Aatrox_Skin33_IridescentTex_TX_CM.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "Aatrox_Skin33_Blood_Scroll_Mask.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "Aatrox_Skin36_Body_MaterialMask_Veins.Chroma_Aatrox_AnimaSquad_2024.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    },
+    {
+      "name": "Aatrox_Skin36_Ultimate_TX_CM.Chroma_Aatrox_AnimaSquad_2024.tex",
+      "updatedAt": "2026-04-17T17:06:20.250Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin36",
+    "bin": "data/characters/aatrox/skins/skin36.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin36/Materials/Aatrox_Skin36_Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin36",
+      "bin": "data/characters/aatrox/skins/skin36.bin"
+    }
+  ]
+}

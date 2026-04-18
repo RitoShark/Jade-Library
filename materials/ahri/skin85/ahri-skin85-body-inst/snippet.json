@@ -1,0 +1,48 @@
+{
+  "id": "ahri-skin85-body-inst",
+  "name": "Ahri Skin85 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:07.126Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_skin85_body_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:07:07.120Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:07:07.120Z"
+    },
+    {
+      "name": "Ahri_Skin_85_HoL_Body_Form_1_TX_CM.SKINS_Ahri_HoL.tex",
+      "updatedAt": "2026-04-17T17:07:07.120Z"
+    },
+    {
+      "name": "Ahri_Skin85_R_Smoke_Erode.SKINS_Ahri_HoL.tex",
+      "updatedAt": "2026-04-17T17:07:07.120Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin85",
+    "bin": "data/characters/ahri/skins/skin85.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin85/Materials/Ahri_Skin85_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin85",
+      "bin": "data/characters/ahri/skins/skin85.bin"
+    }
+  ]
+}

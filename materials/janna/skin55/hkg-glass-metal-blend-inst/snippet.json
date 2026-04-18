@@ -1,0 +1,36 @@
+{
+  "id": "hkg-glass-metal-blend-inst",
+  "name": "Hkg Glass Metal Blend Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:16.744Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_glass_metal_blend_inst",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin45_Crystalmaterial_Mask.tex",
+      "updatedAt": "2026-04-17T17:23:16.739Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin55",
+    "bin": "data/characters/janna/skins/skin55.bin",
+    "entryKey": "Characters/Janna/Skins/Skin55/Materials/HKG_Glass_Metal_Blend_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin55",
+      "bin": "data/characters/janna/skins/skin55.bin"
+    }
+  ]
+}

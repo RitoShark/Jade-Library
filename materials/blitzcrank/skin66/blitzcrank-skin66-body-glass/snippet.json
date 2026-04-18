@@ -1,0 +1,25 @@
+{
+  "id": "blitzcrank-skin66-body-glass",
+  "name": "Blitzcrank Skin66 Body Glass",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:10.824Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_blitzcrank_skin66_body_glass",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin66",
+    "bin": "a55476117631fe05.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin66/Materials/Blitzcrank_Skin66_Body_Glass"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin66",
+      "bin": "a55476117631fe05.bin"
+    }
+  ]
+}

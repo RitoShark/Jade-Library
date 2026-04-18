@@ -1,0 +1,44 @@
+{
+  "id": "kindred-skin32-toon-shading-inst",
+  "name": "Kindred Skin32 Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:05.597Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kindred_skin32_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin23_Air_Swoosh02.tex",
+      "updatedAt": "2026-04-17T17:31:05.590Z"
+    },
+    {
+      "name": "BC_TestTexture.tex",
+      "updatedAt": "2026-04-17T17:31:05.590Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:05.590Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin32",
+    "bin": "data/characters/kindred/skins/skin32.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin32/Materials/Kindred_Skin32_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin32",
+      "bin": "data/characters/kindred/skins/skin32.bin"
+    }
+  ]
+}

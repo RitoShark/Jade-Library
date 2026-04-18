@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-fresnel-masked-alpha-mult-shadow-clip-inst",
+  "name": "Screen Space Fresnel Masked Alpha Mult Shadow Clip Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:56.106Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_fresnel_masked_alpha_mult_shadow_clip_inst",
+  "textureFiles": [
+    {
+      "name": "Katarina_Skin29_Noise2b.tex",
+      "updatedAt": "2026-04-17T17:28:56.100Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Katarina",
+    "skin": "skin29",
+    "bin": "data/characters/katarina/skins/skin29.bin",
+    "entryKey": "Characters/Katarina/Skins/Skin29/Materials/ScreenSpace_FresnelMasked_AlphaMult_ShadowClip_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Katarina",
+      "skin": "skin29",
+      "bin": "data/characters/katarina/skins/skin29.bin"
+    }
+  ]
+}

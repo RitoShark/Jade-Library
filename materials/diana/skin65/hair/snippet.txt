@@ -1,0 +1,251 @@
+"jadelib_hair" = StaticMaterialDef {
+    name: string = "jadelib_hair"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/hair/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/hair/Base_plasma_noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hair/Diana_Skin65_MaskE_TX_CM.SKINS_Diana_Skin65.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/hair/Diana_Skin65_MaskF_TX_CM.SKINS_Diana_Skin65.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Flowmap"
+            texturePath: string = "assets/jadelib/hair/Diana_Skin65_ktorReworkCapeTest_FlowMapMin.SKINS_Diana_Skin65.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "HolesMask_Texture"
+            texturePath: string = "assets/jadelib/hair/Diana_Skin65_ktorReworkHoleMask_AnomalyMask.SKINS_Diana_Skin65.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Color_Texture"
+            texturePath: string = "assets/jadelib/hair/Diana_Skin65_ktorReworkGradientMap2.SKINS_Diana_Skin65.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bloom_Power"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Out_Alpha_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Alpha_Bias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Body_Height"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Texture_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveIntensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "rimOffset"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMin"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "modelHeight"
+            value: vec4 = { 275, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMax"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Speed"
+            value: vec4 = { 0, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Scale"
+            value: vec4 = { 40, 40, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Intensity"
+            value: vec4 = { 0.7450000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Speed"
+            value: vec4 = { 0.48750001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 6, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Intensity"
+            value: vec4 = { 4.525000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+            value: vec4 = { 1.3250000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesEdge_Color"
+            value: vec4 = { 0.6235294342041016, 0.1921568661928177, 0.32156863808631897, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesScaling_Speed"
+            value: vec4 = { 0.9739999771118164, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed"
+            value: vec4 = { 0, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed2"
+            value: vec4 = { 0, -0.03999999910593033, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor"
+            value: vec4 = { 0.2057679146528244, 0.8464179635047913, 0.9952239394187927, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 1.462499976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Scale"
+            value: vec4 = { 1.4500000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.9080948829650879, 0.4803997874259949, 0.44985121488571167, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE_TRANSITION"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT_ON_DISSOLVE"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISSOLVE_OUT_ALPHA"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_RIM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALBEDO_REMAP"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCREENSPACE_ON"
+            Group: string = "ScreenSpace"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "GRADIENT_ON"
+            on: bool = false
+            Group: string = "Gradient"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_ON"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_SROULLING"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FRESNEL_ON"
+            Group: string = "Fresnel"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIONAL_BLOOM_MASK"
+            on: bool = false
+            Group: string = "Bloom"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Crepe_Anomaly_Mask"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

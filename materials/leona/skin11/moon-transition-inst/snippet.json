@@ -1,0 +1,64 @@
+{
+  "id": "moon-transition-inst",
+  "name": "Moon Transition Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:31.502Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_moon_transition_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "Generic_Noise3.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "Leona_Skin11_Moon_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    },
+    {
+      "name": "Leona_Skin11_Moon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:31.494Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin11",
+    "bin": "data/characters/leona/skins/skin11.bin",
+    "entryKey": "Characters/Leona/Skins/Skin11/Materials/Moon_Transition_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin11",
+      "bin": "data/characters/leona/skins/skin11.bin"
+    }
+  ]
+}

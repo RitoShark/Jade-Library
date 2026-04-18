@@ -1,0 +1,64 @@
+{
+  "id": "braum-skin51-horns-inst",
+  "name": "Braum Skin51 Horns Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:49.495Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_braum_skin51_horns_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "Sylas_Skin08_Idle_Tattoos_Glow.SKINS_Braum_Skin51.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "Braum_Skin51_Scrolling_TX_CM.SKINS_Braum_Skin51.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    },
+    {
+      "name": "Braum_Skin51_TX_CM.SKINS_Braum_Skin51.tex",
+      "updatedAt": "2026-04-17T17:12:49.489Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Braum",
+    "skin": "skin51",
+    "bin": "data/characters/braum/skins/skin51.bin",
+    "entryKey": "Characters/Braum/Skins/Skin51/Materials/Braum_Skin51_Horns_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Braum",
+      "skin": "skin51",
+      "bin": "data/characters/braum/skins/skin51.bin"
+    }
+  ]
+}

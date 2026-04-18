@@ -1,0 +1,44 @@
+{
+  "id": "orbs-eyes-mat-inst",
+  "name": "Orbs Eyes Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:14.467Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_orbs_eyes_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Syndra_Skin54_Orbs_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:59:14.462Z"
+    },
+    {
+      "name": "Blink_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:14.462Z"
+    },
+    {
+      "name": "Syndra_Skin54_OrbsClose_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:14.462Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Syndra",
+    "skin": "skin54",
+    "bin": "data/characters/syndra/skins/skin54.bin",
+    "entryKey": "Characters/Syndra/Skins/Skin54/Materials/Orbs_Eyes_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Syndra",
+      "skin": "skin54",
+      "bin": "data/characters/syndra/skins/skin54.bin"
+    }
+  ]
+}

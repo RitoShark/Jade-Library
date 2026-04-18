@@ -1,0 +1,70 @@
+"jadelib_weapon_glow_mat" = StaticMaterialDef {
+    name: string = "jadelib_weapon_glow_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Glow_MinMax"
+            value: vec4 = { 1, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glow_Color"
+            value: vec4 = { 0, 0.49803921580314636, 0.45490196347236633, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Glow_Factor"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "MASK_GLOW"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "STROBE_GLOW"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_MASK"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Viego/WeaponGlow"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

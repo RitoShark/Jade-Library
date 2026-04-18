@@ -1,0 +1,44 @@
+{
+  "id": "sword-pbr-toon-shading-inst",
+  "name": "Sword Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:18.801Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sword_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin53_egoSword_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:18.792Z"
+    },
+    {
+      "name": "Weapon_Distortion.tex",
+      "updatedAt": "2026-04-17T17:46:18.792Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:18.792Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin53",
+    "bin": "data/characters/pyke/skins/skin53.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin53/Materials/Sword_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin53",
+      "bin": "data/characters/pyke/skins/skin53.bin"
+    }
+  ]
+}

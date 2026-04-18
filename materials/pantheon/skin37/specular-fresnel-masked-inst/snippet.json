@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:23.701Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Pantheon_Skin37_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:45:23.695Z"
+    },
+    {
+      "name": "Pantheon_Skin36_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:45:23.695Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:45:23.695Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pantheon",
+    "skin": "skin37",
+    "bin": "data/characters/pantheon/skins/skin37.bin",
+    "entryKey": "Characters/Pantheon/Skins/Skin37/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pantheon",
+      "skin": "skin37",
+      "bin": "data/characters/pantheon/skins/skin37.bin"
+    }
+  ]
+}

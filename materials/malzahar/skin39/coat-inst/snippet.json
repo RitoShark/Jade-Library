@@ -1,0 +1,36 @@
+{
+  "id": "coat-inst",
+  "name": "Coat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:05.181Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_coat_inst",
+  "textureFiles": [
+    {
+      "name": "Malzahar_Skin39_Material_Fire_Coat_13.tex",
+      "updatedAt": "2026-04-17T17:37:05.176Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin39",
+    "bin": "data/characters/malzahar/skins/skin39.bin",
+    "entryKey": "Characters/Malzahar/Skins/Skin39/Materials/Coat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin39",
+      "bin": "data/characters/malzahar/skins/skin39.bin"
+    }
+  ]
+}

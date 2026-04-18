@@ -1,0 +1,44 @@
+{
+  "id": "zyra-sparkle-body-mat-inst",
+  "name": "Zyra Sparkle Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:39.195Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zyra_sparkle_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T18:14:39.189Z"
+    },
+    {
+      "name": "Zyra_Skin07_TX_mask_3_CM.tex",
+      "updatedAt": "2026-04-17T18:14:39.189Z"
+    },
+    {
+      "name": "Zyra_Skin07_TX_mask_CM.tex",
+      "updatedAt": "2026-04-17T18:14:39.189Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zyra",
+    "skin": "skin15",
+    "bin": "data/characters/zyra/skins/skin15.bin",
+    "entryKey": "Characters/Zyra/Skins/Skin15/Materials/Zyra_Sparkle_Body_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zyra",
+      "skin": "skin15",
+      "bin": "data/characters/zyra/skins/skin15.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-fresnel-masked-alpha-mult-oranges-inst",
+  "name": "Screen Space Fresnel Masked Alpha Mult Oranges Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:49.360Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_fresnel_masked_alpha_mult_oranges_inst",
+  "textureFiles": [
+    {
+      "name": "Gangplank_Skin21_FireTrail_Styled_02.tex",
+      "updatedAt": "2026-04-17T17:19:49.335Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gangplank",
+    "skin": "skin21",
+    "bin": "data/characters/gangplank/skins/skin21.bin",
+    "entryKey": "Characters/Gangplank/Skins/Skin21/Materials/ScreenSpace_FresnelMasked_AlphaMult_Oranges_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gangplank",
+      "skin": "skin21",
+      "bin": "data/characters/gangplank/skins/skin21.bin"
+    }
+  ]
+}

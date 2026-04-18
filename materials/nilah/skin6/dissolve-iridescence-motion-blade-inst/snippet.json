@@ -1,0 +1,52 @@
+{
+  "id": "dissolve-iridescence-motion-blade-inst",
+  "name": "Dissolve Iridescence Motion Blade Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:36.437Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_iridescence_motion_blade_inst",
+  "textureFiles": [
+    {
+      "name": "Nilah_Skin06_Material_GradientTX.tex",
+      "updatedAt": "2026-04-17T17:43:36.424Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:43:36.424Z"
+    },
+    {
+      "name": "velvet_Nrm_pyke.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:43:36.424Z"
+    },
+    {
+      "name": "Nilah_Blade_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:43:36.424Z"
+    },
+    {
+      "name": "Nilah_Skin06_Blade_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:36.424Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nilah",
+    "skin": "skin6",
+    "bin": "data/characters/nilah/skins/skin6.bin",
+    "entryKey": "Characters/Nilah/Skins/Skin6/Materials/Dissolve_Iridescence_Motion_Blade_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nilah",
+      "skin": "skin6",
+      "bin": "data/characters/nilah/skins/skin6.bin"
+    }
+  ]
+}

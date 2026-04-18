@@ -1,0 +1,48 @@
+{
+  "id": "senna-skin49-scarf-multi-mask-panner-fresnel2-inst",
+  "name": "Senna Skin49 Scarf Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:29.918Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_senna_skin49_scarf_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:29.912Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:29.912Z"
+    },
+    {
+      "name": "Senna_Skin49_Texture_Mask_Cloak.tex",
+      "updatedAt": "2026-04-17T17:52:29.912Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:29.912Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin49",
+    "bin": "data/characters/senna/skins/skin49.bin",
+    "entryKey": "Characters/Senna/Skins/Skin49/Materials/Senna_Skin49_ScarfMultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin49",
+      "bin": "data/characters/senna/skins/skin49.bin"
+    }
+  ]
+}

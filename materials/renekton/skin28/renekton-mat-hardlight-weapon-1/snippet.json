@@ -1,0 +1,48 @@
+{
+  "id": "renekton-mat-hardlight-weapon-1",
+  "name": "Renekton Mat Hardlight Weapon 1",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:38.734Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_renekton_mat_hardlight_weapon_1",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.727Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.727Z"
+    },
+    {
+      "name": "Renekton_Skin28_Weapon_Color.tex",
+      "updatedAt": "2026-04-17T17:48:38.727Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.727Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin28",
+    "bin": "data/characters/renekton/skins/skin28.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin28/Materials/Renekton_MAT_Hardlight_Weapon_1"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin28",
+      "bin": "data/characters/renekton/skins/skin28.bin"
+    }
+  ]
+}

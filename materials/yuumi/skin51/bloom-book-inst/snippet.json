@@ -1,0 +1,36 @@
+{
+  "id": "bloom-book-inst",
+  "name": "Bloom Book Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:09.048Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_book_inst",
+  "textureFiles": [
+    {
+      "name": "Yuumi_Skin49_P_Color01.SKINS_Yuumi_Skin49.tex",
+      "updatedAt": "2026-04-17T18:11:09.042Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin51",
+    "bin": "data/characters/yuumi/skins/skin51.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin51/Materials/Bloom_Book_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin51",
+      "bin": "data/characters/yuumi/skins/skin51.bin"
+    }
+  ]
+}

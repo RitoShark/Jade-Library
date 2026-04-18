@@ -1,0 +1,48 @@
+{
+  "id": "alpha-mask-tex-mult-scroll-valor-inst",
+  "name": "Alpha Mask Tex Mult Scroll Valor Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:53.601Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_mask_tex_mult_scroll_valor_inst",
+  "textureFiles": [
+    {
+      "name": "GarenTest_Gradient.tex",
+      "updatedAt": "2026-04-17T17:46:53.593Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:53.593Z"
+    },
+    {
+      "name": "Quinn_Valor_Bloom_Mask.tex",
+      "updatedAt": "2026-04-17T17:46:53.593Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:53.593Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Quinn",
+    "skin": "skin10",
+    "bin": "data/characters/quinn/skins/skin10.bin",
+    "entryKey": "Characters/Quinn/Skins/Skin10/Materials/AlphaMask_TexMultScroll_Valor_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Quinn",
+      "skin": "skin10",
+      "bin": "data/characters/quinn/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:25.988Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin16_idle_glow02.tex",
+      "updatedAt": "2026-04-17T17:52:25.983Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin22",
+    "bin": "data/characters/senna/skins/skin22.bin",
+    "entryKey": "Characters/Senna/Skins/Skin22/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin22",
+      "bin": "data/characters/senna/skins/skin22.bin"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "viego-skin32-isolde-toon-shading-inst",
+  "name": "Viego Skin32 Isolde Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:38.357Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin32_isolde_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    },
+    {
+      "name": "Gradient_test_02.tex",
+      "updatedAt": "2026-04-17T18:05:38.349Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin32",
+    "bin": "data/characters/viego/skins/skin32.bin",
+    "entryKey": "Characters/Viego/Skins/Skin32/Materials/Viego_Skin32_Isolde_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin32",
+      "bin": "data/characters/viego/skins/skin32.bin"
+    }
+  ]
+}

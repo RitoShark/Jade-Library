@@ -1,0 +1,48 @@
+{
+  "id": "velkoz-skin26-fresnel-glass-inst",
+  "name": "Velkoz Skin26 Fresnel Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:38.259Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_velkoz_skin26_fresnel_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:38.251Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:38.251Z"
+    },
+    {
+      "name": "Velkoz_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:04:38.251Z"
+    },
+    {
+      "name": "Velkoz_Skin20_Body_Alpha1.tex",
+      "updatedAt": "2026-04-17T18:04:38.251Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Velkoz",
+    "skin": "skin26",
+    "bin": "data/characters/velkoz/skins/skin26.bin",
+    "entryKey": "Characters/Velkoz/Skins/Skin26/Materials/Velkoz_Skin26_Fresnel_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Velkoz",
+      "skin": "skin26",
+      "bin": "data/characters/velkoz/skins/skin26.bin"
+    }
+  ]
+}

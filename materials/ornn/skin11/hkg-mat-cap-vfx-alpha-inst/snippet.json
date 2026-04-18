@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-vfx-alpha-inst",
+  "name": "Hkg Mat Cap Vfx Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.771Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_vfx_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Ornn_Skin11_MatCap_Bubble_04.tex",
+      "updatedAt": "2026-04-17T17:44:55.766Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:55.766Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin11",
+    "bin": "data/ornn_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18_skins_skin19.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin11/Materials/HKG_MatCap_VFX_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin11",
+      "bin": "data/ornn_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18_skins_skin19.bin"
+    }
+  ]
+}

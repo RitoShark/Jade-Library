@@ -1,0 +1,40 @@
+{
+  "id": "dissolve-mat",
+  "name": "Dissolve Mat",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.142Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_mat",
+  "textureFiles": [
+    {
+      "name": "3026_Base_Mask01.tex",
+      "updatedAt": "2026-04-17T17:59:45.136Z"
+    },
+    {
+      "name": "Blank.tex",
+      "updatedAt": "2026-04-17T17:59:45.136Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin21",
+    "bin": "data/characters/taliyah/skins/skin21.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin21/Materials/Dissolve_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin21",
+      "bin": "data/characters/taliyah/skins/skin21.bin"
+    }
+  ]
+}

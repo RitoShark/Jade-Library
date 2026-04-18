@@ -1,0 +1,44 @@
+{
+  "id": "snowball-cosmic-inst",
+  "name": "Snowball Cosmic Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.374Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_snowball_cosmic_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin35_R_StarryBackdrop_02.tex",
+      "updatedAt": "2026-04-17T17:44:08.369Z"
+    },
+    {
+      "name": "blackbox.tex",
+      "updatedAt": "2026-04-17T17:44:08.369Z"
+    },
+    {
+      "name": "3161color-hold.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:44:08.369Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin35",
+    "bin": "4535f69c9014127e.bin",
+    "entryKey": "Characters/NunuSnowball/Skins/Skin35/Materials/Snowball_Cosmic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin35",
+      "bin": "4535f69c9014127e.bin"
+    }
+  ]
+}

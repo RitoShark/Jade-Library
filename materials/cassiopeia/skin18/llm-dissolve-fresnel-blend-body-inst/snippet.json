@@ -1,0 +1,50 @@
+{
+  "id": "llm-dissolve-fresnel-blend-body-inst",
+  "name": "Llm Dissolve Fresnel Blend Body Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:03.659Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_llm_dissolve_fresnel_blend_body_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    },
+    {
+      "name": "Cassiopeia_Skin18_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    },
+    {
+      "name": "Base_alphaslice_mesh.SRT_Teleport.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:14:03.653Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Cassiopeia",
+    "skin": "skin18",
+    "bin": "data/characters/cassiopeia/skins/skin18.bin",
+    "entryKey": "Characters/Cassiopeia/Skins/Skin18/Materials/LLM_Dissolve_Fresnel_Blend_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Cassiopeia",
+      "skin": "skin18",
+      "bin": "data/characters/cassiopeia/skins/skin18.bin"
+    }
+  ]
+}

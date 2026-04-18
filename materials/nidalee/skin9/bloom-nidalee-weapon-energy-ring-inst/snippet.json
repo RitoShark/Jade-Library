@@ -1,0 +1,36 @@
+{
+  "id": "bloom-nidalee-weapon-energy-ring-inst",
+  "name": "Bloom Nidalee Weapon Energy Ring Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:05.976Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_nidalee_weapon_energy_ring_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin09_Material_Mask_Weapon.VFX_VU_Nidalee.tex",
+      "updatedAt": "2026-04-17T17:43:05.969Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin9",
+    "bin": "data/characters/nidalee/skins/skin9.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin9/Materials/Bloom_Nidalee_Weapon_Energy_Ring_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin9",
+      "bin": "data/characters/nidalee/skins/skin9.bin"
+    }
+  ]
+}

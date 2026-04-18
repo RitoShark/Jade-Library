@@ -1,0 +1,36 @@
+{
+  "id": "bloom-collar-inst",
+  "name": "Bloom Collar Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:14.241Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_collar_inst",
+  "textureFiles": [
+    {
+      "name": "Jax_Skin22_Material_Mask_02.tex",
+      "updatedAt": "2026-04-17T17:24:14.236Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin26",
+    "bin": "data/characters/jax/skins/skin26.bin",
+    "entryKey": "Characters/Jax/Skins/Skin26/Materials/Bloom_Collar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin26",
+      "bin": "data/characters/jax/skins/skin26.bin"
+    }
+  ]
+}

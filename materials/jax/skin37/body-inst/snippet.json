@@ -1,0 +1,48 @@
+{
+  "id": "body-inst",
+  "name": "Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:19.287Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:19.282Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:19.282Z"
+    },
+    {
+      "name": "Jax_Skin37_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:24:19.282Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:19.282Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin37",
+    "bin": "data/characters/jax/skins/skin37.bin",
+    "entryKey": "Characters/Jax/Skins/Skin37/Materials/Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin37",
+      "bin": "data/characters/jax/skins/skin37.bin"
+    }
+  ]
+}

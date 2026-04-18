@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:05.411Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Rell_Skin29_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:05.406Z"
+    },
+    {
+      "name": "Rell_Skin20_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:05.406Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:48:05.406Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rell",
+    "skin": "skin29",
+    "bin": "data/characters/rell/skins/skin29.bin",
+    "entryKey": "Characters/Rell/Skins/Skin29/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rell",
+      "skin": "skin29",
+      "bin": "data/characters/rell/skins/skin29.bin"
+    }
+  ]
+}

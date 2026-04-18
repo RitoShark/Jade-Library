@@ -1,0 +1,73 @@
+"jadelib_diffuse_bloom_x4_channel_inst" = StaticMaterialDef {
+    name: string = "jadelib_diffuse_bloom_x4_channel_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Mask"
+            texturePath: string = "assets/jadelib/diffuse-bloom-x4-channel-inst/Varus_Skin16_Idle_GlowMask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Channel_R"
+            value: vec4 = { 0, 1, 0.7019608020782471, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Channel_G"
+            value: vec4 = { 0.6666666865348816, 0.1882352977991104, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Channel_B"
+            value: vec4 = { 0, 0, 0.6700000166893005, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Channel_A"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Bloom_X4_channel"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

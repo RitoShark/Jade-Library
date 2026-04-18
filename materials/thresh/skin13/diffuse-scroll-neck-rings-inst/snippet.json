@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-scroll-neck-rings-inst",
+  "name": "Diffuse Scroll Neck Rings Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:12.887Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_scroll_neck_rings_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin13",
+    "bin": "data/characters/thresh/skins/skin13.bin",
+    "entryKey": "Characters/Thresh/Skins/Skin13/Materials/Diffuse_Scroll_Neck_Rings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin13",
+      "bin": "data/characters/thresh/skins/skin13.bin"
+    }
+  ]
+}

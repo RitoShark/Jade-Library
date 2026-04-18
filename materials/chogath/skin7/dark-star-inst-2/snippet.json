@@ -1,0 +1,49 @@
+{
+  "id": "dark-star-inst-2",
+  "name": "Dark Star Inst 2",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:28.079Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_inst_2",
+  "textureFiles": [
+    {
+      "name": "stars.tex",
+      "updatedAt": "2026-04-17T17:14:23.861Z"
+    },
+    {
+      "name": "ChoGath_Skin07_TX_MASK.tex",
+      "updatedAt": "2026-04-17T17:14:23.861Z"
+    },
+    {
+      "name": "ChoGath_Skin07_TX_Mask_Fesnel.tex",
+      "updatedAt": "2026-04-17T17:14:23.861Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Chogath",
+    "skin": "skin7",
+    "bin": "data/characters/chogath/skins/skin7.bin",
+    "entryKey": "Characters/Chogath/Skins/Skin7/Materials/DarkStar_inst_2"
+  },
+  "usedBy": [
+    {
+      "champion": "Chogath",
+      "skin": "skin7",
+      "bin": "data/characters/chogath/skins/skin7.bin"
+    },
+    {
+      "champion": "Ruby_Chogath",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_chogath/skins/skin0.bin"
+    }
+  ]
+}

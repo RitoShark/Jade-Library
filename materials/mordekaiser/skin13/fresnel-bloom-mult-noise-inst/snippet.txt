@@ -1,0 +1,72 @@
+"jadelib_fresnel_bloom_mult_noise_inst" = StaticMaterialDef {
+    name: string = "jadelib_fresnel_bloom_mult_noise_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/fresnel-bloom-mult-noise-inst/Mordekaiser_Z_MaterialMask_05.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/fresnel-bloom-mult-noise-inst/color-hold.tex"
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.17499999701976776, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MultUVs"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.6666666865348816, 0.7137255072593689, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaAmount"
+            value: vec4 = { 2.924999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloommultamount"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LerpSpeed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Fresnel_Bloom_Mult_Noise"
+                    shaderMacros: map[string,string] = {
+                        "SKINNED_MATERIAL_ADDITIVE" = "1"
+                    }
+                    depthEnable: bool = false
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    dstColorBlendFactor: u32 = 1
+                    dstAlphaBlendFactor: u32 = 1
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rell-vfxneck-inst",
+  "name": "Rell Vfxneck Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:05.644Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rell_vfxneck_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rell",
+    "skin": "skin20",
+    "bin": "ea99feafec224568.bin",
+    "entryKey": "Characters/Rell/Skins/Skin20/Materials/Rell_VFXNeck_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rell",
+      "skin": "skin20",
+      "bin": "ea99feafec224568.bin"
+    }
+  ]
+}

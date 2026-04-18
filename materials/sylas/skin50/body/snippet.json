@@ -1,0 +1,44 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:29.877Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin50_stars.Chroma_Sylas_DarkStar.tex",
+      "updatedAt": "2026-04-17T17:58:29.871Z"
+    },
+    {
+      "name": "Sylas_Skin46_Body_MaskSet_01_TX_CM.SKINS_Sylas_Skin46.tex",
+      "updatedAt": "2026-04-17T17:58:29.871Z"
+    },
+    {
+      "name": "Sylas_Skin46_Body_MaskSet_02_TX_CM.SKINS_Sylas_Skin46.tex",
+      "updatedAt": "2026-04-17T17:58:29.871Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin50",
+    "bin": "data/characters/sylas/skins/skin50.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin50/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin50",
+      "bin": "data/characters/sylas/skins/skin50.bin"
+    }
+  ]
+}

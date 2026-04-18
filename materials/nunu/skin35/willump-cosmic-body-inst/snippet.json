@@ -1,0 +1,44 @@
+{
+  "id": "willump-cosmic-body-inst",
+  "name": "Willump Cosmic Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:09.613Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_willump_cosmic_body_inst",
+  "textureFiles": [
+    {
+      "name": "Nunu_Skin35_galaxy_pink02.tex",
+      "updatedAt": "2026-04-17T17:44:09.606Z"
+    },
+    {
+      "name": "Willump_Skin35_FX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:09.606Z"
+    },
+    {
+      "name": "Willump_Skin35_TX_alpha.tex",
+      "updatedAt": "2026-04-17T17:44:09.606Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin35",
+    "bin": "data/characters/nunu/skins/skin35.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin35/Materials/Willump_Cosmic_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin35",
+      "bin": "data/characters/nunu/skins/skin35.bin"
+    }
+  ]
+}

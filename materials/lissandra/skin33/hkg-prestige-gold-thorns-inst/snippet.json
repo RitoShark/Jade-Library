@@ -1,0 +1,56 @@
+{
+  "id": "hkg-prestige-gold-thorns-inst",
+  "name": "Hkg Prestige Gold Thorns Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:32.008Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_prestige_gold_thorns_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:32.002Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin33",
+    "bin": "data/characters/lissandra/skins/skin33.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin33/Materials/HKG_Prestige_Gold_Thorns_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin33",
+      "bin": "data/characters/lissandra/skins/skin33.bin"
+    }
+  ]
+}

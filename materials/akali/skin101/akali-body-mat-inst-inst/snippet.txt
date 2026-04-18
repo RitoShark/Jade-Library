@@ -1,0 +1,195 @@
+"jadelib_akali_body_mat_inst_inst" = StaticMaterialDef {
+    name: string = "jadelib_akali_body_mat_inst_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Gradient_Texture"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/Gradient_test_01.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/Base_plasma_noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/Akali_Skin101_Body_Mask_TX_CM.Chroma_Akali_SpiritBlossom_Paragon.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/matcap_iridescent.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/Akali_Holo_Gradient.Chroma_Akali_SpiritBlossom_Paragon.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/Noise04.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Flowmap"
+            texturePath: string = "assets/jadelib/akali-body-mat-inst-inst/flowmap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Sharpness"
+            value: vec4 = { 0.0010000000474974513, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Sharpness"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 1.7200000286102295, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapSpecularPower"
+            value: vec4 = { 2.924999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapSpecularTintColor"
+            value: vec4 = { 0.7814908027648926, 0.17906461656093597, 0.877927839756012, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Strength"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Value"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Power"
+            value: vec4 = { 0.9599999785423279, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Normal_Blend"
+            value: vec4 = { 0.8125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holo_Strength"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holo_Gradient_Contrast"
+            value: vec4 = { 15.240047454833984, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseNoiseUVTile"
+            value: vec4 = { 1.2000000476837158, 1.2000000476837158, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseNoiseScrollSpeed"
+            value: vec4 = { 0.05000000074505806, -0.03999999910593033, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "NoiseStrength"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flowspeed"
+            value: vec4 = { 0.6499999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.512499988079071, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE"
+            on: bool = false
+            Group: string = "Dissolve"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FRESNEL_MASK_HOLOGRAPHIC"
+            on: bool = false
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+            Group: string = "Mat Cap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            Group: string = "Mat Cap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            Group: string = "Iridescent"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENT_MASK_ON"
+            Group: string = "Iridescent"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLOGRAPHIC_ON"
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLOGRAPHIC_MASK_ON"
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWMAP_ON"
+            Group: string = "Holographic"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Matcap_Iridescent_Holographic"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

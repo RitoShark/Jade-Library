@@ -1,0 +1,208 @@
+"jadelib_iridesence_mask_bloom_inst" = StaticMaterialDef {
+    name: string = "jadelib_iridesence_mask_bloom_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/iridesence-mask-bloom-inst/Default_Gradient.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/iridesence-mask-bloom-inst/Warwick_Skin45_TX_Body.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Film_Depth"
+            value: vec4 = { 0.19249999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Power"
+            value: vec4 = { 2.2750000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Specular_Power"
+            value: vec4 = { 6.650000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed"
+            value: vec4 = { 0.05000000074505806, 0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.003921568859368563, 0.43529412150382996, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mult_Intensity"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 2.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLUE_CHANNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_GREEN_CHANNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_RED_CHANNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "GRADIENT_SWAP"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Iridesence_Mask_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "LilliaPranceMaterial"
+                    }
+                    mColorOff: vec4 = { 0.14901961386203766, 1, 0.7882353067398071, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Mask_Power"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "LilliaPranceMaterial"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.75
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Mult_Intensity"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "LilliaPranceMaterial"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 2.25
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 2
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Scroll_Speed"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "LilliaPranceMaterial"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.15000000596046448
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "LilliaPranceMaterial"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 2
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Gradient_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "LilliaPranceMaterial"
+                        }
+                        TextureName: string = "ASSETS/Characters/Lillia/Skins/Base/Lillia_Base_Mat_Gradient_Empowered.tex"
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "GRADIENT_SWAP"
+            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                mScriptName: string = "LilliaPranceMaterial"
+            }
+        }
+    }
+}

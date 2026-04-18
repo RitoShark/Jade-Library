@@ -1,0 +1,64 @@
+{
+  "id": "zac-neon-ult-inst",
+  "name": "Zac Neon Ult Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:43.113Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zac_neon_ult_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "Zac_Skin14_R_Ult_Texture.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "Zac_Skin14_R_Ult_Texture.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:43.106Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin14",
+    "bin": "data/characters/zac/skins/skin14.bin",
+    "entryKey": "Characters/Zac/Skins/Skin14/Materials/Zac_Neon_Ult_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin14",
+      "bin": "data/characters/zac/skins/skin14.bin"
+    }
+  ]
+}

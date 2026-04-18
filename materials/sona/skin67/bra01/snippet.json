@@ -1,0 +1,68 @@
+{
+  "id": "bra01",
+  "name": "Bra01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:26.395Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bra01",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin66_Bra_TurbulDeform.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "Sona_Skin66_MaskBody_TX_CM01.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "Sona_Skin66_WaterShapeMask.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "Sona_Skin66_BraAdditiveScrollCombo_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "Ahri_Skin88_Vertex_Deform_Noise_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:26.389Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin67",
+    "bin": "data/characters/sona/skins/skin67.bin",
+    "entryKey": "Characters/Sona/Skins/Skin67/Materials/Bra01"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin67",
+      "bin": "data/characters/sona/skins/skin67.bin"
+    }
+  ]
+}

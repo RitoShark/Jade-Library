@@ -1,0 +1,44 @@
+{
+  "id": "garen-skin51-eyes",
+  "name": "Garen Skin51 Eyes",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:05.808Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_garen_skin51_eyes",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Garen_Skin46.tex",
+      "updatedAt": "2026-04-17T17:20:05.802Z"
+    },
+    {
+      "name": "Garen_Skin46_EyesMask_TX_CM.SKINS_Garen_Skin46.tex",
+      "updatedAt": "2026-04-17T17:20:05.802Z"
+    },
+    {
+      "name": "JarvanIV_Skin35_Eyes_Blink_TX_CM.SKINS_Garen_Skin46.tex",
+      "updatedAt": "2026-04-17T17:20:05.802Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin51",
+    "bin": "data/characters/garen/skins/skin51.bin",
+    "entryKey": "Characters/Garen/Skins/Skin51/Materials/Garen_Skin51_Eyes"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin51",
+      "bin": "data/characters/garen/skins/skin51.bin"
+    }
+  ]
+}

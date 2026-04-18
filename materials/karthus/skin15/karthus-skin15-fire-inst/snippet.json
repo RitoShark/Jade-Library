@@ -1,0 +1,36 @@
+{
+  "id": "karthus-skin15-fire-inst",
+  "name": "Karthus Skin15 Fire Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:09.604Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_karthus_skin15_fire_inst",
+  "textureFiles": [
+    {
+      "name": "Karthus_Skin10_Material_02.tex",
+      "updatedAt": "2026-04-17T17:28:09.598Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karthus",
+    "skin": "skin15",
+    "bin": "data/characters/karthus/skins/skin15.bin",
+    "entryKey": "Characters/Karthus/Skins/Skin15/Materials/Karthus_Skin15_Fire_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karthus",
+      "skin": "skin15",
+      "bin": "data/characters/karthus/skins/skin15.bin"
+    }
+  ]
+}

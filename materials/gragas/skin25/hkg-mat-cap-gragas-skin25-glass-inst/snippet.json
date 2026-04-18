@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-gragas-skin25-glass-inst",
+  "name": "Hkg Mat Cap Gragas Skin25 Glass Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:36.992Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_gragas_skin25_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin25_Glass_CM.tex",
+      "updatedAt": "2026-04-17T17:20:36.987Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:36.987Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin25",
+    "bin": "data/characters/gragas/skins/skin25.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin25/Materials/HKG_MatCap_Gragas_Skin25_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin25",
+      "bin": "data/characters/gragas/skins/skin25.bin"
+    }
+  ]
+}

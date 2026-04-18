@@ -1,0 +1,52 @@
+{
+  "id": "prestige-surf-diamond-inst",
+  "name": "Prestige Surf Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:10.015Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_surf_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:49:10.009Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:49:10.009Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:49:10.009Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:49:10.009Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:49:10.009Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Riven",
+    "skin": "skin55",
+    "bin": "data/characters/riven/skins/skin55.bin",
+    "entryKey": "Characters/Riven/Skins/Skin55/Materials/Prestige_Surf_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Riven",
+      "skin": "skin55",
+      "bin": "data/characters/riven/skins/skin55.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "nidalee-skin57-cougar-body-metal-inst",
+  "name": "Nidalee Skin57 Cougar Body Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:10.007Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_skin57_cougar_body_metal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    },
+    {
+      "name": "Nidalee_Skin48_RMA.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:43:09.999Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin57",
+    "bin": "data/characters/nidaleecougar/skins/skin57.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin57/Materials/Nidalee_Skin57_Cougar_Body_Metal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin57",
+      "bin": "data/characters/nidaleecougar/skins/skin57.bin"
+    }
+  ]
+}

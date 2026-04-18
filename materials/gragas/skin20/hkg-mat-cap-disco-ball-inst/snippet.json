@@ -1,0 +1,30 @@
+{
+  "id": "hkg-mat-cap-disco-ball-inst",
+  "name": "Hkg Mat Cap Disco Ball Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:37.939Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_mat_cap_disco_ball_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin20_Matcap.tex",
+      "updatedAt": "2026-04-17T17:20:37.932Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin20",
+    "bin": "data/gragas_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin20/Materials/HKG_MatCap_DiscoBall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin20",
+      "bin": "data/gragas_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin"
+    }
+  ]
+}

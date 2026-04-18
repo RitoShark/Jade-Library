@@ -1,0 +1,52 @@
+{
+  "id": "hair-vfx-inst",
+  "name": "Hair Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:19.177Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:19.171Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:19.171Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:19.171Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:19.171Z"
+    },
+    {
+      "name": "Diana_Skin48_Z_Material_VFX_Hair_Mask_01.tex",
+      "updatedAt": "2026-04-17T17:15:19.171Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin48",
+    "bin": "data/characters/diana/skins/skin48.bin",
+    "entryKey": "Characters/Diana/Skins/Skin48/Materials/Hair_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin48",
+      "bin": "data/characters/diana/skins/skin48.bin"
+    }
+  ]
+}

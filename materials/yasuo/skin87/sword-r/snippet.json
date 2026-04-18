@@ -1,0 +1,44 @@
+{
+  "id": "sword-r",
+  "name": "Sword R",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:18.292Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sword_r",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:09:18.281Z"
+    },
+    {
+      "name": "Yasuo_Skin87_FresnelMask_R_Test_TX_CM.SKINS_Yasuo_Skin87.tex",
+      "updatedAt": "2026-04-17T18:09:18.281Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:18.281Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin87",
+    "bin": "data/characters/yasuo/skins/skin87.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin87/Materials/Sword_R"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin87",
+      "bin": "data/characters/yasuo/skins/skin87.bin"
+    }
+  ]
+}

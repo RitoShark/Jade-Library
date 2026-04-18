@@ -1,0 +1,60 @@
+{
+  "id": "kaisa-skin71-cannons-crystals-mat-inst",
+  "name": "Kaisa Skin71 Cannons Crystals Mat Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:39.209Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin71_cannons_crystals_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Cannons_Panning_Mask_MAT_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Kaisa_Skin71_CapeTest_Noise.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Kaisa_Skin71_CapeTest_FlowMapMin.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Cannons_Holes_Mask_MAT_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    },
+    {
+      "name": "Kaisa_Skin71_CannonsCystal_Gradient_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.191Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin71",
+    "bin": "data/characters/kaisa/skins/skin71.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin71/Materials/Kaisa_Skin71_Cannons_Crystals_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin71",
+      "bin": "data/characters/kaisa/skins/skin71.bin"
+    }
+  ]
+}

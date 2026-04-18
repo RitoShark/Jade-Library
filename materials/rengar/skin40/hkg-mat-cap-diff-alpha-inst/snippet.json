@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:51.016Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Rengar_Skin40_MatCap_ToonPlastic_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:51.010Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:51.010Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rengar",
+    "skin": "skin40",
+    "bin": "data/characters/rengar/skins/skin40.bin",
+    "entryKey": "Characters/Rengar/Skins/Skin40/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rengar",
+      "skin": "skin40",
+      "bin": "data/characters/rengar/skins/skin40.bin"
+    }
+  ]
+}

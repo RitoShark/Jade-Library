@@ -1,0 +1,44 @@
+{
+  "id": "crytals-inst",
+  "name": "Crytals Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:58.013Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crytals_inst",
+  "textureFiles": [
+    {
+      "name": "MissFortune_Skin60_Material_05.SKINS_MissFortune_Skin60.tex",
+      "updatedAt": "2026-04-17T17:38:58.007Z"
+    },
+    {
+      "name": "MissFortune_Skin60_Mask_05.SKINS_MissFortune_Skin60.tex",
+      "updatedAt": "2026-04-17T17:38:58.007Z"
+    },
+    {
+      "name": "MissFortune_Skin60_Mask_05.SKINS_MissFortune_Skin60.tex",
+      "updatedAt": "2026-04-17T17:38:58.007Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin60",
+    "bin": "data/characters/missfortune/skins/skin60.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin60/Materials/Crytals_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin60",
+      "bin": "data/characters/missfortune/skins/skin60.bin"
+    }
+  ]
+}

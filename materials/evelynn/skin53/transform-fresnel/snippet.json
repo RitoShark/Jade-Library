@@ -1,0 +1,34 @@
+{
+  "id": "transform-fresnel",
+  "name": "Transform Fresnel",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.257Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_transform_fresnel",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin53_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:20.249Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:20.249Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin53",
+    "bin": "data/characters/evelynn/skins/skin53.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin53/Materials/Transform_Fresnel"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin53",
+      "bin": "data/characters/evelynn/skins/skin53.bin"
+    }
+  ]
+}

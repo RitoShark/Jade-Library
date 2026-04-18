@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:20.148Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin17_Idle_hand_4.tex",
+      "updatedAt": "2026-04-17T18:03:20.143Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin18",
+    "bin": "data/characters/varus/skins/skin18.bin",
+    "entryKey": "Characters/Varus/Skins/Skin18/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin18",
+      "bin": "data/characters/varus/skins/skin18.bin"
+    }
+  ]
+}

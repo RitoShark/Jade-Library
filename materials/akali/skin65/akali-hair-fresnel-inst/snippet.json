@@ -1,0 +1,64 @@
+{
+  "id": "akali-hair-fresnel-inst",
+  "name": "Akali Hair Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:55.195Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akali_hair_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "Akali_Skin61_Hair_Star.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "Akali_Skin61_Hair_TX.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:55.190Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin65",
+    "bin": "data/characters/akali/skins/skin65.bin",
+    "entryKey": "Characters/Akali/Skins/Skin65/Materials/Akali_Hair_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin65",
+      "bin": "data/characters/akali/skins/skin65.bin"
+    }
+  ]
+}

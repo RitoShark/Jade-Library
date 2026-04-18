@@ -1,0 +1,36 @@
+{
+  "id": "bloom-spike-inst",
+  "name": "Bloom Spike Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:33.152Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_spike_inst",
+  "textureFiles": [
+    {
+      "name": "Rammus_skin17_Horn_idle_4.tex",
+      "updatedAt": "2026-04-17T17:47:33.145Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rammus",
+    "skin": "skin17",
+    "bin": "data/characters/rammus/skins/skin17.bin",
+    "entryKey": "Characters/Rammus/Skins/Skin17/Materials/Bloom_Spike_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rammus",
+      "skin": "skin17",
+      "bin": "data/characters/rammus/skins/skin17.bin"
+    }
+  ]
+}

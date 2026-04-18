@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-weapon-inst",
+  "name": "Alpha Blend Additive Scroll Weapon Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:02.290Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:32:02.276Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:32:02.276Z"
+    },
+    {
+      "name": "KSante_Base_Weapons_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:32:02.276Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:32:02.276Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KSante",
+    "skin": "skin0",
+    "bin": "data/characters/ksante/skins/skin0.bin",
+    "entryKey": "Characters/KSante/Skins/Skin0/Materials/AlphaBlend_Additive_Scroll_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KSante",
+      "skin": "skin0",
+      "bin": "data/characters/ksante/skins/skin0.bin"
+    }
+  ]
+}

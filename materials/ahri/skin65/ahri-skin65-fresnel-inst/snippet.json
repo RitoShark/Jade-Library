@@ -1,0 +1,40 @@
+{
+  "id": "ahri-skin65-fresnel-inst",
+  "name": "Ahri Skin65 Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:56.331Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_skin65_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin65_Gold.tex",
+      "updatedAt": "2026-04-17T17:06:56.325Z"
+    },
+    {
+      "name": "Ahri_Skin65_BodyMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:56.325Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin65",
+    "bin": "data/characters/ahri/skins/skin65.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin65/Materials/Ahri_Skin65_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin65",
+      "bin": "data/characters/ahri/skins/skin65.bin"
+    }
+  ]
+}

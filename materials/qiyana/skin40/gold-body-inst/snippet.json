@@ -1,0 +1,55 @@
+{
+  "id": "gold-body-inst",
+  "name": "Gold Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:01.015Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_gold_body_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    },
+    {
+      "name": "Qiyana_Skin40_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    },
+    {
+      "name": "Qiyana_Skin40_colorGrad_05.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    },
+    {
+      "name": "Qiyana_Skin40_Gold_Texturemult.tex",
+      "updatedAt": "2026-04-17T17:46:40.190Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin40",
+    "bin": "data/characters/qiyana/skins/skin40.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin40/Materials/Gold_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin40",
+      "bin": "data/characters/qiyana/skins/skin40.bin"
+    },
+    {
+      "champion": "Zoe",
+      "skin": "skin22",
+      "bin": "data/characters/zoe/skins/skin22.bin"
+    }
+  ]
+}

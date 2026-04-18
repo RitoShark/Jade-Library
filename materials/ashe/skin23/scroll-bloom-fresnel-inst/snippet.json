@@ -1,0 +1,31 @@
+{
+  "id": "scroll-bloom-fresnel-inst",
+  "name": "Scroll Bloom Fresnel Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:01.762Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scroll_bloom_fresnel_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin23",
+    "bin": "data/characters/ashe/skins/skin23.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin23/Materials/ScrollBloomFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin23",
+      "bin": "data/characters/ashe/skins/skin23.bin"
+    }
+  ]
+}

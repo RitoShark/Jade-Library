@@ -1,0 +1,42 @@
+{
+  "id": "ornn-skin0-staticdef",
+  "name": "Ornn Skin0 Staticdef",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:54.186Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_ornn_skin0_staticdef",
+  "textureFiles": [
+    {
+      "name": "Ornn_Base_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:44:54.175Z"
+    },
+    {
+      "name": "Ornn_Base_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:54.175Z"
+    },
+    {
+      "name": "ramp3.tex",
+      "updatedAt": "2026-04-17T17:44:54.175Z"
+    },
+    {
+      "name": "Ornn_Base_TX_Mask2.tex",
+      "updatedAt": "2026-04-17T17:44:54.175Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin0",
+    "bin": "6faa02d15a02bbc4.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin0/Materials/OrnnSkin0_staticdef"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin0",
+      "bin": "6faa02d15a02bbc4.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "aircraft-base-alpha-mult-inst",
+  "name": "Aircraft Base Alpha Mult Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:15.484Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aircraft_base_alpha_mult_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin45",
+    "bin": "data/characters/janna/skins/skin45.bin",
+    "entryKey": "Characters/Janna/Skins/Skin45/Materials/Aircraft_Base_Alpha_mult_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin45",
+      "bin": "data/characters/janna/skins/skin45.bin"
+    }
+  ]
+}

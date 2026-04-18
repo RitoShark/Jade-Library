@@ -1,0 +1,44 @@
+{
+  "id": "akshan-gun-crystal-mat-inst",
+  "name": "Akshan Gun Crystal Mat Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:05.138Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akshan_gun_crystal_mat_inst",
+  "textureFiles": [
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:08:05.132Z"
+    },
+    {
+      "name": "Material_Mask_4.tex",
+      "updatedAt": "2026-04-17T17:08:05.132Z"
+    },
+    {
+      "name": "Material_Mask_3.tex",
+      "updatedAt": "2026-04-17T17:08:05.132Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin11",
+    "bin": "data/characters/akshan/skins/skin11.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin11/Materials/Akshan_Gun_Crystal_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin11",
+      "bin": "data/characters/akshan/skins/skin11.bin"
+    }
+  ]
+}

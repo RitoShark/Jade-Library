@@ -1,0 +1,160 @@
+"jadelib_hkg_world_breaker_skin_poro_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_world_breaker_skin_poro_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hkg-world-breaker-skin-poro-inst/YorickGhoulMelee_Skin30_TX_CM_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.4274509847164154, 0.35686275362968445, 0.0784313753247261, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Area"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Color"
+            value: vec4 = { 1.7999999523162842, 0.5, 0.15000000596046448, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Frequcey"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Stream"
+            value: vec4 = { -0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Color"
+            value: vec4 = { 0, 0.33000001311302185, 0.33000001311302185, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Pissive"
+            value: vec4 = { 0, 0.30000001192092896, 0.800000011920929, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Pissive"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pissive_Hand"
+            value: vec4 = { 0.05000000074505806, 1, 0.6000000238418579, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Brightness_Color"
+            value: vec4 = { 1, 0.3330000042915344, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_1"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_2"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Direction"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "PASSIVE_SWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MALZAHAR_SWITCH"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM_SWITCH"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_WorldBreakerSkin_Common"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        mTurnOnTimeSec: f32 = 2
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            -0.0020325202494859695
+                            0.24796748161315918
+                            0.5630081295967102
+                            1.0040650367736816
+                        }
+                        values: list[f32] = {
+                            1.504424810409546
+                            1
+                            0.22566372156143188
+                            -0.11946902424097061
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

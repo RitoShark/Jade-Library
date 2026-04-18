@@ -1,0 +1,60 @@
+{
+  "id": "lux-skin54-body-toon-shading-inst",
+  "name": "Lux Skin54 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.638Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lux_skin54_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    },
+    {
+      "name": "Gradient_Water_01.tex",
+      "updatedAt": "2026-04-17T17:35:59.633Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin54",
+    "bin": "data/characters/lux/skins/skin54.bin",
+    "entryKey": "Characters/Lux/Skins/Skin54/Materials/Lux_Skin54_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin54",
+      "bin": "data/characters/lux/skins/skin54.bin"
+    }
+  ]
+}

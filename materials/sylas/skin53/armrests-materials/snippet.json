@@ -1,0 +1,48 @@
+{
+  "id": "armrests-materials",
+  "name": "Armrests Materials",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:30.271Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_armrests_materials",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin53_Chain_Lock_Mask_B_TX_CM.SKINS_Sylas_Skin53.tex",
+      "updatedAt": "2026-04-17T17:58:30.265Z"
+    },
+    {
+      "name": "Sylas_Base_Body_tatto_mult2.SKINS_Sylas_Skin53.tex",
+      "updatedAt": "2026-04-17T17:58:30.265Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:30.265Z"
+    },
+    {
+      "name": "Sylas_Base_W_white_RGB.SKINS_Sylas_Skin53.tex",
+      "updatedAt": "2026-04-17T17:58:30.265Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin53",
+    "bin": "data/characters/sylas/skins/skin53.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin53/Materials/Armrests_Materials"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin53",
+      "bin": "data/characters/sylas/skins/skin53.bin"
+    }
+  ]
+}

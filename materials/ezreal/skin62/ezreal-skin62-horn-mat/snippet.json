@@ -1,0 +1,64 @@
+{
+  "id": "ezreal-skin62-horn-mat",
+  "name": "Ezreal Skin62 Horn Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:00.973Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ezreal_skin62_horn_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "Ezreal_Skin44_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "Ezreal_Skin44_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:00.966Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin62",
+    "bin": "data/characters/ezreal/skins/skin62.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin62/Materials/Ezreal_Skin62_Horn_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin62",
+      "bin": "data/characters/ezreal/skins/skin62.bin"
+    }
+  ]
+}

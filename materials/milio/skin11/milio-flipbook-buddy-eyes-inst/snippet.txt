@@ -1,0 +1,89 @@
+"jadelib_milio_flipbook_buddy_eyes_inst" = StaticMaterialDef {
+    name: string = "jadelib_milio_flipbook_buddy_eyes_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlipbookBlend_Tex"
+            texturePath: string = "assets/jadelib/milio-flipbook-buddy-eyes-inst/MilioMinion_Skin11_Firebuddy_Eyes_TX_CM.SKINS_Milio_Skin11.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FinalAlpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlipbookAnimSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BlendTexUV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlipbookSize"
+            value: vec4 = { 4, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FrameIndex"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ClipAlpha_Value"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TINTCOLOR_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLIPBOOK_ANIMATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHACLIP_ON"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Flipbook_Frame_Select"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "FrameIndex"
+                driver: pointer = KeyFrameFloatClipReaderDriver {
+                    ClipAccessoryToRead: hash = "3398764981"
+                }
+            }
+        }
+    }
+}

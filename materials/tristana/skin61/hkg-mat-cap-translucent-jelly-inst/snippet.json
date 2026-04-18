@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-jelly-inst",
+  "name": "Hkg Mat Cap Translucent Jelly Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:33.218Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_jelly_inst",
+  "textureFiles": [
+    {
+      "name": "Tristana_Skin61_MatCap.SKINS_Tristana_Skin61.tex",
+      "updatedAt": "2026-04-17T18:01:33.212Z"
+    },
+    {
+      "name": "Tristana_Skin61_TibbersMCBS5.SKINS_Tristana_Skin61.tex",
+      "updatedAt": "2026-04-17T18:01:33.212Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:33.212Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tristana",
+    "skin": "skin61",
+    "bin": "data/characters/tristana/skins/skin61.bin",
+    "entryKey": "Characters/Tristana/Skins/Skin61/Materials/HKG_MatCap_Translucent_Jelly_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tristana",
+      "skin": "skin61",
+      "bin": "data/characters/tristana/skins/skin61.bin"
+    }
+  ]
+}

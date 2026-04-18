@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-weapon-fresnel2-inst",
+  "name": "Multi Mask Weapon Fresnel2 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:21.686Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_weapon_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:21.680Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:21.680Z"
+    },
+    {
+      "name": "Jhin_Skin25_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:25:21.680Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:21.680Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin25",
+    "bin": "data/characters/jhin/skins/skin25.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin25/Materials/MultiMask_Weapon_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin25",
+      "bin": "data/characters/jhin/skins/skin25.bin"
+    }
+  ]
+}

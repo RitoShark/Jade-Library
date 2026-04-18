@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-mouse-inst",
+  "name": "Hkg Mat Cap Translucent Mouse Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:30.139Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_mouse_inst",
+  "textureFiles": [
+    {
+      "name": "Amumu_Skin34_TibbersApple_MC.tex",
+      "updatedAt": "2026-04-17T17:08:30.134Z"
+    },
+    {
+      "name": "Amumu_Skin34_TibbersTransCol.tex",
+      "updatedAt": "2026-04-17T17:08:30.134Z"
+    },
+    {
+      "name": "Amumu_Skin34_Rat_Mask.tex",
+      "updatedAt": "2026-04-17T17:08:30.134Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Amumu",
+    "skin": "skin34",
+    "bin": "data/characters/amumu/skins/skin34.bin",
+    "entryKey": "Characters/Amumu/Skins/Skin34/Materials/HKG_MatCap_Translucent_Mouse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Amumu",
+      "skin": "skin34",
+      "bin": "data/characters/amumu/skins/skin34.bin"
+    }
+  ]
+}

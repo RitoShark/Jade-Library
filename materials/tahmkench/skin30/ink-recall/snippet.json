@@ -1,0 +1,44 @@
+{
+  "id": "ink-recall",
+  "name": "Ink Recall",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.560Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_recall",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:59:29.551Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:29.551Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:29.551Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TahmKench",
+    "skin": "skin30",
+    "bin": "data/characters/tahmkench/skins/skin30.bin",
+    "entryKey": "Characters/TahmKench/Skins/Skin30/Materials/Ink_Recall"
+  },
+  "usedBy": [
+    {
+      "champion": "TahmKench",
+      "skin": "skin30",
+      "bin": "data/characters/tahmkench/skins/skin30.bin"
+    }
+  ]
+}

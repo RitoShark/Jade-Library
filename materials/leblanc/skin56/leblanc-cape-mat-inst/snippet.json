@@ -1,0 +1,64 @@
+{
+  "id": "leblanc-cape-mat-inst",
+  "name": "Leblanc Cape Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:34.004Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leblanc_cape_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "Leblanc_Skin55_Gold_Matcap.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "Leblanc_Skin55_Mask_Cape_02.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "Leblanc_Skin55_Iridescence_MAT_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "Leblanc_Skin55_AdditiveScrollTex_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "Leblanc_Skin55_AdditiveScrollMask_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:33.988Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin56",
+    "bin": "data/characters/leblanc/skins/skin56.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin56/Materials/Leblanc_Cape_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin56",
+      "bin": "data/characters/leblanc/skins/skin56.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-alpha-inst",
+  "name": "Diffuse Alpha Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:28.763Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin34",
+    "bin": "data/characters/sylas/skins/skin34.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin34/Materials/Diffuse_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin34",
+      "bin": "data/characters/sylas/skins/skin34.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "body-specular-fresnel-inst",
+  "name": "Body Specular Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:50.389Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_body_specular_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Belveth_Skin25_TX_CM.Chroma_BelVeth_AnimaSquad_2024.tex",
+      "updatedAt": "2026-04-17T17:11:50.383Z"
+    },
+    {
+      "name": "Belveth_Skin19_Mask_TX_CM.SKINS_Belveth_Skin19.tex",
+      "updatedAt": "2026-04-17T17:11:50.383Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:11:50.383Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Belveth",
+    "skin": "skin25",
+    "bin": "data/characters/belveth/skins/skin25.bin",
+    "entryKey": "Characters/Belveth/Skins/Skin25/Materials/Body_Specular_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Belveth",
+      "skin": "skin25",
+      "bin": "data/characters/belveth/skins/skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "diana-skin55-body-mat",
+  "name": "Diana Skin55 Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:21.881Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_diana_skin55_body_mat",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin55_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:21.873Z"
+    },
+    {
+      "name": "Diana_Skin55_Body_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:21.873Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:21.873Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin55",
+    "bin": "data/characters/diana/skins/skin55.bin",
+    "entryKey": "Characters/Diana/Skins/Skin55/Materials/Diana_Skin55_Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin55",
+      "bin": "data/characters/diana/skins/skin55.bin"
+    }
+  ]
+}

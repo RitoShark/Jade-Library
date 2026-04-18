@@ -1,0 +1,100 @@
+"jadelib_logo_outline_inst" = StaticMaterialDef {
+    name: string = "jadelib_logo_outline_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Texture"
+            texturePath: string = "assets/jadelib/logo-outline-inst/Zyra_Skin46_TX_Outline.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Thickness"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 0.15109483897686005, 0.15109483897686005, 0.5137255191802979, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_GRADIENT_COLOR"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM_MAP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA_CHANNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Outline"
+                    blendEnable: bool = true
+                    PolygonDepthBiasEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    windingToCull: u32 = 0
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Outline_Thickness"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                        mAnimationName: hash = "Recall"
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0.23136749863624573
+                            0.31814977526664734
+                            1.052828311920166
+                        }
+                        values: list[f32] = {
+                            0
+                            2.478024959564209
+                            2.478024959564209
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

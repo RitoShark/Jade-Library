@@ -1,0 +1,56 @@
+{
+  "id": "brand-balcony-prestige-inst",
+  "name": "Brand Balcony Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:27.675Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_brand_balcony_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:27.669Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Brand",
+    "skin": "skin22",
+    "bin": "data/characters/brand/skins/skin22.bin",
+    "entryKey": "Characters/Brand/Skins/Skin22/Materials/Brand_Balcony_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Brand",
+      "skin": "skin22",
+      "bin": "data/characters/brand/skins/skin22.bin"
+    }
+  ]
+}

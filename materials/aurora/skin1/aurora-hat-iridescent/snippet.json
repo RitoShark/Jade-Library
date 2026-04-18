@@ -1,0 +1,64 @@
+{
+  "id": "aurora-hat-iridescent",
+  "name": "Aurora Hat Iridescent",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:54.834Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aurora_hat_iridescent",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "Aurora_Base_Mat_Tile01.Aurora.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "Aurora_Skin01_Hat_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:54.827Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aurora",
+    "skin": "skin1",
+    "bin": "data/characters/aurora/skins/skin1.bin",
+    "entryKey": "Characters/Aurora/Skins/Skin1/Materials/Aurora_Hat_Iridescent"
+  },
+  "usedBy": [
+    {
+      "champion": "Aurora",
+      "skin": "skin1",
+      "bin": "data/characters/aurora/skins/skin1.bin"
+    }
+  ]
+}

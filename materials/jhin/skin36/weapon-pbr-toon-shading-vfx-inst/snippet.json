@@ -1,0 +1,44 @@
+{
+  "id": "weapon-pbr-toon-shading-vfx-inst",
+  "name": "Weapon Pbr Toon Shading Vfx Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:24.830Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_pbr_toon_shading_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin36_VFX_Weapon_Wings.tex",
+      "updatedAt": "2026-04-17T17:25:24.823Z"
+    },
+    {
+      "name": "Weapon_Distortion.tex",
+      "updatedAt": "2026-04-17T17:25:24.823Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:24.823Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin36",
+    "bin": "data/characters/jhin/skins/skin36.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin36/Materials/Weapon_PBR_ToonShading_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin36",
+      "bin": "data/characters/jhin/skins/skin36.bin"
+    }
+  ]
+}

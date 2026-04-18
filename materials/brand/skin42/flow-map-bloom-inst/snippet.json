@@ -1,0 +1,44 @@
+{
+  "id": "flow-map-bloom-inst",
+  "name": "Flow Map Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:29.424Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flow_map_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "CloudFM_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:12:29.418Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:12:29.418Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:29.418Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Brand",
+    "skin": "skin42",
+    "bin": "data/characters/brand/skins/skin42.bin",
+    "entryKey": "Characters/Brand/Skins/Skin42/Materials/FlowMap_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Brand",
+      "skin": "skin42",
+      "bin": "data/characters/brand/skins/skin42.bin"
+    }
+  ]
+}

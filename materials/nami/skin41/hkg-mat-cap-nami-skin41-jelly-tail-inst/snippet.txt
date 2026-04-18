@@ -1,0 +1,94 @@
+"jadelib_hkg_mat_cap_nami_skin41_jelly_tail_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_nami_skin41_jelly_tail_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_03"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-nami-skin41-jelly-tail-inst/Nami_Skin41_MatCap_Tail.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-nami-skin41-jelly-tail-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "AnimPivotPos"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShakeAtten"
+            value: vec4 = { 480, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShake"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Trans_Color"
+            value: vec4 = { 1.2000000476837158, 0.10000000149011612, 0.6000000238418579, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightPos"
+            value: vec4 = { 0, 250, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LNearAtten"
+            value: vec4 = { 100, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LFarAtten"
+            value: vec4 = { 350, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_DIFFUSE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFFUSE_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_LuLu_Skin26"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "transform-fresnel-lasher",
+  "name": "Transform Fresnel Lasher",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.054Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_transform_fresnel_lasher",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin53_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:20.047Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:20.047Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin53",
+    "bin": "data/characters/evelynn/skins/skin53.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin53/Materials/Transform_Fresnel_Lasher"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin53",
+      "bin": "data/characters/evelynn/skins/skin53.bin"
+    }
+  ]
+}

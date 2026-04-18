@@ -1,0 +1,44 @@
+{
+  "id": "ashe-skin63-bow-03-inst",
+  "name": "Ashe Skin63 Bow 03 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:03.011Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin63_bow_03_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_Skin63_Material_Texture_04.tex",
+      "updatedAt": "2026-04-17T17:10:03.004Z"
+    },
+    {
+      "name": "Ashe_Skin63_Material_Texture_03.tex",
+      "updatedAt": "2026-04-17T17:10:03.004Z"
+    },
+    {
+      "name": "3026_Itemscolor-hold.tex",
+      "updatedAt": "2026-04-17T17:10:03.004Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin63",
+    "bin": "data/characters/ashe/skins/skin63.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin63/Materials/Ashe_Skin63_Bow_03_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin63",
+      "bin": "data/characters/ashe/skins/skin63.bin"
+    }
+  ]
+}

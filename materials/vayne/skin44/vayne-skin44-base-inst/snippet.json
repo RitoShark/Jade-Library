@@ -1,0 +1,31 @@
+{
+  "id": "vayne-skin44-base-inst",
+  "name": "Vayne Skin44 Base Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:41.625Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin44_base_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin44",
+    "bin": "data/characters/vayne/skins/skin44.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin44/Materials/Vayne_Skin44_Base_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin44",
+      "bin": "data/characters/vayne/skins/skin44.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "lux-glow-hair-mat-inst",
+  "name": "Lux Glow Hair Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.371Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lux_glow_hair_mat_inst",
+  "textureFiles": [
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:35:59.367Z"
+    },
+    {
+      "name": "Lux_Skin42_P_rainbowmult_2.tex",
+      "updatedAt": "2026-04-17T17:35:59.367Z"
+    },
+    {
+      "name": "Lux_Skin42_P_rainbowmult_2.tex",
+      "updatedAt": "2026-04-17T17:35:59.367Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin51",
+    "bin": "data/characters/lux/skins/skin51.bin",
+    "entryKey": "Characters/Lux/Skins/Skin51/Materials/Lux_Glow_Hair_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin51",
+      "bin": "data/characters/lux/skins/skin51.bin"
+    }
+  ]
+}

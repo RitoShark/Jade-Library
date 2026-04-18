@@ -1,0 +1,40 @@
+{
+  "id": "sona-skin17-fresnel-unbound-inst",
+  "name": "Sona Skin17 Fresnel Unbound Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:11.127Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin17_fresnel_unbound_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin17_Z_Gradient_Unbound_1.tex",
+      "updatedAt": "2026-04-17T17:56:11.121Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:56:11.121Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin17",
+    "bin": "data/characters/sona/skins/skin17.bin",
+    "entryKey": "Characters/Sona/Skins/Skin17/Materials/Sona_Skin17_Fresnel_Unbound_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin17",
+      "bin": "data/characters/sona/skins/skin17.bin"
+    }
+  ]
+}

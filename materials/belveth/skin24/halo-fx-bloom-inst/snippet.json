@@ -1,0 +1,36 @@
+{
+  "id": "halo-fx-bloom-inst",
+  "name": "Halo Fx Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:49.300Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_halo_fx_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Belveth_Skin19_HaloFX_Alpha.SKINS_Belveth_Skin19.tex",
+      "updatedAt": "2026-04-17T17:11:49.293Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Belveth",
+    "skin": "skin24",
+    "bin": "data/characters/belveth/skins/skin24.bin",
+    "entryKey": "Characters/Belveth/Skins/Skin24/Materials/HaloFX_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Belveth",
+      "skin": "skin24",
+      "bin": "data/characters/belveth/skins/skin24.bin"
+    }
+  ]
+}

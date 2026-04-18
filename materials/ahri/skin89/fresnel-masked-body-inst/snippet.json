@@ -1,0 +1,42 @@
+{
+  "id": "fresnel-masked-body-inst",
+  "name": "Fresnel Masked Body Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:08.436Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_masked_body_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin89_Cloth_Mask.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.428Z"
+    },
+    {
+      "name": "Ahri_Skin89_TX_CM.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.428Z"
+    },
+    {
+      "name": "Ahri_Skin89_Cloth_Ramp.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.428Z"
+    },
+    {
+      "name": "Ahri_Skin89_Cloth_Mask.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.428Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin89",
+    "bin": "data/characters/ahri/skins/skin89.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin89/Materials/FresnelMasked_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin89",
+      "bin": "data/characters/ahri/skins/skin89.bin"
+    }
+  ]
+}

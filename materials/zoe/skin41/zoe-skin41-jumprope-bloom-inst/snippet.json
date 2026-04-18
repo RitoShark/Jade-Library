@@ -1,0 +1,36 @@
+{
+  "id": "zoe-skin41-jumprope-bloom-inst",
+  "name": "Zoe Skin41 Jumprope Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:07.347Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_skin41_jumprope_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin33_JumpRopeMask_TX_CM.SKINS_Zoe_Skin33.tex",
+      "updatedAt": "2026-04-17T18:14:07.341Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin41",
+    "bin": "data/characters/zoe/skins/skin41.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin41/Materials/Zoe_Skin41_Jumprope_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin41",
+      "bin": "data/characters/zoe/skins/skin41.bin"
+    }
+  ]
+}

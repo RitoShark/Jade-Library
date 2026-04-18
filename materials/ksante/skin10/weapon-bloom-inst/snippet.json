@@ -1,0 +1,36 @@
+{
+  "id": "weapon-bloom-inst",
+  "name": "Weapon Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:02.566Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "KSante_Skin08_Weapons_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:32:02.561Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KSante",
+    "skin": "skin10",
+    "bin": "data/characters/ksante/skins/skin10.bin",
+    "entryKey": "Characters/KSante/Skins/Skin10/Materials/Weapon_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KSante",
+      "skin": "skin10",
+      "bin": "data/characters/ksante/skins/skin10.bin"
+    }
+  ]
+}

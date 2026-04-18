@@ -1,0 +1,52 @@
+{
+  "id": "hkg-polarized-mask-sylas-anim-inst",
+  "name": "Hkg Polarized Mask Sylas Anim Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:28.229Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_polarized_mask_sylas_anim_inst",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin24_Body_Tattoo.tex",
+      "updatedAt": "2026-04-17T17:58:28.221Z"
+    },
+    {
+      "name": "Sylas_Skin24_Body_tatto_mult2.tex",
+      "updatedAt": "2026-04-17T17:58:28.221Z"
+    },
+    {
+      "name": "Sylas_Skin24_R_Z_Gradient02.tex",
+      "updatedAt": "2026-04-17T17:58:28.222Z"
+    },
+    {
+      "name": "Sylas_Skin24_Gradient.tex",
+      "updatedAt": "2026-04-17T17:58:28.222Z"
+    },
+    {
+      "name": "Atlast_Test.tex",
+      "updatedAt": "2026-04-17T17:58:28.222Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin24",
+    "bin": "data/characters/sylas/skins/skin24.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin24/Materials/HKG_Polarized_Mask_Sylas_Anim_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin24",
+      "bin": "data/characters/sylas/skins/skin24.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "ezreal-skin43-glass-inst",
+  "name": "Ezreal Skin43 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:52.445Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ezreal_skin43_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:52.439Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:52.439Z"
+    },
+    {
+      "name": "MatCap_BS0.tex",
+      "updatedAt": "2026-04-17T17:17:52.439Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:52.439Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:52.439Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin43",
+    "bin": "data/characters/ezreal/skins/skin43.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin43/Materials/Ezreal_Skin43_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin43",
+      "bin": "data/characters/ezreal/skins/skin43.bin"
+    }
+  ]
+}

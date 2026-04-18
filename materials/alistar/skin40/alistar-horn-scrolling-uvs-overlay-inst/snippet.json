@@ -1,0 +1,36 @@
+{
+  "id": "alistar-horn-scrolling-uvs-overlay-inst",
+  "name": "Alistar Horn Scrolling Uvs Overlay Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:14.286Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alistar_horn_scrolling_uvs_overlay_inst",
+  "textureFiles": [
+    {
+      "name": "Alistar_Skin40_Horn_Mask.SKINS_Alistar_Skin40.tex",
+      "updatedAt": "2026-04-17T17:08:14.281Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Alistar",
+    "skin": "skin40",
+    "bin": "data/characters/alistar/skins/skin40.bin",
+    "entryKey": "Characters/Alistar/Skins/Skin40/Materials/Alistar_horn_ScrollingUVs_Overlay_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Alistar",
+      "skin": "skin40",
+      "bin": "data/characters/alistar/skins/skin40.bin"
+    }
+  ]
+}

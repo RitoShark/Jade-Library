@@ -1,0 +1,40 @@
+{
+  "id": "aatrox-vfxbase-inst",
+  "name": "Aatrox Vfxbase Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:07.747Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_vfxbase_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Base_R_body_mask.tex",
+      "updatedAt": "2026-04-17T17:06:07.741Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:06:07.741Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin0",
+    "bin": "data/characters/aatrox/skins/skin0.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin0/Materials/Aatrox_VFXBase_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin0",
+      "bin": "data/characters/aatrox/skins/skin0.bin"
+    }
+  ]
+}

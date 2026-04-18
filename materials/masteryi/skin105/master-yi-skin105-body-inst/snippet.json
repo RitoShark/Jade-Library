@@ -1,0 +1,38 @@
+{
+  "id": "master-yi-skin105-body-inst",
+  "name": "Master Yi Skin105 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:56.825Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_master_yi_skin105_body_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin105_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:37:56.817Z"
+    },
+    {
+      "name": "MasterYi_Skin105_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:37:56.817Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:56.817Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin105",
+    "bin": "data/characters/masteryi/skins/skin105.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin105/Materials/MasterYi_Skin105_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin105",
+      "bin": "data/characters/masteryi/skins/skin105.bin"
+    }
+  ]
+}

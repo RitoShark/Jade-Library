@@ -1,0 +1,44 @@
+{
+  "id": "vladimir-skin53-topback1-scrolling-uvs-alpha-bloom-diff-inst",
+  "name": "Vladimir Skin53 Topback1 Scrolling Uvs Alpha Bloom Diff Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:30.998Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vladimir_skin53_topback1_scrolling_uvs_alpha_bloom_diff_inst",
+  "textureFiles": [
+    {
+      "name": "Vladimir_Skin53_Topback1_Line_ScrollTextureBott_TX_CM.Chroma_Vladimir_PsyOps.tex",
+      "updatedAt": "2026-04-17T18:06:30.991Z"
+    },
+    {
+      "name": "Vladimir_Skin53_Topback1_Line_ScrollTextureTop_TX_CM.Chroma_Vladimir_PsyOps.tex",
+      "updatedAt": "2026-04-17T18:06:30.991Z"
+    },
+    {
+      "name": "Vladimir_Skin49_Topback1_Alpha_TX_CM.SKINS_Vladimir_Skin49.tex",
+      "updatedAt": "2026-04-17T18:06:30.991Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vladimir",
+    "skin": "skin53",
+    "bin": "data/characters/vladimir/skins/skin53.bin",
+    "entryKey": "Characters/Vladimir/Skins/Skin53/Materials/Vladimir_Skin53_Topback1_ScrollingUVs_Alpha_Bloom_Diff_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vladimir",
+      "skin": "skin53",
+      "bin": "data/characters/vladimir/skins/skin53.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "iridesence-mask-bloom-inst",
+  "name": "Iridesence Mask Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:06.775Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_iridesence_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T18:07:06.768Z"
+    },
+    {
+      "name": "Warwick_Skin45_TX_Body.tex",
+      "updatedAt": "2026-04-17T18:07:06.768Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin55",
+    "bin": "data/characters/warwick/skins/skin55.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin55/Materials/Iridesence_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin55",
+      "bin": "data/characters/warwick/skins/skin55.bin"
+    }
+  ]
+}

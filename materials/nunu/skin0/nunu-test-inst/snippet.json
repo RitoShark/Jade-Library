@@ -1,0 +1,64 @@
+{
+  "id": "nunu-test-inst",
+  "name": "Nunu Test Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.443Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nunu_test_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "Nunu_Base_ArmHorn_Glow_Ramp.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "Nun_Base_ScrollTex.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "Nun_Base_ScrollTex_Mask.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.438Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin0",
+    "bin": "data/characters/nunu/skins/skin0.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin0/Materials/NunuTest_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin0",
+      "bin": "data/characters/nunu/skins/skin0.bin"
+    }
+  ]
+}

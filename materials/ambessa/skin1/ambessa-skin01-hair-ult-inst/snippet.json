@@ -1,0 +1,64 @@
+{
+  "id": "ambessa-skin01-hair-ult-inst",
+  "name": "Ambessa Skin01 Hair Ult Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:20.559Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ambessa_skin01_hair_ult_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "Gradient_Water_01.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "Nami_Skin51_Armor_Scolling_MAT.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    },
+    {
+      "name": "Ambessa_Skin01_Ult_TX_CM.Matcha_Ambessa.tex",
+      "updatedAt": "2026-04-17T17:08:20.553Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ambessa",
+    "skin": "skin1",
+    "bin": "data/characters/ambessa/skins/skin1.bin",
+    "entryKey": "Characters/Ambessa/Skins/Skin1/Materials/Ambessa_Skin01_Hair_ULT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ambessa",
+      "skin": "skin1",
+      "bin": "data/characters/ambessa/skins/skin1.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "hair-bloom-inst",
+  "name": "Hair Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:16.360Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:16.352Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:16.352Z"
+    },
+    {
+      "name": "Yasuo_Skin73_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:09:16.352Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:16.352Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin73",
+    "bin": "data/characters/yasuo/skins/skin73.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin73/Materials/Hair_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin73",
+      "bin": "data/characters/yasuo/skins/skin73.bin"
+    }
+  ]
+}

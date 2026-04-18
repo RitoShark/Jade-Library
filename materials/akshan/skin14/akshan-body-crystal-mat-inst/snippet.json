@@ -1,0 +1,44 @@
+{
+  "id": "akshan-body-crystal-mat-inst",
+  "name": "Akshan Body Crystal Mat Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:05.620Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akshan_body_crystal_mat_inst",
+  "textureFiles": [
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:08:05.614Z"
+    },
+    {
+      "name": "Material_Mask_2.tex",
+      "updatedAt": "2026-04-17T17:08:05.614Z"
+    },
+    {
+      "name": "Material_Mask_1.tex",
+      "updatedAt": "2026-04-17T17:08:05.614Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin14",
+    "bin": "data/characters/akshan/skins/skin14.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin14/Materials/Akshan_Body_Crystal_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin14",
+      "bin": "data/characters/akshan/skins/skin14.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "homeguard-wings-inst",
+  "name": "Homeguard Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:17.936Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_homeguard_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin05_Ult_Alpha.tex",
+      "updatedAt": "2026-04-17T17:47:17.928Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin36",
+    "bin": "data/characters/rakan/skins/skin36.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin36/Materials/Homeguard_wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin36",
+      "bin": "data/characters/rakan/skins/skin36.bin"
+    }
+  ]
+}

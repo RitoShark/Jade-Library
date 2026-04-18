@@ -1,0 +1,48 @@
+{
+  "id": "screen-space-inst",
+  "name": "Screen Space Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:59.880Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_inst",
+  "textureFiles": [
+    {
+      "name": "Swain_Skin21_CapeBackground.tex",
+      "updatedAt": "2026-04-17T17:57:59.874Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin21_DifferenceMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:57:59.874Z"
+    },
+    {
+      "name": "Ashe_Skin11_Z_ScrollMask01.tex",
+      "updatedAt": "2026-04-17T17:57:59.874Z"
+    },
+    {
+      "name": "Ashe_Skin11_Z_ScrollText.tex",
+      "updatedAt": "2026-04-17T17:57:59.874Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin21",
+    "bin": "data/characters/swaindemonform/skins/skin21.bin",
+    "entryKey": "Characters/SwainDemonForm/Skins/Skin21/Materials/ScreenSpace_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin21",
+      "bin": "data/characters/swaindemonform/skins/skin21.bin"
+    }
+  ]
+}

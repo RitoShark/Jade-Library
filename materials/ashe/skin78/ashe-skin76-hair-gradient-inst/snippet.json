@@ -1,0 +1,60 @@
+{
+  "id": "ashe-skin76-hair-gradient-inst",
+  "name": "Ashe Skin76 Hair Gradient Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:03.619Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin76_hair_gradient_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Ashe_Skin76_Hair_Mask_TX_CM.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Ashe_Skin76_CapeTest_Noise.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Ashe_Skin76_CapeTest_FlowMapMin.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Ashe_Skin76_Hair_Holes_TX_CM.SKINS_Ashe_Skin76.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    },
+    {
+      "name": "Ashe_Skin78_Gradient_Pink_TX_CM.Chroma_Ashe_SpiritBlossom.tex",
+      "updatedAt": "2026-04-17T17:10:03.613Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin78",
+    "bin": "data/characters/ashe/skins/skin78.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin78/Materials/AsheSkin76_HairGradient_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin78",
+      "bin": "data/characters/ashe/skins/skin78.bin"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "onsen-inst",
+  "name": "Onsen Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:46.326Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_onsen_inst",
+  "textureFiles": [
+    {
+      "name": "Volibear_Skin29_TurbulDeform_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "Volibear_Skin29_Mask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "Volibear_Skin29_WaterShapeMask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "Volibear_Skin29_FlowMap_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "Volibear_Skin29_AdditiveScrollCombo_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "CaseTexture03.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:06:46.317Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Volibear",
+    "skin": "skin29",
+    "bin": "data/characters/volibear/skins/skin29.bin",
+    "entryKey": "Characters/Volibear/Skins/Skin29/Materials/Onsen_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Volibear",
+      "skin": "skin29",
+      "bin": "data/characters/volibear/skins/skin29.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "renekton-mat-weapon",
+  "name": "Renekton Mat Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:40.181Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_renekton_mat_weapon",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:40.174Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin29",
+    "bin": "data/characters/renekton/skins/skin29.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin29/Materials/Renekton_MAT_Weapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin29",
+      "bin": "data/characters/renekton/skins/skin29.bin"
+    }
+  ]
+}

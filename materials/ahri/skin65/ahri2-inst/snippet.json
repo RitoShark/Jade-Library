@@ -1,0 +1,56 @@
+{
+  "id": "ahri2-inst",
+  "name": "Ahri2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:56.266Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri2_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin16_TailMask.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    },
+    {
+      "name": "Ahri_Skin15_FresnelGradient_1.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    },
+    {
+      "name": "Ahri_Skin16_Bokeh_Color.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    },
+    {
+      "name": "Ahri_Skin16_Screenspace_boxes_flat.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    },
+    {
+      "name": "Ahri_Skin16_Screenspace_boxes.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    },
+    {
+      "name": "Ahri_Skin16_SS_Boxes_Gradient.tex",
+      "updatedAt": "2026-04-17T17:06:56.259Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin65",
+    "bin": "data/characters/ahri/skins/skin65.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin65/Materials/Ahri2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin65",
+      "bin": "data/characters/ahri/skins/skin65.bin"
+    }
+  ]
+}

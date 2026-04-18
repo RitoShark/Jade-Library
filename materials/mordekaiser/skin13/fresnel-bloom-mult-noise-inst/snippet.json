@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-mult-noise-inst",
+  "name": "Fresnel Bloom Mult Noise Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:50.264Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_mult_noise_inst",
+  "textureFiles": [
+    {
+      "name": "Mordekaiser_Z_MaterialMask_05.tex",
+      "updatedAt": "2026-04-17T17:39:50.258Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:39:50.258Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin13",
+    "bin": "77c6de602ba5ce87.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin13/Materials/Fresnel_Bloom_Mult_Noise_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin13",
+      "bin": "77c6de602ba5ce87.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "yone-skin58-ghostkatana-bloom-inst",
+  "name": "Yone Skin58 Ghostkatana Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.801Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin58_ghostkatana_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin58_CoatMask_Katana.tex",
+      "updatedAt": "2026-04-17T18:10:06.796Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin58",
+    "bin": "data/characters/yone/skins/skin58.bin",
+    "entryKey": "Characters/Yone/Skins/Skin58/Materials/Yone_Skin58_Ghostkatana_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin58",
+      "bin": "data/characters/yone/skins/skin58.bin"
+    }
+  ]
+}

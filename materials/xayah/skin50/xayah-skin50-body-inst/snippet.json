@@ -1,0 +1,64 @@
+{
+  "id": "xayah-skin50-body-inst",
+  "name": "Xayah Skin50 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:39.883Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xayah_skin50_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "black.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "black.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "Xayah_Skin47_IridescentTex.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "Xayah_Skin47_Blood_Scroll_Mask.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "Xayah_Skin47_MaterialMask_Veins.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    },
+    {
+      "name": "black.SKINS_Xayah_Skin47.tex",
+      "updatedAt": "2026-04-17T18:07:39.876Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin50",
+    "bin": "data/characters/xayah/skins/skin50.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin50/Materials/Xayah_Skin50_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin50",
+      "bin": "data/characters/xayah/skins/skin50.bin"
+    }
+  ]
+}

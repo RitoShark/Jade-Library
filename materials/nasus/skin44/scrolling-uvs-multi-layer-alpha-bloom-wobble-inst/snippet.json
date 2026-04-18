@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-alpha-bloom-wobble-inst",
+  "name": "Scrolling Uvs Multi Layer Alpha Bloom Wobble Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:47.468Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_alpha_bloom_wobble_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin35_E_Cloud_Star02.tex",
+      "updatedAt": "2026-04-17T17:41:47.462Z"
+    },
+    {
+      "name": "Nasus_Skin44_Generic_HolyStrings_Support02.tex",
+      "updatedAt": "2026-04-17T17:41:47.462Z"
+    },
+    {
+      "name": "Nasus_Skin35_MaterialAlphaMask.tex",
+      "updatedAt": "2026-04-17T17:41:47.462Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin44",
+    "bin": "data/characters/nasus/skins/skin44.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin44/Materials/ScrollingUVs_MultiLayer_Alpha_Bloom_Wobble_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin44",
+      "bin": "data/characters/nasus/skins/skin44.bin"
+    }
+  ]
+}

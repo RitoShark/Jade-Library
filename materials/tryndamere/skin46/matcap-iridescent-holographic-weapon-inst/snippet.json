@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-weapon-inst",
+  "name": "Matcap Iridescent Holographic Weapon Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:04.125Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "Tryndamere_Skin46_Mask_TX_CM.Chroma_Tryndamere_Nightbringer_Paragon.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "Water_Test.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    },
+    {
+      "name": "flowmapCircle2.tex",
+      "updatedAt": "2026-04-17T18:02:04.117Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tryndamere",
+    "skin": "skin46",
+    "bin": "data/characters/tryndamere/skins/skin46.bin",
+    "entryKey": "Characters/Tryndamere/Skins/Skin46/Materials/Matcap_Iridescent_Holographic_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tryndamere",
+      "skin": "skin46",
+      "bin": "data/characters/tryndamere/skins/skin46.bin"
+    }
+  ]
+}

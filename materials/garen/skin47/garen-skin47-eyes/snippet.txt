@@ -1,0 +1,95 @@
+"jadelib_garen_skin47_eyes" = StaticMaterialDef {
+    name: string = "jadelib_garen_skin47_eyes"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Eyelid_Texture"
+            texturePath: string = "assets/jadelib/garen-skin47-eyes/black.SKINS_Garen_Skin46.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Eyes_Mask"
+            texturePath: string = "assets/jadelib/garen-skin47-eyes/Garen_Skin46_EyesMask_TX_CM.SKINS_Garen_Skin46.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blink_Texture"
+            texturePath: string = "assets/jadelib/garen-skin47-eyes/JarvanIV_Skin35_Eyes_Blink_TX_CM.SKINS_Garen_Skin46.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TimeOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "eyelid_color"
+            value: vec4 = { 0.3356221914291382, 0.1270923912525177, 0.08941786736249924, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blink_speed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ControlAll"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.5137255191802979, 0, 0.3490196168422699, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_EYELID_TEX"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Eyes_Blink_Mat"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Blink_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                            mAnimationNames: list[hash] = {
+                                "Recall"
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Garen/Skins/Skin46/Blank.SKINS_Garen_Skin46.tex"
+                    }
+                }
+            }
+        }
+    }
+}

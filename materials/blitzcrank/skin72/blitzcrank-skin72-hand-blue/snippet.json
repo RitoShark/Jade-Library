@@ -1,0 +1,64 @@
+{
+  "id": "blitzcrank-skin72-hand-blue",
+  "name": "Blitzcrank Skin72 Hand Blue",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:12.423Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin72_hand_blue",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "Blitzcrank_Skin72_Iridescence_TX_CM.Chroma_Blitzcrank_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:12.416Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin72",
+    "bin": "data/characters/blitzcrank/skins/skin72.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin72/Materials/Blitzcrank_Skin72_HandBlue"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin72",
+      "bin": "data/characters/blitzcrank/skins/skin72.bin"
+    }
+  ]
+}

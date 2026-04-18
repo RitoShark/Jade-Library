@@ -1,0 +1,36 @@
+{
+  "id": "senna-skin10-body-inst",
+  "name": "Senna Skin10 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:23.426Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_senna_skin10_body_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin10_Z_Body_Material_Mask.tex",
+      "updatedAt": "2026-04-17T17:52:23.419Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin10",
+    "bin": "data/characters/senna/skins/skin10.bin",
+    "entryKey": "Characters/Senna/Skins/Skin10/Materials/Senna_Skin10_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin10",
+      "bin": "data/characters/senna/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+"jadelib_pyke_skin02_recall_throne" = StaticMaterialDef {
+    name: string = "jadelib_pyke_skin02_recall_throne"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse"
+            texturePath: string = "assets/jadelib/pyke-skin02-recall-throne/Pyke_Skin02_Prop_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Tex1"
+            texturePath: string = "assets/jadelib/pyke-skin02-recall-throne/Pyke_Skin01_SandThrone_Noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse"
+            texturePath: string = "assets/jadelib/pyke-skin02-recall-throne/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "RColor"
+            value: vec4 = { 1, 0.886274516582489, 0.30588236451148987, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "GColor"
+            value: vec4 = { 1, 0.6313725709915161, 0.25882354378700256, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BlendAmount"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaskBias"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SmoothStepBounds"
+            value: vec4 = { 0.30000001192092896, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaskIntensity"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaBias"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tex1Size"
+            value: vec4 = { 1.5, 1.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tex1ScrollSpeed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tex2Size"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tex2ScrollSpeed"
+            value: vec4 = { 0, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TextureBlend"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditionalMasking_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIONAL_MASKING"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_LayeredMasks_Colorized"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

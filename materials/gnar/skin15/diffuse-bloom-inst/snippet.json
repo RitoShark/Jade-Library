@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.612Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "GnarBig_Skin15_GnarBig_Mult.tex",
+      "updatedAt": "2026-04-17T17:20:21.607Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin15",
+    "bin": "data/characters/gnarbig/skins/skin15.bin",
+    "entryKey": "Characters/GnarBig/Skins/Skin15/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin15",
+      "bin": "data/characters/gnarbig/skins/skin15.bin"
+    }
+  ]
+}

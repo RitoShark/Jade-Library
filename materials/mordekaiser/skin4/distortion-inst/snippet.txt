@@ -1,0 +1,98 @@
+"jadelib_distortion_inst" = StaticMaterialDef {
+    name: string = "jadelib_distortion_inst"
+    type: u32 = 4
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Scale"
+            value: vec4 = { 0.10000000149011612, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollRate"
+            value: vec4 = { 0, 0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dist_Vign_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Intensity"
+            value: vec4 = { -0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Invert_Vignette_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Invert_Vignette_Sharpness"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Invert_Vignette_Color"
+            value: vec4 = { 0.9607843160629272, 0.7098039388656616, 0.9607843160629272, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Darken_Vignette_Bias"
+            value: vec4 = { 0.4000000059604645, 0.3803921639919281, 0.38823530077934265, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Darken_Vignette_Size"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Darken_Vignette_Sharpness"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Saturation_Multiplier"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DISTORT"
+        }
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/PostProcess/Distortion_Inverted_Vignette"
+                    depthEnable: bool = false
+                    cullEnable: bool = false
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "normal_blend"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "BLEND" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "death"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "DEATH_EFFECT" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "death_blend"
+            parentName: string = "death"
+            shaderMacros: map[string,string] = {
+                "BLEND" = "1"
+            }
+        }
+    }
+}

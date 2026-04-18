@@ -1,0 +1,38 @@
+{
+  "id": "orianna-skin38-body",
+  "name": "Orianna Skin38 Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:36.335Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_orianna_skin38_body",
+  "textureFiles": [
+    {
+      "name": "Orianna_Skin38_TX_CM.SKINS_Orianna_Skin38.tex",
+      "updatedAt": "2026-04-17T17:44:36.329Z"
+    },
+    {
+      "name": "Orianna_Skin38_Mask_TX_CM.SKINS_Orianna_Skin38.tex",
+      "updatedAt": "2026-04-17T17:44:36.329Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:36.329Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Orianna",
+    "skin": "skin38",
+    "bin": "data/characters/orianna/skins/skin38.bin",
+    "entryKey": "Characters/Orianna/Skins/Skin38/Materials/Orianna_Skin38_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Orianna",
+      "skin": "skin38",
+      "bin": "data/characters/orianna/skins/skin38.bin"
+    }
+  ]
+}

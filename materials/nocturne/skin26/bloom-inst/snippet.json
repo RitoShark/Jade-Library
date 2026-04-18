@@ -1,0 +1,36 @@
+{
+  "id": "bloom-inst",
+  "name": "Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:47.785Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Nocturne_Skin26_Mask_Texturemult_3.tex",
+      "updatedAt": "2026-04-17T17:43:47.779Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nocturne",
+    "skin": "skin26",
+    "bin": "data/characters/nocturne/skins/skin26.bin",
+    "entryKey": "Characters/Nocturne/Skins/Skin26/Materials/bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nocturne",
+      "skin": "skin26",
+      "bin": "data/characters/nocturne/skins/skin26.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ink-body02",
+  "name": "Ink Body02",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:28.093Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_body02",
+  "textureFiles": [
+    {
+      "name": "gray.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:11:28.087Z"
+    },
+    {
+      "name": "Water_A_Nm.tex",
+      "updatedAt": "2026-04-17T17:11:28.087Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:11:28.087Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin26",
+    "bin": "data/characters/bardfollower/skins/skin26.bin",
+    "entryKey": "Characters/BardFollower/Skins/Skin26/Materials/Ink_Body02"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin26",
+      "bin": "data/characters/bardfollower/skins/skin26.bin"
+    }
+  ]
+}

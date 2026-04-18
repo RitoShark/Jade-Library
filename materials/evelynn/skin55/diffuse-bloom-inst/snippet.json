@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.591Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin52_TX_Bloom_Mask.tex",
+      "updatedAt": "2026-04-17T17:17:20.586Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin55",
+    "bin": "data/characters/evelynn/skins/skin55.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin55/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin55",
+      "bin": "data/characters/evelynn/skins/skin55.bin"
+    }
+  ]
+}

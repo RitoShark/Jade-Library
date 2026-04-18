@@ -1,0 +1,247 @@
+"jadelib_cloak_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_cloak_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pan_Texture"
+            texturePath: string = "assets/jadelib/cloak-mat-inst/Rakan_Skin05_P_Cloak_Glow_Pan.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MaskTexture"
+            texturePath: string = "assets/jadelib/cloak-mat-inst/Rakan_Skin05_Cape_Masks_Off.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/cloak-mat-inst/Rakan_Skin05_Wing_Dissolve.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/cloak-mat-inst/Rakan_Skin05_Cape_Light_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/cloak-mat-inst/Rakan_Skin05_SS_Tex_Wings.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { -0.05000000074505806, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Scale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Tex_Speed"
+            value: vec4 = { 0.10000000149011612, -0.20000000298023224, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_DISSOLVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISSOLVE_OUT_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_DiffuseAlpha_Pan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "RakanQMark"
+                                }
+                                mOnValue: f32 = -0.20000000298023224
+                                mOffValue: f32 = 1.5
+                                mTurnOnTimeSec: f32 = 3
+                                mTurnOffTimeSec: f32 = 0.20000000298023224
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                                mOnValue: f32 = -0.20000000298023224
+                                mOffValue: f32 = 1.399999976158142
+                                mTurnOnTimeSec: f32 = 5.5
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.008042043074965477
+                                    0.249173104763031
+                                    0.498346209526062
+                                    0.747519314289093
+                                    1.0040615797042847
+                                }
+                                values: list[f32] = {
+                                    -0.20675072073936462
+                                    0.1034482792019844
+                                    0.5086206793785095
+                                    0.9051724076271057
+                                    1.5118646621704102
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mOnValue: f32 = -0.20000000298023224
+                                mOffValue: f32 = 1
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0022050717379897833
+                                    0.11612579226493835
+                                    0.5131614804267883
+                                    0.6101160049438477
+                                    0.6550450325012207
+                                    0.7310134768486023
+                                    0.848816990852356
+                                    0.8996222019195557
+                                    0.9400199055671692
+                                    0.9915787577629089
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1
+                                    1
+                                    0.7008163928985596
+                                    0.009554202668368816
+                                    0.01395618449896574
+                                    0.046440333127975464
+                                    0.19943639636039734
+                                    0.8880194425582886
+                                    0.9955752491950989
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "MaskTexture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "rakanpassiveshield"
+                        }
+                        TextureName: string = "ASSETS/Characters/Rakan/Skins/Skin05/Rakan_Skin05_Cape_Masks.tex"
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "DISSOLVE_OUT_ALPHA"
+            driver: pointer = IsDeadDynamicMaterialBoolDriver {}
+        }
+    }
+}

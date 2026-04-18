@@ -1,0 +1,42 @@
+{
+  "id": "evelynn-skin64-body-inst",
+  "name": "Evelynn Skin64 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:21.347Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_evelynn_skin64_body_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin64_TX_CM.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.341Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:21.341Z"
+    },
+    {
+      "name": "blackbox.tex",
+      "updatedAt": "2026-04-17T17:17:21.341Z"
+    },
+    {
+      "name": "Evelynn_Skin64_Shadow_TX_CM.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.341Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin64",
+    "bin": "data/characters/evelynn/skins/skin64.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin64/Materials/EvelynnSkin64_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin64",
+      "bin": "data/characters/evelynn/skins/skin64.bin"
+    }
+  ]
+}

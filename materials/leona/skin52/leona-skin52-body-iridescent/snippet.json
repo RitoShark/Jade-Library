@@ -1,0 +1,69 @@
+{
+  "id": "leona-skin52-body-iridescent",
+  "name": "Leona Skin52 Body Iridescent",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:17.974Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leona_skin52_body_iridescent",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "Leona_Skin52_Body_Gradient.SKINS_Leona_Skin52.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "Leona_Skin52_TX_CM_mask.SKINS_Leona_Skin52.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:34.998Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin52",
+    "bin": "data/characters/leona/skins/skin52.bin",
+    "entryKey": "Characters/Leona/Skins/Skin52/Materials/Leona_Skin52_Body_Iridescent"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin52",
+      "bin": "data/characters/leona/skins/skin52.bin"
+    },
+    {
+      "champion": "Strawberry_Leona",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_leona/skins/skin0.bin"
+    }
+  ]
+}

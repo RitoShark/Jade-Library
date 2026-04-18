@@ -1,0 +1,65 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:50.456Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "Draven_Skin67_Mask_TX_CM.Chroma_Draven_NoxusPit_Paragon.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T17:15:55.140Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Draven",
+    "skin": "skin67",
+    "bin": "data/characters/draven/skins/skin67.bin",
+    "entryKey": "Characters/Draven/Skins/Skin67/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Draven",
+      "skin": "skin67",
+      "bin": "data/characters/draven/skins/skin67.bin"
+    },
+    {
+      "champion": "Elise",
+      "skin": "skin35",
+      "bin": "data/characters/elise/skins/skin35.bin"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+"jadelib_nidalee_hair_diffuse_alpha_pan_twinkle_inst" = StaticMaterialDef {
+    name: string = "jadelib_nidalee_hair_diffuse_alpha_pan_twinkle_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Twinkle_Mat"
+            texturePath: string = "assets/jadelib/nidalee-hair-diffuse-alpha-pan-twinkle-inst/Nidalee_Skin18_Hair_Twinkle_Mask_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Panning_Tex"
+            texturePath: string = "assets/jadelib/nidalee-hair-diffuse-alpha-pan-twinkle-inst/Nidalee_Skin18_Hair_Noise_TX_CM.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Twinkle_Scale"
+            value: vec4 = { 5, 9, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Twinkle_ScrollSpeed"
+            value: vec4 = { 0.019999999552965164, 0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Twinkle_Speed"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_1_Scale"
+            value: vec4 = { 3, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_1_ScrollSpeed"
+            value: vec4 = { -0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_2_Scale"
+            value: vec4 = { 2, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_2_ScrollSpeed"
+            value: vec4 = { -0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Twinkle_2_Phase"
+            value: vec4 = { 4, 1, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Alpha_Pan_Twinkle"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

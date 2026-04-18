@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:31.252Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "Caitlyn_Skin52_Holo_Mask_TX_CM.Chroma_Caitlyn_Prestige.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:13:31.236Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin52",
+    "bin": "data/characters/caitlyn/skins/skin52.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin52/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin52",
+      "bin": "data/characters/caitlyn/skins/skin52.bin"
+    }
+  ]
+}

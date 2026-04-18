@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:10.139Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:49:10.133Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:49:10.133Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:49:10.133Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:49:10.133Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Riven",
+    "skin": "skin57",
+    "bin": "data/characters/riven/skins/skin57.bin",
+    "entryKey": "Characters/Riven/Skins/Skin57/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Riven",
+      "skin": "skin57",
+      "bin": "data/characters/riven/skins/skin57.bin"
+    }
+  ]
+}

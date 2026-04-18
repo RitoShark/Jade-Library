@@ -1,0 +1,48 @@
+{
+  "id": "skin17-ult-wings-glow-inst",
+  "name": "Skin17 Ult Wings Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:23.000Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_skin17_ult_wings_glow_inst",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin17_R_WingsGradient2.tex",
+      "updatedAt": "2026-04-17T17:40:22.993Z"
+    },
+    {
+      "name": "Morgana_Skin10_Wing_Energy.tex",
+      "updatedAt": "2026-04-17T17:40:22.993Z"
+    },
+    {
+      "name": "Morgana_Skin17_R_WingsGradient2.tex",
+      "updatedAt": "2026-04-17T17:40:22.993Z"
+    },
+    {
+      "name": "Morgana_Skin17_R_WingsGradient4.tex",
+      "updatedAt": "2026-04-17T17:40:22.993Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin17",
+    "bin": "data/characters/morgana/skins/skin17.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin17/Materials/Skin17_Ult_WingsGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin17",
+      "bin": "data/characters/morgana/skins/skin17.bin"
+    }
+  ]
+}

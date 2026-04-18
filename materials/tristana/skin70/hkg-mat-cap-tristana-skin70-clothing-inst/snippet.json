@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-tristana-skin70-clothing-inst",
+  "name": "Hkg Mat Cap Tristana Skin70 Clothing Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:33.628Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_tristana_skin70_clothing_inst",
+  "textureFiles": [
+    {
+      "name": "Tristana_Skin70_Matcap_TX_CM.SKINS_Tristana_Skin70.tex",
+      "updatedAt": "2026-04-17T18:01:33.620Z"
+    },
+    {
+      "name": "Tristana_Skin70_WhiteMask_TX_CM.SKINS_Tristana_Skin70.tex",
+      "updatedAt": "2026-04-17T18:01:33.620Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tristana",
+    "skin": "skin70",
+    "bin": "data/characters/tristana/skins/skin70.bin",
+    "entryKey": "Characters/Tristana/Skins/Skin70/Materials/HKG_MatCap_Tristana_Skin70_Clothing_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tristana",
+      "skin": "skin70",
+      "bin": "data/characters/tristana/skins/skin70.bin"
+    }
+  ]
+}

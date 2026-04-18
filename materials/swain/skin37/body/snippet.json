@@ -1,0 +1,56 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:57.784Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    },
+    {
+      "name": "Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    },
+    {
+      "name": "lava_actual.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:57:57.778Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin37",
+    "bin": "data/characters/swain/skins/skin37.bin",
+    "entryKey": "Characters/Swain/Skins/Skin37/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin37",
+      "bin": "data/characters/swain/skins/skin37.bin"
+    }
+  ]
+}

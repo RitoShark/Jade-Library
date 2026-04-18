@@ -1,0 +1,190 @@
+"jadelib_tiger_inst" = StaticMaterialDef {
+    name: string = "jadelib_tiger_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/tiger-inst/Generic_Noise.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 1, 0.4000000059604645, 0.7098039388656616, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Size"
+            value: vec4 = { 1.100000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor_Bias"
+            value: vec4 = { 0.35499998927116394, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.054901961237192154, 0.062745101749897, 0.6784313917160034, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_ScrollSpeed"
+            value: vec4 = { 0, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Override"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_FRESNEL"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIONAL_MASKING"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/FresnelAlpha_Scrolling"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Override"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Run_Homeguard_IN"
+                                    }
+                                }
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.20809002220630646
+                                    0.8990541100502014
+                                    0.9913648366928101
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    0.9332951307296753
+                                    0.8531321883201599
+                                    0.5647807121276855
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = AllTrueMaterialDriver {
+                                    mDrivers: list[pointer] = {
+                                        IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "Joke_Windup"
+                                                "Joke_Loop"
+                                                "taunt"
+                                            }
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 7
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.026269467547535896
+                                    0.1985013335943222
+                                    0.9994451999664307
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    -0.001157452934421599
+                                    1.0051815509796143
+                                    1.0018450021743774
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Dance"
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.004041155334562063
+                                    0.041640911251306534
+                                    0.11927938461303711
+                                    0.9974662661552429
+                                }
+                                values: list[f32] = {
+                                    -0.002483084099367261
+                                    -0.002483084099367261
+                                    1.006095051765442
+                                    1.0025711059570312
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

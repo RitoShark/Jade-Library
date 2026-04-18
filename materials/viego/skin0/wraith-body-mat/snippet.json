@@ -1,0 +1,40 @@
+{
+  "id": "wraith-body-mat",
+  "name": "Wraith Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:35.802Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wraith_body_mat",
+  "textureFiles": [
+    {
+      "name": "Viego_Wraith_Noise_TX.tex",
+      "updatedAt": "2026-04-17T18:05:35.794Z"
+    },
+    {
+      "name": "Viego_Smoke_TX.tex",
+      "updatedAt": "2026-04-17T18:05:35.794Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin0",
+    "bin": "data/characters/viego/skins/skin0.bin",
+    "entryKey": "Characters/Viego/Skins/Skin0/Materials/WraithBody_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin0",
+      "bin": "data/characters/viego/skins/skin0.bin"
+    }
+  ]
+}

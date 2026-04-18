@@ -1,0 +1,60 @@
+{
+  "id": "vayne-skin65-body-holo-mat-inst",
+  "name": "Vayne Skin65 Body Holo Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:52.002Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin65_body_holo_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "Vayne_Skin65_Body_Mask_TX_CM.Chroma_Vayne_Holo.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "Noise04.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:03:51.995Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin65",
+    "bin": "data/characters/vayne/skins/skin65.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin65/Materials/Vayne_Skin65_Body_Holo_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin65",
+      "bin": "data/characters/vayne/skins/skin65.bin"
+    }
+  ]
+}

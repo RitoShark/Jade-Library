@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:18.714Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin27_Weapon_01.tex",
+      "updatedAt": "2026-04-17T17:15:18.708Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin27",
+    "bin": "data/characters/diana/skins/skin27.bin",
+    "entryKey": "Characters/Diana/Skins/Skin27/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin27",
+      "bin": "data/characters/diana/skins/skin27.bin"
+    }
+  ]
+}

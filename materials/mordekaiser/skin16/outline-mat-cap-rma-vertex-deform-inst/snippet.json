@@ -1,0 +1,52 @@
+{
+  "id": "outline-mat-cap-rma-vertex-deform-inst",
+  "name": "Outline Mat Cap Rma Vertex Deform Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:51.878Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_mat_cap_rma_vertex_deform_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:51.872Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.872Z"
+    },
+    {
+      "name": "Yone_Skin45_Cloth_Matcap.tex",
+      "updatedAt": "2026-04-17T17:39:51.872Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.872Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:51.872Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin16",
+    "bin": "data/characters/mordekaiser/skins/skin16.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin16/Materials/Outline_MatCap_RMA_VertexDeform_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin16",
+      "bin": "data/characters/mordekaiser/skins/skin16.bin"
+    }
+  ]
+}

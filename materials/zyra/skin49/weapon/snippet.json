@@ -1,0 +1,44 @@
+{
+  "id": "weapon",
+  "name": "Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:40.301Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:40.295Z"
+    },
+    {
+      "name": "Zyra_Skin46_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:14:40.295Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:14:40.295Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zyra",
+    "skin": "skin49",
+    "bin": "data/characters/zyra/skins/skin49.bin",
+    "entryKey": "Characters/Zyra/Skins/Skin49/Materials/Weapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Zyra",
+      "skin": "skin49",
+      "bin": "data/characters/zyra/skins/skin49.bin"
+    }
+  ]
+}

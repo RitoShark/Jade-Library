@@ -1,0 +1,52 @@
+{
+  "id": "aurelion-sol-skin36-vase-mat-inst",
+  "name": "Aurelion Sol Skin36 Vase Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:44.751Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aurelion_sol_skin36_vase_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.734Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:44.734Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:10:44.734Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:44.734Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:44.734Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin36",
+    "bin": "data/characters/aurelionsol/skins/skin36.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin36/Materials/AurelionSol_Skin36_Vase_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin36",
+      "bin": "data/characters/aurelionsol/skins/skin36.bin"
+    }
+  ]
+}

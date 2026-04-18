@@ -1,0 +1,68 @@
+{
+  "id": "legs",
+  "name": "Legs",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:25.690Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_legs",
+  "textureFiles": [
+    {
+      "name": "Noise04.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "Sona_Skin66_MaskBody_TX_CM01.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "Sona_Skin66_WaterShapeMask03.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "flowmap.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "Sona_Skin66_TailAdditiveScrollCombo_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:25.682Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/characters/sona/skins/skin66.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/Legs"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/characters/sona/skins/skin66.bin"
+    }
+  ]
+}

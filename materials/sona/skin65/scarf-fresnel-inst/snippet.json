@@ -1,0 +1,34 @@
+{
+  "id": "scarf-fresnel-inst",
+  "name": "Scarf Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:25.157Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_scarf_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin65_Scarf_TX_CM.Chroma_Sona_Victorious.tex",
+      "updatedAt": "2026-04-17T17:56:25.144Z"
+    },
+    {
+      "name": "Sona_Skin56_Scarf_mask.SKINS_Sona_Skin56.tex",
+      "updatedAt": "2026-04-17T17:56:25.144Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin65",
+    "bin": "data/characters/sona/skins/skin65.bin",
+    "entryKey": "Characters/Sona/Skins/Skin65/Materials/Scarf_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin65",
+      "bin": "data/characters/sona/skins/skin65.bin"
+    }
+  ]
+}

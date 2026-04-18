@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-bristle-inst",
+  "name": "Alpha Blend Additive Scroll Packed Bristle Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:38.936Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_bristle_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:51:38.929Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:51:38.929Z"
+    },
+    {
+      "name": "Sejuani_Skin21_Boar_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:51:38.929Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:51:38.929Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sejuani",
+    "skin": "skin21",
+    "bin": "data/characters/sejuani/skins/skin21.bin",
+    "entryKey": "Characters/Sejuani/Skins/Skin21/Materials/AlphaBlend_Additive_Scroll_Packed_Bristle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sejuani",
+      "skin": "skin21",
+      "bin": "data/characters/sejuani/skins/skin21.bin"
+    }
+  ]
+}

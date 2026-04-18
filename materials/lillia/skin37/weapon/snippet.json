@@ -1,0 +1,56 @@
+{
+  "id": "weapon",
+  "name": "Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:58.693Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    },
+    {
+      "name": "Lillia_Skin37_GoldMask_RMA.SKINS_Lillia_Skin37.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:58.686Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin37",
+    "bin": "data/characters/lillia/skins/skin37.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin37/Materials/Weapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin37",
+      "bin": "data/characters/lillia/skins/skin37.bin"
+    }
+  ]
+}

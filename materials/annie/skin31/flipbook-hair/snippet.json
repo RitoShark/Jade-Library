@@ -1,0 +1,45 @@
+{
+  "id": "flipbook-hair",
+  "name": "Flipbook Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:20.748Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:59.827Z"
+    },
+    {
+      "name": "Annie_Skin31_Hair_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:59.827Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Annie",
+    "skin": "skin31",
+    "bin": "data/characters/annie/skins/skin31.bin",
+    "entryKey": "Characters/Annie/Skins/Skin31/Materials/Flipbook_Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Annie",
+      "skin": "skin31",
+      "bin": "data/characters/annie/skins/skin31.bin"
+    },
+    {
+      "champion": "Renata",
+      "skin": "skin10",
+      "bin": "data/characters/renata/skins/skin10.bin"
+    }
+  ]
+}

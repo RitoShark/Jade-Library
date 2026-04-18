@@ -1,0 +1,31 @@
+{
+  "id": "outline-vfxleg",
+  "name": "Outline Vfxleg",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:10.571Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_vfxleg",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin44",
+    "bin": "data/characters/zoe/skins/skin44.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin44/Materials/Outline_Vfxleg"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin44",
+      "bin": "data/characters/zoe/skins/skin44.bin"
+    }
+  ]
+}

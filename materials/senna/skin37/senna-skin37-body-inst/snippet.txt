@@ -1,0 +1,100 @@
+"jadelib_senna_skin37_body_inst" = StaticMaterialDef {
+    name: string = "jadelib_senna_skin37_body_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/senna-skin37-body-inst/Senna_Skin37_Z_Body_Material_Mask.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Additive_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed"
+            value: vec4 = { 0.05000000074505806, -0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Addative_Color"
+            value: vec4 = { 1, 0.5000076293945312, 0.25999847054481506, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.824999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_color"
+            value: vec4 = { 0.12156862765550613, 0.6078431606292725, 0.9098039269447327, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "OVERLAY_ADDATIVE"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_Simple"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Addative_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = SineMaterialDriver {
+                        mDriver: pointer = TimeMaterialDriver {}
+                        mFrequency: f32 = 2
+                        mScale: f32 = 0.5
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.503333330154419
+                            0.9916666746139526
+                        }
+                        values: list[vec4] = {
+                            { 0.2666666805744171, 0.21568627655506134, 0.003921568859368563, 1 }
+                            { 0.015356043353676796, 0.09378740936517715, 0.003921568859368563, 1 }
+                            { 0.2815273702144623, 0.23446854948997498, 0.003921568859368563, 1 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

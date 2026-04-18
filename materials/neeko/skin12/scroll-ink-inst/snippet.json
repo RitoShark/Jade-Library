@@ -1,0 +1,44 @@
+{
+  "id": "scroll-ink-inst",
+  "name": "Scroll Ink Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:31.174Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scroll_ink_inst",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin12_Recall_Scroll_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:31.169Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:31.169Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:31.169Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin12",
+    "bin": "data/characters/neeko/skins/skin12.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin12/Materials/Scroll_Ink_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin12",
+      "bin": "data/characters/neeko/skins/skin12.bin"
+    }
+  ]
+}

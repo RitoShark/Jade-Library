@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-overlay-body-inst",
+  "name": "Scrolling Uvs Overlay Body Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.297Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_overlay_body_inst",
+  "textureFiles": [
+    {
+      "name": "Sivir_Skin43_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:55:10.291Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin43",
+    "bin": "data/characters/sivir/skins/skin43.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin43/Materials/ScrollingUVs_Overlay_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin43",
+      "bin": "data/characters/sivir/skins/skin43.bin"
+    }
+  ]
+}

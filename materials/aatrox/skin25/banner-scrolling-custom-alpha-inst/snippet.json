@@ -1,0 +1,40 @@
+{
+  "id": "banner-scrolling-custom-alpha-inst",
+  "name": "Banner Scrolling Custom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:15.667Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_banner_scrolling_custom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin21_Banner_MaskTexture_02.tex",
+      "updatedAt": "2026-04-17T17:06:15.660Z"
+    },
+    {
+      "name": "Aatrox_Skin21_R_mat_gradient.tex",
+      "updatedAt": "2026-04-17T17:06:15.660Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin25",
+    "bin": "data/characters/aatrox/skins/skin25.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin25/Materials/Banner_ScrollingCustomAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin25",
+      "bin": "data/characters/aatrox/skins/skin25.bin"
+    }
+  ]
+}

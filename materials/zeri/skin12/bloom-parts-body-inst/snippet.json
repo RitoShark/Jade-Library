@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-body-inst",
+  "name": "Bloom Parts Body Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:44.748Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:44.740Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin12",
+    "bin": "data/characters/zeri/skins/skin12.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin12/Materials/Bloom_Parts_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin12",
+      "bin": "data/characters/zeri/skins/skin12.bin"
+    }
+  ]
+}

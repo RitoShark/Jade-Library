@@ -1,0 +1,36 @@
+{
+  "id": "kayle-wings-lower-inst",
+  "name": "Kayle Wings Lower Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.284Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_wings_lower_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin66_Wings_Glow_Mask01.tex",
+      "updatedAt": "2026-04-17T17:29:43.278Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin77",
+    "bin": "data/characters/kayle/skins/skin77.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin77/Materials/Kayle_Wings_lower_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin77",
+      "bin": "data/characters/kayle/skins/skin77.bin"
+    }
+  ]
+}

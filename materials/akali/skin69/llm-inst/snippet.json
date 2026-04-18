@@ -1,0 +1,34 @@
+{
+  "id": "llm-inst",
+  "name": "Llm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:55.641Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_llm_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin69_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:07:55.637Z"
+    },
+    {
+      "name": "Akali_Skin68_Mat.tex",
+      "updatedAt": "2026-04-17T17:07:55.637Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin69",
+    "bin": "data/characters/akali/skins/skin69.bin",
+    "entryKey": "Characters/Akali/Skins/Skin69/Materials/LLM_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin69",
+      "bin": "data/characters/akali/skins/skin69.bin"
+    }
+  ]
+}

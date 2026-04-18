@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-tentacles-inst",
+  "name": "Diffuse Bloom Tentacles Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:12.340Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_tentacles_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:09:12.334Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin48",
+    "bin": "data/characters/yasuo/skins/skin48.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin48/Materials/Diffuse_Bloom_Tentacles_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin48",
+      "bin": "data/characters/yasuo/skins/skin48.bin"
+    }
+  ]
+}

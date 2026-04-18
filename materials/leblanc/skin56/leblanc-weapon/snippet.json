@@ -1,0 +1,48 @@
+{
+  "id": "leblanc-weapon",
+  "name": "Leblanc Weapon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:33.533Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leblanc_weapon",
+  "textureFiles": [
+    {
+      "name": "Leblanc_Skin55_Gold_Matcap.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.526Z"
+    },
+    {
+      "name": "Leblanc_Skin55_Mask_Cape_02.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.526Z"
+    },
+    {
+      "name": "Leblanc_Skin56_Weapon_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:33.526Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:33.526Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin56",
+    "bin": "data/characters/leblanc/skins/skin56.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin56/Materials/Leblanc_Weapon"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin56",
+      "bin": "data/characters/leblanc/skins/skin56.bin"
+    }
+  ]
+}

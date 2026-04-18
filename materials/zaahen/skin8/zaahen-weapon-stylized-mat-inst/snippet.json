@@ -1,0 +1,68 @@
+{
+  "id": "zaahen-weapon-stylized-mat-inst",
+  "name": "Zaahen Weapon Stylized Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:26.928Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zaahen_weapon_stylized_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Material_ZH_Idle_TurbulDeform.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "MRND_materialMask.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "Ahri_Skin88_WaterShapeMask_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "Zaahen_Flowmap2.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "MRND_AdditiveScroll_Combo_TX.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "Material_ZH_Idle_StylizedHighlight.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:11:26.913Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zaahen",
+    "skin": "skin8",
+    "bin": "data/characters/zaahen/skins/skin8.bin",
+    "entryKey": "Characters/Zaahen/Skins/Skin8/Materials/Zaahen_Weapon_StylizedMat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zaahen",
+      "skin": "skin8",
+      "bin": "data/characters/zaahen/skins/skin8.bin"
+    }
+  ]
+}

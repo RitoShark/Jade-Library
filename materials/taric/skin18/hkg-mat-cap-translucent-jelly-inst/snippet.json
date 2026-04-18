@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-jelly-inst",
+  "name": "Hkg Mat Cap Translucent Jelly Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:16.949Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_jelly_inst",
+  "textureFiles": [
+    {
+      "name": "Taric_Skin18_Idle_PetJelly01.tex",
+      "updatedAt": "2026-04-17T18:00:16.944Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T18:00:16.944Z"
+    },
+    {
+      "name": "Taric_Skin18_Idle_PetAlpha01.tex",
+      "updatedAt": "2026-04-17T18:00:16.944Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taric",
+    "skin": "skin18",
+    "bin": "data/characters/taric/skins/skin18.bin",
+    "entryKey": "Characters/Taric/Skins/Skin18/Materials/HKG_MatCap_Translucent_Jelly_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taric",
+      "skin": "skin18",
+      "bin": "data/characters/taric/skins/skin18.bin"
+    }
+  ]
+}

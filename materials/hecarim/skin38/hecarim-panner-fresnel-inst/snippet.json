@@ -1,0 +1,48 @@
+{
+  "id": "hecarim-panner-fresnel-inst",
+  "name": "Hecarim Panner Fresnel Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:22.381Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hecarim_panner_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:22.376Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:22.376Z"
+    },
+    {
+      "name": "Hecarim_Skin38_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:21:22.376Z"
+    },
+    {
+      "name": "Hecarim_Skin31_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:21:22.376Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin38",
+    "bin": "data/characters/hecarim/skins/skin38.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin38/Materials/Hecarim_Panner_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin38",
+      "bin": "data/characters/hecarim/skins/skin38.bin"
+    }
+  ]
+}

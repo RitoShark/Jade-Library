@@ -1,0 +1,42 @@
+{
+  "id": "vayne-prestige-inst",
+  "name": "Vayne Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:40.963Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_vayne_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Vayne_Skin33_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:03:40.957Z"
+    },
+    {
+      "name": "Vayne_Skin33_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:03:40.957Z"
+    },
+    {
+      "name": "Vayne_Skin33_Noise.tex",
+      "updatedAt": "2026-04-17T18:03:40.957Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:40.957Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin33",
+    "bin": "data/characters/vayne/skins/skin33.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin33/Materials/Vayne_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin33",
+      "bin": "data/characters/vayne/skins/skin33.bin"
+    }
+  ]
+}

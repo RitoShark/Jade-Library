@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-body-inst",
+  "name": "Fresnel Body Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:40.530Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_body_inst",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin37_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:40.521Z"
+    },
+    {
+      "name": "Body.tex",
+      "updatedAt": "2026-04-17T17:31:40.521Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin37",
+    "bin": "data/characters/kogmaw/skins/skin37.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin37/Materials/Fresnel_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin37",
+      "bin": "data/characters/kogmaw/skins/skin37.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "fiora-body-dissolve-inst",
+  "name": "Fiora Body Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:52.258Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fiora_body_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Fiora_Skin41_Recall_Dissolve_Gradient.tex",
+      "updatedAt": "2026-04-17T17:18:52.242Z"
+    },
+    {
+      "name": "common_color-hold.tex",
+      "updatedAt": "2026-04-17T17:18:52.242Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fiora",
+    "skin": "skin41",
+    "bin": "data/characters/fiora/skins/skin41.bin",
+    "entryKey": "Characters/Fiora/Skins/Skin41/Materials/Fiora_Body_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fiora",
+      "skin": "skin41",
+      "bin": "data/characters/fiora/skins/skin41.bin"
+    }
+  ]
+}

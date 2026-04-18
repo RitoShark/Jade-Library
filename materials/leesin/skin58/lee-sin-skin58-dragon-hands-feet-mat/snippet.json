@@ -1,0 +1,38 @@
+{
+  "id": "lee-sin-skin58-dragon-hands-feet-mat",
+  "name": "Lee Sin Skin58 Dragon Hands Feet Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:08.395Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lee_sin_skin58_dragon_hands_feet_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin58_DLimbs_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:08.389Z"
+    },
+    {
+      "name": "LeeSin_Skin58_DLimbs_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:08.390Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:08.390Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin58",
+    "bin": "data/characters/leesin/skins/skin58.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin58/Materials/LeeSin_Skin58_Dragon_HandsFeet_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin58",
+      "bin": "data/characters/leesin/skins/skin58.bin"
+    }
+  ]
+}

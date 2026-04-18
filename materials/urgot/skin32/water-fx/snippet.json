@@ -1,0 +1,36 @@
+{
+  "id": "water-fx",
+  "name": "Water Fx",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:00.617Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_water_fx",
+  "textureFiles": [
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T18:03:00.612Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Urgot",
+    "skin": "skin32",
+    "bin": "data/characters/urgot/skins/skin32.bin",
+    "entryKey": "Characters/Urgot/Skins/Skin32/Materials/WaterFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Urgot",
+      "skin": "skin32",
+      "bin": "data/characters/urgot/skins/skin32.bin"
+    }
+  ]
+}

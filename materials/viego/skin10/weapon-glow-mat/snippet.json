@@ -1,0 +1,31 @@
+{
+  "id": "weapon-glow-mat",
+  "name": "Weapon Glow Mat",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:36.314Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_glow_mat",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin10",
+    "bin": "data/characters/viego/skins/skin10.bin",
+    "entryKey": "Characters/Viego/Skins/Skin10/Materials/WeaponGlow_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin10",
+      "bin": "data/characters/viego/skins/skin10.bin"
+    }
+  ]
+}

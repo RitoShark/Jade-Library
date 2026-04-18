@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-fin-inst",
+  "name": "Diffuse Bloom Fin Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:48.105Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_fin_inst",
+  "textureFiles": [
+    {
+      "name": "RekSai_Skin26_TX_CM_Mask3.SKINS_RekSai_Skin26.tex",
+      "updatedAt": "2026-04-17T17:47:48.098Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "RekSai",
+    "skin": "skin32",
+    "bin": "data/characters/reksai/skins/skin32.bin",
+    "entryKey": "Characters/RekSai/Skins/Skin32/Materials/Diffuse_Bloom_Fin_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "RekSai",
+      "skin": "skin32",
+      "bin": "data/characters/reksai/skins/skin32.bin"
+    }
+  ]
+}

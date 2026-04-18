@@ -1,0 +1,48 @@
+{
+  "id": "hkg-gold-blue-metal-inst",
+  "name": "Hkg Gold Blue Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:41.002Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_gold_blue_metal_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:31:40.997Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:31:40.997Z"
+    },
+    {
+      "name": "KogMaw_Skin38_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:40.997Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:40.997Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin38",
+    "bin": "data/characters/kogmaw/skins/skin38.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin38/Materials/HKG_Gold_BlueMetal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin38",
+      "bin": "data/characters/kogmaw/skins/skin38.bin"
+    }
+  ]
+}

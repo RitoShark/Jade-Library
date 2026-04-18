@@ -1,0 +1,38 @@
+{
+  "id": "leesin-skin68-body",
+  "name": "Leesin Skin68 Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:09.857Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_leesin_skin68_body",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin68_TX_CM.SKINS_LeeSin_Skin68.tex",
+      "updatedAt": "2026-04-17T17:33:09.851Z"
+    },
+    {
+      "name": "Leesin_Skin68_Body_Mask_TX_CM.SKINS_LeeSin_Skin68.tex",
+      "updatedAt": "2026-04-17T17:33:09.851Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:09.851Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin68",
+    "bin": "data/characters/leesin/skins/skin68.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin68/Materials/Leesin_Skin68_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin68",
+      "bin": "data/characters/leesin/skins/skin68.bin"
+    }
+  ]
+}

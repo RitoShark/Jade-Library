@@ -1,0 +1,44 @@
+{
+  "id": "kayle-skin06-transform-flash-inst",
+  "name": "Kayle Skin06 Transform Flash Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:45.483Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin06_transform_flash_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:29:45.477Z"
+    },
+    {
+      "name": "Default_DoubleGradient.tex",
+      "updatedAt": "2026-04-17T17:29:45.477Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:29:45.477Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin6",
+    "bin": "data/kayle_skins_skin51_skins_skin52_skins_skin53_skins_skin54_skins_skin55_skins_skin56_skins_skin6.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin6/Materials/Kayle_Skin06_transform_flash_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin6",
+      "bin": "data/kayle_skins_skin51_skins_skin52_skins_skin53_skins_skin54_skins_skin55_skins_skin56_skins_skin6.bin"
+    }
+  ]
+}

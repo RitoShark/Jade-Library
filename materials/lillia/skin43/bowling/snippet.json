@@ -1,0 +1,56 @@
+{
+  "id": "bowling",
+  "name": "Bowling",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:59.716Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bowling",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    },
+    {
+      "name": "Lillia_Skin37_GoldMask_RMA.SKINS_Lillia_Skin37.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:59.711Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin43",
+    "bin": "data/characters/lillia/skins/skin43.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin43/Materials/Bowling"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin43",
+      "bin": "data/characters/lillia/skins/skin43.bin"
+    }
+  ]
+}

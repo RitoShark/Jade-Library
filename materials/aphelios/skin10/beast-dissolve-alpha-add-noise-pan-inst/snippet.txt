@@ -1,0 +1,251 @@
+"jadelib_beast_dissolve_alpha_add_noise_pan_inst" = StaticMaterialDef {
+    name: string = "jadelib_beast_dissolve_alpha_add_noise_pan_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pan_Texture"
+            texturePath: string = "assets/jadelib/beast-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_Add_Noise.tex"
+            addressV: u32 = 2
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MaskTexture"
+            texturePath: string = "assets/jadelib/beast-dissolve-alpha-add-noise-pan-inst/common_color-hold.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/beast-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_SS_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/beast-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_Erosion.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { 0.05000000074505806, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.8250000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Mutliplier"
+            value: vec4 = { 0.8550000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 1, 0.4000000059604645, 0.10196078568696976, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 0.5249999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Tex_Speed"
+            value: vec4 = { 0.15000000596046448, 0.4000000059604645, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_Blend"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Alpha_Add_Noise_Pan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "recall"
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.9725358486175537
+                                    0.9858177900314331
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1
+                                    -0.4228796362876892
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "VFX_Blend"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "recall"
+                        }
+                        mTurnOnTimeSec: f32 = 8
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            -0.0022050717379897833
+                            0.12620772421360016
+                            0.17949272692203522
+                            0.19913044571876526
+                            0.2765164375305176
+                            0.3294370174407959
+                            1.0061110258102417
+                        }
+                        values: list[f32] = {
+                            0
+                            0
+                            0.9939715266227722
+                            0.7046523094177246
+                            0.1425822675228119
+                            0.004398104269057512
+                            0
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Mutliplier"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "recall"
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.8952797651290894
+                                    0.9274696111679077
+                                    0.9677069187164307
+                                    0.9898374080657959
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1
+                                    0.8761062026023865
+                                    0.09734513610601425
+                                    0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "recall"
+                        }
+                        mOnValue: f32 = 0.6000000238418579
+                        mTurnOnTimeSec: f32 = 8
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            -0.0022050717379897833
+                            0.10981234908103943
+                            0.13235600292682648
+                            0.17863620817661285
+                            0.2724176049232483
+                            0.3847714364528656
+                            1.0061110258102417
+                        }
+                        values: list[f32] = {
+                            0
+                            0
+                            0.9939715266227722
+                            0.48034897446632385
+                            0.11619365215301514
+                            0
+                            0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "veil",
+  "name": "Veil",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:30.325Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_veil",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:41:30.318Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:30.318Z"
+    },
+    {
+      "name": "Nami_Skin68_RBody_Idle_01.SKINS_Nami_Skin68.tex",
+      "updatedAt": "2026-04-17T17:41:30.318Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:30.318Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin68",
+    "bin": "data/characters/nami/skins/skin68.bin",
+    "entryKey": "Characters/Nami/Skins/Skin68/Materials/Veil"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin68",
+      "bin": "data/characters/nami/skins/skin68.bin"
+    }
+  ]
+}

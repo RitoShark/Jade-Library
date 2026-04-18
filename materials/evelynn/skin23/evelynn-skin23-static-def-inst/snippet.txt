@@ -1,0 +1,118 @@
+"jadelib_evelynn_skin23_static_def_inst" = StaticMaterialDef {
+    name: string = "jadelib_evelynn_skin23_static_def_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DiffuseTexture"
+            texturePath: string = "assets/jadelib/evelynn-skin23-static-def-inst/Evelynn_Skin23_TX_CM.tex"
+            uncensoredTextures: map[hash,string] = {
+                "shade" = "ASSETS/Characters/Evelynn/Skins/Skin23/Evelynn_Skin23_TX_CM.tex"
+            }
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScrollingTexture"
+            texturePath: string = "assets/jadelib/evelynn-skin23-static-def-inst/common_color-hold.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MaskTexture"
+            texturePath: string = "assets/jadelib/evelynn-skin23-static-def-inst/Evelynn_Skin15_Mask_v02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ShadowTexture"
+            texturePath: string = "assets/jadelib/evelynn-skin23-static-def-inst/Evelynn_Skin23_ShadowForm_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "maskAlphaIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ShadowFresnel"
+            value: vec4 = { 0.6075000166893005, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Xscroll"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Yscroll"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Empowered_E"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Hair_Fresnel_Min"
+            value: vec4 = { 0, 0, 0, 0.5 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Hair_Fresnel_Max"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Hair_Fresnel_Color"
+            value: vec4 = { 0.9921568632125854, 0, 0.529411792755127, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.8500000238418579, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "SHADOW_FORM"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_Evelynn"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Empowered_E"
+                driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                    mScriptName: string = "EvelynnE"
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "SHADOW_FORM"
+            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                mScriptName: string = "EvelynnStealthRing"
+            }
+        }
+    }
+}

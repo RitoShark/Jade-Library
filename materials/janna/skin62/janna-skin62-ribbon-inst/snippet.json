@@ -1,0 +1,36 @@
+{
+  "id": "janna-skin62-ribbon-inst",
+  "name": "Janna Skin62 Ribbon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:29.247Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_janna_skin62_ribbon_inst",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin62_Ribbon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:29.243Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin62",
+    "bin": "data/characters/janna/skins/skin62.bin",
+    "entryKey": "Characters/Janna/Skins/Skin62/Materials/Janna_Skin62_Ribbon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin62",
+      "bin": "data/characters/janna/skins/skin62.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-diamond-inst",
+  "name": "Bloom Diamond Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:10.957Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "Blitzcrank_Diamond_Bloom.tex",
+      "updatedAt": "2026-04-17T17:12:10.952Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin36",
+    "bin": "data/characters/blitzcrank/skins/skin36.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin36/Materials/Bloom_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin36",
+      "bin": "data/characters/blitzcrank/skins/skin36.bin"
+    }
+  ]
+}

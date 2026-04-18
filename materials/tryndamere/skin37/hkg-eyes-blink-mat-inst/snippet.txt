@@ -1,0 +1,74 @@
+"jadelib_hkg_eyes_blink_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_eyes_blink_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Eyelid_Texture"
+            texturePath: string = "assets/jadelib/hkg-eyes-blink-mat-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Eyes_Mask"
+            texturePath: string = "assets/jadelib/hkg-eyes-blink-mat-inst/Tryndamere_Skin37_Eyes_Mask_TX_CM.SKINS_Tryndamere_Skin37.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blink_Texture"
+            texturePath: string = "assets/jadelib/hkg-eyes-blink-mat-inst/Tryndamere_Skin37_Eyes_Blinking_TX_CM.SKINS_Tryndamere_Skin37.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "TimeOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "eyelid_color"
+            value: vec4 = { 0.5882353186607361, 0.34117648005485535, 0.2705882489681244, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blink_speed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ControlAll"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.8713054060935974, 0.4576333165168762, 0.08757152408361435, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.375, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_EYELID_TEX"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Eyes_Blink_Mat"
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

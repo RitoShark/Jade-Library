@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-masked-diffuse-bloom-inst",
+  "name": "Scrolling Masked Diffuse Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:55.642Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_masked_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Soraka_Skin27_Vfx_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:56:55.634Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin27",
+    "bin": "data/characters/soraka/skins/skin27.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin27/Materials/ScrollingMaskedDiffuseBloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin27",
+      "bin": "data/characters/soraka/skins/skin27.bin"
+    }
+  ]
+}

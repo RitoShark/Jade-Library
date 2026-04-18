@@ -1,0 +1,44 @@
+{
+  "id": "crown-inst",
+  "name": "Crown Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:03.085Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crown_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_Skin65_MatCap_Crown.tex",
+      "updatedAt": "2026-04-17T17:10:03.079Z"
+    },
+    {
+      "name": "Ashe_Skin65_Mask_Crown.tex",
+      "updatedAt": "2026-04-17T17:10:03.079Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:10:03.079Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin65",
+    "bin": "data/characters/ashe/skins/skin65.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin65/Materials/Crown_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin65",
+      "bin": "data/characters/ashe/skins/skin65.bin"
+    }
+  ]
+}

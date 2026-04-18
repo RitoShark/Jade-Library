@@ -1,0 +1,36 @@
+{
+  "id": "demon-arm",
+  "name": "Demon Arm",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:56.815Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_demon_arm",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:57:56.810Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin22",
+    "bin": "data/characters/swain/skins/skin22.bin",
+    "entryKey": "Characters/Swain/Skins/Skin22/Materials/demon_arm"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin22",
+      "bin": "data/characters/swain/skins/skin22.bin"
+    }
+  ]
+}

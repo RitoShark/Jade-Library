@@ -1,0 +1,106 @@
+"jadelib_vertex_wobble_vertex_color_controlled_pan_noise_fresnel_inst" = StaticMaterialDef {
+    name: string = "jadelib_vertex_wobble_vertex_color_controlled_pan_noise_fresnel_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scrolling_Noise_Texture"
+            texturePath: string = "assets/jadelib/vertex-wobble-vertex-color-controlled-pan-noise-fresnel-inst/Kennen_Skin07_Material_Add.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Rate"
+            value: vec4 = { 14.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Amplitude"
+            value: vec4 = { 0.07500000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Offset"
+            value: vec4 = { -9.479999542236328, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ColorFresnelSize"
+            value: vec4 = { -0.05700000002980232, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel_color"
+            value: vec4 = { 0.26274511218070984, 1, 0.2235294133424759, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UVNoiseScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "NoiseScrollSpeed"
+            value: vec4 = { 0.05000000074505806, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HairRotateVector"
+            value: vec4 = { 21, 24, -4, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SineWobbleMult"
+            value: vec4 = { 0.10499999672174454, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RotatePivotPoint"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Green_Time_Offset_Mult"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_COLOR_FRESNEL"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Vertex_Wobble_VertexColorControlled_Pan_Noise_Fresnel"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "RotatePivotPoint"
+                driver: pointer = PlayerPositionDynamicMaterialDriver {}
+            }
+        }
+    }
+}

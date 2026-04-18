@@ -1,0 +1,48 @@
+{
+  "id": "2blend-2add-pan-inst",
+  "name": "2blend 2add Pan Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:26.252Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_2blend_2add_pan_inst",
+  "textureFiles": [
+    {
+      "name": "Vladimir_Skin16_capeflame.tex",
+      "updatedAt": "2026-04-17T18:06:26.246Z"
+    },
+    {
+      "name": "Vladimir_Skin16_NightTile.tex",
+      "updatedAt": "2026-04-17T18:06:26.246Z"
+    },
+    {
+      "name": "Vladimir_Skin16_capeflamemask.tex",
+      "updatedAt": "2026-04-17T18:06:26.246Z"
+    },
+    {
+      "name": "Vladimir_Skin16_capeflamemask.tex",
+      "updatedAt": "2026-04-17T18:06:26.246Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vladimir",
+    "skin": "skin16",
+    "bin": "data/characters/vladimir/skins/skin16.bin",
+    "entryKey": "Characters/Vladimir/Skins/Skin16/Materials/2Blend_2Add_Pan_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vladimir",
+      "skin": "skin16",
+      "bin": "data/characters/vladimir/skins/skin16.bin"
+    }
+  ]
+}

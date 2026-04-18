@@ -1,0 +1,40 @@
+{
+  "id": "familiar-diffuse-blend-inst",
+  "name": "Familiar Diffuse Blend Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:18.181Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_familiar_diffuse_blend_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin05_Familiar_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:18.155Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:18.155Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin36",
+    "bin": "data/characters/rakan/skins/skin36.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin36/Materials/Familiar_Diffuse_Blend_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin36",
+      "bin": "data/characters/rakan/skins/skin36.bin"
+    }
+  ]
+}

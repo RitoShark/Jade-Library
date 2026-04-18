@@ -1,0 +1,56 @@
+{
+  "id": "star-guardian-redeem-main-inst",
+  "name": "Star Guardian Redeem Main Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:38.668Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_star_guardian_redeem_main_inst",
+  "textureFiles": [
+    {
+      "name": "Xayah_Skin38_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    },
+    {
+      "name": "Xayah_Skin04_Pack_Transition_Main.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    },
+    {
+      "name": "Xayah_Skin38_W_Background01.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    },
+    {
+      "name": "gradient_x4.tex",
+      "updatedAt": "2026-04-17T18:07:38.661Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin38",
+    "bin": "data/characters/xayah/skins/skin38.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin38/Materials/StarGuardian_Redeem_Main_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin38",
+      "bin": "data/characters/xayah/skins/skin38.bin"
+    }
+  ]
+}

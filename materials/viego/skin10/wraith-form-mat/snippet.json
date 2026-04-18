@@ -1,0 +1,40 @@
+{
+  "id": "wraith-form-mat",
+  "name": "Wraith Form Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:36.142Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wraith_form_mat",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin10_Recolor_TX.tex",
+      "updatedAt": "2026-04-17T18:05:36.136Z"
+    },
+    {
+      "name": "Viego_Skin10_Wraith_Noise.tex",
+      "updatedAt": "2026-04-17T18:05:36.136Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin10",
+    "bin": "data/characters/viego/skins/skin10.bin",
+    "entryKey": "Characters/Viego/Skins/Skin10/Materials/WraithForm_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin10",
+      "bin": "data/characters/viego/skins/skin10.bin"
+    }
+  ]
+}

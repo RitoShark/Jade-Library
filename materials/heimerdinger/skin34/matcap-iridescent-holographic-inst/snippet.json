@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:34.466Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "Heimerdinger_Skin34_Holo_Mask_TX_CM.Chroma_Paragon_Crepe.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:21:34.461Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Heimerdinger",
+    "skin": "skin34",
+    "bin": "data/characters/heimerdinger/skins/skin34.bin",
+    "entryKey": "Characters/Heimerdinger/Skins/Skin34/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Heimerdinger",
+      "skin": "skin34",
+      "bin": "data/characters/heimerdinger/skins/skin34.bin"
+    }
+  ]
+}

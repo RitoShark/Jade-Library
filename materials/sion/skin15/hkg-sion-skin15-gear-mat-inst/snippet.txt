@@ -1,0 +1,145 @@
+"jadelib_hkg_sion_skin15_gear_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_sion_skin15_gear_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hkg-sion-skin15-gear-mat-inst/Sion_Skin14_Gear_MAT_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Area"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Color"
+            value: vec4 = { 1.7999999523162842, 0.5, 0.15000000596046448, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Frequcey"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Stream"
+            value: vec4 = { -0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Color"
+            value: vec4 = { 0.04313725605607033, 0.35686275362968445, 0.1882352977991104, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Pissive"
+            value: vec4 = { 0.062745101749897, 0.47843137383461, 0.3176470696926117, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Pissive"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pissive_Hand"
+            value: vec4 = { 0.05000000074505806, 1, 0.6000000238418579, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Brightness_Color"
+            value: vec4 = { 1, 0.3333333432674408, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_1"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_2"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Direction"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "PASSIVE_SWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MALZAHAR_SWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM_SWITCH"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_WorldBreakerSkin_Common"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Flash_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 1
+                }
+            }
+        }
+    }
+}

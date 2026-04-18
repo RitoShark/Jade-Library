@@ -1,0 +1,36 @@
+{
+  "id": "kogmaw-skin4-screen-space-pan-masked-inst",
+  "name": "Kogmaw Skin4 Screen Space Pan Masked Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:42.727Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kogmaw_skin4_screen_space_pan_masked_inst",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin04_W_Material_Noise.tex",
+      "updatedAt": "2026-04-17T17:31:42.720Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin4",
+    "bin": "data/characters/kogmaw/skins/skin4.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin4/Materials/Kogmaw_Skin4_ScreenSpace_Pan_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin4",
+      "bin": "data/characters/kogmaw/skins/skin4.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ceramic-mat-crystal-inst",
+  "name": "Ceramic Mat Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:34.764Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ceramic_mat_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "Leona_Skin51_MatCap2_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:34.758Z"
+    },
+    {
+      "name": "Leona_Skin50_RecallMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:34.758Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:33:34.758Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin51",
+    "bin": "data/characters/leona/skins/skin51.bin",
+    "entryKey": "Characters/Leona/Skins/Skin51/Materials/Ceramic_Mat_Crystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin51",
+      "bin": "data/characters/leona/skins/skin51.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "kaisa-skin71-main-mat-inst",
+  "name": "Kaisa Skin71 Main Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:39.392Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin71_main_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Form3_Specular_MAT_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Iridescence_MAT_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Noise_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Form3_Panning_MAT_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    },
+    {
+      "name": "Kaisa_Skin71_Form3_Ult_TX_CM.SKINS_Kaisa_HoL.tex",
+      "updatedAt": "2026-04-17T17:26:39.381Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin71",
+    "bin": "data/characters/kaisa/skins/skin71.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin71/Materials/Kaisa_Skin71_Main_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin71",
+      "bin": "data/characters/kaisa/skins/skin71.bin"
+    }
+  ]
+}

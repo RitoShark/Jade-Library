@@ -1,0 +1,36 @@
+{
+  "id": "body-fresnel-inst",
+  "name": "Body Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:00.256Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:58:00.249Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin25",
+    "bin": "data/characters/swaindemonform/skins/skin25.bin",
+    "entryKey": "Characters/SwainDemonForm/Skins/Skin25/Materials/bodyFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin25",
+      "bin": "data/characters/swaindemonform/skins/skin25.bin"
+    }
+  ]
+}

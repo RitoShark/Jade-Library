@@ -1,0 +1,36 @@
+{
+  "id": "nilah-skin21-body-inst",
+  "name": "Nilah Skin21 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:34.018Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nilah_skin21_body_inst",
+  "textureFiles": [
+    {
+      "name": "Nilah_Skin21_Arm_Mask_TX_CM.SKINS_Nilah_Skin21.tex",
+      "updatedAt": "2026-04-17T17:43:34.010Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nilah",
+    "skin": "skin24",
+    "bin": "data/characters/nilah/skins/skin24.bin",
+    "entryKey": "Characters/Nilah/Skins/Skin24/Materials/NilahSkin21_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nilah",
+      "skin": "skin24",
+      "bin": "data/characters/nilah/skins/skin24.bin"
+    }
+  ]
+}

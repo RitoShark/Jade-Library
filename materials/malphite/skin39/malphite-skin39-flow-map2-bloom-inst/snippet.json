@@ -1,0 +1,44 @@
+{
+  "id": "malphite-skin39-flow-map2-bloom-inst",
+  "name": "Malphite Skin39 Flow Map2 Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:25.544Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_malphite_skin39_flow_map2_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin37_CloudFM_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:36:25.538Z"
+    },
+    {
+      "name": "Malphite_Skin39_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:36:25.538Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:25.538Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin39",
+    "bin": "data/characters/malphite/skins/skin39.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin39/Materials/Malphite_Skin39_FlowMap2_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin39",
+      "bin": "data/characters/malphite/skins/skin39.bin"
+    }
+  ]
+}

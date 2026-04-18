@@ -1,0 +1,45 @@
+{
+  "id": "hkg-mat-cap-vfx-alpha01-inst",
+  "name": "Hkg Mat Cap Vfx Alpha01 Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.033Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_vfx_alpha01_inst",
+  "textureFiles": [
+    {
+      "name": "Nami_Skin41_MatCap_Bubble_01.tex",
+      "updatedAt": "2026-04-17T17:41:31.354Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:31.354Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin41",
+    "bin": "e3e7694c79a7cb88.bin",
+    "entryKey": "Characters/Nami/Skins/Skin41/Materials/HKG_MatCap_VFX_Alpha01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin41",
+      "bin": "e3e7694c79a7cb88.bin"
+    },
+    {
+      "champion": "Ornn",
+      "skin": "skin11",
+      "bin": "data/characters/ornn/skins/skin11.bin"
+    }
+  ]
+}

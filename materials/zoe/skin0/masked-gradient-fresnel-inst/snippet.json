@@ -1,0 +1,44 @@
+{
+  "id": "masked-gradient-fresnel-inst",
+  "name": "Masked Gradient Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:55.133Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_masked_gradient_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Hair_nightsky.tex",
+      "updatedAt": "2026-04-17T18:13:55.128Z"
+    },
+    {
+      "name": "Zoe_Base_hair_material.tex",
+      "updatedAt": "2026-04-17T18:13:55.128Z"
+    },
+    {
+      "name": "Zoe_Base_Mat_fresnel.tex",
+      "updatedAt": "2026-04-17T18:13:55.128Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin0",
+    "bin": "data/characters/zoe/skins/skin0.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin0/Materials/MaskedGradientFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin0",
+      "bin": "data/characters/zoe/skins/skin0.bin"
+    }
+  ]
+}

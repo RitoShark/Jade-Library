@@ -1,0 +1,50 @@
+{
+  "id": "aatrox-skin30-body-metal-inst",
+  "name": "Aatrox Skin30 Body Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:17.967Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_aatrox_skin30_body_metal_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    },
+    {
+      "name": "Aatrox_Skin30_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    },
+    {
+      "name": "21.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    },
+    {
+      "name": "Aatrox_Skin30_Materials_Mask_Body.tex",
+      "updatedAt": "2026-04-17T17:06:17.960Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin30",
+    "bin": "data/characters/aatrox/skins/skin30.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin30/Materials/Aatrox_Skin30_Body_Metal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin30",
+      "bin": "data/characters/aatrox/skins/skin30.bin"
+    }
+  ]
+}

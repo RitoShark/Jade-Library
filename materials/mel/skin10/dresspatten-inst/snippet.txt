@@ -1,0 +1,106 @@
+"jadelib_dresspatten_inst" = StaticMaterialDef {
+    name: string = "jadelib_dresspatten_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/dresspatten-inst/black.SKINS_Mel_Skin10.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_UV_Range"
+            texturePath: string = "assets/jadelib/dresspatten-inst/Mel_Skin10_DressMask_TX_CM.SKINS_Mel_Skin10.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask01"
+            texturePath: string = "assets/jadelib/dresspatten-inst/Mel_Skin10_DressPatten_TX_CM.SKINS_Mel_Skin10.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask02"
+            texturePath: string = "assets/jadelib/dresspatten-inst/black.SKINS_Mel_Skin10.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask03"
+            texturePath: string = "assets/jadelib/dresspatten-inst/black.SKINS_Mel_Skin10.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Change_Texture"
+            texturePath: string = "assets/jadelib/dresspatten-inst/black.SKINS_Mel_Skin10.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.4000000059604645, 1, 0.9700007438659668, 0.31000229716300964 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 3.8399999141693115, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.8399999737739563, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.31058213114738464, 0.729015052318573, 0.9721217751502991, 0.32156863808631897 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_01"
+            value: vec4 = { 0, -0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_02"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_03"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGB_Mask_View"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 0.18799999356269836, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Change_Val"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

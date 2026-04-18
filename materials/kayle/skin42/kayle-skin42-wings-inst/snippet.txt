@@ -1,0 +1,75 @@
+"jadelib_kayle_skin42_wings_inst" = StaticMaterialDef {
+    name: string = "jadelib_kayle_skin42_wings_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Panning_Tex"
+            texturePath: string = "assets/jadelib/kayle-skin42-wings-inst/SRI_Icon_Noise.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Add_Color"
+            value: vec4 = { 0.3176470696926117, 0.03921568766236305, 0.04313725605607033, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Add_ScrollSpeed"
+            value: vec4 = { 0.20000000298023224, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_OpacityLines_Scale"
+            value: vec4 = { 2, 1.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_OpacityLines_ScrollSpeed"
+            value: vec4 = { 0.20000000298023224, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaBlendValue"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "PanningBlendValue"
+            value: vec4 = { 0.3375000059604645, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_MultPan_AddPan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

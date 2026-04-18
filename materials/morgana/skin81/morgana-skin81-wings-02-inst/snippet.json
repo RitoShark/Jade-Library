@@ -1,0 +1,52 @@
+{
+  "id": "morgana-skin81-wings-02-inst",
+  "name": "Morgana Skin81 Wings 02 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:26.686Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_morgana_skin81_wings_02_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:26.678Z"
+    },
+    {
+      "name": "Morgana_Skin81_Wings_TX_CM.SKINS_Morgana_Skin81.tex",
+      "updatedAt": "2026-04-17T17:40:26.678Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:40:26.678Z"
+    },
+    {
+      "name": "Morgana_Skin81_Wings_Outline_Mask_TX_CM.SKINS_Morgana_Skin81.tex",
+      "updatedAt": "2026-04-17T17:40:26.678Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:26.678Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin81",
+    "bin": "data/characters/morgana/skins/skin81.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin81/Materials/Morgana_Skin81_Wings_02_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin81",
+      "bin": "data/characters/morgana/skins/skin81.bin"
+    }
+  ]
+}

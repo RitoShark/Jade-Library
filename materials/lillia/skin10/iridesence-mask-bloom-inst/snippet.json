@@ -1,0 +1,40 @@
+{
+  "id": "iridesence-mask-bloom-inst",
+  "name": "Iridesence Mask Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:53.825Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_iridesence_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Lillia_Skin10_Material_Gradient.tex",
+      "updatedAt": "2026-04-17T17:33:53.818Z"
+    },
+    {
+      "name": "Lillia_Skin10_Alpha_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:53.818Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin10",
+    "bin": "data/characters/lillia/skins/skin10.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin10/Materials/Iridesence_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin10",
+      "bin": "data/characters/lillia/skins/skin10.bin"
+    }
+  ]
+}

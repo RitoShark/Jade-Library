@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:46.981Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Nocturne_Skin16_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:46.975Z"
+    },
+    {
+      "name": "Material_Inst.tex",
+      "updatedAt": "2026-04-17T17:43:46.975Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nocturne",
+    "skin": "skin16",
+    "bin": "data/characters/nocturne/skins/skin16.bin",
+    "entryKey": "Characters/Nocturne/Skins/Skin16/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nocturne",
+      "skin": "skin16",
+      "bin": "data/characters/nocturne/skins/skin16.bin"
+    }
+  ]
+}

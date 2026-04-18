@@ -1,0 +1,48 @@
+{
+  "id": "ult-wings-skin4",
+  "name": "Ult Wings Skin4",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:23.840Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ult_wings_skin4",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin04_Ult_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:23.834Z"
+    },
+    {
+      "name": "Morgana_Base_R_Fire_Trail_Up.tex",
+      "updatedAt": "2026-04-17T17:40:23.834Z"
+    },
+    {
+      "name": "Morgana_Skin04_Ult_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:23.834Z"
+    },
+    {
+      "name": "Morgana_Skin04_Ult_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:23.834Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin4",
+    "bin": "data/characters/morgana/skins/skin4.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin4/Materials/Ult_wings_Skin4"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin4",
+      "bin": "data/characters/morgana/skins/skin4.bin"
+    }
+  ]
+}

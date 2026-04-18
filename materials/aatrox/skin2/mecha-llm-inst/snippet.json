@@ -1,0 +1,56 @@
+{
+  "id": "mecha-llm-inst",
+  "name": "Mecha Llm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:13.471Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mecha_llm_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    },
+    {
+      "name": "Aatrox_Skin02_Mask_RMA.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:13.465Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin2",
+    "bin": "data/characters/aatrox/skins/skin2.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin2/Materials/MechaLLM_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin2",
+      "bin": "data/characters/aatrox/skins/skin2.bin"
+    }
+  ]
+}

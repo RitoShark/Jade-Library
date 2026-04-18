@@ -1,0 +1,44 @@
+{
+  "id": "crystal-matcap",
+  "name": "Crystal Matcap",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.851Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crystal_matcap",
+  "textureFiles": [
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:35:59.845Z"
+    },
+    {
+      "name": "gray.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:35:59.845Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:35:59.845Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin70",
+    "bin": "data/characters/lux/skins/skin70.bin",
+    "entryKey": "Characters/Lux/Skins/Skin70/Materials/Crystal_Matcap"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin70",
+      "bin": "data/characters/lux/skins/skin70.bin"
+    }
+  ]
+}

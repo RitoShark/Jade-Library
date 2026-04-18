@@ -1,0 +1,31 @@
+{
+  "id": "hkg-malphite-arm-mat",
+  "name": "Hkg Malphite Arm Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:18.671Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_malphite_arm_mat",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin23",
+    "bin": "data/characters/malphite/skins/skin23.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin23/Materials/HKG_Malphite_Arm_MAT"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin23",
+      "bin": "data/characters/malphite/skins/skin23.bin"
+    }
+  ]
+}

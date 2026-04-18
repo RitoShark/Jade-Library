@@ -1,0 +1,108 @@
+"jadelib_ahri_skin17_tails_mask_inst" = StaticMaterialDef {
+    name: string = "jadelib_ahri_skin17_tails_mask_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gredient_Texture"
+            texturePath: string = "assets/jadelib/ahri-skin17-tails-mask-inst/AhriTwirl2.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/ahri-skin17-tails-mask-inst/AhriTwirl3.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Masks"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Additive_Mask_Texture"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel"
+            value: vec4 = { 1.3508648872375488, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaFresnel_Size"
+            value: vec4 = { 5.425000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaFresnel_Bias"
+            value: vec4 = { 0.7300000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "X_Scale"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Y_Scale"
+            value: vec4 = { 2.0007998943328857, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "X_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Y_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color1"
+            value: vec4 = { 1, 0.886274516582489, 0.5921568870544434, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color2"
+            value: vec4 = { 1, 0.9647058844566345, 0.5764706134796143, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIVE_PANNER"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Harrowing_Base"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

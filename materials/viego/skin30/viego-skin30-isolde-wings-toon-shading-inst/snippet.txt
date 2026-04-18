@@ -1,0 +1,469 @@
+"jadelib_viego_skin30_isolde_wings_toon_shading_inst" = StaticMaterialDef {
+    name: string = "jadelib_viego_skin30_isolde_wings_toon_shading_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex_Mask"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Mask"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/MatCap_ToonPlastic.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingTex"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/ToonShading.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingOutlineTex"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/OutlineToneMap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingRimTex"
+            texturePath: string = "assets/jadelib/viego-skin30-isolde-wings-toon-shading-inst/Gradient_test_02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Pitch"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Yaw"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollStrength_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Color_Tint_R"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeed_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexTile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapTintColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirectionOverride"
+            value: vec4 = { 0.41999998688697815, 0.41999998688697815, 0.41999998688697815, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonShadePower"
+            value: vec4 = { 4.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonOutlineControl"
+            value: vec4 = { 0.800000011920929, 0.25, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonRimControl"
+            value: vec4 = { 0.5, 0.4000000059604645, 0.20000000298023224, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorBase"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorOutline"
+            value: vec4 = { 0.08999770879745483, 0.08999770879745483, 0.08999770879745483, 0.9799954295158386 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorRim"
+            value: vec4 = { 0.31000229716300964, 0.31000229716300964, 0.31000229716300964, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Color_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_SPHERICAL_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "RIM_COLOR_ON"
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            Group: string = "Toon"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "TintColorBase"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell2_Charge"
+                                    "Spell2_Charge_Move"
+                                    "Spell2_Dash"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = SubmeshVisibilityBoolDriver {
+                                    Submeshes: list[hash] = {
+                                        "Isolde_Body_MAT"
+                                    }
+                                }
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Run_Homeguard"
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = TimeMaterialDriver {}
+                                }
+                                mMinValue: f32 = -0.5
+                                mMaxValue: f32 = 0.30000001192092896
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Passive_Attack2"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = SubmeshVisibilityBoolDriver {
+                                    Submeshes: list[hash] = {
+                                        "Isolde_Body_MAT"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.10000000149011612
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Passive_Attack"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = SubmeshVisibilityBoolDriver {
+                                    Submeshes: list[hash] = {
+                                        "Isolde_Body_MAT"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.10000000149011612
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Passive_Ranged_Attack"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = SubmeshVisibilityBoolDriver {
+                                    Submeshes: list[hash] = {
+                                        "Isolde_Body_MAT"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.5
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell1"
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Spell1_ToIdle"
+                                            "Spell1"
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                    mCustomDuration: f32 = 0.8999999761581421
+                                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Spell1_ToIdle"
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.75
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "89942373"
+                                            "Spell1"
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                    mCustomDuration: f32 = 0.6000000238418579
+                                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "89942373"
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.8500000238418579
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Spell1_ToRun"
+                                            "Spell1"
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                    mCustomDuration: f32 = 0.5
+                                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Spell1_ToRun"
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.5
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "2019609024"
+                                        }
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "Dance_Intro"
+                                                "death"
+                                                "Joke"
+                                                "Passive_Attack"
+                                                "Passive_Attack2"
+                                                "Passive_Ranged_Attack"
+                                                "Run_Homeguard"
+                                                "Spell1"
+                                                "Spell2"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "2019609024"
+                                    }
+                                    mFrequency: f32 = 3.4000000953674316
+                                }
+                                mMaxValue: f32 = 0.30000001192092896
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "death"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.25
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Joke"
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Joke"
+                                    }
+                                    mFrequency: f32 = 5.300000190734863
+                                }
+                                mMaxValue: f32 = 0.30000001192092896
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Dance_Intro"
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Dance_Intro"
+                                    }
+                                    mFrequency: f32 = 0.44999998807907104
+                                }
+                                mMinValue: f32 = 0.07500000298023224
+                                mMaxValue: f32 = 0.125
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Dance_Loop"
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle_Var1"
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle_Var1"
+                                    }
+                                    mFrequency: f32 = 3.5999999046325684
+                                }
+                                mMinValue: f32 = 0.4000000059604645
+                                mMaxValue: f32 = 0.6000000238418579
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle_Var2"
+                                }
+                            }
+                            mValue: pointer = RemapFloatMaterialDriver {
+                                mDriver: pointer = SineMaterialDriver {
+                                    mDriver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle_Var2"
+                                    }
+                                    mFrequency: f32 = 3.799999952316284
+                                }
+                                mMinValue: f32 = 0.4000000059604645
+                                mMaxValue: f32 = 0.6000000238418579
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+        }
+    }
+}

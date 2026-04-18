@@ -1,0 +1,31 @@
+{
+  "id": "wing-r-switch-shadow-inst",
+  "name": "Wing R Switch Shadow Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:45.772Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wing_r_switch_shadow_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin38",
+    "bin": "data/characters/nasus/skins/skin38.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin38/Materials/Wing_R_Switch_Shadow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin38",
+      "bin": "data/characters/nasus/skins/skin38.bin"
+    }
+  ]
+}

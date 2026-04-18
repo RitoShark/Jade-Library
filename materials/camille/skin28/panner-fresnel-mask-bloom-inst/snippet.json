@@ -1,0 +1,36 @@
+{
+  "id": "panner-fresnel-mask-bloom-inst",
+  "name": "Panner Fresnel Mask Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:52.787Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panner_fresnel_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Camille_Skin28_Tape_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:52.780Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Camille",
+    "skin": "skin28",
+    "bin": "data/characters/camille/skins/skin28.bin",
+    "entryKey": "Characters/Camille/Skins/Skin28/Materials/Panner_Fresnel_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Camille",
+      "skin": "skin28",
+      "bin": "data/characters/camille/skins/skin28.bin"
+    }
+  ]
+}

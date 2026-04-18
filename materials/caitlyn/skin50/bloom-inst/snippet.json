@@ -1,0 +1,36 @@
+{
+  "id": "bloom-inst",
+  "name": "Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:30.679Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Caitlyn_Skin50_P_Weapon01.SKINS_Caitlyn_Skin50.tex",
+      "updatedAt": "2026-04-17T17:13:30.670Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin50",
+    "bin": "data/characters/caitlyn/skins/skin50.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin50/Materials/Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin50",
+      "bin": "data/characters/caitlyn/skins/skin50.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kayle-hair",
+  "name": "Kayle Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.186Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:29:43.181Z"
+    },
+    {
+      "name": "Kayle_Skin66_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:43.181Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:29:43.181Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin77",
+    "bin": "data/characters/kayle/skins/skin77.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin77/Materials/Kayle_Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin77",
+      "bin": "data/characters/kayle/skins/skin77.bin"
+    }
+  ]
+}

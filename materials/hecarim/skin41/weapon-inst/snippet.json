@@ -1,0 +1,64 @@
+{
+  "id": "weapon-inst",
+  "name": "Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:23.062Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "black.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "black.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "black.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "Hecarim_Skin41_Smoke_Color.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "Hecarim_Skin41_FireAlpha_TX_CM.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    },
+    {
+      "name": "black.SKINS_Hecarim_Skin41.tex",
+      "updatedAt": "2026-04-17T17:21:23.055Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin41",
+    "bin": "data/characters/hecarim/skins/skin41.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin41/Materials/Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin41",
+      "bin": "data/characters/hecarim/skins/skin41.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-horn",
+  "name": "Bloom Horn",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:36.784Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_horn",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:36.779Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Orianna",
+    "skin": "skin38",
+    "bin": "data/characters/orianna/skins/skin38.bin",
+    "entryKey": "Characters/Orianna/Skins/Skin38/Materials/bloom_horn"
+  },
+  "usedBy": [
+    {
+      "champion": "Orianna",
+      "skin": "skin38",
+      "bin": "data/characters/orianna/skins/skin38.bin"
+    }
+  ]
+}

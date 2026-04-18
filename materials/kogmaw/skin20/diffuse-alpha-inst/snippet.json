@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-alpha-inst",
+  "name": "Diffuse Alpha Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:39.542Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin20",
+    "bin": "data/characters/kogmaw/skins/skin20.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin20/Materials/Diffuse_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin20",
+      "bin": "data/characters/kogmaw/skins/skin20.bin"
+    }
+  ]
+}

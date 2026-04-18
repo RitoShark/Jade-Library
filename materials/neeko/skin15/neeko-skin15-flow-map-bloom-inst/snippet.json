@@ -1,0 +1,44 @@
+{
+  "id": "neeko-skin15-flow-map-bloom-inst",
+  "name": "Neeko Skin15 Flow Map Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:31.954Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_neeko_skin15_flow_map_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin12_TX_FM.tex",
+      "updatedAt": "2026-04-17T17:42:31.948Z"
+    },
+    {
+      "name": "Neeko_Skin12_CloudMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:31.948Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:31.948Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin15",
+    "bin": "data/characters/neeko/skins/skin15.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin15/Materials/Neeko_Skin15_FlowMap_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin15",
+      "bin": "data/characters/neeko/skins/skin15.bin"
+    }
+  ]
+}

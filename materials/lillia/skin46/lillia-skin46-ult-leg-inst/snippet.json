@@ -1,0 +1,48 @@
+{
+  "id": "lillia-skin46-ult-leg-inst",
+  "name": "Lillia Skin46 Ult Leg Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:00.171Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lillia_skin46_ult_leg_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:00.166Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:34:00.166Z"
+    },
+    {
+      "name": "Lillia_Skin46_UltBody_TX_CM.SKINS_Lillia_Skin46.tex",
+      "updatedAt": "2026-04-17T17:34:00.166Z"
+    },
+    {
+      "name": "Lillia_Skin46_p3_outline_TX_CM.SKINS_Lillia_Skin46.tex",
+      "updatedAt": "2026-04-17T17:34:00.166Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin46",
+    "bin": "data/characters/lillia/skins/skin46.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin46/Materials/Lillia_Skin46_Ult_Leg_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin46",
+      "bin": "data/characters/lillia/skins/skin46.bin"
+    }
+  ]
+}

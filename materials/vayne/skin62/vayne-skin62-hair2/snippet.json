@@ -1,0 +1,44 @@
+{
+  "id": "vayne-skin62-hair2",
+  "name": "Vayne Skin62 Hair2",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:49.495Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin62_hair2",
+  "textureFiles": [
+    {
+      "name": "stars.tex",
+      "updatedAt": "2026-04-17T18:03:49.484Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK1_StarMask.tex",
+      "updatedAt": "2026-04-17T18:03:49.484Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK2_Fresnel.tex",
+      "updatedAt": "2026-04-17T18:03:49.484Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin62",
+    "bin": "data/characters/vayne/skins/skin62.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin62/Materials/Vayne_Skin62_Hair2"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin62",
+      "bin": "data/characters/vayne/skins/skin62.bin"
+    }
+  ]
+}

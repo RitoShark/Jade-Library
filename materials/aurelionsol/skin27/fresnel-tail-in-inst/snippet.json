@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-tail-in-inst",
+  "name": "Fresnel Tail In Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:40.116Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_tail_in_inst",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin27_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:10:40.109Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:40.109Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin27",
+    "bin": "data/characters/aurelionsol/skins/skin27.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin27/Materials/Fresnel_Tail_In_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin27",
+      "bin": "data/characters/aurelionsol/skins/skin27.bin"
+    }
+  ]
+}

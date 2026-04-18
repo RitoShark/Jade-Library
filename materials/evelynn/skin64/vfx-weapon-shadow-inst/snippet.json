@@ -1,0 +1,64 @@
+{
+  "id": "vfx-weapon-shadow-inst",
+  "name": "Vfx Weapon Shadow Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:21.260Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vfx_weapon_shadow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "black.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "black.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "black.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "Ashe_Base_ErosionPack01.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "Evelynn_Skin64_Mask_Mat4.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    },
+    {
+      "name": "black.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.254Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin64",
+    "bin": "data/characters/evelynn/skins/skin64.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin64/Materials/VFX_Weapon_Shadow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin64",
+      "bin": "data/characters/evelynn/skins/skin64.bin"
+    }
+  ]
+}

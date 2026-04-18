@@ -1,0 +1,55 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:57.418Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    },
+    {
+      "name": "Diana_Skin65_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    },
+    {
+      "name": "Diana_Skin65_DemonFormMask_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskB_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.205Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin65",
+    "bin": "data/characters/diana/skins/skin65.bin",
+    "entryKey": "Characters/Diana/Skins/Skin65/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin65",
+      "bin": "data/characters/diana/skins/skin65.bin"
+    },
+    {
+      "champion": "Swain",
+      "skin": "skin33",
+      "bin": "data/characters/swain/skins/skin33.bin"
+    }
+  ]
+}

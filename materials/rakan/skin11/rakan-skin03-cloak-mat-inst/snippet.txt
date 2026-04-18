@@ -1,0 +1,182 @@
+"jadelib_rakan_skin03_cloak_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_rakan_skin03_cloak_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/rakan-skin03-cloak-mat-inst/Rakan_Skin11_P_Shield_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/rakan-skin03-cloak-mat-inst/Rakan_Skin11_Feathers_Iridescence.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Add_Scrolling_Noise_mult"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Low_Quality_Bias"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Film_Depth"
+            value: vec4 = { 0.11999999731779099, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Power"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Specular_Power"
+            value: vec4 = { 6, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomIntensity"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color_Fresnel_color"
+            value: vec4 = { 0.21568627655506134, 0.9215686321258545, 0.019607843831181526, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 2, 2, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_ScrollSpeed"
+            value: vec4 = { 0.05999999865889549, -0.20000000298023224, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "LERP_BLEND_MODE"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Rakan_Skin03_Cloak"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Add_Scrolling_Noise_mult"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "rakanpassiveshield"
+                    }
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomIntensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "rakanpassiveshield"
+                    }
+                    mOnValue: f32 = 0.20000000298023224
+                    mOffValue: f32 = 0.10000000149011612
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Film_Depth"
+                Enabled: bool = false
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "rakanpassiveshield"
+                    }
+                    mOnValue: f32 = 0.8999999761581421
+                    mOffValue: f32 = 0.5
+                    mTurnOnTimeSec: f32 = 0.10000000149011612
+                    mTurnOffTimeSec: f32 = 0.10000000149011612
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color_Fresnel_color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "rakanpassiveshield"
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0.004065040498971939
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.03529411926865578, 0.8196078538894653, 0.16470588743686676, 1 }
+                            { 0.062745101749897, 0.8352941274642944, 0.8470588326454163, 1 }
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "rakanpassiveshield"
+                                }
+                                HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "RakanR"
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Rakan/Skins/Skin11/Rakan_Skin11_Feathers_Passive_Glow_TX_CM.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Gradient_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "rakanpassiveshield"
+                        }
+                        TextureName: string = "ASSETS/Characters/Rakan/Skins/Skin09/Rakan_Skin09_Feathers_Iridescence_Glow.tex"
+                    }
+                }
+            }
+        }
+    }
+}

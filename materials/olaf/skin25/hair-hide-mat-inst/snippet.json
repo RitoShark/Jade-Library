@@ -1,0 +1,31 @@
+{
+  "id": "hair-hide-mat-inst",
+  "name": "Hair Hide Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:22.766Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_hide_mat_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Olaf",
+    "skin": "skin25",
+    "bin": "data/characters/olaf/skins/skin25.bin",
+    "entryKey": "Characters/Olaf/Skins/Skin25/Materials/Hair_Hide_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Olaf",
+      "skin": "skin25",
+      "bin": "data/characters/olaf/skins/skin25.bin"
+    }
+  ]
+}

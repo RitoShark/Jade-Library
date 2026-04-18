@@ -1,0 +1,44 @@
+{
+  "id": "smolder-skin02-mat-wings01",
+  "name": "Smolder Skin02 Mat Wings01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:42.858Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_smolder_skin02_mat_wings01",
+  "textureFiles": [
+    {
+      "name": "Smolder_Skin01_Mat_Txt.tex",
+      "updatedAt": "2026-04-17T17:55:42.852Z"
+    },
+    {
+      "name": "Smolder_Skin01_Mat_Txt02.tex",
+      "updatedAt": "2026-04-17T17:55:42.852Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:42.852Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Smolder",
+    "skin": "skin2",
+    "bin": "data/characters/smolder/skins/skin2.bin",
+    "entryKey": "Characters/Smolder/Skins/Skin2/Materials/Smolder_Skin02_Mat_Wings01"
+  },
+  "usedBy": [
+    {
+      "champion": "Smolder",
+      "skin": "skin2",
+      "bin": "data/characters/smolder/skins/skin2.bin"
+    }
+  ]
+}

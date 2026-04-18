@@ -1,0 +1,25 @@
+{
+  "id": "hkg-fake-spec-translucent-inst",
+  "name": "Hkg Fake Spec Translucent Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:10.515Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_fake_spec_translucent_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin26",
+    "bin": "data/yone_skins_skin26_skins_skin27_skins_skin28_skins_skin29_skins_skin30_skins_skin31_skins_skin32_skins_skin33_skins_skin34.bin",
+    "entryKey": "Characters/Yone/Skins/Skin26/Materials/HKG_FakeSpec_Translucent_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin26",
+      "bin": "data/yone_skins_skin26_skins_skin27_skins_skin28_skins_skin29_skins_skin30_skins_skin31_skins_skin32_skins_skin33_skins_skin34.bin"
+    }
+  ]
+}

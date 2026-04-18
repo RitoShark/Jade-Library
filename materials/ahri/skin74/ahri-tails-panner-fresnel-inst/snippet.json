@@ -1,0 +1,48 @@
+{
+  "id": "ahri-tails-panner-fresnel-inst",
+  "name": "Ahri Tails Panner Fresnel Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:05.488Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_tails_panner_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:05.481Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:05.481Z"
+    },
+    {
+      "name": "Ahri_Skin74_Tails_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:07:05.481Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:05.481Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin74",
+    "bin": "data/characters/ahri/skins/skin74.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin74/Materials/Ahri_Tails_Panner_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin74",
+      "bin": "data/characters/ahri/skins/skin74.bin"
+    }
+  ]
+}

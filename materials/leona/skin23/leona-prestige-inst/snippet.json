@@ -1,0 +1,50 @@
+{
+  "id": "leona-prestige-inst",
+  "name": "Leona Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:32.031Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_leona_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    },
+    {
+      "name": "Leona_Skin23_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    },
+    {
+      "name": "Leona_Skin10_SmokeErode_01.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    },
+    {
+      "name": "Leona_Skin23_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:33:32.025Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin23",
+    "bin": "data/characters/leona/skins/skin23.bin",
+    "entryKey": "Characters/Leona/Skins/Skin23/Materials/Leona_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin23",
+      "bin": "data/characters/leona/skins/skin23.bin"
+    }
+  ]
+}

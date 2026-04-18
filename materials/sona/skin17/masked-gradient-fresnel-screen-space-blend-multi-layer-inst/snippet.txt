@@ -1,0 +1,121 @@
+"jadelib_masked_gradient_fresnel_screen_space_blend_multi_layer_inst" = StaticMaterialDef {
+    name: string = "jadelib_masked_gradient_fresnel_screen_space_blend_multi_layer_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/masked-gradient-fresnel-screen-space-blend-multi-layer-inst/Sona_Skin17_Z_Aura_Texture_1.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/masked-gradient-fresnel-screen-space-blend-multi-layer-inst/Sona_Skin17_Z_Instrument_VFX_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Layer_Top"
+            texturePath: string = "assets/jadelib/masked-gradient-fresnel-screen-space-blend-multi-layer-inst/Sona_Skin17_Z_Scroll_1.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/masked-gradient-fresnel-screen-space-blend-multi-layer-inst/Sona_Skin17_Z_Gradient_3.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Layer_Add"
+            texturePath: string = "assets/jadelib/masked-gradient-fresnel-screen-space-blend-multi-layer-inst/Sona_Skin17_Dissolve_Cloudy_02.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 16, 9, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0.15000000596046448, 0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Blend_Multiplier"
+            value: vec4 = { 2.1610000133514404, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.4059549868106842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bias"
+            value: vec4 = { 0.025975000113248825, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TopScroll_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TopScroll_Speed"
+            value: vec4 = { -0.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.2608599662780762, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TopScroll_Control"
+            value: vec4 = { 0.6009500026702881, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TopScroll2_Speed"
+            value: vec4 = { 0.15000000596046448, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TopScroll2_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaControl"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/MaskedGradientFresnel_ScreenSpaceBlend_MultiLayer"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

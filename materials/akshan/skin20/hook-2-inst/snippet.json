@@ -1,0 +1,36 @@
+{
+  "id": "hook-2-inst",
+  "name": "Hook 2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:07.592Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hook_2_inst",
+  "textureFiles": [
+    {
+      "name": "Akshan_Skin20_Material.tex",
+      "updatedAt": "2026-04-17T17:08:07.586Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin20",
+    "bin": "data/characters/akshan/skins/skin20.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin20/Materials/Hook_2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin20",
+      "bin": "data/characters/akshan/skins/skin20.bin"
+    }
+  ]
+}

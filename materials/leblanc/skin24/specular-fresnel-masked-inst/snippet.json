@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:29.661Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Leblanc_Skin24_TX_CM_2.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:29.655Z"
+    },
+    {
+      "name": "Leblanc_Skin20_TX_CM_Mask.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:29.655Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:32:29.655Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin24",
+    "bin": "data/characters/leblanc/skins/skin24.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin24/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin24",
+      "bin": "data/characters/leblanc/skins/skin24.bin"
+    }
+  ]
+}

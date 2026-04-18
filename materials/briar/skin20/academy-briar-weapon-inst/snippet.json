@@ -1,0 +1,64 @@
+{
+  "id": "academy-briar-weapon-inst",
+  "name": "Academy Briar Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.369Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_academy_briar_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "Briar_Skin20_Matcap_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "Briar_Skin20_ColorMask_Weapon_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "Briar_Skin20_Material_Iridescence_Mat_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "Briar_Skin20_AdditiveScroll_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "Briar_Skin20_AdditiveScrollMask_Weapon_TX_CM.SKINS_Briar_Skin20.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.363Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin20",
+    "bin": "data/characters/briar/skins/skin20.bin",
+    "entryKey": "Characters/Briar/Skins/Skin20/Material/Academy_Briar_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin20",
+      "bin": "data/characters/briar/skins/skin20.bin"
+    }
+  ]
+}

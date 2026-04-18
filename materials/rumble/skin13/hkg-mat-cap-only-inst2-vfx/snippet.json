@@ -1,0 +1,30 @@
+{
+  "id": "hkg-mat-cap-only-inst2-vfx",
+  "name": "Hkg Mat Cap Only Inst2 Vfx",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:54.116Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_mat_cap_only_inst2_vfx",
+  "textureFiles": [
+    {
+      "name": "Rumble_Skin13_W_Material1_1.tex",
+      "updatedAt": "2026-04-17T17:50:54.111Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin13",
+    "bin": "4cb298812317fa20.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin13/Materials/HKG_MatCap_Only_inst2_VFX"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin13",
+      "bin": "4cb298812317fa20.bin"
+    }
+  ]
+}

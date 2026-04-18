@@ -1,0 +1,31 @@
+{
+  "id": "nilah-skin11-hand-inst",
+  "name": "Nilah Skin11 Hand Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:33.102Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nilah_skin11_hand_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nilah",
+    "skin": "skin20",
+    "bin": "data/characters/nilah/skins/skin20.bin",
+    "entryKey": "Characters/Nilah/Skins/Skin20/Materials/NilahSkin11_Hand_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nilah",
+      "skin": "skin20",
+      "bin": "data/characters/nilah/skins/skin20.bin"
+    }
+  ]
+}

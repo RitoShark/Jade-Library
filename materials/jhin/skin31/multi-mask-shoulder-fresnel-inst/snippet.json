@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-shoulder-fresnel-inst",
+  "name": "Multi Mask Shoulder Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:23.702Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_shoulder_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:23.696Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:23.696Z"
+    },
+    {
+      "name": "Jhin_Skin31_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:25:23.696Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:23.696Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin31",
+    "bin": "data/characters/jhin/skins/skin31.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin31/Materials/MultiMask_Shoulder_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin31",
+      "bin": "data/characters/jhin/skins/skin31.bin"
+    }
+  ]
+}

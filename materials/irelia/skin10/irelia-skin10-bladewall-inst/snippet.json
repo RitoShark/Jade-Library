@@ -1,0 +1,36 @@
+{
+  "id": "irelia-skin10-bladewall-inst",
+  "name": "Irelia Skin10 Bladewall Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:39.083Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_skin10_bladewall_inst",
+  "textureFiles": [
+    {
+      "name": "DefaultColorOverlifetime.tex",
+      "updatedAt": "2026-04-17T17:22:39.079Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin10",
+    "bin": "data/characters/ireliablades/skins/skin10.bin",
+    "entryKey": "Characters/IreliaBlades/Skins/Skin10/Materials/Irelia_Skin10_bladewall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin10",
+      "bin": "data/characters/ireliablades/skins/skin10.bin"
+    }
+  ]
+}

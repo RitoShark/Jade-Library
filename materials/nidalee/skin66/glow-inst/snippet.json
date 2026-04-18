@@ -1,0 +1,36 @@
+{
+  "id": "glow-inst",
+  "name": "Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:16.731Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_glow_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin58_CMask1.SKINS_Nidalee_Skin58.tex",
+      "updatedAt": "2026-04-17T17:43:16.723Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin66",
+    "bin": "data/characters/nidaleecougar/skins/skin66.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin66/Materials/glow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin66",
+      "bin": "data/characters/nidaleecougar/skins/skin66.bin"
+    }
+  ]
+}

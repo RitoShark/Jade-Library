@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-vert-wpo-bloom-alpha-inst",
+  "name": "Scrolling Uvs Multi Layer Vert Wpo Bloom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:02.411Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_vert_wpo_bloom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Alistar_Skin19_Wisp_Mult.tex",
+      "updatedAt": "2026-04-17T17:10:02.406Z"
+    },
+    {
+      "name": "Ashe_Skin43_WingsWaterfall_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:10:02.406Z"
+    },
+    {
+      "name": "Ashe_Skin43_MaterialAlphaMask.tex",
+      "updatedAt": "2026-04-17T17:10:02.406Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin43",
+    "bin": "data/characters/ashe/skins/skin43.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin43/Materials/ScrollingUVs_MultiLayer_VertWPO_Bloom_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin43",
+      "bin": "data/characters/ashe/skins/skin43.bin"
+    }
+  ]
+}

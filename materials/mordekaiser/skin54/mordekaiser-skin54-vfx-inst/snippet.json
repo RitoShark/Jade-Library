@@ -1,0 +1,48 @@
+{
+  "id": "mordekaiser-skin54-vfx-inst",
+  "name": "Mordekaiser Skin54 Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:54.678Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_skin54_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:39:54.671Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:39:54.671Z"
+    },
+    {
+      "name": "Mordekaiser_Skin54_VFXHair_TX_CM.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:39:54.671Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:39:54.671Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin54",
+    "bin": "data/characters/mordekaiser/skins/skin54.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin54/Materials/Mordekaiser_Skin54_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin54",
+      "bin": "data/characters/mordekaiser/skins/skin54.bin"
+    }
+  ]
+}

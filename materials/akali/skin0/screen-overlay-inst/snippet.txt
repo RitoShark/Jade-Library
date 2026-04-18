@@ -1,0 +1,58 @@
+"jadelib_screen_overlay_inst" = StaticMaterialDef {
+    name: string = "jadelib_screen_overlay_inst"
+    type: u32 = 4
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Inner_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outer_Color"
+            value: vec4 = { 0.4901960790157318, 0.5137255191802979, 0.5254902243614197, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Vignette_Size"
+            value: vec4 = { 1.774999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Desaturation_Blend"
+            value: vec4 = { 0.2549999952316284, 0, 0, 0 }
+        }
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/PostProcess/Desaturate_Color_Overlay"
+                    depthEnable: bool = false
+                    cullEnable: bool = false
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "normal_blend"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "BLEND" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "death"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "DEATH_EFFECT" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "death_blend"
+            parentName: string = "death"
+            shaderMacros: map[string,string] = {
+                "BLEND" = "1"
+            }
+        }
+    }
+}

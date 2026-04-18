@@ -1,0 +1,48 @@
+{
+  "id": "rengar-skin46-spirit-fire-inst",
+  "name": "Rengar Skin46 Spirit Fire Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:51.092Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rengar_skin46_spirit_fire_inst",
+  "textureFiles": [
+    {
+      "name": "Rengar_Skin46_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:51.087Z"
+    },
+    {
+      "name": "Rengar_Skin40_MASK_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:51.087Z"
+    },
+    {
+      "name": "Rengar_Skin40_white_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:51.087Z"
+    },
+    {
+      "name": "Rengar_Skin40_PANNER_MASK_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:51.087Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rengar",
+    "skin": "skin46",
+    "bin": "data/characters/rengar/skins/skin46.bin",
+    "entryKey": "Characters/Rengar/Skins/Skin46/Materials/Rengar_Skin46_SpiritFire_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rengar",
+      "skin": "skin46",
+      "bin": "data/characters/rengar/skins/skin46.bin"
+    }
+  ]
+}

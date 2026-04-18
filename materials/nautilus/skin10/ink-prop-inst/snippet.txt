@@ -1,0 +1,189 @@
+"jadelib_ink_prop_inst" = StaticMaterialDef {
+    name: string = "jadelib_ink_prop_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Swapped_Texture"
+            texturePath: string = "assets/jadelib/ink-prop-inst/Nautilus_Skin10_Props_TX_CM_Ult.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Ink_Texture"
+            texturePath: string = "assets/jadelib/ink-prop-inst/Nautilus_Skin09_Sh_noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Ink_Color_Texture"
+            texturePath: string = "assets/jadelib/ink-prop-inst/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TexDissolveBias"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightenDiff"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutline_Softness"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutline_Smooth_Step"
+            value: vec4 = { 0.05000000074505806, 0.05999999865889549, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SmoothStep"
+            value: vec4 = { 0, 0.6499999761581421, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Ink_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_SWAP"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFINE_INK_COLOR_BY_TEXTURE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_InkOutline"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Recall"
+                                        }
+                                    }
+                                    mDelayOn: f32 = 5.599999904632568
+                                }
+                                mOnValue: f32 = -1
+                                mOffValue: f32 = 1
+                                mTurnOnTimeSec: f32 = 1.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "TexDissolveBias"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Recall"
+                                        }
+                                    }
+                                    mDelayOn: f32 = 5.5
+                                }
+                                mOnValue: f32 = -1
+                                mOffValue: f32 = 1
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "Recall"
+                        }
+                    }
+                    mTurnOnTimeSec: f32 = 2
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "magical-panning-bow-inst",
+  "name": "Magical Panning Bow Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:55.981Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_magical_panning_bow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:55.975Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:55.975Z"
+    },
+    {
+      "name": "Ashe_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:09:55.975Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:55.975Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin17",
+    "bin": "data/characters/ashe/skins/skin17.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin17/Materials/MagicalPanning_Bow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin17",
+      "bin": "data/characters/ashe/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "panning-bloom-inst-inst",
+  "name": "Panning Bloom Inst Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:55.245Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_bloom_inst_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:55.240Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:55.240Z"
+    },
+    {
+      "name": "JarvanIV_Skin33_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:55.240Z"
+    },
+    {
+      "name": "JarvanIV_Skin30_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:23:55.240Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin33",
+    "bin": "data/characters/jarvaniv/skins/skin33.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin33/Materials/PanningBloom_inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin33",
+      "bin": "data/characters/jarvaniv/skins/skin33.bin"
+    }
+  ]
+}

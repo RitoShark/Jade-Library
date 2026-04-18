@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-glass-inst",
+  "name": "Fresnel Basic Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:40.504Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin04_TX_CM.ASU_Teemo.tex",
+      "updatedAt": "2026-04-17T18:00:40.498Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:00:40.498Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin4",
+    "bin": "data/characters/teemo/skins/skin4.bin",
+    "entryKey": "Characters/Teemo/Skins/Skin4/Materials/Fresnel_Basic_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin4",
+      "bin": "data/characters/teemo/skins/skin4.bin"
+    }
+  ]
+}

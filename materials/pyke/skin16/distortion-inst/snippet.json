@@ -1,0 +1,31 @@
+{
+  "id": "distortion-inst",
+  "name": "Distortion Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:22.568Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_distortion_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin16",
+    "bin": "data/pyke_skins_skin16_skins_skin17_skins_skin18_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin16/Materials/Distortion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin16",
+      "bin": "data/pyke_skins_skin16_skins_skin17_skins_skin18_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24.bin"
+    }
+  ]
+}

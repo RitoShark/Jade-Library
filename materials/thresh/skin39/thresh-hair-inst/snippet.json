@@ -1,0 +1,36 @@
+{
+  "id": "thresh-hair-inst",
+  "name": "Thresh Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:14.480Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_thresh_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Thresh_Skin39_Hair_Material.tex",
+      "updatedAt": "2026-04-17T18:01:14.474Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin39",
+    "bin": "data/characters/thresh/skins/skin39.bin",
+    "entryKey": "Characters/Thresh/Skins/Skin39/Materials/Thresh_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin39",
+      "bin": "data/characters/thresh/skins/skin39.bin"
+    }
+  ]
+}

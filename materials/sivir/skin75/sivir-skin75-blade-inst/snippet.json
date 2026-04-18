@@ -1,0 +1,48 @@
+{
+  "id": "sivir-skin75-blade-inst",
+  "name": "Sivir Skin75 Blade Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:15.281Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sivir_skin75_blade_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:15.275Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:15.275Z"
+    },
+    {
+      "name": "Sivir_Skin75_Q_TX_CM.Chroma_Sivir_PROJECT.tex",
+      "updatedAt": "2026-04-17T17:55:15.275Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:55:15.275Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin75",
+    "bin": "data/characters/sivir/skins/skin75.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin75/Materials/Sivir_Skin75_Blade_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin75",
+      "bin": "data/characters/sivir/skins/skin75.bin"
+    }
+  ]
+}

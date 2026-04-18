@@ -1,0 +1,52 @@
+{
+  "id": "cloak-mat-inst",
+  "name": "Cloak Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:23.383Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloak_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin05_P_Cloak_Glow_Pan.tex",
+      "updatedAt": "2026-04-17T17:47:23.377Z"
+    },
+    {
+      "name": "Rakan_Skin05_Cape_Masks_Off.tex",
+      "updatedAt": "2026-04-17T17:47:23.377Z"
+    },
+    {
+      "name": "Rakan_Skin05_Wing_Dissolve.tex",
+      "updatedAt": "2026-04-17T17:47:23.377Z"
+    },
+    {
+      "name": "Rakan_Skin08_Cape_Light_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:23.377Z"
+    },
+    {
+      "name": "Rakan_Skin08_SS_Tex_Wings.tex",
+      "updatedAt": "2026-04-17T17:47:23.377Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin8",
+    "bin": "data/characters/rakan/skins/skin8.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin8/Materials/Cloak_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin8",
+      "bin": "data/characters/rakan/skins/skin8.bin"
+    }
+  ]
+}

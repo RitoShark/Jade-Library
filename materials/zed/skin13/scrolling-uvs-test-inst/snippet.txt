@@ -1,0 +1,137 @@
+"jadelib_scrolling_uvs_test_inst" = StaticMaterialDef {
+    name: string = "jadelib_scrolling_uvs_test_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-test-inst/Generic_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DistortionTexture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-test-inst/BC_TestTexture.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/scrolling-uvs-test-inst/Gradient_test_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dark_Color"
+            value: vec4 = { 0.07058823853731155, 0.054901961237192154, 0.0784313753247261, 0.6901960968971252 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Color"
+            value: vec4 = { 0.3137255012989044, 0.18431372940540314, 0.35686275362968445, 0.6117647290229797 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortAmount"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Green_ScrollSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Green_UVScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortUVScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortScrollSpeed"
+            value: vec4 = { 0.10000000149011612, 0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SmoothStep_Values"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.2750000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Vertex_Mult"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WobbleScale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WobbleSize"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WobbleSpeed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISTORTION"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_GRADIENT_TEXTURE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLUECHANNEL_VERTEXCOLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_WOBBLE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MULTIPLY_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_VertexColorMasked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "WobbleSize"
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mScale: f32 = 2
+                    mBias: f32 = 0.5
+                }
+            }
+        }
+    }
+}

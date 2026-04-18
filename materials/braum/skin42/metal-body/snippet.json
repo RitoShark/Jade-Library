@@ -1,0 +1,56 @@
+{
+  "id": "metal-body",
+  "name": "Metal Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:49.271Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_metal_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    },
+    {
+      "name": "Braum_Skin42_Shield_Metal_RMA.SKINS_Braum_Skin42.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:49.264Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Braum",
+    "skin": "skin42",
+    "bin": "data/characters/braum/skins/skin42.bin",
+    "entryKey": "Characters/Braum/Skins/Skin42/Materials/Metal_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Braum",
+      "skin": "skin42",
+      "bin": "data/characters/braum/skins/skin42.bin"
+    }
+  ]
+}

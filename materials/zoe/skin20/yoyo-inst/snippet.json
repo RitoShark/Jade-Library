@@ -1,0 +1,44 @@
+{
+  "id": "yoyo-inst",
+  "name": "Yoyo Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:00.730Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yoyo_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin20_Hair_NightSky_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.724Z"
+    },
+    {
+      "name": "Zoe_Skin20_Props_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.724Z"
+    },
+    {
+      "name": "Zoe_Skin20_Yoyo_MatFresnel_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.724Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin20",
+    "bin": "data/characters/zoe/skins/skin20.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin20/Materials/Yoyo_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin20",
+      "bin": "data/characters/zoe/skins/skin20.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "kayle-peacock-feathers-inst",
+  "name": "Kayle Peacock Feathers Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:39.635Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_peacock_feathers_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:29:39.629Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:29:39.629Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:29:39.629Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:29:39.629Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin47",
+    "bin": "data/characters/kayle/skins/skin47.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin47/Materials/Kayle_Peacock_Feathers_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin47",
+      "bin": "data/characters/kayle/skins/skin47.bin"
+    }
+  ]
+}

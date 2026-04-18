@@ -1,0 +1,34 @@
+{
+  "id": "wings-inst",
+  "name": "Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:28.406Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin75_P_Test_03.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:28.399Z"
+    },
+    {
+      "name": "Sona_Skin75_Assets_1_117.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:28.399Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin75",
+    "bin": "data/sona_skins_skin75_skins_skin76.bin",
+    "entryKey": "Characters/Sona/Skins/Skin75/Materials/Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin75",
+      "bin": "data/sona_skins_skin75_skins_skin76.bin"
+    }
+  ]
+}

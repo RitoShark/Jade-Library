@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-butterfly-wings-inst",
+  "name": "Scrolling Uvs Butterfly Wings Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:15.155Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_butterfly_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin27_TX_CM_MATERIAL_Wings.tex",
+      "updatedAt": "2026-04-17T17:23:15.149Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin34",
+    "bin": "data/characters/janna/skins/skin34.bin",
+    "entryKey": "Characters/Janna/Skins/Skin34/Materials/ScrollingUVs_ButterflyWings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin34",
+      "bin": "data/characters/janna/skins/skin34.bin"
+    }
+  ]
+}

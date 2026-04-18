@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-lvl2b-inst",
+  "name": "Alpha Blend Additive Scroll Packed Lvl2b Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:53.754Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_lvl2b_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:17:53.747Z"
+    },
+    {
+      "name": "Blank.tex",
+      "updatedAt": "2026-04-17T17:17:53.747Z"
+    },
+    {
+      "name": "Ezreal_Skin05_Lv2_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:53.747Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:17:53.747Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin5",
+    "bin": "data/characters/ezreal/skins/skin5.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin5/Materials/AlphaBlend_Additive_Scroll_Packed_Lvl2B_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin5",
+      "bin": "data/characters/ezreal/skins/skin5.bin"
+    }
+  ]
+}

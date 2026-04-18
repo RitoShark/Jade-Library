@@ -1,0 +1,40 @@
+{
+  "id": "zoe-skin33-skirt-inst",
+  "name": "Zoe Skin33 Skirt Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:05.303Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_skin33_skirt_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin33_SkirtMask_TX_CM.SKINS_Zoe_Skin33.tex",
+      "updatedAt": "2026-04-17T18:14:05.298Z"
+    },
+    {
+      "name": "Material_Mult_Body_Galaxy_05.tex",
+      "updatedAt": "2026-04-17T18:14:05.298Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin33",
+    "bin": "data/characters/zoe/skins/skin33.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin33/Materials/Zoe_Skin33_Skirt_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin33",
+      "bin": "data/characters/zoe/skins/skin33.bin"
+    }
+  ]
+}

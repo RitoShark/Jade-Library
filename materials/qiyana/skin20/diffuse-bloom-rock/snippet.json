@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-rock",
+  "name": "Diffuse Bloom Rock",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:39.520Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_rock",
+  "textureFiles": [
+    {
+      "name": "Qiyana_Skin20_Weapon_Mask.tex",
+      "updatedAt": "2026-04-17T17:46:39.515Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin20",
+    "bin": "data/characters/qiyana/skins/skin20.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin20/Materials/Diffuse_Bloom_Rock"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin20",
+      "bin": "data/characters/qiyana/skins/skin20.bin"
+    }
+  ]
+}

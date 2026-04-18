@@ -1,0 +1,213 @@
+"jadelib_whip" = StaticMaterialDef {
+    name: string = "jadelib_whip"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/whip/Sylas_Skin46_ScreenSpaceTexture_02.SKINS_Sylas_Skin46.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_1"
+            texturePath: string = "assets/jadelib/whip/Sylas_Skin46_Hair_MaskSet_01_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_2"
+            texturePath: string = "assets/jadelib/whip/Sylas_Skin46_Hair_MaskSet_02_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Fresnel_Mask"
+            texturePath: string = "assets/jadelib/whip/Sylas_Skin46_Hair_FresnelMask.SKINS_Sylas_Skin46.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 40, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Rate"
+            value: vec4 = { 0.019999999552965164, -0.009999999776482582, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Intensity"
+            value: vec4 = { 9.520000457763672, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Scale"
+            value: vec4 = { 1.5, 1.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Rate"
+            value: vec4 = { 0.019999999552965164, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Color"
+            value: vec4 = { 0.9400015473365784, 0.9400015473365784, 0.4299992322921753, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Contrast"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.7499961853027344, 0.020004577934741974, 0.45000380277633667, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Saturation"
+            value: vec4 = { 2.299999952316284, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Scale"
+            value: vec4 = { 4, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Rate"
+            value: vec4 = { 0.009999999776482582, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Override"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADD_SCREEN_SPACE_TEXTURE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DODGE_COLOR_OVERLAY"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SOLID_FRESNEL_COLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL_MASK_COLOR"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Sylas_DarkStar"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Dodge_Bias"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsCastingBoolDriver {
+                                SpellSlot: u32 = 0
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = -1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.004999999888241291
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Bias"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle1"
+                                    "Run"
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = -0.019999999552965164
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.15000000596046448
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsCastingBoolDriver {
+                                SpellSlot: u32 = 0
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 7
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 3
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsCastingBoolDriver {
+                            SpellSlot: u32 = 0
+                        }
+                        TextureName: string = "ASSETS/Characters/Sylas/Skins/Skin46/Sylas_Skin46_Hair_TX_CM.SKINS_Sylas_Skin46.tex"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "zed-skin38-material-flames-head01",
+  "name": "Zed Skin38 Material Flames Head01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:10.175Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zed_skin38_material_flames_head01",
+  "textureFiles": [
+    {
+      "name": "Zed_Skin38_Z_Trail_02.tex",
+      "updatedAt": "2026-04-17T18:12:10.169Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin38",
+    "bin": "data/characters/zed/skins/skin38.bin",
+    "entryKey": "Characters/Zed/Skins/Skin38/Materials/Zed_Skin38_Material_Flames_Head01"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin38",
+      "bin": "data/characters/zed/skins/skin38.bin"
+    }
+  ]
+}

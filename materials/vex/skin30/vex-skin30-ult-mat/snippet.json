@@ -1,0 +1,64 @@
+{
+  "id": "vex-skin30-ult-mat",
+  "name": "Vex Skin30 Ult Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:56.751Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vex_skin30_ult_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.744Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin30",
+    "bin": "data/characters/vex/skins/skin30.bin",
+    "entryKey": "Characters/Vex/Skins/Skin30/Materials/Vex_Skin30_Ult_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin30",
+      "bin": "data/characters/vex/skins/skin30.bin"
+    }
+  ]
+}

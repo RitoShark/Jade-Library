@@ -1,0 +1,44 @@
+{
+  "id": "ink-body",
+  "name": "Ink Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:48.594Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_body",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:48.588Z"
+    },
+    {
+      "name": "KogMaw_Skin46_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:31:48.588Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:48.588Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin49",
+    "bin": "data/characters/kogmaw/skins/skin49.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin49/Materials/Ink_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin49",
+      "bin": "data/characters/kogmaw/skins/skin49.bin"
+    }
+  ]
+}

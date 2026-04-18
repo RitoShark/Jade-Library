@@ -1,0 +1,64 @@
+{
+  "id": "ekko-chroma-ramp-inst",
+  "name": "Ekko Chroma Ramp Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:36.984Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ekko_chroma_ramp_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "Ekko_Skin19_Z_EkkoShadowMask.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "ShadowToneMap.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "Ekko_Skin56_Z_DotsMat.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "Ekko_Skin56_Z_EkkoShadowMask.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:36.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin56",
+    "bin": "data/characters/ekko/skins/skin56.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin56/Materials/Ekko_ChromaRamp_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin56",
+      "bin": "data/characters/ekko/skins/skin56.bin"
+    }
+  ]
+}

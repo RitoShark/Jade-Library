@@ -1,0 +1,84 @@
+"jadelib_transform_fresnel_lasher" = StaticMaterialDef {
+    name: string = "jadelib_transform_fresnel_lasher"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/transform-fresnel-lasher/Evelynn_Skin53_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/transform-fresnel-lasher/white.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.3943694233894348, 0.3323567509651184, 0.9443961381912231, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Fresnel_Basic"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Color"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Evelynn/Spells/EvelynnStealthRing"
+                                }
+                                IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Evelynn/Skins/Skin53/Evelynn_Skin53_Shadow_TX_CM.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask"
+                Enabled: bool = false
+            }
+        }
+    }
+}

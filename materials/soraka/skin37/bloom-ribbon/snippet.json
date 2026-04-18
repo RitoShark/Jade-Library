@@ -1,0 +1,36 @@
+{
+  "id": "bloom-ribbon",
+  "name": "Bloom Ribbon",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:59.668Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_ribbon",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:59.663Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin37",
+    "bin": "data/characters/soraka/skins/skin37.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin37/Materials/Bloom_Ribbon"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin37",
+      "bin": "data/characters/soraka/skins/skin37.bin"
+    }
+  ]
+}

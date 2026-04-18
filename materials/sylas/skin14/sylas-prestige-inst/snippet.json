@@ -1,0 +1,42 @@
+{
+  "id": "sylas-prestige-inst",
+  "name": "Sylas Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:27.407Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_sylas_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin14_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:58:27.399Z"
+    },
+    {
+      "name": "Sylas_Skin14_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:27.399Z"
+    },
+    {
+      "name": "Sylas_Skin14_SmokeErode_01.tex",
+      "updatedAt": "2026-04-17T17:58:27.399Z"
+    },
+    {
+      "name": "Sylas_Skin14_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:58:27.399Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin14",
+    "bin": "data/characters/sylas/skins/skin14.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin14/Materials/Sylas_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin14",
+      "bin": "data/characters/sylas/skins/skin14.bin"
+    }
+  ]
+}

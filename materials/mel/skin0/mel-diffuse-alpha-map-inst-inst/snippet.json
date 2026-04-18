@@ -1,0 +1,41 @@
+{
+  "id": "mel-diffuse-alpha-map-inst-inst",
+  "name": "Mel Diffuse Alpha Map Inst Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:03.200Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mel_diffuse_alpha_map_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Mel_Base_DressMask_TX_CM.Mel.tex",
+      "updatedAt": "2026-04-17T17:38:22.883Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mel",
+    "skin": "skin0",
+    "bin": "data/characters/mel/skins/skin0.bin",
+    "entryKey": "Characters/Mel/Skins/Skin0/Materials/Mel_Diffuse_Alpha_map_INST_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mel",
+      "skin": "skin0",
+      "bin": "data/characters/mel/skins/skin0.bin"
+    },
+    {
+      "champion": "Viktor",
+      "skin": "skin1",
+      "bin": "data/characters/viktor/skins/skin1.bin"
+    }
+  ]
+}

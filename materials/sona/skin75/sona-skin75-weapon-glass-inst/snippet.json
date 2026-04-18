@@ -1,0 +1,52 @@
+{
+  "id": "sona-skin75-weapon-glass-inst",
+  "name": "Sona Skin75 Weapon Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:27.326Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin75_weapon_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:27.320Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:27.320Z"
+    },
+    {
+      "name": "Sona_Skin75_Weapon_Glass_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.320Z"
+    },
+    {
+      "name": "Sona_Skin75_Weapon_OutlineMask_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:27.320Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:27.320Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin75",
+    "bin": "data/characters/sona/skins/skin75.bin",
+    "entryKey": "Characters/Sona/Skins/Skin75/Materials/Sona_Skin75_Weapon_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin75",
+      "bin": "data/characters/sona/skins/skin75.bin"
+    }
+  ]
+}

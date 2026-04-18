@@ -1,0 +1,36 @@
+{
+  "id": "bloom-spike-inst",
+  "name": "Bloom Spike Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:25.256Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_spike_inst",
+  "textureFiles": [
+    {
+      "name": "Kennen_Skin25_bloom.tex",
+      "updatedAt": "2026-04-17T17:30:25.250Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kennen",
+    "skin": "skin32",
+    "bin": "data/characters/kennen/skins/skin32.bin",
+    "entryKey": "Characters/Kennen/Skins/Skin32/Materials/Bloom_Spike_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kennen",
+      "skin": "skin32",
+      "bin": "data/characters/kennen/skins/skin32.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-lissandra-body-inst",
+  "name": "Dark Star Lissandra Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:31.315Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_lissandra_body_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin15_DarkStar_Texture.tex",
+      "updatedAt": "2026-04-17T17:34:31.310Z"
+    },
+    {
+      "name": "Material_Mult_Body_Galaxy_07.tex",
+      "updatedAt": "2026-04-17T17:34:31.310Z"
+    },
+    {
+      "name": "Material_Hand_Mult.tex",
+      "updatedAt": "2026-04-17T17:34:31.310Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin15",
+    "bin": "data/characters/lissandra/skins/skin15.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin15/Materials/DarkStar_Lissandra_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin15",
+      "bin": "data/characters/lissandra/skins/skin15.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "fresnel-alpha-scrolling-inst",
+  "name": "Fresnel Alpha Scrolling Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:41.470Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_alpha_scrolling_inst",
+  "textureFiles": [
+    {
+      "name": "3026_Items_Einstein_01_mult.TFT_Set15.tex",
+      "updatedAt": "2026-04-17T17:51:41.464Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sejuani",
+    "skin": "skin26",
+    "bin": "data/characters/sejuani/skins/skin26.bin",
+    "entryKey": "Characters/Sejuani/Skins/Skin26/Materials/FresnelAlpha_Scrolling_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sejuani",
+      "skin": "skin26",
+      "bin": "data/characters/sejuani/skins/skin26.bin"
+    }
+  ]
+}

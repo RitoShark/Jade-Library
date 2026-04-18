@@ -1,0 +1,48 @@
+{
+  "id": "weapon-fresnel-inst",
+  "name": "Weapon Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:21.746Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:21.738Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:21.738Z"
+    },
+    {
+      "name": "Varus_Skin36_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:03:21.738Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:21.738Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin36",
+    "bin": "data/characters/varus/skins/skin36.bin",
+    "entryKey": "Characters/Varus/Skins/Skin36/Materials/Weapon_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin36",
+      "bin": "data/characters/varus/skins/skin36.bin"
+    }
+  ]
+}

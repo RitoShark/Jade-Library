@@ -1,0 +1,36 @@
+{
+  "id": "hkg-world-breaker-skin-common-inst",
+  "name": "Hkg World Breaker Skin Common Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:48.986Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_world_breaker_skin_common_inst",
+  "textureFiles": [
+    {
+      "name": "Sion_Skin15_Main_MAT_Mask.tex",
+      "updatedAt": "2026-04-17T17:54:48.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sion",
+    "skin": "skin15",
+    "bin": "data/characters/sion/skins/skin15.bin",
+    "entryKey": "Characters/Sion/Skins/Skin15/Materials/HKG_WorldBreakerSkin_Common_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sion",
+      "skin": "skin15",
+      "bin": "data/characters/sion/skins/skin15.bin"
+    }
+  ]
+}

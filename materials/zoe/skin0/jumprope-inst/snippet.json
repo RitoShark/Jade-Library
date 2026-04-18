@@ -1,0 +1,44 @@
+{
+  "id": "jumprope-inst",
+  "name": "Jumprope Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:54.952Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jumprope_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Base_R_beam_01.tex",
+      "updatedAt": "2026-04-17T18:13:54.944Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T18:13:54.944Z"
+    },
+    {
+      "name": "Zoe_Base_Mat_fresnel.tex",
+      "updatedAt": "2026-04-17T18:13:54.944Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin0",
+    "bin": "37696de8af62bb68.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin0/Materials/Jumprope_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin0",
+      "bin": "37696de8af62bb68.bin"
+    }
+  ]
+}

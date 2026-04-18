@@ -1,0 +1,38 @@
+{
+  "id": "lee-sin-skin58-beads-mat",
+  "name": "Lee Sin Skin58 Beads Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:07.523Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lee_sin_skin58_beads_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin58_Assets_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:07.517Z"
+    },
+    {
+      "name": "LeeSin_Skin58_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:07.517Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:07.517Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin58",
+    "bin": "data/characters/leesin/skins/skin58.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin58/Materials/LeeSin_Skin58_Beads_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin58",
+      "bin": "data/characters/leesin/skins/skin58.bin"
+    }
+  ]
+}

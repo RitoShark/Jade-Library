@@ -1,0 +1,402 @@
+"jadelib_arms" = StaticMaterialDef {
+    name: string = "jadelib_arms"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alt_Diffuse_Texture"
+            texturePath: string = "assets/jadelib/arms/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/arms/Base_plasma_noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/arms/Irelia_Skin55_Arm_Mask.SKINS_Irelia_Skin55.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/arms/black.SKINS_Lissandra_Skin43.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Flowmap"
+            texturePath: string = "assets/jadelib/arms/flowmap.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "HolesMask_Texture"
+            texturePath: string = "assets/jadelib/arms/Noise_Clouds_01.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Color_Texture"
+            texturePath: string = "assets/jadelib/arms/EDG_Rainbow2.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bloom_Power"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Out_Alpha_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Alpha_Bias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Body_Height"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Texture_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveIntensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 0.027450980618596077, 0.9254902005195618, 0.32549020648002625, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "rimOffset"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMin"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "modelHeight"
+            value: vec4 = { 275, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "albedoNewMax"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowScale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Scale"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesEdge_Color"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HolesScaling_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holes_ScrollingSpeed2"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FresnelColor"
+            value: vec4 = { 0, 0.852124810218811, 0.9232165813446045, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 1.5750000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Scale"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0, 0.8829938173294067, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowIntensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE_TRANSITION"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT_ON_DISSOLVE"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISSOLVE_OUT_ALPHA"
+            on: bool = false
+            Group: string = "Dissolve/Transition"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_RIM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALBEDO_REMAP"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCREENSPACE_ON"
+            on: bool = false
+            Group: string = "ScreenSpace"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "GRADIENT_ON"
+            on: bool = false
+            Group: string = "Gradient"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_ON"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLES_SROULLING"
+            on: bool = false
+            Group: string = "Hole"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FRESNEL_ON"
+            Group: string = "Fresnel"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIONAL_BLOOM_MASK"
+            on: bool = false
+            Group: string = "Bloom"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Crepe_Anomaly_Mask"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Bias"
+                driver: pointer = 1529863526 {
+                    value: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                        mAnimationName: hash = "Idle_In_Subtle"
+                    }
+                    add: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "FresnelColor"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.8500000238418579, 0.9200000166893005, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0.8500000238418579, 0.9200000166893005, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                    }
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1.7000000476837158
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1.5750000476837158
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Scale"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                    }
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 4
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1.5
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.8799999952316284, 1, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0.8799999952316284, 1, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                    }
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 3
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.5
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = AllTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Irelia/Skins/Skin55/Irelia_Skin55_TM_CM_1.SKINS_Irelia_Skin55.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = AllTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassiveStacksMax"
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Irelia/Skins/Skin55/Irelia_Skin55_Arm_Mask1.SKINS_Irelia_Skin55.tex"
+                    }
+                }
+            }
+        }
+    }
+}

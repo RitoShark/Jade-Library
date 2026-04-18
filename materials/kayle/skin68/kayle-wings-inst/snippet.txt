@@ -1,0 +1,103 @@
+"jadelib_kayle_wings_inst" = StaticMaterialDef {
+    name: string = "jadelib_kayle_wings_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/kayle-wings-inst/Kayle_Skin66_Wings_Glow_Mask01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.2999999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.5411764979362488, 0.1411764770746231, 0.21568627655506134, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                        mGearIndex: u8 = 2
+                    }
+                    mColorOn: vec4 = { 0.9215686321258545, 0.7058823704719543, 0.3333333432674408, 1 }
+                    mColorOff: vec4 = { 0.09019608050584793, 0.6274510025978088, 0.3843137323856354, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                        mGearIndex: u8 = 2
+                    }
+                    mOnValue: f32 = 0.30000001192092896
+                    mOffValue: f32 = 0.30000001192092896
+                    mTurnOnTimeSec: f32 = 0
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "kaylepassiverank3"
+                        }
+                        TextureName: string = "ASSETS/Characters/Kayle/Skins/Skin68/Kayle_Skin68_Level16_Wings_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

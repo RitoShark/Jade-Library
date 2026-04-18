@@ -1,0 +1,36 @@
+{
+  "id": "snow-inst",
+  "name": "Snow Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:12.124Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_snow_inst",
+  "textureFiles": [
+    {
+      "name": "Ice_Gradient_V02.tex",
+      "updatedAt": "2026-04-17T17:44:12.118Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin0",
+    "bin": "data/nunusnowball_skins_skin0_skins_skin1_skins_skin2.bin",
+    "entryKey": "Characters/NunuSnowball/Skins/Skin0/Materials/Snow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin0",
+      "bin": "data/nunusnowball_skins_skin0_skins_skin1_skins_skin2.bin"
+    }
+  ]
+}

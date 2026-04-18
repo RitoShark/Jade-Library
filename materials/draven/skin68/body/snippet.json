@@ -1,0 +1,44 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:55.470Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "Draven_Skin68_Mat_Cap_TX_CM.SKINS_Draven_Skin68.tex",
+      "updatedAt": "2026-04-17T17:15:55.464Z"
+    },
+    {
+      "name": "Draven_Skin68_Body_Mat.SKINS_Draven_Skin68.tex",
+      "updatedAt": "2026-04-17T17:15:55.464Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:15:55.464Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Draven",
+    "skin": "skin68",
+    "bin": "data/characters/draven/skins/skin68.bin",
+    "entryKey": "Characters/Draven/Skins/Skin68/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Draven",
+      "skin": "skin68",
+      "bin": "data/characters/draven/skins/skin68.bin"
+    }
+  ]
+}

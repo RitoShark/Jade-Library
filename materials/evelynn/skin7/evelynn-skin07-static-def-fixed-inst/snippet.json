@@ -1,0 +1,42 @@
+{
+  "id": "evelynn-skin07-static-def-fixed-inst",
+  "name": "Evelynn Skin07 Static Def Fixed Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:22.106Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_evelynn_skin07_static_def_fixed_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin07_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:22.099Z"
+    },
+    {
+      "name": "common_color-hold.tex",
+      "updatedAt": "2026-04-17T17:17:22.099Z"
+    },
+    {
+      "name": "Evelyn_Skin07_Mask_Material.SPARX_ChampsBugs2025.tex",
+      "updatedAt": "2026-04-17T17:17:22.099Z"
+    },
+    {
+      "name": "Evelynn_Skin07_ShadowForm_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:22.099Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin7",
+    "bin": "data/evelynn_skins_skin31_skins_skin7.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin7/Materials/EvelynnSkin07_staticDef_fixed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin7",
+      "bin": "data/evelynn_skins_skin31_skins_skin7.bin"
+    }
+  ]
+}

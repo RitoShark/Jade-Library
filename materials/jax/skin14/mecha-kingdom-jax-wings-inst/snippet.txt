@@ -1,0 +1,169 @@
+"jadelib_mecha_kingdom_jax_wings_inst" = StaticMaterialDef {
+    name: string = "jadelib_mecha_kingdom_jax_wings_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Main_Texture"
+            texturePath: string = "assets/jadelib/mecha-kingdom-jax-wings-inst/Jax_Skin14_Wing_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Secondary_Texture"
+            texturePath: string = "assets/jadelib/mecha-kingdom-jax-wings-inst/Jax_Skin14_Wing_Climax_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/mecha-kingdom-jax-wings-inst/Jax_Skin14_Wing_TX_CM_Masks.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Transition_Value"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Power"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Value"
+            value: vec4 = { 30, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.32549020648002625, 0.10588235408067703, 0.003921568859368563, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Value"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0.1568627506494522, 0.007843137718737125, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/MechaKingdom_Jax"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Transition_Value"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 2
+                        mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                            mScriptName: string = "JaxRelentlessAssaultAS"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 8
+                        }
+                    }
+                    mTurnOnTimeSec: f32 = 0.25
+                    mTurnOffTimeSec: f32 = 0.4000000059604645
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 2
+                        mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                            mScriptName: string = "JaxRelentlessAssaultAS"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 8
+                        }
+                    }
+                    mColorOn: vec4 = { 0, 0.21568627655506134, 1, 1 }
+                    mColorOff: vec4 = { 1, 0.054901961237192154, 0.054901961237192154, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 2
+                        mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                            mScriptName: string = "JaxRelentlessAssaultAS"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 8
+                        }
+                    }
+                    mColorOn: vec4 = { 1, 0.11372549086809158, 0, 1 }
+                    mColorOff: vec4 = { 0.6269627213478088, 0.0945906788110733, 0.06172274425625801, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Value"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 2
+                        mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                            mScriptName: string = "JaxRelentlessAssaultAS"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 8
+                        }
+                    }
+                    mOnValue: f32 = 5
+                    mOffValue: f32 = 1.350000023841858
+                    mTurnOnTimeSec: f32 = 0.25
+                    mTurnOffTimeSec: f32 = 0.4000000059604645
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Size"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 2
+                        mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                            mScriptName: string = "JaxRelentlessAssaultAS"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 8
+                        }
+                    }
+                    mOnValue: f32 = 4
+                    mTurnOnTimeSec: f32 = 0.25
+                    mTurnOffTimeSec: f32 = 0.4000000059604645
+                }
+            }
+        }
+    }
+}

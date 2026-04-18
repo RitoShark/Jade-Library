@@ -1,0 +1,48 @@
+{
+  "id": "demon-form",
+  "name": "Demon Form",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:01.300Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_demon_form",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:01.294Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:01.294Z"
+    },
+    {
+      "name": "Lucian_Skin72_Demon_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:01.294Z"
+    },
+    {
+      "name": "Lucian_Skin72_OutlineMask_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:01.294Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin72",
+    "bin": "data/characters/lucian/skins/skin72.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin72/Materials/Demon_Form"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin72",
+      "bin": "data/characters/lucian/skins/skin72.bin"
+    }
+  ]
+}

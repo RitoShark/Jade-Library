@@ -1,0 +1,38 @@
+{
+  "id": "wings-mat-mini-valor",
+  "name": "Wings Mat Mini Valor",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:54.545Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_wings_mat_mini_valor",
+  "textureFiles": [
+    {
+      "name": "Quinn_Skin15_ValorRecall_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:54.538Z"
+    },
+    {
+      "name": "Quinn_Skin15_Mat_Texture.tex",
+      "updatedAt": "2026-04-17T17:46:54.538Z"
+    },
+    {
+      "name": "QuinnValor_Skin14_Texture_Valor.tex",
+      "updatedAt": "2026-04-17T17:46:54.538Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Quinn",
+    "skin": "skin15",
+    "bin": "data/characters/quinn/skins/skin15.bin",
+    "entryKey": "Characters/Quinn/Skins/Skin15/Materials/Wings_Mat_Mini_Valor"
+  },
+  "usedBy": [
+    {
+      "champion": "Quinn",
+      "skin": "skin15",
+      "bin": "data/characters/quinn/skins/skin15.bin"
+    }
+  ]
+}

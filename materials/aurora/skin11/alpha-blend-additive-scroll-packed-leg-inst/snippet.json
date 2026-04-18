@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-leg-inst",
+  "name": "Alpha Blend Additive Scroll Packed Leg Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:55.239Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_leg_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:10:55.234Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:10:55.234Z"
+    },
+    {
+      "name": "Aurora_Skin11_TX_CM.SKINS_Aurora_Skin11.tex",
+      "updatedAt": "2026-04-17T17:10:55.234Z"
+    },
+    {
+      "name": "Aurora_Skin11_Mask_TX_CM.SKINS_Aurora_Skin11.tex",
+      "updatedAt": "2026-04-17T17:10:55.234Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aurora",
+    "skin": "skin11",
+    "bin": "data/characters/aurora/skins/skin11.bin",
+    "entryKey": "Characters/Aurora/Skins/Skin11/Materials/AlphaBlend_Additive_Scroll_Packed_Leg_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aurora",
+      "skin": "skin11",
+      "bin": "data/characters/aurora/skins/skin11.bin"
+    }
+  ]
+}

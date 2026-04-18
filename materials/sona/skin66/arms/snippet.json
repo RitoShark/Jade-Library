@@ -1,0 +1,68 @@
+{
+  "id": "arms",
+  "name": "Arms",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:26.128Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_arms",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin66_Hair_TubulDeform_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "Sona_Skin66_MaskBody_TX_CM01.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "Sona_Skin66_WaterShapeMask03.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "Sona_Skin66_TailAdditiveScrollCombo_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:26.121Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/characters/sona/skins/skin66.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/Arms"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/characters/sona/skins/skin66.bin"
+    }
+  ]
+}

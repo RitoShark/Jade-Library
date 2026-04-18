@@ -1,0 +1,87 @@
+"jadelib_hkg_mat_cap_translucent_jelly_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_translucent_jelly_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-jelly-inst/Bard_Skin24_Ball_MC.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Trans_Color_Tex"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-jelly-inst/Bard_Skin24_TransCol.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Jelly_Diff_Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-translucent-jelly-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+            value: vec4 = { 0.07000000029802322, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 0.6449999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 4.200475215911865, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Translucent_Val"
+            value: vec4 = { 1.024999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Direction"
+            value: vec4 = { -0.20000000298023224, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Distortion"
+            value: vec4 = { 0.8525000214576721, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Nor_Lambert"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_Translucent_Jelly"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

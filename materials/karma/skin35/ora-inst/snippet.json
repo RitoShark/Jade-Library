@@ -1,0 +1,36 @@
+{
+  "id": "ora-inst",
+  "name": "Ora Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:52.584Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ora_inst",
+  "textureFiles": [
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:27:52.578Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin35",
+    "bin": "data/characters/karma/skins/skin35.bin",
+    "entryKey": "Characters/Karma/Skins/Skin35/Materials/Ora_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin35",
+      "bin": "data/characters/karma/skins/skin35.bin"
+    }
+  ]
+}

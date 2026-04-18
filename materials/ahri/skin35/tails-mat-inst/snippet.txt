@@ -1,0 +1,439 @@
+"jadelib_tails_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_tails_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/tails-mat-inst/Ahri_Skin35_Z_CrystalMatT.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/tails-mat-inst/Ahri_Skin35_Z_CrystalMatT.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/tails-mat-inst/Ahri_Skin35_Z_Gradient01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AlphaMask_Texture"
+            texturePath: string = "assets/jadelib/tails-mat-inst/Ahri_Skin28_Z_Gradient02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 4, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Blend_Multiplier"
+            value: vec4 = { 6, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 4.525000095367432, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Bias"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.8901960849761963, 0.24705882370471954, 0.6352941393852234, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Special_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecialColorLerp"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/TailMaterialShiny"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                Enabled: bool = false
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.6895769238471985, 0.3071620464324951, 0.45675957202911377, 1 }
+                                    { 0.26274511218070984, 0.6823529601097107, 0.7943446636199951, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.9976778030395508
+                                }
+                                values: list[vec4] = {
+                                    { 0.5960784554481506, 0.5882353186607361, 0.5960784554481506, 1 }
+                                    { 0, 0, 0.08947368711233139, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell3"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.3499999940395355
+                                mTurnOffTimeSec: f32 = 0.800000011920929
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.5098039507865906, 0.5098039507865906, 0.5098039507865906, 1 }
+                                    { 1, 0, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell1"
+                                        "Spell2"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.10000000149011612
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.5764706134796143, 0.5764706134796143, 0.5764706134796143, 1 }
+                                    { 0, 0.48235294222831726, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriSoulCrusher"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.9979674816131592
+                                }
+                                values: list[vec4] = {
+                                    { 0.5607843399047852, 0.5607843399047852, 0.5607843399047852, 1 }
+                                    { 0.0056966026313602924, 0.6755431294441223, 0.195087730884552, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 7.5
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    0.10499999672174454
+                                    0.21666666865348816
+                                    0.30666667222976685
+                                    0.3933333456516266
+                                    0.4883333444595337
+                                    0.5916666388511658
+                                    0.6866666674613953
+                                    0.7766666412353516
+                                    0.8666666746139526
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 1, 0, 0.9843137264251709, 1 }
+                                    { 0, 1, 0.5490196347236633, 1 }
+                                    { 0, 0, 1, 1 }
+                                    { 1, 0, 0.3176470696926117, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.615686297416687, 1, 1 }
+                                    { 0.6431372761726379, 0.027450980618596077, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.7019608020782471, 1, 1 }
+                                    { 1, 1, 1, 1 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Special_Color"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 0.9650774002075195, 0.9978534579277039, 1, 1 }
+                                    { 0.26274511218070984, 0.6823529601097107, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 0.7450980544090271, 0.8470588326454163, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell3"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.3499999940395355
+                                mTurnOffTimeSec: f32 = 0.800000011920929
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 1, 0, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell1"
+                                        "Spell2"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0.10000000149011612
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 0.8052631616592407, 0.8139318823814392, 1, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriSoulCrusher"
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.9979674816131592
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 0.0011145593598484993, 0.7213635444641113, 0.05598653852939606, 1 }
+                                }
+                            }
+                        }
+                        ColorGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 7.5
+                                mTurnOffTimeSec: f32 = 0.6000000238418579
+                            }
+                            colors: embed = VfxAnimatedColorVariableData {
+                                times: list[f32] = {
+                                    0.003322259057313204
+                                    0.10499999672174454
+                                    0.21666666865348816
+                                    0.30666667222976685
+                                    0.3933333456516266
+                                    0.4883333444595337
+                                    0.5916666388511658
+                                    0.6866666674613953
+                                    0.7766666412353516
+                                    0.8666666746139526
+                                    1
+                                }
+                                values: list[vec4] = {
+                                    { 1, 1, 1, 1 }
+                                    { 1, 0, 0.9843137264251709, 1 }
+                                    { 0, 1, 0.5490196347236633, 1 }
+                                    { 0, 0, 1, 1 }
+                                    { 1, 0, 0.3176470696926117, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.615686297416687, 1, 1 }
+                                    { 0.6431372761726379, 0.027450980618596077, 1, 1 }
+                                    { 0, 1, 0.615686297416687, 1 }
+                                    { 0, 0.7019608020782471, 1, 1 }
+                                    { 1, 1, 1, 1 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "SpecialColorLerp"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriR"
+                            }
+                            mOnValue: f32 = 0.75
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "death"
+                                }
+                            }
+                            mOnValue: f32 = 0.30000001192092896
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell3"
+                                }
+                            }
+                            mTurnOnTimeSec: f32 = 0.800000011920929
+                            mTurnOffTimeSec: f32 = 0.20000000298023224
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell1"
+                                    "Spell2"
+                                }
+                            }
+                            mOnValue: f32 = 0.30000001192092896
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AhriSoulCrusher"
+                            }
+                            mTurnOnTimeSec: f32 = 0.30000001192092896
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = 0.5
+                            mTurnOnTimeSec: f32 = 5
+                            mTurnOffTimeSec: f32 = 0.30000001192092896
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

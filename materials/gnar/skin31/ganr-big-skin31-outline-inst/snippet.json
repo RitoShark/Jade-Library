@@ -1,0 +1,36 @@
+{
+  "id": "ganr-big-skin31-outline-inst",
+  "name": "Ganr Big Skin31 Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.624Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ganr_big_skin31_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.618Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin31",
+    "bin": "data/characters/gnarbig/skins/skin31.bin",
+    "entryKey": "Characters/GnarBig/Skins/Skin31/Materials/GanrBig_Skin31_Outline_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin31",
+      "bin": "data/characters/gnarbig/skins/skin31.bin"
+    }
+  ]
+}

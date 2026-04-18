@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-skin19-hardlight-energy-spikes",
+  "name": "Naafiri Skin19 Hardlight Energy Spikes",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:44.069Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin19_hardlight_energy_spikes",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:44.062Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:44.062Z"
+    },
+    {
+      "name": "Naafiri_Skin19_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:44.062Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:44.062Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin19",
+    "bin": "data/characters/naafiri/skins/skin19.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin19/Materials/Naafiri_Skin19_Hardlight_EnergySpikes"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin19",
+      "bin": "data/characters/naafiri/skins/skin19.bin"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+"jadelib_mist_body_mat" = StaticMaterialDef {
+    name: string = "jadelib_mist_body_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/mist-body-mat/Viego_Skin10_Wraith_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FX_ColorRamp"
+            texturePath: string = "assets/jadelib/mist-body-mat/Viego_Skin10_Recolor_TX.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Screenspace_Tiles"
+            value: vec4 = { 3, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FGColor"
+            value: vec4 = { 1, 0.7960784435272217, 0.7960784435272217, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Modifier"
+            value: vec4 = { 3.7750000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Input"
+            value: vec4 = { 0.7300000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Texture_Activation"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_ScrollSpeed"
+            value: vec4 = { 0.05999999865889549, 0.019999999552965164, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Tile"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_R_Tile"
+            value: vec4 = { 0.6000000238418579, 0.6000000238418579, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Speed_X"
+            value: vec4 = { 0.07500000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Noise_G_Speed_Y"
+            value: vec4 = { -0.17749999463558197, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLUE_CH_MASK"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_GLOW"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Viego/MistBody"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Texture_Activation"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEMist"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Noise_G_Speed_X"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEHaste"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.15000000596046448
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.019999999552965164
+                    }
+                    mBlendTime: f32 = 0.05000000074505806
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Noise_G_Speed_Y"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEHaste"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = -0.16500000655651093
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = -0.029999999329447746
+                    }
+                    mBlendTime: f32 = 0.05000000074505806
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Input"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEHaste"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1.600000023841858
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.27000001072883606
+                    }
+                    mBlendTime: f32 = 0.05000000074505806
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Rim_Modifier"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ViegoEHaste"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1.7000000476837158
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.9700000286102295
+                    }
+                    mBlendTime: f32 = 0.05000000074505806
+                }
+            }
+        }
+    }
+}

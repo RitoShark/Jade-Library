@@ -1,0 +1,44 @@
+{
+  "id": "hair-material-01",
+  "name": "Hair Material 01",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:00.818Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_material_01",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin20_Hair_NightSky_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.813Z"
+    },
+    {
+      "name": "Zoe_Skin20_Hair_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.813Z"
+    },
+    {
+      "name": "Zoe_Skin20_Hair_Mat_Fresnel_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:00.813Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin20",
+    "bin": "data/characters/zoe/skins/skin20.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin20/Materials/HairMaterial_01"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin20",
+      "bin": "data/characters/zoe/skins/skin20.bin"
+    }
+  ]
+}

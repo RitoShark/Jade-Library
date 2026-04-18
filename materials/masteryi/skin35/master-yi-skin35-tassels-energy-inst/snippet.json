@@ -1,0 +1,36 @@
+{
+  "id": "master-yi-skin35-tassels-energy-inst",
+  "name": "Master Yi Skin35 Tassels Energy Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:01.702Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin35_tassels_energy_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin33_TX_TasselMask.tex",
+      "updatedAt": "2026-04-17T17:38:01.696Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin35",
+    "bin": "data/characters/masteryi/skins/skin35.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin35/Materials/MasterYi_Skin35_TasselsEnergy_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin35",
+      "bin": "data/characters/masteryi/skins/skin35.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "mordekaiser-mat-module",
+  "name": "Mordekaiser Mat Module",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:50.540Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_mat_module",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.534Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.534Z"
+    },
+    {
+      "name": "Mordekaiser_Skin13_Module_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:39:50.534Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.534Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin13",
+    "bin": "data/characters/mordekaiser/skins/skin13.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin13/Materials/Mordekaiser_MAT_Module"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin13",
+      "bin": "data/characters/mordekaiser/skins/skin13.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "beetle-recall-inst",
+  "name": "Beetle Recall Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:05.305Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_beetle_recall_inst",
+  "textureFiles": [
+    {
+      "name": "stars.tex",
+      "updatedAt": "2026-04-17T17:53:05.300Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.300Z"
+    },
+    {
+      "name": "Ashe_Base_SmokeErode.14_12_Hall_Of_Legends.tex",
+      "updatedAt": "2026-04-17T17:53:05.300Z"
+    },
+    {
+      "name": "Seraphine_Skin24_Recall01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:05.300Z"
+    },
+    {
+      "name": "stars.tex",
+      "updatedAt": "2026-04-17T17:53:05.300Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin32",
+    "bin": "data/characters/seraphine/skins/skin32.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin32/Materials/Beetle_Recall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin32",
+      "bin": "data/characters/seraphine/skins/skin32.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "mat-nasus-skin26-goop-inst",
+  "name": "Mat Nasus Skin26 Goop Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:44.651Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mat_nasus_skin26_goop_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin26_Matcap_Nasus_Goop.tex",
+      "updatedAt": "2026-04-17T17:41:44.643Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:44.643Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin26",
+    "bin": "data/characters/nasus/skins/skin26.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin26/Materials/Mat_Nasus_Skin26_Goop_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin26",
+      "bin": "data/characters/nasus/skins/skin26.bin"
+    }
+  ]
+}

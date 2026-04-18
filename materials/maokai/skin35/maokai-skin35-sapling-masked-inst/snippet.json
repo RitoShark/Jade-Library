@@ -1,0 +1,36 @@
+{
+  "id": "maokai-skin35-sapling-masked-inst",
+  "name": "Maokai Skin35 Sapling Masked Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:16.854Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_maokai_skin35_sapling_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Maokai_Skin35_SaplingMask_TX_CM.SKINS_Maokai_Skin35.tex",
+      "updatedAt": "2026-04-17T17:37:16.849Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Maokai",
+    "skin": "skin35",
+    "bin": "data/characters/maokai/skins/skin35.bin",
+    "entryKey": "Characters/Maokai/Skins/Skin35/Materials/MaokaiSkin35_Sapling_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Maokai",
+      "skin": "skin35",
+      "bin": "data/characters/maokai/skins/skin35.bin"
+    }
+  ]
+}

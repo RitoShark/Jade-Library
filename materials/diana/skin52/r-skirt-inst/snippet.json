@@ -1,0 +1,44 @@
+{
+  "id": "r-skirt-inst",
+  "name": "R Skirt Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:19.890Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_r_skirt_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin52_Z_Material_Snow_01.tex",
+      "updatedAt": "2026-04-17T17:15:19.884Z"
+    },
+    {
+      "name": "Diana_Skin52_Dress_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:19.884Z"
+    },
+    {
+      "name": "Diana_Skin52_Dress_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:19.884Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin52",
+    "bin": "data/characters/diana/skins/skin52.bin",
+    "entryKey": "Characters/Diana/Skins/Skin52/Materials/R_Skirt_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin52",
+      "bin": "data/characters/diana/skins/skin52.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "prestige-scarf-inst",
+  "name": "Prestige Scarf Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:57.312Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_scarf_inst",
+  "textureFiles": [
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:38:57.304Z"
+    },
+    {
+      "name": "StepsMask.tex",
+      "updatedAt": "2026-04-17T17:38:57.304Z"
+    },
+    {
+      "name": "MissFortune_Skin41_BodyReflectionVFX.tex",
+      "updatedAt": "2026-04-17T17:38:57.304Z"
+    },
+    {
+      "name": "MissFortune_Skin41_Laser_Mask.tex",
+      "updatedAt": "2026-04-17T17:38:57.304Z"
+    },
+    {
+      "name": "Atlast_Test.tex",
+      "updatedAt": "2026-04-17T17:38:57.304Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin41",
+    "bin": "data/characters/missfortune/skins/skin41.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin41/Materials/Prestige_Scarf_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin41",
+      "bin": "data/characters/missfortune/skins/skin41.bin"
+    }
+  ]
+}

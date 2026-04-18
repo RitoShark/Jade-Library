@@ -1,0 +1,48 @@
+{
+  "id": "ink-tatoo-inst",
+  "name": "Ink Tatoo Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:10.358Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_tatoo_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:33:10.351Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:33:10.351Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:10.351Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:33:10.351Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin72",
+    "bin": "data/leesin_skins_skin72_skins_skin73_skins_skin74_skins_skin75_skins_skin76_skins_skin77_skins_skin78_skins_skin79_skins_skin80.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin72/Materials/InkTatoo_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin72",
+      "bin": "data/leesin_skins_skin72_skins_skin73_skins_skin74_skins_skin75_skins_skin76_skins_skin77_skins_skin78_skins_skin79_skins_skin80.bin"
+    }
+  ]
+}

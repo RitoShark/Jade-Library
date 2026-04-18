@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-inst",
+  "name": "Bloom Parts Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:07.965Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_inst",
+  "textureFiles": [
+    {
+      "name": "Mat_Alpha.tex",
+      "updatedAt": "2026-04-17T18:00:07.960Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Talon",
+    "skin": "skin35",
+    "bin": "data/characters/talon/skins/skin35.bin",
+    "entryKey": "Characters/Talon/Skins/Skin35/Materials/Bloom_Parts_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Talon",
+      "skin": "skin35",
+      "bin": "data/characters/talon/skins/skin35.bin"
+    }
+  ]
+}

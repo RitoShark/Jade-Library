@@ -1,0 +1,64 @@
+{
+  "id": "moredekaiser-skin54-gold-weapon-inst",
+  "name": "Moredekaiser Skin54 Gold Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:54.938Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_moredekaiser_skin54_gold_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "Mordekaiser_Skin54_Weapon_Gold_Mask_TX_CM.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "Mordekaiser_Skin54_Weapon_Mask_TX_CM.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    },
+    {
+      "name": "Mordekaiser_Skin54_Weapon_Dark_TX_CM.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:39:54.930Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin54",
+    "bin": "data/characters/mordekaiser/skins/skin54.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin54/Materials/Moredekaiser_Skin54_Gold_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin54",
+      "bin": "data/characters/mordekaiser/skins/skin54.bin"
+    }
+  ]
+}

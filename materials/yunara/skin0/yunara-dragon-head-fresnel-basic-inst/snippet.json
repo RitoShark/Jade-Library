@@ -1,0 +1,34 @@
+{
+  "id": "yunara-dragon-head-fresnel-basic-inst",
+  "name": "Yunara Dragon Head Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:42.757Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_yunara_dragon_head_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Yunara_Base_Weapon_TX_CM.Yunara.tex",
+      "updatedAt": "2026-04-17T18:10:42.747Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T18:10:42.747Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yunara",
+    "skin": "skin0",
+    "bin": "data/characters/yunara/skins/skin0.bin",
+    "entryKey": "Characters/Yunara/Skins/Skin0/Materials/Yunara_DragonHead_Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yunara",
+      "skin": "skin0",
+      "bin": "data/characters/yunara/skins/skin0.bin"
+    }
+  ]
+}

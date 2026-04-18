@@ -1,0 +1,25 @@
+{
+  "id": "mordekaiser-skin55-sheen-mat",
+  "name": "Mordekaiser Skin55 Sheen Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:55.900Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_mordekaiser_skin55_sheen_mat",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin55",
+    "bin": "data/mordekaiser_skins_skin55_skins_skin58.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin55/Materials/Mordekaiser_Skin55_Sheen_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin55",
+      "bin": "data/mordekaiser_skins_skin55_skins_skin58.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-horse-inst",
+  "name": "Alpha Blend Additive Scroll Horse Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:02.984Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_horse_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:35:02.977Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:02.977Z"
+    },
+    {
+      "name": "Lucian_Skin72_HorseTail_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.977Z"
+    },
+    {
+      "name": "Lucian_Skin72_HorseTail_MaskTX_CM_TX_CM.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:02.977Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin72",
+    "bin": "data/characters/lucian/skins/skin72.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin72/Materials/AlphaBlend_Additive_Scroll_Horse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin72",
+      "bin": "data/characters/lucian/skins/skin72.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "screen-space-pan-masked-inst",
+  "name": "Screen Space Pan Masked Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:50.711Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_pan_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin14_Hologram_Blue_Hair.tex",
+      "updatedAt": "2026-04-17T17:07:50.706Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin14",
+    "bin": "data/characters/akali/skins/skin14.bin",
+    "entryKey": "Characters/Akali/Skins/Skin14/Materials/ScreenSpacePan_masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin14",
+      "bin": "data/characters/akali/skins/skin14.bin"
+    }
+  ]
+}

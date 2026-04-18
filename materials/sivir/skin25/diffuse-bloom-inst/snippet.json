@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.215Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Sivir_Skin25_Diffuse_Glow.tex",
+      "updatedAt": "2026-04-17T17:55:10.211Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin25",
+    "bin": "data/characters/sivir/skins/skin25.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin25/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin25",
+      "bin": "data/characters/sivir/skins/skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "kayle-skin07-sword-inst",
+  "name": "Kayle Skin07 Sword Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:41.879Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kayle_skin07_sword_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin07_Sword_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:41.871Z"
+    },
+    {
+      "name": "Kayle_Skin07_Sword_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:41.871Z"
+    },
+    {
+      "name": "Kayle_Skin07_Sword_E_Gradient_Texture.tex",
+      "updatedAt": "2026-04-17T17:29:41.871Z"
+    },
+    {
+      "name": "Kayle_Skin07_E_Sword_Lightning_Mult.tex",
+      "updatedAt": "2026-04-17T17:29:41.871Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin7",
+    "bin": "data/characters/kayle/skins/skin7.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin7/Materials/Kayle_skin07_Sword_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin7",
+      "bin": "data/characters/kayle/skins/skin7.bin"
+    }
+  ]
+}

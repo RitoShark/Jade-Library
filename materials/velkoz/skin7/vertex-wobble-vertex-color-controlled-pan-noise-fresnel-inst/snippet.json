@@ -1,0 +1,36 @@
+{
+  "id": "vertex-wobble-vertex-color-controlled-pan-noise-fresnel-inst",
+  "name": "Vertex Wobble Vertex Color Controlled Pan Noise Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:39.825Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vertex_wobble_vertex_color_controlled_pan_noise_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Kennen_Skin07_Material_Add.tex",
+      "updatedAt": "2026-04-17T18:04:39.815Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Velkoz",
+    "skin": "skin7",
+    "bin": "data/characters/velkoz/skins/skin7.bin",
+    "entryKey": "Characters/Velkoz/Skins/Skin7/Materials/Vertex_Wobble_VertexColorControlled_Pan_Noise_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Velkoz",
+      "skin": "skin7",
+      "bin": "data/characters/velkoz/skins/skin7.bin"
+    }
+  ]
+}

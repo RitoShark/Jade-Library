@@ -1,0 +1,216 @@
+"jadelib_calibrum_dissolve_alpha_add_noise_pan_inst" = StaticMaterialDef {
+    name: string = "jadelib_calibrum_dissolve_alpha_add_noise_pan_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pan_Texture"
+            texturePath: string = "assets/jadelib/calibrum-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_Add_Noise.tex"
+            addressV: u32 = 2
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MaskTexture"
+            texturePath: string = "assets/jadelib/calibrum-dissolve-alpha-add-noise-pan-inst/whitesquare.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/calibrum-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_SS_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/calibrum-dissolve-alpha-add-noise-pan-inst/Aphelios_Skin09_Erosion.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_rate"
+            value: vec4 = { 0.05000000074505806, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1.8250000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Mutliplier"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Factor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Color"
+            value: vec4 = { 1, 0.8901960849761963, 0.3333333432674408, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lighting_Intensity"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Scale"
+            value: vec4 = { 2, 2, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_Tex_Speed"
+            value: vec4 = { 0.15000000596046448, 0.4000000059604645, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_Blend"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_POST_LIGHT"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Dissolve_Alpha_Add_Noise_Pan"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveBias"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                            mAnimationNames: list[hash] = {
+                                "Recall"
+                            }
+                        }
+                        mTurnOnTimeSec: f32 = 8
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.07509171217679977
+                            0.1271151453256607
+                            0.19954226911067963
+                            0.9737711548805237
+                        }
+                        values: list[f32] = {
+                            1
+                            -0.4292035400867462
+                            -0.22123894095420837
+                            0.9955752491950989
+                            1
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "VFX_Blend"
+                Enabled: bool = false
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                            mAnimationNames: list[hash] = {
+                                "Recall"
+                            }
+                        }
+                        mTurnOnTimeSec: f32 = 8
+                        mTurnOffTimeSec: f32 = 0
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            -0.0022050717379897833
+                            0.17949272692203522
+                            0.2319212257862091
+                            0.5097862482070923
+                            1.0061110258102417
+                        }
+                        values: list[f32] = {
+                            0.007702959701418877
+                            0
+                            0.8704344630241394
+                            0.0064609600231051445
+                            0
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Mutliplier"
+                Enabled: bool = false
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                            mAnimationNames: list[hash] = {
+                                "Recall"
+                            }
+                        }
+                        mTurnOnTimeSec: f32 = 8
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0
+                            0.06100865826010704
+                            0.09521035850048065
+                            0.17137616872787476
+                            0.9898374080657959
+                        }
+                        values: list[f32] = {
+                            1
+                            0
+                            0
+                            1
+                            1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

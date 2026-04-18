@@ -1,0 +1,36 @@
+{
+  "id": "panner-fresnel-mask-bloom-inst",
+  "name": "Panner Fresnel Mask Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:00.438Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panner_fresnel_mask_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Lucian_Skin40_Tape_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:00.433Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin45",
+    "bin": "data/characters/lucian/skins/skin45.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin45/Materials/Panner_Fresnel_Mask_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin45",
+      "bin": "data/characters/lucian/skins/skin45.bin"
+    }
+  ]
+}

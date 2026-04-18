@@ -1,0 +1,40 @@
+{
+  "id": "kog-maw-dead-antennae-inst",
+  "name": "Kog Maw Dead Antennae Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:39.003Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kog_maw_dead_antennae_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin12_Props_MatCap.tex",
+      "updatedAt": "2026-04-17T17:31:38.997Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:38.997Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin55",
+    "bin": "01c4b6d47d86d153.bin",
+    "entryKey": "Characters/KogMawDead/Skins/Skin55/Materials/KogMawDead_Antennae_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin55",
+      "bin": "01c4b6d47d86d153.bin"
+    }
+  ]
+}

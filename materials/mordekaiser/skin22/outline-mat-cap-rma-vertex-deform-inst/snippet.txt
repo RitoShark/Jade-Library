@@ -1,0 +1,172 @@
+"jadelib_outline_mat_cap_rma_vertex_deform_inst" = StaticMaterialDef {
+    name: string = "jadelib_outline_mat_cap_rma_vertex_deform_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Vertex_Deform_Tex"
+            texturePath: string = "assets/jadelib/outline-mat-cap-rma-vertex-deform-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "BloomMask_Texture"
+            texturePath: string = "assets/jadelib/outline-mat-cap-rma-vertex-deform-inst/white.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/outline-mat-cap-rma-vertex-deform-inst/Yone_Skin45_Cloth_Matcap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "OutlineMask_Texture"
+            texturePath: string = "assets/jadelib/outline-mat-cap-rma-vertex-deform-inst/white.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/outline-mat-cap-rma-vertex-deform-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularTintColor"
+            value: vec4 = { 0, 0.6401159763336182, 0.32741284370422363, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineController"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 2.625, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveController"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveStrength"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainTexUV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlipbookSize"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flipbook_NumberSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineMask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 0.5, 1, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_DEFORM_TEX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ANIMATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_R_MASK_ON_DEFORM"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_MatCap_RMA_VertexDeform"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

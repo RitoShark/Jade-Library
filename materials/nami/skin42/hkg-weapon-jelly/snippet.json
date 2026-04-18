@@ -1,0 +1,52 @@
+{
+  "id": "hkg-weapon-jelly",
+  "name": "Hkg Weapon Jelly",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.510Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_weapon_jelly",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:26.504Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.504Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:41:26.504Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.504Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.504Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin42",
+    "bin": "data/characters/nami/skins/skin42.bin",
+    "entryKey": "Characters/Nami/Skins/Skin42/Materials/HKG_WeaponJelly"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin42",
+      "bin": "data/characters/nami/skins/skin42.bin"
+    }
+  ]
+}

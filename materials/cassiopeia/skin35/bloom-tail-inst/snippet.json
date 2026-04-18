@@ -1,0 +1,36 @@
+{
+  "id": "bloom-tail-inst",
+  "name": "Bloom Tail Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:04.257Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_tail_inst",
+  "textureFiles": [
+    {
+      "name": "Cassiopeia_Skin28_Tail_bloom.tex",
+      "updatedAt": "2026-04-17T17:14:04.252Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Cassiopeia",
+    "skin": "skin35",
+    "bin": "data/characters/cassiopeia/skins/skin35.bin",
+    "entryKey": "Characters/Cassiopeia/Skins/Skin35/Materials/Bloom_Tail_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Cassiopeia",
+      "skin": "skin35",
+      "bin": "data/characters/cassiopeia/skins/skin35.bin"
+    }
+  ]
+}

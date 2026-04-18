@@ -1,0 +1,41 @@
+{
+  "id": "hkg-ruby-xerath-skin05-diffuse-bloom-inst",
+  "name": "Hkg Ruby Xerath Skin05 Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:57.882Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_ruby_xerath_skin05_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Ruby_Xerath_Skin05_Mask_TX_CM.Ruby.tex",
+      "updatedAt": "2026-04-17T17:50:42.158Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ruby_Xerath",
+    "skin": "skin0",
+    "bin": "data/characters/ruby_xerath/skins/skin0.bin",
+    "entryKey": "Characters/Ruby_Xerath/Skins/Skin0/Materials/HKG_Ruby_Xerath_Skin05_Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ruby_Xerath",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_xerath/skins/skin0.bin"
+    },
+    {
+      "champion": "Xerath",
+      "skin": "skin10",
+      "bin": "data/characters/xerath/skins/skin10.bin"
+    }
+  ]
+}

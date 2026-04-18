@@ -1,0 +1,56 @@
+{
+  "id": "fresnel-glass-head-inst",
+  "name": "Fresnel Glass Head Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:35.695Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_glass_head_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.688Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Singed",
+    "skin": "skin22",
+    "bin": "data/characters/singed/skins/skin22.bin",
+    "entryKey": "Characters/Singed/Skins/Skin22/Materials/Fresnel_Glass_Head_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Singed",
+      "skin": "skin22",
+      "bin": "data/characters/singed/skins/skin22.bin"
+    }
+  ]
+}

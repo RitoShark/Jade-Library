@@ -1,0 +1,56 @@
+{
+  "id": "dark-star-crystal-inst",
+  "name": "Dark Star Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:54.549Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    },
+    {
+      "name": "Jarvan_Skin07_Crystal_RMA.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:54.543Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin12",
+    "bin": "data/characters/jarvaniv/skins/skin12.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin12/Materials/DarkStar_Crystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin12",
+      "bin": "data/characters/jarvaniv/skins/skin12.bin"
+    }
+  ]
+}

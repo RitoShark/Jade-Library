@@ -1,0 +1,48 @@
+{
+  "id": "warwick-skin62-hair-mat-inst",
+  "name": "Warwick Skin62 Hair Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:09.973Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_warwick_skin62_hair_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.966Z"
+    },
+    {
+      "name": "Warwick_Skin62_Fur_TX_CM.Chroma_Warwick_WarHounds.tex",
+      "updatedAt": "2026-04-17T18:07:09.966Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.966Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin62",
+    "bin": "data/characters/warwick/skins/skin62.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin62/Materials/Warwick_Skin62_Hair_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin62",
+      "bin": "data/characters/warwick/skins/skin62.bin"
+    }
+  ]
+}

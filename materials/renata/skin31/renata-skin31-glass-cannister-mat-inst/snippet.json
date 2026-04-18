@@ -1,0 +1,25 @@
+{
+  "id": "renata-skin31-glass-cannister-mat-inst",
+  "name": "Renata Skin31 Glass Cannister Mat Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.752Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_renata_skin31_glass_cannister_mat_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin31",
+    "bin": "data/characters/renata/skins/skin31.bin",
+    "entryKey": "Characters/Renata/Skins/Skin31/Materials/Renata_Skin31_Glass_Cannister_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin31",
+      "bin": "data/characters/renata/skins/skin31.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "kaisa-skin61-mask-mat",
+  "name": "Kaisa Skin61 Mask Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:33.127Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kaisa_skin61_mask_mat",
+  "textureFiles": [
+    {
+      "name": "Kaisa_Skin61_Weapons_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:33.122Z"
+    },
+    {
+      "name": "Kaisa_Skin59_Mask_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:33.122Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:33.122Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin61",
+    "bin": "data/characters/kaisa/skins/skin61.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin61/Materials/Kaisa_Skin61_Mask_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin61",
+      "bin": "data/characters/kaisa/skins/skin61.bin"
+    }
+  ]
+}

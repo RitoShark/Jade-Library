@@ -1,0 +1,79 @@
+{
+  "id": "ceramic-mat-00-inst",
+  "name": "Ceramic Mat 00 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:26.211Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ceramic_mat_00_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin12_Props_MatCap.tex",
+      "updatedAt": "2026-04-17T17:08:30.257Z"
+    },
+    {
+      "name": "Amumu_Skin34_Mask.tex",
+      "updatedAt": "2026-04-17T17:08:30.257Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:08:30.257Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Amumu",
+    "skin": "skin34",
+    "bin": "data/characters/amumu/skins/skin34.bin",
+    "entryKey": "Characters/Amumu/Skins/Skin34/Materials/Ceramic_Mat_00_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Amumu",
+      "skin": "skin34",
+      "bin": "data/characters/amumu/skins/skin34.bin"
+    },
+    {
+      "champion": "Chogath",
+      "skin": "skin32",
+      "bin": "data/characters/chogath/skins/skin32.bin"
+    },
+    {
+      "champion": "Darius",
+      "skin": "skin54",
+      "bin": "data/characters/darius/skins/skin54.bin"
+    },
+    {
+      "champion": "Irelia",
+      "skin": "skin45",
+      "bin": "data/characters/irelia/skins/skin45.bin"
+    },
+    {
+      "champion": "Kindred",
+      "skin": "skin12",
+      "bin": "data/characters/kindred/skins/skin12.bin"
+    },
+    {
+      "champion": "Lissandra",
+      "skin": "skin23",
+      "bin": "data/characters/lissandra/skins/skin23.bin"
+    },
+    {
+      "champion": "Lux",
+      "skin": "skin29",
+      "bin": "data/characters/lux/skins/skin29.bin"
+    },
+    {
+      "champion": "Morgana",
+      "skin": "skin70",
+      "bin": "data/characters/morgana/skins/skin70.bin"
+    }
+  ]
+}

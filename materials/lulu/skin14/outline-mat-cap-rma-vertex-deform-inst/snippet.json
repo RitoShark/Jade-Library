@@ -1,0 +1,52 @@
+{
+  "id": "outline-mat-cap-rma-vertex-deform-inst",
+  "name": "Outline Mat Cap Rma Vertex Deform Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:18.553Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_mat_cap_rma_vertex_deform_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:18.546Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:35:18.546Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:35:18.546Z"
+    },
+    {
+      "name": "Lulu_Pet_Jellyfish_TestAlpha_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:18.546Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:35:18.546Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin14",
+    "bin": "029b2e1b8ffd7c8c.bin",
+    "entryKey": "Characters/LuluPolymorphCritter/Skins/Skin14/Materials/Outline_MatCap_RMA_VertexDeform_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin14",
+      "bin": "029b2e1b8ffd7c8c.bin"
+    }
+  ]
+}

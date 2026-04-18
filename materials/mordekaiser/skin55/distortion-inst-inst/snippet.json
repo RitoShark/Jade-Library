@@ -1,0 +1,31 @@
+{
+  "id": "distortion-inst-inst",
+  "name": "Distortion Inst Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:55.895Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_distortion_inst_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin55",
+    "bin": "data/mordekaiser_skins_skin55_skins_skin58.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin55/Materials/Distortion_Inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin55",
+      "bin": "data/mordekaiser_skins_skin55_skins_skin58.bin"
+    }
+  ]
+}

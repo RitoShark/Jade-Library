@@ -1,0 +1,64 @@
+{
+  "id": "hkg-pantheon-cloak-inst",
+  "name": "Hkg Pantheon Cloak Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:23.022Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_pantheon_cloak_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "Pantheon_Skin16_Cape_TX_CM_ScrollTex.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "Pantheon_Skin16_Cape_TX_CM_ScrollMaskTex.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:23.010Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pantheon",
+    "skin": "skin16",
+    "bin": "data/characters/pantheon/skins/skin16.bin",
+    "entryKey": "Characters/Pantheon/Skins/Skin16/Materials/HKG_Pantheon_Cloak_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pantheon",
+      "skin": "skin16",
+      "bin": "data/characters/pantheon/skins/skin16.bin"
+    }
+  ]
+}

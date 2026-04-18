@@ -1,0 +1,96 @@
+{
+  "id": "aspect-card-inst",
+  "name": "Aspect Card Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:09.911Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aspect_card_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin43_Haircard_Mask_03_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Hair2_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Haircard_Flow_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Hair2_Bloom_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_Hairfrenal_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:09.904Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin43",
+    "bin": "data/characters/zoe/skins/skin43.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin43/Materials/Aspect_Card_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin43",
+      "bin": "data/characters/zoe/skins/skin43.bin"
+    }
+  ]
+}

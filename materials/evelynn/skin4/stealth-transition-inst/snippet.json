@@ -1,0 +1,38 @@
+{
+  "id": "stealth-transition-inst",
+  "name": "Stealth Transition Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:18.858Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_stealth_transition_inst",
+  "textureFiles": [
+    {
+      "name": "evelynn_skin04_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:18.851Z"
+    },
+    {
+      "name": "evelynn_skin04_TX_CM2.tex",
+      "updatedAt": "2026-04-17T17:17:18.851Z"
+    },
+    {
+      "name": "Evelynn_Skin04_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:17:18.851Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin4",
+    "bin": "data/characters/evelynn/skins/skin4.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin4/Materials/StealthTransition_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin4",
+      "bin": "data/characters/evelynn/skins/skin4.bin"
+    }
+  ]
+}

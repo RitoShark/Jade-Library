@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:14.962Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Janna_Idle_Hair.tex",
+      "updatedAt": "2026-04-17T17:23:14.958Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin22",
+    "bin": "data/characters/janna/skins/skin22.bin",
+    "entryKey": "Characters/Janna/Skins/Skin22/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin22",
+      "bin": "data/characters/janna/skins/skin22.bin"
+    }
+  ]
+}

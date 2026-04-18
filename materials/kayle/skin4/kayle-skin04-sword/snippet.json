@@ -1,0 +1,42 @@
+{
+  "id": "kayle-skin04-sword",
+  "name": "Kayle Skin04 Sword",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:37.658Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kayle_skin04_sword",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin04_Sword_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:37.652Z"
+    },
+    {
+      "name": "Kayle_Skin04_Wing_Rage_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:37.652Z"
+    },
+    {
+      "name": "Kayle_Skin01_color-bombground.tex",
+      "updatedAt": "2026-04-17T17:29:37.652Z"
+    },
+    {
+      "name": "Kayle_Skin04_Fire_tile_Gold.tex",
+      "updatedAt": "2026-04-17T17:29:37.652Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin4",
+    "bin": "data/characters/kayle/skins/skin4.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin4/Materials/Kayle_Skin04_Sword"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin4",
+      "bin": "data/characters/kayle/skins/skin4.bin"
+    }
+  ]
+}

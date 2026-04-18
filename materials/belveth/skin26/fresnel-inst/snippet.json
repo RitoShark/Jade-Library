@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-inst",
+  "name": "Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:51.510Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Belveth_Skin26_TX_CM.Chroma_BelVeth_AnimaSquad_2024.tex",
+      "updatedAt": "2026-04-17T17:11:51.505Z"
+    },
+    {
+      "name": "Belveth_Skin19_FresnelAlpha_TX_CM.SKINS_Belveth_Skin19.tex",
+      "updatedAt": "2026-04-17T17:11:51.505Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Belveth",
+    "skin": "skin26",
+    "bin": "data/characters/belveth/skins/skin26.bin",
+    "entryKey": "Characters/Belveth/Skins/Skin26/Materials/Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Belveth",
+      "skin": "skin26",
+      "bin": "data/characters/belveth/skins/skin26.bin"
+    }
+  ]
+}

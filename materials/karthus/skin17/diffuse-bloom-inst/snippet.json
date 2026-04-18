@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:09.746Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Karthus_Skin17_Glow_Mask.tex",
+      "updatedAt": "2026-04-17T17:28:09.741Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karthus",
+    "skin": "skin17",
+    "bin": "data/characters/karthus/skins/skin17.bin",
+    "entryKey": "Characters/Karthus/Skins/Skin17/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karthus",
+      "skin": "skin17",
+      "bin": "data/characters/karthus/skins/skin17.bin"
+    }
+  ]
+}

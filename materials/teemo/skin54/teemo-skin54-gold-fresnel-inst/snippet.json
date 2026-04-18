@@ -1,0 +1,38 @@
+{
+  "id": "teemo-skin54-gold-fresnel-inst",
+  "name": "Teemo Skin54 Gold Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:41.181Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_teemo_skin54_gold_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin54_TX_CM.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.175Z"
+    },
+    {
+      "name": "Teemo_Skin54_Gold.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.175Z"
+    },
+    {
+      "name": "black.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.175Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin54",
+    "bin": "data/characters/teemo/skins/skin54.bin",
+    "entryKey": "Characters/Teemo/Skins/Skin54/Materials/Teemo_Skin54_Gold_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin54",
+      "bin": "data/characters/teemo/skins/skin54.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "outline-iridescent-add-scroll-inst",
+  "name": "Outline Iridescent Add Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:07.008Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_iridescent_add_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "Gradient_test_02.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:07.000Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gwen",
+    "skin": "skin8",
+    "bin": "data/characters/gwen/skins/skin8.bin",
+    "entryKey": "Characters/Gwen/Skins/Skin8/Materials/Outline_Iridescent_Add_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gwen",
+      "skin": "skin8",
+      "bin": "data/characters/gwen/skins/skin8.bin"
+    }
+  ]
+}

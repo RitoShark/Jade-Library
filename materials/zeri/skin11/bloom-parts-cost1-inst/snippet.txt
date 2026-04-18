@@ -1,0 +1,174 @@
+"jadelib_bloom_parts_cost1_inst" = StaticMaterialDef {
+    name: string = "jadelib_bloom_parts_cost1_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin10_Idel_CoatAlpha02.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_UV_Range"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin10_Coat_TX_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask01"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin11_Idel_CoatScrolling01.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask02"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin11_Coat_TZ_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask03"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin11_Coat_TZ_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Change_Texture"
+            texturePath: string = "assets/jadelib/bloom-parts-cost1-inst/Zeri_Skin11_R_Coat01.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0.4156862795352936, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_01"
+            value: vec4 = { 0, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_02"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_03"
+            value: vec4 = { 0.699999988079071, 0.699999988079071, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGB_Mask_View"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Change_Val"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ZeriR"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.10999999940395355, 1, 1, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "UV_Scroll_01"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ZeriR"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, -1, 0, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, -0.30000001192092896, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "RGB_Mask_View"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ZeriR"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 1, 1, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {}
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "ZeriR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Zeri/Skins/Skin11/Particles/Zeri_Skin11_R_Coat01.tex"
+                    }
+                }
+            }
+        }
+    }
+}

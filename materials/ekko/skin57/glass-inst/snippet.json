@@ -1,0 +1,34 @@
+{
+  "id": "glass-inst",
+  "name": "Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:37.031Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Ekko_Skin57_TX_CM.SKINS_Ekko_Skin57.tex",
+      "updatedAt": "2026-04-17T17:16:37.026Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:16:37.026Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin57",
+    "bin": "data/characters/ekko/skins/skin57.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin57/Materials/Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin57",
+      "bin": "data/characters/ekko/skins/skin57.bin"
+    }
+  ]
+}

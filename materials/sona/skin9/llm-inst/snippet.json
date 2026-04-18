@@ -1,0 +1,56 @@
+{
+  "id": "llm-inst",
+  "name": "Llm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:28.218Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_llm_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin09_CapeMask_RMA.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    },
+    {
+      "name": "Sona_Skin09_CapeMask_RMA.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:28.210Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin9",
+    "bin": "data/characters/sona/skins/skin9.bin",
+    "entryKey": "Characters/Sona/Skins/Skin9/Materials/LLM_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin9",
+      "bin": "data/characters/sona/skins/skin9.bin"
+    }
+  ]
+}

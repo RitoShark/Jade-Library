@@ -1,0 +1,48 @@
+{
+  "id": "hair-glow-inst",
+  "name": "Hair Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:35.060Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_glow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:35.050Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:35.050Z"
+    },
+    {
+      "name": "Irelia_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:22:35.050Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:35.050Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin26",
+    "bin": "data/characters/irelia/skins/skin26.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin26/Materials/HairGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin26",
+      "bin": "data/characters/irelia/skins/skin26.bin"
+    }
+  ]
+}

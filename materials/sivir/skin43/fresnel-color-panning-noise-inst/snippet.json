@@ -1,0 +1,36 @@
+{
+  "id": "fresnel-color-panning-noise-inst",
+  "name": "Fresnel Color Panning Noise Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.286Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_color_panning_noise_inst",
+  "textureFiles": [
+    {
+      "name": "Water_Wave_small.tex",
+      "updatedAt": "2026-04-17T17:55:10.279Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin43",
+    "bin": "data/characters/sivir/skins/skin43.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin43/Materials/FresnelColor_PanningNoise_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin43",
+      "bin": "data/characters/sivir/skins/skin43.bin"
+    }
+  ]
+}

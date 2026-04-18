@@ -1,0 +1,260 @@
+"jadelib_ezreal_skin63_hand_mat" = StaticMaterialDef {
+    name: string = "jadelib_ezreal_skin63_hand_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_Mask"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Color_Mask_Texture"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScrollTex"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/Ezreal_Skin44_horn_noise_TEX.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScroll_Mask"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/Ezreal_Skin44_Horn_MaterialMask_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture2"
+            texturePath: string = "assets/jadelib/ezreal-skin63-hand-mat/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Texture_Tint"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescence_Pulse_Speed_Min"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Fade_Mask_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularControl"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Exclude_Mask_from_TintColor_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 0.8223087191581726, 0.9197070002555847, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineThickness"
+            value: vec4 = { 0.23499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineSoftness"
+            value: vec4 = { 0.48249998688697815, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexTile"
+            value: vec4 = { 10, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_R"
+            value: vec4 = { 0.22499999403953552, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.9843137264251709, 0.9843137264251709, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_R"
+            value: vec4 = { 0.38690775632858276, 0.6461127400398254, 0.5803616642951965, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_R"
+            value: vec4 = { 0, 0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_G"
+            value: vec4 = { 0, 0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_G"
+            value: vec4 = { 1, 0, 0.7278400659561157, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_G"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tex_BlendVlue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "POST_LIGHTING_ON_SCROLLTEX"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCREENSPACE_TEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCREEN_SPACE_TEXTURE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCROLLTEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_R_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_G_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_PULSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY_W_MASK"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCROLL_TEXTURE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "EXCLUDE_MASK_FROM_TINTCOLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_OUTLINE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DIFFUSE_LERP_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_Iridescent_Add_Scroll"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

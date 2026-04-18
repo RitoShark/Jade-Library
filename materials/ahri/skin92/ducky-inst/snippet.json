@@ -1,0 +1,48 @@
+{
+  "id": "ducky-inst",
+  "name": "Ducky Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:09.652Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ducky_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:07:09.644Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:07:09.644Z"
+    },
+    {
+      "name": "Ahri_Skin92_VFXProps_TX_CM.Chroma_Ahri_Onsen.tex",
+      "updatedAt": "2026-04-17T17:07:09.644Z"
+    },
+    {
+      "name": "Ahri_Skin88_Outline_Mask_TX_CM.SKINS_Ahri_Skin88.tex",
+      "updatedAt": "2026-04-17T17:07:09.644Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin92",
+    "bin": "data/characters/ahri/skins/skin92.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin92/Materials/Ducky_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin92",
+      "bin": "data/characters/ahri/skins/skin92.bin"
+    }
+  ]
+}

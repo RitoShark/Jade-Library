@@ -1,0 +1,30 @@
+{
+  "id": "glass-inst",
+  "name": "Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:21.126Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Riven",
+    "skin": "skin44",
+    "bin": "055e91802ba131e0.bin",
+    "entryKey": "Characters/Riven/Skins/Skin44/Materials/Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Riven",
+      "skin": "skin44",
+      "bin": "055e91802ba131e0.bin"
+    },
+    {
+      "champion": "Strawberry_Riven",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_riven/skins/skin0.bin"
+    }
+  ]
+}

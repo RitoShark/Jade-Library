@@ -1,0 +1,56 @@
+{
+  "id": "crown-inst",
+  "name": "Crown Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:39.415Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crown_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:39.409Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin40",
+    "bin": "data/characters/viego/skins/skin40.bin",
+    "entryKey": "Characters/Viego/Skins/Skin40/Materials/Crown_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin40",
+      "bin": "data/characters/viego/skins/skin40.bin"
+    }
+  ]
+}

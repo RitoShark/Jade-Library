@@ -1,0 +1,36 @@
+{
+  "id": "irelia-bladeglow-inst",
+  "name": "Irelia Bladeglow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:39.076Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_bladeglow_inst",
+  "textureFiles": [
+    {
+      "name": "DefaultColorOverlifetime.tex",
+      "updatedAt": "2026-04-17T17:22:39.071Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin1",
+    "bin": "data/characters/ireliablades/skins/skin1.bin",
+    "entryKey": "Characters/IreliaBlades/Skins/Skin1/Materials/Irelia_bladeglow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin1",
+      "bin": "data/characters/ireliablades/skins/skin1.bin"
+    }
+  ]
+}

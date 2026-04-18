@@ -1,0 +1,56 @@
+{
+  "id": "aatrox-skin33-ult-sword-dissolve-mat-inst",
+  "name": "Aatrox Skin33 Ult Sword Dissolve Mat Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:19.201Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aatrox_skin33_ult_sword_dissolve_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    },
+    {
+      "name": "Aatrox_Skin33_Sword_Ult_Scroll_TX_CM.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    },
+    {
+      "name": "Aatrox_Skin33_Sword_Ult_Distortion_TX_CM.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    },
+    {
+      "name": "Aatrox_Skin33_Sword_Ult_ScrollSimple_TX_CM.SKINS_Aatrox_Skin33.tex",
+      "updatedAt": "2026-04-17T17:06:19.195Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin33",
+    "bin": "data/characters/aatrox/skins/skin33.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin33/Materials/Aatrox_Skin33_UltSword_Dissolve_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin33",
+      "bin": "data/characters/aatrox/skins/skin33.bin"
+    }
+  ]
+}

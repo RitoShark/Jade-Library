@@ -1,0 +1,130 @@
+"jadelib_hkg_polarized_mask_sylas_anim_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_polarized_mask_sylas_anim_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Overlay_Texture"
+            texturePath: string = "assets/jadelib/hkg-polarized-mask-sylas-anim-inst/Sylas_Skin24_Body_Tattoo.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/hkg-polarized-mask-sylas-anim-inst/Sylas_Skin24_Body_tatto_mult2.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Map"
+            texturePath: string = "assets/jadelib/hkg-polarized-mask-sylas-anim-inst/Sylas_Skin24_R_Z_Gradient02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Tex"
+            texturePath: string = "assets/jadelib/hkg-polarized-mask-sylas-anim-inst/Sylas_Skin24_Gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/hkg-polarized-mask-sylas-anim-inst/Atlast_Test.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Amplitude"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Frequency"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed_Body"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Tile"
+            value: vec4 = { 0.5904099941253662, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Depth"
+            value: vec4 = { 0.07750000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMod"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Param"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Specular_Power"
+            value: vec4 = { 18.96525001525879, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Specular_Intensity"
+            value: vec4 = { 1.5750000476837158, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFF_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_MATCAP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SYLAS_EFFECT"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LASER_COLOR"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Polarized_Mask_Anim"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

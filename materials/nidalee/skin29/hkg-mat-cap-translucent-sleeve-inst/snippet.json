@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-sleeve-inst",
+  "name": "Hkg Mat Cap Translucent Sleeve Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:01.673Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_sleeve_inst",
+  "textureFiles": [
+    {
+      "name": "Trans_color_test.tex",
+      "updatedAt": "2026-04-17T17:43:01.668Z"
+    },
+    {
+      "name": "Matcap_no_color_test.tex",
+      "updatedAt": "2026-04-17T17:43:01.668Z"
+    },
+    {
+      "name": "mask_test.tex",
+      "updatedAt": "2026-04-17T17:43:01.668Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin29",
+    "bin": "data/characters/nidalee/skins/skin29.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin29/Materials/HKG_MatCap_Translucent_Sleeve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin29",
+      "bin": "data/characters/nidalee/skins/skin29.bin"
+    }
+  ]
+}

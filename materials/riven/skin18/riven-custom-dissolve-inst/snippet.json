@@ -1,0 +1,40 @@
+{
+  "id": "riven-custom-dissolve-inst",
+  "name": "Riven Custom Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:09.335Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_riven_custom_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "PolarCoords.tex",
+      "updatedAt": "2026-04-17T17:49:09.327Z"
+    },
+    {
+      "name": "Riven_Skin18_Recall_DissolveTex.tex",
+      "updatedAt": "2026-04-17T17:49:09.327Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Riven",
+    "skin": "skin18",
+    "bin": "data/characters/riven/skins/skin18.bin",
+    "entryKey": "Characters/Riven/Skins/Skin18/Materials/Riven_CustomDissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Riven",
+      "skin": "skin18",
+      "bin": "data/characters/riven/skins/skin18.bin"
+    }
+  ]
+}

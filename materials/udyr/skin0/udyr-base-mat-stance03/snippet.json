@@ -1,0 +1,64 @@
+{
+  "id": "udyr-base-mat-stance03",
+  "name": "Udyr Base Mat Stance03",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:42.228Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_udyr_base_mat_stance03",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "common_color-hold.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "Udyr_Base_VGU_SubmeshMasks_01_ScrollingTexturesPack.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "Udyr_Base_VGU_SubmeshMasks_01_Base_Glowing.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:42.219Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Udyr",
+    "skin": "skin0",
+    "bin": "1dec4b098aad3553.bin",
+    "entryKey": "Characters/Udyr/Skins/Skin0/Materials/Udyr_Base_Mat_Stance03"
+  },
+  "usedBy": [
+    {
+      "champion": "Udyr",
+      "skin": "skin0",
+      "bin": "1dec4b098aad3553.bin"
+    }
+  ]
+}

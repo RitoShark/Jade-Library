@@ -1,0 +1,44 @@
+{
+  "id": "foam",
+  "name": "Foam",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:17.435Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_foam",
+  "textureFiles": [
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:01:17.429Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:17.429Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:01:17.429Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin59",
+    "bin": "data/characters/threshlantern/skins/skin59.bin",
+    "entryKey": "Characters/ThreshLantern/Skins/Skin59/Materials/Foam"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin59",
+      "bin": "data/characters/threshlantern/skins/skin59.bin"
+    }
+  ]
+}

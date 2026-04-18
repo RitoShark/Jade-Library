@@ -1,0 +1,52 @@
+{
+  "id": "panning-cape-mat-inst",
+  "name": "Panning Cape Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:15.102Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_cape_mat_inst",
+  "textureFiles": [
+    {
+      "name": "common_empty32.tex",
+      "updatedAt": "2026-04-17T17:46:15.095Z"
+    },
+    {
+      "name": "common_empty32.tex",
+      "updatedAt": "2026-04-17T17:46:15.095Z"
+    },
+    {
+      "name": "common_empty32.tex",
+      "updatedAt": "2026-04-17T17:46:15.095Z"
+    },
+    {
+      "name": "common_empty32.tex",
+      "updatedAt": "2026-04-17T17:46:15.095Z"
+    },
+    {
+      "name": "common_empty32.tex",
+      "updatedAt": "2026-04-17T17:46:15.095Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin19",
+    "bin": "data/characters/pyke/skins/skin19.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin19/Materials/Panning_Cape_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin19",
+      "bin": "data/characters/pyke/skins/skin19.bin"
+    }
+  ]
+}

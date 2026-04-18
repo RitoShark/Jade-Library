@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-altar-spear-inst",
+  "name": "Specular Fresnel Masked Altar Spear Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:59.951Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_altar_spear_inst",
+  "textureFiles": [
+    {
+      "name": "KalistaAltar_Skin11_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:59.946Z"
+    },
+    {
+      "name": "KalistaAltar_Skin05_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:26:59.946Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:26:59.946Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kalista",
+    "skin": "skin11",
+    "bin": "data/characters/kalista/skins/skin11.bin",
+    "entryKey": "Characters/Kalista/Skins/Skin11/Materials/Specular_Fresnel_Masked_Altar_Spear_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kalista",
+      "skin": "skin11",
+      "bin": "data/characters/kalista/skins/skin11.bin"
+    }
+  ]
+}

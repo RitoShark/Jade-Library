@@ -1,0 +1,44 @@
+{
+  "id": "sword-pbr-toon-shading-inst",
+  "name": "Sword Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:38.776Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sword_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin30_Sword_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:38.767Z"
+    },
+    {
+      "name": "Viego_Skin30_Sword_FlowDistortion_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:38.767Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:38.767Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin34",
+    "bin": "data/characters/viego/skins/skin34.bin",
+    "entryKey": "Characters/Viego/Skins/Skin34/Materials/Sword_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin34",
+      "bin": "data/characters/viego/skins/skin34.bin"
+    }
+  ]
+}

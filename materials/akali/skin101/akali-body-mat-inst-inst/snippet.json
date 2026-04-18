@@ -1,0 +1,60 @@
+{
+  "id": "akali-body-mat-inst-inst",
+  "name": "Akali Body Mat Inst Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:50.586Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akali_body_mat_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "Akali_Skin101_Body_Mask_TX_CM.Chroma_Akali_SpiritBlossom_Paragon.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "Akali_Holo_Gradient.Chroma_Akali_SpiritBlossom_Paragon.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "Noise04.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:07:50.581Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin101",
+    "bin": "data/characters/akali/skins/skin101.bin",
+    "entryKey": "Characters/Akali/Skins/Skin101/Materials/Akali_Body_Mat_Inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin101",
+      "bin": "data/characters/akali/skins/skin101.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-skin13-inst",
+  "name": "Scrolling Uvs Skin13 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:43.828Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_skin13_inst",
+  "textureFiles": [
+    {
+      "name": "Nasus_Skin13_Ribbon_Mask.tex",
+      "updatedAt": "2026-04-17T17:41:43.822Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin13",
+    "bin": "data/characters/nasus/skins/skin13.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin13/Materials/ScrollingUVs_Skin13_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin13",
+      "bin": "data/characters/nasus/skins/skin13.bin"
+    }
+  ]
+}

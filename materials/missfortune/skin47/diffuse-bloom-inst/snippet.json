@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:57.715Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "MissFortune_Skin40_Equipment_Glow.tex",
+      "updatedAt": "2026-04-17T17:38:57.709Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin47",
+    "bin": "data/characters/missfortune/skins/skin47.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin47/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin47",
+      "bin": "data/characters/missfortune/skins/skin47.bin"
+    }
+  ]
+}

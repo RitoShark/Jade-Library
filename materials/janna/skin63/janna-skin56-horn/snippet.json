@@ -1,0 +1,64 @@
+{
+  "id": "janna-skin56-horn",
+  "name": "Janna Skin56 Horn",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:30.294Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_janna_skin56_horn",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "Janna_Skin56_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "Janna_Skin56_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.287Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin63",
+    "bin": "data/characters/janna/skins/skin63.bin",
+    "entryKey": "Characters/Janna/Skins/Skin63/Materials/JannaSkin56_Horn"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin63",
+      "bin": "data/characters/janna/skins/skin63.bin"
+    }
+  ]
+}

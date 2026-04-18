@@ -1,0 +1,38 @@
+{
+  "id": "new-tail-mat-inst",
+  "name": "New Tail Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:30.673Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_new_tail_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin11_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:30.666Z"
+    },
+    {
+      "name": "Neeko_Skin11_Z_StarryBackdrop.tex",
+      "updatedAt": "2026-04-17T17:42:30.666Z"
+    },
+    {
+      "name": "Neeko_Skin11_mask.tex",
+      "updatedAt": "2026-04-17T17:42:30.666Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin11",
+    "bin": "data/characters/neeko/skins/skin11.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin11/Materials/New_Tail_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin11",
+      "bin": "data/characters/neeko/skins/skin11.bin"
+    }
+  ]
+}

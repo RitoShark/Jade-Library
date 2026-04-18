@@ -1,0 +1,40 @@
+{
+  "id": "akali-skin13-fresnel-inst",
+  "name": "Akali Skin13 Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:50.673Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_akali_skin13_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin15_Gold.tex",
+      "updatedAt": "2026-04-17T17:07:50.669Z"
+    },
+    {
+      "name": "Akali_Skin13_Mask_GM.tex",
+      "updatedAt": "2026-04-17T17:07:50.669Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin13",
+    "bin": "data/characters/akali/skins/skin13.bin",
+    "entryKey": "Characters/Akali/Skins/Skin13/Materials/Akali_Skin13_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin13",
+      "bin": "data/characters/akali/skins/skin13.bin"
+    }
+  ]
+}

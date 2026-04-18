@@ -1,0 +1,48 @@
+{
+  "id": "prestige-sword-gold-vfx-inst",
+  "name": "Prestige Sword Gold Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:02.524Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_sword_gold_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:38:02.518Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:38:02.518Z"
+    },
+    {
+      "name": "MasterYi_Skin53_VFXWeapon_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:02.518Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:02.518Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin53",
+    "bin": "data/characters/masteryi/skins/skin53.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin53/Materials/Prestige_SwordGoldVFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin53",
+      "bin": "data/characters/masteryi/skins/skin53.bin"
+    }
+  ]
+}

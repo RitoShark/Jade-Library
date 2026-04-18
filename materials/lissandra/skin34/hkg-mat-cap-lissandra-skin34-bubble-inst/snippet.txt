@@ -1,0 +1,99 @@
+"jadelib_hkg_mat_cap_lissandra_skin34_bubble_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_lissandra_skin34_bubble_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_03"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-lissandra-skin34-bubble-inst/Lissandra_Skin34_MatCap_Bubble_05.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-lissandra-skin34-bubble-inst/Lissandra_Skin34_MatCap_Bubble_05.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "AnimPivotPos"
+            value: vec4 = { 0, 35, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShakeAtten"
+            value: vec4 = { 480, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShake"
+            value: vec4 = { 0.10000000149011612, 0.05000000074505806, 0.10000000149011612, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimSpeed"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Trans_Color"
+            value: vec4 = { 0.03999999910593033, 0.800000011920929, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightPos"
+            value: vec4 = { 0, 350, -300, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LNearAtten"
+            value: vec4 = { 880.6400146484375, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LFarAtten"
+            value: vec4 = { 435.20001220703125, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_DIFFUSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_LuLu_Skin26"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

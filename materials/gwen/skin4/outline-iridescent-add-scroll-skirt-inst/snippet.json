@@ -1,0 +1,64 @@
+{
+  "id": "outline-iridescent-add-scroll-skirt-inst",
+  "name": "Outline Iridescent Add Scroll Skirt Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:06.835Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_iridescent_add_scroll_skirt_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "Gwen_Skin01_Iridescence_Purple.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "Gwen_Skin4_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.829Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gwen",
+    "skin": "skin4",
+    "bin": "data/characters/gwen/skins/skin4.bin",
+    "entryKey": "Characters/Gwen/Skins/Skin4/Materials/Outline_Iridescent_Add_Scroll_Skirt_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gwen",
+      "skin": "skin4",
+      "bin": "data/characters/gwen/skins/skin4.bin"
+    }
+  ]
+}

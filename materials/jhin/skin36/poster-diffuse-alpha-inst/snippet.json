@@ -1,0 +1,31 @@
+{
+  "id": "poster-diffuse-alpha-inst",
+  "name": "Poster Diffuse Alpha Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:20.374Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_poster_diffuse_alpha_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin36",
+    "bin": "88a4c469dd1d1569.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin36/Materials/Poster_Diffuse_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin36",
+      "bin": "88a4c469dd1d1569.bin"
+    }
+  ]
+}

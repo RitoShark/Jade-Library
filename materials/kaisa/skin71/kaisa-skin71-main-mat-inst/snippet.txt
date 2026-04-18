@@ -1,0 +1,407 @@
+"jadelib_kaisa_skin71_main_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_kaisa_skin71_main_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_Mask"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/gold_matcap.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Color_Mask_Texture"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/Kaisa_Skin71_Form3_Specular_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/Kaisa_Skin71_Iridescence_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScrollTex"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/Kaisa_Skin71_Noise_TX_CM.SKINS_Kaisa_HoL.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScroll_Mask"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/Kaisa_Skin71_Form3_Panning_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture2"
+            texturePath: string = "assets/jadelib/kaisa-skin71-main-mat-inst/Kaisa_Skin71_Form3_Ult_TX_CM.SKINS_Kaisa_HoL.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Texture_Tint"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescence_Pulse_Speed_Min"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Fade_Mask_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularControl"
+            value: vec4 = { 0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0.4431372582912445, 0.3450980484485626, 0.2823529541492462, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Exclude_Mask_from_TintColor_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 0.7686274647712708, 0.3450980484485626, 0.05882352963089943, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineThickness"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineSoftness"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexTile"
+            value: vec4 = { 4, 7, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 2, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_R"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_R"
+            value: vec4 = { 0.9529411792755127, 0.8509804010391235, 0.4117647111415863, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_R"
+            value: vec4 = { 0, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_G"
+            value: vec4 = { 0.4000000059604645, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_G"
+            value: vec4 = { 1, 0.8729533553123474, 0.3969176709651947, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_G"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tex_BlendVlue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "POST_LIGHTING_ON_SCROLLTEX"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCREENSPACE_TEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCREEN_SPACE_TEXTURE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCROLLTEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_R_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_G_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_PULSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY_W_MASK"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCROLL_TEXTURE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "EXCLUDE_MASK_FROM_TINTCOLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_OUTLINE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DIFFUSE_LERP_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_Iridescent_Add_Scroll"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Diffuse_Tex_BlendVlue"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = DelayedBoolMaterialDriver {
+                        mBoolDriver: pointer = AllTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "4220228263"
+                                }
+                                OneTrueMaterialDriver {
+                                    mDrivers: list[pointer] = {
+                                        HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                        HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 2
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mTurnOnTimeSec: f32 = 0.30000001192092896
+                    mTurnOffTimeSec: f32 = 0.30000001192092896
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "AdditiveScroll_ColorTint_R"
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = DelayedBoolMaterialDriver {
+                        mBoolDriver: pointer = AllTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "4220228263"
+                                }
+                                OneTrueMaterialDriver {
+                                    mDrivers: list[pointer] = {
+                                        HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                        HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 2
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    OnValue: vec4 = { 1, 0, 0, 1 }
+                    OffValue: vec4 = { 0.949999988079071, 0.8500000238418579, 0.4099999964237213, 1 }
+                    TurnOnTimeSec: f32 = 0.30000001192092896
+                    TurnOffTimeSec: f32 = 0.30000001192092896
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form1_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form2_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Color_Mask_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = DelayedBoolMaterialDriver {
+                            mBoolDriver: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "4220228263"
+                                    }
+                                    OneTrueMaterialDriver {
+                                        mDrivers: list[pointer] = {
+                                            HasGearDynamicMaterialBoolDriver {
+                                                mGearIndex: u8 = 1
+                                            }
+                                            HasGearDynamicMaterialBoolDriver {
+                                                mGearIndex: u8 = 2
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form3_Ult_Specular_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form1_Specular_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form2_Specular_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "AdditiveScroll_Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = DelayedBoolMaterialDriver {
+                            mBoolDriver: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "4220228263"
+                                    }
+                                    OneTrueMaterialDriver {
+                                        mDrivers: list[pointer] = {
+                                            HasGearDynamicMaterialBoolDriver {
+                                                mGearIndex: u8 = 1
+                                            }
+                                            HasGearDynamicMaterialBoolDriver {
+                                                mGearIndex: u8 = 2
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form3_ULT_Panning_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form1_Panning_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Kaisa/Skins/Skin71/Kaisa_Skin71_Form2_Panning_MAT_TX_CM.SKINS_Kaisa_HoL.tex"
+                    }
+                }
+            }
+        }
+    }
+}

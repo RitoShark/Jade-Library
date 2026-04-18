@@ -1,0 +1,48 @@
+{
+  "id": "wing-evo-additive-scroll-packed-inst",
+  "name": "Wing Evo Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:41.058Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wing_evo_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:30:41.051Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:30:41.051Z"
+    },
+    {
+      "name": "Khazix_Skin73_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:30:41.051Z"
+    },
+    {
+      "name": "Khazix_Skin69_R_Black_RGB.tex",
+      "updatedAt": "2026-04-17T17:30:41.051Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Khazix",
+    "skin": "skin73",
+    "bin": "data/characters/khazix/skins/skin73.bin",
+    "entryKey": "Characters/Khazix/Skins/Skin73/Materials/WingEvo_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Khazix",
+      "skin": "skin73",
+      "bin": "data/characters/khazix/skins/skin73.bin"
+    }
+  ]
+}

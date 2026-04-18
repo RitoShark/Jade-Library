@@ -1,0 +1,36 @@
+{
+  "id": "distortion-bloom-alpha-base-inst",
+  "name": "Distortion Bloom Alpha Base Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:39.905Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_distortion_bloom_alpha_base_inst",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin19_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:39.896Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin25",
+    "bin": "data/characters/kogmaw/skins/skin25.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin25/Materials/Distortion_Bloom_Alpha_base_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin25",
+      "bin": "data/characters/kogmaw/skins/skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "blast-shield-inst",
+  "name": "Blast Shield Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:45.366Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blast_shield_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    },
+    {
+      "name": "Poppy_Skin16_RMA.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:45:45.358Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Poppy",
+    "skin": "skin23",
+    "bin": "data/characters/poppy/skins/skin23.bin",
+    "entryKey": "Characters/Poppy/Skins/Skin23/Materials/BlastShield_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Poppy",
+      "skin": "skin23",
+      "bin": "data/characters/poppy/skins/skin23.bin"
+    }
+  ]
+}

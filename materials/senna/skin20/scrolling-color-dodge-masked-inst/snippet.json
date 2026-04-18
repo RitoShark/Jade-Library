@@ -1,0 +1,40 @@
+{
+  "id": "scrolling-color-dodge-masked-inst",
+  "name": "Scrolling Color Dodge Masked Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:25.138Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_color_dodge_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin20_Mask_Trail01d.tex",
+      "updatedAt": "2026-04-17T17:52:25.132Z"
+    },
+    {
+      "name": "Senna_Skin16_E_5_5.tex",
+      "updatedAt": "2026-04-17T17:52:25.132Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin20",
+    "bin": "data/characters/senna/skins/skin20.bin",
+    "entryKey": "Characters/Senna/Skins/Skin20/Materials/Scrolling_ColorDodge_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin20",
+      "bin": "data/characters/senna/skins/skin20.bin"
+    }
+  ]
+}

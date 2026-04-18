@@ -1,0 +1,36 @@
+{
+  "id": "sylas-chains-inst",
+  "name": "Sylas Chains Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:28.494Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_chains_inst",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin34_Noise01.tex",
+      "updatedAt": "2026-04-17T17:58:28.487Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin34",
+    "bin": "data/characters/sylas/skins/skin34.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin34/Materials/Sylas_Chains_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin34",
+      "bin": "data/characters/sylas/skins/skin34.bin"
+    }
+  ]
+}

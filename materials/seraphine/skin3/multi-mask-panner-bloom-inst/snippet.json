@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-bloom-inst",
+  "name": "Multi Mask Panner Bloom Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:05.218Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:05.211Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:05.211Z"
+    },
+    {
+      "name": "Seraphine_Skin03_UltSpeaker_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:05.211Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:05.211Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin3",
+    "bin": "data/characters/seraphine/skins/skin3.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin3/Materials/MultiMask_Panner_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin3",
+      "bin": "data/characters/seraphine/skins/skin3.bin"
+    }
+  ]
+}

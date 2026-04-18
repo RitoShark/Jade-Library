@@ -1,0 +1,52 @@
+{
+  "id": "hkg-body-diamond-inst",
+  "name": "Hkg Body Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:14.302Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_body_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:14.295Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:59:14.295Z"
+    },
+    {
+      "name": "Syndra_Skin34_SB_BlueSpark03.tex",
+      "updatedAt": "2026-04-17T17:59:14.295Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:59:14.295Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:59:14.295Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Syndra",
+    "skin": "skin34",
+    "bin": "data/characters/syndra/skins/skin34.bin",
+    "entryKey": "Characters/Syndra/Skins/Skin34/Materials/HKG_Body_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Syndra",
+      "skin": "skin34",
+      "bin": "data/characters/syndra/skins/skin34.bin"
+    }
+  ]
+}

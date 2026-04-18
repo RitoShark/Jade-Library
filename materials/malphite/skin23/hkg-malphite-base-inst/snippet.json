@@ -1,0 +1,31 @@
+{
+  "id": "hkg-malphite-base-inst",
+  "name": "Hkg Malphite Base Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:18.679Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_malphite_base_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin23",
+    "bin": "data/characters/malphite/skins/skin23.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin23/Materials/HKG_Malphite_Base_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin23",
+      "bin": "data/characters/malphite/skins/skin23.bin"
+    }
+  ]
+}

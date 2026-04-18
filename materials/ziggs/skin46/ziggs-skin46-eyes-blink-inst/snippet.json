@@ -1,0 +1,44 @@
+{
+  "id": "ziggs-skin46-eyes-blink-inst",
+  "name": "Ziggs Skin46 Eyes Blink Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:23.747Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ziggs_skin46_eyes_blink_inst",
+  "textureFiles": [
+    {
+      "name": "Ziggs_Skin46_Platform_Eyes_TX_CM.Chroma_Ziggs_Firecracker.tex",
+      "updatedAt": "2026-04-17T18:13:23.740Z"
+    },
+    {
+      "name": "Ziggs_Skin43_Eyes_TX_CM.SKINS_Ziggs_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:23.740Z"
+    },
+    {
+      "name": "Ziggs_Skin43_Eyes_Blink.SKINS_Ziggs_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:23.740Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ziggs",
+    "skin": "skin46",
+    "bin": "data/characters/ziggs/skins/skin46.bin",
+    "entryKey": "Characters/Ziggs/Skins/Skin46/Materials/Ziggs_Skin46_Eyes_Blink_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ziggs",
+      "skin": "skin46",
+      "bin": "data/characters/ziggs/skins/skin46.bin"
+    }
+  ]
+}

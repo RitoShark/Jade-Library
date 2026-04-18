@@ -1,0 +1,56 @@
+{
+  "id": "bloom-parts-cost1-inst",
+  "name": "Bloom Parts Cost1 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:46.925Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_cost1_inst",
+  "textureFiles": [
+    {
+      "name": "Zeri_Skin10_Idel_CoatAlpha02.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    },
+    {
+      "name": "Zeri_Skin10_Coat_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    },
+    {
+      "name": "Zeri_Skin17_Idel_CoatScrolling01.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    },
+    {
+      "name": "Zeri_Skin17_Coat_TZ_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    },
+    {
+      "name": "Zeri_Skin17_Coat_TZ_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    },
+    {
+      "name": "Zeri_Skin17_R_Coat01.tex",
+      "updatedAt": "2026-04-17T18:12:46.912Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin17",
+    "bin": "data/characters/zeri/skins/skin17.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin17/Materials/Bloom_Parts_Cost1_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin17",
+      "bin": "data/characters/zeri/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "fiddle-sticks-skin49-weapon-inst",
+  "name": "Fiddle Sticks Skin49 Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:32.690Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fiddle_sticks_skin49_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "FiddleSticks_Skin46_Weapon_FlowMap_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:32.682Z"
+    },
+    {
+      "name": "FiddleSticks_Skin46_Weapon_Mask_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:32.682Z"
+    },
+    {
+      "name": "FiddleSticks_Skin46_Weapon_Specular_Mask_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:32.682Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin49",
+    "bin": "data/characters/fiddlesticks/skins/skin49.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin49/Materials/FiddleSticks_Skin49_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin49",
+      "bin": "data/characters/fiddlesticks/skins/skin49.bin"
+    }
+  ]
+}

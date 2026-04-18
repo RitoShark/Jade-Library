@@ -1,0 +1,36 @@
+{
+  "id": "passive-kama-color-swap",
+  "name": "Passive Kama Color Swap",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:51.166Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_passive_kama_color_swap",
+  "textureFiles": [
+    {
+      "name": "Akali_Base_R_gradient_RGB.tex",
+      "updatedAt": "2026-04-17T17:07:51.161Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin33",
+    "bin": "data/characters/akali/skins/skin33.bin",
+    "entryKey": "Characters/Akali/Skins/Skin33/Materials/Passive_Kama_ColorSwap"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin33",
+      "bin": "data/characters/akali/skins/skin33.bin"
+    }
+  ]
+}

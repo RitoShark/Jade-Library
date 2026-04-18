@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-scissors-blade-inst",
+  "name": "Dark Star Scissors Blade Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:11.956Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_scissors_blade_inst",
+  "textureFiles": [
+    {
+      "name": "Camille_Skin40_Blades_Stars.Chroma_Karthus_Arcana.tex",
+      "updatedAt": "2026-04-17T17:28:11.950Z"
+    },
+    {
+      "name": "Karthus_Skin35_blades_mask_set1.SKINS_Karthus_Skin35.tex",
+      "updatedAt": "2026-04-17T17:28:11.950Z"
+    },
+    {
+      "name": "Karthus_Materials_Mask_02.SKINS_Karthus_Skin35.tex",
+      "updatedAt": "2026-04-17T17:28:11.950Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karthus",
+    "skin": "skin40",
+    "bin": "data/characters/karthus/skins/skin40.bin",
+    "entryKey": "Characters/Karthus/Skins/Skin40/Materials/DarkStar_Scissors_Blade_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karthus",
+      "skin": "skin40",
+      "bin": "data/characters/karthus/skins/skin40.bin"
+    }
+  ]
+}

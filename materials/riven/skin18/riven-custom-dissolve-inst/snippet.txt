@@ -1,0 +1,178 @@
+"jadelib_riven_custom_dissolve_inst" = StaticMaterialDef {
+    name: string = "jadelib_riven_custom_dissolve_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Position_Masks"
+            texturePath: string = "assets/jadelib/riven-custom-dissolve-inst/PolarCoords.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Alphas"
+            texturePath: string = "assets/jadelib/riven-custom-dissolve-inst/Riven_Skin18_Recall_DissolveTex.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "DisolveBlend_R"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DisolveBlend_G"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DisolveBlend_B"
+            value: vec4 = { -0.02500000037252903, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveAlpha_Scale"
+            value: vec4 = { 6, 6, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveAlpha_Rate"
+            value: vec4 = { 0.10000000149011612, 0.30000001192092896, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/CustomDissolve_Alpha"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DisolveBlend_R"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 9.199999809265137
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    -0.0009728460572659969
+                                    0.8727170825004578
+                                    0.8947165012359619
+                                    1
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1
+                                    -1.0017662048339844
+                                    -1.0017662048339844
+                                }
+                            }
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            mOnValue: f32 = -1
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "DisolveBlend_G"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = -1
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                                mTurnOnTimeSec: f32 = 5
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.607341468334198
+                                    0.7764182686805725
+                                    1
+                                }
+                                values: list[f32] = {
+                                    0.9884393215179443
+                                    0.9884393215179443
+                                    -0.9653179049491882
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "DisolveBlend_B"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mOnValue: f32 = -1
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                            mOnValue: f32 = -1
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

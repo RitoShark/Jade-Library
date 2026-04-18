@@ -1,0 +1,56 @@
+{
+  "id": "sylas-prestige-chains-inst",
+  "name": "Sylas Prestige Chains Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:27.388Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_prestige_chains_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:58:27.381Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin14",
+    "bin": "data/characters/sylas/skins/skin14.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin14/Materials/Sylas_Prestige_Chains_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin14",
+      "bin": "data/characters/sylas/skins/skin14.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "irelia-skin44-blades-inst",
+  "name": "Irelia Skin44 Blades Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:37.959Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_skin44_blades_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Base_Mat_blades_TEX_grey.tex",
+      "updatedAt": "2026-04-17T17:22:37.953Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin44",
+    "bin": "data/characters/irelia/skins/skin44.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin44/Materials/Irelia_Skin44_blades_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin44",
+      "bin": "data/characters/irelia/skins/skin44.bin"
+    }
+  ]
+}

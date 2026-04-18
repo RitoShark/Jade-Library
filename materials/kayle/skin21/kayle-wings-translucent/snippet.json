@@ -1,0 +1,40 @@
+{
+  "id": "kayle-wings-translucent",
+  "name": "Kayle Wings Translucent",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:33.239Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_wings_translucent",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin15_Wings_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:29:33.232Z"
+    },
+    {
+      "name": "KayleTranslucentGradient.tex",
+      "updatedAt": "2026-04-17T17:29:33.232Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin21",
+    "bin": "data/characters/kayle/skins/skin21.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin21/Materials/Kayle_Wings_Translucent"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin21",
+      "bin": "data/characters/kayle/skins/skin21.bin"
+    }
+  ]
+}

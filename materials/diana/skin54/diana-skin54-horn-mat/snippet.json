@@ -1,0 +1,64 @@
+{
+  "id": "diana-skin54-horn-mat",
+  "name": "Diana Skin54 Horn Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:20.113Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diana_skin54_horn_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "Water_Test.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "Diana_Skin54_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:20.106Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin54",
+    "bin": "data/characters/diana/skins/skin54.bin",
+    "entryKey": "Characters/Diana/Skins/Skin54/Materials/Diana_Skin54_Horn_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin54",
+      "bin": "data/characters/diana/skins/skin54.bin"
+    }
+  ]
+}

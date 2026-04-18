@@ -1,0 +1,44 @@
+{
+  "id": "leblanc-base-cape-mat-inst",
+  "name": "Leblanc Base Cape Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:28.212Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leblanc_base_cape_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Leblanc_Base_Cape_ScrollingEnergy.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:28.205Z"
+    },
+    {
+      "name": "Leblanc_Base_Cape_MaskScroll.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:28.205Z"
+    },
+    {
+      "name": "Leblanc_RMA_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:28.205Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin0",
+    "bin": "data/characters/leblanc/skins/skin0.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin0/Materials/Leblanc_Base_Cape_MAT_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin0",
+      "bin": "data/characters/leblanc/skins/skin0.bin"
+    }
+  ]
+}

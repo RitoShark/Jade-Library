@@ -1,0 +1,52 @@
+{
+  "id": "crystal-default",
+  "name": "Crystal Default",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:42.163Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crystal_default",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:42.157Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:42.157Z"
+    },
+    {
+      "name": "Qiyana_Skin50_DefaultMark_TX_CM.SKINS_Qiyana_Skin50.tex",
+      "updatedAt": "2026-04-17T17:46:42.157Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:42.157Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:42.157Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin50",
+    "bin": "data/characters/qiyana/skins/skin50.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin50/Materials/CrystalDefault"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin50",
+      "bin": "data/characters/qiyana/skins/skin50.bin"
+    }
+  ]
+}

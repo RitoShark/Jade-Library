@@ -1,0 +1,48 @@
+{
+  "id": "calibrum-dissolve-alpha-add-noise-pan-inst",
+  "name": "Calibrum Dissolve Alpha Add Noise Pan Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:23.503Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_calibrum_dissolve_alpha_add_noise_pan_inst",
+  "textureFiles": [
+    {
+      "name": "Aphelios_Skin09_Add_Noise.tex",
+      "updatedAt": "2026-04-17T17:09:23.497Z"
+    },
+    {
+      "name": "whitesquare.tex",
+      "updatedAt": "2026-04-17T17:09:23.497Z"
+    },
+    {
+      "name": "Aphelios_Skin09_SS_Noise.tex",
+      "updatedAt": "2026-04-17T17:09:23.497Z"
+    },
+    {
+      "name": "Aphelios_Skin09_Erosion.tex",
+      "updatedAt": "2026-04-17T17:09:23.497Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aphelios",
+    "skin": "skin10",
+    "bin": "data/characters/aphelios/skins/skin10.bin",
+    "entryKey": "Characters/Aphelios/Skins/Skin10/Materials/Calibrum_Dissolve_Alpha_Add_Noise_Pan_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aphelios",
+      "skin": "skin10",
+      "bin": "data/characters/aphelios/skins/skin10.bin"
+    }
+  ]
+}

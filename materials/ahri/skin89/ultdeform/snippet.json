@@ -1,0 +1,68 @@
+{
+  "id": "ultdeform",
+  "name": "Ultdeform",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:08.789Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ultdeform",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin89_Ult_TurbulDeform_Mask_TX_CM.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "white.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "black.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "black.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "black.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "CaseTexture01.SKINS_Ahri_Skin89.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:08.783Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin89",
+    "bin": "data/characters/ahri/skins/skin89.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin89/Materials/Ultdeform"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin89",
+      "bin": "data/characters/ahri/skins/skin89.bin"
+    }
+  ]
+}

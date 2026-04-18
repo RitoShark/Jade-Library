@@ -1,0 +1,30 @@
+{
+  "id": "vfx-mat-cap-disco-ball-inst",
+  "name": "Vfx Mat Cap Disco Ball Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.429Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_vfx_mat_cap_disco_ball_inst",
+  "textureFiles": [
+    {
+      "name": "NunuSnowball_Skin16_MatCap.tex",
+      "updatedAt": "2026-04-17T17:44:08.423Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin16",
+    "bin": "5c6fcc695b59663c.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin16/Materials/VFX_MatCap_DiscoBall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin16",
+      "bin": "5c6fcc695b59663c.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "bm-scrolling-uvs-inst",
+  "name": "Bm Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:14.739Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bm_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin09_Weapon_caustic.tex",
+      "updatedAt": "2026-04-17T17:46:14.728Z"
+    },
+    {
+      "name": "velvet_Nrm_pyke.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:46:14.728Z"
+    },
+    {
+      "name": "Pyke_Skin09_Z_Gradient.tex",
+      "updatedAt": "2026-04-17T17:46:14.728Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin10",
+    "bin": "data/characters/pyke/skins/skin10.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin10/Materials/BM_ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin10",
+      "bin": "data/characters/pyke/skins/skin10.bin"
+    }
+  ]
+}

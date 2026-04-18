@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-inst",
+  "name": "Diffuse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:10.537Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_inst",
+  "textureFiles": [
+    {
+      "name": "Yasuo_Skin17_EyeGlow_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:09:10.532Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin17",
+    "bin": "data/characters/yasuo/skins/skin17.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin17/Materials/Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin17",
+      "bin": "data/characters/yasuo/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "head-fresnel-alpha-inst",
+  "name": "Head Fresnel Alpha Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:11.390Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_head_fresnel_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:11.383Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:11.383Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:11.383Z"
+    },
+    {
+      "name": "Nautilus_Skin25_Head_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:11.383Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:42:11.383Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nautilus",
+    "skin": "skin25",
+    "bin": "data/characters/nautilus/skins/skin25.bin",
+    "entryKey": "Characters/Nautilus/Skins/Skin25/Materials/Head_Fresnel_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nautilus",
+      "skin": "skin25",
+      "bin": "data/characters/nautilus/skins/skin25.bin"
+    }
+  ]
+}

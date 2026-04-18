@@ -1,0 +1,69 @@
+{
+  "id": "darius-skin65-gold-mat-inst",
+  "name": "Darius Skin65 Gold Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:55.669Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_darius_skin65_gold_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "Darius_Skin65_Mask_TX_CM.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "Darius_Skin65_Blood_Scroll_Mask.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "Darius_Skin65_Mask_TX_CM.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:54.038Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin65",
+    "bin": "data/characters/darius/skins/skin65.bin",
+    "entryKey": "Characters/Darius/Skins/Skin65/Materials/Darius_Skin65_Gold_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin65",
+      "bin": "data/characters/darius/skins/skin65.bin"
+    },
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin55",
+      "bin": "data/characters/mordekaiser/skins/skin55.bin"
+    }
+  ]
+}

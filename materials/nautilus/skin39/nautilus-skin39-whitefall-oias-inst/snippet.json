@@ -1,0 +1,56 @@
+{
+  "id": "nautilus-skin39-whitefall-oias-inst",
+  "name": "Nautilus Skin39 Whitefall Oias Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:13.343Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nautilus_skin39_whitefall_oias_inst",
+  "textureFiles": [
+    {
+      "name": "Nautilus_Skin39_Water_Mask_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Takoyaki_Diffuse_Mask.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    },
+    {
+      "name": "Lux_Base_Water_Wirlpool_2.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Black_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Black_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    },
+    {
+      "name": "Nautilus_Skin39_Black_TX_CM.SKINS_Nautilus_Skin39.tex",
+      "updatedAt": "2026-04-17T17:42:13.338Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nautilus",
+    "skin": "skin39",
+    "bin": "data/characters/nautilus/skins/skin39.bin",
+    "entryKey": "Characters/Nautilus/Skins/Skin39/Materials/Nautilus_Skin39_Whitefall_OIAS_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nautilus",
+      "skin": "skin39",
+      "bin": "data/characters/nautilus/skins/skin39.bin"
+    }
+  ]
+}

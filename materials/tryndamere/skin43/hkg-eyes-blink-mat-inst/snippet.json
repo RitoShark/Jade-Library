@@ -1,0 +1,44 @@
+{
+  "id": "hkg-eyes-blink-mat-inst",
+  "name": "Hkg Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:03.948Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:03.943Z"
+    },
+    {
+      "name": "Tryndamere_Skin37_Eyes_Mask_TX_CM.SKINS_Tryndamere_Skin37.tex",
+      "updatedAt": "2026-04-17T18:02:03.943Z"
+    },
+    {
+      "name": "Tryndamere_Skin37_Eyes_Blinking_TX_CM.SKINS_Tryndamere_Skin37.tex",
+      "updatedAt": "2026-04-17T18:02:03.943Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tryndamere",
+    "skin": "skin43",
+    "bin": "data/characters/tryndamere/skins/skin43.bin",
+    "entryKey": "Characters/Tryndamere/Skins/Skin43/Materials/HKG_Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tryndamere",
+      "skin": "skin43",
+      "bin": "data/characters/tryndamere/skins/skin43.bin"
+    }
+  ]
+}

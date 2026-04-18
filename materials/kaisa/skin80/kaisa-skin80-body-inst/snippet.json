@@ -1,0 +1,44 @@
+{
+  "id": "kaisa-skin80-body-inst",
+  "name": "Kaisa Skin80 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:40.652Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin80_body_inst",
+  "textureFiles": [
+    {
+      "name": "DarkStar_Texture.tex",
+      "updatedAt": "2026-04-17T17:26:40.641Z"
+    },
+    {
+      "name": "Kaisa_Skin69_BodyMask2_TX_CM.SKINS_Kaisa_Skin69.tex",
+      "updatedAt": "2026-04-17T17:26:40.641Z"
+    },
+    {
+      "name": "Kaisa_Skin69_BodyMask_TX_CM.SKINS_Kaisa_Skin69.tex",
+      "updatedAt": "2026-04-17T17:26:40.641Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin80",
+    "bin": "data/characters/kaisa/skins/skin80.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin80/Materials/Kaisa_Skin80_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin80",
+      "bin": "data/characters/kaisa/skins/skin80.bin"
+    }
+  ]
+}

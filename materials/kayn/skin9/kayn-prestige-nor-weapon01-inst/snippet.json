@@ -1,0 +1,64 @@
+{
+  "id": "kayn-prestige-nor-weapon01-inst",
+  "name": "Kayn Prestige Nor Weapon01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.888Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayn_prestige_nor_weapon01_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "Kayn_Skin09_W_SmokeErode.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "Kayn_Skin09_TX_Mask01.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.883Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin9",
+    "bin": "data/characters/kayn/skins/skin9.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin9/Materials/Kayn_Prestige_Nor_Weapon01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin9",
+      "bin": "data/characters/kayn/skins/skin9.bin"
+    }
+  ]
+}

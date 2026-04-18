@@ -1,0 +1,604 @@
+"jadelib_mordekaiser_skin55_mace_gold_mat" = StaticMaterialDef {
+    name: string = "jadelib_mordekaiser_skin55_mace_gold_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_Mask"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/Mordekaiser_Skin55_gold_matcap_1.SKINS_Mordekaiser_Skin55.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Color_Mask_Texture"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/Mordekaiser_Skin55_MaceMask_TX_CM.SKINS_Mordekaiser_Skin55.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/Gradient_test_01.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScrollTex"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/Mordekaiser_Skin55_BloodScrollMask_TX_CM.SKINS_Mordekaiser_Skin55.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "AdditiveScroll_Mask"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/Mordekaiser_Skin55_MaceMask_TX_CM.SKINS_Mordekaiser_Skin55.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture2"
+            texturePath: string = "assets/jadelib/mordekaiser-skin55-mace-gold-mat/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScreenSpace_Texture_Tint"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Alpha_Override"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescence_Pulse_Speed_Min"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Fade_Mask_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularControl"
+            value: vec4 = { 0.20000000298023224, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0.8352941274642944, 0.8090943694114685, 0.8090943694114685, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Exclude_Mask_from_TintColor_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 0.6991989016532898, 0.14694437384605408, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineThickness"
+            value: vec4 = { 0.46000000834465027, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineSoftness"
+            value: vec4 = { 0.26249998807907104, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexTile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 2, 2, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_R"
+            value: vec4 = { 0.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.9843137264251709, 0.6787213087081909, 0.617608904838562, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_R"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_R"
+            value: vec4 = { 0, 0.75, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_G"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_G"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_G"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tex_BlendVlue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveTexScrollSpeed_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveScroll_ColorTint_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveStrength_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.6980392336845398, 0.14509804546833038, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "POST_LIGHTING_ON_SCROLLTEX"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCREENSPACE_TEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCREEN_SPACE_TEXTURE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_SCROLLTEX_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_R_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVESCROLLTEX_G_SCREENSPACE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_PULSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY_W_MASK"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FADE_DIFFUSE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCROLL_TEXTURE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SPECULAR_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "EXCLUDE_MASK_FROM_TINTCOLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_OUTLINE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DIFFUSE_LERP_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "INVERT_BLOOM_FRESNEL"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_Iridescent_Add_Scroll"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "TintColor"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {}
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 1, 1, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 1
+                                    }
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 1, 0.8299999833106995, 0.7099999785423279, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {}
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.9800000190734863, 0.6800000071525574, 0.6200000047683716, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 1, 1, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "IridescentControl"
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                    }
+                    OnValue: vec4 = { 2, 2, 1, 1 }
+                    TurnOnTimeSec: f32 = 0
+                    TurnOffTimeSec: f32 = 2
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "AdditiveStrength_R"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                    }
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 2
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "OutlineColor"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {}
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.25, 0.4000000059604645, 0.6600000262260437, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 1
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.9100000262260437, 0.4300000071525574, 0.25999999046325684, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.699999988079071, 0.15000000596046448, 0, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {}
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.25, 0.4000000059604645, 0.6600000262260437, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 1
+                                    }
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.9100000262260437, 0.4300000071525574, 0.25999999046325684, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {}
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.699999988079071, 0.15000000596046448, 0, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                    }
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 2
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "AdditiveTexScrollSpeed_R"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {}
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.5, 0, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 1
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, -1, 0, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {}
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.75, 0, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "AdditiveTexScrollSpeed_G"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {}
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, -0.5, 0, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasGearDynamicMaterialBoolDriver {
+                                mGearIndex: u8 = 1
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 0.5, 0, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = AllTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasBuffDynamicMaterialBoolDriver {
+                                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {}
+                                    }
+                                    NotMaterialDriver {
+                                        mDriver: pointer = HasGearDynamicMaterialBoolDriver {
+                                            mGearIndex: u8 = 1
+                                        }
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, -0.75, 0, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "AdditiveStrength_G"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Sett/Spells/SettWShield"
+                    }
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 2
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Dark_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Gold_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "iridescentTex"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Shared/Materials/Gradient_test_02.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Shared/Materials/Gradient_test_01.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "AdditiveScroll_Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Dark_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Gold_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Color_Mask_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Dark_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasGearDynamicMaterialBoolDriver {
+                            mGearIndex: u8 = 1
+                        }
+                        TextureName: string = "ASSETS/Characters/Sett/Skins/Skin66/Sett_Skin66_Gold_AdditiveScrollMask_TX_CM.SKINS_Sett_Skin66.tex"
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "OUTLINE_ON"
+            driver: pointer = DelayedBoolMaterialDriver {
+                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                    Spell: hash = "Characters/Sett/Spells/SettWShield"
+                }
+                mDelayOff: f32 = 2
+            }
+        }
+    }
+}

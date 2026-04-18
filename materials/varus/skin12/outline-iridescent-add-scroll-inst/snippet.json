@@ -1,0 +1,64 @@
+{
+  "id": "outline-iridescent-add-scroll-inst",
+  "name": "Outline Iridescent Add Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:19.327Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_iridescent_add_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "Gradient_Diagonal.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "Varus_Skin09_BurningBow_Mask.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    },
+    {
+      "name": "Varus_Skin12_BurningBow.tex",
+      "updatedAt": "2026-04-17T18:03:19.321Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin12",
+    "bin": "data/characters/varus/skins/skin12.bin",
+    "entryKey": "Characters/Varus/Skins/Skin12/Materials/Outline_Iridescent_Add_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin12",
+      "bin": "data/characters/varus/skins/skin12.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "xin-zhao-skin47-vfx-inst",
+  "name": "Xin Zhao Skin47 Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:24.728Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xin_zhao_skin47_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "Gwen_Skin20_Weapons_SoulFlowNoise_TX_CM.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:24.713Z"
+    },
+    {
+      "name": "Evelynn_Skin42_Material_Tails1.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:24.713Z"
+    },
+    {
+      "name": "white.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:24.713Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "XinZhao",
+    "skin": "skin47",
+    "bin": "data/characters/xinzhao/skins/skin47.bin",
+    "entryKey": "Characters/XinZhao/Skins/Skin47/Materials/XinZhao_Skin47_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "XinZhao",
+      "skin": "skin47",
+      "bin": "data/characters/xinzhao/skins/skin47.bin"
+    }
+  ]
+}

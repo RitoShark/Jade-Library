@@ -1,0 +1,50 @@
+{
+  "id": "prestige-inst",
+  "name": "Prestige Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:54.972Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    },
+    {
+      "name": "Soraka_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    },
+    {
+      "name": "Kaisa_Skin27_ShaderMaterial.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    },
+    {
+      "name": "Soraka_Skin17_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:56:54.965Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin17",
+    "bin": "data/characters/soraka/skins/skin17.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin17/Materials/Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin17",
+      "bin": "data/characters/soraka/skins/skin17.bin"
+    }
+  ]
+}

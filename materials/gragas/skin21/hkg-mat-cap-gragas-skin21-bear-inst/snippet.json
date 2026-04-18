@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-gragas-skin21-bear-inst",
+  "name": "Hkg Mat Cap Gragas Skin21 Bear Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:36.924Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_gragas_skin21_bear_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin21_Bear_MaterialA_CM.tex",
+      "updatedAt": "2026-04-17T17:20:36.919Z"
+    },
+    {
+      "name": "Gragas_Skin20_SnowballDB_MatCap.tex",
+      "updatedAt": "2026-04-17T17:20:36.919Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin21",
+    "bin": "data/characters/gragas/skins/skin21.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin21/Materials/HKG_MatCap_Gragas_Skin21_Bear_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin21",
+      "bin": "data/characters/gragas/skins/skin21.bin"
+    }
+  ]
+}

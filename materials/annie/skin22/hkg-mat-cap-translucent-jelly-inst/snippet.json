@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-jelly-inst",
+  "name": "Hkg Mat Cap Translucent Jelly Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:59.936Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_jelly_inst",
+  "textureFiles": [
+    {
+      "name": "AnnieTibbers_Skin22_Apple_MC.tex",
+      "updatedAt": "2026-04-17T17:08:59.931Z"
+    },
+    {
+      "name": "AnnieTibbers_Skin22_TransCol.tex",
+      "updatedAt": "2026-04-17T17:08:59.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:59.931Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Annie",
+    "skin": "skin22",
+    "bin": "data/characters/annietibbers/skins/skin22.bin",
+    "entryKey": "Characters/AnnieTibbers/Skins/Skin22/Materials/HKG_MatCap_Translucent_Jelly_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Annie",
+      "skin": "skin22",
+      "bin": "data/characters/annietibbers/skins/skin22.bin"
+    }
+  ]
+}

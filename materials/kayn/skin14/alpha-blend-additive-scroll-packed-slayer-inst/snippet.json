@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-slayer-inst",
+  "name": "Alpha Blend Additive Scroll Packed Slayer Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:12.177Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_slayer_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:30:12.171Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:30:12.171Z"
+    },
+    {
+      "name": "Kayn_Skin14_Slayer_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:30:12.171Z"
+    },
+    {
+      "name": "Dawn_Fresnel_Blue_Mat.tex",
+      "updatedAt": "2026-04-17T17:30:12.171Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin14",
+    "bin": "data/characters/kayn/skins/skin14.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin14/Materials/AlphaBlend_Additive_Scroll_Packed_Slayer_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin14",
+      "bin": "data/characters/kayn/skins/skin14.bin"
+    }
+  ]
+}

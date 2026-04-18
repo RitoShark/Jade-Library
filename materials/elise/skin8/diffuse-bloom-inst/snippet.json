@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:50.637Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Elise_W_buff_mask_eyes_2.tex",
+      "updatedAt": "2026-04-17T17:16:50.632Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Elise",
+    "skin": "skin8",
+    "bin": "data/characters/elisespider/skins/skin8.bin",
+    "entryKey": "Characters/EliseSpider/Skins/Skin8/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Elise",
+      "skin": "skin8",
+      "bin": "data/characters/elisespider/skins/skin8.bin"
+    }
+  ]
+}

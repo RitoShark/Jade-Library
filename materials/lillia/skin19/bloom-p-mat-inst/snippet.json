@@ -1,0 +1,36 @@
+{
+  "id": "bloom-p-mat-inst",
+  "name": "Bloom P Mat Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:07.519Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_p_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Lillia_Skin19_P_Head_Flower02.tex",
+      "updatedAt": "2026-04-17T17:34:07.512Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin19",
+    "bin": "data/lillia_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin19/Materials/Bloom_P_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin19",
+      "bin": "data/lillia_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27.bin"
+    }
+  ]
+}

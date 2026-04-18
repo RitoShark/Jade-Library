@@ -1,0 +1,40 @@
+{
+  "id": "hyper-sword-inst",
+  "name": "Hyper Sword Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:02.269Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hyper_sword_inst",
+  "textureFiles": [
+    {
+      "name": "Garen_Skin22_SwordMask.tex",
+      "updatedAt": "2026-04-17T17:20:02.263Z"
+    },
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:20:02.263Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin22",
+    "bin": "data/characters/garen/skins/skin22.bin",
+    "entryKey": "Characters/Garen/Skins/Skin22/Materials/HyperSword_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin22",
+      "bin": "data/characters/garen/skins/skin22.bin"
+    }
+  ]
+}

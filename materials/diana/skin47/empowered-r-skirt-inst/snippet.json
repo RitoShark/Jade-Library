@@ -1,0 +1,44 @@
+{
+  "id": "empowered-r-skirt-inst",
+  "name": "Empowered R Skirt Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:18.874Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_empowered_r_skirt_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin47_Z_Material_Snow_01_Ult.tex",
+      "updatedAt": "2026-04-17T17:15:18.869Z"
+    },
+    {
+      "name": "Diana_Skin47_Dress_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:18.869Z"
+    },
+    {
+      "name": "Diana_Skin47_Dress_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:18.869Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin47",
+    "bin": "data/characters/diana/skins/skin47.bin",
+    "entryKey": "Characters/Diana/Skins/Skin47/Materials/Empowered_R_Skirt_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin47",
+      "bin": "data/characters/diana/skins/skin47.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "crytals-recall",
+  "name": "Crytals Recall",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:08.552Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crytals_recall",
+  "textureFiles": [
+    {
+      "name": "Xerath_Skin30_KhazixMaterial_Crytals.SKINS_Xerath_Skin30.tex",
+      "updatedAt": "2026-04-17T18:08:08.547Z"
+    },
+    {
+      "name": "Xerath_Skin30_Recall_CM.SKINS_Xerath_Skin30.tex",
+      "updatedAt": "2026-04-17T18:08:08.547Z"
+    },
+    {
+      "name": "Xerath_Skin30_Recall_CM.SKINS_Xerath_Skin30.tex",
+      "updatedAt": "2026-04-17T18:08:08.547Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xerath",
+    "skin": "skin30",
+    "bin": "data/characters/xerath/skins/skin30.bin",
+    "entryKey": "Characters/Xerath/Skins/Skin30/Materials/Crytals_Recall"
+  },
+  "usedBy": [
+    {
+      "champion": "Xerath",
+      "skin": "skin30",
+      "bin": "data/characters/xerath/skins/skin30.bin"
+    }
+  ]
+}

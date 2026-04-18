@@ -1,0 +1,44 @@
+{
+  "id": "yoyo-inst",
+  "name": "Yoyo Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:55.044Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yoyo_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Hair_nightsky.tex",
+      "updatedAt": "2026-04-17T18:13:55.038Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T18:13:55.038Z"
+    },
+    {
+      "name": "Zoe_Base_yoyo_mat_fresnel.tex",
+      "updatedAt": "2026-04-17T18:13:55.038Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin0",
+    "bin": "bfadd401e72d9235.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin0/Materials/Yoyo_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin0",
+      "bin": "bfadd401e72d9235.bin"
+    }
+  ]
+}

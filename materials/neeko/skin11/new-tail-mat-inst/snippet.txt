@@ -1,0 +1,236 @@
+"jadelib_new_tail_mat_inst" = StaticMaterialDef {
+    name: string = "jadelib_new_tail_mat_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/new-tail-mat-inst/Neeko_Skin11_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ScreenSpace_Texture"
+            texturePath: string = "assets/jadelib/new-tail-mat-inst/Neeko_Skin11_Z_StarryBackdrop.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/new-tail-mat-inst/Neeko_Skin11_mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Idle_Color"
+            value: vec4 = { 1, 0.239215686917305, 0.7098039388656616, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 12, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_ScrollSpeed"
+            value: vec4 = { 0.05000000074505806, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 1, 0.239215686917305, 0.7098039388656616, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Min_Alpha"
+            value: vec4 = { 0.4625000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Idle_Bloom"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Neeko_SG_Mat"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FixedDurationTriggeredBoolDriver {
+                                mCustomDuration: f32 = 3.299999952316284
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell1"
+                                    }
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                        mCustomDuration: f32 = 0.30000001192092896
+                                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "Spell1"
+                                            }
+                                        }
+                                    }
+                                    mTurnOnTimeSec: f32 = 0.30000001192092896
+                                    mTurnOffTimeSec: f32 = 2
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.003969179466366768
+                                        0.22166666388511658
+                                        0.5149999856948853
+                                        0.9992533922195435
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0, 0, 0 }
+                                        { 0.11764705926179886, 0.5882353186607361, 0.4941176474094391, 0.27843138575553894 }
+                                        { 0.08235294371843338, 0.8980392217636108, 0.03921568766236305, 0.6352941393852234 }
+                                        { 0, 1, 0.9333333373069763, 1 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FixedDurationTriggeredBoolDriver {
+                                mCustomDuration: f32 = 3.299999952316284
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell3"
+                                    }
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                        mCustomDuration: f32 = 0.4000000059604645
+                                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "Spell3"
+                                            }
+                                        }
+                                    }
+                                    mOnValue: f32 = 2
+                                    mTurnOnTimeSec: f32 = 0.30000001192092896
+                                    mTurnOffTimeSec: f32 = 3
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.003969179466366768
+                                        1.0058953762054443
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0, 0, 0 }
+                                        { 1, 0.7843137383460999, 0, 1 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FixedDurationTriggeredBoolDriver {
+                                mCustomDuration: f32 = 3.299999952316284
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Attack1"
+                                        "Attack2"
+                                    }
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                        mCustomDuration: f32 = 0.30000001192092896
+                                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "Attack1"
+                                                "Attack2"
+                                            }
+                                        }
+                                    }
+                                    mTurnOnTimeSec: f32 = 0.30000001192092896
+                                    mTurnOffTimeSec: f32 = 0.30000001192092896
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.003969179466366768
+                                        1.0058953762054443
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0, 0, 0 }
+                                        { 0.21568627655506134, 1, 0, 1 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FixedDurationTriggeredBoolDriver {
+                                mCustomDuration: f32 = 4.5
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "taunt"
+                                    }
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = FixedDurationTriggeredBoolDriver {
+                                        mCustomDuration: f32 = 3
+                                        mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                            mAnimationNames: list[hash] = {
+                                                "taunt"
+                                            }
+                                        }
+                                    }
+                                    mOnValue: f32 = 4
+                                    mTurnOnTimeSec: f32 = 3
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.003969179466366768
+                                        1.0058953762054443
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0, 0, 0 }
+                                        { 0.9894737005233765, 0.8053663372993469, 0, 1 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+        }
+    }
+}

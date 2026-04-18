@@ -1,0 +1,48 @@
+{
+  "id": "bloom-fresnel-inst",
+  "name": "Bloom Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:11.907Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:11.901Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:11.901Z"
+    },
+    {
+      "name": "Zed_Skin59_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:11.901Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:11.901Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin59",
+    "bin": "data/characters/zed/skins/skin59.bin",
+    "entryKey": "Characters/Zed/Skins/Skin59/Materials/Bloom_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin59",
+      "bin": "data/characters/zed/skins/skin59.bin"
+    }
+  ]
+}

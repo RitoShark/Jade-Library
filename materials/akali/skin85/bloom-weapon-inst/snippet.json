@@ -1,0 +1,36 @@
+{
+  "id": "bloom-weapon-inst",
+  "name": "Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:56.209Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin82_colorGrad_05.tex",
+      "updatedAt": "2026-04-17T17:07:56.204Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin85",
+    "bin": "data/characters/akali/skins/skin85.bin",
+    "entryKey": "Characters/Akali/Skins/Skin85/Materials/Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin85",
+      "bin": "data/characters/akali/skins/skin85.bin"
+    }
+  ]
+}

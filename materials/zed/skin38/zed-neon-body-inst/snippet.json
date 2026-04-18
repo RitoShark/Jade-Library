@@ -1,0 +1,64 @@
+{
+  "id": "zed-neon-body-inst",
+  "name": "Zed Neon Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:10.063Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zed_neon_body_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "Zed_Skin38_Bloom_Body.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "Zed_Skin38_Bloom_Body.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:10.055Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin38",
+    "bin": "data/characters/zed/skins/skin38.bin",
+    "entryKey": "Characters/Zed/Skins/Skin38/Materials/Zed_Neon_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin38",
+      "bin": "data/characters/zed/skins/skin38.bin"
+    }
+  ]
+}

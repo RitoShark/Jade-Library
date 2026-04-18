@@ -1,0 +1,38 @@
+{
+  "id": "kaisa-skin64-assets-mat",
+  "name": "Kaisa Skin64 Assets Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:35.141Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kaisa_skin64_assets_mat",
+  "textureFiles": [
+    {
+      "name": "Kaisa_Skin64_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:35.135Z"
+    },
+    {
+      "name": "Kaisa_Skin64_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:35.135Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:35.135Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin64",
+    "bin": "data/characters/kaisa/skins/skin64.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin64/Materials/Kaisa_Skin64_Assets_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin64",
+      "bin": "data/characters/kaisa/skins/skin64.bin"
+    }
+  ]
+}

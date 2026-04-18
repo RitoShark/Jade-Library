@@ -1,0 +1,64 @@
+{
+  "id": "multi-mask-panner-fresnel2-inst",
+  "name": "Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:14.719Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.707Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "Yasuo_Skin54_Q_Wind01.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "Yasuo_Skin55_TX_CM_Mask02.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.708Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin55",
+    "bin": "data/characters/yasuo/skins/skin55.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin55/Materials/MultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin55",
+      "bin": "data/characters/yasuo/skins/skin55.bin"
+    }
+  ]
+}

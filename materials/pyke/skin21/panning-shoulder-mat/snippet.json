@@ -1,0 +1,52 @@
+{
+  "id": "panning-shoulder-mat",
+  "name": "Panning Shoulder Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:15.254Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_shoulder_mat",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin16_Idle_Holoscroll_Add.tex",
+      "updatedAt": "2026-04-17T17:46:15.247Z"
+    },
+    {
+      "name": "Pyke_Skin16_Idle_Holoscroll_Add.tex",
+      "updatedAt": "2026-04-17T17:46:15.247Z"
+    },
+    {
+      "name": "Pyke_Skin16_Idle_Holoscroll.tex",
+      "updatedAt": "2026-04-17T17:46:15.247Z"
+    },
+    {
+      "name": "Pyke_Skin16_Idle_Holoscroll.tex",
+      "updatedAt": "2026-04-17T17:46:15.247Z"
+    },
+    {
+      "name": "3161common_color-hold.tex",
+      "updatedAt": "2026-04-17T17:46:15.247Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin21",
+    "bin": "data/characters/pyke/skins/skin21.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin21/Materials/Panning_Shoulder_mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin21",
+      "bin": "data/characters/pyke/skins/skin21.bin"
+    }
+  ]
+}

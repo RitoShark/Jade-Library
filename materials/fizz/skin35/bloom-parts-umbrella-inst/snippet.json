@@ -1,0 +1,61 @@
+{
+  "id": "bloom-parts-umbrella-inst",
+  "name": "Bloom Parts Umbrella Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:34.067Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_umbrella_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    },
+    {
+      "name": "Fizz_Skin35_Mat_02.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    },
+    {
+      "name": "Fizz_Skin35_Wave_MAT_05.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    },
+    {
+      "name": "Zeri_Skin10_Coat_TZ_Mask.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    },
+    {
+      "name": "Zeri_Skin10_Coat_TZ_Mask.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    },
+    {
+      "name": "black.SKINS_Fizz_Skin35.tex",
+      "updatedAt": "2026-04-17T17:19:20.944Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fizz",
+    "skin": "skin35",
+    "bin": "data/characters/fizz/skins/skin35.bin",
+    "entryKey": "Characters/Fizz/Skins/Skin35/Materials/Bloom_Parts_Umbrella_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fizz",
+      "skin": "skin35",
+      "bin": "data/characters/fizz/skins/skin35.bin"
+    },
+    {
+      "champion": "Milio",
+      "skin": "skin11",
+      "bin": "data/characters/milio/skins/skin11.bin"
+    }
+  ]
+}

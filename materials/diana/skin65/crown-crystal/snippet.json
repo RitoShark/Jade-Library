@@ -1,0 +1,52 @@
+{
+  "id": "crown-crystal",
+  "name": "Crown Crystal",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:31.193Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crown_crystal",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:31.187Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:15:31.187Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskA_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.187Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:15:31.187Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:15:31.187Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin65",
+    "bin": "data/characters/diana/skins/skin65.bin",
+    "entryKey": "Characters/Diana/Skins/Skin65/Materials/CrownCrystal"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin65",
+      "bin": "data/characters/diana/skins/skin65.bin"
+    }
+  ]
+}

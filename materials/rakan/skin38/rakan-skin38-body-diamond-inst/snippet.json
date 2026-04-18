@@ -1,0 +1,44 @@
+{
+  "id": "rakan-skin38-body-diamond-inst",
+  "name": "Rakan Skin38 Body Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:18.794Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rakan_skin38_body_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "TriangleBase.tex",
+      "updatedAt": "2026-04-17T17:47:18.788Z"
+    },
+    {
+      "name": "Rakan_Skin38_Body_Diamond_Mask.tex",
+      "updatedAt": "2026-04-17T17:47:18.788Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:47:18.788Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin38",
+    "bin": "data/characters/rakan/skins/skin38.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin38/Materials/Rakan_Skin38_BodyDiamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin38",
+      "bin": "data/characters/rakan/skins/skin38.bin"
+    }
+  ]
+}

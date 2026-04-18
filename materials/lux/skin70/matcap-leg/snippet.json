@@ -1,0 +1,52 @@
+{
+  "id": "matcap-leg",
+  "name": "Matcap Leg",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:00.044Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_leg",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:00.035Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:36:00.035Z"
+    },
+    {
+      "name": "Lux_Skin70_Matcap.SKINS_Lux_Skin70.tex",
+      "updatedAt": "2026-04-17T17:36:00.035Z"
+    },
+    {
+      "name": "Lux_Skin70_TX_Pants_Mask.tex",
+      "updatedAt": "2026-04-17T17:36:00.035Z"
+    },
+    {
+      "name": "Lux_Skin70_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:36:00.035Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin70",
+    "bin": "data/characters/lux/skins/skin70.bin",
+    "entryKey": "Characters/Lux/Skins/Skin70/Materials/Matcap_Leg"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin70",
+      "bin": "data/characters/lux/skins/skin70.bin"
+    }
+  ]
+}

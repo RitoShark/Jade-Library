@@ -1,0 +1,36 @@
+{
+  "id": "viego-skin43-mage-sword-outline-inst",
+  "name": "Viego Skin43 Mage Sword Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:40.880Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin43_mage_sword_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.874Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/Viego_Skin43_MageSword_Outline_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

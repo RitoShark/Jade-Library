@@ -1,0 +1,44 @@
+{
+  "id": "tails-pbr-toon-shading-inst",
+  "name": "Tails Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:19.439Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tails_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Weapons_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:19.432Z"
+    },
+    {
+      "name": "Evelynn_Skin42_Material_Tails.tex",
+      "updatedAt": "2026-04-17T17:17:19.432Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:19.432Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin48",
+    "bin": "data/characters/evelynn/skins/skin48.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin48/Materials/Tails_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin48",
+      "bin": "data/characters/evelynn/skins/skin48.bin"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "weapon-glass",
+  "name": "Weapon Glass",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:21.639Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_weapon_glass",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renata",
+    "skin": "skin21",
+    "bin": "data/characters/renata/skins/skin21.bin",
+    "entryKey": "Characters/Renata/Skins/Skin21/Materials/Weapon_Glass"
+  },
+  "usedBy": [
+    {
+      "champion": "Renata",
+      "skin": "skin21",
+      "bin": "data/characters/renata/skins/skin21.bin"
+    }
+  ]
+}

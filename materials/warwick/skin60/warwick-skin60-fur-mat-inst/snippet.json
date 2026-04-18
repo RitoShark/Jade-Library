@@ -1,0 +1,48 @@
+{
+  "id": "warwick-skin60-fur-mat-inst",
+  "name": "Warwick Skin60 Fur Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:09.621Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_warwick_skin60_fur_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.611Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.611Z"
+    },
+    {
+      "name": "Warwick_Skin60_Fur_TX_CM.Chroma_Warwick_WarHounds.tex",
+      "updatedAt": "2026-04-17T18:07:09.611Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:09.611Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin60",
+    "bin": "data/characters/warwick/skins/skin60.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin60/Materials/Warwick_Skin60_Fur_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin60",
+      "bin": "data/characters/warwick/skins/skin60.bin"
+    }
+  ]
+}

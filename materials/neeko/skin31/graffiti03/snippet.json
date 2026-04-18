@@ -1,0 +1,31 @@
+{
+  "id": "graffiti03",
+  "name": "Graffiti03",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:33.913Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_graffiti03",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin31",
+    "bin": "data/neeko_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin31/Materials/Graffiti03"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin31",
+      "bin": "data/neeko_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39.bin"
+    }
+  ]
+}

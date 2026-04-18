@@ -1,0 +1,56 @@
+{
+  "id": "crystal-inst",
+  "name": "Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:06.717Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:07:06.710Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Warwick",
+    "skin": "skin54",
+    "bin": "data/characters/warwick/skins/skin54.bin",
+    "entryKey": "Characters/Warwick/Skins/Skin54/Materials/Crystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Warwick",
+      "skin": "skin54",
+      "bin": "data/characters/warwick/skins/skin54.bin"
+    }
+  ]
+}

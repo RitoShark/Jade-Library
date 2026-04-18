@@ -1,0 +1,84 @@
+"jadelib_distortion_inst" = StaticMaterialDef {
+    name: string = "jadelib_distortion_inst"
+    type: u32 = 4
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Intensity"
+            value: vec4 = { -0.014999999664723873, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollRate"
+            value: vec4 = { 0.004999999888241291, 0.009999999776482582, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Scale"
+            value: vec4 = { 0.009999999776482582, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Inner_Color"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outer_Color"
+            value: vec4 = { 0.772549033164978, 0.3843137323856354, 0.12156862765550613, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Vignette_Size"
+            value: vec4 = { 4.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Desaturation_Blend"
+            value: vec4 = { 0.26750001311302185, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DISTORT"
+        }
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/PostProcess/Distortion_Simple"
+                    depthEnable: bool = false
+                    cullEnable: bool = false
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "death"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "DEATH_EFFECT" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "normal_blend"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "BLEND" = "1"
+            }
+        }
+        StaticMaterialChildTechniqueDef {
+            name: string = "death_blend"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "DEATH_EFFECT" = "1"
+                "BLEND" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

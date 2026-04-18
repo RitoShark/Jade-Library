@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:36.656Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:13:36.651Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:13:36.651Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:36.651Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:13:36.651Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin24",
+    "bin": "data/zilean_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28_skins_skin29_skins_skin30_skins_skin31_skins_skin32.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin24/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin24",
+      "bin": "data/zilean_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28_skins_skin29_skins_skin30_skins_skin31_skins_skin32.bin"
+    }
+  ]
+}

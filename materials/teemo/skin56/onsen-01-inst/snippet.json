@@ -1,0 +1,68 @@
+{
+  "id": "onsen-01-inst",
+  "name": "Onsen 01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:41.825Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_onsen_01_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin54_TurbulDeform.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "Teemo_Skin54_Mask_1.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "Ahri_Skin88_WaterShapeMask_TX_CM.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "flowmap.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "black.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "CaseTexture03.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:00:41.815Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin56",
+    "bin": "data/characters/teemo/skins/skin56.bin",
+    "entryKey": "Characters/Teemo/Skins/Skin56/Materials/Onsen_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin56",
+      "bin": "data/characters/teemo/skins/skin56.bin"
+    }
+  ]
+}

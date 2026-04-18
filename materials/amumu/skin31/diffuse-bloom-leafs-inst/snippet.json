@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-leafs-inst",
+  "name": "Diffuse Bloom Leafs Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:30.107Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_leafs_inst",
+  "textureFiles": [
+    {
+      "name": "Material_Bloom_Mask.tex",
+      "updatedAt": "2026-04-17T17:08:30.102Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Amumu",
+    "skin": "skin31",
+    "bin": "data/characters/amumu/skins/skin31.bin",
+    "entryKey": "Characters/Amumu/Skins/Skin31/Materials/Diffuse_Bloom_Leafs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Amumu",
+      "skin": "skin31",
+      "bin": "data/characters/amumu/skins/skin31.bin"
+    }
+  ]
+}

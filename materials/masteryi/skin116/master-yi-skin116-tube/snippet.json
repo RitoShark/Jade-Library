@@ -1,0 +1,48 @@
+{
+  "id": "master-yi-skin116-tube",
+  "name": "Master Yi Skin116 Tube",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:59.254Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_master_yi_skin116_tube",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:59.248Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:37:59.248Z"
+    },
+    {
+      "name": "MasterYi_Skin116_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:59.248Z"
+    },
+    {
+      "name": "MasterYi_Skin116_FresnelMask_TX_CM.SKINS_MasterYi_Skin116.tex",
+      "updatedAt": "2026-04-17T17:37:59.248Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin116",
+    "bin": "data/characters/masteryi/skins/skin116.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin116/Materials/MasterYi_Skin116_Tube"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin116",
+      "bin": "data/characters/masteryi/skins/skin116.bin"
+    }
+  ]
+}

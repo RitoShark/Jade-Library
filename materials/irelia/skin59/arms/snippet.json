@@ -1,0 +1,60 @@
+{
+  "id": "arms",
+  "name": "Arms",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:38.782Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_arms",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "Irelia_Skin55_Arm_Mask.SKINS_Irelia_Skin55.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "Noise_Clouds_01.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:22:38.776Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin59",
+    "bin": "data/characters/irelia/skins/skin59.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin59/Materials/Arms"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin59",
+      "bin": "data/characters/irelia/skins/skin59.bin"
+    }
+  ]
+}

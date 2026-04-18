@@ -1,0 +1,36 @@
+{
+  "id": "fish-b-fresnel-alpha-inst",
+  "name": "Fish B Fresnel Alpha Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:56.794Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fish_b_fresnel_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:27:56.787Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin70",
+    "bin": "data/characters/karma/skins/skin70.bin",
+    "entryKey": "Characters/Karma/Skins/Skin70/Materials/FishB_FresnelAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin70",
+      "bin": "data/characters/karma/skins/skin70.bin"
+    }
+  ]
+}

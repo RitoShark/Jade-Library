@@ -1,0 +1,40 @@
+{
+  "id": "vayne-skin46-hair-inst",
+  "name": "Vayne Skin46 Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:41.765Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin46_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Vayne_Skin44_Hairs_Mask.tex",
+      "updatedAt": "2026-04-17T18:03:41.760Z"
+    },
+    {
+      "name": "Vayne_Skin46_Wings_Mask.tex",
+      "updatedAt": "2026-04-17T18:03:41.760Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin46",
+    "bin": "data/characters/vayne/skins/skin46.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin46/Materials/Vayne_Skin46_Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin46",
+      "bin": "data/characters/vayne/skins/skin46.bin"
+    }
+  ]
+}

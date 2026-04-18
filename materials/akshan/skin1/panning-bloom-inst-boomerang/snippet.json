@@ -1,0 +1,48 @@
+{
+  "id": "panning-bloom-inst-boomerang",
+  "name": "Panning Bloom Inst Boomerang",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:04.623Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_bloom_inst_boomerang",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.617Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.617Z"
+    },
+    {
+      "name": "Akshan_Skin1_Gun_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:04.617Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.617Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin1",
+    "bin": "data/characters/akshan/skins/skin1.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin1/Materials/PanningBloom_inst_Boomerang"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin1",
+      "bin": "data/characters/akshan/skins/skin1.bin"
+    }
+  ]
+}

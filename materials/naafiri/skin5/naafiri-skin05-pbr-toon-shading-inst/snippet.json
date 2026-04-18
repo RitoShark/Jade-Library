@@ -1,0 +1,44 @@
+{
+  "id": "naafiri-skin05-pbr-toon-shading-inst",
+  "name": "Naafiri Skin05 Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:47.143Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin05_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Naafiri_Skin01_P_Scrolltexture.tex",
+      "updatedAt": "2026-04-17T17:40:47.138Z"
+    },
+    {
+      "name": "Naafiri_Skin01_P_FlowDistortion02.tex",
+      "updatedAt": "2026-04-17T17:40:47.138Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:47.138Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin5",
+    "bin": "data/characters/naafiri/skins/skin5.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin5/Materials/Naafiri_Skin05_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin5",
+      "bin": "data/characters/naafiri/skins/skin5.bin"
+    }
+  ]
+}

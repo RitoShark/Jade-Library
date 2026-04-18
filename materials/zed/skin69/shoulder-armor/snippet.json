@@ -1,0 +1,44 @@
+{
+  "id": "shoulder-armor",
+  "name": "Shoulder Armor",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:15.615Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shoulder_armor",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:15.608Z"
+    },
+    {
+      "name": "Zed_Skin69_Mask.SKINS_Zed_Skin69.tex",
+      "updatedAt": "2026-04-17T18:12:15.608Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:15.608Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin69",
+    "bin": "data/characters/zed/skins/skin69.bin",
+    "entryKey": "Characters/Zed/Skins/Skin69/Materials/Shoulder_Armor"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin69",
+      "bin": "data/characters/zed/skins/skin69.bin"
+    }
+  ]
+}

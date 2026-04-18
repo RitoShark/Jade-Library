@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-pan-alpha-pan-twinkle-inst",
+  "name": "Diffuse Pan Alpha Pan Twinkle Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:55.914Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_pan_alpha_pan_twinkle_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin18_Collar_Twinkle_Mask.tex",
+      "updatedAt": "2026-04-17T17:35:55.908Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin18",
+    "bin": "data/characters/lux/skins/skin18.bin",
+    "entryKey": "Characters/Lux/Skins/Skin18/Materials/Diffuse_Pan_Alpha_Pan_Twinkle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin18",
+      "bin": "data/characters/lux/skins/skin18.bin"
+    }
+  ]
+}

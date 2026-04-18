@@ -1,0 +1,64 @@
+{
+  "id": "morgana-skin80-outline-iridescent-add-scroll-rework-inst",
+  "name": "Morgana Skin80 Outline Iridescent Add Scroll Rework Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:26.358Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_morgana_skin80_outline_iridescent_add_scroll_rework_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "gray.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "Morgana_Skin80_Wing_Color_Mask_TX_CM.SKINS_Morgana_Skin80.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:26.352Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin80",
+    "bin": "data/characters/morgana/skins/skin80.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin80/Materials/Morgana_Skin80_Outline_Iridescent_Add_Scroll_Rework_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin80",
+      "bin": "data/characters/morgana/skins/skin80.bin"
+    }
+  ]
+}

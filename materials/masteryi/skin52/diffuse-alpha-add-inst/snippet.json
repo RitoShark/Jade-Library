@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-alpha-add-inst",
+  "name": "Diffuse Alpha Add Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:02.064Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_add_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin52_A_Mask.tex",
+      "updatedAt": "2026-04-17T17:38:02.057Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin52",
+    "bin": "data/characters/masteryi/skins/skin52.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin52/Materials/Diffuse_Alpha_add_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin52",
+      "bin": "data/characters/masteryi/skins/skin52.bin"
+    }
+  ]
+}

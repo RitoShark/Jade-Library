@@ -1,0 +1,64 @@
+{
+  "id": "xin-zhao-skin50-weapon-inst",
+  "name": "Xin Zhao Skin50 Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:26.334Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_xin_zhao_skin50_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "black.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "black.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "Default_Gradient.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "Ashe_Base_ErosionPack01.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin47_Weapon_TX_CM.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    },
+    {
+      "name": "black.SKINS_XinZhaoRework_Skin47.tex",
+      "updatedAt": "2026-04-17T18:08:26.325Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "XinZhao",
+    "skin": "skin50",
+    "bin": "data/characters/xinzhao/skins/skin50.bin",
+    "entryKey": "Characters/XinZhao/Skins/Skin50/Materials/XinZhao_Skin50_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "XinZhao",
+      "skin": "skin50",
+      "bin": "data/characters/xinzhao/skins/skin50.bin"
+    }
+  ]
+}

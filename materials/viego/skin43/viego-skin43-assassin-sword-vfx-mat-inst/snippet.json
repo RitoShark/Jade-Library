@@ -1,0 +1,68 @@
+{
+  "id": "viego-skin43-assassin-sword-vfx-mat-inst",
+  "name": "Viego Skin43 Assassin Sword Vfx Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:42.136Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin43_assassin_sword_vfx_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin43_Assassin_Sword_TurbulDeform_Mask.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "Viego_Skin43_Assassin_Sword_Mask.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "Mask.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "Viego_Skin43_Assassin_Sword_ScrollCombo.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "NoiseOffset01nomip.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:42.129Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/ViegoSkin43_AssassinSword_VFX_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

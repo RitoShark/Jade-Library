@@ -1,0 +1,36 @@
+{
+  "id": "bloom-weapon-inst",
+  "name": "Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:29.900Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "mask_sythe.tex",
+      "updatedAt": "2026-04-17T17:18:29.895Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin45",
+    "bin": "data/characters/fiddlesticks/skins/skin45.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin45/Materials/Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin45",
+      "bin": "data/characters/fiddlesticks/skins/skin45.bin"
+    }
+  ]
+}

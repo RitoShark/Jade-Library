@@ -1,0 +1,60 @@
+{
+  "id": "crepe-anomaly-mask-inst-hand",
+  "name": "Crepe Anomaly Mask Inst Hand",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:07.389Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crepe_anomaly_mask_inst_hand",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Viktor_Skin24_CapeTest_Mask_TX_CM.SKINS_ViktorRework_Skin24.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Viktor_Skin24_CapeTest_Noise.SKINS_ViktorRework_Skin24.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Viktor_Skin24_Flowmap.SKINS_ViktorRework_Skin24.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Viktor_Skin24_HoleMask_AnomalyMask.SKINS_ViktorRework_Skin24.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    },
+    {
+      "name": "Viktor_Skin24_GradientMap2.SKINS_ViktorRework_Skin24.tex",
+      "updatedAt": "2026-04-17T18:06:07.378Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viktor",
+    "skin": "skin24",
+    "bin": "data/characters/viktor/skins/skin24.bin",
+    "entryKey": "Characters/Viktor/Skins/Skin24/Materials/Crepe_Anomaly_Mask_inst_Hand"
+  },
+  "usedBy": [
+    {
+      "champion": "Viktor",
+      "skin": "skin24",
+      "bin": "data/characters/viktor/skins/skin24.bin"
+    }
+  ]
+}

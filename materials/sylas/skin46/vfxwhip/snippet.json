@@ -1,0 +1,48 @@
+{
+  "id": "vfxwhip",
+  "name": "Vfxwhip",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:31.217Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vfxwhip",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin46_ScreenSpaceTexture_02.SKINS_Sylas_Skin46.tex",
+      "updatedAt": "2026-04-17T17:58:31.210Z"
+    },
+    {
+      "name": "Sylas_Skin46_Skill_MaskSet_01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:31.210Z"
+    },
+    {
+      "name": "Sylas_Skin46_Skill_MaskSet_02_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:31.210Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:31.210Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin46",
+    "bin": "data/sylas_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin46/Materials/VFXWhip"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin46",
+      "bin": "data/sylas_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin"
+    }
+  ]
+}

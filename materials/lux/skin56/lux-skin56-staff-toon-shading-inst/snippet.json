@@ -1,0 +1,44 @@
+{
+  "id": "lux-skin56-staff-toon-shading-inst",
+  "name": "Lux Skin56 Staff Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:59.683Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lux_skin56_staff_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin30_Sword_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:59.674Z"
+    },
+    {
+      "name": "Lux_Skin38_Staff_FlowDistortion_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:59.674Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:35:59.674Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin56",
+    "bin": "data/characters/lux/skins/skin56.bin",
+    "entryKey": "Characters/Lux/Skins/Skin56/Materials/Lux_Skin56_Staff_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin56",
+      "bin": "data/characters/lux/skins/skin56.bin"
+    }
+  ]
+}

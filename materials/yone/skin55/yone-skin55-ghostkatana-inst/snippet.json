@@ -1,0 +1,36 @@
+{
+  "id": "yone-skin55-ghostkatana-inst",
+  "name": "Yone Skin55 Ghostkatana Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.484Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin55_ghostkatana_inst",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin55_CoatMask_Ghostkatana.tex",
+      "updatedAt": "2026-04-17T18:10:06.478Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin55",
+    "bin": "data/characters/yone/skins/skin55.bin",
+    "entryKey": "Characters/Yone/Skins/Skin55/Materials/Yone_Skin55_Ghostkatana_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin55",
+      "bin": "data/characters/yone/skins/skin55.bin"
+    }
+  ]
+}

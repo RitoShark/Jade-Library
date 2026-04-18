@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-prestige-inst",
+  "name": "Diffuse Bloom Prestige Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.452Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin53_Mask_Lhead.SPARX_ChampsBugs2025.tex",
+      "updatedAt": "2026-04-17T17:17:20.445Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin53",
+    "bin": "data/characters/evelynn/skins/skin53.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin53/Materials/Diffuse_Bloom_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin53",
+      "bin": "data/characters/evelynn/skins/skin53.bin"
+    }
+  ]
+}

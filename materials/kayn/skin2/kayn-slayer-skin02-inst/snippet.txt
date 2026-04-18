@@ -1,0 +1,126 @@
+"jadelib_kayn_slayer_skin02_inst" = StaticMaterialDef {
+    name: string = "jadelib_kayn_slayer_skin02_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            uncensoredTextures: map[hash,string] = {
+                "2166136261" = ""
+            }
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gredient_Texture"
+            texturePath: string = "assets/jadelib/kayn-slayer-skin02-inst/Kayn_Skin02_Slayer_Gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/kayn-slayer-skin02-inst/Kayn_Skin02_Slayer_Mask.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Masks"
+            texturePath: string = "assets/jadelib/kayn-slayer-skin02-inst/Kayn_Skin02_Slayer_Boom_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Additive_Mask_Texture"
+            texturePath: string = "assets/jadelib/kayn-slayer-skin02-inst/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Fresnel"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaFresnel_Size"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaFresnel_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "X_Scale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Y_Scale"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "X_Speed"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Y_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color1"
+            value: vec4 = { 1, 0.5333333611488342, 0.06666667014360428, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color2"
+            value: vec4 = { 0.3764705955982208, 0.2235294133424759, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADDITIVE_PANNER"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Harrowing_Base"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mFrequency: f32 = 3
+                    mScale: f32 = 0.5
+                    mBias: f32 = 0.75
+                }
+            }
+        }
+    }
+}

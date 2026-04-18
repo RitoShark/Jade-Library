@@ -1,0 +1,31 @@
+{
+  "id": "hkg-diffuse-alpha-shadow-recall-chair-inst",
+  "name": "Hkg Diffuse Alpha Shadow Recall Chair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:15.000Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_diffuse_alpha_shadow_recall_chair_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "DrMundo",
+    "skin": "skin9",
+    "bin": "data/characters/drmundo/skins/skin9.bin",
+    "entryKey": "Characters/DrMundo/Skins/Skin9/Materials/HKG_Diffuse_Alpha_Shadow_Recall_Chair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "DrMundo",
+      "skin": "skin9",
+      "bin": "data/characters/drmundo/skins/skin9.bin"
+    }
+  ]
+}

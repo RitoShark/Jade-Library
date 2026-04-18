@@ -1,0 +1,56 @@
+{
+  "id": "weapon-gear0-gold-freeze",
+  "name": "Weapon Gear0 Gold Freeze",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:32.800Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_gear0_gold_freeze",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    },
+    {
+      "name": "Senna_Skin56_Gun_Test_Ice.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    },
+    {
+      "name": "Gold_Weapon_RMA.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:32.794Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin56",
+    "bin": "data/characters/senna/skins/skin56.bin",
+    "entryKey": "Characters/Senna/Skins/Skin56/Materials/Weapon_Gear0_Gold_Freeze"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin56",
+      "bin": "data/characters/senna/skins/skin56.bin"
+    }
+  ]
+}

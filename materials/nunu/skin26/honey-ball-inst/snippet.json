@@ -1,0 +1,34 @@
+{
+  "id": "honey-ball-inst",
+  "name": "Honey Ball Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.623Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_honey_ball_inst",
+  "textureFiles": [
+    {
+      "name": "NunuSnowball_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:08.617Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.617Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin26",
+    "bin": "data/characters/nunu/skins/skin26.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin26/Materials/HoneyBall_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin26",
+      "bin": "data/characters/nunu/skins/skin26.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:09.751Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin11_Head_Bloom_Mask.tex",
+      "updatedAt": "2026-04-17T17:06:09.746Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin12",
+    "bin": "data/characters/aatrox/skins/skin12.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin12/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin12",
+      "bin": "data/characters/aatrox/skins/skin12.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "pizza-inst",
+  "name": "Pizza Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:10.210Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pizza_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sivir",
+    "skin": "skin15",
+    "bin": "data/characters/sivir/skins/skin15.bin",
+    "entryKey": "Characters/Sivir/Skins/Skin15/Materials/Pizza_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sivir",
+      "skin": "skin15",
+      "bin": "data/characters/sivir/skins/skin15.bin"
+    }
+  ]
+}

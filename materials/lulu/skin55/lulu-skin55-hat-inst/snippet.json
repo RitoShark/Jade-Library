@@ -1,0 +1,36 @@
+{
+  "id": "lulu-skin55-hat-inst",
+  "name": "Lulu Skin55 Hat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:22.455Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lulu_skin55_hat_inst",
+  "textureFiles": [
+    {
+      "name": "Lulu_Skin55_Fresnel_Mask_TX_CM.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:22.450Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin55",
+    "bin": "data/characters/lulu/skins/skin55.bin",
+    "entryKey": "Characters/Lulu/Skins/Skin55/Materials/Lulu_Skin55_Hat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin55",
+      "bin": "data/characters/lulu/skins/skin55.bin"
+    }
+  ]
+}

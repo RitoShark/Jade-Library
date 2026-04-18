@@ -1,0 +1,52 @@
+{
+  "id": "prestige-diamond-weapon-inst",
+  "name": "Prestige Diamond Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:56.130Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_diamond_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:07:56.125Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:56.125Z"
+    },
+    {
+      "name": "Akali_Skin71_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:07:56.125Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:56.125Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:56.125Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin71",
+    "bin": "data/characters/akali/skins/skin71.bin",
+    "entryKey": "Characters/Akali/Skins/Skin71/Materials/Prestige_Diamond_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin71",
+      "bin": "data/characters/akali/skins/skin71.bin"
+    }
+  ]
+}

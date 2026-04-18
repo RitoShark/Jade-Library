@@ -1,0 +1,57 @@
+{
+  "id": "empowered-hair-vfx-inst",
+  "name": "Empowered Hair Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:01.039Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_empowered_hair_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:18.912Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:18.912Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:18.912Z"
+    },
+    {
+      "name": "3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:15:18.912Z"
+    },
+    {
+      "name": "Diana_Skin47_Z_Material_VFX_Hair_Mask_02.tex",
+      "updatedAt": "2026-04-17T17:15:18.912Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin47",
+    "bin": "data/characters/diana/skins/skin47.bin",
+    "entryKey": "Characters/Diana/Skins/Skin47/Materials/Empowered_Hair_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin47",
+      "bin": "data/characters/diana/skins/skin47.bin"
+    },
+    {
+      "champion": "Lucian",
+      "skin": "skin52",
+      "bin": "data/characters/lucian/skins/skin52.bin"
+    }
+  ]
+}

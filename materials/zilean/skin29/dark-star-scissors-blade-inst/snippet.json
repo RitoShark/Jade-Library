@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-scissors-blade-inst",
+  "name": "Dark Star Scissors Blade Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:35.751Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_scissors_blade_inst",
+  "textureFiles": [
+    {
+      "name": "Camille_Skin18_Blades_Stars.tex",
+      "updatedAt": "2026-04-17T18:13:35.745Z"
+    },
+    {
+      "name": "Zilean_Materials_Mask_01.SKINS_Zilean_Skin24.tex",
+      "updatedAt": "2026-04-17T18:13:35.745Z"
+    },
+    {
+      "name": "Zilean_Materials_Mask_02.SKINS_Zilean_Skin24.tex",
+      "updatedAt": "2026-04-17T18:13:35.745Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin29",
+    "bin": "data/characters/zilean/skins/skin29.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin29/Materials/DarkStar_Scissors_Blade_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin29",
+      "bin": "data/characters/zilean/skins/skin29.bin"
+    }
+  ]
+}

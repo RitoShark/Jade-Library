@@ -1,0 +1,25 @@
+{
+  "id": "glass-inst",
+  "name": "Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:17.525Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin6",
+    "bin": "data/threshlantern_skins_skin10_skins_skin11_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin",
+    "entryKey": "Characters/ThreshLantern/Skins/Skin6/Materials/Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin6",
+      "bin": "data/threshlantern_skins_skin10_skins_skin11_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin"
+    }
+  ]
+}

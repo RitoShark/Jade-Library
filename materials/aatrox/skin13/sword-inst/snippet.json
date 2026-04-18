@@ -1,0 +1,40 @@
+{
+  "id": "sword-inst",
+  "name": "Sword Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:10.260Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sword_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin13_P_Sword_Mask.tex",
+      "updatedAt": "2026-04-17T17:06:10.255Z"
+    },
+    {
+      "name": "Aatrox_Skin13_R_mat_gradient.tex",
+      "updatedAt": "2026-04-17T17:06:10.255Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin13",
+    "bin": "data/characters/aatrox/skins/skin13.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin13/Materials/Sword_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin13",
+      "bin": "data/characters/aatrox/skins/skin13.bin"
+    }
+  ]
+}

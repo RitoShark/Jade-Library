@@ -1,0 +1,31 @@
+{
+  "id": "vayne-skin50-skin50-inst",
+  "name": "Vayne Skin50 Skin50 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:42.424Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin50_skin50_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin50",
+    "bin": "data/characters/vayne/skins/skin50.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin50/Materials/Vayne_Skin50_Skin50_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin50",
+      "bin": "data/characters/vayne/skins/skin50.bin"
+    }
+  ]
+}

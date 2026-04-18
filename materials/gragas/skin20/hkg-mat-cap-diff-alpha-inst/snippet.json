@@ -1,0 +1,50 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.812Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin20_SnowballDB_MatCap.tex",
+      "updatedAt": "2026-04-17T17:20:37.948Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.948Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin20",
+    "bin": "data/gragas_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin20/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin20",
+      "bin": "data/gragas_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27_skins_skin28.bin"
+    },
+    {
+      "champion": "Nunu",
+      "skin": "skin16",
+      "bin": "5c6fcc695b59663c.bin"
+    },
+    {
+      "champion": "TahmKench",
+      "skin": "skin30",
+      "bin": "data/characters/tahmkench/skins/skin30.bin"
+    }
+  ]
+}

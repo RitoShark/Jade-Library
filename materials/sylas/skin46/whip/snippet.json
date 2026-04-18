@@ -1,0 +1,48 @@
+{
+  "id": "whip",
+  "name": "Whip",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:29.392Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_whip",
+  "textureFiles": [
+    {
+      "name": "Sylas_Skin46_ScreenSpaceTexture_02.SKINS_Sylas_Skin46.tex",
+      "updatedAt": "2026-04-17T17:58:29.384Z"
+    },
+    {
+      "name": "Sylas_Skin46_Hair_MaskSet_01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:29.384Z"
+    },
+    {
+      "name": "Sylas_Skin46_Hair_MaskSet_02_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:58:29.384Z"
+    },
+    {
+      "name": "Sylas_Skin46_Hair_FresnelMask.SKINS_Sylas_Skin46.tex",
+      "updatedAt": "2026-04-17T17:58:29.384Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin46",
+    "bin": "data/characters/sylas/skins/skin46.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin46/Materials/Whip"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin46",
+      "bin": "data/characters/sylas/skins/skin46.bin"
+    }
+  ]
+}

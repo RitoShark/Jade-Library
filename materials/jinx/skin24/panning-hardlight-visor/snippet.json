@@ -1,0 +1,53 @@
+{
+  "id": "panning-hardlight-visor",
+  "name": "Panning Hardlight Visor",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:38.677Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_hardlight_visor",
+  "textureFiles": [
+    {
+      "name": "Jinx_Skin20_CubesMult3.tex",
+      "updatedAt": "2026-04-17T17:25:50.631Z"
+    },
+    {
+      "name": "JinxMine_Skin20_holo-scroll.tex",
+      "updatedAt": "2026-04-17T17:25:50.631Z"
+    },
+    {
+      "name": "Jinx_Skin20_Project_Diamond.tex",
+      "updatedAt": "2026-04-17T17:25:50.631Z"
+    },
+    {
+      "name": "JinxMine_Skin20_holo-scroll.tex",
+      "updatedAt": "2026-04-17T17:25:50.631Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jinx",
+    "skin": "skin24",
+    "bin": "data/characters/jinxmine/skins/skin24.bin",
+    "entryKey": "Characters/JinxMine/Skins/Skin24/Materials/Panning_Hardlight_Visor"
+  },
+  "usedBy": [
+    {
+      "champion": "Jinx",
+      "skin": "skin24",
+      "bin": "data/characters/jinxmine/skins/skin24.bin"
+    },
+    {
+      "champion": "Ruby_Jinx",
+      "skin": "skin24",
+      "bin": "data/characters/jinxmine/skins/skin24.bin"
+    }
+  ]
+}

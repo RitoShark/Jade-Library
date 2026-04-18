@@ -1,0 +1,52 @@
+{
+  "id": "prestige-body-gold-inst",
+  "name": "Prestige Body Gold Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:02.813Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_body_gold_inst",
+  "textureFiles": [
+    {
+      "name": "KSante_Skin02_Body_RMSA.tex",
+      "updatedAt": "2026-04-17T17:32:02.807Z"
+    },
+    {
+      "name": "KSante_Skin02_Body_Flowing_Specular_Mask.tex",
+      "updatedAt": "2026-04-17T17:32:02.807Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:32:02.807Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:02.807Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:02.807Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KSante",
+    "skin": "skin2",
+    "bin": "data/characters/ksante/skins/skin2.bin",
+    "entryKey": "Characters/KSante/Skins/Skin2/Materials/Prestige_Body_Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KSante",
+      "skin": "skin2",
+      "bin": "data/characters/ksante/skins/skin2.bin"
+    }
+  ]
+}

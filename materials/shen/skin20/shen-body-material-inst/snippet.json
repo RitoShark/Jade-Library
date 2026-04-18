@@ -1,0 +1,36 @@
+{
+  "id": "shen-body-material-inst",
+  "name": "Shen Body Material Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:06.017Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shen_body_material_inst",
+  "textureFiles": [
+    {
+      "name": "Shen_Skin20_Material_Add.tex",
+      "updatedAt": "2026-04-17T17:54:06.011Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shen",
+    "skin": "skin20",
+    "bin": "data/characters/shen/skins/skin20.bin",
+    "entryKey": "Characters/Shen/Skins/Skin20/Materials/Shen_Body_Material_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shen",
+      "skin": "skin20",
+      "bin": "data/characters/shen/skins/skin20.bin"
+    }
+  ]
+}

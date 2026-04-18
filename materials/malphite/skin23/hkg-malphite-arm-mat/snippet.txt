@@ -1,0 +1,69 @@
+"jadelib_hkg_malphite_arm_mat" = StaticMaterialDef {
+    name: string = "jadelib_hkg_malphite_arm_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Star_Num"
+            value: vec4 = { 200, 200, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Max_Radius"
+            value: vec4 = { 0.3474999964237213, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Star_Rand"
+            value: vec4 = { 0.23999999463558197, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Col"
+            value: vec4 = { 0.7686274647712708, 0.21176470816135406, 0.43529412150382996, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 4.349999904632568, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Star_Col"
+            value: vec4 = { 0.9607843160629272, 0.239215686917305, 0.8078431487083435, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Speed"
+            value: vec4 = { 0.05649999901652336, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Malphite_Arm"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

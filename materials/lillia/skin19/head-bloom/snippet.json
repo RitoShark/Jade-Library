@@ -1,0 +1,44 @@
+{
+  "id": "head-bloom",
+  "name": "Head Bloom",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:54.046Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_head_bloom",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:54.030Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:54.030Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:54.030Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin19",
+    "bin": "data/characters/lillia/skins/skin19.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin19/Materials/Head_Bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin19",
+      "bin": "data/characters/lillia/skins/skin19.bin"
+    }
+  ]
+}

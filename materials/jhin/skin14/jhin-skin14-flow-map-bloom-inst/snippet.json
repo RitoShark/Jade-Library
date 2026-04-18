@@ -1,0 +1,44 @@
+{
+  "id": "jhin-skin14-flow-map-bloom-inst",
+  "name": "Jhin Skin14 Flow Map Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:20.380Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jhin_skin14_flow_map_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin14_TX_CM_FM.tex",
+      "updatedAt": "2026-04-17T17:25:20.374Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:25:20.374Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:20.374Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin14",
+    "bin": "data/characters/jhin/skins/skin14.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin14/Materials/Jhin_Skin14_FlowMap_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin14",
+      "bin": "data/characters/jhin/skins/skin14.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-sigil-inst",
+  "name": "Bloom Sigil Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:08.786Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_sigil_inst",
+  "textureFiles": [
+    {
+      "name": "Xerath_Skin30_Idle_Sigil01.SKINS_Xerath_Skin30.tex",
+      "updatedAt": "2026-04-17T18:08:08.780Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xerath",
+    "skin": "skin30",
+    "bin": "data/characters/xerath/skins/skin30.bin",
+    "entryKey": "Characters/Xerath/Skins/Skin30/Materials/Bloom_Sigil_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xerath",
+      "skin": "skin30",
+      "bin": "data/characters/xerath/skins/skin30.bin"
+    }
+  ]
+}

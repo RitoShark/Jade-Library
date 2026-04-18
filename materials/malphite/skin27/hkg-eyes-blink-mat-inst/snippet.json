@@ -1,0 +1,44 @@
+{
+  "id": "hkg-eyes-blink-mat-inst",
+  "name": "Hkg Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:18.863Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:18.856Z"
+    },
+    {
+      "name": "Malphite_Skin27_Eyes_Mask.tex",
+      "updatedAt": "2026-04-17T17:36:18.856Z"
+    },
+    {
+      "name": "Malphite_Skin27_skin35_Eyes_Blink.tex",
+      "updatedAt": "2026-04-17T17:36:18.856Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin27",
+    "bin": "data/characters/malphite/skins/skin27.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin27/Materials/HKG_Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin27",
+      "bin": "data/characters/malphite/skins/skin27.bin"
+    }
+  ]
+}

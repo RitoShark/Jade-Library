@@ -1,0 +1,44 @@
+{
+  "id": "illaoi-cosmic-inst",
+  "name": "Illaoi Cosmic Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:02.429Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_illaoi_cosmic_inst",
+  "textureFiles": [
+    {
+      "name": "Illaoi_Skin10_Material_Dark_Star_3.tex",
+      "updatedAt": "2026-04-17T17:22:02.422Z"
+    },
+    {
+      "name": "Illaoi_Skin10_ScreenspaceMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:22:02.422Z"
+    },
+    {
+      "name": "Illaoi_Skin10_Fresnel_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:22:02.422Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Illaoi",
+    "skin": "skin10",
+    "bin": "data/characters/illaoi/skins/skin10.bin",
+    "entryKey": "Characters/Illaoi/Skins/Skin10/Materials/Illaoi_Cosmic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Illaoi",
+      "skin": "skin10",
+      "bin": "data/characters/illaoi/skins/skin10.bin"
+    }
+  ]
+}

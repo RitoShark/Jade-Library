@@ -1,0 +1,68 @@
+{
+  "id": "strings",
+  "name": "Strings",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:28.322Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_strings",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin66_Trail_String.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "Sona_Skin66_String_Mult.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "Sona_Skin66_Q_portal_cover_BLACK.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "Sona_Skin66_Q_portal_cover_BLACK.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "Sona_Skin66_Q_portal_cover_BLACK.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "Sona_Skin66_Q_portal_cover_BLACK.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:28.313Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/sona_skins_skin66_skins_skin67_skins_skin68_skins_skin69_skins_skin70_skins_skin71_skins_skin72_skins_skin73_skins_skin74.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/Strings"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/sona_skins_skin66_skins_skin67_skins_skin68_skins_skin69_skins_skin70_skins_skin71_skins_skin72_skins_skin73_skins_skin74.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pyke-skin01-e-sand-clone-inst",
+  "name": "Pyke Skin01 E Sand Clone Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:22.574Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_pyke_skin01_e_sand_clone_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin01_SandClone_Texture.tex",
+      "updatedAt": "2026-04-17T17:46:22.569Z"
+    },
+    {
+      "name": "Pyke_Skin01_SandClone_Noise.tex",
+      "updatedAt": "2026-04-17T17:46:22.569Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:22.569Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin1",
+    "bin": "data/pyke_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin1/Materials/Pyke_Skin01_E_SandClone_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin1",
+      "bin": "data/pyke_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "screen-space-inst",
+  "name": "Screen Space Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:01.731Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_inst",
+  "textureFiles": [
+    {
+      "name": "Garen_Skin14_WireArmor.tex",
+      "updatedAt": "2026-04-17T17:20:01.726Z"
+    },
+    {
+      "name": "Garen_Skin14_InterlaceScanLines.tex",
+      "updatedAt": "2026-04-17T17:20:01.726Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin14",
+    "bin": "data/characters/garen/skins/skin14.bin",
+    "entryKey": "Characters/Garen/Skins/Skin14/Materials/ScreenSpace_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin14",
+      "bin": "data/characters/garen/skins/skin14.bin"
+    }
+  ]
+}

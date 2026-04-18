@@ -1,0 +1,36 @@
+{
+  "id": "pyke-skin45-material-w-blades",
+  "name": "Pyke Skin45 Material W Blades",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:22.655Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_skin45_material_w_blades",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin45_Z_Material_Flames_03.tex",
+      "updatedAt": "2026-04-17T17:46:22.649Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin45",
+    "bin": "data/pyke_skins_skin45_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin45/Materials/Pyke_Skin45_Material_W_Blades"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin45",
+      "bin": "data/pyke_skins_skin45_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin"
+    }
+  ]
+}

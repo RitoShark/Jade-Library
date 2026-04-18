@@ -1,0 +1,25 @@
+{
+  "id": "honey-inst",
+  "name": "Honey Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:04.569Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_honey_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin22",
+    "bin": "data/characters/malzahar/skins/skin22.bin",
+    "entryKey": "Characters/Malzahar/Skins/Skin22/Materials/Honey_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin22",
+      "bin": "data/characters/malzahar/skins/skin22.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "diana-skin58-dragon-hands-mat",
+  "name": "Diana Skin58 Dragon Hands Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:24.680Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_diana_skin58_dragon_hands_mat",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin58_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:24.672Z"
+    },
+    {
+      "name": "Diana_Skin54_DLimbs_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:15:24.672Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:24.672Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin58",
+    "bin": "data/characters/diana/skins/skin58.bin",
+    "entryKey": "Characters/Diana/Skins/Skin58/Materials/Diana_Skin58_Dragon_Hands_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin58",
+      "bin": "data/characters/diana/skins/skin58.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "hecarim-scrolling-alpha-masked-inst",
+  "name": "Hecarim Scrolling Alpha Masked Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:19.986Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hecarim_scrolling_alpha_masked_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:21:19.979Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:21:19.979Z"
+    },
+    {
+      "name": "Hecarim_base_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:21:19.979Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:19.979Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin0",
+    "bin": "data/characters/hecarim/skins/skin0.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin0/Materials/Hecarim_Scrolling_ALphaMasked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin0",
+      "bin": "data/characters/hecarim/skins/skin0.bin"
+    }
+  ]
+}

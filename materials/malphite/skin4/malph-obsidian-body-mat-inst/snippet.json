@@ -1,0 +1,40 @@
+{
+  "id": "malph-obsidian-body-mat-inst",
+  "name": "Malph Obsidian Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:27.037Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_malph_obsidian_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin04_W_Malphite_Blend.tex",
+      "updatedAt": "2026-04-17T17:36:27.030Z"
+    },
+    {
+      "name": "Malphite_Base_P_Glowing_Fire.tex",
+      "updatedAt": "2026-04-17T17:36:27.030Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin4",
+    "bin": "data/characters/malphite/skins/skin4.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin4/Materials/Malph_Obsidian_Body_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin4",
+      "bin": "data/characters/malphite/skins/skin4.bin"
+    }
+  ]
+}

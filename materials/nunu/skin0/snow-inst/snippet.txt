@@ -1,0 +1,78 @@
+"jadelib_snow_inst" = StaticMaterialDef {
+    name: string = "jadelib_snow_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient"
+            texturePath: string = "assets/jadelib/snow-inst/Ice_Gradient_V02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dark_Overlay"
+            value: vec4 = { 0.25999999046325684, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Overlay"
+            value: vec4 = { 0.6499999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLight_Direction"
+            value: vec4 = { -0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLight_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Smooth_Step_Overlay"
+            value: vec4 = { 0.20000000298023224, 0.800000011920929, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Overlay_Sharpness"
+            value: vec4 = { 2.2409300804138184, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Overall_Light_Intesity"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Snow"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

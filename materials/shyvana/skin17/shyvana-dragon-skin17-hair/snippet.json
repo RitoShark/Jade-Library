@@ -1,0 +1,44 @@
+{
+  "id": "shyvana-dragon-skin17-hair",
+  "name": "Shyvana Dragon Skin17 Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:24.418Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shyvana_dragon_skin17_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:24.411Z"
+    },
+    {
+      "name": "ShyvanaDragon_Skin17_TX_CM.Shyvana_Rework.tex",
+      "updatedAt": "2026-04-17T17:54:24.411Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:24.411Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shyvana",
+    "skin": "skin17",
+    "bin": "data/characters/shyvanadragon/skins/skin17.bin",
+    "entryKey": "Characters/ShyvanaDragon/Skins/Skin17/Materials/ShyvanaDragon_Skin17_Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Shyvana",
+      "skin": "skin17",
+      "bin": "data/characters/shyvanadragon/skins/skin17.bin"
+    }
+  ]
+}

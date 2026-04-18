@@ -1,0 +1,64 @@
+{
+  "id": "passive-claw-glow",
+  "name": "Passive Claw Glow",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.357Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_passive_claw_glow",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "Nunu_Base_Pallette.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:08.349Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin0",
+    "bin": "3d86213da679fe75.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin0/Materials/Passive_Claw_Glow"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin0",
+      "bin": "3d86213da679fe75.bin"
+    }
+  ]
+}

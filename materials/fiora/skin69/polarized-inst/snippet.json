@@ -1,0 +1,52 @@
+{
+  "id": "polarized-inst",
+  "name": "Polarized Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:54.216Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_polarized_inst",
+  "textureFiles": [
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:18:54.210Z"
+    },
+    {
+      "name": "StepsMask.tex",
+      "updatedAt": "2026-04-17T17:18:54.210Z"
+    },
+    {
+      "name": "Fiora_Skin69_Gradient.tex",
+      "updatedAt": "2026-04-17T17:18:54.210Z"
+    },
+    {
+      "name": "Fiora_Skin69_Armor_Mask.tex",
+      "updatedAt": "2026-04-17T17:18:54.210Z"
+    },
+    {
+      "name": "Atlast_Test.tex",
+      "updatedAt": "2026-04-17T17:18:54.210Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fiora",
+    "skin": "skin69",
+    "bin": "data/characters/fiora/skins/skin69.bin",
+    "entryKey": "Characters/Fiora/Skins/Skin69/Materials/Polarized_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fiora",
+      "skin": "skin69",
+      "bin": "data/characters/fiora/skins/skin69.bin"
+    }
+  ]
+}

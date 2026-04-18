@@ -1,0 +1,44 @@
+{
+  "id": "box-matcap-bloom",
+  "name": "Box Matcap Bloom",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:05.867Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_box_matcap_bloom",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:10:05.859Z"
+    },
+    {
+      "name": "Matcap_no_color_test.tex",
+      "updatedAt": "2026-04-17T18:10:05.859Z"
+    },
+    {
+      "name": "Yone_Skin45_Box_Mask.tex",
+      "updatedAt": "2026-04-17T18:10:05.859Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin45",
+    "bin": "data/characters/yone/skins/skin45.bin",
+    "entryKey": "Characters/Yone/Skins/Skin45/Materials/Box_Matcap_Bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin45",
+      "bin": "data/characters/yone/skins/skin45.bin"
+    }
+  ]
+}

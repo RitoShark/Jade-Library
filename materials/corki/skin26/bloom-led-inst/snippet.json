@@ -1,0 +1,36 @@
+{
+  "id": "bloom-led-inst",
+  "name": "Bloom Led Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:35.181Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_led_inst",
+  "textureFiles": [
+    {
+      "name": "LED04.tex",
+      "updatedAt": "2026-04-17T17:14:35.158Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Corki",
+    "skin": "skin26",
+    "bin": "data/characters/corki/skins/skin26.bin",
+    "entryKey": "Characters/Corki/Skins/Skin26/Materials/Bloom_LED_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Corki",
+      "skin": "skin26",
+      "bin": "data/characters/corki/skins/skin26.bin"
+    }
+  ]
+}

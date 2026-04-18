@@ -1,0 +1,48 @@
+{
+  "id": "neeko-skin01-crystal-01-inst",
+  "name": "Neeko Skin01 Crystal 01 Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:33.868Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_neeko_skin01_crystal_01_inst",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin01_Crystal_RainbowGradient.tex",
+      "updatedAt": "2026-04-17T17:42:33.859Z"
+    },
+    {
+      "name": "Neeko_Skin01_Crystal_AuroraBorealis.tex",
+      "updatedAt": "2026-04-17T17:42:33.859Z"
+    },
+    {
+      "name": "Neeko_Skin01_Crystal_Mask.tex",
+      "updatedAt": "2026-04-17T17:42:33.859Z"
+    },
+    {
+      "name": "Neeko_Skin01_W_AvatarCube.tex",
+      "updatedAt": "2026-04-17T17:42:33.859Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin1",
+    "bin": "data/neeko_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin1/Materials/Neeko_Skin01_Crystal_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin1",
+      "bin": "data/neeko_skins_skin1_skins_skin2_skins_skin3_skins_skin4_skins_skin5_skins_skin6_skins_skin7_skins_skin8_skins_skin9.bin"
+    }
+  ]
+}

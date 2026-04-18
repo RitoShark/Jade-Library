@@ -1,0 +1,218 @@
+"jadelib_aatrox_skin07_inst" = StaticMaterialDef {
+    name: string = "jadelib_aatrox_skin07_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/aatrox-skin07-inst/Aatrox_Base_R_body_mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient_Texture"
+            texturePath: string = "assets/jadelib/aatrox-skin07-inst/Aatrox_Skin07_Gradient.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+            value: vec4 = { -0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pulse_Rate"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pulse_Max"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Sharpness"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Sharpness"
+            value: vec4 = { 0.0010000000474974513, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pulse_Offset"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Aatrox_VFXBase"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_Bias"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                                mTurnOnTimeSec: f32 = 4
+                                mTurnOffTimeSec: f32 = 0
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.0017193093663081527
+                                    0.2167387455701828
+                                    0.766768217086792
+                                    1.0048843622207642
+                                }
+                                values: list[f32] = {
+                                    -0.22144418954849243
+                                    0.2601386606693268
+                                    0.7522475123405457
+                                    0.8654100298881531
+                                }
+                            }
+                        }
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Passive_Death"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 3
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0.0032178766559809446
+                                    0.38147738575935364
+                                    0.9977753162384033
+                                }
+                                values: list[f32] = {
+                                    -0.22578026354312897
+                                    0.5838150382041931
+                                    0.9942196607589722
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Pulse_Rate"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "AatroxR"
+                    }
+                    mOnValue: f32 = 5
+                    mTurnOnTimeSec: f32 = 0
+                    mTurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "AatroxR"
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "ULT_out_to_passive_idle"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "1809707529"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Wings"
+                                }
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "AatroxR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Aatrox/Skins/Skin07/Aatrox_BloodMoon_Shadow_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

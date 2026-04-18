@@ -1,0 +1,44 @@
+{
+  "id": "diamond-gun-inst",
+  "name": "Diamond Gun Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:51.230Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diamond_gun_inst",
+  "textureFiles": [
+    {
+      "name": "Zeri_Skin29_Diamond_Body_TX_CM.SKINS_Zeri_Skin29.tex",
+      "updatedAt": "2026-04-17T18:12:51.221Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:51.221Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:51.221Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin29",
+    "bin": "data/characters/zeri/skins/skin29.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin29/Materials/Diamond_Gun_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin29",
+      "bin": "data/characters/zeri/skins/skin29.bin"
+    }
+  ]
+}

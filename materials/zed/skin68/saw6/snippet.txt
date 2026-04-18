@@ -1,0 +1,99 @@
+"jadelib_saw6" = StaticMaterialDef {
+    name: string = "jadelib_saw6"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Tint_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Tint"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Tint_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Idle1_Base"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = FloatGraphMaterialDriver {
+                                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                        mAnimationName: hash = "Idle1_Base"
+                                    }
+                                    graph: embed = VfxAnimatedFloatVariableData {
+                                        times: list[f32] = {
+                                            0
+                                            0.800000011920929
+                                            0.8001000285148621
+                                            1
+                                        }
+                                        values: list[f32] = {
+                                            0.20000000298023224
+                                            1
+                                            0
+                                            0.20000000298023224
+                                        }
+                                    }
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.19795918464660645
+                                        0.7979592084884644
+                                        0.9938775300979614
+                                    }
+                                    values: list[vec4] = {
+                                        { 1, 1, 1, 0 }
+                                        { 0.3519493341445923, 0, 0, 0 }
+                                        { 0.08813611418008804, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 1, 1, 0 }
+                    }
+                }
+            }
+        }
+    }
+}

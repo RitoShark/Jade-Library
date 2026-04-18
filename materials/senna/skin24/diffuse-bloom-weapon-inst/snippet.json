@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-weapon-inst",
+  "name": "Diffuse Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:26.994Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin16_idle_glow.tex",
+      "updatedAt": "2026-04-17T17:52:26.989Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin24",
+    "bin": "data/characters/senna/skins/skin24.bin",
+    "entryKey": "Characters/Senna/Skins/Skin24/Materials/Diffuse_Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin24",
+      "bin": "data/characters/senna/skins/skin24.bin"
+    }
+  ]
+}

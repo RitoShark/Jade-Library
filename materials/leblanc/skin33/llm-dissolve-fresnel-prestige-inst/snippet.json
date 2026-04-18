@@ -1,0 +1,42 @@
+{
+  "id": "llm-dissolve-fresnel-prestige-inst",
+  "name": "Llm Dissolve Fresnel Prestige Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:32.483Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_llm_dissolve_fresnel_prestige_inst",
+  "textureFiles": [
+    {
+      "name": "Leblanc_Skin33_TX_CM_Mask.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:32.477Z"
+    },
+    {
+      "name": "Leblanc_Skin33_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:32.477Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:32:32.477Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:32.477Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin33",
+    "bin": "data/characters/leblanc/skins/skin33.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin33/Materials/LLM_Dissolve_Fresnel_Prestige_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin33",
+      "bin": "data/characters/leblanc/skins/skin33.bin"
+    }
+  ]
+}

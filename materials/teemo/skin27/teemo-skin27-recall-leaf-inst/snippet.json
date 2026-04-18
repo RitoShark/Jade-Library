@@ -1,0 +1,36 @@
+{
+  "id": "teemo-skin27-recall-leaf-inst",
+  "name": "Teemo Skin27 Recall Leaf Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:39.577Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_teemo_skin27_recall_leaf_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin27_MaterialMask_03.tex",
+      "updatedAt": "2026-04-17T18:00:39.571Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin27",
+    "bin": "data/characters/teemo/skins/skin27.bin",
+    "entryKey": "Characters/Teemo/Skins/Skin27/Materials/Teemo_Skin27_RecallLeaf_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin27",
+      "bin": "data/characters/teemo/skins/skin27.bin"
+    }
+  ]
+}

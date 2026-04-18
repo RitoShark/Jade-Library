@@ -1,0 +1,64 @@
+{
+  "id": "ww-gnar-weapon-inst",
+  "name": "Ww Gnar Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.499Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ww_gnar_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "Gnar_Skin41_Matcap_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "Gnar_Skin41_ColorMask_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "Leblanc_Skin55_Iridescence_MAT_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "Gnar_Skin41_AdditiveScroll_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "Gnar_Skin41_AdditiveScrollMask_TX_CM.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    },
+    {
+      "name": "black.SKINS_Gnar_Skin41.tex",
+      "updatedAt": "2026-04-17T17:20:21.494Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin41",
+    "bin": "data/characters/gnar/skins/skin41.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin41/Materials/WW_Gnar_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin41",
+      "bin": "data/characters/gnar/skins/skin41.bin"
+    }
+  ]
+}

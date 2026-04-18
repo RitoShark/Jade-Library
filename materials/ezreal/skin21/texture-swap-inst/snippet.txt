@@ -1,0 +1,161 @@
+"jadelib_texture_swap_inst" = StaticMaterialDef {
+    name: string = "jadelib_texture_swap_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture_Primary"
+            texturePath: string = "assets/jadelib/texture-swap-inst/Ezreal_Skin21_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture_Ult"
+            texturePath: string = "assets/jadelib/texture-swap-inst/Ezreal_Skin21_Super_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/texture-swap-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_01"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Blend_Texture"
+            texturePath: string = "assets/jadelib/texture-swap-inst/Ezreal_Skin21_Mask_Stepped_TX_CM.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Sun_Blend"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Texture_UV_Scale01"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexture_Control01"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Mask_Blend"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "OFF_VALUE_ON_TEXTURE"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Leona_Texture_Transition"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Sun_Blend"
+                Enabled: bool = false
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell4"
+                                    "Spell4_Air"
+                                    "3955053507"
+                                    "2196635034"
+                                    "Spell4_Godmode"
+                                    "3984371062"
+                                    "3482046697"
+                                    "Spell4_To_Idle"
+                                    "Spell4_To_Run"
+                                }
+                            }
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 3
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                                mValueA: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                    mScriptName: string = "EzrealPassiveStacks"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 5
+                                }
+                            }
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 2
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Mask_Blend"
+                driver: pointer = MinMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        RemapFloatMaterialDriver {
+                            mDriver: pointer = BuffCounterDynamicMaterialFloatDriver {
+                                mScriptName: string = "EzrealPassiveStacks"
+                            }
+                            mMaxValue: f32 = 5
+                            mOutputMinValue: f32 = 1
+                            mOutputMaxValue: f32 = 0
+                        }
+                        RemapFloatMaterialDriver {
+                            mDriver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Spell4"
+                                        "Spell4_Air"
+                                        "3955053507"
+                                        "2196635034"
+                                        "Spell4_Godmode"
+                                        "3984371062"
+                                        "3482046697"
+                                        "Spell4_To_Idle"
+                                        "Spell4_To_Run"
+                                    }
+                                }
+                                mOnValue: f32 = 5
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.800000011920929
+                            }
+                            mMaxValue: f32 = 5
+                            mOutputMinValue: f32 = 1
+                            mOutputMaxValue: f32 = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

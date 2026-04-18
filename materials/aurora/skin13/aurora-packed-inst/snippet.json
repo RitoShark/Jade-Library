@@ -1,0 +1,48 @@
+{
+  "id": "aurora-packed-inst",
+  "name": "Aurora Packed Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:56.052Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aurora_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:10:56.045Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:10:56.045Z"
+    },
+    {
+      "name": "black.SKINS_Aurora_Skin11.tex",
+      "updatedAt": "2026-04-17T17:10:56.045Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:10:56.045Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aurora",
+    "skin": "skin13",
+    "bin": "data/characters/aurora/skins/skin13.bin",
+    "entryKey": "Characters/Aurora/Skins/Skin13/Materials/Aurora_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aurora",
+      "skin": "skin13",
+      "bin": "data/characters/aurora/skins/skin13.bin"
+    }
+  ]
+}

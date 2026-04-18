@@ -1,0 +1,44 @@
+{
+  "id": "darius-ice",
+  "name": "Darius Ice",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:53.993Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_darius_ice",
+  "textureFiles": [
+    {
+      "name": "Darius_Skin65_Ice_TX_CM.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:53.987Z"
+    },
+    {
+      "name": "Darius_Skin65_KhazixBA_ColorMult2.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:53.987Z"
+    },
+    {
+      "name": "Darius_Skin65_KhazixCrater_72.SKINS_Darius_Skin65.tex",
+      "updatedAt": "2026-04-17T17:14:53.987Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin65",
+    "bin": "data/characters/darius/skins/skin65.bin",
+    "entryKey": "Characters/Darius/Skins/Skin65/Materials/Darius_Ice"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin65",
+      "bin": "data/characters/darius/skins/skin65.bin"
+    }
+  ]
+}

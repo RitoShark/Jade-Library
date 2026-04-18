@@ -1,0 +1,64 @@
+{
+  "id": "vayne-skin64-body-mat-inst",
+  "name": "Vayne Skin64 Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:51.000Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin64_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "Vayne_Skin64_ColorMask_MAT_TX_CM.SKINS_Vayne_Skin64.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "Vayne_Skin64_Iridescence_MAT_TX_CM.SKINS_Vayne_Skin64.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "horn_noise_TEX.SKINS_Vayne_Skin64.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "Vayne_Skin64_AdditiveScrollMask_MAT_TX_CM.SKINS_Vayne_Skin64.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    },
+    {
+      "name": "black.SKINS_Vayne_Skin64.tex",
+      "updatedAt": "2026-04-17T18:03:50.991Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin64",
+    "bin": "data/characters/vayne/skins/skin64.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin64/Materials/Vayne_Skin64_Body_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin64",
+      "bin": "data/characters/vayne/skins/skin64.bin"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "llm-dissolve-fresnel-blend-gold-inst",
+  "name": "Llm Dissolve Fresnel Blend Gold Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:58.191Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_llm_dissolve_fresnel_blend_gold_inst",
+  "textureFiles": [
+    {
+      "name": "21.AprilFools2025.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    },
+    {
+      "name": "CrystalPattern.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    },
+    {
+      "name": "Default_Grid.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    },
+    {
+      "name": "Lucian_Skin19_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    },
+    {
+      "name": "Lucian_Skin19_E_OilySmoke_erode.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    },
+    {
+      "name": "Lucian_Skin19_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:34:58.185Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin19",
+    "bin": "data/characters/lucian/skins/skin19.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin19/Materials/LLM_Dissolve_Fresnel_Blend_Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin19",
+      "bin": "data/characters/lucian/skins/skin19.bin"
+    }
+  ]
+}

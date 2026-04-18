@@ -1,0 +1,56 @@
+{
+  "id": "honey-inst",
+  "name": "Honey Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:11.553Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_honey_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:11.547Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin56",
+    "bin": "data/characters/blitzcrank/skins/skin56.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin56/Materials/Honey_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin56",
+      "bin": "data/characters/blitzcrank/skins/skin56.bin"
+    }
+  ]
+}

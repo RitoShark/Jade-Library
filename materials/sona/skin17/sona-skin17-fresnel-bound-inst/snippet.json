@@ -1,0 +1,40 @@
+{
+  "id": "sona-skin17-fresnel-bound-inst",
+  "name": "Sona Skin17 Fresnel Bound Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:11.277Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin17_fresnel_bound_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin17_Z_Gradient_Bound_1.tex",
+      "updatedAt": "2026-04-17T17:56:11.271Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:56:11.271Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin17",
+    "bin": "data/characters/sona/skins/skin17.bin",
+    "entryKey": "Characters/Sona/Skins/Skin17/Materials/Sona_Skin17_Fresnel_Bound_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin17",
+      "bin": "data/characters/sona/skins/skin17.bin"
+    }
+  ]
+}

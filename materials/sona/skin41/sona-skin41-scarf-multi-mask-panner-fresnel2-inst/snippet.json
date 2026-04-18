@@ -1,0 +1,48 @@
+{
+  "id": "sona-skin41-scarf-multi-mask-panner-fresnel2-inst",
+  "name": "Sona Skin41 Scarf Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:15.082Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin41_scarf_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:15.076Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:15.076Z"
+    },
+    {
+      "name": "Sona_Skin41_sona_mat_Diffuse.tex",
+      "updatedAt": "2026-04-17T17:56:15.076Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:15.076Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin41",
+    "bin": "data/characters/sona/skins/skin41.bin",
+    "entryKey": "Characters/Sona/Skins/Skin41/Materials/Sona_Skin41_ScarfMultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin41",
+      "bin": "data/characters/sona/skins/skin41.bin"
+    }
+  ]
+}

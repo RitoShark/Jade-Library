@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-fire-alpha-inst",
+  "name": "Scrolling Fire Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:44.763Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_fire_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Anivia_Skin08_Wings_MASK_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:44.758Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Anivia",
+    "skin": "skin8",
+    "bin": "data/anivia_skins_skin10_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin8_skins_skin9.bin",
+    "entryKey": "Characters/Anivia/Skins/Skin8/Materials/ScrollingFireAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Anivia",
+      "skin": "skin8",
+      "bin": "data/anivia_skins_skin10_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin8_skins_skin9.bin"
+    }
+  ]
+}

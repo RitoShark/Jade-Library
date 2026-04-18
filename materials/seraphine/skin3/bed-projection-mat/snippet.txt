@@ -1,0 +1,116 @@
+"jadelib_bed_projection_mat" = StaticMaterialDef {
+    name: string = "jadelib_bed_projection_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Projection_Texture"
+            texturePath: string = "assets/jadelib/bed-projection-mat/Seraphine_Skin03_Caustic2.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Animated_Opacity"
+            value: vec4 = { 0.16750000417232513, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Projection_Size"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Projection_ScrollSpeed"
+            value: vec4 = { 0.20000000298023224, 0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Projection_Rotation"
+            value: vec4 = { 2.625, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Projection_Opacity_Global"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ProjectionBloom"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ProjectionBloom_Color"
+            value: vec4 = { 0.0941176488995552, 0.48627451062202454, 1, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/LocalSpace_Projection"
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Animated_Opacity"
+                driver: pointer = FloatGraphMaterialDriver {
+                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                        mAnimationName: hash = "Recall"
+                    }
+                    graph: embed = VfxAnimatedFloatVariableData {
+                        times: list[f32] = {
+                            0.016260161995887756
+                            0.4305241107940674
+                            0.8250008225440979
+                        }
+                        values: list[f32] = {
+                            0
+                            0
+                            0.491150438785553
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Diffuse_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                        mAnimationName: hash = "Recall"
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.43166667222976685
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                            { 0.07058823853731155, 0.09803921729326248, 0.2235294133424759, 1 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

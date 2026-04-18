@@ -1,0 +1,44 @@
+{
+  "id": "weapon-spiral-inst",
+  "name": "Weapon Spiral Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:06.508Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_spiral_inst",
+  "textureFiles": [
+    {
+      "name": "Gwen_Skin20_Weapons_Hull_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:21:06.502Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.502Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:06.502Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gwen",
+    "skin": "skin20",
+    "bin": "data/characters/gwen/skins/skin20.bin",
+    "entryKey": "Characters/Gwen/Skins/Skin20/Materials/WeaponSpiral_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gwen",
+      "skin": "skin20",
+      "bin": "data/characters/gwen/skins/skin20.bin"
+    }
+  ]
+}

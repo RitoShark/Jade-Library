@@ -1,0 +1,56 @@
+{
+  "id": "fresnel-glass-inst",
+  "name": "Fresnel Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:49.018Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:12:49.010Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Braum",
+    "skin": "skin42",
+    "bin": "data/braum_skins_skin42_skins_skin43_skins_skin44_skins_skin45_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50.bin",
+    "entryKey": "Characters/Braum/Skins/Skin42/Materials/Fresnel_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Braum",
+      "skin": "skin42",
+      "bin": "data/braum_skins_skin42_skins_skin43_skins_skin44_skins_skin45_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50.bin"
+    }
+  ]
+}

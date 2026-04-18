@@ -1,0 +1,44 @@
+{
+  "id": "leaves-flow",
+  "name": "Leaves Flow",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:26.382Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_leaves_flow",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.376Z"
+    },
+    {
+      "name": "black.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.376Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:26.376Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/characters/sona/skins/skin66.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/Leaves_Flow"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/characters/sona/skins/skin66.bin"
+    }
+  ]
+}

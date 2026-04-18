@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-shaco-inst",
+  "name": "Bloom Parts Shaco Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:50.487Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_shaco_inst",
+  "textureFiles": [
+    {
+      "name": "Shaco_Skin23_Idle_Weapon.tex",
+      "updatedAt": "2026-04-17T17:53:50.482Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin25",
+    "bin": "data/characters/shaco/skins/skin25.bin",
+    "entryKey": "Characters/Shaco/Skins/Skin25/Materials/Bloom_Parts_Shaco_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin25",
+      "bin": "data/characters/shaco/skins/skin25.bin"
+    }
+  ]
+}

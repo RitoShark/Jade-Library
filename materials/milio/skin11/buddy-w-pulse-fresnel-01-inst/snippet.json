@@ -1,0 +1,48 @@
+{
+  "id": "buddy-w-pulse-fresnel-01-inst",
+  "name": "Buddy W Pulse Fresnel 01 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:32.664Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_buddy_w_pulse_fresnel_01_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:38:32.653Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:38:32.653Z"
+    },
+    {
+      "name": "MilioMinion_Skin11_FireBuddy_TX_CM.SKINS_Milio_Skin11.tex",
+      "updatedAt": "2026-04-17T17:38:32.653Z"
+    },
+    {
+      "name": "common_color-hold.SKINS_Milio_Skin11.tex",
+      "updatedAt": "2026-04-17T17:38:32.653Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin11",
+    "bin": "7e44eb6c129b4444.bin",
+    "entryKey": "Characters/MilioMinion/Skins/Skin11/Materials/Buddy_W_Pulse_Fresnel_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin11",
+      "bin": "7e44eb6c129b4444.bin"
+    }
+  ]
+}

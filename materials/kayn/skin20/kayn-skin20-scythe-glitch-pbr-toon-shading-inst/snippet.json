@@ -1,0 +1,44 @@
+{
+  "id": "kayn-skin20-scythe-glitch-pbr-toon-shading-inst",
+  "name": "Kayn Skin20 Scythe Glitch Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.305Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayn_skin20_scythe_glitch_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Kayn_Skin20_Default_Glitch_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:30:13.300Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:30:13.300Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:30:13.300Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin20",
+    "bin": "data/characters/kayn/skins/skin20.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin20/Materials/Kayn_Skin20_Scythe_Glitch_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin20",
+      "bin": "data/characters/kayn/skins/skin20.bin"
+    }
+  ]
+}

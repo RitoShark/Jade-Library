@@ -1,0 +1,44 @@
+{
+  "id": "body-mat",
+  "name": "Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.344Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_mat",
+  "textureFiles": [
+    {
+      "name": "Taliyah_Skin21_MatCap2_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.338Z"
+    },
+    {
+      "name": "Taliyah_Skin21_BodyMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.338Z"
+    },
+    {
+      "name": "Taliyah_Skin21_BodyMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:45.338Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin21",
+    "bin": "data/characters/taliyah/skins/skin21.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin21/Materials/Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin21",
+      "bin": "data/characters/taliyah/skins/skin21.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "uvscrolling",
+  "name": "Uvscrolling",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:46.721Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_uvscrolling",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "RekSai_Skin26_IridescentTex_TX_CM.SKINS_RekSai_Skin26.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "RekSai_Skin26_Blood_Scroll_Mask.SKINS_RekSai_Skin26.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "RekSai_Skin26_TX_CM_Mask.SKINS_RekSai_Skin26.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    },
+    {
+      "name": "RekSai_Skin30_TX_CM.Chroma_RekSai_AnimaSquad_2024.tex",
+      "updatedAt": "2026-04-17T17:47:46.711Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "RekSai",
+    "skin": "skin30",
+    "bin": "data/characters/reksai/skins/skin30.bin",
+    "entryKey": "Characters/RekSai/Skins/Skin30/Materials/UVScrolling"
+  },
+  "usedBy": [
+    {
+      "champion": "RekSai",
+      "skin": "skin30",
+      "bin": "data/characters/reksai/skins/skin30.bin"
+    }
+  ]
+}

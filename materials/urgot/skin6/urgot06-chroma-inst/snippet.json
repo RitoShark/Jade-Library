@@ -1,0 +1,56 @@
+{
+  "id": "urgot06-chroma-inst",
+  "name": "Urgot06 Chroma Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:00.789Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_urgot06_chroma_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    },
+    {
+      "name": "Urgot_Skin03_RMA.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:03:00.782Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Urgot",
+    "skin": "skin6",
+    "bin": "data/characters/urgot/skins/skin6.bin",
+    "entryKey": "Characters/Urgot/Skins/Skin6/Materials/Urgot06_Chroma_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Urgot",
+      "skin": "skin6",
+      "bin": "data/characters/urgot/skins/skin6.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "material-flames-inst",
+  "name": "Material Flames Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:29.388Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_material_flames_inst",
+  "textureFiles": [
+    {
+      "name": "Brand_Skin42_Matflame.tex",
+      "updatedAt": "2026-04-17T17:12:29.383Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Brand",
+    "skin": "skin42",
+    "bin": "data/characters/brand/skins/skin42.bin",
+    "entryKey": "Characters/Brand/Skins/Skin42/Materials/Material_Flames_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Brand",
+      "skin": "skin42",
+      "bin": "data/characters/brand/skins/skin42.bin"
+    }
+  ]
+}

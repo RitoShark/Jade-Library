@@ -1,0 +1,40 @@
+{
+  "id": "kayle-skin08-wings-new",
+  "name": "Kayle Skin08 Wings New",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.790Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin08_wings_new",
+  "textureFiles": [
+    {
+      "name": "lava_actual.tex",
+      "updatedAt": "2026-04-17T17:29:43.783Z"
+    },
+    {
+      "name": "Kayle_Skin08_Wing_Rage_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:43.783Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin8",
+    "bin": "data/characters/kayle/skins/skin8.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin8/Materials/Kayle_SKin08_Wings_New"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin8",
+      "bin": "data/characters/kayle/skins/skin8.bin"
+    }
+  ]
+}

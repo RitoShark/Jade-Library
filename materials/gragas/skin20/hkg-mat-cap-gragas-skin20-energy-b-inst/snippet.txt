@@ -1,0 +1,96 @@
+"jadelib_hkg_mat_cap_gragas_skin20_energy_b_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_gragas_skin20_energy_b_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_03"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-gragas-skin20-energy-b-inst/Gragas_Skin20_Bear_MaterialA_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-gragas-skin20-energy-b-inst/Gragas_Skin20_SnowballDB_MatCap.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "AnimPivotPos"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShakeAtten"
+            value: vec4 = { 675.8400268554688, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimShake"
+            value: vec4 = { 0.09000000357627869, 0, 0.019999999552965164, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AnimSpeed"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Trans_Color"
+            value: vec4 = { 0.8999999761581421, 0.36000001430511475, 0.17000000178813934, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightPos"
+            value: vec4 = { 0, 350, -300, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LNearAtten"
+            value: vec4 = { 200, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LFarAtten"
+            value: vec4 = { 550, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "BLEND_DIFFUSE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DIFFUSE_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_LuLu_Skin26"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

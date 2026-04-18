@@ -1,0 +1,48 @@
+{
+  "id": "evelynn-crystal-lashers-inst",
+  "name": "Evelynn Crystal Lashers Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.982Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_evelynn_crystal_lashers_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin06_RainbowGradient_2.tex",
+      "updatedAt": "2026-04-17T17:17:20.970Z"
+    },
+    {
+      "name": "Evelynn_Skin06_DiamondTexture_1.tex",
+      "updatedAt": "2026-04-17T17:17:20.970Z"
+    },
+    {
+      "name": "Evelynn_Skin06_LashersMaterialMask.tex",
+      "updatedAt": "2026-04-17T17:17:20.970Z"
+    },
+    {
+      "name": "Evelynn_Skin06_FresnelGradient_1.tex",
+      "updatedAt": "2026-04-17T17:17:20.970Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin6",
+    "bin": "data/characters/evelynn/skins/skin6.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin6/Materials/Evelynn_Crystal_Lashers_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin6",
+      "bin": "data/characters/evelynn/skins/skin6.bin"
+    }
+  ]
+}

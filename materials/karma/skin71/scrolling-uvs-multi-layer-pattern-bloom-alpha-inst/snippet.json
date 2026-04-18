@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-pattern-bloom-alpha-inst",
+  "name": "Scrolling Uvs Multi Layer Pattern Bloom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:57.532Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_pattern_bloom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Karma_Skin70_ScrollingWater_TX_CM.SKINS_Karma_Skin70.tex",
+      "updatedAt": "2026-04-17T17:27:57.526Z"
+    },
+    {
+      "name": "Karma_Skin71_ScrollingWater_Flipped.Chroma_Karma_SpiritBlossom.tex",
+      "updatedAt": "2026-04-17T17:27:57.526Z"
+    },
+    {
+      "name": "Karma_Skin70_Mask_TX_CM.SKINS_Karma_Skin70.tex",
+      "updatedAt": "2026-04-17T17:27:57.526Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin71",
+    "bin": "data/characters/karma/skins/skin71.bin",
+    "entryKey": "Characters/Karma/Skins/Skin71/Materials/ScrollingUVs_MultiLayer_Pattern_Bloom_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin71",
+      "bin": "data/characters/karma/skins/skin71.bin"
+    }
+  ]
+}

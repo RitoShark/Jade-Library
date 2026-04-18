@@ -1,0 +1,44 @@
+{
+  "id": "stone-inst",
+  "name": "Stone Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:45.977Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_stone_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:59:45.966Z"
+    },
+    {
+      "name": "Taliyah_Skin24_Crystal_Mask_TX_CM.SKINS_Taliyah_Skin24.tex",
+      "updatedAt": "2026-04-17T17:59:45.966Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:59:45.966Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taliyah",
+    "skin": "skin24",
+    "bin": "data/characters/taliyah/skins/skin24.bin",
+    "entryKey": "Characters/Taliyah/Skins/Skin24/Materials/Stone_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taliyah",
+      "skin": "skin24",
+      "bin": "data/characters/taliyah/skins/skin24.bin"
+    }
+  ]
+}

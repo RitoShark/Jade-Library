@@ -1,0 +1,86 @@
+"jadelib_vladimir_skin57_topback2_platform_dot_inst" = StaticMaterialDef {
+    name: string = "jadelib_vladimir_skin57_topback2_platform_dot_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scrolling_Texture"
+            texturePath: string = "assets/jadelib/vladimir-skin57-topback2-platform-dot-inst/Vladimir_Skin49_Topback2_Screendot_TX_CM.SKINS_Vladimir_Skin49.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Alpha_Texture"
+            texturePath: string = "assets/jadelib/vladimir-skin57-topback2-platform-dot-inst/Vladimir_Skin49_Topback2_Alpha_TX_CM.SKINS_Vladimir_Skin49.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scale"
+            value: vec4 = { 2.5, 1.399999976158142, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Speed"
+            value: vec4 = { 0, 0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Tint_Color"
+            value: vec4 = { 0.6000000238418579, 0.20000000298023224, 1, 1 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ScrollingUVs_MultiAlpha"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Tint_Color"
+                driver: pointer = ColorGraphMaterialDriver {
+                    driver: pointer = SineMaterialDriver {
+                        mDriver: pointer = TimeMaterialDriver {}
+                        mFrequency: f32 = 2
+                        mBias: f32 = 1.2999999523162842
+                    }
+                    colors: embed = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.6079592108726501
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.5968421101570129, 0.7021052837371826, 1, 1 }
+                            { 0.07978947460651398, 0.7984210252761841, 0.964736819267273, 0.9231578707695007 }
+                            { 0.4589473605155945, 1, 1, 1 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

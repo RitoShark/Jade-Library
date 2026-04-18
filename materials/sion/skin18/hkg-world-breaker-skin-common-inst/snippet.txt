@@ -1,0 +1,227 @@
+"jadelib_hkg_world_breaker_skin_common_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_world_breaker_skin_common_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hkg-world-breaker-skin-common-inst/Sion_Skin18_Main_MAT_Mask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0, 0.1882352977991104, 0.16470588743686676, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Area"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Color"
+            value: vec4 = { 0, 0.1764705926179886, 0.08235294371843338, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 3.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Frequcey"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Stream"
+            value: vec4 = { -0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Color"
+            value: vec4 = { 0.03529411926865578, 0.2666666805744171, 0.21568627655506134, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Pissive"
+            value: vec4 = { 0.0470588244497776, 0.3019607961177826, 0.4588235318660736, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "tatto_Pissive"
+            value: vec4 = { 0.0941176488995552, 0.7019608020782471, 0.501960813999176, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pissive_Hand"
+            value: vec4 = { 0.05000000074505806, 1, 0.6000000238418579, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Brightness_Color"
+            value: vec4 = { 0.1882352977991104, 0.7568627595901489, 0.5960784554481506, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flash_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWidth"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_1"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Speed_2"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wind_Direction"
+            value: vec4 = { 1, 0, 1, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "PASSIVE_SWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MALZAHAR_SWITCH"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_ANIM_SWITCH"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_WorldBreakerSkin_Common"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 0.6000000238418579
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Flash_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 1
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Wind_Speed_1"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ZhonyasRingShield"
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 0.5
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Wind_Speed_2"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "ZhonyasRingShield"
+                            }
+                            mOnValue: f32 = 0
+                            mOffValue: f32 = 1
+                            mTurnOnTimeSec: f32 = 0
+                            mTurnOffTimeSec: f32 = 0
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "sionpassivezombie"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sion/Skins/Skin18/Sion_Skin18_TX_EM.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Sion/Skins/Skin18/Sion_Skin18_TX_EM.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "sionpassivezombie"
+                        }
+                        TextureName: string = "ASSETS/Characters/Sion/Skins/Skin18/Sion_Skin18_Passive_MAT_Mask.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Sion/Skins/Skin18/Sion_Skin18_Main_MAT_Mask.tex"
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "PASSIVE_SWITCH"
+            driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                mScriptName: string = "sionpassivezombie"
+            }
+        }
+    }
+}

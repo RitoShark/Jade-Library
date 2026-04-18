@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-wipe-skin02-inst",
+  "name": "Scrolling Uvs Wipe Skin02 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:20.190Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_wipe_skin02_inst",
+  "textureFiles": [
+    {
+      "name": "Varus_Skin02_Bow_Mask.tex",
+      "updatedAt": "2026-04-17T18:03:20.183Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin2",
+    "bin": "data/characters/varus/skins/skin2.bin",
+    "entryKey": "Characters/Varus/Skins/Skin2/Materials/ScrollingUVs_Wipe_Skin02_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin2",
+      "bin": "data/characters/varus/skins/skin2.bin"
+    }
+  ]
+}

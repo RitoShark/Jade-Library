@@ -1,0 +1,56 @@
+{
+  "id": "hwei-pbr-vfx1-inst",
+  "name": "Hwei Pbr Vfx1 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:48.487Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hwei_pbr_vfx1_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    },
+    {
+      "name": "blackbox.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    },
+    {
+      "name": "Hwei_Base_Foundation_Palette03.SKINS_Hwei_Skin11.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    },
+    {
+      "name": "Hwei_Base_Foundation_Palette_RMATXT.SKINS_Hwei_Skin11.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    },
+    {
+      "name": "Hwei_Base_Foundation_Palette_RMATXT.SKINS_Hwei_Skin11.tex",
+      "updatedAt": "2026-04-17T17:21:48.478Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hwei",
+    "skin": "skin13",
+    "bin": "data/characters/hwei/skins/skin13.bin",
+    "entryKey": "Characters/Hwei/Skins/Skin13/Materials/Hwei_PBR_VFX1_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hwei",
+      "skin": "skin13",
+      "bin": "data/characters/hwei/skins/skin13.bin"
+    }
+  ]
+}

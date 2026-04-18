@@ -1,0 +1,146 @@
+"jadelib_irelia_skin44_bladewall_inst" = StaticMaterialDef {
+    name: string = "jadelib_irelia_skin44_bladewall_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/irelia-skin44-bladewall-inst/DefaultColorOverlifetime.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color1"
+            value: vec4 = { 0.7058823704719543, 0.6666666865348816, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel1_Bias"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel1_Size"
+            value: vec4 = { 3.1608023643493652, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Num_Steps"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "stepValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ENV_Map_Contribution"
+            value: vec4 = { 2.075000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color2"
+            value: vec4 = { 0.21960784494876862, 0.33725491166114807, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ENV_Fresnel_Masking"
+            value: vec4 = { 19.840845108032227, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Reflection_Tint"
+            value: vec4 = { 0.9882352948188782, 1, 0.7254902124404907, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel2_Size"
+            value: vec4 = { 0.8809449672698975, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel2_Bias"
+            value: vec4 = { -0.5400000214576721, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL_MASK"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Glow_TextureSteps"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color1"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = IsEnemyDynamicMaterialBoolDriver {}
+                    mColorOn: vec4 = { 1, 0.6352941393852234, 0, 1 }
+                    mColorOff: vec4 = { 1, 0.8899977207183838, 0.7600061297416687, 0.6000000238418579 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = IsEnemyDynamicMaterialBoolDriver {}
+                    mColorOn: vec4 = { 1, 0.9411764740943909, 0.48627451062202454, 1 }
+                    mColorOff: vec4 = { 0.6200045943260193, 0.4000000059604645, 0.25999847054481506, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color2"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = IsEnemyDynamicMaterialBoolDriver {}
+                    mColorOn: vec4 = { 1, 0.95686274766922, 0.6313725709915161, 1 }
+                    mColorOff: vec4 = { 1, 0.6352941393852234, 0.2705882489681244, 0.6000000238418579 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsEnemyDynamicMaterialBoolDriver {}
+                        TextureName: string = "ASSETS/Characters/Irelia/Skins/Skin44/Irelia_Skin44_blades_TX_CM.tex"
+                    }
+                }
+            }
+        }
+    }
+}

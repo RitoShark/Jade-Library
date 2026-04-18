@@ -1,0 +1,44 @@
+{
+  "id": "evelynn-shadow",
+  "name": "Evelynn Shadow",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:19.824Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_evelynn_shadow",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.816Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:19.816Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.816Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin52",
+    "bin": "data/characters/evelynn/skins/skin52.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin52/Materials/Evelynn_Shadow"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin52",
+      "bin": "data/characters/evelynn/skins/skin52.bin"
+    }
+  ]
+}

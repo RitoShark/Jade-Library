@@ -1,0 +1,36 @@
+{
+  "id": "bloom-inst",
+  "name": "Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:40.994Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:40.987Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin38",
+    "bin": "data/characters/kogmaw/skins/skin38.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin38/Materials/Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin38",
+      "bin": "data/characters/kogmaw/skins/skin38.bin"
+    }
+  ]
+}

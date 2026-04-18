@@ -1,0 +1,68 @@
+{
+  "id": "onsen-leg",
+  "name": "Onsen Leg",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:46.670Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_onsen_leg",
+  "textureFiles": [
+    {
+      "name": "Volibear_Skin29_TurbulDeform_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "Volibear_Skin29_Mask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "Volibear_Skin29_WaterShapeMask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "Volibear_Skin29_FlowMap_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "Volibear_Skin29_AdditiveScrollCombo_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "CaseTexture03.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:06:46.663Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Volibear",
+    "skin": "skin29",
+    "bin": "data/characters/volibear/skins/skin29.bin",
+    "entryKey": "Characters/Volibear/Skins/Skin29/Materials/Onsen_Leg"
+  },
+  "usedBy": [
+    {
+      "champion": "Volibear",
+      "skin": "skin29",
+      "bin": "data/characters/volibear/skins/skin29.bin"
+    }
+  ]
+}

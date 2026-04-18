@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.068Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Rengar_Skin40_MatCap_ToonPlastic_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:00.063Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.063Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin1",
+    "bin": "data/characters/briar/skins/skin1.bin",
+    "entryKey": "Characters/Briar/Skins/Skin1/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin1",
+      "bin": "data/characters/briar/skins/skin1.bin"
+    }
+  ]
+}

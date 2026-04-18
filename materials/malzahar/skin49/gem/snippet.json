@@ -1,0 +1,49 @@
+{
+  "id": "gem",
+  "name": "Gem",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:58.941Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gem",
+  "textureFiles": [
+    {
+      "name": "Malzahar_Skin49_Matcap_TX_CM.SKINS_Malzahar_Skin49.tex",
+      "updatedAt": "2026-04-17T17:37:05.409Z"
+    },
+    {
+      "name": "MalzaharVoidling_Skin49_Mask_TX_CM.SKINS_Malzahar_Skin49.tex",
+      "updatedAt": "2026-04-17T17:37:05.409Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:37:05.409Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin49",
+    "bin": "data/characters/malzaharvoidling/skins/skin49.bin",
+    "entryKey": "Characters/MalzaharVoidling/Skins/Skin49/Materials/Gem"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin49",
+      "bin": "data/characters/malzaharvoidling/skins/skin49.bin"
+    },
+    {
+      "champion": "Ruby_Malzahar",
+      "skin": "skin49",
+      "bin": "data/characters/malzaharvoidling/skins/skin49.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "rumble-skin23-coffee-inst",
+  "name": "Rumble Skin23 Coffee Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:55.257Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rumble_skin23_coffee_inst",
+  "textureFiles": [
+    {
+      "name": "Rumble_Skin23_TX_Coffee_Mult02.tex",
+      "updatedAt": "2026-04-17T17:50:55.251Z"
+    },
+    {
+      "name": "Rumble_Skin23_TX_Coffee_Mult01.tex",
+      "updatedAt": "2026-04-17T17:50:55.251Z"
+    },
+    {
+      "name": "Rumble_Skin23_color01.tex",
+      "updatedAt": "2026-04-17T17:50:55.251Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin23",
+    "bin": "data/characters/rumble/skins/skin23.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin23/Materials/Rumble_Skin23_Coffee_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin23",
+      "bin": "data/characters/rumble/skins/skin23.bin"
+    }
+  ]
+}

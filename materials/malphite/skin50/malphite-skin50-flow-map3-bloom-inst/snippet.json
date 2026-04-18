@@ -1,0 +1,44 @@
+{
+  "id": "malphite-skin50-flow-map3-bloom-inst",
+  "name": "Malphite Skin50 Flow Map3 Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:44.342Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_malphite_skin50_flow_map3_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin37_CloudFM_TX_CM.SKINS_Malphite_Skin48.tex",
+      "updatedAt": "2026-04-17T17:36:44.336Z"
+    },
+    {
+      "name": "Malphite_Skin50_PassiveArmor_TX_CM.Chroma_Malphite_AprilFools.tex",
+      "updatedAt": "2026-04-17T17:36:44.336Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:44.336Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin50",
+    "bin": "data/characters/malphite/skins/skin50.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin50/Materials/Malphite_Skin50_FlowMap3_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin50",
+      "bin": "data/characters/malphite/skins/skin50.bin"
+    }
+  ]
+}

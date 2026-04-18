@@ -1,0 +1,48 @@
+{
+  "id": "horse3dark-inst",
+  "name": "Horse3dark Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:56.446Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_horse3dark_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_Skin17_Horse_Alpha.tex",
+      "updatedAt": "2026-04-17T17:09:56.441Z"
+    },
+    {
+      "name": "Ashe_Skin17_Black.tex",
+      "updatedAt": "2026-04-17T17:09:56.441Z"
+    },
+    {
+      "name": "HeimerSnowTile.tex",
+      "updatedAt": "2026-04-17T17:09:56.441Z"
+    },
+    {
+      "name": "StepsMask.tex",
+      "updatedAt": "2026-04-17T17:09:56.441Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin17",
+    "bin": "data/characters/ashe/skins/skin17.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin17/Materials/Horse3Dark_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin17",
+      "bin": "data/characters/ashe/skins/skin17.bin"
+    }
+  ]
+}

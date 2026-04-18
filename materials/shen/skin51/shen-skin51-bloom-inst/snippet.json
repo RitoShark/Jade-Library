@@ -1,0 +1,36 @@
+{
+  "id": "shen-skin51-bloom-inst",
+  "name": "Shen Skin51 Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:06.538Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shen_skin51_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Shen_Skin51_Mask_TX_CM.SKINS_Shen_Skin51.tex",
+      "updatedAt": "2026-04-17T17:54:06.533Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shen",
+    "skin": "skin51",
+    "bin": "data/characters/shen/skins/skin51.bin",
+    "entryKey": "Characters/Shen/Skins/Skin51/Materials/Shen_Skin51_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shen",
+      "skin": "skin51",
+      "bin": "data/characters/shen/skins/skin51.bin"
+    }
+  ]
+}

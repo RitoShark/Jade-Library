@@ -1,0 +1,44 @@
+{
+  "id": "armor-eyes-mat",
+  "name": "Armor Eyes Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:54.020Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_armor_eyes_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:39:54.012Z"
+    },
+    {
+      "name": "Mordekaiser_Skin44_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:39:54.012Z"
+    },
+    {
+      "name": "Mordekaiser_Skin44_Eyes_Blink_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:39:54.012Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin44",
+    "bin": "data/characters/mordekaiser/skins/skin44.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin44/Materials/Armor_Eyes_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin44",
+      "bin": "data/characters/mordekaiser/skins/skin44.bin"
+    }
+  ]
+}

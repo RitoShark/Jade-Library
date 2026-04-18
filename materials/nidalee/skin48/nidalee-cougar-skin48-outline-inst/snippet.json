@@ -1,0 +1,36 @@
+{
+  "id": "nidalee-cougar-skin48-outline-inst",
+  "name": "Nidalee Cougar Skin48 Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:09.804Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_cougar_skin48_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:09.796Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin48",
+    "bin": "data/characters/nidaleecougar/skins/skin48.bin",
+    "entryKey": "Characters/NidaleeCougar/Skins/Skin48/Materials/NidaleeCougar_Skin48_Outline_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin48",
+      "bin": "data/characters/nidaleecougar/skins/skin48.bin"
+    }
+  ]
+}

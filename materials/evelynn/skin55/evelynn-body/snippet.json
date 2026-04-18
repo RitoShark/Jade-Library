@@ -1,0 +1,44 @@
+{
+  "id": "evelynn-body",
+  "name": "Evelynn Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:20.557Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_evelynn_body",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:20.551Z"
+    },
+    {
+      "name": "Evelynn_Skin52_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:20.551Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:20.551Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin55",
+    "bin": "data/characters/evelynn/skins/skin55.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin55/Materials/Evelynn_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin55",
+      "bin": "data/characters/evelynn/skins/skin55.bin"
+    }
+  ]
+}

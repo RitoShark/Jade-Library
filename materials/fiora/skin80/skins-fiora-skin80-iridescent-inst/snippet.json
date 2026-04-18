@@ -1,0 +1,64 @@
+{
+  "id": "skins-fiora-skin80-iridescent-inst",
+  "name": "Skins Fiora Skin80 Iridescent Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:54.540Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_skins_fiora_skin80_iridescent_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "Fiora_Skin80_Body_CM.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:18:54.533Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fiora",
+    "skin": "skin80",
+    "bin": "data/characters/fiora/skins/skin80.bin",
+    "entryKey": "Characters/Fiora/Skins/Skin80/Materials/SKINS_Fiora_Skin80_Iridescent_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fiora",
+      "skin": "skin80",
+      "bin": "data/characters/fiora/skins/skin80.bin"
+    }
+  ]
+}

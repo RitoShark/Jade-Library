@@ -1,0 +1,48 @@
+{
+  "id": "spirit-fire-inst",
+  "name": "Spirit Fire Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:29.991Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_spirit_fire_inst",
+  "textureFiles": [
+    {
+      "name": "Amumu_Skin21_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:29.987Z"
+    },
+    {
+      "name": "Amumu_Skin17_MASK_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:29.987Z"
+    },
+    {
+      "name": "Amumu_Skin17_Bloom_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:29.987Z"
+    },
+    {
+      "name": "Amumu_Skin17_AddMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:29.987Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Amumu",
+    "skin": "skin21",
+    "bin": "data/characters/amumu/skins/skin21.bin",
+    "entryKey": "Characters/Amumu/Skins/Skin21/Materials/SpiritFire_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Amumu",
+      "skin": "skin21",
+      "bin": "data/characters/amumu/skins/skin21.bin"
+    }
+  ]
+}

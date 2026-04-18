@@ -1,0 +1,49 @@
+{
+  "id": "dark-star-body-inst",
+  "name": "Dark Star Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:52.503Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_body_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin17_M_Dark_Star_Stars.tex",
+      "updatedAt": "2026-04-17T17:35:55.871Z"
+    },
+    {
+      "name": "Lux_Skin17_Screnspace_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:55.871Z"
+    },
+    {
+      "name": "Lux_Skin17_Fresnel_Masks_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:55.871Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin17",
+    "bin": "data/characters/lux/skins/skin17.bin",
+    "entryKey": "Characters/Lux/Skins/Skin17/Materials/DarkStar_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin17",
+      "bin": "data/characters/lux/skins/skin17.bin"
+    },
+    {
+      "champion": "Ruby_Lux",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_lux/skins/skin0.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-nami-skin46-jelly-tail-inst",
+  "name": "Hkg Mat Cap Nami Skin46 Jelly Tail Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.935Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_nami_skin46_jelly_tail_inst",
+  "textureFiles": [
+    {
+      "name": "Nami_Skin46_MatCap_Tail.tex",
+      "updatedAt": "2026-04-17T17:41:26.929Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.929Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin46",
+    "bin": "data/characters/nami/skins/skin46.bin",
+    "entryKey": "Characters/Nami/Skins/Skin46/Materials/HKG_MatCap_Nami_Skin46_JellyTail_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin46",
+      "bin": "data/characters/nami/skins/skin46.bin"
+    }
+  ]
+}

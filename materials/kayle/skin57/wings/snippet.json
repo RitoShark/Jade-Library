@@ -1,0 +1,40 @@
+{
+  "id": "wings",
+  "name": "Wings",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:41.057Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin57_Wingsmask1_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:41.052Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:41.052Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin57",
+    "bin": "data/characters/kayle/skins/skin57.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin57/Materials/Wings"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin57",
+      "bin": "data/characters/kayle/skins/skin57.bin"
+    }
+  ]
+}

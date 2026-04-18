@@ -1,0 +1,52 @@
+{
+  "id": "blade-inst",
+  "name": "Blade Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:22.191Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blade_inst",
+  "textureFiles": [
+    {
+      "name": "XinZhaoRework_Skin21_Z_CapeBackground.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.185Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T18:08:22.185Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin20_Z_HairMult_TX_CM.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.185Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin21_Z_Gradient02.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.185Z"
+    },
+    {
+      "name": "XinZhaoRework_Skin21_Weapon_TX_CM.XinZhaoRework.tex",
+      "updatedAt": "2026-04-17T18:08:22.185Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "XinZhao",
+    "skin": "skin21",
+    "bin": "data/characters/xinzhao/skins/skin21.bin",
+    "entryKey": "Characters/XinZhao/Skins/Skin21/Materials/Blade_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "XinZhao",
+      "skin": "skin21",
+      "bin": "data/characters/xinzhao/skins/skin21.bin"
+    }
+  ]
+}

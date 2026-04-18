@@ -1,0 +1,143 @@
+"jadelib_vex_skin29_shadow_mat" = StaticMaterialDef {
+    name: string = "jadelib_vex_skin29_shadow_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Normal_Texture"
+            texturePath: string = "assets/jadelib/vex-skin29-shadow-mat/Vex_Skin29_NM_TX_CM.SKINS_Vex_Skin29.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/vex-skin29-shadow-mat/Vex_Skin29_ColorMask_TX_CM.SKINS_Vex_Skin29.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/vex-skin29-shadow-mat/Gradient_test_04.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/vex-skin29-shadow-mat/gradient_light_Dark.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "RA_Texture"
+            texturePath: string = "assets/jadelib/vex-skin29-shadow-mat/Vex_Skin29_RMA_TX_CM.SKINS_Vex_Skin29.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Additive_Outline_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AdditiveOutline_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Control"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AllAdditive_Strength"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AO_Value"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Roughness_Value"
+            value: vec4 = { 10, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Normal_Strength"
+            value: vec4 = { 10, 10, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveStrength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformMaskStrength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveController"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Sheen_TintColor"
+            value: vec4 = { 1, 0.7499961853027344, 0.9499961733818054, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SheenControl"
+            value: vec4 = { 0, 0.5, 0.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 0.8399938941001892, 0.8399938941001892, 0.8399938941001892, 1 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALL_ADDITIVE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALL_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+        "DISABLE_SHADOWS" = "1"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Cloth_Base"
+                    depthEnable: bool = false
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

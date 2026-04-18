@@ -1,0 +1,191 @@
+"jadelib_soraka_skin16_wing_trails_inst" = StaticMaterialDef {
+    name: string = "jadelib_soraka_skin16_wing_trails_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Masks_Texture"
+            texturePath: string = "assets/jadelib/soraka-skin16-wing-trails-inst/Soraka_Skin16_Z_Material_Wings_Mask.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "GradientColor"
+            texturePath: string = "assets/jadelib/soraka-skin16-wing-trails-inst/Soraka_Skin16_Z_Material_Wings_GradientColor.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Mask"
+            texturePath: string = "assets/jadelib/soraka-skin16-wing-trails-inst/Soraka_Skin16_Z_Material_Wings_DissolveMask.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_1_SPD"
+            value: vec4 = { -0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Value"
+            value: vec4 = { 0.637499988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pan_2_SPD"
+            value: vec4 = { -0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Strength"
+            value: vec4 = { 1.9375, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.274999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DIFF_PAN_SPD"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Pan"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Soraka_Skin15_Wings_Dissolve"
+                    blendEnable: bool = true
+                    cullEnable: bool = false
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_Amount"
+                driver: pointer = HealthDynamicMaterialFloatDriver {}
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_Pan"
+                driver: pointer = RemapFloatMaterialDriver {
+                    mDriver: pointer = HealthDynamicMaterialFloatDriver {}
+                    mOutputMinValue: f32 = 1
+                    mOutputMaxValue: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "SorakaQRegen"
+                    }
+                    mOnValue: f32 = 5
+                    mOffValue: f32 = 3
+                    mTurnOnTimeSec: f32 = 0.20000000298023224
+                    mTurnOffTimeSec: f32 = 0.20000000298023224
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Emissive_Value"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell4"
+                                }
+                            }
+                            mOnValue: f32 = 2
+                            mOffValue: f32 = 0.800000011920929
+                            mTurnOnTimeSec: f32 = 0.20000000298023224
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "SorakaQRegen"
+                            }
+                            mOnValue: f32 = 0.8999999761581421
+                            mOffValue: f32 = 0.800000011920929
+                            mTurnOnTimeSec: f32 = 0.20000000298023224
+                            mTurnOffTimeSec: f32 = 0.4000000059604645
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell2"
+                                }
+                            }
+                            mOnValue: f32 = 3.5
+                            mOffValue: f32 = 0.800000011920929
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.20000000298023224
+                        }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Alpha_Strength"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "SorakaQRegen"
+                            }
+                            mOnValue: f32 = 4
+                            mOffValue: f32 = 2
+                            mTurnOnTimeSec: f32 = 0.20000000298023224
+                            mTurnOffTimeSec: f32 = 0.20000000298023224
+                        }
+                        LerpMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Spell2"
+                                }
+                            }
+                            mOnValue: f32 = 5
+                            mOffValue: f32 = 2
+                            mTurnOnTimeSec: f32 = 0.10000000149011612
+                            mTurnOffTimeSec: f32 = 0.20000000298023224
+                        }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "GradientColor"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "SorakaQRegen"
+                        }
+                        TextureName: string = "ASSETS/Characters/Soraka/Skins/Skin16/Particles/Soraka_Skin16_Z_Material_Wings_GradientColor_Buff.tex"
+                    }
+                }
+            }
+        }
+    }
+}

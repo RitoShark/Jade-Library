@@ -1,0 +1,44 @@
+{
+  "id": "weapon-pbr-toon-shading-fx1-inst",
+  "name": "Weapon Pbr Toon Shading Fx1 Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:29.445Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_pbr_toon_shading_fx1_inst",
+  "textureFiles": [
+    {
+      "name": "Sett_Skin45_M_Scroll_01.tex",
+      "updatedAt": "2026-04-17T17:53:29.435Z"
+    },
+    {
+      "name": "Sett_Skin45_M_Claw_Mask_01.tex",
+      "updatedAt": "2026-04-17T17:53:29.435Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:29.435Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin45",
+    "bin": "2c6cb2463a89ce41.bin",
+    "entryKey": "Characters/Sett/Skins/Skin45/Materials/Weapon_PBR_ToonShading_FX1_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin45",
+      "bin": "2c6cb2463a89ce41.bin"
+    }
+  ]
+}

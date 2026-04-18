@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-gragas-skin21-glass-inst",
+  "name": "Hkg Mat Cap Gragas Skin21 Glass Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:36.911Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_gragas_skin21_glass_inst",
+  "textureFiles": [
+    {
+      "name": "Gragas_Skin21_Glass_CM.tex",
+      "updatedAt": "2026-04-17T17:20:36.906Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:36.906Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin21",
+    "bin": "data/characters/gragas/skins/skin21.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin21/Materials/HKG_MatCap_Gragas_Skin21_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin21",
+      "bin": "data/characters/gragas/skins/skin21.bin"
+    }
+  ]
+}

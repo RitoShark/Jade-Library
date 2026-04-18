@@ -1,0 +1,48 @@
+{
+  "id": "mordekaiser-mat-ultimate-crown",
+  "name": "Mordekaiser Mat Ultimate Crown",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:50.252Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_mat_ultimate_crown",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.247Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.247Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.247Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:50.247Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin13",
+    "bin": "77c6de602ba5ce87.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin13/Materials/Mordekaiser_MAT_UltimateCrown"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin13",
+      "bin": "77c6de602ba5ce87.bin"
+    }
+  ]
+}

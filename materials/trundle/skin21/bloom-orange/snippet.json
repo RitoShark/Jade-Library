@@ -1,0 +1,36 @@
+{
+  "id": "bloom-orange",
+  "name": "Bloom Orange",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:43.418Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_orange",
+  "textureFiles": [
+    {
+      "name": "Trundle_Skin21_Mask_TX_CM.SKINS_Trundle_Skin21.tex",
+      "updatedAt": "2026-04-17T18:01:43.406Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Trundle",
+    "skin": "skin21",
+    "bin": "data/characters/trundle/skins/skin21.bin",
+    "entryKey": "Characters/Trundle/Skins/Skin21/Materials/bloom_Orange"
+  },
+  "usedBy": [
+    {
+      "champion": "Trundle",
+      "skin": "skin21",
+      "bin": "data/characters/trundle/skins/skin21.bin"
+    }
+  ]
+}

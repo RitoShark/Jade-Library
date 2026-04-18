@@ -1,0 +1,40 @@
+{
+  "id": "scrolling-color-dodge-masked-inst",
+  "name": "Scrolling Color Dodge Masked Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:37.218Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_color_dodge_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Khazix_Skin60_Mask_6.tex",
+      "updatedAt": "2026-04-17T17:30:37.212Z"
+    },
+    {
+      "name": "Khazix_Skin60_Particles_1_0.tex",
+      "updatedAt": "2026-04-17T17:30:37.212Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Khazix",
+    "skin": "skin60",
+    "bin": "data/characters/khazix/skins/skin60.bin",
+    "entryKey": "Characters/Khazix/Skins/Skin60/Materials/Scrolling_ColorDodge_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Khazix",
+      "skin": "skin60",
+      "bin": "data/characters/khazix/skins/skin60.bin"
+    }
+  ]
+}

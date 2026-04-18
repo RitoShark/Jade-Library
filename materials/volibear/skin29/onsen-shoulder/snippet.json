@@ -1,0 +1,68 @@
+{
+  "id": "onsen-shoulder",
+  "name": "Onsen Shoulder",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:47.013Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_onsen_shoulder",
+  "textureFiles": [
+    {
+      "name": "Volibear_Skin29_TurbulDeform_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "Volibear_Skin29_Mask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "Volibear_Skin29_WaterShapeMask_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "Volibear_Skin29_FlowMap_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "Volibear_Skin29_AdditiveScrollCombo_TX_CM.SKINS_Volibear_Skin29.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "CaseTexture03.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:06:47.005Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Volibear",
+    "skin": "skin29",
+    "bin": "data/characters/volibear/skins/skin29.bin",
+    "entryKey": "Characters/Volibear/Skins/Skin29/Materials/Onsen_Shoulder"
+  },
+  "usedBy": [
+    {
+      "champion": "Volibear",
+      "skin": "skin29",
+      "bin": "data/characters/volibear/skins/skin29.bin"
+    }
+  ]
+}

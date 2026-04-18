@@ -1,0 +1,239 @@
+"jadelib_shoulder_armor" = StaticMaterialDef {
+    name: string = "jadelib_shoulder_armor"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/shoulder-armor/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "EmissionR_DistortionG_Texture"
+            texturePath: string = "assets/jadelib/shoulder-armor/Zed_Skin69_Mask.SKINS_Zed_Skin69.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "RMA_Texture"
+            texturePath: string = "assets/jadelib/shoulder-armor/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionR_Mask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Strength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RMA_Value"
+            value: vec4 = { 1, 0, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Levels"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Contrast"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Darkness"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Control"
+            value: vec4 = { 0.44999998807907104, 0.009999999776482582, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Scroll_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Tile"
+            value: vec4 = { 1.2999999523162842, 1.2999999523162842, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Scroll_Speed"
+            value: vec4 = { 0, 0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Scroll_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveValue"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgePowObjSize"
+            value: vec4 = { 2220, 2220, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgeColor"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveStrengthLength"
+            value: vec4 = { 0.10000000149011612, 5, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveController"
+            value: vec4 = { 0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveStrength"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_Tint"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_Tint"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_MaskStrength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomPow_RGB"
+            value: vec4 = { 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EdgeBloomColor_RGB"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveLocationOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionColor"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortionStrength"
+            value: vec4 = { 0.029999999329447746, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseA"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseB"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "All_Additive_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DISTORT_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_EMISSIVE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_DIFFUSE_ADD_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ALPHA_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_G_ADDITIVE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_R_ADDITIVE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALL_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_OUTLINE_ONLY"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/PBR_ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {}
+}

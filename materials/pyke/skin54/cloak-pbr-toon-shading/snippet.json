@@ -1,0 +1,44 @@
+{
+  "id": "cloak-pbr-toon-shading",
+  "name": "Cloak Pbr Toon Shading",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:19.208Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cloak_pbr_toon_shading",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin54_Cloak_Noise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:19.202Z"
+    },
+    {
+      "name": "Pyke_Skin54_Cloak_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:19.202Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:19.202Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin54",
+    "bin": "data/characters/pyke/skins/skin54.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin54/Materials/Cloak_PBR_ToonShading"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin54",
+      "bin": "data/characters/pyke/skins/skin54.bin"
+    }
+  ]
+}

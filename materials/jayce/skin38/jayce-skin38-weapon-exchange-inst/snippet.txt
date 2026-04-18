@@ -1,0 +1,369 @@
+"jadelib_jayce_skin38_weapon_exchange_inst" = StaticMaterialDef {
+    name: string = "jadelib_jayce_skin38_weapon_exchange_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/jayce-skin38-weapon-exchange-inst/gold_matcap.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Mask"
+            texturePath: string = "assets/jadelib/jayce-skin38-weapon-exchange-inst/Jayce_Skin38_Weapon_matcap_TX_CM.SKINS_Jayce_Skin38.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Main_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin38-weapon-exchange-inst/Jayce_Skin38_ChangeA_TX_CM.SKINS_Jayce_Skin38.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "OutlineMask_Texture"
+            texturePath: string = "assets/jadelib/jayce-skin38-weapon-exchange-inst/gradient_light_Dark.tex"
+            addressU: u32 = 2
+            addressV: u32 = 2
+            addressW: u32 = 2
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Pulse_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pulse_Speed_Min"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Maintex_Alpha_Strength"
+            value: vec4 = { 0.35249999165534973, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VColor_G_Mask_Discard_Size"
+            value: vec4 = { 100, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VColor_G_Mask_Discard_Value"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VColor_G_Mask_Discard_Location"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Diffuse_Tex_B_Control"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Diffuse_Tex_RG_Control"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Main_Tex_Control"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_TintColor"
+            value: vec4 = { 0.8500038385391235, 1, 0.1900053471326828, 0.25999847054481506 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Control"
+            value: vec4 = { 0.3499999940395355, 1.2000000476837158, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineMask_Texture_B_UV"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeedBase"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeedBlend"
+            value: vec4 = { -0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Base_Tile"
+            value: vec4 = { 5, 10, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Blend_Tile"
+            value: vec4 = { 2, 3.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseMat_Tint"
+            value: vec4 = { 0.7656824588775635, 0.6637521982192993, 0.6637521982192993, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BlendMat_Tint"
+            value: vec4 = { 0.6256656646728516, 0.04473945125937462, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaskStrength"
+            value: vec4 = { 0.875, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainTex_TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineControl"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineMask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveController"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveStrength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaClipValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "AlphaClipNoiseStrength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "NoiseUV"
+            value: vec4 = { 5, 5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeedMainTex"
+            value: vec4 = { -0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainTex_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Control"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHABLEND_BLENDMAT"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "PULSE_BLEND_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VCOLOR_G_MASK_DIFFUSE_W_DISCARD"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VCOLOR_G_MASK_OUTLINE_W_DISCARD"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VCOLOR_G_MASK_DIFFUSE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VCOLOR_G_MASK_OUTLINE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_MAIN_SCROLL_OUTLINE_ADD"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_DIFFUSE_TEX_RG"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_DIFFUSE_TEX_B"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_MAIN_TEX"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_OUTLINEMASK_B_ALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLENDCOLOR_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVEALPHA_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MASK_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MAINTEX_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHABLEND_MAIN"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_MAINTEXCOLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_MAINTEXALPHA"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHACLIP_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_TINTCOLOR_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCROLL_MAIN_TEX"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/AlphaBlend_Additive_Scroll_Packed"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "MatCap_TintColor"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "JayceIsMelee"
+                            }
+                            mValue: pointer = ColorChooserMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "JayceIsMelee"
+                                }
+                                mColorOn: vec4 = { 0.6200045943260193, 0.05999847501516342, 0.05999847501516342, 0.25999847054481506 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.8399999737739563, 0.8100000023841858, 0.8100000023841858, 0.25999999046325684 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BlendMat_Tint"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "JayceIsMelee"
+                            }
+                            mValue: pointer = ColorChooserMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "JayceIsMelee"
+                                }
+                                mColorOn: vec4 = { 0.8722209334373474, 0.7878233194351196, 0.7813229560852051, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 1, 0, 0, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BaseMat_Tint"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "JayceIsMelee"
+                            }
+                            mValue: pointer = ColorChooserMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "JayceIsMelee"
+                                }
+                                mColorOn: vec4 = { 0.7900053262710571, 0.7499961853027344, 0.7499961853027344, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.7699999809265137, 0.6600000262260437, 0.6600000262260437, 1 }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Main_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "JayceIsMelee"
+                        }
+                        TextureName: string = "ASSETS/Characters/Jayce/Skins/Skin38/Jayce_Skin38_ChangeB_TX_CM.SKINS_Jayce_Skin38.tex"
+                    }
+                }
+            }
+        }
+    }
+}

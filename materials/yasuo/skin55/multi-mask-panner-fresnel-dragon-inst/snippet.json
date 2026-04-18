@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-fresnel-dragon-inst",
+  "name": "Multi Mask Panner Fresnel Dragon Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:14.030Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_fresnel_dragon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.021Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:14.021Z"
+    },
+    {
+      "name": "Yasuo_Skin55_Dragon_Dreams_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:09:14.021Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:09:14.021Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin55",
+    "bin": "data/characters/yasuo/skins/skin55.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin55/Materials/MultiMask_Panner_Fresnel_Dragon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin55",
+      "bin": "data/characters/yasuo/skins/skin55.bin"
+    }
+  ]
+}

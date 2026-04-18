@@ -1,0 +1,40 @@
+{
+  "id": "teemo-skin47-boogie-orange-inst",
+  "name": "Teemo Skin47 Boogie Orange Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:40.973Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_teemo_skin47_boogie_orange_inst",
+  "textureFiles": [
+    {
+      "name": "Teemo_Skin47_MatCap_Jelly_Orange.tex",
+      "updatedAt": "2026-04-17T18:00:40.967Z"
+    },
+    {
+      "name": "Teemo_Skin47_BoogieMaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:00:40.967Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin47",
+    "bin": "data/characters/teemo/skins/skin47.bin",
+    "entryKey": "Characters/Teemo/Skins/Skin47/Materials/Teemo_Skin47_BoogieOrange_INST"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin47",
+      "bin": "data/characters/teemo/skins/skin47.bin"
+    }
+  ]
+}

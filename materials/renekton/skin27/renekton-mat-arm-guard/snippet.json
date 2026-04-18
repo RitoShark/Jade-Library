@@ -1,0 +1,48 @@
+{
+  "id": "renekton-mat-arm-guard",
+  "name": "Renekton Mat Arm Guard",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:38.376Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_renekton_mat_arm_guard",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.368Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.369Z"
+    },
+    {
+      "name": "Renekton_Skin27_Weapon_Color.tex",
+      "updatedAt": "2026-04-17T17:48:38.369Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.369Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin27",
+    "bin": "data/characters/renekton/skins/skin27.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin27/Materials/Renekton_MAT_ArmGuard"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin27",
+      "bin": "data/characters/renekton/skins/skin27.bin"
+    }
+  ]
+}

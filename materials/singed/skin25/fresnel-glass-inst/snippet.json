@@ -1,0 +1,56 @@
+{
+  "id": "fresnel-glass-inst",
+  "name": "Fresnel Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:35.777Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:35.772Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Singed",
+    "skin": "skin25",
+    "bin": "data/characters/singed/skins/skin25.bin",
+    "entryKey": "Characters/Singed/Skins/Skin25/Materials/Fresnel_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Singed",
+      "skin": "skin25",
+      "bin": "data/characters/singed/skins/skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "bloom-parts-tryndamere-inst",
+  "name": "Bloom Parts Tryndamere Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:02.374Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_tryndamere_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:02.365Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:02.365Z"
+    },
+    {
+      "name": "Tryndamere_Skin21_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:02.365Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:02.365Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tryndamere",
+    "skin": "skin21",
+    "bin": "data/characters/tryndamere/skins/skin21.bin",
+    "entryKey": "Characters/Tryndamere/Skins/Skin21/Materials/Bloom_Parts_Tryndamere_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tryndamere",
+      "skin": "skin21",
+      "bin": "data/characters/tryndamere/skins/skin21.bin"
+    }
+  ]
+}

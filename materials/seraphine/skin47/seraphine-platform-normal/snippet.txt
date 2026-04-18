@@ -1,0 +1,382 @@
+"jadelib_seraphine_platform_normal" = StaticMaterialDef {
+    name: string = "jadelib_seraphine_platform_normal"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/seraphine-platform-normal/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "EmissionR_DistortionG_Texture"
+            texturePath: string = "assets/jadelib/seraphine-platform-normal/Seraphine_Skin43_Platform_On_TX_CM.SKINS_Seraphine_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "RMA_Texture"
+            texturePath: string = "assets/jadelib/seraphine-platform-normal/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionR_Mask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Strength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RMA_Value"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Levels"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Contrast"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Darkness"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Control"
+            value: vec4 = { 0.44999998807907104, 0.009999999776482582, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Scroll_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Tile"
+            value: vec4 = { 0.009999999776482582, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Scroll_Speed"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Scroll_Speed"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveValue"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgePowObjSize"
+            value: vec4 = { 100, 100, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgeColor"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveStrengthLength"
+            value: vec4 = { 0.10000000149011612, 5, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveController"
+            value: vec4 = { 0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveStrength"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_Tint"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_Tint"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_MaskStrength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomPow_RGB"
+            value: vec4 = { 0.7981078624725342, 0, 0.9019913077354431, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EdgeBloomColor_RGB"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveLocationOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionColor"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortionStrength"
+            value: vec4 = { -0.8550000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseA"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseB"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "All_Additive_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DISTORT_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_EMISSIVE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_DIFFUSE_ADD_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ALPHA_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_G_ADDITIVE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_R_ADDITIVE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALL_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_OUTLINE_ONLY"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/PBR_ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                    writeMask: u32 = 15
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DistortionStrength"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Seraphine/Spells/SeraphinePassiveEchoStage2"
+                            }
+                            mValue: pointer = SwitchMaterialDriver {
+                                mElements: list[embed] = {
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 350
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -0.699999988079071
+                                        }
+                                    }
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 370
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -0.10000000149011612
+                                        }
+                                    }
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 400
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -1
+                                        }
+                                    }
+                                }
+                                mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = -0.5
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = NotMaterialDriver {
+                                mDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Seraphine/Spells/SeraphinePassiveEchoStage2"
+                                }
+                            }
+                            mValue: pointer = SwitchMaterialDriver {
+                                mElements: list[embed] = {
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 350
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -0.25
+                                        }
+                                    }
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 370
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -0.4000000059604645
+                                        }
+                                    }
+                                    SwitchMaterialDriverElement {
+                                        mCondition: pointer = FloatComparisonMaterialDriver {
+                                            mOperator: u32 = 1
+                                            mValueA: pointer = VelocityDynamicMaterialFloatDriver {}
+                                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                                mValue: f32 = 400
+                                            }
+                                        }
+                                        mValue: pointer = FloatLiteralMaterialDriver {
+                                            mValue: f32 = -0.5
+                                        }
+                                    }
+                                }
+                                mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = -0.15000000596046448
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "TintColor"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Seraphine/Spells/SeraphinePassiveEchoStage2"
+                    }
+                    mColorOn: vec4 = { 1, 1, 1, 1 }
+                    mColorOff: vec4 = { 1, 0.7058823704719543, 1, 0.9058823585510254 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomPow_RGB"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Seraphine/Spells/SeraphinePassiveEchoStage2"
+                    }
+                    mColorOn: vec4 = { 0.21380941569805145, 0, 0.4726787209510803, 1 }
+                    mColorOff: vec4 = { 0, 0.20306706428527832, 0.9372549057006836, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "Characters/Seraphine/Spells/SeraphinePassiveEchoStage2"
+                        }
+                        TextureName: string = "ASSETS/Characters/Seraphine/Skins/Skin43/Seraphine_Skin43_Platform_Passive_TX_CM.SKINS_Seraphine_Skin43.tex"
+                    }
+                }
+            }
+        }
+    }
+}

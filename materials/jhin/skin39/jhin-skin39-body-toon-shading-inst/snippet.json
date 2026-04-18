@@ -1,0 +1,60 @@
+{
+  "id": "jhin-skin39-body-toon-shading-inst",
+  "name": "Jhin Skin39 Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:25.133Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jhin_skin39_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    },
+    {
+      "name": "Gradient_test_03.tex",
+      "updatedAt": "2026-04-17T17:25:25.127Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin39",
+    "bin": "data/characters/jhin/skins/skin39.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin39/Materials/Jhin_Skin39_Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin39",
+      "bin": "data/characters/jhin/skins/skin39.bin"
+    }
+  ]
+}

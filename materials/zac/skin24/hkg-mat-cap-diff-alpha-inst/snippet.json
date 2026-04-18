@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-diff-alpha-inst",
+  "name": "Hkg Mat Cap Diff Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:43.350Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_BS0.tex",
+      "updatedAt": "2026-04-17T18:11:43.345Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:11:43.345Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin24",
+    "bin": "data/characters/zac/skins/skin24.bin",
+    "entryKey": "Characters/Zac/Skins/Skin24/Materials/HKG_MatCap_Diff_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin24",
+      "bin": "data/characters/zac/skins/skin24.bin"
+    }
+  ]
+}

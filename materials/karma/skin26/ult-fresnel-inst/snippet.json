@@ -1,0 +1,44 @@
+{
+  "id": "ult-fresnel-inst",
+  "name": "Ult Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:52.034Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ult_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Karma_Skin26_E_32851.tex",
+      "updatedAt": "2026-04-17T17:27:52.029Z"
+    },
+    {
+      "name": "Karma_Skin26_MAT_Ult_Mask_82.tex",
+      "updatedAt": "2026-04-17T17:27:52.029Z"
+    },
+    {
+      "name": "Karma_Skin26_mask_388.tex",
+      "updatedAt": "2026-04-17T17:27:52.029Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin26",
+    "bin": "data/characters/karma/skins/skin26.bin",
+    "entryKey": "Characters/Karma/Skins/Skin26/Materials/Ult_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin26",
+      "bin": "data/characters/karma/skins/skin26.bin"
+    }
+  ]
+}

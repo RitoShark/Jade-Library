@@ -1,0 +1,38 @@
+{
+  "id": "ezreal-skin44-beads-mat",
+  "name": "Ezreal Skin44 Beads Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:52.992Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_ezreal_skin44_beads_mat",
+  "textureFiles": [
+    {
+      "name": "Ezreal_Skin44_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:52.987Z"
+    },
+    {
+      "name": "Ezreal_Skin44_Body_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:52.987Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:52.987Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin44",
+    "bin": "data/characters/ezreal/skins/skin44.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin44/Materials/Ezreal_Skin44_Beads_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin44",
+      "bin": "data/characters/ezreal/skins/skin44.bin"
+    }
+  ]
+}

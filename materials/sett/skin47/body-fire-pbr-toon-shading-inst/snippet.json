@@ -1,0 +1,44 @@
+{
+  "id": "body-fire-pbr-toon-shading-inst",
+  "name": "Body Fire Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:30.985Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_fire_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Gwen_Skin20_Weapons_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:30.978Z"
+    },
+    {
+      "name": "Sett_Skin45_M_Claw_Mask_02.tex",
+      "updatedAt": "2026-04-17T17:53:30.978Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:30.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sett",
+    "skin": "skin47",
+    "bin": "data/characters/sett/skins/skin47.bin",
+    "entryKey": "Characters/Sett/Skins/Skin47/Materials/Body_Fire_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sett",
+      "skin": "skin47",
+      "bin": "data/characters/sett/skins/skin47.bin"
+    }
+  ]
+}

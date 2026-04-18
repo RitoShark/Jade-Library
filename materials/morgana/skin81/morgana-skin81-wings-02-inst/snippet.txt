@@ -1,0 +1,261 @@
+"jadelib_morgana_skin81_wings_02_inst" = StaticMaterialDef {
+    name: string = "jadelib_morgana_skin81_wings_02_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Vertex_Deform_Tex"
+            texturePath: string = "assets/jadelib/morgana-skin81-wings-02-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "BloomMask_Texture"
+            texturePath: string = "assets/jadelib/morgana-skin81-wings-02-inst/Morgana_Skin81_Wings_TX_CM.SKINS_Morgana_Skin81.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/morgana-skin81-wings-02-inst/CrystalPattern.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "OutlineMask_Texture"
+            texturePath: string = "assets/jadelib/morgana-skin81-wings-02-inst/Morgana_Skin81_Wings_Outline_Mask_TX_CM.SKINS_Morgana_Skin81.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/morgana-skin81-wings-02-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.9764705896377563, 0.7333333492279053, 0.5333333611488342, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomValue"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+            value: vec4 = { 1, 0.8004119992256165, 0.5225147008895874, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularTintColor"
+            value: vec4 = { 0.3490196168422699, 0.14509804546833038, 0.3294117748737335, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineController"
+            value: vec4 = { 0.10000000149011612, 0.05000000074505806, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveController"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "WaveStrength"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MainTexUV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlipbookSize"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flipbook_NumberSpeed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 1.149999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+            value: vec4 = { 0.019999999552965164, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionValue"
+            value: vec4 = { 0.16200000047683716, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineMask_Strength"
+            value: vec4 = { 1.2000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 0.5, 1, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "VERTEX_DEFORM_TEX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ANIMATION_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_MASK_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_R_MASK_ON_DEFORM"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Outline_MatCap_RMA_VertexDeform"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "MatCap_Strength"
+                driver: pointer = MaxMaterialDriver {
+                    mDrivers: list[pointer] = {
+                        FloatGraphMaterialDriver {
+                            driver: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                    mAnimationNames: list[hash] = {
+                                        "Recall"
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 8
+                                mTurnOffTimeSec: f32 = 0.25
+                            }
+                            graph: embed = VfxAnimatedFloatVariableData {
+                                times: list[f32] = {
+                                    0
+                                    0.5400000214576721
+                                    0.6700000166893005
+                                    0.7679591774940491
+                                    0.8573469519615173
+                                    0.8897958993911743
+                                    0.9100000262260437
+                                    0.9520407915115356
+                                    1
+                                }
+                                values: list[f32] = {
+                                    1
+                                    1
+                                    1.1801769733428955
+                                    1.400884985923767
+                                    1.8301769495010376
+                                    2.630884885787964
+                                    10
+                                    4.296460151672363
+                                    2.75
+                                }
+                            }
+                        }
+                        1529863526 {
+                            value: pointer = 4013137657 {
+                                value: pointer = LerpMaterialDriver {
+                                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                        mScriptName: string = "MorganaR"
+                                    }
+                                    mOnValue: f32 = 0.5
+                                    mTurnOnTimeSec: f32 = 0
+                                    mTurnOffTimeSec: f32 = 0
+                                }
+                                multiplier: pointer = SineMaterialDriver {
+                                    mDriver: pointer = TimeMaterialDriver {
+                                        LoopTimeAsFraction: bool = false
+                                    }
+                                    mFrequency: f32 = 10
+                                    mScale: f32 = 1.5
+                                }
+                            }
+                            add: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                                    mScriptName: string = "MorganaR"
+                                }
+                                mOnValue: f32 = 2.25
+                                mOffValue: f32 = 1
+                                mTurnOnTimeSec: f32 = 2
+                                mTurnOffTimeSec: f32 = 0.15000000596046448
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        staticSwitch: pointer = DynamicMaterialStaticSwitch {
+            name: string = "BLOOM_ON"
+            driver: pointer = OneTrueMaterialDriver {
+                mDrivers: list[pointer] = {
+                    HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "MorganaR"
+                    }
+                    IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "Recall"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

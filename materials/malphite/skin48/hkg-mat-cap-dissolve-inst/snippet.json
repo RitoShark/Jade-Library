@@ -1,0 +1,39 @@
+{
+  "id": "hkg-mat-cap-dissolve-inst",
+  "name": "Hkg Mat Cap Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:54.094Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_mat_cap_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin48_P_Bubble_Shield2.SKINS_Malphite_Skin48.tex",
+      "updatedAt": "2026-04-17T17:36:17.271Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T17:36:17.271Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin48",
+    "bin": "09698fb9b6c133f8.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin48/Materials/HKG_MatCap_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin48",
+      "bin": "09698fb9b6c133f8.bin"
+    },
+    {
+      "champion": "Rumble",
+      "skin": "skin13",
+      "bin": "4cb298812317fa20.bin"
+    }
+  ]
+}

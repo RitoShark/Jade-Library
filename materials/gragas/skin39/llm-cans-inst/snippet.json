@@ -1,0 +1,56 @@
+{
+  "id": "llm-cans-inst",
+  "name": "Llm Cans Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:37.756Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_llm_cans_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.749Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin39",
+    "bin": "data/characters/gragas/skins/skin39.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin39/Materials/LLM_Cans_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin39",
+      "bin": "data/characters/gragas/skins/skin39.bin"
+    }
+  ]
+}

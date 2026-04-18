@@ -1,0 +1,52 @@
+{
+  "id": "masked-gradient-fresnel-screen-space-blend-multi-layer-inst",
+  "name": "Masked Gradient Fresnel Screen Space Blend Multi Layer Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:11.138Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_masked_gradient_fresnel_screen_space_blend_multi_layer_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin17_Z_Aura_Texture_1.tex",
+      "updatedAt": "2026-04-17T17:56:11.131Z"
+    },
+    {
+      "name": "Sona_Skin17_Z_Instrument_VFX_Mask.tex",
+      "updatedAt": "2026-04-17T17:56:11.131Z"
+    },
+    {
+      "name": "Sona_Skin17_Z_Scroll_1.tex",
+      "updatedAt": "2026-04-17T17:56:11.131Z"
+    },
+    {
+      "name": "Sona_Skin17_Z_Gradient_3.tex",
+      "updatedAt": "2026-04-17T17:56:11.131Z"
+    },
+    {
+      "name": "Sona_Skin17_Dissolve_Cloudy_02.tex",
+      "updatedAt": "2026-04-17T17:56:11.131Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin17",
+    "bin": "data/characters/sona/skins/skin17.bin",
+    "entryKey": "Characters/Sona/Skins/Skin17/Materials/MaskedGradientFresnel_ScreenSpaceBlend_MultiLayer_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin17",
+      "bin": "data/characters/sona/skins/skin17.bin"
+    }
+  ]
+}

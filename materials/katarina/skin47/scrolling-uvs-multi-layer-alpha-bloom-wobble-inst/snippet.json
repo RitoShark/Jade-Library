@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-alpha-bloom-wobble-inst",
+  "name": "Scrolling Uvs Multi Layer Alpha Bloom Wobble Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:56.580Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_alpha_bloom_wobble_inst",
+  "textureFiles": [
+    {
+      "name": "Katarina_Skin47_ScrollingUV_Top_Texture.tex",
+      "updatedAt": "2026-04-17T17:28:56.573Z"
+    },
+    {
+      "name": "Katarina_Skin47_E_Cloud_Star02.tex",
+      "updatedAt": "2026-04-17T17:28:56.573Z"
+    },
+    {
+      "name": "Katarina_Skin47_Weaponvfx_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:56.573Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Katarina",
+    "skin": "skin47",
+    "bin": "data/characters/katarina/skins/skin47.bin",
+    "entryKey": "Characters/Katarina/Skins/Skin47/Materials/ScrollingUVs_MultiLayer_Alpha_Bloom_Wobble_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Katarina",
+      "skin": "skin47",
+      "bin": "data/characters/katarina/skins/skin47.bin"
+    }
+  ]
+}

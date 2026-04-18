@@ -1,0 +1,64 @@
+{
+  "id": "shoulder-inst",
+  "name": "Shoulder Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:53.873Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_shoulder_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Black.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Skin64_Axe_Body_1.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Skin64_Leg_Gradient_01.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Skin64_Noise_Color_1.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Skin64_Axe_Body_2.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    },
+    {
+      "name": "Darius_Black.SKINS_Darius_Skin64.tex",
+      "updatedAt": "2026-04-17T17:14:53.866Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin64",
+    "bin": "data/characters/darius/skins/skin64.bin",
+    "entryKey": "Characters/Darius/Skins/Skin64/Materials/Shoulder_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin64",
+      "bin": "data/characters/darius/skins/skin64.bin"
+    }
+  ]
+}

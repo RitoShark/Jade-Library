@@ -1,0 +1,60 @@
+{
+  "id": "body",
+  "name": "Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:13.809Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "Zed_Skin67_Mask_TX_CM.Chroma_Zed_SKTT1_HallOfLegends.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "Noise04.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    },
+    {
+      "name": "Zed_Skin67_Flowmap_TX_CM.Chroma_Zed_SKTT1_HallOfLegends.tex",
+      "updatedAt": "2026-04-17T18:12:13.802Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin67",
+    "bin": "data/characters/zed/skins/skin67.bin",
+    "entryKey": "Characters/Zed/Skins/Skin67/Materials/Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin67",
+      "bin": "data/characters/zed/skins/skin67.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "lee-sin-skin55-human-hands-feet-mat",
+  "name": "Lee Sin Skin55 Human Hands Feet Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:05.313Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lee_sin_skin55_human_hands_feet_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin55_Body_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:05.305Z"
+    },
+    {
+      "name": "LeeSin_Skin55_Body_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:05.305Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:05.305Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin55",
+    "bin": "data/characters/leesin/skins/skin55.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin55/Materials/LeeSin_Skin55_Human_HandsFeet_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin55",
+      "bin": "data/characters/leesin/skins/skin55.bin"
+    }
+  ]
+}

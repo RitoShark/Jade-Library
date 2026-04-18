@@ -1,0 +1,48 @@
+{
+  "id": "kayle-skin33-wings-inst",
+  "name": "Kayle Skin33 Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:37.129Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin33_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin33_Wing_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:37.119Z"
+    },
+    {
+      "name": "Kayle_Skin33_E_AlphaSlice_1.tex",
+      "updatedAt": "2026-04-17T17:29:37.119Z"
+    },
+    {
+      "name": "Kayle_Skin33_Wing_Transform_Gradient_01.tex",
+      "updatedAt": "2026-04-17T17:29:37.119Z"
+    },
+    {
+      "name": "Kayle_Skin33_Wing_Transform_Gradient_01.tex",
+      "updatedAt": "2026-04-17T17:29:37.119Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin33",
+    "bin": "data/characters/kayle/skins/skin33.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin33/Materials/Kayle_Skin33_Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin33",
+      "bin": "data/characters/kayle/skins/skin33.bin"
+    }
+  ]
+}

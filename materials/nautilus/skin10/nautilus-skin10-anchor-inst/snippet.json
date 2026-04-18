@@ -1,0 +1,44 @@
+{
+  "id": "nautilus-skin10-anchor-inst",
+  "name": "Nautilus Skin10 Anchor Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:08.213Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nautilus_skin10_anchor_inst",
+  "textureFiles": [
+    {
+      "name": "Nautilus_Skin09_TX_Flowmap.tex",
+      "updatedAt": "2026-04-17T17:42:08.203Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:08.203Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:42:08.203Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nautilus",
+    "skin": "skin10",
+    "bin": "data/characters/nautilus/skins/skin10.bin",
+    "entryKey": "Characters/Nautilus/Skins/Skin10/Materials/Nautilus_Skin10_Anchor_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nautilus",
+      "skin": "skin10",
+      "bin": "data/characters/nautilus/skins/skin10.bin"
+    }
+  ]
+}

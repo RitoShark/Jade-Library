@@ -1,0 +1,44 @@
+{
+  "id": "water-cape-inst",
+  "name": "Water Cape Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:32.128Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_water_cape_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin12_WaterSkirtMats.tex",
+      "updatedAt": "2026-04-17T17:15:32.122Z"
+    },
+    {
+      "name": "velvet_Nrm_pyke.SKINS_Mordekaiser_Skin54.tex",
+      "updatedAt": "2026-04-17T17:15:32.122Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:15:32.122Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin12",
+    "bin": "data/diana_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17.bin",
+    "entryKey": "Characters/Diana/Skins/Skin12/Materials/WaterCape_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin12",
+      "bin": "data/diana_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17.bin"
+    }
+  ]
+}

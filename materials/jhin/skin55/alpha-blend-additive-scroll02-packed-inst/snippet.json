@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll02-packed-inst",
+  "name": "Alpha Blend Additive Scroll02 Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:25.741Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll02_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:25:25.734Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:25:25.734Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:25.734Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:25:25.734Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jhin",
+    "skin": "skin55",
+    "bin": "data/characters/jhin/skins/skin55.bin",
+    "entryKey": "Characters/Jhin/Skins/Skin55/Materials/AlphaBlend_Additive_Scroll02_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jhin",
+      "skin": "skin55",
+      "bin": "data/characters/jhin/skins/skin55.bin"
+    }
+  ]
+}

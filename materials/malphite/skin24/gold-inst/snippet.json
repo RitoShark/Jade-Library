@@ -1,0 +1,56 @@
+{
+  "id": "gold-inst",
+  "name": "Gold Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:36:18.686Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gold_inst",
+  "textureFiles": [
+    {
+      "name": "Malphite_Skin24_Arms_Fresnel_Mask.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    },
+    {
+      "name": "Malphite_Skin24_Arms_Fresnel_Mask.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    },
+    {
+      "name": "Malphite_Skin24_RMA.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:36:18.679Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malphite",
+    "skin": "skin24",
+    "bin": "data/characters/malphite/skins/skin24.bin",
+    "entryKey": "Characters/Malphite/Skins/Skin24/Materials/Gold_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malphite",
+      "skin": "skin24",
+      "bin": "data/characters/malphite/skins/skin24.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-fresnel2-inst",
+  "name": "Multi Mask Panner Fresnel2 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:09:13.118Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:13.112Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:09:13.112Z"
+    },
+    {
+      "name": "Yasuo_Skin54_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:09:13.112Z"
+    },
+    {
+      "name": "Yasuo_Skin54_OutlineMask.tex",
+      "updatedAt": "2026-04-17T18:09:13.112Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yasuo",
+    "skin": "skin54",
+    "bin": "data/characters/yasuo/skins/skin54.bin",
+    "entryKey": "Characters/Yasuo/Skins/Skin54/Materials/MultiMask_Panner_Fresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yasuo",
+      "skin": "skin54",
+      "bin": "data/characters/yasuo/skins/skin54.bin"
+    }
+  ]
+}

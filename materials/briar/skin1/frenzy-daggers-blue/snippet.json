@@ -1,0 +1,52 @@
+{
+  "id": "frenzy-daggers-blue",
+  "name": "Frenzy Daggers Blue",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.080Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_frenzy_daggers_blue",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.075Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:13:00.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:00.075Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin1",
+    "bin": "data/characters/briar/skins/skin1.bin",
+    "entryKey": "Characters/Briar/Skins/Skin1/Materials/FrenzyDaggers_Blue"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin1",
+      "bin": "data/characters/briar/skins/skin1.bin"
+    }
+  ]
+}

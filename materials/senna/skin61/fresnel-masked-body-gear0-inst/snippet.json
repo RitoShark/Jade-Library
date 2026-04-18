@@ -1,0 +1,42 @@
+{
+  "id": "fresnel-masked-body-gear0-inst",
+  "name": "Fresnel Masked Body Gear0 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:33.841Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_masked_body_gear0_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin56_Form1_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:52:33.836Z"
+    },
+    {
+      "name": "Senna_Skin61_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:52:33.836Z"
+    },
+    {
+      "name": "ramp02.tex",
+      "updatedAt": "2026-04-17T17:52:33.836Z"
+    },
+    {
+      "name": "Senna_Skin56_Form1_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:52:33.836Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin61",
+    "bin": "data/characters/senna/skins/skin61.bin",
+    "entryKey": "Characters/Senna/Skins/Skin61/Materials/FresnelMasked_Body_Gear0_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin61",
+      "bin": "data/characters/senna/skins/skin61.bin"
+    }
+  ]
+}

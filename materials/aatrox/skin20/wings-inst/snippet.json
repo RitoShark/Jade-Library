@@ -1,0 +1,40 @@
+{
+  "id": "wings-inst",
+  "name": "Wings Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:13.566Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings_inst",
+  "textureFiles": [
+    {
+      "name": "Aatrox_Skin07_R_wing_mask.tex",
+      "updatedAt": "2026-04-17T17:06:13.559Z"
+    },
+    {
+      "name": "Aatrox_Skin08_WingsTransformGradient.tex",
+      "updatedAt": "2026-04-17T17:06:13.559Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin20",
+    "bin": "data/characters/aatrox/skins/skin20.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin20/Materials/Wings_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin20",
+      "bin": "data/characters/aatrox/skins/skin20.bin"
+    }
+  ]
+}

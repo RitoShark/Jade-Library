@@ -1,0 +1,119 @@
+{
+  "id": "illaoi-body-iridescent",
+  "name": "Illaoi Body Iridescent",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:36.598Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_illaoi_body_iridescent",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "MissFortune_Skin31_Body_Gradient.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "Illaoi_Skin27_Body_TX_Mask.SKINS_Illaoi_Skin27.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:02.845Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Illaoi",
+    "skin": "skin27",
+    "bin": "data/characters/illaoi/skins/skin27.bin",
+    "entryKey": "Characters/Illaoi/Skins/Skin27/Materials/Illaoi_Body_Iridescent"
+  },
+  "usedBy": [
+    {
+      "champion": "Illaoi",
+      "skin": "skin27",
+      "bin": "data/characters/illaoi/skins/skin27.bin"
+    },
+    {
+      "champion": "Jinx",
+      "skin": "skin38",
+      "bin": "data/characters/jinx/skins/skin38.bin"
+    },
+    {
+      "champion": "Kaisa",
+      "skin": "skin29",
+      "bin": "data/characters/kaisa/skins/skin29.bin"
+    },
+    {
+      "champion": "Qiyana",
+      "skin": "skin2",
+      "bin": "data/characters/qiyana/skins/skin2.bin"
+    },
+    {
+      "champion": "Rakan",
+      "skin": "skin0",
+      "bin": "624d366b04ab9012.bin"
+    },
+    {
+      "champion": "Riven",
+      "skin": "skin44",
+      "bin": "data/characters/riven/skins/skin44.bin"
+    },
+    {
+      "champion": "Seraphine",
+      "skin": "skin43",
+      "bin": "data/characters/seraphine/skins/skin43.bin"
+    },
+    {
+      "champion": "Strawberry_Illaoi",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_illaoi/skins/skin0.bin"
+    },
+    {
+      "champion": "Strawberry_Jinx",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_jinx/skins/skin0.bin"
+    },
+    {
+      "champion": "Strawberry_Riven",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_riven/skins/skin0.bin"
+    },
+    {
+      "champion": "Strawberry_Seraphine",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_seraphine/skins/skin0.bin"
+    },
+    {
+      "champion": "Xayah",
+      "skin": "skin0",
+      "bin": "data/characters/xayah/skins/skin0.bin"
+    }
+  ]
+}

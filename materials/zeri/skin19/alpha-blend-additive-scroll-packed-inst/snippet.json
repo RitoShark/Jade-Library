@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:47.893Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:12:47.885Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:12:47.885Z"
+    },
+    {
+      "name": "Zeri_Skin19_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:47.885Z"
+    },
+    {
+      "name": "Zeri_Skin19_R_Mask.tex",
+      "updatedAt": "2026-04-17T18:12:47.885Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin19",
+    "bin": "data/characters/zeri/skins/skin19.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin19/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin19",
+      "bin": "data/characters/zeri/skins/skin19.bin"
+    }
+  ]
+}

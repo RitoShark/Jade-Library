@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:16.923Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Taric_Skin10_P_Mask_Bloom.tex",
+      "updatedAt": "2026-04-17T18:00:16.907Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taric",
+    "skin": "skin10",
+    "bin": "data/characters/taric/skins/skin10.bin",
+    "entryKey": "Characters/Taric/Skins/Skin10/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taric",
+      "skin": "skin10",
+      "bin": "data/characters/taric/skins/skin10.bin"
+    }
+  ]
+}

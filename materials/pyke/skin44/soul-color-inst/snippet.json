@@ -1,0 +1,40 @@
+{
+  "id": "soul-color-inst",
+  "name": "Soul Color Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:16.359Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_soul_color_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_MatCap_Fresnel.tex",
+      "updatedAt": "2026-04-17T17:46:16.353Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:16.353Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin44",
+    "bin": "data/characters/pyke/skins/skin44.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin44/Materials/Soul_Color_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin44",
+      "bin": "data/characters/pyke/skins/skin44.bin"
+    }
+  ]
+}

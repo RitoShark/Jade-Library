@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:08.884Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Nunu_Skin26_meterialbody_01.tex",
+      "updatedAt": "2026-04-17T17:44:08.878Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin28",
+    "bin": "data/characters/nunu/skins/skin28.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin28/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin28",
+      "bin": "data/characters/nunu/skins/skin28.bin"
+    }
+  ]
+}

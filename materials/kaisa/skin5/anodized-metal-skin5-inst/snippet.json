@@ -1,0 +1,40 @@
+{
+  "id": "anodized-metal-skin5-inst",
+  "name": "Anodized Metal Skin5 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:31.301Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_anodized_metal_skin5_inst",
+  "textureFiles": [
+    {
+      "name": "fringe.tex",
+      "updatedAt": "2026-04-17T17:26:31.295Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:31.295Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin5",
+    "bin": "data/characters/kaisa/skins/skin5.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin5/Materials/AnodizedMetal_skin5_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin5",
+      "bin": "data/characters/kaisa/skins/skin5.bin"
+    }
+  ]
+}

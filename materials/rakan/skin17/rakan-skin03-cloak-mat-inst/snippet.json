@@ -1,0 +1,40 @@
+{
+  "id": "rakan-skin03-cloak-mat-inst",
+  "name": "Rakan Skin03 Cloak Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:16.955Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rakan_skin03_cloak_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin17_P_Shield_Noise.tex",
+      "updatedAt": "2026-04-17T17:47:16.950Z"
+    },
+    {
+      "name": "Rakan_Skin17_Feathers_Iridescence.tex",
+      "updatedAt": "2026-04-17T17:47:16.950Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin17",
+    "bin": "data/characters/rakan/skins/skin17.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin17/Materials/Rakan_skin03_Cloak_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin17",
+      "bin": "data/characters/rakan/skins/skin17.bin"
+    }
+  ]
+}

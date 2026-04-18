@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-q-skin22-inst",
+  "name": "Scrolling Uvs Q Skin22 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:44.170Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_q_skin22_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Kindred_Skin34.tex",
+      "updatedAt": "2026-04-17T17:41:44.166Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin22",
+    "bin": "data/characters/nasus/skins/skin22.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin22/Materials/ScrollingUVs_Q_Skin22_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin22",
+      "bin": "data/characters/nasus/skins/skin22.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "milio-body-alpha-blend-additive-scroll-packed-inst",
+  "name": "Milio Body Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:33.403Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_milio_body_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:38:33.395Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:38:33.396Z"
+    },
+    {
+      "name": "Milio_Skin01_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:33.396Z"
+    },
+    {
+      "name": "Milio_Skin01_Body_Diffuse_RGB_TX.tex",
+      "updatedAt": "2026-04-17T17:38:33.396Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin1",
+    "bin": "data/characters/milio/skins/skin1.bin",
+    "entryKey": "Characters/Milio/Skins/Skin1/Materials/Milio_Body_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin1",
+      "bin": "data/characters/milio/skins/skin1.bin"
+    }
+  ]
+}

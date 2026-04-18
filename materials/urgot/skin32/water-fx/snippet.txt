@@ -1,0 +1,139 @@
+"jadelib_water_fx" = StaticMaterialDef {
+    name: string = "jadelib_water_fx"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/water-fx/velvet_Nrm.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ENV_Fresnel_Size"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Rate"
+            value: vec4 = { 8, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Amplitude"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Offset"
+            value: vec4 = { 0.699999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DIFF_Fresnel_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DIFF_Fresnal_Size"
+            value: vec4 = { 0.009999999776482582, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Reflection_Intensity"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Amount"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Scale"
+            value: vec4 = { 6, 3, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollRate"
+            value: vec4 = { 0.15000000596046448, 0.15000000596046448, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Reflection_Blur"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Dir"
+            value: vec4 = { 0, 0.5, 0.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_SmoothStep"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Ora"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Wobble_Amplitude"
+                Enabled: bool = false
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mFrequency: f32 = 0.75
+                    mScale: f32 = 0.41999998688697815
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Rim_Color"
+                Enabled: bool = false
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "AatroxR"
+                    }
+                    mColorOn: vec4 = { 1, 0.4627451002597809, 0.0235294122248888, 1 }
+                    mColorOff: vec4 = { 0.9799954295158386, 0.8699931502342224, 0.08999770879745483, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "AatroxR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Thresh/Skins/Skin59/Thresh_Skin59_Sword_TX_CM_Ult.SKINS_Thresh_Skin59.tex"
+                    }
+                }
+            }
+        }
+    }
+}

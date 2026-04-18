@@ -1,0 +1,40 @@
+{
+  "id": "lissandra-dark-cosmic-hair-diffuse-inst",
+  "name": "Lissandra Dark Cosmic Hair Diffuse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:31.141Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lissandra_dark_cosmic_hair_diffuse_inst",
+  "textureFiles": [
+    {
+      "name": "Material_Mult_Body_Galaxy.tex",
+      "updatedAt": "2026-04-17T17:34:31.134Z"
+    },
+    {
+      "name": "Material_Mult_Body_Galaxy_05.tex",
+      "updatedAt": "2026-04-17T17:34:31.134Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin12",
+    "bin": "data/characters/lissandra/skins/skin12.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin12/Materials/Lissandra_DarkCosmic_Hair_Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin12",
+      "bin": "data/characters/lissandra/skins/skin12.bin"
+    }
+  ]
+}

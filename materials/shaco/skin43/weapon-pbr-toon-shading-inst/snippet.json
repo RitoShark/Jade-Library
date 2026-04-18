@@ -1,0 +1,44 @@
+{
+  "id": "weapon-pbr-toon-shading-inst",
+  "name": "Weapon Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:50.874Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Shaco_Skin43_Sword_SoulFlowNoise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:50.868Z"
+    },
+    {
+      "name": "Weapon_Distortion.tex",
+      "updatedAt": "2026-04-17T17:53:50.868Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:50.868Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin43",
+    "bin": "data/characters/shaco/skins/skin43.bin",
+    "entryKey": "Characters/Shaco/Skins/Skin43/Materials/Weapon_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin43",
+      "bin": "data/characters/shaco/skins/skin43.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "vex-ult-inst",
+  "name": "Vex Ult Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:56.101Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vex_ult_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.093Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:04:56.093Z"
+    },
+    {
+      "name": "black.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    },
+    {
+      "name": "black.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    },
+    {
+      "name": "black.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    },
+    {
+      "name": "Janna_Skin56_horn_noise_TEX.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    },
+    {
+      "name": "Vex_Skin20_Mask_05.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    },
+    {
+      "name": "black.SKINS_Vex_Skin20.tex",
+      "updatedAt": "2026-04-17T18:04:56.094Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin28",
+    "bin": "data/characters/vex/skins/skin28.bin",
+    "entryKey": "Characters/Vex/Skins/Skin28/Materials/Vex_Ult_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin28",
+      "bin": "data/characters/vex/skins/skin28.bin"
+    }
+  ]
+}

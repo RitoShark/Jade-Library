@@ -1,0 +1,48 @@
+{
+  "id": "lulu-skin55-pattern-scroll-inst",
+  "name": "Lulu Skin55 Pattern Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:22.388Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lulu_skin55_pattern_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_BS0.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:22.382Z"
+    },
+    {
+      "name": "gradient_a.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:22.382Z"
+    },
+    {
+      "name": "black.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:22.382Z"
+    },
+    {
+      "name": "gradient_light_Dark.SKINS_Lulu_Skin55.tex",
+      "updatedAt": "2026-04-17T17:35:22.382Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin55",
+    "bin": "data/characters/lulu/skins/skin55.bin",
+    "entryKey": "Characters/Lulu/Skins/Skin55/Materials/Lulu_Skin55_Pattern_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin55",
+      "bin": "data/characters/lulu/skins/skin55.bin"
+    }
+  ]
+}

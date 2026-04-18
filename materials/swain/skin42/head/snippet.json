@@ -1,0 +1,96 @@
+{
+  "id": "head",
+  "name": "Head",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:01.880Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_head",
+  "textureFiles": [
+    {
+      "name": "SwainDemonForm_Skin42_Head_VAT_Mask.SKINS_Swain_Skin42.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin42_Wings_TX_CM.SKINS_Swain_Skin42.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Blank.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Generic_Noise3.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Water_A_Nm.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Gradient_test_02.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Galaxy.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "flowmapCircle2.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "Swain_Skin42_Arm_Fresnel_Color.SKINS_Swain_Skin42.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin42_Head_VAT.SKINS_Swain_Skin42.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin42_Head_VAT_Mask.SKINS_Swain_Skin42.tex",
+      "updatedAt": "2026-04-17T17:58:01.873Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin42",
+    "bin": "data/characters/swaindemonform/skins/skin42.bin",
+    "entryKey": "Characters/SwainDemonForm/Skins/Skin42/Materials/Head"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin42",
+      "bin": "data/characters/swaindemonform/skins/skin42.bin"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "darius-skin67-wing-inst",
+  "name": "Darius Skin67 Wing Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:54.867Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_darius_skin67_wing_inst",
+  "textureFiles": [
+    {
+      "name": "Darius_Skin67_Wings_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:54.860Z"
+    },
+    {
+      "name": "Darius_Skin67_RedWings_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:54.860Z"
+    },
+    {
+      "name": "Darius_Skin67_Mask03_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:54.860Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin67",
+    "bin": "data/characters/darius/skins/skin67.bin",
+    "entryKey": "Characters/Darius/Skins/Skin67/Materials/Darius_Skin67_wing_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin67",
+      "bin": "data/characters/darius/skins/skin67.bin"
+    }
+  ]
+}

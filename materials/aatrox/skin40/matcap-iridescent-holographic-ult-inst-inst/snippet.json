@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-ult-inst-inst",
+  "name": "Matcap Iridescent Holographic Ult Inst Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:22.577Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_ult_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "Aatrox_BloodMoon_Skin40_TX_CM_Shadow_Mask.Chroma_Aatrox_BloodMoon_Paragon.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "SRX_Mountain_Noise.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:06:22.570Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aatrox",
+    "skin": "skin40",
+    "bin": "data/characters/aatrox/skins/skin40.bin",
+    "entryKey": "Characters/Aatrox/Skins/Skin40/Materials/Matcap_Iridescent_Holographic_Ult_inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aatrox",
+      "skin": "skin40",
+      "bin": "data/characters/aatrox/skins/skin40.bin"
+    }
+  ]
+}

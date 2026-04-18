@@ -1,0 +1,36 @@
+{
+  "id": "kindred-skin23-horn-01-inst",
+  "name": "Kindred Skin23 Horn 01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:03.515Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kindred_skin23_horn_01_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin23_TX_Horn.tex",
+      "updatedAt": "2026-04-17T17:31:03.510Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin23",
+    "bin": "data/characters/kindred/skins/skin23.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin23/Materials/Kindred_Skin23_Horn_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin23",
+      "bin": "data/characters/kindred/skins/skin23.bin"
+    }
+  ]
+}

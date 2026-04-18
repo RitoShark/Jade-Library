@@ -1,0 +1,36 @@
+{
+  "id": "evelynn-skin24-bloom-inst",
+  "name": "Evelynn Skin24 Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:16.996Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_evelynn_skin24_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin24_Z_color-hold.tex",
+      "updatedAt": "2026-04-17T17:17:16.989Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin24",
+    "bin": "data/characters/evelynn/skins/skin24.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin24/Materials/EvelynnSkin24_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin24",
+      "bin": "data/characters/evelynn/skins/skin24.bin"
+    }
+  ]
+}

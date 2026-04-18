@@ -1,0 +1,36 @@
+{
+  "id": "olaf-skin-flamebody-inst",
+  "name": "Olaf Skin Flamebody Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:23.740Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_olaf_skin_flamebody_inst",
+  "textureFiles": [
+    {
+      "name": "Olaf_skin44_Material_Add.SKINS_Olaf_Skin44.tex",
+      "updatedAt": "2026-04-17T17:44:23.735Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Olaf",
+    "skin": "skin47",
+    "bin": "data/characters/olaf/skins/skin47.bin",
+    "entryKey": "Characters/Olaf/Skins/Skin47/Materials/Olaf_Skin_Flamebody_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Olaf",
+      "skin": "skin47",
+      "bin": "data/characters/olaf/skins/skin47.bin"
+    }
+  ]
+}

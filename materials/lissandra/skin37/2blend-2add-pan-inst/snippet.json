@@ -1,0 +1,52 @@
+{
+  "id": "2blend-2add-pan-inst",
+  "name": "2blend 2add Pan Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:33.346Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_2blend_2add_pan_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin34_MAT_CM.tex",
+      "updatedAt": "2026-04-17T17:34:33.339Z"
+    },
+    {
+      "name": "Lissandra_Skin34_MAT_CM.tex",
+      "updatedAt": "2026-04-17T17:34:33.339Z"
+    },
+    {
+      "name": "Lissanadra_Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:34:33.339Z"
+    },
+    {
+      "name": "Lissanadra_Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:34:33.339Z"
+    },
+    {
+      "name": "Lissandra_Skin37_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:34:33.339Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin37",
+    "bin": "data/characters/lissandra/skins/skin37.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin37/Materials/2Blend_2Add_Pan_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin37",
+      "bin": "data/characters/lissandra/skins/skin37.bin"
+    }
+  ]
+}

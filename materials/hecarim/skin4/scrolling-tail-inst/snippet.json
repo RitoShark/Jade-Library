@@ -1,0 +1,31 @@
+{
+  "id": "scrolling-tail-inst",
+  "name": "Scrolling Tail Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:22.822Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_tail_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hecarim",
+    "skin": "skin4",
+    "bin": "data/characters/hecarim/skins/skin4.bin",
+    "entryKey": "Characters/Hecarim/Skins/Skin4/Materials/Scrolling_Tail_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hecarim",
+      "skin": "skin4",
+      "bin": "data/characters/hecarim/skins/skin4.bin"
+    }
+  ]
+}

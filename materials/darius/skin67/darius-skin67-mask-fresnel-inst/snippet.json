@@ -1,0 +1,38 @@
+{
+  "id": "darius-skin67-mask-fresnel-inst",
+  "name": "Darius Skin67 Mask Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:55.258Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_darius_skin67_mask_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Darius_Skin67_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:55.251Z"
+    },
+    {
+      "name": "Darius_Skin67_RedBody_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:55.251Z"
+    },
+    {
+      "name": "Darius_Skin67_Mask01_TX_CM.SKINS_Darius_Skin67.tex",
+      "updatedAt": "2026-04-17T17:14:55.251Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin67",
+    "bin": "data/characters/darius/skins/skin67.bin",
+    "entryKey": "Characters/Darius/Skins/Skin67/Materials/Darius_skin67_mask_fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin67",
+      "bin": "data/characters/darius/skins/skin67.bin"
+    }
+  ]
+}

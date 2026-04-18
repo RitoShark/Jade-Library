@@ -1,0 +1,31 @@
+{
+  "id": "vayne-skin47-skin47-inst",
+  "name": "Vayne Skin47 Skin47 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:42.027Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin47_skin47_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin47",
+    "bin": "data/characters/vayne/skins/skin47.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin47/Materials/Vayne_Skin47_Skin47_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin47",
+      "bin": "data/characters/vayne/skins/skin47.bin"
+    }
+  ]
+}

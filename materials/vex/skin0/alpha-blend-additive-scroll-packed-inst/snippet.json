@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:04:53.727Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:04:53.713Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:04:53.713Z"
+    },
+    {
+      "name": "Vex_Main_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:04:53.713Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:04:53.713Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vex",
+    "skin": "skin0",
+    "bin": "data/characters/vex/skins/skin0.bin",
+    "entryKey": "Characters/Vex/Skins/Skin0/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vex",
+      "skin": "skin0",
+      "bin": "data/characters/vex/skins/skin0.bin"
+    }
+  ]
+}

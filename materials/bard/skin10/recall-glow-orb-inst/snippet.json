@@ -1,0 +1,49 @@
+{
+  "id": "recall-glow-orb-inst",
+  "name": "Recall Glow Orb Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.170Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_recall_glow_orb_inst",
+  "textureFiles": [
+    {
+      "name": "Bard_Skin10_Idle_orb_2.tex",
+      "updatedAt": "2026-04-17T17:11:24.456Z"
+    },
+    {
+      "name": "Bard_Skin8_RecallProp_Mask1.tex",
+      "updatedAt": "2026-04-17T17:11:24.456Z"
+    },
+    {
+      "name": "Bard_Skin8_RecallProp_Mask2.tex",
+      "updatedAt": "2026-04-17T17:11:24.456Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin10",
+    "bin": "data/characters/bard/skins/skin10.bin",
+    "entryKey": "Characters/Bard/Skins/Skin10/Materials/Recall_Glow_orb_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin10",
+      "bin": "data/characters/bard/skins/skin10.bin"
+    },
+    {
+      "champion": "Gnar",
+      "skin": "skin15",
+      "bin": "data/characters/gnar/skins/skin15.bin"
+    }
+  ]
+}

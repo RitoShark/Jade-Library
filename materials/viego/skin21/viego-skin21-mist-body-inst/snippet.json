@@ -1,0 +1,56 @@
+{
+  "id": "viego-skin21-mist-body-inst",
+  "name": "Viego Skin21 Mist Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:37.342Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin21_mist_body_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin21_Body_ESkill_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    },
+    {
+      "name": "Viego_Skin21_Body_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:05:37.334Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin21",
+    "bin": "data/characters/viego/skins/skin21.bin",
+    "entryKey": "Characters/Viego/Skins/Skin21/Materials/Viego_Skin21_MistBody_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin21",
+      "bin": "data/characters/viego/skins/skin21.bin"
+    }
+  ]
+}

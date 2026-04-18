@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-vert-wpo-bloom-alpha-inst",
+  "name": "Scrolling Uvs Multi Layer Vert Wpo Bloom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:55.281Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_vert_wpo_bloom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Rumble_Skin23_TX_Coffee_idle.tex",
+      "updatedAt": "2026-04-17T17:50:55.275Z"
+    },
+    {
+      "name": "Rumble_Skin23_TX_Coffee_idle.tex",
+      "updatedAt": "2026-04-17T17:50:55.275Z"
+    },
+    {
+      "name": "Rumble_Skin23_MaterialAlphaMask.tex",
+      "updatedAt": "2026-04-17T17:50:55.275Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin23",
+    "bin": "data/characters/rumble/skins/skin23.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin23/Materials/ScrollingUVs_MultiLayer_VertWPO_Bloom_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin23",
+      "bin": "data/characters/rumble/skins/skin23.bin"
+    }
+  ]
+}

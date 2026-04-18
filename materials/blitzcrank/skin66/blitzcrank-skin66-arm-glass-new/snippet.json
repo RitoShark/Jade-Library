@@ -1,0 +1,44 @@
+{
+  "id": "blitzcrank-skin66-arm-glass-new",
+  "name": "Blitzcrank Skin66 Arm Glass New",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:11.682Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_blitzcrank_skin66_arm_glass_new",
+  "textureFiles": [
+    {
+      "name": "Blitzcrank_Skin66_MatCap02_Hand_Glass_TX_CM.SKINS_Blitzcrank_Skin66.tex",
+      "updatedAt": "2026-04-17T17:12:11.676Z"
+    },
+    {
+      "name": "Blitzcrank_Skin66_MatCap01_Hand_Glass_TX_CM.SKINS_Blitzcrank_Skin66.tex",
+      "updatedAt": "2026-04-17T17:12:11.676Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:12:11.676Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Blitzcrank",
+    "skin": "skin66",
+    "bin": "data/characters/blitzcrank/skins/skin66.bin",
+    "entryKey": "Characters/Blitzcrank/Skins/Skin66/Materials/Blitzcrank_Skin66_Arm_Glass_New"
+  },
+  "usedBy": [
+    {
+      "champion": "Blitzcrank",
+      "skin": "skin66",
+      "bin": "data/characters/blitzcrank/skins/skin66.bin"
+    }
+  ]
+}

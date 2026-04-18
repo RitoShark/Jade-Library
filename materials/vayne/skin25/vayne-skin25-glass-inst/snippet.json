@@ -1,0 +1,25 @@
+{
+  "id": "vayne-skin25-glass-inst",
+  "name": "Vayne Skin25 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:40.647Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_vayne_skin25_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin25",
+    "bin": "data/characters/vayne/skins/skin25.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin25/Materials/VayneSkin25_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin25",
+      "bin": "data/characters/vayne/skins/skin25.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "wing",
+  "name": "Wing",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:53.324Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wing",
+  "textureFiles": [
+    {
+      "name": "Fiora_Skin69_Wing_Mask.tex",
+      "updatedAt": "2026-04-17T17:18:53.314Z"
+    },
+    {
+      "name": "Fiora_Skin69_Z_Material_Wings_GradientColor_Buff.tex",
+      "updatedAt": "2026-04-17T17:18:53.314Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fiora",
+    "skin": "skin69",
+    "bin": "data/characters/fiora/skins/skin69.bin",
+    "entryKey": "Characters/Fiora/Skins/Skin69/Materials/Wing"
+  },
+  "usedBy": [
+    {
+      "champion": "Fiora",
+      "skin": "skin69",
+      "bin": "data/characters/fiora/skins/skin69.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "zoe-skin43-headlight2-inst",
+  "name": "Zoe Skin43 Headlight2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:08.029Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_skin43_headlight2_inst",
+  "textureFiles": [
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:07.990Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:07.990Z"
+    },
+    {
+      "name": "Zoe_Skin43_White_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T18:14:07.990Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin43",
+    "bin": "data/characters/zoe/skins/skin43.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin43/Materials/Zoe_Skin43_headlight2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin43",
+      "bin": "data/characters/zoe/skins/skin43.bin"
+    }
+  ]
+}

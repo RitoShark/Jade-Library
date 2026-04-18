@@ -1,0 +1,36 @@
+{
+  "id": "dr-mundo-skin21-hair-outline-inst",
+  "name": "Dr Mundo Skin21 Hair Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:14.991Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dr_mundo_skin21_hair_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:14.974Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "DrMundo",
+    "skin": "skin21",
+    "bin": "data/characters/drmundo/skins/skin21.bin",
+    "entryKey": "Characters/DrMundo/Skins/Skin21/Materials/DrMundoSkin21_Hair_Outline_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "DrMundo",
+      "skin": "skin21",
+      "bin": "data/characters/drmundo/skins/skin21.bin"
+    }
+  ]
+}

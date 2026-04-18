@@ -1,0 +1,258 @@
+"jadelib_morgana_skin80_body_inst" = StaticMaterialDef {
+    name: string = "jadelib_morgana_skin80_body_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Color"
+            texturePath: string = "assets/jadelib/morgana-skin80-body-inst/Morgana_Skin80_TX_CM.SKINS_Morgana_Skin80.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask"
+            texturePath: string = "assets/jadelib/morgana-skin80-body-inst/Morgana_Skin80_Mask_TX_CM.SKINS_Morgana_Skin80.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/morgana-skin80-body-inst/Default_Gradient.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.3960784375667572, 0.4156862795352936, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 0.48500001430511475, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MaxSpec"
+            value: vec4 = { 17.1200008392334, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LQ_Lighting_Intensity"
+            value: vec4 = { 1.75, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLightOffset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularColor"
+            value: vec4 = { 0, 0.9966124892234802, 0.29100480675697327, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "IridescentControl"
+            value: vec4 = { 1, 0.5, 0.5, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Specular_Fresnel_Masked"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.25, 0.07999999821186066, 0.4699999988079071, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = OneTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 3
+                                    }
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 4
+                                    }
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 5
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.4000000059604645, 0.41999998688697815, 1, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.7900000214576721, 0.800000011920929, 1, 1 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "SpecularColor"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 1, 0.28999999165534973, 0 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = OneTrueMaterialDriver {
+                                mDrivers: list[pointer] = {
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 3
+                                    }
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 4
+                                    }
+                                    HasGearDynamicMaterialBoolDriver {
+                                        mGearIndex: u8 = 5
+                                    }
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0, 1, 0.28999999165534973, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.12999999523162842, 0.33000001311302185, 0.3199999928474426, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "LQ_Lighting_Intensity"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                    }
+                    mOnValue: f32 = 19
+                    mOffValue: f32 = 1.75
+                    mTurnOnTimeSec: f32 = 0.20000000298023224
+                    mTurnOffTimeSec: f32 = 0.20000000298023224
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "MaxSpec"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                    }
+                    mOnValue: f32 = 5.699999809265137
+                    mOffValue: f32 = 17.1200008392334
+                    mTurnOnTimeSec: f32 = 0.20000000298023224
+                    mTurnOffTimeSec: f32 = 0.20000000298023224
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Color"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasBuffDynamicMaterialBoolDriver {
+                                    Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                                }
+                                IsCastingBoolDriver {
+                                    SpellSlot: u32 = 3
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Morgana/Skins/Skin80/Morgana_Skin80_Ult_TX_CM.SKINS_Morgana_Skin80.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Morgana/Skins/Skin80/Morgana_Skin80_Ult_TX_CM.SKINS_Morgana_Skin80.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 3
+                                }
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 4
+                                }
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 5
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Morgana/Skins/Skin80/Morgana_Skin80_Evolve_TX_CM.SKINS_Morgana_Skin80.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Mask"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            Spell: hash = "Characters/Morgana/Spells/MorganaRAbility/MorganaR"
+                        }
+                        TextureName: string = "ASSETS/Characters/Morgana/Skins/Skin80/Morgana_Skin80_Mask_TX_CM.SKINS_Morgana_Skin80.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = OneTrueMaterialDriver {
+                            mDrivers: list[pointer] = {
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 3
+                                }
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 4
+                                }
+                                HasGearDynamicMaterialBoolDriver {
+                                    mGearIndex: u8 = 5
+                                }
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Morgana/Skins/Skin80/Morgana_Skin80_Evolve_Mask_TX_CM.SKINS_Morgana_Skin80.tex"
+                    }
+                }
+            }
+        }
+    }
+}

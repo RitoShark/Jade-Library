@@ -1,0 +1,36 @@
+{
+  "id": "hkg-world-breaker-skin-malzahar-inst",
+  "name": "Hkg World Breaker Skin Malzahar Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:04.428Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_world_breaker_skin_malzahar_inst",
+  "textureFiles": [
+    {
+      "name": "Malzahar_Skin09_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:37:04.394Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Malzahar",
+    "skin": "skin10",
+    "bin": "data/characters/malzahar/skins/skin10.bin",
+    "entryKey": "Characters/Malzahar/Skins/Skin10/Materials/HKG_WorldBreakerSkin_Malzahar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Malzahar",
+      "skin": "skin10",
+      "bin": "data/characters/malzahar/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "wings",
+  "name": "Wings",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:02.942Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_wings",
+  "textureFiles": [
+    {
+      "name": "Swain_Skin32_Wings_TX_Mask_CM.SKINS_Swain_Skin32.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    },
+    {
+      "name": "Swain_Skin32_Wings_TX_Mask_CM.SKINS_Swain_Skin32.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    },
+    {
+      "name": "lava_actual.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:02.931Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin32",
+    "bin": "data/swain_skins_skin32_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39_skins_skin40_skins_skin41.bin",
+    "entryKey": "Characters/Swain/Skins/Skin32/Materials/Wings"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin32",
+      "bin": "data/swain_skins_skin32_skins_skin34_skins_skin35_skins_skin36_skins_skin37_skins_skin38_skins_skin39_skins_skin40_skins_skin41.bin"
+    }
+  ]
+}

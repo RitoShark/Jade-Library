@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-alpha-bloom-wobble-inst",
+  "name": "Scrolling Uvs Multi Layer Alpha Bloom Wobble Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:18.651Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_alpha_bloom_wobble_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin37_Cloud_Star02.tex",
+      "updatedAt": "2026-04-17T17:47:18.645Z"
+    },
+    {
+      "name": "Generic_HolyStrings_Support02.tex",
+      "updatedAt": "2026-04-17T17:47:18.645Z"
+    },
+    {
+      "name": "Rakan_Skin37_DragonVFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:18.645Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin37",
+    "bin": "data/characters/rakan/skins/skin37.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin37/Materials/ScrollingUVs_MultiLayer_Alpha_Bloom_Wobble_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin37",
+      "bin": "data/characters/rakan/skins/skin37.bin"
+    }
+  ]
+}

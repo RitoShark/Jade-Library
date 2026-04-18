@@ -1,0 +1,48 @@
+{
+  "id": "gradient-mapped-fresnel-inst",
+  "name": "Gradient Mapped Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:50.166Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gradient_mapped_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin14_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:06:50.160Z"
+    },
+    {
+      "name": "Default_DoubleGradient.tex",
+      "updatedAt": "2026-04-17T17:06:50.160Z"
+    },
+    {
+      "name": "Ahri_Skin14_Ult_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:06:50.160Z"
+    },
+    {
+      "name": "Ahri_Skin14_Z_Background01.tex",
+      "updatedAt": "2026-04-17T17:06:50.160Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin14",
+    "bin": "data/characters/ahri/skins/skin14.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin14/Materials/GradientMappedFresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin14",
+      "bin": "data/characters/ahri/skins/skin14.bin"
+    }
+  ]
+}

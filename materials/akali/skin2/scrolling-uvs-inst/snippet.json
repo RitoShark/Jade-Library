@@ -1,0 +1,49 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:16.040Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Base_flame_tile.tex",
+      "updatedAt": "2026-04-17T17:07:50.920Z"
+    },
+    {
+      "name": "color-flamesword.tex",
+      "updatedAt": "2026-04-17T17:07:50.920Z"
+    },
+    {
+      "name": "Akali_Skin02_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:07:50.920Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin2",
+    "bin": "data/characters/akali/skins/skin2.bin",
+    "entryKey": "Characters/Akali/Skins/Skin2/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin2",
+      "bin": "data/characters/akali/skins/skin2.bin"
+    },
+    {
+      "champion": "Zed",
+      "skin": "skin13",
+      "bin": "data/characters/zedshadow/skins/skin13.bin"
+    }
+  ]
+}

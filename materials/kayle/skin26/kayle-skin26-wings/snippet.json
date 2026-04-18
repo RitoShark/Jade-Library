@@ -1,0 +1,48 @@
+{
+  "id": "kayle-skin26-wings",
+  "name": "Kayle Skin26 Wings",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:34.243Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_skin26_wings",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin24_Wing_Transform_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:34.235Z"
+    },
+    {
+      "name": "Kayle_Skin24_Fire_Material.tex",
+      "updatedAt": "2026-04-17T17:29:34.235Z"
+    },
+    {
+      "name": "Kayle_Skin24_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:34.235Z"
+    },
+    {
+      "name": "Kayle_Skin24_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:34.235Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin26",
+    "bin": "data/characters/kayle/skins/skin26.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin26/Materials/Kayle_Skin26_Wings"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin26",
+      "bin": "data/characters/kayle/skins/skin26.bin"
+    }
+  ]
+}

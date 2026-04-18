@@ -1,0 +1,44 @@
+{
+  "id": "yone-skin55-robe-01-inst",
+  "name": "Yone Skin55 Robe 01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.657Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_yone_skin55_robe_01_inst",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin55_Mask01_CM.tex",
+      "updatedAt": "2026-04-17T18:10:06.651Z"
+    },
+    {
+      "name": "Yone_Skin55_Mask02_CM.tex",
+      "updatedAt": "2026-04-17T18:10:06.651Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.651Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin55",
+    "bin": "data/characters/yone/skins/skin55.bin",
+    "entryKey": "Characters/Yone/Skins/Skin55/Materials/Yone_Skin55_Robe_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin55",
+      "bin": "data/characters/yone/skins/skin55.bin"
+    }
+  ]
+}

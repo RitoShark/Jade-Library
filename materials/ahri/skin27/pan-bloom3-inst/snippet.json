@@ -1,0 +1,30 @@
+{
+  "id": "pan-bloom3-inst",
+  "name": "Pan Bloom3 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:52.065Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_pan_bloom3_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin27_CloudSleeve_MAT.tex",
+      "updatedAt": "2026-04-17T17:06:52.059Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin27",
+    "bin": "data/characters/ahri/skins/skin27.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin27/Materials/PanBloom3_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin27",
+      "bin": "data/characters/ahri/skins/skin27.bin"
+    }
+  ]
+}

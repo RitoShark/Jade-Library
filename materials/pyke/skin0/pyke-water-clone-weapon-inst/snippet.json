@@ -1,0 +1,44 @@
+{
+  "id": "pyke-water-clone-weapon-inst",
+  "name": "Pyke Water Clone Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:14.255Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_water_clone_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:14.248Z"
+    },
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:46:14.248Z"
+    },
+    {
+      "name": "Pyke_Base_Weapon_Mask.tex",
+      "updatedAt": "2026-04-17T17:46:14.248Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin0",
+    "bin": "data/characters/pyke/skins/skin0.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin0/Materials/Pyke_WaterClone_weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin0",
+      "bin": "data/characters/pyke/skins/skin0.bin"
+    }
+  ]
+}

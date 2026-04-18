@@ -1,0 +1,48 @@
+{
+  "id": "magical-glow-inst",
+  "name": "Magical Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:01.230Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_magical_glow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:01.208Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:01.208Z"
+    },
+    {
+      "name": "Nidalee_Dawnbringer_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.208Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:01.208Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin11",
+    "bin": "data/characters/nidalee/skins/skin11.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin11/Materials/MagicalGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin11",
+      "bin": "data/characters/nidalee/skins/skin11.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ss-sword-glow",
+  "name": "Ss Sword Glow",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:01.679Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ss_sword_glow",
+  "textureFiles": [
+    {
+      "name": "Garen_Skin14_InterlaceScanLines-pink.tex",
+      "updatedAt": "2026-04-17T17:20:01.673Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin14",
+    "bin": "data/characters/garen/skins/skin14.bin",
+    "entryKey": "Characters/Garen/Skins/Skin14/Materials/SS_SwordGlow"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin14",
+      "bin": "data/characters/garen/skins/skin14.bin"
+    }
+  ]
+}

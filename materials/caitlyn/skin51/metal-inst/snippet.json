@@ -1,0 +1,38 @@
+{
+  "id": "metal-inst",
+  "name": "Metal Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:30.984Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_metal_inst",
+  "textureFiles": [
+    {
+      "name": "Caitlyn_Skin51_TX_CM.SKINS_Caitlyn_Skin51.tex",
+      "updatedAt": "2026-04-17T17:13:30.978Z"
+    },
+    {
+      "name": "Caitlyn_Skin51_Metal_Mask_TX_CM.SKINS_Caitlyn_Skin51.tex",
+      "updatedAt": "2026-04-17T17:13:30.978Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:30.978Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin51",
+    "bin": "data/characters/caitlyn/skins/skin51.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin51/Materials/Metal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin51",
+      "bin": "data/characters/caitlyn/skins/skin51.bin"
+    }
+  ]
+}

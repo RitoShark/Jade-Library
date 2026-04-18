@@ -1,0 +1,36 @@
+{
+  "id": "mat-tails-inst",
+  "name": "Mat Tails Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:49.753Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mat_tails_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Base_R_Tails_Mask_01.tex",
+      "updatedAt": "2026-04-17T17:06:49.749Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin0",
+    "bin": "data/characters/ahri/skins/skin0.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin0/Materials/MAT_Tails_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin0",
+      "bin": "data/characters/ahri/skins/skin0.bin"
+    }
+  ]
+}

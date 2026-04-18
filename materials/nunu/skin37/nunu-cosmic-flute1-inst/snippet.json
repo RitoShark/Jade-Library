@@ -1,0 +1,44 @@
+{
+  "id": "nunu-cosmic-flute1-inst",
+  "name": "Nunu Cosmic Flute1 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:09.863Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nunu_cosmic_flute1_inst",
+  "textureFiles": [
+    {
+      "name": "Kassadin_Skin35_R_StarryBackdrop_02.tex",
+      "updatedAt": "2026-04-17T17:44:09.858Z"
+    },
+    {
+      "name": "Nunu_Skin16_Gray.tex",
+      "updatedAt": "2026-04-17T17:44:09.858Z"
+    },
+    {
+      "name": "3161color-hold.SKINS_Jinx_Skin60_ProjectCare.tex",
+      "updatedAt": "2026-04-17T17:44:09.858Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin37",
+    "bin": "data/characters/nunu/skins/skin37.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin37/Materials/Nunu_Cosmic_Flute1_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin37",
+      "bin": "data/characters/nunu/skins/skin37.bin"
+    }
+  ]
+}

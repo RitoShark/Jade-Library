@@ -1,0 +1,40 @@
+{
+  "id": "fresnel-color-inst",
+  "name": "Fresnel Color Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.053Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_color_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.046Z"
+    },
+    {
+      "name": "Gnar_Skin14_W_Buff_Mat_Mask.tex",
+      "updatedAt": "2026-04-17T17:20:21.046Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin14",
+    "bin": "data/characters/gnar/skins/skin14.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin14/Materials/FresnelColor_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin14",
+      "bin": "data/characters/gnar/skins/skin14.bin"
+    }
+  ]
+}

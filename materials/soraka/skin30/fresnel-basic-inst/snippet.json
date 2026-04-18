@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:56.973Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Soraka_Skin30_Main_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:56:56.967Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:56.967Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Soraka",
+    "skin": "skin30",
+    "bin": "data/characters/soraka/skins/skin30.bin",
+    "entryKey": "Characters/Soraka/Skins/Skin30/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Soraka",
+      "skin": "skin30",
+      "bin": "data/characters/soraka/skins/skin30.bin"
+    }
+  ]
+}

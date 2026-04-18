@@ -1,0 +1,31 @@
+{
+  "id": "vayne-skin45-skin45-inst",
+  "name": "Vayne Skin45 Skin45 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:41.634Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin45_skin45_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin45",
+    "bin": "data/characters/vayne/skins/skin45.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin45/Materials/Vayne_Skin45_Skin45_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin45",
+      "bin": "data/characters/vayne/skins/skin45.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "weapon-glow-inst",
+  "name": "Weapon Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:23.088Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_glow_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pantheon",
+    "skin": "skin25",
+    "bin": "data/characters/pantheon/skins/skin25.bin",
+    "entryKey": "Characters/Pantheon/Skins/Skin25/Materials/WeaponGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pantheon",
+      "skin": "skin25",
+      "bin": "data/characters/pantheon/skins/skin25.bin"
+    }
+  ]
+}

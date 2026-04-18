@@ -1,0 +1,64 @@
+{
+  "id": "nunu-faces-inst",
+  "name": "Nunu Faces Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:10.084Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nunu_faces_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "Nunu_Bot_Eyes_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:44:10.075Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nunu",
+    "skin": "skin4",
+    "bin": "data/characters/nunu/skins/skin4.bin",
+    "entryKey": "Characters/Nunu/Skins/Skin4/Materials/Nunu_Faces_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nunu",
+      "skin": "skin4",
+      "bin": "data/characters/nunu/skins/skin4.bin"
+    }
+  ]
+}

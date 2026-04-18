@@ -1,0 +1,36 @@
+{
+  "id": "irelia-inst",
+  "name": "Irelia Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:34.124Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_irelia_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Base_Mat_blades_TEX_grey.tex",
+      "updatedAt": "2026-04-17T17:22:34.118Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin14",
+    "bin": "data/characters/irelia/skins/skin14.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin14/Materials/Irelia_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin14",
+      "bin": "data/characters/irelia/skins/skin14.bin"
+    }
+  ]
+}

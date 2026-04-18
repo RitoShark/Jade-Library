@@ -1,0 +1,38 @@
+{
+  "id": "lee-sin-skin52-body-mat",
+  "name": "Lee Sin Skin52 Body Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:03.177Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lee_sin_skin52_body_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin52_Body_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:03.171Z"
+    },
+    {
+      "name": "LeeSin_Skin52_Body_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:03.171Z"
+    },
+    {
+      "name": "LeeSin_Skin52_Iridescent_Rainbow_MAT_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:03.171Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin52",
+    "bin": "data/characters/leesin/skins/skin52.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin52/Materials/LeeSin_Skin52_Body_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin52",
+      "bin": "data/characters/leesin/skins/skin52.bin"
+    }
+  ]
+}

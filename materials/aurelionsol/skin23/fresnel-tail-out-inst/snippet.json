@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-tail-out-inst",
+  "name": "Fresnel Tail Out Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:36.201Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_tail_out_inst",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin23_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:10:36.196Z"
+    },
+    {
+      "name": "AurelionSol_Skin21_Tail_Gadient_Map.tex",
+      "updatedAt": "2026-04-17T17:10:36.196Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin23",
+    "bin": "data/characters/aurelionsol/skins/skin23.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin23/Materials/Fresnel_Tail_Out_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin23",
+      "bin": "data/characters/aurelionsol/skins/skin23.bin"
+    }
+  ]
+}

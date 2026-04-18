@@ -1,0 +1,40 @@
+{
+  "id": "hkg-mat-cap-hair",
+  "name": "Hkg Mat Cap Hair",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.285Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_hair",
+  "textureFiles": [
+    {
+      "name": "Nami_Skin41_MatCap_Hair.tex",
+      "updatedAt": "2026-04-17T17:41:26.279Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:41:26.279Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin41",
+    "bin": "data/characters/nami/skins/skin41.bin",
+    "entryKey": "Characters/Nami/Skins/Skin41/Materials/HKG_MatCap_Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin41",
+      "bin": "data/characters/nami/skins/skin41.bin"
+    }
+  ]
+}

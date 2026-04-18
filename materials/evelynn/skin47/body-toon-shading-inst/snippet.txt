@@ -1,0 +1,171 @@
+"jadelib_body_toon_shading_inst" = StaticMaterialDef {
+    name: string = "jadelib_body_toon_shading_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex_Mask"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Tex"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Mask"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/MatCap_ToonPlastic.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingTex"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/ToonShading.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingOutlineTex"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/OutlineToneMap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "ToonShadingRimTex"
+            texturePath: string = "assets/jadelib/body-toon-shading-inst/Evelynn_Skin47_Gradient_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Pitch"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirection_Override_Yaw"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollStrength_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Scroll_Color_Tint_R"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollSpeed_R"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexTile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SpecularPower"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapTintColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SunDirectionOverride"
+            value: vec4 = { 0.41999998688697815, 0.41999998688697815, 0.41999998688697815, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonShadePower"
+            value: vec4 = { 8.574999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonOutlineControl"
+            value: vec4 = { 0.6000000238418579, 0.25, 0.20000000298023224, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ToonRimControl"
+            value: vec4 = { 1, 0.30000001192092896, 0.15000000596046448, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorBase"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorOutline"
+            value: vec4 = { 0, 0, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColorRim"
+            value: vec4 = { 0.7356221675872803, 0.2376745194196701, 0.9060654640197754, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Color_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_SPHERICAL_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+            on: bool = false
+            Group: string = "MatCap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OVERRIDE_SUN_DIRECTION"
+            on: bool = false
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "RIM_COLOR_ON"
+            Group: string = "Toon"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            Group: string = "Toon"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

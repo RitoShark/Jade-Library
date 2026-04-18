@@ -1,0 +1,36 @@
+{
+  "id": "flames-inst",
+  "name": "Flames Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:07:56.147Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flames_inst",
+  "textureFiles": [
+    {
+      "name": "Akali_Skin82_Flame_Color_Mat_Mul3.tex",
+      "updatedAt": "2026-04-17T17:07:56.142Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akali",
+    "skin": "skin82",
+    "bin": "data/characters/akali/skins/skin82.bin",
+    "entryKey": "Characters/Akali/Skins/Skin82/Materials/Flames_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Akali",
+      "skin": "skin82",
+      "bin": "data/characters/akali/skins/skin82.bin"
+    }
+  ]
+}

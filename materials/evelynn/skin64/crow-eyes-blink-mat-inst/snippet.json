@@ -1,0 +1,44 @@
+{
+  "id": "crow-eyes-blink-mat-inst",
+  "name": "Crow Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:21.330Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crow_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.323Z"
+    },
+    {
+      "name": "Evelynn_Skin64_Mat_eye.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.323Z"
+    },
+    {
+      "name": "Evelynn_Skin64_Eyes_Blink.SKINS_Evelynn_Skin64.tex",
+      "updatedAt": "2026-04-17T17:17:21.323Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin64",
+    "bin": "data/characters/evelynn/skins/skin64.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin64/Materials/CrowEyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin64",
+      "bin": "data/characters/evelynn/skins/skin64.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "murshroom-2-inst",
+  "name": "Murshroom 2 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:43.563Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_murshroom_2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:00:43.557Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:00:43.557Z"
+    },
+    {
+      "name": "Teemo_Skin54_Mushroom_TX_CM.SKINS_Teemo_Skin54.tex",
+      "updatedAt": "2026-04-17T18:00:43.557Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:00:43.557Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Teemo",
+    "skin": "skin54",
+    "bin": "data/characters/teemomushroom/skins/skin54.bin",
+    "entryKey": "Characters/TeemoMushroom/Skins/Skin54/Materials/Murshroom_2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Teemo",
+      "skin": "skin54",
+      "bin": "data/characters/teemomushroom/skins/skin54.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-tristana-inst",
+  "name": "Bloom Parts Tristana Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:32.971Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_tristana_inst",
+  "textureFiles": [
+    {
+      "name": "Tristana_Skin40_Bloom.tex",
+      "updatedAt": "2026-04-17T18:01:32.966Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Tristana",
+    "skin": "skin40",
+    "bin": "data/characters/tristana/skins/skin40.bin",
+    "entryKey": "Characters/Tristana/Skins/Skin40/Materials/Bloom_Parts_Tristana_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Tristana",
+      "skin": "skin40",
+      "bin": "data/characters/tristana/skins/skin40.bin"
+    }
+  ]
+}

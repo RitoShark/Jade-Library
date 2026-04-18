@@ -1,0 +1,36 @@
+{
+  "id": "collar-inst",
+  "name": "Collar Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:58.889Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_collar_inst",
+  "textureFiles": [
+    {
+      "name": "Lux_Skin42_Collar.tex",
+      "updatedAt": "2026-04-17T17:35:58.884Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin49",
+    "bin": "data/characters/lux/skins/skin49.bin",
+    "entryKey": "Characters/Lux/Skins/Skin49/Materials/Collar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin49",
+      "bin": "data/characters/lux/skins/skin49.bin"
+    }
+  ]
+}

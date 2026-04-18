@@ -1,0 +1,64 @@
+{
+  "id": "zilean-skin14-material-bloom-inst",
+  "name": "Zilean Skin14 Material Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:34.448Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zilean_skin14_material_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "Zilean_Skin14_MT_Alpha.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "Zilean_Skin14_MT_Alpha.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.441Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin14",
+    "bin": "data/characters/zilean/skins/skin14.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin14/Materials/Zilean_Skin14_Material_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin14",
+      "bin": "data/characters/zilean/skins/skin14.bin"
+    }
+  ]
+}

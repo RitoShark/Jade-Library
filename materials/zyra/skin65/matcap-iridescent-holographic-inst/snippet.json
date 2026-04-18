@@ -1,0 +1,60 @@
+{
+  "id": "matcap-iridescent-holographic-inst",
+  "name": "Matcap Iridescent Holographic Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:42.299Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_matcap_iridescent_holographic_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "ZyraSeed_Skin65_Seed_HoloMask_TX_CM.Chroma_Zyra_Mythmaker_Paragon.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "matcap_iridescent.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "SRX_Wind_Noise.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    },
+    {
+      "name": "NB_FlowMap_Pond_A.tex",
+      "updatedAt": "2026-04-17T18:14:42.292Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zyra",
+    "skin": "skin65",
+    "bin": "data/characters/zyraseed/skins/skin65.bin",
+    "entryKey": "Characters/ZyraSeed/Skins/Skin65/Materials/Matcap_Iridescent_Holographic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zyra",
+      "skin": "skin65",
+      "bin": "data/characters/zyraseed/skins/skin65.bin"
+    }
+  ]
+}

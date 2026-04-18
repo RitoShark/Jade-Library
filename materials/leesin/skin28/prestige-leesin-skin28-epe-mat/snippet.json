@@ -1,0 +1,52 @@
+{
+  "id": "prestige-leesin-skin28-epe-mat",
+  "name": "Prestige Leesin Skin28 Epe Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:47.404Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_prestige_leesin_skin28_epe_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin28_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:32:58.759Z"
+    },
+    {
+      "name": "LeeSin_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:32:58.759Z"
+    },
+    {
+      "name": "LeeSin_Skin39_AutoAttack_SmokeErode.tex",
+      "updatedAt": "2026-04-17T17:32:58.759Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:32:58.759Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin28",
+    "bin": "data/characters/leesin/skins/skin28.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin28/Materials/Prestige_Leesin_Skin28_EPE_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin28",
+      "bin": "data/characters/leesin/skins/skin28.bin"
+    },
+    {
+      "champion": "MissFortune",
+      "skin": "skin33",
+      "bin": "data/characters/missfortune/skins/skin33.bin"
+    },
+    {
+      "champion": "Volibear",
+      "skin": "skin9",
+      "bin": "data/characters/volibear/skins/skin9.bin"
+    }
+  ]
+}

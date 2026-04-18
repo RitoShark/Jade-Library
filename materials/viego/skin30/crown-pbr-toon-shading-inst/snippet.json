@@ -1,0 +1,44 @@
+{
+  "id": "crown-pbr-toon-shading-inst",
+  "name": "Crown Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:37.919Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_crown_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:37.912Z"
+    },
+    {
+      "name": "Viego_Skin30_Sword_FlowDistortion_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:37.912Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:05:37.912Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin30",
+    "bin": "data/characters/viego/skins/skin30.bin",
+    "entryKey": "Characters/Viego/Skins/Skin30/Materials/Crown_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin30",
+      "bin": "data/characters/viego/skins/skin30.bin"
+    }
+  ]
+}

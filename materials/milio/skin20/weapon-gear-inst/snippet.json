@@ -1,0 +1,52 @@
+{
+  "id": "weapon-gear-inst",
+  "name": "Weapon Gear Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:34.100Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_gear_inst",
+  "textureFiles": [
+    {
+      "name": "Milio_Skin20_Backpack_Ice_mask_TX_CM.SKINS_Milio_Skin20.tex",
+      "updatedAt": "2026-04-17T17:38:34.093Z"
+    },
+    {
+      "name": "Milio_Skin20_Backpack_White_mask_TX_CM.SKINS_Milio_Skin20.tex",
+      "updatedAt": "2026-04-17T17:38:34.093Z"
+    },
+    {
+      "name": "Milio_Skin20_Black_Colorhold_01.SKINS_Milio_Skin20.tex",
+      "updatedAt": "2026-04-17T17:38:34.093Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:34.093Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:34.093Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin20",
+    "bin": "data/characters/milio/skins/skin20.bin",
+    "entryKey": "Characters/Milio/Skins/Skin20/Materials/Weapon_Gear_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin20",
+      "bin": "data/characters/milio/skins/skin20.bin"
+    }
+  ]
+}

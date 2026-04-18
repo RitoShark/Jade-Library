@@ -1,0 +1,40 @@
+{
+  "id": "dissolve-inst",
+  "name": "Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:23.175Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Rakan_Skin05_Character_Dissolve.tex",
+      "updatedAt": "2026-04-17T17:47:23.168Z"
+    },
+    {
+      "name": "Rakan_Skin08_Light_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:47:23.168Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin8",
+    "bin": "data/characters/rakan/skins/skin8.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin8/Materials/Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin8",
+      "bin": "data/characters/rakan/skins/skin8.bin"
+    }
+  ]
+}

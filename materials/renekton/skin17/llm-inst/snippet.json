@@ -1,0 +1,39 @@
+{
+  "id": "llm-inst",
+  "name": "Llm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:41.732Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_llm_inst",
+  "textureFiles": [
+    {
+      "name": "Renekton_Skin17_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:33.588Z"
+    },
+    {
+      "name": "Renekton_Skin17_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:48:33.588Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin17",
+    "bin": "data/characters/renekton/skins/skin17.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin17/Materials/LLM_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin17",
+      "bin": "data/characters/renekton/skins/skin17.bin"
+    },
+    {
+      "champion": "Sejuani",
+      "skin": "skin36",
+      "bin": "data/characters/sejuani/skins/skin36.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "outline-dragon",
+  "name": "Outline Dragon",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:49.397Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_dragon",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:49.383Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:49.383Z"
+    },
+    {
+      "name": "Graves_Skin45_Matcap.tex",
+      "updatedAt": "2026-04-17T17:20:49.383Z"
+    },
+    {
+      "name": "Graves_Skin45__Racell_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:20:49.383Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:49.383Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Graves",
+    "skin": "skin45",
+    "bin": "178c96527a5eaa8c.bin",
+    "entryKey": "Characters/Graves/Skins/Skin45/Materials/Outline_Dragon"
+  },
+  "usedBy": [
+    {
+      "champion": "Graves",
+      "skin": "skin45",
+      "bin": "178c96527a5eaa8c.bin"
+    }
+  ]
+}

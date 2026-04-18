@@ -1,0 +1,43 @@
+{
+  "id": "lee-sin-skin51-dragon-hands-feet-mat",
+  "name": "Lee Sin Skin51 Dragon Hands Feet Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:06.536Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_lee_sin_skin51_dragon_hands_feet_mat",
+  "textureFiles": [
+    {
+      "name": "LeeSin_Skin51_DLimbs_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:02.931Z"
+    },
+    {
+      "name": "LeeSin_Skin51_DLimbs_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:02.931Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:02.931Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin51",
+    "bin": "data/characters/leesin/skins/skin51.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin51/Materials/LeeSin_Skin51_Dragon_HandsFeet_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin51",
+      "bin": "data/characters/leesin/skins/skin51.bin"
+    },
+    {
+      "champion": "MasterYi",
+      "skin": "skin96",
+      "bin": "data/characters/masteryi/skins/skin96.bin"
+    }
+  ]
+}

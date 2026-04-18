@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-nami-skin41-energy-inst",
+  "name": "Hkg Mat Cap Nami Skin41 Energy Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.358Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_nami_skin41_energy_inst",
+  "textureFiles": [
+    {
+      "name": "Nami_Skin41_Cloud_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:26.352Z"
+    },
+    {
+      "name": "Nami_Skin41_BodyEnergy_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:26.352Z"
+    },
+    {
+      "name": "Nami_Skin41_CloudMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:26.352Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin41",
+    "bin": "data/characters/nami/skins/skin41.bin",
+    "entryKey": "Characters/Nami/Skins/Skin41/Materials/HKG_MatCap_Nami_Skin41_Energy_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin41",
+      "bin": "data/characters/nami/skins/skin41.bin"
+    }
+  ]
+}

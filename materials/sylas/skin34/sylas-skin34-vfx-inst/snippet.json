@@ -1,0 +1,36 @@
+{
+  "id": "sylas-skin34-vfx-inst",
+  "name": "Sylas Skin34 Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:28.771Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_skin34_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:58:28.764Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin34",
+    "bin": "data/characters/sylas/skins/skin34.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin34/Materials/Sylas_Skin34_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin34",
+      "bin": "data/characters/sylas/skins/skin34.bin"
+    }
+  ]
+}

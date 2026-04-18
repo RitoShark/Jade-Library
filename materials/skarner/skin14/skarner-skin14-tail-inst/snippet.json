@@ -1,0 +1,48 @@
+{
+  "id": "skarner-skin14-tail-inst",
+  "name": "Skarner Skin14 Tail Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:55:32.407Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_skarner_skin14_tail_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:55:32.398Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:55:32.398Z"
+    },
+    {
+      "name": "Skarner_Skin14_Scrolling_TX_CM.SKINS_Skarner_Skin14.tex",
+      "updatedAt": "2026-04-17T17:55:32.398Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:55:32.398Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Skarner",
+    "skin": "skin14",
+    "bin": "data/characters/skarner/skins/skin14.bin",
+    "entryKey": "Characters/Skarner/Skins/Skin14/Materials/Skarner_Skin14_Tail_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Skarner",
+      "skin": "skin14",
+      "bin": "data/characters/skarner/skins/skin14.bin"
+    }
+  ]
+}

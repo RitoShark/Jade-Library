@@ -1,0 +1,64 @@
+{
+  "id": "panning-bloom-inst-cape",
+  "name": "Panning Bloom Inst Cape",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:04.588Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_bloom_inst_cape",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "Akshan_Skin1_ScrollTex_Cape.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "Akshan_Skin1_ScrollTexMask_Cape.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:04.582Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin1",
+    "bin": "data/characters/akshan/skins/skin1.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin1/Materials/PanningBloom_inst_Cape"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin1",
+      "bin": "data/characters/akshan/skins/skin1.bin"
+    }
+  ]
+}

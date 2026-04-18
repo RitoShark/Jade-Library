@@ -1,0 +1,215 @@
+"jadelib_body_normal_q2" = StaticMaterialDef {
+    name: string = "jadelib_body_normal_q2"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Swapped_Texture"
+            texturePath: string = "assets/jadelib/body-normal-q2/Yasuo_Skin87_TX_CM.SKINS_Yasuo_Skin87.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Ink_Texture"
+            texturePath: string = "assets/jadelib/body-normal-q2/Yasuo_Skin87_FresnelMask_Normal_TX_CM.SKINS_Yasuo_Skin87.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Ink_Color_Texture"
+            texturePath: string = "assets/jadelib/body-normal-q2/black.SKINS_Lissandra_Skin43.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TexDissolveBias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "LightenDiff"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutlineSize"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutline_Softness"
+            value: vec4 = { 2.0875000953674316, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "HardOutline_Smooth_Step"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveBias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SmoothStep"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Ink_Color"
+            value: vec4 = { 0.8426337242126465, 0.09057755768299103, 0.09057755768299103, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_SWAP"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_ALPHA"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFINE_INK_COLOR_BY_TEXTURE"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_InkOutline"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Ink_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "YasuoQ2"
+                    }
+                    mColorOn: vec4 = { 0.9438468217849731, 0.10113679617643356, 0.29074540734291077, 1 }
+                    mColorOff: vec4 = { 0.7607843279838562, 0.18039216101169586, 0.364705890417099, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "HardOutlineSize"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "YasuoQ2"
+                                mDeactivateEarlySeconds: f32 = 0.10000000149011612
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.2199999988079071
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.23000000417232513
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "HardOutline_Softness"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "YasuoQ2"
+                                mDeactivateEarlySeconds: f32 = 0.10000000149011612
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1.7999999523162842
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 2
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "YasuoQ2"
+                                mDeactivateEarlySeconds: f32 = 0.10000000149011612
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "YasuoQ2"
+                    }
+                    mColorOn: vec4 = { 0.9438468217849731, 0.10113679617643356, 0.29074540734291077, 1 }
+                    mColorOff: vec4 = { 0, 0, 0, 1 }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "YasuoQ2"
+                        }
+                        TextureName: string = "ASSETS/Characters/Yasuo/Skins/Skin87/Yasuo_Skin87_Q2_TX_CM.SKINS_Yasuo_Skin87.tex"
+                    }
+                }
+            }
+            DynamicMaterialTextureSwapDef {
+                name: string = "Ink_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "YasuoQ2"
+                        }
+                        TextureName: string = "ASSETS/Characters/Yasuo/Skins/Skin87/Yasuo_Skin87_FresnelMask_Q2_TX_CM2.SKINS_Yasuo_Skin87.tex"
+                    }
+                }
+            }
+        }
+    }
+}

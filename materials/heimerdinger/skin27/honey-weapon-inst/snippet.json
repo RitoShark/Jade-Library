@@ -1,0 +1,56 @@
+{
+  "id": "honey-weapon-inst",
+  "name": "Honey Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:34.305Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_honey_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    },
+    {
+      "name": "Honey_Weapon_RMA.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:21:34.299Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Heimerdinger",
+    "skin": "skin27",
+    "bin": "data/characters/heimerdinger/skins/skin27.bin",
+    "entryKey": "Characters/Heimerdinger/Skins/Skin27/Materials/Honey_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Heimerdinger",
+      "skin": "skin27",
+      "bin": "data/characters/heimerdinger/skins/skin27.bin"
+    }
+  ]
+}

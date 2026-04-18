@@ -1,0 +1,48 @@
+{
+  "id": "ahri-crystal-tails-inst",
+  "name": "Ahri Crystal Tails Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:55.678Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ahri_crystal_tails_inst",
+  "textureFiles": [
+    {
+      "name": "Ahri_Skin60_RainbowGradient_3.tex",
+      "updatedAt": "2026-04-17T17:06:55.671Z"
+    },
+    {
+      "name": "Ahri_Skin60_Screenspace_Lines.tex",
+      "updatedAt": "2026-04-17T17:06:55.671Z"
+    },
+    {
+      "name": "Ahri_Skin60_TailMask.tex",
+      "updatedAt": "2026-04-17T17:06:55.671Z"
+    },
+    {
+      "name": "Ahri_Skin60_FresnelGradient_1.tex",
+      "updatedAt": "2026-04-17T17:06:55.671Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin60",
+    "bin": "data/characters/ahri/skins/skin60.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin60/Materials/Ahri_Crystal_Tails_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin60",
+      "bin": "data/characters/ahri/skins/skin60.bin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "nilah-skin11-weapon-inst",
+  "name": "Nilah Skin11 Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:32.239Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nilah_skin11_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Rengar_Skin40_white_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:32.232Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:43:32.232Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:43:32.232Z"
+    },
+    {
+      "name": "Nilah_Skin11_Recall_Pan.tex",
+      "updatedAt": "2026-04-17T17:43:32.232Z"
+    },
+    {
+      "name": "Nilah_Skin11_Blade_Pattern_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:32.232Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nilah",
+    "skin": "skin16",
+    "bin": "data/characters/nilah/skins/skin16.bin",
+    "entryKey": "Characters/Nilah/Skins/Skin16/Materials/NilahSkin11_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nilah",
+      "skin": "skin16",
+      "bin": "data/characters/nilah/skins/skin16.bin"
+    }
+  ]
+}

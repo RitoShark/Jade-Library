@@ -1,0 +1,44 @@
+{
+  "id": "beard",
+  "name": "Beard",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:27.168Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_beard",
+  "textureFiles": [
+    {
+      "name": "Hair_Beard_Flowmap.tex",
+      "updatedAt": "2026-04-17T17:11:27.163Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:11:27.163Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:11:27.163Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin26",
+    "bin": "data/characters/bard/skins/skin26.bin",
+    "entryKey": "Characters/Bard/Skins/Skin26/Materials/Beard"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin26",
+      "bin": "data/characters/bard/skins/skin26.bin"
+    }
+  ]
+}

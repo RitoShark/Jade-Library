@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:25.184Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "Shyvana_Skin06_MatCap_TX_CM.Shyvana_Rework.tex",
+      "updatedAt": "2026-04-17T17:54:25.177Z"
+    },
+    {
+      "name": "ShyvanaDragon_Skin06_TX_GM.Shyvana_Rework.tex",
+      "updatedAt": "2026-04-17T17:54:25.177Z"
+    },
+    {
+      "name": "ShyvanaDragon_Skin06_TX_CM.Shyvana_Rework.tex",
+      "updatedAt": "2026-04-17T17:54:25.177Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:54:25.177Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shyvana",
+    "skin": "skin6",
+    "bin": "data/characters/shyvanadragon/skins/skin6.bin",
+    "entryKey": "Characters/ShyvanaDragon/Skins/Skin6/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shyvana",
+      "skin": "skin6",
+      "bin": "data/characters/shyvanadragon/skins/skin6.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "dissolve-iridescence-motion-inst",
+  "name": "Dissolve Iridescence Motion Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:43.143Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve_iridescence_motion_inst",
+  "textureFiles": [
+    {
+      "name": "EDG_Rainbow.tex",
+      "updatedAt": "2026-04-17T17:24:43.135Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:24:43.135Z"
+    },
+    {
+      "name": "velvet_NM.tex",
+      "updatedAt": "2026-04-17T17:24:43.135Z"
+    },
+    {
+      "name": "Nilah_Orb_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:24:43.136Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin35",
+    "bin": "data/characters/jayce/skins/skin35.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin35/Materials/Dissolve_Iridescence_Motion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin35",
+      "bin": "data/characters/jayce/skins/skin35.bin"
+    }
+  ]
+}

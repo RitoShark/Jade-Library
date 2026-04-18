@@ -1,0 +1,38 @@
+{
+  "id": "kayle-skin78-body-inst",
+  "name": "Kayle Skin78 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:43.442Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_kayle_skin78_body_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin78_TX_CM.SKINS_Kayle_Skin78.tex",
+      "updatedAt": "2026-04-17T17:29:43.434Z"
+    },
+    {
+      "name": "Kayle_Base_Wing_16_Gradient.tex",
+      "updatedAt": "2026-04-17T17:29:43.434Z"
+    },
+    {
+      "name": "Kayle_Base_Mask.tex",
+      "updatedAt": "2026-04-17T17:29:43.434Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin78",
+    "bin": "data/characters/kayle/skins/skin78.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin78/Materials/Kayle_Skin78_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin78",
+      "bin": "data/characters/kayle/skins/skin78.bin"
+    }
+  ]
+}

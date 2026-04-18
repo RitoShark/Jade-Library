@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:28:10.243Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Karthus_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:28:10.236Z"
+    },
+    {
+      "name": "Karthus_Skin26_Mask_Hand_Fresnel.tex",
+      "updatedAt": "2026-04-17T17:28:10.236Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karthus",
+    "skin": "skin28",
+    "bin": "data/characters/karthus/skins/skin28.bin",
+    "entryKey": "Characters/Karthus/Skins/Skin28/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karthus",
+      "skin": "skin28",
+      "bin": "data/characters/karthus/skins/skin28.bin"
+    }
+  ]
+}

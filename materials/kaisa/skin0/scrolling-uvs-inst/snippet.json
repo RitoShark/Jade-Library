@@ -1,0 +1,48 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:28.386Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:26:28.379Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:26:28.379Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:28.379Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:26:28.379Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin0",
+    "bin": "data/characters/kaisa/skins/skin0.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin0/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin0",
+      "bin": "data/characters/kaisa/skins/skin0.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "recall-glow-orb-inst",
+  "name": "Recall Glow Orb Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.191Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_recall_glow_orb_inst",
+  "textureFiles": [
+    {
+      "name": "Gnar_Skin16_Recall_Glass_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:20:21.185Z"
+    },
+    {
+      "name": "Gnar_Skin15_RecallProp_Mask1.tex",
+      "updatedAt": "2026-04-17T17:20:21.185Z"
+    },
+    {
+      "name": "Gnar_Skin15_RecallProp_Mask2.tex",
+      "updatedAt": "2026-04-17T17:20:21.185Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin16",
+    "bin": "data/characters/gnar/skins/skin16.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin16/Materials/Recall_Glow_orb_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin16",
+      "bin": "data/characters/gnar/skins/skin16.bin"
+    }
+  ]
+}

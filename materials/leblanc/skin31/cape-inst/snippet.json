@@ -1,0 +1,48 @@
+{
+  "id": "cape-inst",
+  "name": "Cape Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:32:31.589Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cape_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:32:31.583Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:32:31.583Z"
+    },
+    {
+      "name": "Leblanc_Skin31_Weapon_TX_CM.Leblanc_Rework.tex",
+      "updatedAt": "2026-04-17T17:32:31.583Z"
+    },
+    {
+      "name": "Leblanc_Skin29_Weapon_TX_CM_alpha.tex",
+      "updatedAt": "2026-04-17T17:32:31.583Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leblanc",
+    "skin": "skin31",
+    "bin": "data/characters/leblanc/skins/skin31.bin",
+    "entryKey": "Characters/Leblanc/Skins/Skin31/Materials/Cape_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leblanc",
+      "skin": "skin31",
+      "bin": "data/characters/leblanc/skins/skin31.bin"
+    }
+  ]
+}

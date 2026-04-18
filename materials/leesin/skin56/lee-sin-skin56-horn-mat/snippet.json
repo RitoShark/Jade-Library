@@ -1,0 +1,64 @@
+{
+  "id": "lee-sin-skin56-horn-mat",
+  "name": "Lee Sin Skin56 Horn Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:06.112Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lee_sin_skin56_horn_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "LeeSin_Skin51_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:06.104Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "LeeSin",
+    "skin": "skin56",
+    "bin": "data/characters/leesin/skins/skin56.bin",
+    "entryKey": "Characters/LeeSin/Skins/Skin56/Materials/LeeSin_Skin56_Horn_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "LeeSin",
+      "skin": "skin56",
+      "bin": "data/characters/leesin/skins/skin56.bin"
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+"jadelib_lux_skin58_staff_toon_shading_inst" = StaticMaterialDef {
+    name: string = "jadelib_lux_skin58_staff_toon_shading_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/lux-skin58-staff-toon-shading-inst/Viego_Skin30_Sword_SoulFlowNoise_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "EmissionR_DistortionG_Texture"
+            texturePath: string = "assets/jadelib/lux-skin58-staff-toon-shading-inst/Lux_Skin38_Staff_FlowDistortion_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "RMA_Texture"
+            texturePath: string = "assets/jadelib/lux-skin58-staff-toon-shading-inst/white.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionR_Mask_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Strength"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Emissive_Bloom_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RMA_Value"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Levels"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Contrast"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Shadow_Darkness"
+            value: vec4 = { 1.850000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Color"
+            value: vec4 = { 0.3333333432674408, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Outline_Control"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineBlendValue"
+            value: vec4 = { 0.4925000071525574, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_UV_Scroll_Speed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_UV_Scroll_Speed"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_B_UV_Scroll_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveValue"
+            value: vec4 = { 0.5199999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgePowObjSize"
+            value: vec4 = { 20, 100, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveEdgeColor"
+            value: vec4 = { 0, 0.6000000238418579, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveStrengthLength"
+            value: vec4 = { 4, 4, 20, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveController"
+            value: vec4 = { 0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformWaveStrength"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_R_Tint"
+            value: vec4 = { 3, 2, 2, 3 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_ScrollTex_G_Tint"
+            value: vec4 = { 1.2999999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VFX_MaskStrength"
+            value: vec4 = { 4.074999809265137, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BloomPow_RGB"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EdgeBloomColor_RGB"
+            value: vec4 = { 0.39000535011291504, 0.17999541759490967, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveLocationOffset"
+            value: vec4 = { -20, 70, -5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "EmissionColor"
+            value: vec4 = { 0.6509804129600525, 0.17103837430477142, 0.30702677369117737, 0.06666667014360428 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DistortionStrength"
+            value: vec4 = { -0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseA"
+            value: vec4 = { 2.75, 2.75, 2.75, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DissolveWaveDirNoiseB"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "All_Additive_Strength"
+            value: vec4 = { 0.6000000238418579, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DISTORT_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_EMISSIVE_ONLY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA_BLEND_EMISSIVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_DIFFUSE_ADD_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_ALPHA_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_G_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "VFX_SCROLLTEX_R_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TWO_D_DEFORM_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "BLOOM_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DISTORTION_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ALL_ADDITIVE_ON"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADDITIVE_OUTLINE_ONLY"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/PBR_ToonShading"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "DissolveValue"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "taunt"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "taunt"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0.030487805604934692
+                                        0.060975611209869385
+                                        0.5975610017776489
+                                    }
+                                    values: list[f32] = {
+                                        1
+                                        0
+                                        1.004424810409546
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall_Winddown"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall_Winddown"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0.030487805604934692
+                                        0.060975611209869385
+                                        0.5975610017776489
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        0
+                                        1.004424810409546
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Respawn"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Respawn"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0.030487805604934692
+                                        0.060975611209869385
+                                        0.5975610017776489
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        0
+                                        1.004424810409546
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0.048929210752248764
+                                        0.0798492357134819
+                                        0.17033864557743073
+                                        0.24282048642635345
+                                        0.7504057884216309
+                                        0.7835091352462769
+                                    }
+                                    values: list[f32] = {
+                                        1
+                                        -0.0005555446841754019
+                                        0.004832747392356396
+                                        1.004424810409546
+                                        0.9999780058860779
+                                        -0.005002360325306654
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "DissolveEdgeColor"
+                Enabled: bool = false
+                driver: pointer = LerpVec4LogicDriver {
+                    BoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                        mAnimationNames: list[hash] = {
+                            "taunt"
+                        }
+                    }
+                    OnValue: vec4 = { 1, 0.6000000238418579, 0, 1 }
+                    OffValue: vec4 = { 1, 1, 1, 1 }
+                    TurnOnTimeSec: f32 = 1.5
+                    TurnOffTimeSec: f32 = 0
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "EmissionColor"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Respawn"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Respawn"
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.5299999713897705
+                                        0.5600000023841858
+                                        0.6499999761581421
+                                    }
+                                    values: list[vec4] = {
+                                        { 1, 0.20000000298023224, 0, 1 }
+                                        { 1, 0.20000000298023224, 0, 1 }
+                                        { 1, 1, 1, 1 }
+                                        { 0, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall_Winddown"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall_Winddown"
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.5299999713897705
+                                        0.5600000023841858
+                                        0.6000000238418579
+                                    }
+                                    values: list[vec4] = {
+                                        { 1, 0.20000000298023224, 0, 1 }
+                                        { 1, 0.20000000298023224, 0, 1 }
+                                        { 1, 1, 1, 1 }
+                                        { 0, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Outline_Control"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "taunt"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "taunt"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.08943089097738266
+                                        0.16056910157203674
+                                        0.5325203537940979
+                                        0.5630081295967102
+                                        0.6524389982223511
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        1.504424810409546
+                                        0
+                                        0
+                                        1.5
+                                        0
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall_Winddown"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall_Winddown"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.08943089097738266
+                                        0.16056910157203674
+                                        0.5325203537940979
+                                        0.5630081295967102
+                                        0.6524389982223511
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        1.504424810409546
+                                        0
+                                        0
+                                        1.5
+                                        0
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Respawn"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Respawn"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0
+                                        0.08943089097738266
+                                        0.16056910157203674
+                                        0.5325203537940979
+                                        0.5630081295967102
+                                        0.6524389982223511
+                                    }
+                                    values: list[f32] = {
+                                        0
+                                        1.504424810409546
+                                        0
+                                        0
+                                        1.5
+                                        0
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = FloatGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                graph: embed = VfxAnimatedFloatVariableData {
+                                    times: list[f32] = {
+                                        0.048929210752248764
+                                        0.06942824274301529
+                                        0.16587771475315094
+                                        0.699848473072052
+                                        0.7805230617523193
+                                    }
+                                    values: list[f32] = {
+                                        -0.005002360325306654
+                                        1.004424810409546
+                                        -0.009449164383113384
+                                        -0.009449164383113384
+                                        1.004424810409546
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "BloomPow_RGB"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "taunt"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "taunt"
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.0020325202494859695
+                                        0.1775183528661728
+                                        0.4257287085056305
+                                        0.5607309937477112
+                                        0.6499999761581421
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0.615686297416687, 1, 0.057894736528396606 }
+                                        { 0, 0.6000000238418579, 1, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall_Winddown"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall_Winddown"
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.0020325202494859695
+                                        0.1775183528661728
+                                        0.4257287085056305
+                                        0.5607309937477112
+                                        0.6499999761581421
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0.615686297416687, 1, 0.057894736528396606 }
+                                        { 0, 0.6000000238418579, 1, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Respawn"
+                                }
+                            }
+                            mValue: pointer = ColorGraphMaterialDriver {
+                                driver: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Respawn"
+                                }
+                                colors: embed = VfxAnimatedColorVariableData {
+                                    times: list[f32] = {
+                                        0.0020325202494859695
+                                        0.1775183528661728
+                                        0.4257287085056305
+                                        0.5607309937477112
+                                        0.6499999761581421
+                                    }
+                                    values: list[vec4] = {
+                                        { 0, 0.615686297416687, 1, 0.057894736528396606 }
+                                        { 0, 0.6000000238418579, 1, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                        { 0, 0, 0, 0 }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0, 0, 0, 0 }
+                    }
+                }
+            }
+        }
+    }
+}

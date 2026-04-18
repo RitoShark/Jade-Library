@@ -1,0 +1,38 @@
+{
+  "id": "jinx-skin62-body-inst",
+  "name": "Jinx Skin62 Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:25:50.292Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_jinx_skin62_body_inst",
+  "textureFiles": [
+    {
+      "name": "Jinx_Skin62_TX_CM.SKINS_Jinx_Skin62.tex",
+      "updatedAt": "2026-04-17T17:25:50.284Z"
+    },
+    {
+      "name": "Jinx_Skin62_Mask_TX_CM.SKINS_Jinx_Skin62.tex",
+      "updatedAt": "2026-04-17T17:25:50.284Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:25:50.284Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jinx",
+    "skin": "skin62",
+    "bin": "data/characters/jinx/skins/skin62.bin",
+    "entryKey": "Characters/Jinx/Skins/Skin62/Materials/JInx_Skin62_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jinx",
+      "skin": "skin62",
+      "bin": "data/characters/jinx/skins/skin62.bin"
+    }
+  ]
+}

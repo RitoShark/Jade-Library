@@ -1,0 +1,64 @@
+{
+  "id": "miss-fortune-weapon-inst",
+  "name": "Miss Fortune Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:56.625Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_miss_fortune_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "MissFortune_Skin31_Body_Gradient.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "MissFortune_Skin32_GunsMask_TX_CM.SKINS_MissFortune_Skin32.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:56.619Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin32",
+    "bin": "data/characters/missfortune/skins/skin32.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin32/Materials/MissFortune_Weapon_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin32",
+      "bin": "data/characters/missfortune/skins/skin32.bin"
+    }
+  ]
+}

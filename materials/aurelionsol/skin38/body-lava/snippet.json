@@ -1,0 +1,96 @@
+{
+  "id": "body-lava",
+  "name": "Body Lava",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:45.718Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_lava",
+  "textureFiles": [
+    {
+      "name": "AurelionSol_Skin38_TX_CM_White.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_TX_CM.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "Blank.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "AurelionSol_Skin38_Body_Lava_Lightness2_TX_CM.SKINS_AurelionSol_Skin38.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:45.710Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin38",
+    "bin": "data/characters/aurelionsol/skins/skin38.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin38/Materials/Body_Lava"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin38",
+      "bin": "data/characters/aurelionsol/skins/skin38.bin"
+    }
+  ]
+}

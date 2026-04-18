@@ -1,0 +1,49 @@
+{
+  "id": "pyke-water-clone-particle-inst",
+  "name": "Pyke Water Clone Particle Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:30.364Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_water_clone_particle_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:15.429Z"
+    },
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:46:15.429Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:46:15.429Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin25",
+    "bin": "data/characters/pyke/skins/skin25.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin25/Materials/Pyke_WaterClone_Particle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin25",
+      "bin": "data/characters/pyke/skins/skin25.bin"
+    },
+    {
+      "champion": "Vladimir",
+      "skin": "skin49",
+      "bin": "data/characters/vladimir/skins/skin49.bin"
+    }
+  ]
+}

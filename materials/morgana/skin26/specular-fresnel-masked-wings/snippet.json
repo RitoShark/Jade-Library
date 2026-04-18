@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-wings",
+  "name": "Specular Fresnel Masked Wings",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:23.048Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_wings",
+  "textureFiles": [
+    {
+      "name": "Morgana_Skin26_Wings_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:23.043Z"
+    },
+    {
+      "name": "Morgana_Skin26_GoldFresnelWingsMasks.tex",
+      "updatedAt": "2026-04-17T17:40:23.043Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:40:23.043Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Morgana",
+    "skin": "skin26",
+    "bin": "data/characters/morgana/skins/skin26.bin",
+    "entryKey": "Characters/Morgana/Skins/Skin26/Materials/Specular_Fresnel_Masked_Wings"
+  },
+  "usedBy": [
+    {
+      "champion": "Morgana",
+      "skin": "skin26",
+      "bin": "data/characters/morgana/skins/skin26.bin"
+    }
+  ]
+}

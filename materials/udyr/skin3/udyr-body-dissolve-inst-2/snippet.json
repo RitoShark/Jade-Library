@@ -1,0 +1,40 @@
+{
+  "id": "udyr-body-dissolve-inst-2",
+  "name": "Udyr Body Dissolve Inst 2",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:44.052Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_udyr_body_dissolve_inst_2",
+  "textureFiles": [
+    {
+      "name": "Ekko_Skin45_SmokeErode.tex",
+      "updatedAt": "2026-04-17T18:02:44.046Z"
+    },
+    {
+      "name": "Lucian_skin18_body_buff.tex",
+      "updatedAt": "2026-04-17T18:02:44.046Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Udyr",
+    "skin": "skin3",
+    "bin": "data/characters/udyr/skins/skin3.bin",
+    "entryKey": "Characters/Udyr/Skins/Skin3/Materials/Udyr_Body_Dissolve_inst_2"
+  },
+  "usedBy": [
+    {
+      "champion": "Udyr",
+      "skin": "skin3",
+      "bin": "data/characters/udyr/skins/skin3.bin"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "seraphine-hair",
+  "name": "Seraphine Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:57:24.322Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_seraphine_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "Seraphine_Hair_TX_Mask.SKINS_Seraphine_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "Seraphine_Hair_TX_Mask2.SKINS_Seraphine_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:05.994Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin43",
+    "bin": "data/characters/seraphine/skins/skin43.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin43/Materials/Seraphine_Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin43",
+      "bin": "data/characters/seraphine/skins/skin43.bin"
+    },
+    {
+      "champion": "Strawberry_Seraphine",
+      "skin": "skin0",
+      "bin": "data/characters/strawberry_seraphine/skins/skin0.bin"
+    }
+  ]
+}

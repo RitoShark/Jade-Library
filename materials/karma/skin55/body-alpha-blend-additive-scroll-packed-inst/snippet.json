@@ -1,0 +1,48 @@
+{
+  "id": "body-alpha-blend-additive-scroll-packed-inst",
+  "name": "Body Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:53.292Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:27:53.285Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:27:53.285Z"
+    },
+    {
+      "name": "Karma_Skin55_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:27:53.285Z"
+    },
+    {
+      "name": "Karma_Skin55_Mask_A_TX_CM_Outline.tex",
+      "updatedAt": "2026-04-17T17:27:53.285Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin55",
+    "bin": "data/characters/karma/skins/skin55.bin",
+    "entryKey": "Characters/Karma/Skins/Skin55/Materials/Body_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin55",
+      "bin": "data/characters/karma/skins/skin55.bin"
+    }
+  ]
+}

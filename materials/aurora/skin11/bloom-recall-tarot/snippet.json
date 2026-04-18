@@ -1,0 +1,36 @@
+{
+  "id": "bloom-recall-tarot",
+  "name": "Bloom Recall Tarot",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:22.381Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_recall_tarot",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aurora",
+    "skin": "skin11",
+    "bin": "data/aurora_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18_skins_skin19.bin",
+    "entryKey": "Characters/Aurora/Skins/Skin11/Materials/Bloom_RecallTarot"
+  },
+  "usedBy": [
+    {
+      "champion": "Aurora",
+      "skin": "skin11",
+      "bin": "data/aurora_skins_skin11_skins_skin12_skins_skin13_skins_skin14_skins_skin15_skins_skin16_skins_skin17_skins_skin18_skins_skin19.bin"
+    },
+    {
+      "champion": "Lulu",
+      "skin": "skin55",
+      "bin": "data/characters/lulu/skins/skin55.bin"
+    }
+  ]
+}

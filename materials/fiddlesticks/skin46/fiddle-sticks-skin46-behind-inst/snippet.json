@@ -1,0 +1,44 @@
+{
+  "id": "fiddle-sticks-skin46-behind-inst",
+  "name": "Fiddle Sticks Skin46 Behind Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:18:31.290Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fiddle_sticks_skin46_behind_inst",
+  "textureFiles": [
+    {
+      "name": "FiddleSticks_Skin46_Petal_Flowmap_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:31.282Z"
+    },
+    {
+      "name": "FiddleSticks_Skin46_Petal_Mask_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:31.282Z"
+    },
+    {
+      "name": "FiddleSticks_Skin46_Mask_TX_CM.SKINS_FiddleSticks_Skin46.tex",
+      "updatedAt": "2026-04-17T17:18:31.282Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "FiddleSticks",
+    "skin": "skin46",
+    "bin": "data/characters/fiddlesticks/skins/skin46.bin",
+    "entryKey": "Characters/FiddleSticks/Skins/Skin46/Materials/FiddleSticks_Skin46_Behind_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "FiddleSticks",
+      "skin": "skin46",
+      "bin": "data/characters/fiddlesticks/skins/skin46.bin"
+    }
+  ]
+}

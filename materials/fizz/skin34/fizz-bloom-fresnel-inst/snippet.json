@@ -1,0 +1,48 @@
+{
+  "id": "fizz-bloom-fresnel-inst",
+  "name": "Fizz Bloom Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:19:20.699Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fizz_bloom_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:20.692Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:19:20.692Z"
+    },
+    {
+      "name": "Fizz_Skin34_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:19:20.692Z"
+    },
+    {
+      "name": "Fizz_Skin26_OutlineMask.tex",
+      "updatedAt": "2026-04-17T17:19:20.692Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Fizz",
+    "skin": "skin34",
+    "bin": "data/characters/fizz/skins/skin34.bin",
+    "entryKey": "Characters/Fizz/Skins/Skin34/Materials/Fizz_Bloom_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Fizz",
+      "skin": "skin34",
+      "bin": "data/characters/fizz/skins/skin34.bin"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "diana-body-dissolve-inst",
+  "name": "Diana Body Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:18.060Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diana_body_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin25_z_dissolve_01.tex",
+      "updatedAt": "2026-04-17T17:15:18.055Z"
+    },
+    {
+      "name": "color-hold.tex",
+      "updatedAt": "2026-04-17T17:15:18.055Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin25",
+    "bin": "data/characters/diana/skins/skin25.bin",
+    "entryKey": "Characters/Diana/Skins/Skin25/Materials/Diana_Body_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin25",
+      "bin": "data/characters/diana/skins/skin25.bin"
+    }
+  ]
+}

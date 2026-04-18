@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:04.685Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:31:04.679Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:31:04.679Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin28",
+    "bin": "data/characters/kindred/skins/skin28.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin28/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin28",
+      "bin": "data/characters/kindred/skins/skin28.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "outline-iridescent-add-scroll-inst",
+  "name": "Outline Iridescent Add Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:37.874Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_iridescent_add_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:37.867Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin43",
+    "bin": "data/characters/irelia/skins/skin43.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin43/Materials/Outline_Iridescent_Add_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin43",
+      "bin": "data/characters/irelia/skins/skin43.bin"
+    }
+  ]
+}

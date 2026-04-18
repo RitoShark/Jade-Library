@@ -1,0 +1,56 @@
+{
+  "id": "dark-cloth-ribbons-inst",
+  "name": "Dark Cloth Ribbons Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:33:32.950Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_cloth_ribbons_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:33:32.943Z"
+    },
+    {
+      "name": "Leona_Base_Emotes_SmokeErode.tex",
+      "updatedAt": "2026-04-17T17:33:32.944Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.944Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.944Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.944Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:33:32.944Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Leona",
+    "skin": "skin45",
+    "bin": "data/characters/leona/skins/skin45.bin",
+    "entryKey": "Characters/Leona/Skins/Skin45/Materials/DarkClothRibbons_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Leona",
+      "skin": "skin45",
+      "bin": "data/characters/leona/skins/skin45.bin"
+    }
+  ]
+}

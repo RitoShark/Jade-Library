@@ -1,0 +1,48 @@
+{
+  "id": "gun-glow-inst",
+  "name": "Gun Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:26.755Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gun_glow_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.748Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.748Z"
+    },
+    {
+      "name": "Caitlyn_Skin22_Gun_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:13:26.748Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:26.748Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin22",
+    "bin": "data/characters/caitlyn/skins/skin22.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin22/Materials/GunGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin22",
+      "bin": "data/characters/caitlyn/skins/skin22.bin"
+    }
+  ]
+}

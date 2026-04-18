@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:16.268Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin49_AerocraftW_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:16.263Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:23:16.263Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin49",
+    "bin": "data/characters/janna/skins/skin49.bin",
+    "entryKey": "Characters/Janna/Skins/Skin49/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin49",
+      "bin": "data/characters/janna/skins/skin49.bin"
+    }
+  ]
+}

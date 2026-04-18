@@ -1,0 +1,60 @@
+{
+  "id": "ornn-skin29-body-toon-shading-base-mat-inst",
+  "name": "Ornn Skin29 Body Toon Shading Base Mat Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:55.433Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ornn_skin29_body_toon_shading_base_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "Ornn_Skin29_ToonAlpha_TX_CM.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "Galio_Skin40_Matcap_TX_CM.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "Galio_Skin40_ToonShading_TX_CM.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    },
+    {
+      "name": "Galio_Skin40_ToonShading_TX_CM.SKINS_Ornn_Skin29.tex",
+      "updatedAt": "2026-04-17T17:44:55.425Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ornn",
+    "skin": "skin29",
+    "bin": "data/characters/ornn/skins/skin29.bin",
+    "entryKey": "Characters/Ornn/Skins/Skin29/Materials/Ornn_skin29_Body_ToonShading_baseMat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ornn",
+      "skin": "skin29",
+      "bin": "data/characters/ornn/skins/skin29.bin"
+    }
+  ]
+}

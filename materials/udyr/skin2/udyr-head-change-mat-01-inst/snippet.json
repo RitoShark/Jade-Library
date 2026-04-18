@@ -1,0 +1,40 @@
+{
+  "id": "udyr-head-change-mat-01-inst",
+  "name": "Udyr Head Change Mat 01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:43.845Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_udyr_head_change_mat_01_inst",
+  "textureFiles": [
+    {
+      "name": "Udyr_Skin02_NormalArms_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:02:43.839Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:02:43.839Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Udyr",
+    "skin": "skin2",
+    "bin": "data/characters/udyr/skins/skin2.bin",
+    "entryKey": "Characters/Udyr/Skins/Skin2/Materials/Udyr_Head_Change_Mat_01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Udyr",
+      "skin": "skin2",
+      "bin": "data/characters/udyr/skins/skin2.bin"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+"jadelib_hair" = StaticMaterialDef {
+    name: string = "jadelib_hair"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "SS_Texture"
+            texturePath: string = "assets/jadelib/hair/Sylas_Skin46_ScreenSpaceTexture_02.SKINS_Sylas_Skin46.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_1"
+            texturePath: string = "assets/jadelib/hair/Sylas_Skin46_Hair_MaskSet_01_TX_CM.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_2"
+            texturePath: string = "assets/jadelib/hair/Sylas_Skin46_Hair_MaskSet_02_TX_CM.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Fresnel_Mask"
+            texturePath: string = "assets/jadelib/hair/Sylas_Skin46_Hair_FresnelMask.SKINS_Sylas_Skin46.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Scale"
+            value: vec4 = { 40, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Rate"
+            value: vec4 = { 0.05000000074505806, -0.019999999552965164, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "SS_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Color"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dodge_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Contrast"
+            value: vec4 = { 3, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.7499961853027344, 0.020004577934741974, 0.45000380277633667, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Saturation"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Scale"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Rate"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Additional_Alpha_Override"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Bias"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_ADD_SCREEN_SPACE_TEXTURE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DODGE_COLOR_OVERLAY"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SOLID_FRESNEL_COLOR"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL_MASK_COLOR"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Sylas_DarkStar"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = IsCastingBoolDriver {
+                            SpellSlot: u32 = 0
+                        }
+                        TextureName: string = "ASSETS/Characters/Sylas/Skins/Skin46/Sylas_Skin46_Hair_Spell1_TX_CM.SKINS_Sylas_Skin46.tex"
+                    }
+                }
+            }
+        }
+    }
+}

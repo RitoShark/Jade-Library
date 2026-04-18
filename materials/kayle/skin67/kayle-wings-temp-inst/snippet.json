@@ -1,0 +1,36 @@
+{
+  "id": "kayle-wings-temp-inst",
+  "name": "Kayle Wings Temp Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:29:41.489Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayle_wings_temp_inst",
+  "textureFiles": [
+    {
+      "name": "Kayle_Skin67_Level11_Mask_Wings_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:29:41.484Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayle",
+    "skin": "skin67",
+    "bin": "data/characters/kayle/skins/skin67.bin",
+    "entryKey": "Characters/Kayle/Skins/Skin67/Materials/Kayle_Wings_Temp_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayle",
+      "skin": "skin67",
+      "bin": "data/characters/kayle/skins/skin67.bin"
+    }
+  ]
+}

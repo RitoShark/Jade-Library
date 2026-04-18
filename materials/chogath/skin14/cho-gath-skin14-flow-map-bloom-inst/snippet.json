@@ -1,0 +1,44 @@
+{
+  "id": "cho-gath-skin14-flow-map-bloom-inst",
+  "name": "Cho Gath Skin14 Flow Map Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:19.582Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cho_gath_skin14_flow_map_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Chogath_skin14_FM.tex",
+      "updatedAt": "2026-04-17T17:14:19.575Z"
+    },
+    {
+      "name": "ChoGath_Skin14_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:14:19.575Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:14:19.575Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Chogath",
+    "skin": "skin14",
+    "bin": "data/characters/chogath/skins/skin14.bin",
+    "entryKey": "Characters/Chogath/Skins/Skin14/Materials/ChoGath_Skin14_FlowMap_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Chogath",
+      "skin": "skin14",
+      "bin": "data/characters/chogath/skins/skin14.bin"
+    }
+  ]
+}

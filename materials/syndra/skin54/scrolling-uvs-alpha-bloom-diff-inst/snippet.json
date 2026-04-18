@@ -1,0 +1,40 @@
+{
+  "id": "scrolling-uvs-alpha-bloom-diff-inst",
+  "name": "Scrolling Uvs Alpha Bloom Diff Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:14.813Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_alpha_bloom_diff_inst",
+  "textureFiles": [
+    {
+      "name": "Syndra_Skin54_3026_Items_Einstein_01_mult.tex",
+      "updatedAt": "2026-04-17T17:59:14.807Z"
+    },
+    {
+      "name": "Syndra_Skin54_Eyes_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:59:14.807Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Syndra",
+    "skin": "skin54",
+    "bin": "data/characters/syndra/skins/skin54.bin",
+    "entryKey": "Characters/Syndra/Skins/Skin54/Materials/ScrollingUVs_Alpha_Bloom_Diff_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Syndra",
+      "skin": "skin54",
+      "bin": "data/characters/syndra/skins/skin54.bin"
+    }
+  ]
+}

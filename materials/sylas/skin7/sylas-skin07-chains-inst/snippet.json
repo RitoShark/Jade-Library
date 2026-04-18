@@ -1,0 +1,36 @@
+{
+  "id": "sylas-skin07-chains-inst",
+  "name": "Sylas Skin07 Chains Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:31.074Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_skin07_chains_inst",
+  "textureFiles": [
+    {
+      "name": "Sylas_Base_R_scrollTexture.tex",
+      "updatedAt": "2026-04-17T17:58:31.065Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin7",
+    "bin": "data/characters/sylas/skins/skin7.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin7/Materials/Sylas_Skin07_Chains_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin7",
+      "bin": "data/characters/sylas/skins/skin7.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "senna-gun-inst",
+  "name": "Senna Gun Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:28.700Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_senna_gun_inst",
+  "textureFiles": [
+    {
+      "name": "Senna_Skin28_Gun_material.tex",
+      "updatedAt": "2026-04-17T17:52:28.693Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin28",
+    "bin": "data/characters/senna/skins/skin28.bin",
+    "entryKey": "Characters/Senna/Skins/Skin28/Materials/Senna_Gun_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin28",
+      "bin": "data/characters/senna/skins/skin28.bin"
+    }
+  ]
+}

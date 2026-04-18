@@ -1,0 +1,60 @@
+{
+  "id": "tail",
+  "name": "Tail",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:04.360Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tail",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "Cassiopeia_Skin38_Tail_Mask_TX_CM.SKINS_Cassiopeia_Skin38.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "Cassiopeia_Skin38_MatCap_TX_CM.SKINS_Cassiopeia_Skin38.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "Cassiopeia_Skin38_Rainbow_TX_CM.SKINS_Cassiopeia_Skin38.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "Generic_Noise3.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:14:04.354Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Cassiopeia",
+    "skin": "skin38",
+    "bin": "data/characters/cassiopeia/skins/skin38.bin",
+    "entryKey": "Characters/Cassiopeia/Skins/Skin38/Materials/Tail"
+  },
+  "usedBy": [
+    {
+      "champion": "Cassiopeia",
+      "skin": "skin38",
+      "bin": "data/characters/cassiopeia/skins/skin38.bin"
+    }
+  ]
+}

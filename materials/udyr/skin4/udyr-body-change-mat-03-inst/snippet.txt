@@ -1,0 +1,139 @@
+"jadelib_udyr_body_change_mat_03_inst" = StaticMaterialDef {
+    name: string = "jadelib_udyr_body_change_mat_03_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture_2"
+            texturePath: string = "assets/jadelib/udyr-body-change-mat-03-inst/Udyr_Skin04_Ram_TX_CM.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Texture"
+            texturePath: string = "assets/jadelib/udyr-body-change-mat-03-inst/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Lerp_Factor"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Mult"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineColor"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "OutlineControl"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTex_TintColor"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexB_MaskStrength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexR_Color"
+            value: vec4 = { 1, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexG_Color"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexR_Tiles"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexG_Tiles"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexR_Speed"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "ScrollTexG_Speed"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "OUTLINE_ON"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "SCROLLTEX_ON"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/2_Diffuse_Lerp"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Diffuse_Lerp_Factor"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Recall"
+                                }
+                            }
+                            mValue: pointer = LerpMaterialDriver {
+                                mBoolDriver: pointer = NotMaterialDriver {
+                                    mDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                        mAnimationNames: list[hash] = {
+                                            "Recall"
+                                        }
+                                    }
+                                }
+                                mTurnOnTimeSec: f32 = 0
+                                mTurnOffTimeSec: f32 = 0.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                            mScriptName: string = "UdyrE"
+                        }
+                        mTurnOnTimeSec: f32 = 0.25
+                        mTurnOffTimeSec: f32 = 0.5
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "distortion-inst-enemy",
+  "name": "Distortion Inst Enemy",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:53.821Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_distortion_inst_enemy",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin42",
+    "bin": "data/characters/mordekaiser/skins/skin42.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin42/Materials/Distortion_Inst_Enemy"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin42",
+      "bin": "data/characters/mordekaiser/skins/skin42.bin"
+    }
+  ]
+}

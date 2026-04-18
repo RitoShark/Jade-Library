@@ -1,0 +1,48 @@
+{
+  "id": "scrolling-uvs-bloom-panner-inst",
+  "name": "Scrolling Uvs Bloom Panner Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:07.582Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_bloom_panner_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:53:07.576Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:53:07.576Z"
+    },
+    {
+      "name": "Seraphine_Skin09_Hair_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:53:07.576Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:53:07.576Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin9",
+    "bin": "data/characters/seraphine/skins/skin9.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin9/Materials/ScrollingUVs_BloomPanner_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin9",
+      "bin": "data/characters/seraphine/skins/skin9.bin"
+    }
+  ]
+}

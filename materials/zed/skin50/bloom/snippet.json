@@ -1,0 +1,36 @@
+{
+  "id": "bloom",
+  "name": "Bloom",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:11.279Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom",
+  "textureFiles": [
+    {
+      "name": "Zed_Skin49_BloomMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:11.271Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin50",
+    "bin": "data/characters/zed/skins/skin50.bin",
+    "entryKey": "Characters/Zed/Skins/Skin50/Materials/Bloom"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin50",
+      "bin": "data/characters/zed/skins/skin50.bin"
+    }
+  ]
+}

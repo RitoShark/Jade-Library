@@ -1,0 +1,40 @@
+{
+  "id": "flipbook-head",
+  "name": "Flipbook Head",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:59.727Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_head",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:59.721Z"
+    },
+    {
+      "name": "Annie_Skin31_Head_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:59.721Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Annie",
+    "skin": "skin31",
+    "bin": "data/characters/annie/skins/skin31.bin",
+    "entryKey": "Characters/Annie/Skins/Skin31/Materials/Flipbook_Head"
+  },
+  "usedBy": [
+    {
+      "champion": "Annie",
+      "skin": "skin31",
+      "bin": "data/characters/annie/skins/skin31.bin"
+    }
+  ]
+}

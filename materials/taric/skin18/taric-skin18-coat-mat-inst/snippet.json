@@ -1,0 +1,40 @@
+{
+  "id": "taric-skin18-coat-mat-inst",
+  "name": "Taric Skin18 Coat Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:17.041Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_taric_skin18_coat_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Taric_Skin18_Coat_MAT.tex",
+      "updatedAt": "2026-04-17T18:00:17.035Z"
+    },
+    {
+      "name": "Taric_Skin18_CoatMask_MAT.tex",
+      "updatedAt": "2026-04-17T18:00:17.035Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taric",
+    "skin": "skin18",
+    "bin": "data/characters/taric/skins/skin18.bin",
+    "entryKey": "Characters/Taric/Skins/Skin18/Materials/Taric_Skin18_Coat_MAT_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taric",
+      "skin": "skin18",
+      "bin": "data/characters/taric/skins/skin18.bin"
+    }
+  ]
+}

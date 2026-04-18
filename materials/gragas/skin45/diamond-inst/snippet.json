@@ -1,0 +1,56 @@
+{
+  "id": "diamond-inst",
+  "name": "Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:37.875Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    },
+    {
+      "name": "Gragas_Skin39_Diamond_Body_RMA.SKINS_Gragas_Skin39.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:20:37.868Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gragas",
+    "skin": "skin45",
+    "bin": "data/characters/gragas/skins/skin45.bin",
+    "entryKey": "Characters/Gragas/Skins/Skin45/Materials/Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gragas",
+      "skin": "skin45",
+      "bin": "data/characters/gragas/skins/skin45.bin"
+    }
+  ]
+}

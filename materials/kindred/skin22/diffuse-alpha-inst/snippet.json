@@ -1,0 +1,41 @@
+{
+  "id": "diffuse-alpha-inst",
+  "name": "Diffuse Alpha Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:26.557Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin22",
+    "bin": "data/characters/kindredwolf/skins/skin22.bin",
+    "entryKey": "Characters/KindredWolf/Skins/Skin22/Materials/Diffuse_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin22",
+      "bin": "data/characters/kindredwolf/skins/skin22.bin"
+    },
+    {
+      "champion": "KSante",
+      "skin": "skin2",
+      "bin": "data/characters/ksante/skins/skin2.bin"
+    },
+    {
+      "champion": "Nami",
+      "skin": "skin42",
+      "bin": "data/characters/nami/skins/skin42.bin"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "hwei-brush-mat-inst-inst",
+  "name": "Hwei Brush Mat Inst Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:21:48.786Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hwei_brush_mat_inst_inst",
+  "textureFiles": [
+    {
+      "name": "Gradient_test_01.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "Hwei_Skin20_Brush_Mask_TX_CM.Chroma_Hwei_SpiritBlossom_Paragon.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "Hwei_Skin20_matcap_iridescent.Chroma_Hwei_SpiritBlossom_Paragon.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "Hwei_Skin20_CorruptGradient.Chroma_Hwei_SpiritBlossom_Paragon.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "Noise04.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:21:48.779Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Hwei",
+    "skin": "skin20",
+    "bin": "data/characters/hwei/skins/skin20.bin",
+    "entryKey": "Characters/Hwei/Skins/Skin20/Materials/Hwei_Brush_Mat_Inst_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Hwei",
+      "skin": "skin20",
+      "bin": "data/characters/hwei/skins/skin20.bin"
+    }
+  ]
+}

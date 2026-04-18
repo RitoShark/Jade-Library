@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-inst",
+  "name": "Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:06:12.234Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "Viktor_Skin04_Z_ClawArm_FresnelGradient_A.ViktorVGU.tex",
+      "updatedAt": "2026-04-17T18:06:12.219Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:06:12.219Z"
+    },
+    {
+      "name": "Viktor_Skin04_TX_CM.ViktorVGU.tex",
+      "updatedAt": "2026-04-17T18:06:12.219Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:06:12.219Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viktor",
+    "skin": "skin4",
+    "bin": "data/characters/viktor/skins/skin4.bin",
+    "entryKey": "Characters/Viktor/Skins/Skin4/Materials/AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viktor",
+      "skin": "skin4",
+      "bin": "data/characters/viktor/skins/skin4.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "jayce-skin38-body-metal-intt",
+  "name": "Jayce Skin38 Body Metal Intt",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:43.825Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jayce_skin38_body_metal_intt",
+  "textureFiles": [
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:24:43.814Z"
+    },
+    {
+      "name": "Jayce_Skin38_Matcap_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:43.814Z"
+    },
+    {
+      "name": "Jayce_Skin38_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:43.814Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:24:43.814Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin38",
+    "bin": "data/characters/jayce/skins/skin38.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin38/Materials/Jayce_Skin38_BodyMetal_intt"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin38",
+      "bin": "data/characters/jayce/skins/skin38.bin"
+    }
+  ]
+}

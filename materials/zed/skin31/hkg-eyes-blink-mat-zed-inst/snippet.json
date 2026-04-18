@@ -1,0 +1,44 @@
+{
+  "id": "hkg-eyes-blink-mat-zed-inst",
+  "name": "Hkg Eyes Blink Mat Zed Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:16.660Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_eyes_blink_mat_zed_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:16.653Z"
+    },
+    {
+      "name": "ZedShadow_Skin31_EyesMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:16.653Z"
+    },
+    {
+      "name": "ZedShadow_Skin31_EyesBlink_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:16.653Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin31",
+    "bin": "data/zedshadow_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37.bin",
+    "entryKey": "Characters/ZedShadow/Skins/Skin31/Materials/HKG_Eyes_Blink_Mat_Zed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin31",
+      "bin": "data/zedshadow_skins_skin31_skins_skin32_skins_skin33_skins_skin34_skins_skin35_skins_skin36_skins_skin37.bin"
+    }
+  ]
+}

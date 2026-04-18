@@ -1,0 +1,25 @@
+{
+  "id": "hkg-fake-spec-translucent-inst",
+  "name": "Hkg Fake Spec Translucent Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:02:20.398Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_fake_spec_translucent_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TwistedFate",
+    "skin": "skin13",
+    "bin": "31276537dc5b6391.bin",
+    "entryKey": "Characters/TwistedFate/Skins/Skin13/Materials/HKG_FakeSpec_Translucent_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TwistedFate",
+      "skin": "skin13",
+      "bin": "31276537dc5b6391.bin"
+    }
+  ]
+}

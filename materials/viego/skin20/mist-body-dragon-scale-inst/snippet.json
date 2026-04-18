@@ -1,0 +1,48 @@
+{
+  "id": "mist-body-dragon-scale-inst",
+  "name": "Mist Body Dragon Scale Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:36.645Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mist_body_dragon_scale_inst",
+  "textureFiles": [
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T18:05:36.636Z"
+    },
+    {
+      "name": "Viego_Skin19_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:05:36.636Z"
+    },
+    {
+      "name": "Viego_Noise_TX.tex",
+      "updatedAt": "2026-04-17T18:05:36.636Z"
+    },
+    {
+      "name": "Viego_Skin20_Smoke_TX.tex",
+      "updatedAt": "2026-04-17T18:05:36.636Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin20",
+    "bin": "data/characters/viego/skins/skin20.bin",
+    "entryKey": "Characters/Viego/Skins/Skin20/Materials/MistBody_DragonScale_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin20",
+      "bin": "data/characters/viego/skins/skin20.bin"
+    }
+  ]
+}

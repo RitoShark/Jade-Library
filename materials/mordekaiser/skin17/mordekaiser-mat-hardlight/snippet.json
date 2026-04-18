@@ -1,0 +1,48 @@
+{
+  "id": "mordekaiser-mat-hardlight",
+  "name": "Mordekaiser Mat Hardlight",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:52.032Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mordekaiser_mat_hardlight",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:52.018Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:52.018Z"
+    },
+    {
+      "name": "Mordekaiser_Skin17_Main_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:39:52.018Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:39:52.018Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin17",
+    "bin": "data/characters/mordekaiser/skins/skin17.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin17/Materials/Mordekaiser_MAT_Hardlight"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin17",
+      "bin": "data/characters/mordekaiser/skins/skin17.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "magical-panning-angel-fresnel2-inst",
+  "name": "Magical Panning Angel Fresnel2 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:56.606Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_magical_panning_angel_fresnel2_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:56.601Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:56.601Z"
+    },
+    {
+      "name": "Ashe_Skin17_Transform_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:09:56.601Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:09:56.601Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin17",
+    "bin": "data/characters/ashe/skins/skin17.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin17/Materials/MagicalPanningAngelFresnel2_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin17",
+      "bin": "data/characters/ashe/skins/skin17.bin"
+    }
+  ]
+}

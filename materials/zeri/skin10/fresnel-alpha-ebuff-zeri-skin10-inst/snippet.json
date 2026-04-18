@@ -1,0 +1,31 @@
+{
+  "id": "fresnel-alpha-ebuff-zeri-skin10-inst",
+  "name": "Fresnel Alpha Ebuff Zeri Skin10 Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:43.238Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fresnel_alpha_ebuff_zeri_skin10_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin10",
+    "bin": "data/characters/zeri/skins/skin10.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin10/Materials/FresnelAlpha_Ebuff_Zeri_Skin10_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin10",
+      "bin": "data/characters/zeri/skins/skin10.bin"
+    }
+  ]
+}

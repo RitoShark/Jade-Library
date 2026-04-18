@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:39.837Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Zyra_Skin46_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:14:39.832Z"
+    },
+    {
+      "name": "Zyra_Skin46_Bloom_TX_Mask.tex",
+      "updatedAt": "2026-04-17T18:14:39.832Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zyra",
+    "skin": "skin46",
+    "bin": "data/characters/zyra/skins/skin46.bin",
+    "entryKey": "Characters/Zyra/Skins/Skin46/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zyra",
+      "skin": "skin46",
+      "bin": "data/characters/zyra/skins/skin46.bin"
+    }
+  ]
+}

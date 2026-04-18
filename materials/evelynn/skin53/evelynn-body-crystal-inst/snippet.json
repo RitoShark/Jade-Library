@@ -1,0 +1,52 @@
+{
+  "id": "evelynn-body-crystal-inst",
+  "name": "Evelynn Body Crystal Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:19.836Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_evelynn_body_crystal_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.829Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:19.829Z"
+    },
+    {
+      "name": "Evelynn_Skin53_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:19.829Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:19.829Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:19.829Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin53",
+    "bin": "data/characters/evelynn/skins/skin53.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin53/Materials/Evelynn_BodyCrystal_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin53",
+      "bin": "data/characters/evelynn/skins/skin53.bin"
+    }
+  ]
+}

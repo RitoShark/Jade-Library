@@ -1,0 +1,40 @@
+{
+  "id": "flipbook-inst",
+  "name": "Flipbook Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:45.515Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:45:45.508Z"
+    },
+    {
+      "name": "Eyes1.tex",
+      "updatedAt": "2026-04-17T17:45:45.508Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Poppy",
+    "skin": "skin33",
+    "bin": "data/characters/poppy/skins/skin33.bin",
+    "entryKey": "Characters/Poppy/Skins/Skin33/Materials/Flipbook_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Poppy",
+      "skin": "skin33",
+      "bin": "data/characters/poppy/skins/skin33.bin"
+    }
+  ]
+}

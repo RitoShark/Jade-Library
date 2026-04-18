@@ -1,0 +1,44 @@
+{
+  "id": "prestige-aurora",
+  "name": "Prestige Aurora",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:23.003Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_aurora",
+  "textureFiles": [
+    {
+      "name": "Mel_Skin10_Flowmap_3_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:22.998Z"
+    },
+    {
+      "name": "Mel_Skin10_Aurora_Mask_TX_CM.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:22.998Z"
+    },
+    {
+      "name": "black.SKINS_Mel_Skin10.tex",
+      "updatedAt": "2026-04-17T17:38:22.998Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mel",
+    "skin": "skin10",
+    "bin": "data/characters/mel/skins/skin10.bin",
+    "entryKey": "Characters/Mel/Skins/Skin10/Materials/Prestige_Aurora"
+  },
+  "usedBy": [
+    {
+      "champion": "Mel",
+      "skin": "skin10",
+      "bin": "data/characters/mel/skins/skin10.bin"
+    }
+  ]
+}

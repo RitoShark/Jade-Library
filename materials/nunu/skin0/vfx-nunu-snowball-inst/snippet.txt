@@ -1,0 +1,65 @@
+"jadelib_vfx_nunu_snowball_inst" = StaticMaterialDef {
+    name: string = "jadelib_vfx_nunu_snowball_inst"
+    type: u32 = 2
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient"
+            texturePath: string = "assets/jadelib/vfx-nunu-snowball-inst/Ice_Gradient_V02.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dark_Overlay"
+            value: vec4 = { 0.25999999046325684, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Overlay"
+            value: vec4 = { 0.6499999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Smooth_Step_Overlay"
+            value: vec4 = { 0.20000000298023224, 0.800000011920929, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Overlay_Sharpness"
+            value: vec4 = { 2.240999937057495, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLight_Size"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RimLight_Direction"
+            value: vec4 = { -0.5, 1, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Overall_Light_Intesity"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/Particles/VFX_Nunu_Snowball"
+                    cullEnable: bool = false
+                }
+            }
+        }
+    }
+}

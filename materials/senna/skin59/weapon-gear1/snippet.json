@@ -1,0 +1,56 @@
+{
+  "id": "weapon-gear1",
+  "name": "Weapon Gear1",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:33.558Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_weapon_gear1",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    },
+    {
+      "name": "Gold_Form2_Weapon_RMA.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:52:33.552Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin59",
+    "bin": "data/characters/senna/skins/skin59.bin",
+    "entryKey": "Characters/Senna/Skins/Skin59/Materials/Weapon_Gear1"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin59",
+      "bin": "data/characters/senna/skins/skin59.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kog-maw-skin47-flow-map-bloom-teeth",
+  "name": "Kog Maw Skin47 Flow Map Bloom Teeth",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:48.345Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kog_maw_skin47_flow_map_bloom_teeth",
+  "textureFiles": [
+    {
+      "name": "KogMaw_Skin46_TX_FlowMap.tex",
+      "updatedAt": "2026-04-17T17:31:48.340Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:48.340Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:31:48.340Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "KogMaw",
+    "skin": "skin47",
+    "bin": "data/characters/kogmaw/skins/skin47.bin",
+    "entryKey": "Characters/KogMaw/Skins/Skin47/Materials/KogMaw_Skin47_FlowMap_Bloom_Teeth"
+  },
+  "usedBy": [
+    {
+      "champion": "KogMaw",
+      "skin": "skin47",
+      "bin": "data/characters/kogmaw/skins/skin47.bin"
+    }
+  ]
+}

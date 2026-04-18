@@ -1,0 +1,64 @@
+{
+  "id": "assassin-inst",
+  "name": "Assassin Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.511Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_assassin_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "black.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "black.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "black.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "Yuumi_Skin49_Material_Tex.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "Kayn_Skin26_Assassin_MatAlpha_TX_CM.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    },
+    {
+      "name": "black.SKINS_Kayn_Skin26.tex",
+      "updatedAt": "2026-04-17T17:30:13.504Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin27",
+    "bin": "data/characters/kayn/skins/skin27.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin27/Materials/Assassin_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin27",
+      "bin": "data/characters/kayn/skins/skin27.bin"
+    }
+  ]
+}

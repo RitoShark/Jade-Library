@@ -1,0 +1,44 @@
+{
+  "id": "eyes-blink-mat-inst",
+  "name": "Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:45.329Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:45.324Z"
+    },
+    {
+      "name": "Anivia_Skin37_TX_Eye_MT.tex",
+      "updatedAt": "2026-04-17T17:08:45.324Z"
+    },
+    {
+      "name": "Anivia_Skin37_Eyes_Blink_01.tex",
+      "updatedAt": "2026-04-17T17:08:45.324Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Anivia",
+    "skin": "skin37",
+    "bin": "data/characters/anivia/skins/skin37.bin",
+    "entryKey": "Characters/Anivia/Skins/Skin37/Materials/Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Anivia",
+      "skin": "skin37",
+      "bin": "data/characters/anivia/skins/skin37.bin"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "zaahen-wings-stylized-mat-inst",
+  "name": "Zaahen Wings Stylized Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:24.546Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zaahen_wings_stylized_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Material_ZH_Idle_TurbulDeform.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "MRND_materialMask.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "Base_Wave_Foam_Stylized_01.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "Zaahen_Flowmap2.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "MRND_AdditiveScroll_Combo_TX.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "CaseTexture03.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "Material_ZH_Idle_StylizedHighlight.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    },
+    {
+      "name": "Material_ZH_Idle_StylizedHighlight.Zaahen.tex",
+      "updatedAt": "2026-04-17T18:11:24.537Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zaahen",
+    "skin": "skin6",
+    "bin": "data/characters/zaahen/skins/skin6.bin",
+    "entryKey": "Characters/Zaahen/Skins/Skin6/Materials/Zaahen_Wings_StylizedMat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zaahen",
+      "skin": "skin6",
+      "bin": "data/characters/zaahen/skins/skin6.bin"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-basic-inst",
+  "name": "Fresnel Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:18.603Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Lulu_Skin26_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:35:18.598Z"
+    },
+    {
+      "name": "Lulu_Skin26_Fresnel_Mask.tex",
+      "updatedAt": "2026-04-17T17:35:18.598Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lulu",
+    "skin": "skin26",
+    "bin": "data/characters/lulu/skins/skin26.bin",
+    "entryKey": "Characters/Lulu/Skins/Skin26/Materials/Fresnel_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lulu",
+      "skin": "skin26",
+      "bin": "data/characters/lulu/skins/skin26.bin"
+    }
+  ]
+}

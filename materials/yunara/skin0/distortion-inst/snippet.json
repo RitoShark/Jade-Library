@@ -1,0 +1,31 @@
+{
+  "id": "distortion-inst",
+  "name": "Distortion Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:43.406Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_distortion_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yunara",
+    "skin": "skin0",
+    "bin": "ee53edc97958628f.bin",
+    "entryKey": "Characters/Yunara/Skins/Skin0/Materials/Distortion_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yunara",
+      "skin": "skin0",
+      "bin": "ee53edc97958628f.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-hair-spike-inst",
+  "name": "Bloom Parts Hair Spike Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:45.802Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_hair_spike_inst",
+  "textureFiles": [
+    {
+      "name": "Zeri_Skin10_UltHairSpike_TX.tex",
+      "updatedAt": "2026-04-17T18:12:45.787Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin15",
+    "bin": "data/characters/zeri/skins/skin15.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin15/Materials/Bloom_Parts_HairSpike_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin15",
+      "bin": "data/characters/zeri/skins/skin15.bin"
+    }
+  ]
+}

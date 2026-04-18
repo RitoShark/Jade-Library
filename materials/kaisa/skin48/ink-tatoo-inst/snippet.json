@@ -1,0 +1,53 @@
+{
+  "id": "ink-tatoo-inst",
+  "name": "Ink Tatoo Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:22.753Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ink_tatoo_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:26:28.087Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:26:28.087Z"
+    },
+    {
+      "name": "Kaisa_Skin48_Tattoos_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:28.087Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:26:28.087Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin48",
+    "bin": "6e48f124c4c3b535.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin48/Materials/InkTatoo_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin48",
+      "bin": "6e48f124c4c3b535.bin"
+    },
+    {
+      "champion": "Pyke",
+      "skin": "skin74",
+      "bin": "data/pyke_skins_skin74_skins_skin76_skins_skin77_skins_skin78_skins_skin79_skins_skin80_skins_skin81_skins_skin82_skins_skin83.bin"
+    }
+  ]
+}

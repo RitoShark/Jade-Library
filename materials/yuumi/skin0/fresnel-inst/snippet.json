@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-inst",
+  "name": "Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:07.712Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "Yuumi_book_TX_TintColor_CM.tex",
+      "updatedAt": "2026-04-17T18:11:07.704Z"
+    },
+    {
+      "name": "Yuumi_Base_Masks.tex",
+      "updatedAt": "2026-04-17T18:11:07.704Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin0",
+    "bin": "97ee5adc5b3c435b.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin0/Materials/Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin0",
+      "bin": "97ee5adc5b3c435b.bin"
+    }
+  ]
+}

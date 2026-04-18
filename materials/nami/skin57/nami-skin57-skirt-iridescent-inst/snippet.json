@@ -1,0 +1,64 @@
+{
+  "id": "nami-skin57-skirt-iridescent-inst",
+  "name": "Nami Skin57 Skirt Iridescent Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:29.291Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nami_skin57_skirt_iridescent_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "EDG_Rainbow2.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "Nami_Skin51_Armor_Scolling_MAT.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    },
+    {
+      "name": "Nami_Skin57_Armor_Ult_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:41:29.284Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nami",
+    "skin": "skin57",
+    "bin": "data/characters/nami/skins/skin57.bin",
+    "entryKey": "Characters/Nami/Skins/Skin57/Materials/Nami_Skin57_Skirt_Iridescent_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nami",
+      "skin": "skin57",
+      "bin": "data/characters/nami/skins/skin57.bin"
+    }
+  ]
+}

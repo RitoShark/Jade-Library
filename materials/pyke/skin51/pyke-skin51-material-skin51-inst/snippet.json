@@ -1,0 +1,36 @@
+{
+  "id": "pyke-skin51-material-skin51-inst",
+  "name": "Pyke Skin51 Material Skin51 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:18.298Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_skin51_material_skin51_inst",
+  "textureFiles": [
+    {
+      "name": "Pyke_Skin51_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:46:18.291Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin51",
+    "bin": "data/characters/pyke/skins/skin51.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin51/Materials/Pyke_Skin51_Material_Skin51_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin51",
+      "bin": "data/characters/pyke/skins/skin51.bin"
+    }
+  ]
+}

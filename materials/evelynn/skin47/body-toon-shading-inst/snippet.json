@@ -1,0 +1,60 @@
+{
+  "id": "body-toon-shading-inst",
+  "name": "Body Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:19.417Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_body_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "ToonShading.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "OutlineToneMap.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    },
+    {
+      "name": "Evelynn_Skin47_Gradient_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:19.411Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin47",
+    "bin": "data/characters/evelynn/skins/skin47.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin47/Materials/Body_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin47",
+      "bin": "data/characters/evelynn/skins/skin47.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "hkg-polarized-color-n-mc-inst",
+  "name": "Hkg Polarized Color N Mc Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:52.639Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_polarized_color_n_mc_inst",
+  "textureFiles": [
+    {
+      "name": "Karma_Skin44_Mask_Iridescence_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:27:52.633Z"
+    },
+    {
+      "name": "Karma_Skin44_TM_Gradient.tex",
+      "updatedAt": "2026-04-17T17:27:52.633Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:27:52.633Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin44",
+    "bin": "data/characters/karma/skins/skin44.bin",
+    "entryKey": "Characters/Karma/Skins/Skin44/Materials/HKG_Polarized_Color_N_MC_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin44",
+      "bin": "data/characters/karma/skins/skin44.bin"
+    }
+  ]
+}

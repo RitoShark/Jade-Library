@@ -1,0 +1,44 @@
+{
+  "id": "scrolling-uvs-multi-layer-vert-wpo-bloom-alpha-inst",
+  "name": "Scrolling Uvs Multi Layer Vert Wpo Bloom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:36.397Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_multi_layer_vert_wpo_bloom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Ekko_Skin45_E_Cloud_Star02.tex",
+      "updatedAt": "2026-04-17T17:16:36.386Z"
+    },
+    {
+      "name": "Generic_HolyStrings_Support02.tex",
+      "updatedAt": "2026-04-17T17:16:36.386Z"
+    },
+    {
+      "name": "Ekko_Skin45_MaterialAlphaMask.tex",
+      "updatedAt": "2026-04-17T17:16:36.386Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin45",
+    "bin": "data/characters/ekko/skins/skin45.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin45/Materials/ScrollingUVs_MultiLayer_VertWPO_Bloom_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin45",
+      "bin": "data/characters/ekko/skins/skin45.bin"
+    }
+  ]
+}

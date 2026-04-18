@@ -1,0 +1,36 @@
+{
+  "id": "bloom-cloak-inst",
+  "name": "Bloom Cloak Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:38.270Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_cloak_inst",
+  "textureFiles": [
+    {
+      "name": "Irelia_Skin45_Idle_Cloak01.tex",
+      "updatedAt": "2026-04-17T17:22:38.264Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Irelia",
+    "skin": "skin51",
+    "bin": "data/characters/irelia/skins/skin51.bin",
+    "entryKey": "Characters/Irelia/Skins/Skin51/Materials/Bloom_Cloak_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Irelia",
+      "skin": "skin51",
+      "bin": "data/characters/irelia/skins/skin51.bin"
+    }
+  ]
+}

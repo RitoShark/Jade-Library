@@ -1,0 +1,53 @@
+{
+  "id": "alpha-blend-additive-scroll-inst",
+  "name": "Alpha Blend Additive Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:49:52.517Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:35:55.855Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:35:55.855Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:35:55.855Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:35:55.855Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lux",
+    "skin": "skin17",
+    "bin": "data/characters/lux/skins/skin17.bin",
+    "entryKey": "Characters/Lux/Skins/Skin17/Materials/AlphaBlend_Additive_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lux",
+      "skin": "skin17",
+      "bin": "data/characters/lux/skins/skin17.bin"
+    },
+    {
+      "champion": "Ruby_Lux",
+      "skin": "skin0",
+      "bin": "data/characters/ruby_lux/skins/skin0.bin"
+    }
+  ]
+}

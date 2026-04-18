@@ -1,0 +1,44 @@
+{
+  "id": "hkg-mat-cap-translucent-scarf-inst",
+  "name": "Hkg Mat Cap Translucent Scarf Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:24.957Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_translucent_scarf_inst",
+  "textureFiles": [
+    {
+      "name": "Trans_color_test.tex",
+      "updatedAt": "2026-04-17T17:09:24.952Z"
+    },
+    {
+      "name": "Matcap_no_color_test.tex",
+      "updatedAt": "2026-04-17T17:09:24.952Z"
+    },
+    {
+      "name": "Aphelios_Skin20_Scarf_Mask.tex",
+      "updatedAt": "2026-04-17T17:09:24.952Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aphelios",
+    "skin": "skin23",
+    "bin": "data/characters/aphelios/skins/skin23.bin",
+    "entryKey": "Characters/Aphelios/Skins/Skin23/Materials/HKG_MatCap_Translucent_Scarf_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aphelios",
+      "skin": "skin23",
+      "bin": "data/characters/aphelios/skins/skin23.bin"
+    }
+  ]
+}

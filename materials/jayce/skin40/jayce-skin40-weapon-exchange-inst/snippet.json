@@ -1,0 +1,48 @@
+{
+  "id": "jayce-skin40-weapon-exchange-inst",
+  "name": "Jayce Skin40 Weapon Exchange Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:44.270Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_jayce_skin40_weapon_exchange_inst",
+  "textureFiles": [
+    {
+      "name": "gold_matcap.tex",
+      "updatedAt": "2026-04-17T17:24:44.262Z"
+    },
+    {
+      "name": "Jayce_Skin38_Weapon_matcap_TX_CM.SKINS_Jayce_Skin38.tex",
+      "updatedAt": "2026-04-17T17:24:44.262Z"
+    },
+    {
+      "name": "Jayce_Skin40_ChangeA_TX_CM.Chroma_Jayce_PetalsofSpring.tex",
+      "updatedAt": "2026-04-17T17:24:44.262Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T17:24:44.262Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jayce",
+    "skin": "skin40",
+    "bin": "data/characters/jayce/skins/skin40.bin",
+    "entryKey": "Characters/Jayce/Skins/Skin40/Materials/Jayce_Skin40_Weapon_Exchange_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jayce",
+      "skin": "skin40",
+      "bin": "data/characters/jayce/skins/skin40.bin"
+    }
+  ]
+}

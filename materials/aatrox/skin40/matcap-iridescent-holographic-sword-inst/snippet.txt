@@ -1,0 +1,235 @@
+"jadelib_matcap_iridescent_holographic_sword_inst" = StaticMaterialDef {
+    name: string = "jadelib_matcap_iridescent_holographic_sword_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Gradient_Texture"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/Gradient_test_01.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Dissolve_Texture"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/Base_plasma_noise.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/Aatrox_BloodMoon_Skin40_Sword_TX_CM_Mask.Chroma_Aatrox_BloodMoon_Paragon.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/matcap_iridescent.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "iridescentTex"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/EDG_Rainbow2.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Noise_Texture"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/SRX_Mountain_Noise.tex"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Flowmap"
+            texturePath: string = "assets/jadelib/matcap-iridescent-holographic-sword-inst/flowmap.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha_Sharpness"
+            value: vec4 = { 0.0010000000474974513, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Gradient_Sharpness"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "TintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCap_Strength"
+            value: vec4 = { 0.20000000298023224, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapSpecularPower"
+            value: vec4 = { 0.675000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "MatCapSpecularTintColor"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Strength"
+            value: vec4 = { 0.23999999463558197, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Value"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Power"
+            value: vec4 = { 40, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Iridescent_Normal_Blend"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holo_Strength"
+            value: vec4 = { 0.4000000059604645, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Holo_Gradient_Contrast"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseNoiseUVTile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "BaseNoiseScrollSpeed"
+            value: vec4 = { -0.20000000298023224, -0.20000000298023224, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "NoiseStrength"
+            value: vec4 = { 0.8999999761581421, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Flowspeed"
+            value: vec4 = { 0.22499999403953552, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE"
+            on: bool = false
+            Group: string = "Dissolve"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FRESNEL_MASK_HOLOGRAPHIC"
+            on: bool = false
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_ON"
+            Group: string = "Mat Cap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "MATCAP_MASK_ON"
+            Group: string = "Mat Cap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENCE_ON"
+            Group: string = "Iridescent"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "IRIDESCENT_MASK_ON"
+            Group: string = "Iridescent"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLOGRAPHIC_ON"
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "HOLOGRAPHIC_MASK_ON"
+            Group: string = "Holographic"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "FLOWMAP_ON"
+            on: bool = false
+            Group: string = "Holographic"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Matcap_Iridescent_Holographic"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Iridescent_Power"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "AatroxPassiveReady"
+                    }
+                    mOnValue: f32 = 40
+                    mTurnOnTimeSec: f32 = 0.5
+                    mTurnOffTimeSec: f32 = 0.5
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Iridescent_Value"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "AatroxPassiveReady"
+                    }
+                    mOnValue: f32 = 2
+                    mOffValue: f32 = -0.5
+                    mTurnOnTimeSec: f32 = 0.5
+                    mTurnOffTimeSec: f32 = 0.5
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Iridescent_Strength"
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = HasBuffDynamicMaterialBoolDriver {
+                        mScriptName: string = "AatroxPassiveReady"
+                    }
+                    mOnValue: f32 = 0.23999999463558197
+                    mOffValue: f32 = 0.30000001192092896
+                    mTurnOnTimeSec: f32 = 0.5
+                    mTurnOffTimeSec: f32 = 0.5
+                }
+            }
+        }
+    }
+}

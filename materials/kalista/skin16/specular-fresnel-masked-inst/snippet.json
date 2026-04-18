@@ -1,0 +1,38 @@
+{
+  "id": "specular-fresnel-masked-inst",
+  "name": "Specular Fresnel Masked Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:02.409Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_specular_fresnel_masked_inst",
+  "textureFiles": [
+    {
+      "name": "Kalista_Skin16_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:27:02.400Z"
+    },
+    {
+      "name": "Kalista_Skin14_TX_GM.tex",
+      "updatedAt": "2026-04-17T17:27:02.400Z"
+    },
+    {
+      "name": "Default_Gradient.tex",
+      "updatedAt": "2026-04-17T17:27:02.400Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kalista",
+    "skin": "skin16",
+    "bin": "data/characters/kalista/skins/skin16.bin",
+    "entryKey": "Characters/Kalista/Skins/Skin16/Materials/Specular_Fresnel_Masked_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kalista",
+      "skin": "skin16",
+      "bin": "data/characters/kalista/skins/skin16.bin"
+    }
+  ]
+}

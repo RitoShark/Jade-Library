@@ -1,0 +1,34 @@
+{
+  "id": "fresnel-bloom-basic-inst",
+  "name": "Fresnel Bloom Basic Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:02.910Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_fresnel_bloom_basic_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin39_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:02.903Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:43:02.903Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin39",
+    "bin": "data/characters/nidalee/skins/skin39.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin39/Materials/Fresnel_Bloom_Basic_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin39",
+      "bin": "data/characters/nidalee/skins/skin39.bin"
+    }
+  ]
+}

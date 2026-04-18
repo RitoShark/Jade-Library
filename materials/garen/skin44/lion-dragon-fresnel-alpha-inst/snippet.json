@@ -1,0 +1,36 @@
+{
+  "id": "lion-dragon-fresnel-alpha-inst",
+  "name": "Lion Dragon Fresnel Alpha Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:03.090Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lion_dragon_fresnel_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:20:03.084Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Garen",
+    "skin": "skin44",
+    "bin": "data/characters/garen/skins/skin44.bin",
+    "entryKey": "Characters/Garen/Skins/Skin44/Materials/LionDragon_FresnelAlpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Garen",
+      "skin": "skin44",
+      "bin": "data/characters/garen/skins/skin44.bin"
+    }
+  ]
+}

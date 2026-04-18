@@ -1,0 +1,44 @@
+{
+  "id": "seraphine-skin59-platform-eyes-blink-mat",
+  "name": "Seraphine Skin59 Platform Eyes Blink Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:06.844Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_seraphine_skin59_platform_eyes_blink_mat",
+  "textureFiles": [
+    {
+      "name": "Seraphine_Skin59_Platform_Eyes_TX_CM.SKINS_Seraphine_Skin59.tex",
+      "updatedAt": "2026-04-17T17:53:06.839Z"
+    },
+    {
+      "name": "Seraphine_Skin59_BigEyes_TX_CM.SKINS_Seraphine_Skin59.tex",
+      "updatedAt": "2026-04-17T17:53:06.839Z"
+    },
+    {
+      "name": "Seraphine_skin59_Eyes_Blink.SKINS_Seraphine_Skin59.tex",
+      "updatedAt": "2026-04-17T17:53:06.839Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Seraphine",
+    "skin": "skin59",
+    "bin": "data/characters/seraphine/skins/skin59.bin",
+    "entryKey": "Characters/Seraphine/Skins/Skin59/Materials/Seraphine_Skin59_Platform_EyesBlink_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Seraphine",
+      "skin": "skin59",
+      "bin": "data/characters/seraphine/skins/skin59.bin"
+    }
+  ]
+}

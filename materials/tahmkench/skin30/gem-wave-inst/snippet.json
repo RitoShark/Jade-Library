@@ -1,0 +1,36 @@
+{
+  "id": "gem-wave-inst",
+  "name": "Gem Wave Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:59:29.817Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gem_wave_inst",
+  "textureFiles": [
+    {
+      "name": "TahmKench_Skin30_TX_Cloud_CM.tex",
+      "updatedAt": "2026-04-17T17:59:29.813Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "TahmKench",
+    "skin": "skin30",
+    "bin": "data/characters/tahmkench/skins/skin30.bin",
+    "entryKey": "Characters/TahmKench/Skins/Skin30/Materials/Gem_Wave_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "TahmKench",
+      "skin": "skin30",
+      "bin": "data/characters/tahmkench/skins/skin30.bin"
+    }
+  ]
+}

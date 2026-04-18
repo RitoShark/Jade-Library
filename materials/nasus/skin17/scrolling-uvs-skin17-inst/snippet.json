@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-skin17-inst",
+  "name": "Scrolling Uvs Skin17 Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:41:44.075Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_skin17_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Kindred_Skin34.tex",
+      "updatedAt": "2026-04-17T17:41:44.071Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nasus",
+    "skin": "skin17",
+    "bin": "data/characters/nasus/skins/skin17.bin",
+    "entryKey": "Characters/Nasus/Skins/Skin17/Materials/ScrollingUVs_Skin17_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nasus",
+      "skin": "skin17",
+      "bin": "data/characters/nasus/skins/skin17.bin"
+    }
+  ]
+}

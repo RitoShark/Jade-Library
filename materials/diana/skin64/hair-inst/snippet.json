@@ -1,0 +1,40 @@
+{
+  "id": "hair-inst",
+  "name": "Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:30.558Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_inst",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin64_Idle_Hair_Alpha_02_RecallSun.SKINS_Diana_Skin64.tex",
+      "updatedAt": "2026-04-17T17:15:30.553Z"
+    },
+    {
+      "name": "Diana_Skin64_Material_Hair_02.SKINS_Diana_Skin64.tex",
+      "updatedAt": "2026-04-17T17:15:30.553Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin64",
+    "bin": "data/characters/diana/skins/skin64.bin",
+    "entryKey": "Characters/Diana/Skins/Skin64/Materials/Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin64",
+      "bin": "data/characters/diana/skins/skin64.bin"
+    }
+  ]
+}

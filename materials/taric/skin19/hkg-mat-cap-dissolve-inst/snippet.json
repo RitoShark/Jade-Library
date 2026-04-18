@@ -1,0 +1,34 @@
+{
+  "id": "hkg-mat-cap-dissolve-inst",
+  "name": "Hkg Mat Cap Dissolve Inst",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:00:17.275Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_hkg_mat_cap_dissolve_inst",
+  "textureFiles": [
+    {
+      "name": "Taric_Skin19_Idle_PetJelly01.tex",
+      "updatedAt": "2026-04-17T18:00:17.244Z"
+    },
+    {
+      "name": "lava_mask.tex",
+      "updatedAt": "2026-04-17T18:00:17.244Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Taric",
+    "skin": "skin19",
+    "bin": "data/characters/taric/skins/skin19.bin",
+    "entryKey": "Characters/Taric/Skins/Skin19/Materials/HKG_MatCap_Dissolve_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Taric",
+      "skin": "skin19",
+      "bin": "data/characters/taric/skins/skin19.bin"
+    }
+  ]
+}

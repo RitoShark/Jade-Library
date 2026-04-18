@@ -1,0 +1,44 @@
+{
+  "id": "kassadin-dragon-body-vfx-shader",
+  "name": "Kassadin Dragon Body Vfx Shader",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:31.685Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kassadin_dragon_body_vfx_shader",
+  "textureFiles": [
+    {
+      "name": "Diana_Skin65_MaskD_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.678Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskD_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.678Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskC_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:31.678Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin65",
+    "bin": "data/characters/diana/skins/skin65.bin",
+    "entryKey": "Characters/Diana/Skins/Skin65/Materials/Kassadin_DragonBodyVFX_Shader"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin65",
+      "bin": "data/characters/diana/skins/skin65.bin"
+    }
+  ]
+}

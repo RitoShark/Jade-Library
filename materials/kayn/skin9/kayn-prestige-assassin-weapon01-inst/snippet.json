@@ -1,0 +1,64 @@
+{
+  "id": "kayn-prestige-assassin-weapon01-inst",
+  "name": "Kayn Prestige Assassin Weapon01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:13.929Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kayn_prestige_assassin_weapon01_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "Kayn_Skin09_SmokeErode01.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "Kayn_Skin09_Assassin_TX_Mask01.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:13.923Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kayn",
+    "skin": "skin9",
+    "bin": "data/characters/kayn/skins/skin9.bin",
+    "entryKey": "Characters/Kayn/Skins/Skin9/Materials/Kayn_Prestige_Assassin_Weapon01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kayn",
+      "skin": "skin9",
+      "bin": "data/characters/kayn/skins/skin9.bin"
+    }
+  ]
+}

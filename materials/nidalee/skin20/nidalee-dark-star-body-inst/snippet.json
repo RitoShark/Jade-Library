@@ -1,0 +1,44 @@
+{
+  "id": "nidalee-dark-star-body-inst",
+  "name": "Nidalee Dark Star Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:01.507Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_dark_star_body_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin20_M_Dark_Star_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.502Z"
+    },
+    {
+      "name": "Nidalee_Skin18_ScreenspaceMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.502Z"
+    },
+    {
+      "name": "Nidalee_Skin18_EmptyMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.502Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin20",
+    "bin": "data/characters/nidalee/skins/skin20.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin20/Materials/Nidalee_DarkStar_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin20",
+      "bin": "data/characters/nidalee/skins/skin20.bin"
+    }
+  ]
+}

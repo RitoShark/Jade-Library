@@ -1,0 +1,289 @@
+"jadelib_body" = StaticMaterialDef {
+    name: string = "jadelib_body"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture_red"
+            texturePath: string = "assets/jadelib/body/Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_UV_Range"
+            texturePath: string = "assets/jadelib/body/Swain_Skin32_Mask_TX_CM.SKINS_Swain_Skin32.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask01"
+            texturePath: string = "assets/jadelib/body/lava_actual.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask02"
+            texturePath: string = "assets/jadelib/body/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Scroll_Mask03"
+            texturePath: string = "assets/jadelib/body/black.SKINS_Lissandra_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Change_Texture"
+            texturePath: string = "assets/jadelib/body/black.SKINS_Lissandra_Skin43.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.1438620537519455, 0.30588236451148987, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 4, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 1.7000000476837158, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Color"
+            value: vec4 = { 0.5100023150444031, 0.050003815442323685, 0, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_01"
+            value: vec4 = { 0.20000000298023224, -0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_02"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "UV_Scroll_03"
+            value: vec4 = { 0.699999988079071, 0.699999988079071, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "RGB_Mask_View"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Intensity"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Change_Val"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "TEX_ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_Diff_Fresnel_Bloom"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mOperator: u32 = 1
+                                mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 0.7110000252723694
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = LerpMaterialDriver {
+                        mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                        mOnValue: f32 = 0
+                        mOffValue: f32 = 4
+                        mTurnOnTimeSec: f32 = 4
+                        mTurnOffTimeSec: f32 = 2
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Color"
+                Enabled: bool = false
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 1
+                        mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                            mAnimationName: hash = "Recall"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 0.7110000252723694
+                        }
+                    }
+                    mColorOn: vec4 = { 0.42352941632270813, 0.11764705926179886, 0.07450980693101883, 1 }
+                    mColorOff: vec4 = { 0.5098039507865906, 0.05098039284348488, 0, 0 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Range"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mOperator: u32 = 1
+                                mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 0.7110000252723694
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 3
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 4
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Fresnel_Intensity"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mOperator: u32 = 1
+                                mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 0.7110000252723694
+                                }
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.6000000238418579
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 0.5
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Bloom_Color"
+                driver: pointer = ColorChooserMaterialDriver {
+                    mBoolDriver: pointer = FloatComparisonMaterialDriver {
+                        mOperator: u32 = 1
+                        mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                            mAnimationName: hash = "Recall"
+                        }
+                        mValueB: pointer = FloatLiteralMaterialDriver {
+                            mValue: f32 = 0.7110000252723694
+                        }
+                    }
+                    mColorOn: vec4 = { 0.886274516582489, 0.09803921729326248, 0.0235294122248888, 1 }
+                    mColorOff: vec4 = { 0.5098039507865906, 0.05098039284348488, 0, 1 }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "UV_Scroll_01"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mOperator: u32 = 1
+                                mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 0.7110000252723694
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {
+                                value: vec4 = { 0.30000001192092896, -0.30000001192092896, 0, 0 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.20000000298023224, -0.10000000149011612, 0, 0 }
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "RGB_Mask_View"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = FloatComparisonMaterialDriver {
+                                mOperator: u32 = 1
+                                mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                    mAnimationName: hash = "Recall"
+                                }
+                                mValueB: pointer = FloatLiteralMaterialDriver {
+                                    mValue: f32 = 0.7110000252723694
+                                }
+                            }
+                            mValue: pointer = Float4LiteralMaterialDriver {}
+                        }
+                    }
+                    mDefaultValue: pointer = Float4LiteralMaterialDriver {
+                        value: vec4 = { 0.5, 0, 0, 0 }
+                    }
+                }
+            }
+        }
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = FloatComparisonMaterialDriver {
+                            mOperator: u32 = 1
+                            mValueA: pointer = AnimationFractionDynamicMaterialFloatDriver {
+                                mAnimationName: hash = "Recall"
+                            }
+                            mValueB: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.7110000252723694
+                            }
+                        }
+                        TextureName: string = "ASSETS/Characters/Swain/Skins/Skin32/Swain_Skin32_DemonFormTX_CM.SKINS_Swain_Skin32.tex"
+                    }
+                }
+            }
+        }
+    }
+}

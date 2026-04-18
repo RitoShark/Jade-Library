@@ -1,0 +1,445 @@
+"jadelib_hair_main" = StaticMaterialDef {
+    name: string = "jadelib_hair_main"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 2
+            addressV: u32 = 2
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_Hairroll_Mask.SKINS_AurelionSol_Skin38.tex"
+            addressU: u32 = 1
+            addressV: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_01"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+            addressU: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Pattern_02"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FBM_Texture"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Generated_Noise.SKINS_Zoe_Skin43.tex"
+            samplerName: string = "Wrap_No_Mip"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Distortion_Texture"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Generated_Noise.SKINS_Zoe_Skin43.tex"
+            samplerName: string = "Wrap_No_Mip"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Distortion_Texture_02"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+            samplerName: string = "Wrap_No_Mip"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Gradient"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_Gradient2.SKINS_AurelionSol_Skin38.tex"
+            samplerName: string = "Clamp_No_Mip"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Screen_Space_Texture"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+            samplerName: string = "Wrap_No_Mip"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap_Texture"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "FlowMap_Texture_02"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Lightness_Adjustment_Texture"
+            texturePath: string = "assets/jadelib/hair-main/Zoe_Skin43_Black_TX_CM.SKINS_Zoe_Skin43.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Bloom_Mask"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_Hairbloom.SKINS_AurelionSol_Skin38.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Fresnel_Color_Texture"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_Hairfrenalcolor.SKINS_AurelionSol_Skin38.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Fresnel_Mask"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_FreHair_Mask.SKINS_AurelionSol_Skin38.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DeformNoise"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_Casetextures_TX_CM.SKINS_AurelionSol_Skin38.tex"
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "DeformMask"
+            texturePath: string = "assets/jadelib/hair-main/AurelionSol_Skin38_TX_CM_New_Hair_Mask.SKINS_AurelionSol_Skin38.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Speed"
+            value: vec4 = { 0.3050000071525574, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Frequency"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Intensity"
+            value: vec4 = { 2, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Frequency"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Scale_Speed"
+            value: vec4 = { 0.17499999701976776, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Anim_Wave_Dir"
+            value: vec4 = { 5, 5, 0.5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertexDeformFeatureStrength"
+            value: vec4 = { 0.48500001430511475, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertexDeformTilling"
+            value: vec4 = { 1, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "VertexDeformSpeed"
+            value: vec4 = { 0.12250000238418579, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformIntensity"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DeformProtection"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Screen_Space_Strength"
+            value: vec4 = { 0.5274999737739563, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Screen_Space_Tiling"
+            value: vec4 = { 4, 4, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Screen_Space_ScrollDirection"
+            value: vec4 = { 0, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Screen_Space_ScrollSpeed"
+            value: vec4 = { 0.17749999463558197, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Strength"
+            value: vec4 = { 0.027000000700354576, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Tiling"
+            value: vec4 = { 7, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollDirection"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollSpeed"
+            value: vec4 = { 0.20000000298023224, -0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Strength_02"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Tiling_02"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollDirection_02"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollSpeed_02"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowMap_Strength"
+            value: vec4 = { 0.6349999904632568, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowMap_Speed"
+            value: vec4 = { 0.3425000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowMap_Strength_02"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FlowMap_Speed_02"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pattern_01_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Pattern_02_Tile"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panner_ScrollDirection"
+            value: vec4 = { 0, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panner_ScrollSpeed"
+            value: vec4 = { 0.017999999225139618, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panner_ScrollDirection_02"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Panner_ScrollSpeed_02"
+            value: vec4 = { 0.12999999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp1_Strength"
+            value: vec4 = { 0.3499999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp1_Tiling"
+            value: vec4 = { 1, -1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp1_ScrollDirection"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp1_ScrollSpeed"
+            value: vec4 = { 0.08749999850988388, 0.10000000149011612, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp2_Strength"
+            value: vec4 = { 0.1850000023841858, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp2_Tiling"
+            value: vec4 = { 0, 2.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp2_ScrollDirection"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp2_ScrollSpeed"
+            value: vec4 = { 0.04749999940395355, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp3_Strength"
+            value: vec4 = { 0.12999999523162842, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp3_Tiling"
+            value: vec4 = { 0.20000000298023224, 3.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp3_ScrollDirection"
+            value: vec4 = { -1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Warp3_ScrollSpeed"
+            value: vec4 = { 0.05999999865889549, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FBM_Alpha_Intensity"
+            value: vec4 = { 0.824999988079071, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "FBM_Alpha_Smoothstep"
+            value: vec4 = { 0.5, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Lightness_Adjustment_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fading_In_Speed"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fading_Out_Speed"
+            value: vec4 = { 0.30000001192092896, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fading_In_Gradient"
+            value: vec4 = { 0.05000000074505806, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Strength"
+            value: vec4 = { 1.1875, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Tint_Color"
+            value: vec4 = { 1, 1, 1, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Blend_Mode"
+            value: vec4 = { 0.6600000262260437, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Strength"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Thickness"
+            value: vec4 = { 0.38749998807907104, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Softness"
+            value: vec4 = { 0.32499998807907104, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCREEN_SPACE_TEXTURE"
+            on: bool = false
+            Group: string = "Screen_Space"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_SCREEN_SPACE_TEXTURE_LERP"
+            on: bool = false
+            Group: string = "Screen_Space"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PATTERN_ONE"
+            on: bool = false
+            Group: string = "Pattern"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PATTERN_TWO"
+            on: bool = false
+            Group: string = "Pattern"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PATTERNS_ALPHA"
+            on: bool = false
+            Group: string = "Pattern"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADD_PATTERN_ALPHA"
+            on: bool = false
+            Group: string = "Pattern"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISTORTION"
+            on: bool = false
+            Group: string = "Distortion"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISTORTED_UV_FOR_MASK"
+            on: bool = false
+            Group: string = "Distortion"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FLOWMAP"
+            on: bool = false
+            Group: string = "FlowMap"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_PANNER"
+            on: bool = false
+            Group: string = "Panner"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FBM"
+            Group: string = "fBm"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FBM_ALPHA"
+            on: bool = false
+            Group: string = "fBm"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LIGHTNESS_ADJUSTMENT"
+            on: bool = false
+            Group: string = "Lightness_Adjustment"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_LIGHTNESS_BREATHE"
+            on: bool = false
+            Group: string = "Lightness_Adjustment"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM"
+            Group: string = "Bloom"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_BLOOM_TINT_COLOR"
+            on: bool = false
+            Group: string = "Bloom"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL"
+            Group: string = "Fresnel"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_FRESNEL_COLOR_TEXTURE"
+            Group: string = "Fresnel"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_VERTEX_ANIM"
+            Group: string = "Vertex_Animation"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_VERTEX_ANIMATION_BASED_ON_UV_AND_TEXTURE"
+            Group: string = "Vertex_Animation"
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Aspect"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

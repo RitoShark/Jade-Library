@@ -1,0 +1,36 @@
+{
+  "id": "brand-body-inst",
+  "name": "Brand Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:27.495Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_brand_body_inst",
+  "textureFiles": [
+    {
+      "name": "Brand_Skin10_BodyMaterial.tex",
+      "updatedAt": "2026-04-17T17:12:27.490Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Brand",
+    "skin": "skin10",
+    "bin": "data/characters/brand/skins/skin10.bin",
+    "entryKey": "Characters/Brand/Skins/Skin10/Materials/BrandBody_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Brand",
+      "skin": "skin10",
+      "bin": "data/characters/brand/skins/skin10.bin"
+    }
+  ]
+}

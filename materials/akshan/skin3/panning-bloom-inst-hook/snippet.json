@@ -1,0 +1,48 @@
+{
+  "id": "panning-bloom-inst-hook",
+  "name": "Panning Bloom Inst Hook",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:08:07.686Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_panning_bloom_inst_hook",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:07.680Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:07.680Z"
+    },
+    {
+      "name": "Akshan_Skin03_Gun_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:08:07.680Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:08:07.680Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Akshan",
+    "skin": "skin3",
+    "bin": "data/characters/akshan/skins/skin3.bin",
+    "entryKey": "Characters/Akshan/Skins/Skin3/Materials/PanningBloom_inst_Hook"
+  },
+  "usedBy": [
+    {
+      "champion": "Akshan",
+      "skin": "skin3",
+      "bin": "data/characters/akshan/skins/skin3.bin"
+    }
+  ]
+}

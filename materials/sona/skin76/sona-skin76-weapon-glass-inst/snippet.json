@@ -1,0 +1,52 @@
+{
+  "id": "sona-skin76-weapon-glass-inst",
+  "name": "Sona Skin76 Weapon Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:28.113Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sona_skin76_weapon_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:28.107Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:28.107Z"
+    },
+    {
+      "name": "Sona_Skin76_Weapon_Glass_TX_CM.Chroma_Sona_DemaciaFuneral.tex",
+      "updatedAt": "2026-04-17T17:56:28.107Z"
+    },
+    {
+      "name": "Sona_Skin75_Weapon_OutlineMask_TX_CM.SKINS_Sona_Skin75.tex",
+      "updatedAt": "2026-04-17T17:56:28.107Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:28.107Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin76",
+    "bin": "data/characters/sona/skins/skin76.bin",
+    "entryKey": "Characters/Sona/Skins/Skin76/Materials/Sona_Skin76_Weapon_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin76",
+      "bin": "data/characters/sona/skins/skin76.bin"
+    }
+  ]
+}

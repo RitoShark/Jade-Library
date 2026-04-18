@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-horse-inst",
+  "name": "Alpha Blend Additive Scroll Horse Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:52:28.864Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_horse_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:52:28.858Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:52:28.858Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:28.858Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:52:28.858Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Senna",
+    "skin": "skin37",
+    "bin": "data/characters/senna/skins/skin37.bin",
+    "entryKey": "Characters/Senna/Skins/Skin37/Materials/AlphaBlend_Additive_Scroll_Horse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Senna",
+      "skin": "skin37",
+      "bin": "data/characters/senna/skins/skin37.bin"
+    }
+  ]
+}

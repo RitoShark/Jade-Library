@@ -1,0 +1,45 @@
+{
+  "id": "boogie-a-inst",
+  "name": "Boogie A Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:25.522Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_boogie_a_inst",
+  "textureFiles": [
+    {
+      "name": "Lissandra_Skin34_BoogieA_MatCap_TX_CM_01.tex",
+      "updatedAt": "2026-04-17T17:34:32.497Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:34:32.497Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lissandra",
+    "skin": "skin34",
+    "bin": "data/characters/lissandra/skins/skin34.bin",
+    "entryKey": "Characters/Lissandra/Skins/Skin34/Materials/BoogieA_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Lissandra",
+      "skin": "skin34",
+      "bin": "data/characters/lissandra/skins/skin34.bin"
+    },
+    {
+      "champion": "Samira",
+      "skin": "skin10",
+      "bin": "data/characters/samira/skins/skin10.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ekko-inst",
+  "name": "Ekko Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:16:37.630Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ekko_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "Ekko_Skin19_Z_EkkoShadowMask.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "ShadowToneMap.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "Ekko_Skin19_Z_DotsMat.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "Ekko_Skin19_Z_EkkoShadowMask.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:16:37.623Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ekko",
+    "skin": "skin19",
+    "bin": "data/ekko_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27.bin",
+    "entryKey": "Characters/Ekko/Skins/Skin19/Materials/Ekko_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ekko",
+      "skin": "skin19",
+      "bin": "data/ekko_skins_skin19_skins_skin20_skins_skin21_skins_skin22_skins_skin23_skins_skin24_skins_skin25_skins_skin26_skins_skin27.bin"
+    }
+  ]
+}

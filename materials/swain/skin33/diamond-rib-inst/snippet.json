@@ -1,0 +1,44 @@
+{
+  "id": "diamond-rib-inst",
+  "name": "Diamond Rib Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:00.828Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diamond_rib_inst",
+  "textureFiles": [
+    {
+      "name": "Atlast_Test.tex",
+      "updatedAt": "2026-04-17T17:58:00.822Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin33_Mask_TX_CM.Prestige2_Matcha_Swain.tex",
+      "updatedAt": "2026-04-17T17:58:00.822Z"
+    },
+    {
+      "name": "SwainDemonForm_Skin33_FresnelMask_TX_CM.Prestige2_Matcha_Swain.tex",
+      "updatedAt": "2026-04-17T17:58:00.822Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Swain",
+    "skin": "skin33",
+    "bin": "data/characters/swaindemonform/skins/skin33.bin",
+    "entryKey": "Characters/SwainDemonForm/Skins/Skin33/Materials/Diamond_Rib_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Swain",
+      "skin": "skin33",
+      "bin": "data/characters/swaindemonform/skins/skin33.bin"
+    }
+  ]
+}

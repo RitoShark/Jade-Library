@@ -1,0 +1,64 @@
+{
+  "id": "viego-skin43-marksman-sword-mat-inst",
+  "name": "Viego Skin43 Marksman Sword Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:05:40.645Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_viego_skin43_marksman_sword_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "Viego_Skin43_Gold_MatCap_Mat_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "Viego_Skin43_Fighter_Marksman_Swords_Specular_Mask_Mat_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "Viego_Skin43_Fighter_Marksman_Sword_Scroll_Mat_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "Viego_Skin43_Fighter_Marksman_Swords_Scroll_Mask_TX_CM.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    },
+    {
+      "name": "black.SKINS_Viego_Skin43.tex",
+      "updatedAt": "2026-04-17T18:05:40.638Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Viego",
+    "skin": "skin43",
+    "bin": "data/characters/viego/skins/skin43.bin",
+    "entryKey": "Characters/Viego/Skins/Skin43/Materials/ViegoSkin43_MarksmanSword_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Viego",
+      "skin": "skin43",
+      "bin": "data/characters/viego/skins/skin43.bin"
+    }
+  ]
+}

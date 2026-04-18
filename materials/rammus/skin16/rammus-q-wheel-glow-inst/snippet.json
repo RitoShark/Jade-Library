@@ -1,0 +1,36 @@
+{
+  "id": "rammus-q-wheel-glow-inst",
+  "name": "Rammus Q Wheel Glow Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:33.303Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rammus_q_wheel_glow_inst",
+  "textureFiles": [
+    {
+      "name": "Rammus_Skin16_TX_Q_WheelMask.tex",
+      "updatedAt": "2026-04-17T17:47:33.298Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rammus",
+    "skin": "skin16",
+    "bin": "data/characters/rammuspb/skins/skin16.bin",
+    "entryKey": "Characters/RammusPB/Skins/Skin16/Materials/Rammus_Q_WheelGlow_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rammus",
+      "skin": "skin16",
+      "bin": "data/characters/rammuspb/skins/skin16.bin"
+    }
+  ]
+}

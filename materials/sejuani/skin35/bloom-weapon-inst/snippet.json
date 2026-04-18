@@ -1,0 +1,36 @@
+{
+  "id": "bloom-weapon-inst",
+  "name": "Bloom Weapon Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:41.708Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "Mask_Weapon.tex",
+      "updatedAt": "2026-04-17T17:51:41.703Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sejuani",
+    "skin": "skin35",
+    "bin": "data/characters/sejuani/skins/skin35.bin",
+    "entryKey": "Characters/Sejuani/Skins/Skin35/Materials/Bloom_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sejuani",
+      "skin": "skin35",
+      "bin": "data/characters/sejuani/skins/skin35.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "darius-w-axe-mat",
+  "name": "Darius W Axe Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:51.629Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_darius_w_axe_mat",
+  "textureFiles": [
+    {
+      "name": "Darius_Skin16_W_Arm_ScreenSpace_glow.tex",
+      "updatedAt": "2026-04-17T17:14:51.622Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Darius",
+    "skin": "skin16",
+    "bin": "data/characters/darius/skins/skin16.bin",
+    "entryKey": "Characters/Darius/Skins/Skin16/Materials/Darius_W_Axe_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Darius",
+      "skin": "skin16",
+      "bin": "data/characters/darius/skins/skin16.bin"
+    }
+  ]
+}

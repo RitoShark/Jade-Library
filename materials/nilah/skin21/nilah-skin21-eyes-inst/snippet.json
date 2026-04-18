@@ -1,0 +1,36 @@
+{
+  "id": "nilah-skin21-eyes-inst",
+  "name": "Nilah Skin21 Eyes Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:33.355Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nilah_skin21_eyes_inst",
+  "textureFiles": [
+    {
+      "name": "Nilah_Skin21_Arm_Mask_TX_CM.SKINS_Nilah_Skin21.tex",
+      "updatedAt": "2026-04-17T17:43:33.349Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nilah",
+    "skin": "skin21",
+    "bin": "data/characters/nilah/skins/skin21.bin",
+    "entryKey": "Characters/Nilah/Skins/Skin21/Materials/NilahSkin21_Eyes_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nilah",
+      "skin": "skin21",
+      "bin": "data/characters/nilah/skins/skin21.bin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "hand02-pbr-toon-shading-vfx-inst",
+  "name": "Hand02 Pbr Toon Shading Vfx Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:53:52.187Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hand02_pbr_toon_shading_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "Shaco_Skin44_VFX_Weapon_Wings.tex",
+      "updatedAt": "2026-04-17T17:53:52.181Z"
+    },
+    {
+      "name": "Hand_Distortion.tex",
+      "updatedAt": "2026-04-17T17:53:52.181Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:53:52.181Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Shaco",
+    "skin": "skin44",
+    "bin": "data/characters/shaco/skins/skin44.bin",
+    "entryKey": "Characters/Shaco/Skins/Skin44/Materials/Hand02_PBR_ToonShading_VFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Shaco",
+      "skin": "skin44",
+      "bin": "data/characters/shaco/skins/skin44.bin"
+    }
+  ]
+}

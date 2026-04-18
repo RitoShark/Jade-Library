@@ -1,0 +1,36 @@
+{
+  "id": "basic-fresnel-highlights-bloom-inst",
+  "name": "Basic Fresnel Highlights Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:09.296Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_basic_fresnel_highlights_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Yuumi_Skin49_Mask_body.SKINS_Yuumi_Skin49.tex",
+      "updatedAt": "2026-04-17T18:11:09.291Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin52",
+    "bin": "data/characters/yuumi/skins/skin52.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin52/Materials/Basic_FresnelHighlights_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin52",
+      "bin": "data/characters/yuumi/skins/skin52.bin"
+    }
+  ]
+}

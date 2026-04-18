@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-hand-inst",
+  "name": "Alpha Blend Additive Scroll Packed Hand Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:08:08.051Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_hand_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:08:08.044Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:08:08.044Z"
+    },
+    {
+      "name": "Xerath_Skin29_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:08:08.044Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:08:08.044Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xerath",
+    "skin": "skin29",
+    "bin": "data/characters/xerath/skins/skin29.bin",
+    "entryKey": "Characters/Xerath/Skins/Skin29/Materials/AlphaBlend_Additive_Scroll_Packed_Hand_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xerath",
+      "skin": "skin29",
+      "bin": "data/characters/xerath/skins/skin29.bin"
+    }
+  ]
+}

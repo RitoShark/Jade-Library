@@ -1,0 +1,40 @@
+{
+  "id": "dissolve",
+  "name": "Dissolve",
+  "category": "dissolve",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:57.293Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dissolve",
+  "textureFiles": [
+    {
+      "name": "color-hold_2.TFT_Set15.tex",
+      "updatedAt": "2026-04-17T17:38:57.287Z"
+    },
+    {
+      "name": "Dissolve_Mask.tex",
+      "updatedAt": "2026-04-17T17:38:57.287Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MissFortune",
+    "skin": "skin40",
+    "bin": "data/characters/missfortune/skins/skin40.bin",
+    "entryKey": "Characters/MissFortune/Skins/Skin40/Materials/Dissolve"
+  },
+  "usedBy": [
+    {
+      "champion": "MissFortune",
+      "skin": "skin40",
+      "bin": "data/characters/missfortune/skins/skin40.bin"
+    }
+  ]
+}

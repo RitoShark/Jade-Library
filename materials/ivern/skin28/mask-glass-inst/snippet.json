@@ -1,0 +1,56 @@
+{
+  "id": "mask-glass-inst",
+  "name": "Mask Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:22:53.245Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mask_glass_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:22:53.239Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ivern",
+    "skin": "skin28",
+    "bin": "data/characters/ivern/skins/skin28.bin",
+    "entryKey": "Characters/Ivern/Skins/Skin28/Materials/Mask_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ivern",
+      "skin": "skin28",
+      "bin": "data/characters/ivern/skins/skin28.bin"
+    }
+  ]
+}

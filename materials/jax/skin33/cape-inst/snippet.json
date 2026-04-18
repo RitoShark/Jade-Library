@@ -1,0 +1,48 @@
+{
+  "id": "cape-inst",
+  "name": "Cape Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:14.562Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_cape_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:14.556Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:14.556Z"
+    },
+    {
+      "name": "Jax_Skin33_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:24:14.556Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:24:14.556Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin33",
+    "bin": "data/characters/jax/skins/skin33.bin",
+    "entryKey": "Characters/Jax/Skins/Skin33/Materials/Cape_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin33",
+      "bin": "data/characters/jax/skins/skin33.bin"
+    }
+  ]
+}

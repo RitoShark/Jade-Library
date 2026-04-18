@@ -1,0 +1,31 @@
+{
+  "id": "outline-vfxhand",
+  "name": "Outline Vfxhand",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:08.184Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_vfxhand",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin43",
+    "bin": "data/characters/zoe/skins/skin43.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin43/Materials/Outline_Vfxhand"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin43",
+      "bin": "data/characters/zoe/skins/skin43.bin"
+    }
+  ]
+}

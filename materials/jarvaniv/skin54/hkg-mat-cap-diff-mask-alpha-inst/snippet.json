@@ -1,0 +1,49 @@
+{
+  "id": "hkg-mat-cap-diff-mask-alpha-inst",
+  "name": "Hkg Mat Cap Diff Mask Alpha Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:31.564Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_mat_cap_diff_mask_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "TriangleBase.tex",
+      "updatedAt": "2026-04-17T17:23:59.063Z"
+    },
+    {
+      "name": "JarvanIV_Skin54_Diamond_Mask_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:59.063Z"
+    },
+    {
+      "name": "JarvanIV_Skin54_Diamond_Mask_TX_CM.SKINS_JarvanIV_Skin54.tex",
+      "updatedAt": "2026-04-17T17:23:59.063Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin54",
+    "bin": "data/characters/jarvaniv/skins/skin54.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin54/Materials/HKG_MatCap_Diff_Mask_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin54",
+      "bin": "data/characters/jarvaniv/skins/skin54.bin"
+    },
+    {
+      "champion": "Lissandra",
+      "skin": "skin23",
+      "bin": "data/characters/lissandra/skins/skin23.bin"
+    }
+  ]
+}

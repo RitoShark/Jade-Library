@@ -1,0 +1,75 @@
+"jadelib_hkg_mat_cap_disco_ball_inst" = StaticMaterialDef {
+    name: string = "jadelib_hkg_mat_cap_disco_ball_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "MatCap_Tex"
+            texturePath: string = "assets/jadelib/hkg-mat-cap-disco-ball-inst/NunuSnowball_Skin16_MatCap.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "Alpha"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Front_Color"
+            value: vec4 = { 1, 0.9058823585510254, 0.16470588743686676, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Color"
+            value: vec4 = { 0.25882354378700256, 0.2078431397676468, 1, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Base_Color"
+            value: vec4 = { 0.9019607901573181, 0.32549020648002625, 0.8470588326454163, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Line_Color"
+            value: vec4 = { 0.3607843220233917, 0.3176470696926117, 0.9607843160629272, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Line_Thickness"
+            value: vec4 = { 0.02500000037252903, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_Range"
+            value: vec4 = { 1.1050000190734863, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "ALPHA"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/HKG_MatCap_DiscoBall"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+}

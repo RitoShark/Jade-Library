@@ -1,0 +1,44 @@
+{
+  "id": "glow-orb-inst",
+  "name": "Glow Orb Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:11:24.769Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_glow_orb_inst",
+  "textureFiles": [
+    {
+      "name": "Bard_Skin10_Idle_orb_2.tex",
+      "updatedAt": "2026-04-17T17:11:24.764Z"
+    },
+    {
+      "name": "Bard_Skin8_Mask1.tex",
+      "updatedAt": "2026-04-17T17:11:24.764Z"
+    },
+    {
+      "name": "Bard_Skin8_Mask2.tex",
+      "updatedAt": "2026-04-17T17:11:24.764Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Bard",
+    "skin": "skin10",
+    "bin": "data/characters/bard/skins/skin10.bin",
+    "entryKey": "Characters/Bard/Skins/Skin10/Materials/Glow_orb_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Bard",
+      "skin": "skin10",
+      "bin": "data/characters/bard/skins/skin10.bin"
+    }
+  ]
+}

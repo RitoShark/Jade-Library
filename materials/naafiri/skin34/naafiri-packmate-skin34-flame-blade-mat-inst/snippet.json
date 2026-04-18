@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-packmate-skin34-flame-blade-mat-inst",
+  "name": "Naafiri Packmate Skin34 Flame Blade Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:48.581Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_packmate_skin34_flame_blade_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:48.572Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:48.572Z"
+    },
+    {
+      "name": "NaafiriPackmate_Skin34_TX_CM.Chroma_Naafiri_WarHounds.tex",
+      "updatedAt": "2026-04-17T17:40:48.572Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:48.572Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin34",
+    "bin": "data/characters/naafiripackmate/skins/skin34.bin",
+    "entryKey": "Characters/NaafiriPackmate/Skins/Skin34/Materials/NaafiriPackmate_Skin34_FlameBlade_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin34",
+      "bin": "data/characters/naafiripackmate/skins/skin34.bin"
+    }
+  ]
+}

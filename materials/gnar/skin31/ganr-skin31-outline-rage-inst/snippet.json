@@ -1,0 +1,36 @@
+{
+  "id": "ganr-skin31-outline-rage-inst",
+  "name": "Ganr Skin31 Outline Rage Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.031Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ganr_skin31_outline_rage_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:20:21.025Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin31",
+    "bin": "bacffb833e7b7882.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin31/Materials/Ganr_Skin31_OutlineRage_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin31",
+      "bin": "bacffb833e7b7882.bin"
+    }
+  ]
+}

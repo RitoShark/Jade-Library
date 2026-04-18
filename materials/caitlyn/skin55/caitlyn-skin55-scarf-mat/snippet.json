@@ -1,0 +1,68 @@
+{
+  "id": "caitlyn-skin55-scarf-mat",
+  "name": "Caitlyn Skin55 Scarf Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:31.982Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_caitlyn_skin55_scarf_mat",
+  "textureFiles": [
+    {
+      "name": "Caitlyn_Skin54_TurbulDeform_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "Caitlyn_Skin54_AlphaMask_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "Caitlyn_Skin54_ScrollMask_TX_CM.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "Caitlyn_Skin54_HighlightMask.SKINS_Caitlyn_Skin54.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:13:31.975Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Caitlyn",
+    "skin": "skin55",
+    "bin": "data/characters/caitlyn/skins/skin55.bin",
+    "entryKey": "Characters/Caitlyn/Skins/Skin55/Materials/Caitlyn_Skin55_Scarf_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Caitlyn",
+      "skin": "skin55",
+      "bin": "data/characters/caitlyn/skins/skin55.bin"
+    }
+  ]
+}

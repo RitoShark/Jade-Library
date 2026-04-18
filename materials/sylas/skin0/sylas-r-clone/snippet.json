@@ -1,0 +1,31 @@
+{
+  "id": "sylas-r-clone",
+  "name": "Sylas R Clone",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:58:31.269Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sylas_r_clone",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sylas",
+    "skin": "skin0",
+    "bin": "f779e3259630b774.bin",
+    "entryKey": "Characters/Sylas/Skins/Skin0/Materials/Sylas_R_Clone"
+  },
+  "usedBy": [
+    {
+      "champion": "Sylas",
+      "skin": "skin0",
+      "bin": "f779e3259630b774.bin"
+    }
+  ]
+}

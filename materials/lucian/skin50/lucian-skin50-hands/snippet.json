@@ -1,0 +1,36 @@
+{
+  "id": "lucian-skin50-hands",
+  "name": "Lucian Skin50 Hands",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:00.956Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_lucian_skin50_hands",
+  "textureFiles": [
+    {
+      "name": "Lucian_Skin08_TX_RecallHands.tex",
+      "updatedAt": "2026-04-17T17:35:00.951Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin50",
+    "bin": "data/characters/lucian/skins/skin50.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin50/Materials/Lucian_Skin50_Hands"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin50",
+      "bin": "data/characters/lucian/skins/skin50.bin"
+    }
+  ]
+}

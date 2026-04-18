@@ -1,0 +1,362 @@
+"jadelib_body_mat" = StaticMaterialDef {
+    name: string = "jadelib_body_mat"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Light_Mask"
+            texturePath: string = "assets/jadelib/body-mat/black.SKINS_Lissandra_Skin43.tex"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "IntensityStrength"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DisableColorCorrect"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Color_Rim"
+            value: vec4 = { 0.8313725590705872, 0.7333333492279053, 0.4941176474094391, 1 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_FX_Opacity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Intensity_A"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Colorize_Power"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Colorize_Opacity"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Bias"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Lighting_Offset"
+            value: vec4 = { -0.41999998688697815, -0.41999998688697815, -0.41999998688697815, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Shadow_SmoothSteps"
+            value: vec4 = { 0, 1, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Power"
+            value: vec4 = { 1.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Intensity"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Shadow_Power"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_SmoothStep"
+            value: vec4 = { 0, 0.6000000238418579, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Dissolve_Power"
+            value: vec4 = { 6, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Power_A"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Shadow_Offset"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_SmoothSteps"
+            value: vec4 = { 0, 0.6000000238418579, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_A_Low"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_A_High"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Diffuse_Tiling"
+            value: vec4 = { 1, 1, 0, 0 }
+        }
+    }
+    switches: list2[embed] = {
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_RIM_A"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADD_FX_LIGHTING"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADD_BEAUTY_LIGHTING"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "TINT_DIFFUSE"
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_DISSOLVE"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "DEBUG_VIEW_BEAUTY_LIGHT"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "ADD_BEAUTY_SHADOW"
+            on: bool = false
+        }
+        StaticMaterialSwitchDef {
+            name: string = "USE_DISSOLVE_MASK"
+            on: bool = false
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/TFT_ChampTiers"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Rim_A_High"
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = SineMaterialDriver {
+                                mDriver: pointer = TimeMaterialDriver {}
+                                mFrequency: f32 = 1.5
+                                mScale: f32 = 0.3499999940395355
+                                mBias: f32 = 1.100000023841858
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.800000011920929
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Rim_Intensity_A"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.6000000238418579
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                    mBlendTime: f32 = 1.5
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Color_Rim"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = SpecificColorMaterialDriver {
+                                mColor: vec4 = { 1, 0.6352941393852234, 0.0470588244497776, 1 }
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2"
+                            }
+                            mValue: pointer = SpecificColorMaterialDriver {
+                                mColor: vec4 = { 0.7372549176216125, 0.8980392217636108, 1, 1 }
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = SpecificColorMaterialDriver {
+                        mColor: vec4 = { 0.8313725590705872, 0.7333333492279053, 0.4941176474094391, 1 }
+                    }
+                    mBlendTime: f32 = 1.25
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Colorize_Power"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 1
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Colorize_Opacity"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 0.5
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Rim_A_Low"
+                Enabled: bool = false
+                driver: pointer = SwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = -0.15000000596046448
+                            }
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {}
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Dissolve_Bias"
+                Enabled: bool = false
+                driver: pointer = LerpMaterialDriver {
+                    mBoolDriver: pointer = IsDeadDynamicMaterialBoolDriver {}
+                    mOnValue: f32 = 0
+                    mOffValue: f32 = 1
+                    mTurnOnTimeSec: f32 = 2
+                    mTurnOffTimeSec: f32 = 2.75
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "Light_FX_Opacity"
+                Enabled: bool = false
+                driver: pointer = BlendingSwitchMaterialDriver {
+                    mElements: list[embed] = {
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star3_Ceremony"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 6
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star2_Ceremony"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {
+                                mValue: f32 = 4
+                            }
+                        }
+                        SwitchMaterialDriverElement {
+                            mCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+                                mScriptName: string = "TFT_UnitBuff_Star1"
+                            }
+                            mValue: pointer = FloatLiteralMaterialDriver {}
+                        }
+                    }
+                    mDefaultValue: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                    mBlendTime: f32 = 2
+                }
+            }
+            DynamicMaterialParameterDef {
+                name: string = "DisableColorCorrect"
+                driver: pointer = 1529863526 {
+                    value: pointer = FloatLiteralMaterialDriver {}
+                    add: pointer = FloatLiteralMaterialDriver {
+                        mValue: f32 = 1
+                    }
+                }
+            }
+        }
+    }
+}

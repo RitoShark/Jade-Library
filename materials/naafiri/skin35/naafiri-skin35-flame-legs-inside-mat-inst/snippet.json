@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-skin35-flame-legs-inside-mat-inst",
+  "name": "Naafiri Skin35 Flame Legs Inside Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:46.492Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin35_flame_legs_inside_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.483Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.483Z"
+    },
+    {
+      "name": "Naafiri_Skin35_Flame_Inside_TX_CM.Chroma_Naafiri_WarHounds.tex",
+      "updatedAt": "2026-04-17T17:40:46.483Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:40:46.483Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin35",
+    "bin": "data/characters/naafiri/skins/skin35.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin35/Materials/Naafiri_Skin35_FlameLegsInside_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin35",
+      "bin": "data/characters/naafiri/skins/skin35.bin"
+    }
+  ]
+}

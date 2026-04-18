@@ -1,0 +1,38 @@
+{
+  "id": "mecha-kingdom-jax-body-inst",
+  "name": "Mecha Kingdom Jax Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:24:12.699Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_mecha_kingdom_jax_body_inst",
+  "textureFiles": [
+    {
+      "name": "Jax_Skin14_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:24:12.694Z"
+    },
+    {
+      "name": "Jax_Skin14_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:24:12.694Z"
+    },
+    {
+      "name": "Jax_Skin14_TX_CM_Masks.tex",
+      "updatedAt": "2026-04-17T17:24:12.694Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Jax",
+    "skin": "skin14",
+    "bin": "data/characters/jax/skins/skin14.bin",
+    "entryKey": "Characters/Jax/Skins/Skin14/Materials/MechaKingdom_Jax_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Jax",
+      "skin": "skin14",
+      "bin": "data/characters/jax/skins/skin14.bin"
+    }
+  ]
+}

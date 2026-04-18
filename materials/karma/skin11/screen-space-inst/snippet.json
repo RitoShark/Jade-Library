@@ -1,0 +1,48 @@
+{
+  "id": "screen-space-inst",
+  "name": "Screen Space Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:27:46.687Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_screen_space_inst",
+  "textureFiles": [
+    {
+      "name": "Jhin_Skin11_EmpQ_Stars.tex",
+      "updatedAt": "2026-04-17T17:27:46.682Z"
+    },
+    {
+      "name": "Karma_Skin08_CapeAlpha.tex",
+      "updatedAt": "2026-04-17T17:27:46.682Z"
+    },
+    {
+      "name": "Ashe_Skin11_Z_ScrollMask01.tex",
+      "updatedAt": "2026-04-17T17:27:46.682Z"
+    },
+    {
+      "name": "Karma_Skin08_MAT_CapeColor.tex",
+      "updatedAt": "2026-04-17T17:27:46.682Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Karma",
+    "skin": "skin11",
+    "bin": "data/characters/karma/skins/skin11.bin",
+    "entryKey": "Characters/Karma/Skins/Skin11/Materials/ScreenSpace_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Karma",
+      "skin": "skin11",
+      "bin": "data/characters/karma/skins/skin11.bin"
+    }
+  ]
+}

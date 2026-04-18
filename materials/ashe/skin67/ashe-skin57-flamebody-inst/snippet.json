@@ -1,0 +1,41 @@
+{
+  "id": "ashe-skin57-flamebody-inst",
+  "name": "Ashe Skin57 Flamebody Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:44:23.719Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_ashe_skin57_flamebody_inst",
+  "textureFiles": [
+    {
+      "name": "Ashe_skin67_Material_Add.SKINS_Ashe_Skin67.tex",
+      "updatedAt": "2026-04-17T17:10:03.280Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ashe",
+    "skin": "skin67",
+    "bin": "data/characters/ashe/skins/skin67.bin",
+    "entryKey": "Characters/Ashe/Skins/Skin67/Materials/Ashe_Skin57_Flamebody_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ashe",
+      "skin": "skin67",
+      "bin": "data/characters/ashe/skins/skin67.bin"
+    },
+    {
+      "champion": "Olaf",
+      "skin": "skin44",
+      "bin": "data/characters/olaf/skins/skin44.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "alpha-blend-additive-scroll-packed-pillar-inst",
+  "name": "Alpha Blend Additive Scroll Packed Pillar Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:30:24.083Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_alpha_blend_additive_scroll_packed_pillar_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:30:24.076Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:30:24.076Z"
+    },
+    {
+      "name": "Kennen_Skin23_RecallPillar_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:30:24.076Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:30:24.076Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kennen",
+    "skin": "skin23",
+    "bin": "data/characters/kennen/skins/skin23.bin",
+    "entryKey": "Characters/Kennen/Skins/Skin23/Materials/AlphaBlend_Additive_Scroll_Packed_Pillar_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kennen",
+      "skin": "skin23",
+      "bin": "data/characters/kennen/skins/skin23.bin"
+    }
+  ]
+}

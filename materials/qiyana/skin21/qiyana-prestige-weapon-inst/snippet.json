@@ -1,0 +1,56 @@
+{
+  "id": "qiyana-prestige-weapon-inst",
+  "name": "Qiyana Prestige Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:39.540Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_qiyana_prestige_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    },
+    {
+      "name": "Qiyana_Skin21_Weapon_RMA.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:46:39.534Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin21",
+    "bin": "data/characters/qiyana/skins/skin21.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin21/Materials/Qiyana_Prestige_weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin21",
+      "bin": "data/characters/qiyana/skins/skin21.bin"
+    }
+  ]
+}

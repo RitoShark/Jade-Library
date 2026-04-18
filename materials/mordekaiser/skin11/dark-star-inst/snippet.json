@@ -1,0 +1,44 @@
+{
+  "id": "dark-star-inst",
+  "name": "Dark Star Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:39:50.344Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_dark_star_inst",
+  "textureFiles": [
+    {
+      "name": "Mordekaiser_Skin11_EmpQ_Stars.tex",
+      "updatedAt": "2026-04-17T17:39:50.338Z"
+    },
+    {
+      "name": "Mordekaiser_Skin06_BodyMask_1.tex",
+      "updatedAt": "2026-04-17T17:39:50.338Z"
+    },
+    {
+      "name": "Mordekaiser_Skin06_BodyMask_2.tex",
+      "updatedAt": "2026-04-17T17:39:50.338Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Mordekaiser",
+    "skin": "skin11",
+    "bin": "data/characters/mordekaiser/skins/skin11.bin",
+    "entryKey": "Characters/Mordekaiser/Skins/Skin11/Materials/DarkStar_Inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Mordekaiser",
+      "skin": "skin11",
+      "bin": "data/characters/mordekaiser/skins/skin11.bin"
+    }
+  ]
+}

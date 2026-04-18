@@ -1,0 +1,40 @@
+{
+  "id": "zed-shadow-outline-ink-inst",
+  "name": "Zed Shadow Outline Ink Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:16.315Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zed_shadow_outline_ink_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:16.306Z"
+    },
+    {
+      "name": "ZedShadow_Skin38_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:16.306Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin38",
+    "bin": "data/characters/zedshadow/skins/skin38.bin",
+    "entryKey": "Characters/ZedShadow/Skins/Skin38/Materials/ZedShadow_Outline_Ink_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin38",
+      "bin": "data/characters/zedshadow/skins/skin38.bin"
+    }
+  ]
+}

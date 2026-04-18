@@ -1,0 +1,36 @@
+{
+  "id": "zac-metal-body",
+  "name": "Zac Metal Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:42.778Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zac_metal_body",
+  "textureFiles": [
+    {
+      "name": "Zac_Skin07_MetalMask.tex",
+      "updatedAt": "2026-04-17T18:11:42.770Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zac",
+    "skin": "skin13",
+    "bin": "data/characters/zac/skins/skin13.bin",
+    "entryKey": "Characters/Zac/Skins/Skin13/Materials/Zac_Metal_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Zac",
+      "skin": "skin13",
+      "bin": "data/characters/zac/skins/skin13.bin"
+    }
+  ]
+}

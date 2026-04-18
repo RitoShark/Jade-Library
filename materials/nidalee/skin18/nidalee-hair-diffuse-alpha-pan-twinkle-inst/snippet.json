@@ -1,0 +1,40 @@
+{
+  "id": "nidalee-hair-diffuse-alpha-pan-twinkle-inst",
+  "name": "Nidalee Hair Diffuse Alpha Pan Twinkle Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:43:01.430Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_nidalee_hair_diffuse_alpha_pan_twinkle_inst",
+  "textureFiles": [
+    {
+      "name": "Nidalee_Skin18_Hair_Twinkle_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.423Z"
+    },
+    {
+      "name": "Nidalee_Skin18_Hair_Noise_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:43:01.423Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Nidalee",
+    "skin": "skin18",
+    "bin": "data/characters/nidalee/skins/skin18.bin",
+    "entryKey": "Characters/Nidalee/Skins/Skin18/Materials/Nidalee_HAIR_Diffuse_Alpha_Pan_Twinkle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Nidalee",
+      "skin": "skin18",
+      "bin": "data/characters/nidalee/skins/skin18.bin"
+    }
+  ]
+}

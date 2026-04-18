@@ -1,0 +1,44 @@
+{
+  "id": "zeri-skin19-lightning-inst",
+  "name": "Zeri Skin19 Lightning Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:48.391Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zeri_skin19_lightning_inst",
+  "textureFiles": [
+    {
+      "name": "Zeri_Skin19_Star_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:48.385Z"
+    },
+    {
+      "name": "Zeri_Skin19_HolyStrings_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:48.385Z"
+    },
+    {
+      "name": "Zeri_Skin19_Aphla_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:12:48.385Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin19",
+    "bin": "data/characters/zeri/skins/skin19.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin19/Materials/Zeri_Skin19_Lightning_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin19",
+      "bin": "data/characters/zeri/skins/skin19.bin"
+    }
+  ]
+}

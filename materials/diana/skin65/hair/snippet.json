@@ -1,0 +1,60 @@
+{
+  "id": "hair",
+  "name": "Hair",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:15:30.603Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Base_plasma_noise.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskE_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Diana_Skin65_MaskF_TX_CM.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Diana_Skin65_ktorReworkCapeTest_FlowMapMin.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Diana_Skin65_ktorReworkHoleMask_AnomalyMask.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    },
+    {
+      "name": "Diana_Skin65_ktorReworkGradientMap2.SKINS_Diana_Skin65.tex",
+      "updatedAt": "2026-04-17T17:15:30.597Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Diana",
+    "skin": "skin65",
+    "bin": "data/characters/diana/skins/skin65.bin",
+    "entryKey": "Characters/Diana/Skins/Skin65/Materials/Hair"
+  },
+  "usedBy": [
+    {
+      "champion": "Diana",
+      "skin": "skin65",
+      "bin": "data/characters/diana/skins/skin65.bin"
+    }
+  ]
+}

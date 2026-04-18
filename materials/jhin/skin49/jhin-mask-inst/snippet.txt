@@ -1,0 +1,88 @@
+"jadelib_jhin_mask_inst" = StaticMaterialDef {
+    name: string = "jadelib_jhin_mask_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressW: u32 = 1
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ShadowClip"
+            value: vec4 = { 1, 0, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Diffuse_Only"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        textures: list[embed] = {
+            DynamicMaterialTextureSwapDef {
+                name: string = "Diffuse_Texture"
+                options: list[embed] = {
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = DelayedBoolMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "Joke2_Loop"
+                                    "2044708507"
+                                }
+                            }
+                            mDelayOn: f32 = 0.10000000149011612
+                        }
+                        TextureName: string = "ASSETS/Characters/Jhin/Skins/Skin49/Jhin_Skin49_Mask2_TX_CM.Chroma_Jhin_Mythmaker.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = DelayedBoolMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "3098888494"
+                                    "1370617580"
+                                }
+                            }
+                            mDelayOn: f32 = 0.10000000149011612
+                        }
+                        TextureName: string = "ASSETS/Characters/Jhin/Skins/Skin49/Jhin_Skin49_Mask3_TX_CM.Chroma_Jhin_Mythmaker.tex"
+                    }
+                    DynamicMaterialTextureSwapOption {
+                        driver: pointer = DelayedBoolMaterialDriver {
+                            mBoolDriver: pointer = IsAnimationPlayingDynamicMaterialBoolDriver {
+                                mAnimationNames: list[hash] = {
+                                    "4256483145"
+                                    "2020019433"
+                                }
+                            }
+                            mDelayOn: f32 = 0.10000000149011612
+                        }
+                        TextureName: string = "ASSETS/Characters/Jhin/Skins/Skin49/Jhin_Skin49_Mask4_TX_CM.Chroma_Jhin_Mythmaker.tex"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "mask-metal-clock-inst",
+  "name": "Mask Metal Clock Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:34.631Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_mask_metal_clock_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    },
+    {
+      "name": "Blank_RMA.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:13:34.623Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zilean",
+    "skin": "skin18",
+    "bin": "data/characters/zilean/skins/skin18.bin",
+    "entryKey": "Characters/Zilean/Skins/Skin18/Materials/Mask_Metal_Clock_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zilean",
+      "skin": "skin18",
+      "bin": "data/characters/zilean/skins/skin18.bin"
+    }
+  ]
+}

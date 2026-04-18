@@ -1,0 +1,34 @@
+{
+  "id": "neeko-body-inst",
+  "name": "Neeko Body Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:42:32.137Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_neeko_body_inst",
+  "textureFiles": [
+    {
+      "name": "Neeko_Skin22_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:42:32.131Z"
+    },
+    {
+      "name": "Neeko_Skin22_Materials_Mask.tex",
+      "updatedAt": "2026-04-17T17:42:32.131Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Neeko",
+    "skin": "skin22",
+    "bin": "data/characters/neeko/skins/skin22.bin",
+    "entryKey": "Characters/Neeko/Skins/Skin22/Materials/Neeko_Body_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Neeko",
+      "skin": "skin22",
+      "bin": "data/characters/neeko/skins/skin22.bin"
+    }
+  ]
+}

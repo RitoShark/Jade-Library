@@ -1,0 +1,44 @@
+{
+  "id": "porcelain-body-mat-inst",
+  "name": "Porcelain Body Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:49.886Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_porcelain_body_mat_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin12_Props_MatCap.tex",
+      "updatedAt": "2026-04-17T17:17:49.879Z"
+    },
+    {
+      "name": "Ezreal_Skin29_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:49.879Z"
+    },
+    {
+      "name": "Ezreal_Skin25_PassiveMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:49.879Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ezreal",
+    "skin": "skin29",
+    "bin": "data/characters/ezreal/skins/skin29.bin",
+    "entryKey": "Characters/Ezreal/Skins/Skin29/Materials/Porcelain_Body_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ezreal",
+      "skin": "skin29",
+      "bin": "data/characters/ezreal/skins/skin29.bin"
+    }
+  ]
+}

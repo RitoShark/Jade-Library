@@ -1,0 +1,44 @@
+{
+  "id": "sword-scrolling-uvs-multi-layer-vert-wpo-bloom-alpha-inst",
+  "name": "Sword Scrolling Uvs Multi Layer Vert Wpo Bloom Alpha Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:05.124Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_sword_scrolling_uvs_multi_layer_vert_wpo_bloom_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "Alistar_Skin19_Wisp_Mult.tex",
+      "updatedAt": "2026-04-17T18:10:05.117Z"
+    },
+    {
+      "name": "Yone_Skin26_ScrollingWater_Flipped.tex",
+      "updatedAt": "2026-04-17T18:10:05.117Z"
+    },
+    {
+      "name": "Yone_Skin26_MaterialAlphaMask.tex",
+      "updatedAt": "2026-04-17T18:10:05.117Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin26",
+    "bin": "data/characters/yone/skins/skin26.bin",
+    "entryKey": "Characters/Yone/Skins/Skin26/Materials/Sword_ScrollingUVs_MultiLayer_VertWPO_Bloom_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin26",
+      "bin": "data/characters/yone/skins/skin26.bin"
+    }
+  ]
+}

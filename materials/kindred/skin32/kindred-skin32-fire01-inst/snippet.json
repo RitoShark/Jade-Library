@@ -1,0 +1,44 @@
+{
+  "id": "kindred-skin32-fire01-inst",
+  "name": "Kindred Skin32 Fire01 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:31:05.650Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kindred_skin32_fire01_inst",
+  "textureFiles": [
+    {
+      "name": "Kindred_Skin23_SoulFlowNoise.tex",
+      "updatedAt": "2026-04-17T17:31:05.643Z"
+    },
+    {
+      "name": "Kindred_Skin23_FlowDistortion.tex",
+      "updatedAt": "2026-04-17T17:31:05.643Z"
+    },
+    {
+      "name": "Kindred_Skin02_i_White.tex",
+      "updatedAt": "2026-04-17T17:31:05.643Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kindred",
+    "skin": "skin32",
+    "bin": "data/characters/kindred/skins/skin32.bin",
+    "entryKey": "Characters/Kindred/Skins/Skin32/Materials/Kindred_Skin32_Fire01_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Kindred",
+      "skin": "skin32",
+      "bin": "data/characters/kindred/skins/skin32.bin"
+    }
+  ]
+}

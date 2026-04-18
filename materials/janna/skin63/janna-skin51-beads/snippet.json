@@ -1,0 +1,38 @@
+{
+  "id": "janna-skin51-beads",
+  "name": "Janna Skin51 Beads",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:30.372Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_janna_skin51_beads",
+  "textureFiles": [
+    {
+      "name": "Janna_Skin63_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:30.366Z"
+    },
+    {
+      "name": "Janna_Skin63_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:30.366Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:30.366Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Janna",
+    "skin": "skin63",
+    "bin": "data/characters/janna/skins/skin63.bin",
+    "entryKey": "Characters/Janna/Skins/Skin63/Materials/JannaSkin51_Beads"
+  },
+  "usedBy": [
+    {
+      "champion": "Janna",
+      "skin": "skin63",
+      "bin": "data/characters/janna/skins/skin63.bin"
+    }
+  ]
+}

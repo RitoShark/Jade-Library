@@ -1,0 +1,42 @@
+{
+  "id": "xayah-prestige-wing-inst",
+  "name": "Xayah Prestige Wing Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:07:37.778Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_xayah_prestige_wing_inst",
+  "textureFiles": [
+    {
+      "name": "Xayah_Skin26_Wing_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T18:07:37.769Z"
+    },
+    {
+      "name": "Xayah_Skin26_Wing_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:07:37.769Z"
+    },
+    {
+      "name": "Xayah_Skin26_Noise.tex",
+      "updatedAt": "2026-04-17T18:07:37.769Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:07:37.769Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Xayah",
+    "skin": "skin26",
+    "bin": "data/characters/xayah/skins/skin26.bin",
+    "entryKey": "Characters/Xayah/Skins/Skin26/Materials/Xayah_Prestige_wing_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Xayah",
+      "skin": "skin26",
+      "bin": "data/characters/xayah/skins/skin26.bin"
+    }
+  ]
+}

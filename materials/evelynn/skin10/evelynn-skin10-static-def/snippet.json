@@ -1,0 +1,42 @@
+{
+  "id": "evelynn-skin10-static-def",
+  "name": "Evelynn Skin10 Static Def",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:10.462Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_evelynn_skin10_static_def",
+  "textureFiles": [
+    {
+      "name": "Evelynn_Skin10_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:10.456Z"
+    },
+    {
+      "name": "common_Aura_Self.tex",
+      "updatedAt": "2026-04-17T17:17:10.456Z"
+    },
+    {
+      "name": "evelynn_skin08_tx_mask.tex",
+      "updatedAt": "2026-04-17T17:17:10.456Z"
+    },
+    {
+      "name": "Evelynn_Skin10_Mask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:17:10.456Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin10",
+    "bin": "data/characters/evelynn/skins/skin10.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin10/Materials/EvelynnSkin10_staticDef"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin10",
+      "bin": "data/characters/evelynn/skins/skin10.bin"
+    }
+  ]
+}

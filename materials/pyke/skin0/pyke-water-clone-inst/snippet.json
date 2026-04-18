@@ -1,0 +1,44 @@
+{
+  "id": "pyke-water-clone-inst",
+  "name": "Pyke Water Clone Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:22.446Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_pyke_water_clone_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:46:22.428Z"
+    },
+    {
+      "name": "velvet_Nrm.tex",
+      "updatedAt": "2026-04-17T17:46:22.428Z"
+    },
+    {
+      "name": "Generic_Noise.tex",
+      "updatedAt": "2026-04-17T17:46:22.428Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Pyke",
+    "skin": "skin0",
+    "bin": "data/pyke_skins_skin0_skins_skin44_skins_skin46.bin",
+    "entryKey": "Characters/Pyke/Skins/Skin0/Materials/Pyke_WaterClone_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Pyke",
+      "skin": "skin0",
+      "bin": "data/pyke_skins_skin0_skins_skin44_skins_skin46.bin"
+    }
+  ]
+}

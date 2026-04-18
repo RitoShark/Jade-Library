@@ -1,0 +1,52 @@
+{
+  "id": "aurelion-sol-skin37-ceramic-mat-inst",
+  "name": "Aurelion Sol Skin37 Ceramic Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:10:44.812Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_aurelion_sol_skin37_ceramic_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:10:44.800Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:44.800Z"
+    },
+    {
+      "name": "Amumu_Skin34_TibbersApple_MC.tex",
+      "updatedAt": "2026-04-17T17:10:44.800Z"
+    },
+    {
+      "name": "AurelionSol_Skin31_TX_CM_Mask.tex",
+      "updatedAt": "2026-04-17T17:10:44.800Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:10:44.800Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "AurelionSol",
+    "skin": "skin37",
+    "bin": "data/characters/aurelionsol/skins/skin37.bin",
+    "entryKey": "Characters/AurelionSol/Skins/Skin37/Materials/AurelionSol_Skin37_Ceramic_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "AurelionSol",
+      "skin": "skin37",
+      "bin": "data/characters/aurelionsol/skins/skin37.bin"
+    }
+  ]
+}

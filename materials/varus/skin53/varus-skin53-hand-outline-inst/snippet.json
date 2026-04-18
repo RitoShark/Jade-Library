@@ -1,0 +1,36 @@
+{
+  "id": "varus-skin53-hand-outline-inst",
+  "name": "Varus Skin53 Hand Outline Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:27.127Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_varus_skin53_hand_outline_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:27.120Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin53",
+    "bin": "data/characters/varus/skins/skin53.bin",
+    "entryKey": "Characters/Varus/Skins/Skin53/Materials/Varus_Skin53_Hand_Outline_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin53",
+      "bin": "data/characters/varus/skins/skin53.bin"
+    }
+  ]
+}

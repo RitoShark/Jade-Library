@@ -1,0 +1,38 @@
+{
+  "id": "master-yi-skin96-beads-inst",
+  "name": "Master Yi Skin96 Beads Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:05.706Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_master_yi_skin96_beads_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin96_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:05.701Z"
+    },
+    {
+      "name": "MasterYi_Skin96_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:05.701Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:05.701Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin96",
+    "bin": "data/characters/masteryi/skins/skin96.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin96/Materials/MasterYi_Skin96_Beads_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin96",
+      "bin": "data/characters/masteryi/skins/skin96.bin"
+    }
+  ]
+}

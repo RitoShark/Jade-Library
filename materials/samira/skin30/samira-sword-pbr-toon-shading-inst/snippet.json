@@ -1,0 +1,44 @@
+{
+  "id": "samira-sword-pbr-toon-shading-inst",
+  "name": "Samira Sword Pbr Toon Shading Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:25.688Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_samira_sword_pbr_toon_shading_inst",
+  "textureFiles": [
+    {
+      "name": "Samira_Z_MaterialTexture_2.tex",
+      "updatedAt": "2026-04-17T17:51:25.682Z"
+    },
+    {
+      "name": "Samira_Z_MaterialTexture_3.tex",
+      "updatedAt": "2026-04-17T17:51:25.682Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:51:25.682Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Samira",
+    "skin": "skin30",
+    "bin": "data/characters/samira/skins/skin30.bin",
+    "entryKey": "Characters/Samira/Skins/Skin30/Materials/Samira_Sword_PBR_ToonShading_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Samira",
+      "skin": "skin30",
+      "bin": "data/characters/samira/skins/skin30.bin"
+    }
+  ]
+}

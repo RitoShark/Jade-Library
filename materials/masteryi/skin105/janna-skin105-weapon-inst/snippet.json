@@ -1,0 +1,36 @@
+{
+  "id": "janna-skin105-weapon-inst",
+  "name": "Janna Skin105 Weapon Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:37:57.675Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_janna_skin105_weapon_inst",
+  "textureFiles": [
+    {
+      "name": "MasterYi_Skin96_Weapon_Aphla_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:37:57.656Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin105",
+    "bin": "data/characters/masteryi/skins/skin105.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin105/Materials/Janna_Skin105_Weapon_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin105",
+      "bin": "data/characters/masteryi/skins/skin105.bin"
+    }
+  ]
+}

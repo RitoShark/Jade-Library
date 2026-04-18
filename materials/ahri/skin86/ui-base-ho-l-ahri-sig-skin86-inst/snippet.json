@@ -1,0 +1,35 @@
+{
+  "id": "ui-base-ho-l-ahri-sig-skin86-inst",
+  "name": "Ui Base Ho L Ahri Sig Skin86 Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:39.748Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_ui_base_ho_l_ahri_sig_skin86_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:07:07.822Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin86",
+    "bin": "data/characters/ahri/skins/skin86.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin86/Materials/UI_Base_HoL_Ahri_Sig_Skin86_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin86",
+      "bin": "data/characters/ahri/skins/skin86.bin"
+    },
+    {
+      "champion": "Kaisa",
+      "skin": "skin71",
+      "bin": "data/characters/kaisa/skins/skin71.bin"
+    }
+  ]
+}

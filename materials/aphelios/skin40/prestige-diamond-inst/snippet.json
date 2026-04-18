@@ -1,0 +1,52 @@
+{
+  "id": "prestige-diamond-inst",
+  "name": "Prestige Diamond Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:09:28.630Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_diamond_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:09:28.623Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:09:28.623Z"
+    },
+    {
+      "name": "Aphelios_Skin40_Cr_TX_CM.Prestige2_Onsen_Aphelios.tex",
+      "updatedAt": "2026-04-17T17:09:28.623Z"
+    },
+    {
+      "name": "Aphelios_Skin40_WeaponMask_TX_CM.Prestige2_Onsen_Aphelios.tex",
+      "updatedAt": "2026-04-17T17:09:28.623Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:09:28.623Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Aphelios",
+    "skin": "skin40",
+    "bin": "data/characters/aphelios/skins/skin40.bin",
+    "entryKey": "Characters/Aphelios/Skins/Skin40/Materials/Prestige_Diamond_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Aphelios",
+      "skin": "skin40",
+      "bin": "data/characters/aphelios/skins/skin40.bin"
+    }
+  ]
+}

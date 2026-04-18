@@ -1,0 +1,52 @@
+{
+  "id": "silk",
+  "name": "Silk",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:15.390Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_silk",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:15.384Z"
+    },
+    {
+      "name": "Gold1_mask.tex",
+      "updatedAt": "2026-04-17T18:12:15.384Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:15.384Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:12:15.384Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:12:15.384Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zed",
+    "skin": "skin69",
+    "bin": "data/characters/zed/skins/skin69.bin",
+    "entryKey": "Characters/Zed/Skins/Skin69/Materials/silk"
+  },
+  "usedBy": [
+    {
+      "champion": "Zed",
+      "skin": "skin69",
+      "bin": "data/characters/zed/skins/skin69.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "fire-tails-inst",
+  "name": "Fire Tails Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:06:54.154Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_fire_tails_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "Ahri_Skin03_Tails_FLAME_MAT.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "Ahri_Skin03_Tails_FLAME_MAT.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:06:54.142Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "skin54",
+    "bin": "data/characters/ahri/skins/skin54.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin54/Materials/Fire_Tails_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "skin54",
+      "bin": "data/characters/ahri/skins/skin54.bin"
+    }
+  ]
+}

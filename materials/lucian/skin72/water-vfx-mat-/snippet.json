@@ -1,0 +1,44 @@
+{
+  "id": "water-vfx-mat-",
+  "name": "Water Vfx Mat ",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:35:03.422Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_water_vfx_mat_",
+  "textureFiles": [
+    {
+      "name": "Lucian_Skin72_Cloth_BloomMask_TX_CM_Caustics.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:03.416Z"
+    },
+    {
+      "name": "Lucian_Skin72_Armor_Scolling_MAT.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:03.416Z"
+    },
+    {
+      "name": "Lucian_Skin72_Arm_Coat_Pants_Guns_Mask_TX_CM_Caustics.SKINS_Lucian_Skin72.tex",
+      "updatedAt": "2026-04-17T17:35:03.416Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lucian",
+    "skin": "skin72",
+    "bin": "data/characters/lucian/skins/skin72.bin",
+    "entryKey": "Characters/Lucian/Skins/Skin72/Materials/Water_VFX_MAT_"
+  },
+  "usedBy": [
+    {
+      "champion": "Lucian",
+      "skin": "skin72",
+      "bin": "data/characters/lucian/skins/skin72.bin"
+    }
+  ]
+}

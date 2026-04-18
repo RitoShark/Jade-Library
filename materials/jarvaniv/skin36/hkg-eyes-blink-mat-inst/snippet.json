@@ -1,0 +1,44 @@
+{
+  "id": "hkg-eyes-blink-mat-inst",
+  "name": "Hkg Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:23:56.556Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hkg_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:23:56.550Z"
+    },
+    {
+      "name": "JarvanIV_Skin35_EyesMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:56.550Z"
+    },
+    {
+      "name": "JarvanIV_Skin35_Eyes_Blink_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:23:56.550Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "JarvanIV",
+    "skin": "skin36",
+    "bin": "data/characters/jarvaniv/skins/skin36.bin",
+    "entryKey": "Characters/JarvanIV/Skins/Skin36/Materials/HKG_Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "JarvanIV",
+      "skin": "skin36",
+      "bin": "data/characters/jarvaniv/skins/skin36.bin"
+    }
+  ]
+}

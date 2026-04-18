@@ -1,0 +1,31 @@
+{
+  "id": "outline-vfxleg",
+  "name": "Outline Vfxleg",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:34:07.537Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_outline_vfxleg",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Lillia",
+    "skin": "skin46",
+    "bin": "data/lillia_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin",
+    "entryKey": "Characters/Lillia/Skins/Skin46/Materials/Outline_Vfxleg"
+  },
+  "usedBy": [
+    {
+      "champion": "Lillia",
+      "skin": "skin46",
+      "bin": "data/lillia_skins_skin46_skins_skin47_skins_skin48_skins_skin49_skins_skin50_skins_skin51_skins_skin52.bin"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "kaisa-skin67-dragon-ball-x-mat",
+  "name": "Kaisa Skin67 Dragon Ball X Mat",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:26:37.222Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_kaisa_skin67_dragon_ball_x_mat",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "Kaisa_Skin59_Assets_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "Kaisa_Skin59_horn_noise_TEX.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "Kaisa_Skin59_Horn_MaterialMask_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:26:37.215Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Kaisa",
+    "skin": "skin67",
+    "bin": "data/characters/kaisa/skins/skin67.bin",
+    "entryKey": "Characters/Kaisa/Skins/Skin67/Materials/Kaisa_Skin67_DragonBallX_Mat"
+  },
+  "usedBy": [
+    {
+      "champion": "Kaisa",
+      "skin": "skin67",
+      "bin": "data/characters/kaisa/skins/skin67.bin"
+    }
+  ]
+}

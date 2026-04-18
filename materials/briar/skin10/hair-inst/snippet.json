@@ -1,0 +1,64 @@
+{
+  "id": "hair-inst",
+  "name": "Hair Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:13:00.206Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hair_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "Briar_Skin10_IridescentTex.SKINS_Briar_Skin10.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "Briar_Skin10_Scroll_Mask.SKINS_Briar_Skin10.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "Briar_Skin10_Texturemult_05.SKINS_Briar_Skin10.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:13:00.199Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Briar",
+    "skin": "skin10",
+    "bin": "data/characters/briar/skins/skin10.bin",
+    "entryKey": "Characters/Briar/Skins/Skin10/Materials/Hair_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Briar",
+      "skin": "skin10",
+      "bin": "data/characters/briar/skins/skin10.bin"
+    }
+  ]
+}

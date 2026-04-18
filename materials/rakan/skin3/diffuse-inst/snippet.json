@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-inst",
+  "name": "Diffuse Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:47:17.909Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rakan",
+    "skin": "skin3",
+    "bin": "data/characters/rakan/skins/skin3.bin",
+    "entryKey": "Characters/Rakan/Skins/Skin3/Materials/Diffuse_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rakan",
+      "skin": "skin3",
+      "bin": "data/characters/rakan/skins/skin3.bin"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "diffuse-bloom-inst",
+  "name": "Diffuse Bloom Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:46:40.012Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_bloom_inst",
+  "textureFiles": [
+    {
+      "name": "Qiyana_Skin30_Bloom_Hat.tex",
+      "updatedAt": "2026-04-17T17:46:40.006Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Qiyana",
+    "skin": "skin34",
+    "bin": "data/characters/qiyana/skins/skin34.bin",
+    "entryKey": "Characters/Qiyana/Skins/Skin34/Materials/Diffuse_Bloom_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Qiyana",
+      "skin": "skin34",
+      "bin": "data/characters/qiyana/skins/skin34.bin"
+    }
+  ]
+}

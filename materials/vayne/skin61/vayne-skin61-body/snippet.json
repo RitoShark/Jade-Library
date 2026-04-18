@@ -1,0 +1,44 @@
+{
+  "id": "vayne-skin61-body",
+  "name": "Vayne Skin61 Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:48.589Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_vayne_skin61_body",
+  "textureFiles": [
+    {
+      "name": "Vayne_Skin55_DragonVFX_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:03:48.577Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK1_StarMask.tex",
+      "updatedAt": "2026-04-17T18:03:48.577Z"
+    },
+    {
+      "name": "PetSwordGuy2_TX_MASK2_Fresnel.tex",
+      "updatedAt": "2026-04-17T18:03:48.577Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Vayne",
+    "skin": "skin61",
+    "bin": "data/characters/vayne/skins/skin61.bin",
+    "entryKey": "Characters/Vayne/Skins/Skin61/Materials/Vayne_Skin61_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Vayne",
+      "skin": "skin61",
+      "bin": "data/characters/vayne/skins/skin61.bin"
+    }
+  ]
+}

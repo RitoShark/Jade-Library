@@ -1,0 +1,31 @@
+{
+  "id": "bomb-color-highlight-inst",
+  "name": "Bomb Color Highlight Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:13:22.761Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bomb_color_highlight_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ziggs",
+    "skin": "skin10",
+    "bin": "data/characters/ziggs/skins/skin10.bin",
+    "entryKey": "Characters/Ziggs/Skins/Skin10/Materials/Bomb_ColorHighlight_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Ziggs",
+      "skin": "skin10",
+      "bin": "data/characters/ziggs/skins/skin10.bin"
+    }
+  ]
+}

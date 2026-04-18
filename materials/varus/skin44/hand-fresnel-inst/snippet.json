@@ -1,0 +1,48 @@
+{
+  "id": "hand-fresnel-inst",
+  "name": "Hand Fresnel Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:03:25.141Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hand_fresnel_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:25.134Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:03:25.134Z"
+    },
+    {
+      "name": "Varus_Skin44_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:03:25.134Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:03:25.134Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Varus",
+    "skin": "skin44",
+    "bin": "data/characters/varus/skins/skin44.bin",
+    "entryKey": "Characters/Varus/Skins/Skin44/Materials/Hand_Fresnel_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Varus",
+      "skin": "skin44",
+      "bin": "data/characters/varus/skins/skin44.bin"
+    }
+  ]
+}

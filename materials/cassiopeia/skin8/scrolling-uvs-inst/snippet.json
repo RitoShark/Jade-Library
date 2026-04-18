@@ -1,0 +1,36 @@
+{
+  "id": "scrolling-uvs-inst",
+  "name": "Scrolling Uvs Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:14:04.588Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scrolling_uvs_inst",
+  "textureFiles": [
+    {
+      "name": "Cassiopeia_Skin08_TX_Mask.tex",
+      "updatedAt": "2026-04-17T17:14:04.584Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Cassiopeia",
+    "skin": "skin8",
+    "bin": "data/characters/cassiopeia/skins/skin8.bin",
+    "entryKey": "Characters/Cassiopeia/Skins/Skin8/Materials/ScrollingUVs_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Cassiopeia",
+      "skin": "skin8",
+      "bin": "data/characters/cassiopeia/skins/skin8.bin"
+    }
+  ]
+}

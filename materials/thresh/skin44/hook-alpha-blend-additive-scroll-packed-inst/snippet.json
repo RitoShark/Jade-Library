@@ -1,0 +1,48 @@
+{
+  "id": "hook-alpha-blend-additive-scroll-packed-inst",
+  "name": "Hook Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:01:15.594Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_hook_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T18:01:15.586Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T18:01:15.586Z"
+    },
+    {
+      "name": "Thresh_Skin44_Weapons_TX_CM.tex",
+      "updatedAt": "2026-04-17T18:01:15.586Z"
+    },
+    {
+      "name": "gradient_light_Dark.tex",
+      "updatedAt": "2026-04-17T18:01:15.586Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Thresh",
+    "skin": "skin44",
+    "bin": "data/characters/thresh/skins/skin44.bin",
+    "entryKey": "Characters/Thresh/Skins/Skin44/Materials/Hook_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Thresh",
+      "skin": "skin44",
+      "bin": "data/characters/thresh/skins/skin44.bin"
+    }
+  ]
+}

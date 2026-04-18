@@ -1,0 +1,36 @@
+{
+  "id": "poppy-hammer-scroll-inst",
+  "name": "Poppy Hammer Scroll Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:45:45.210Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_poppy_hammer_scroll_inst",
+  "textureFiles": [
+    {
+      "name": "Poppy_Skin15_TX_HammerScroll.tex",
+      "updatedAt": "2026-04-17T17:45:45.205Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Poppy",
+    "skin": "skin15",
+    "bin": "data/characters/poppy/skins/skin15.bin",
+    "entryKey": "Characters/Poppy/Skins/Skin15/Materials/Poppy_Hammer_Scroll_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Poppy",
+      "skin": "skin15",
+      "bin": "data/characters/poppy/skins/skin15.bin"
+    }
+  ]
+}

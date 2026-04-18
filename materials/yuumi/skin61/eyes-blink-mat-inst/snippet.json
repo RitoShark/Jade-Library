@@ -1,0 +1,44 @@
+{
+  "id": "eyes-blink-mat-inst",
+  "name": "Eyes Blink Mat Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:11:12.082Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_eyes_blink_mat_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Yuumi_Skin61.tex",
+      "updatedAt": "2026-04-17T18:11:12.077Z"
+    },
+    {
+      "name": "Eyes_Mask.SKINS_Yuumi_Skin61.tex",
+      "updatedAt": "2026-04-17T18:11:12.077Z"
+    },
+    {
+      "name": "Warwick_skin35_Eyes_Blink.SKINS_Yuumi_Skin61.tex",
+      "updatedAt": "2026-04-17T18:11:12.077Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yuumi",
+    "skin": "skin61",
+    "bin": "data/characters/yuumi/skins/skin61.bin",
+    "entryKey": "Characters/Yuumi/Skins/Skin61/Materials/Eyes_Blink_Mat_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Yuumi",
+      "skin": "skin61",
+      "bin": "data/characters/yuumi/skins/skin61.bin"
+    }
+  ]
+}

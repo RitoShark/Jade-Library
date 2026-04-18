@@ -1,0 +1,48 @@
+{
+  "id": "naafiri-skin11-hardlight-inst",
+  "name": "Naafiri Skin11 Hardlight Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:40:41.280Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_naafiri_skin11_hardlight_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:41.271Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:41.271Z"
+    },
+    {
+      "name": "Naafiri_Skin11_Visor_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:40:41.271Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:40:41.271Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Naafiri",
+    "skin": "skin11",
+    "bin": "data/characters/naafiri/skins/skin11.bin",
+    "entryKey": "Characters/Naafiri/Skins/Skin11/Materials/Naafiri_Skin11_Hardlight_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Naafiri",
+      "skin": "skin11",
+      "bin": "data/characters/naafiri/skins/skin11.bin"
+    }
+  ]
+}

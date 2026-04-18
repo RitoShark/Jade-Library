@@ -1,0 +1,25 @@
+{
+  "id": "gnar-skin41-glass-inst",
+  "name": "Gnar Skin41 Glass Inst",
+  "category": "glass",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:20:21.892Z",
+  "description": "",
+  "userSlots": [],
+  "materialName": "jadelib_gnar_skin41_glass_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Gnar",
+    "skin": "skin41",
+    "bin": "data/gnar_skins_skin41_skins_skin42.bin",
+    "entryKey": "Characters/Gnar/Skins/Skin41/Materials/Gnar_Skin41_Glass_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Gnar",
+      "skin": "skin41",
+      "bin": "data/gnar_skins_skin41_skins_skin42.bin"
+    }
+  ]
+}

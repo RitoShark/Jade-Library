@@ -1,0 +1,36 @@
+{
+  "id": "bloom-parts-brand-inst",
+  "name": "Bloom Parts Brand Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:12:27.661Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_bloom_parts_brand_inst",
+  "textureFiles": [
+    {
+      "name": "Brand_Skin21_Bloom.tex",
+      "updatedAt": "2026-04-17T17:12:27.656Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Brand",
+    "skin": "skin21",
+    "bin": "data/characters/brand/skins/skin21.bin",
+    "entryKey": "Characters/Brand/Skins/Skin21/Materials/Bloom_Parts_Brand_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Brand",
+      "skin": "skin21",
+      "bin": "data/characters/brand/skins/skin21.bin"
+    }
+  ]
+}

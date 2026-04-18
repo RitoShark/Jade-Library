@@ -1,0 +1,44 @@
+{
+  "id": "tails-pbr-toon-shading-black-inst",
+  "name": "Tails Pbr Toon Shading Black Inst",
+  "category": "toon",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:17:18.971Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_tails_pbr_toon_shading_black_inst",
+  "textureFiles": [
+    {
+      "name": "Viego_Skin30_VFX_Weapon_Wings.tex",
+      "updatedAt": "2026-04-17T17:17:18.964Z"
+    },
+    {
+      "name": "Evelynn_Skin42_Material_Tails.tex",
+      "updatedAt": "2026-04-17T17:17:18.964Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:17:18.964Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Evelynn",
+    "skin": "skin42",
+    "bin": "data/characters/evelynn/skins/skin42.bin",
+    "entryKey": "Characters/Evelynn/Skins/Skin42/Materials/Tails_PBR_ToonShading_Black_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Evelynn",
+      "skin": "skin42",
+      "bin": "data/characters/evelynn/skins/skin42.bin"
+    }
+  ]
+}

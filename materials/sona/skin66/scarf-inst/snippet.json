@@ -1,0 +1,68 @@
+{
+  "id": "scarf-inst",
+  "name": "Scarf Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:56:26.025Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_scarf_inst",
+  "textureFiles": [
+    {
+      "name": "Sona_Skin66_Scarf_TurbulDeform.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "Sona_Skin66_Scarf_Mask.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "Sona_Skin66_WaterShapeMask03.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "flowmap.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "Sona_Skin66_ScarfAdditiveScrollCombo_TX_CM.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "CaseTexture03.SKINS_Sona_Skin66.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "rock_texture.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:56:26.017Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sona",
+    "skin": "skin66",
+    "bin": "data/characters/sona/skins/skin66.bin",
+    "entryKey": "Characters/Sona/Skins/Skin66/Materials/Scarf_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sona",
+      "skin": "skin66",
+      "bin": "data/characters/sona/skins/skin66.bin"
+    }
+  ]
+}

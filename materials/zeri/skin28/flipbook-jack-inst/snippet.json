@@ -1,0 +1,40 @@
+{
+  "id": "flipbook-jack-inst",
+  "name": "Flipbook Jack Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:12:49.865Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_flipbook_jack_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Zeri_Skin28.tex",
+      "updatedAt": "2026-04-17T18:12:49.858Z"
+    },
+    {
+      "name": "Zeri_Skin28_Gun_TX_CM.SKINS_Zeri_Skin28.tex",
+      "updatedAt": "2026-04-17T18:12:49.858Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zeri",
+    "skin": "skin28",
+    "bin": "data/characters/zeri/skins/skin28.bin",
+    "entryKey": "Characters/Zeri/Skins/Skin28/Materials/Flipbook_Jack_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zeri",
+      "skin": "skin28",
+      "bin": "data/characters/zeri/skins/skin28.bin"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "renekton-mat-neck-inst",
+  "name": "Renekton Mat Neck Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:48:38.845Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_renekton_mat_neck_inst",
+  "textureFiles": [
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.839Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.839Z"
+    },
+    {
+      "name": "Renekton_Skin28_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:48:38.839Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:48:38.839Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Renekton",
+    "skin": "skin28",
+    "bin": "data/characters/renekton/skins/skin28.bin",
+    "entryKey": "Characters/Renekton/Skins/Skin28/Materials/Renekton_MAT_Neck_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Renekton",
+      "skin": "skin28",
+      "bin": "data/characters/renekton/skins/skin28.bin"
+    }
+  ]
+}

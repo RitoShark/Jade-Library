@@ -1,0 +1,52 @@
+{
+  "id": "rumble-skin29-fresnel-alpha-inst",
+  "name": "Rumble Skin29 Fresnel Alpha Inst",
+  "category": "glow",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:50:57.558Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_rumble_skin29_fresnel_alpha_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:57.552Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:50:57.552Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:57.552Z"
+    },
+    {
+      "name": "Rumble_Skin23_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:50:57.552Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:50:57.552Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Rumble",
+    "skin": "skin29",
+    "bin": "data/characters/rumble/skins/skin29.bin",
+    "entryKey": "Characters/Rumble/Skins/Skin29/Materials/Rumble_Skin29_Fresnel_Alpha_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Rumble",
+      "skin": "skin29",
+      "bin": "data/characters/rumble/skins/skin29.bin"
+    }
+  ]
+}

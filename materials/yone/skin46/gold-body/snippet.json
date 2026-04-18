@@ -1,0 +1,52 @@
+{
+  "id": "gold-body",
+  "name": "Gold Body",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:10:06.218Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_gold_body",
+  "textureFiles": [
+    {
+      "name": "Yone_Skin46_TX_CM_RMSA.tex",
+      "updatedAt": "2026-04-17T18:10:06.212Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.212Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.212Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T18:10:06.212Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T18:10:06.212Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Yone",
+    "skin": "skin46",
+    "bin": "data/characters/yone/skins/skin46.bin",
+    "entryKey": "Characters/Yone/Skins/Skin46/Materials/Gold_Body"
+  },
+  "usedBy": [
+    {
+      "champion": "Yone",
+      "skin": "skin46",
+      "bin": "data/characters/yone/skins/skin46.bin"
+    }
+  ]
+}

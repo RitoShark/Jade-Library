@@ -1,0 +1,48 @@
+{
+  "id": "multi-mask-panner-bloom-bottle-inst",
+  "name": "Multi Mask Panner Bloom Bottle Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:54:35.106Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_multi_mask_panner_bloom_bottle_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.092Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.092Z"
+    },
+    {
+      "name": "Singed_Skin10_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:54:35.092Z"
+    },
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:54:35.092Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Singed",
+    "skin": "skin10",
+    "bin": "data/characters/singed/skins/skin10.bin",
+    "entryKey": "Characters/Singed/Skins/Skin10/Materials/MultiMask_Panner_Bloom_Bottle_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Singed",
+      "skin": "skin10",
+      "bin": "data/characters/singed/skins/skin10.bin"
+    }
+  ]
+}

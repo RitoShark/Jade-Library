@@ -1,0 +1,48 @@
+{
+  "id": "milio-backpack-alpha-blend-additive-scroll-packed-inst",
+  "name": "Milio Backpack Alpha Blend Additive Scroll Packed Inst",
+  "category": "distortion",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:33.855Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_milio_backpack_alpha_blend_additive_scroll_packed_inst",
+  "textureFiles": [
+    {
+      "name": "MatCap_ToonPlastic.tex",
+      "updatedAt": "2026-04-17T17:38:33.848Z"
+    },
+    {
+      "name": "gradient_a.tex",
+      "updatedAt": "2026-04-17T17:38:33.848Z"
+    },
+    {
+      "name": "Milio_Skin10_Backpack_TX_CM.tex",
+      "updatedAt": "2026-04-17T17:38:33.848Z"
+    },
+    {
+      "name": "Milio_Skin01_Backpack_Outline_Buddy_TX.tex",
+      "updatedAt": "2026-04-17T17:38:33.848Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Milio",
+    "skin": "skin10",
+    "bin": "data/characters/milio/skins/skin10.bin",
+    "entryKey": "Characters/Milio/Skins/Skin10/Materials/Milio_Backpack_AlphaBlend_Additive_Scroll_Packed_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Milio",
+      "skin": "skin10",
+      "bin": "data/characters/milio/skins/skin10.bin"
+    }
+  ]
+}

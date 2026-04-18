@@ -1,0 +1,118 @@
+"jadelib_ora_inst" = StaticMaterialDef {
+    name: string = "jadelib_ora_inst"
+    samplerValues: list2[embed] = {
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Diffuse_Texture"
+            texturePath: string = "ASSETS/Characters/YOURCHAMP/Skins/SKINID/Maintexture.dds"
+            addressU: u32 = 1
+            addressV: u32 = 1
+            addressW: u32 = 1
+        }
+        StaticMaterialShaderSamplerDef {
+            TextureName: string = "Mask_Texture"
+            texturePath: string = "assets/jadelib/ora-inst/velvet_Nrm.tex"
+        }
+    }
+    paramValues: list2[embed] = {
+        StaticMaterialShaderParamDef {
+            name: string = "ENV_Fresnel_Size"
+            value: vec4 = { 5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Rate"
+            value: vec4 = { 14.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Amplitude"
+            value: vec4 = { 0.25, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Wobble_Offset"
+            value: vec4 = { 0.5, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DIFF_Fresnel_Bias"
+            value: vec4 = { -0.019999999552965164, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "DIFF_Fresnal_Size"
+            value: vec4 = { 1.399999976158142, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Reflection_Intensity"
+            value: vec4 = { 0.925000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Bloom_Intensity"
+            value: vec4 = { 0.10000000149011612, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Amount"
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_Scale"
+            value: vec4 = { 0.5, 0.5, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Distortion_ScrollRate"
+            value: vec4 = { -0.30000001192092896, 0.30000001192092896, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Reflection_Blur"
+            value: vec4 = { 0.800000011920929, 0, 0, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Light_Dir"
+            value: vec4 = { -9.899999618530273, 317.29998779296875, -5, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Rim_Color"
+            value: vec4 = { 0.20392157137393951, 0.9803921580314636, 0.5921568870544434, 0 }
+        }
+        StaticMaterialShaderParamDef {
+            name: string = "Fresnel_SmoothStep"
+            value: vec4 = { 0, 0.5, 0, 0 }
+        }
+    }
+    shaderMacros: map[string,string] = {
+        "NUM_BLEND_WEIGHTS" = "4"
+    }
+    techniques: list[embed] = {
+        StaticMaterialTechniqueDef {
+            name: string = "normal"
+            passes: list[embed] = {
+                StaticMaterialPassDef {
+                    shader: link = "Shaders/SkinnedMesh/Ora"
+                    blendEnable: bool = true
+                    srcColorBlendFactor: u32 = 6
+                    srcAlphaBlendFactor: u32 = 6
+                    dstColorBlendFactor: u32 = 7
+                    dstAlphaBlendFactor: u32 = 7
+                }
+            }
+        }
+    }
+    childTechniques: list[embed] = {
+        StaticMaterialChildTechniqueDef {
+            name: string = "transition"
+            parentName: string = "normal"
+            shaderMacros: map[string,string] = {
+                "TRANSITION" = "1"
+            }
+        }
+    }
+    dynamicMaterial: pointer = DynamicMaterialDef {
+        parameters: list[embed] = {
+            DynamicMaterialParameterDef {
+                name: string = "Wobble_Amplitude"
+                Enabled: bool = false
+                driver: pointer = SineMaterialDriver {
+                    mDriver: pointer = TimeMaterialDriver {}
+                    mFrequency: f32 = 0.75
+                    mScale: f32 = 0.41999998688697815
+                    mBias: f32 = 0.800000011920929
+                }
+            }
+        }
+    }
+}

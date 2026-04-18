@@ -1,0 +1,52 @@
+{
+  "id": "prestige-sword-diamond-vfx-inst",
+  "name": "Prestige Sword Diamond Vfx Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:38:02.503Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_prestige_sword_diamond_vfx_inst",
+  "textureFiles": [
+    {
+      "name": "black.SKINS_Lissandra_Skin43.tex",
+      "updatedAt": "2026-04-17T17:38:02.497Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:02.497Z"
+    },
+    {
+      "name": "MasterYi_Skin53_colorGold_01.tex",
+      "updatedAt": "2026-04-17T17:38:02.497Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:02.497Z"
+    },
+    {
+      "name": "white.tex",
+      "updatedAt": "2026-04-17T17:38:02.497Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "MasterYi",
+    "skin": "skin53",
+    "bin": "data/characters/masteryi/skins/skin53.bin",
+    "entryKey": "Characters/MasterYi/Skins/Skin53/Materials/Prestige_SwordDiamondVFX_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "MasterYi",
+      "skin": "skin53",
+      "bin": "data/characters/masteryi/skins/skin53.bin"
+    }
+  ]
+}

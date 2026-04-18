@@ -1,0 +1,31 @@
+{
+  "id": "passive-inst",
+  "name": "Passive Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T17:51:35.505Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_passive_inst",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Sejuani",
+    "skin": "skin10",
+    "bin": "data/characters/sejuani/skins/skin10.bin",
+    "entryKey": "Characters/Sejuani/Skins/Skin10/Materials/Passive_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Sejuani",
+      "skin": "skin10",
+      "bin": "data/characters/sejuani/skins/skin10.bin"
+    }
+  ]
+}

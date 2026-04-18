@@ -1,0 +1,44 @@
+{
+  "id": "zoe-skin38-l-arm-inst",
+  "name": "Zoe Skin38 L Arm Inst",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-17T18:14:06.411Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_zoe_skin38_l_arm_inst",
+  "textureFiles": [
+    {
+      "name": "DarkStar_Texture.tex",
+      "updatedAt": "2026-04-17T18:14:06.404Z"
+    },
+    {
+      "name": "Zoe_Skin33_PurpleArm2_TX_CM.SKINS_Zoe_Skin33.tex",
+      "updatedAt": "2026-04-17T18:14:06.404Z"
+    },
+    {
+      "name": "Zoe_Skin33_PurpleArm_TX_CM.SKINS_Zoe_Skin33.tex",
+      "updatedAt": "2026-04-17T18:14:06.404Z"
+    }
+  ],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Zoe",
+    "skin": "skin38",
+    "bin": "data/characters/zoe/skins/skin38.bin",
+    "entryKey": "Characters/Zoe/Skins/Skin38/Materials/Zoe_Skin38_L_Arm_inst"
+  },
+  "usedBy": [
+    {
+      "champion": "Zoe",
+      "skin": "skin38",
+      "bin": "data/characters/zoe/skins/skin38.bin"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "diffuse-alpha-inst-p",
+  "name": "Diffuse Alpha Inst P",
+  "category": "body",
+  "version": 1,
+  "updatedAt": "2026-04-14T23:35:41.069Z",
+  "description": "",
+  "userSlots": [
+    {
+      "name": "Diffuse_Texture",
+      "kind": "diffuse",
+      "description": ""
+    }
+  ],
+  "materialName": "jadelib_diffuse_alpha_inst_p",
+  "textureFiles": [],
+  "snippetFile": "snippet.txt",
+  "source": {
+    "champion": "Ahri",
+    "skin": "546d2a8fe5903503",
+    "bin": "546d2a8fe5903503.bin",
+    "entryKey": "Characters/Ahri/Skins/Skin42/Materials/Diffuse_Alpha_inst_P"
+  },
+  "usedBy": [
+    {
+      "champion": "Ahri",
+      "skin": "546d2a8fe5903503",
+      "bin": "546d2a8fe5903503.bin"
+    }
+  ]
+}
