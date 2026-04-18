@@ -11,3 +11,7 @@ tools/app/*.log
 node_modules/
 .DS_Store
 Thumbs.db
+
+# OS + VCS junk that shouldn't live next to material files
+**/desktop.ini
+**/.gitkeep

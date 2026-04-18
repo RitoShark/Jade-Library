@@ -1,5 +1,0 @@
-Shader textures go here:
-- ToonShading.tex
-- OutlineToneMap.tex
-
-These will be extracted from the game WADs by the Neutralino tool and committed here.
