@@ -7,6 +7,7 @@ import { loadConfig, isConfigComplete } from './config.js';
 import { initSetupWizard, runSetupWizard } from './setup.js';
 import { initSettingsTab } from './settings.js';
 import { initExtractTab } from './extractor.js';
+import { initAddTab } from './addMaterial.js';
 import { initDiffTab } from './differ.js';
 import { initPreviewTab } from './previewSubmit.js';
 import { initIndexTab } from './indexBuilder.js';
@@ -25,11 +26,13 @@ function setupTabRouting() {
     const initialized = new Set();
 
     const loadTab = (id) => {
-        if (initialized.has(id)) return;
+        // Diff tab always refreshes; others are one-time init.
+        if (id !== 'diff' && initialized.has(id)) return;
         initialized.add(id);
         try {
             switch (id) {
                 case 'extract':  initExtractTab();  break;
+                case 'add':      initAddTab();      break;
                 case 'diff':     initDiffTab();     break;
                 case 'preview':  initPreviewTab();  break;
                 case 'manage':   initManageTab();   break;

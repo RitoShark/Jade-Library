@@ -25,10 +25,36 @@
     --glow:           rgba(110, 74, 170, 0.18);
     --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.4);
 
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-lg: 14px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
     --radius-pill: 20px;
+}
+
+/* ── Scrollbars (webkit) ── */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.22);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 * {
@@ -191,6 +217,13 @@ body::before {
     gap: 16px;
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Manage tab needs more room for the list + editor split. */
+.tab-panel[data-panel="manage"] {
+    max-width: 1200px;
 }
 
 .tab-panel.active {
@@ -243,7 +276,8 @@ body::before {
 }
 
 input[type="text"],
-select {
+select,
+textarea {
     flex: 1;
     padding: 8px 12px;
     background: rgba(0, 0, 0, 0.25);
@@ -257,8 +291,16 @@ select {
 }
 
 input[type="text"]:focus,
-select:focus {
+select:focus,
+textarea:focus {
     border-color: var(--gradient-end);
+}
+
+textarea {
+    font-family: 'Consolas', 'Courier New', monospace;
+    line-height: 1.4;
+    resize: vertical;
+    min-height: 60px;
 }
 
 .form-hint {
@@ -319,6 +361,18 @@ select:focus {
 
 .btn-secondary {
     /* default style is already secondary */
+}
+
+.btn-danger {
+    background: rgba(255, 99, 99, 0.14);
+    border-color: rgba(255, 99, 99, 0.45);
+    color: #ff9999;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: rgba(255, 99, 99, 0.22);
+    border-color: rgba(255, 99, 99, 0.7);
+    color: #ffbaba;
 }
 
 /* ── Progress bar ── */
@@ -388,14 +442,51 @@ select:focus {
     font-size: 12px;
 }
 
-/* ── Manage tab: list + editor split ── */
+/* ── Manage tab: toolbar + list + editor split ── */
+.manage-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.manage-toolbar input[type="text"] {
+    flex: 1;
+    min-width: 0;
+}
+
+.manage-select-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.manage-selection-count {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gradient-end);
+    white-space: nowrap;
+}
+
 .manage-split {
     display: grid;
-    grid-template-columns: minmax(260px, 340px) 1fr;
+    grid-template-columns: minmax(260px, 380px) 1fr;
     gap: 16px;
-    margin-top: 12px;
-    min-height: 340px;
-    max-height: 520px;
+    height: 520px;
+    min-height: 0;
+}
+
+.manage-split > * {
+    min-height: 0;
+    height: 100%;
 }
 
 .manage-list {
@@ -403,18 +494,20 @@ select:focus {
     border: 1px solid var(--surface-border);
     border-radius: var(--radius-sm);
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 4px;
+    min-width: 0;
 }
 
 .manage-list-row {
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: var(--radius-sm);
     cursor: pointer;
     font-size: 12px;
     transition: background 0.12s ease;
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    align-items: flex-start;
+    gap: 8px;
     border: 1px solid transparent;
 }
 
@@ -422,9 +515,27 @@ select:focus {
     background: var(--surface);
 }
 
+.manage-list-row .row-checkbox {
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: var(--gradient-end);
+}
+
+.manage-list-row .row-label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
 .manage-list-row.selected {
     background: var(--surface-strong);
     border-color: var(--surface-border-strong);
+}
+
+.manage-list-row {
+    min-width: 0;
 }
 
 .manage-list-row .row-name {
@@ -433,6 +544,7 @@ select:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    min-width: 0;
 }
 
 .manage-list-row .row-meta {
@@ -440,9 +552,49 @@ select:focus {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
 }
 
 .manage-list-row .row-cat {
+    color: var(--gradient-end);
+    font-weight: 700;
+}
+
+/* ── Bulk editor summary ── */
+.bulk-summary {
+    margin-bottom: 16px;
+}
+
+.bulk-summary-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.bulk-summary-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.bulk-cat-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-pill);
+}
+
+.bulk-cat-count {
     color: var(--gradient-end);
     font-weight: 700;
 }
@@ -453,6 +605,8 @@ select:focus {
     border-radius: var(--radius-sm);
     padding: 18px 20px;
     overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 0;
 }
 
 .manage-editor .form-row {
@@ -545,8 +699,50 @@ select:focus {
 }
 
 /* ── Diff viewer ── */
+.diff-summary-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.diff-summary-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: var(--radius-pill);
+}
+
 .diff-section {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.diff-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+}
+
+.diff-section-header::-webkit-details-marker { display: none; }
+
+.diff-section-header::before {
+    content: '▸';
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-right: 8px;
+    transition: transform 0.15s ease;
+}
+
+.diff-section[open] > .diff-section-header::before {
+    transform: rotate(90deg);
 }
 
 .diff-section-title {
@@ -555,7 +751,12 @@ select:focus {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
-    margin-bottom: 8px;
+}
+
+.diff-section-list {
+    padding: 0 8px 8px;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .diff-row {
@@ -563,21 +764,36 @@ select:focus {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 8px 12px;
-    background: var(--surface);
-    border: 1px solid var(--surface-border);
+    padding: 6px 10px;
     border-radius: var(--radius-sm);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+}
+
+.diff-row:hover {
+    background: var(--surface);
+}
+
+.diff-row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
 }
 
 .diff-row-name {
     font-size: 12px;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .diff-row-meta {
-    font-size: 11px;
+    font-size: 10px;
     color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .diff-tag {
@@ -588,11 +804,12 @@ select:focus {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-radius: var(--radius-pill);
+    flex-shrink: 0;
 }
 
-.diff-tag.new { background: rgba(123, 211, 123, 0.18); color: #7bd37b; }
-.diff-tag.changed { background: rgba(255, 217, 102, 0.18); color: #ffd966; }
-.diff-tag.removed { background: rgba(255, 153, 153, 0.18); color: #ff9999; }
+.diff-tag.new,     .diff-summary-tag.new     { background: rgba(123, 211, 123, 0.18); color: #7bd37b; }
+.diff-tag.changed, .diff-summary-tag.changed { background: rgba(255, 217, 102, 0.18); color: #ffd966; }
+.diff-tag.removed, .diff-summary-tag.removed { background: rgba(255, 153, 153, 0.18); color: #ff9999; }
 
 /* ── Footer ── */
 .app-footer {

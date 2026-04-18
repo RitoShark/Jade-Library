@@ -35,7 +35,7 @@ export function dedupeMaterials(materials) {
     return [...byFingerprint.values()];
 }
 
-function fingerprint(mat) {
+export function fingerprint(mat) {
     // Deep-clone the raw body so we can wipe texturePath values without
     // mutating the original. Also wipe the outer entry key and the inner
     // `name` field (both are path-specific per champion).

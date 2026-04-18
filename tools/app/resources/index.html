@@ -104,6 +104,7 @@
             </div>
             <nav class="app-tabs" id="app-tabs">
                 <button class="app-tab active" data-tab="extract">Extract</button>
+                <button class="app-tab" data-tab="add">Add</button>
                 <button class="app-tab" data-tab="diff">Diff</button>
                 <button class="app-tab" data-tab="preview">Preview</button>
                 <button class="app-tab" data-tab="manage">Manage</button>
@@ -133,6 +134,11 @@
                         <input type="text" id="champion-filter" placeholder="e.g. Ahri" />
                     </div>
 
+                    <div class="form-row">
+                        <label class="form-label">Exclude WADs containing (optional, comma-separated)</label>
+                        <input type="text" id="wad-exclude" placeholder="e.g. Strawberry_, Companions" />
+                    </div>
+
                     <div class="form-actions">
                         <button class="btn btn-primary" id="start-extract">Start Extraction</button>
                     </div>
@@ -148,11 +154,80 @@
                 </div>
             </section>
 
+            <!-- ── Add tab ── -->
+            <section class="tab-panel" data-panel="add">
+                <div class="panel-card">
+                    <h2 class="panel-title">Add Material</h2>
+                    <p class="panel-subtitle">Paste a ritobin StaticMaterialDef snippet and add it to the library without running the full extractor.</p>
+
+                    <div class="form-row">
+                        <label class="form-label">Snippet (ritobin text)</label>
+                        <textarea id="add-snippet" placeholder='"my_material_inst" = StaticMaterialDef {&#10;    name: string = "my_material_inst"&#10;    samplerValues: list2[embed] = {&#10;        ...&#10;    }&#10;}' rows="10"></textarea>
+                        <span class="form-hint" id="add-parse-status"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">Display name</label>
+                        <input type="text" id="add-name" placeholder="e.g. Toon Shading" />
+                    </div>
+
+                    <div class="form-input-group">
+                        <div class="form-row" style="flex: 1;">
+                            <label class="form-label">Material ID (folder slug)</label>
+                            <input type="text" id="add-id" placeholder="auto from name if empty" />
+                        </div>
+                        <div class="form-row" style="flex: 1;">
+                            <label class="form-label">Category</label>
+                            <select id="add-category"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-input-group">
+                        <div class="form-row" style="flex: 1;">
+                            <label class="form-label">Champion (empty = General)</label>
+                            <input type="text" id="add-champion" placeholder="e.g. ahri" />
+                        </div>
+                        <div class="form-row" style="flex: 1;">
+                            <label class="form-label">Skin (optional, e.g. skin77)</label>
+                            <input type="text" id="add-skin" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">Description</label>
+                        <textarea id="add-description" rows="2" placeholder="What does this material do?"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">Tags (comma-separated)</label>
+                        <input type="text" id="add-tags" placeholder="e.g. toon, outline, stylized" />
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-row">
+                            <input type="checkbox" id="add-featured" />
+                            <span>Featured (show in the "Featured" tab in Jade)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-primary" id="add-save">Add material</button>
+                        <button class="btn btn-secondary" id="add-clear">Clear</button>
+                        <span class="manage-save-status" id="add-status"></span>
+                    </div>
+
+                    <div class="manage-meta-readonly" id="add-preview" hidden></div>
+                </div>
+            </section>
+
             <!-- ── Diff tab ── -->
             <section class="tab-panel" data-panel="diff">
                 <div class="panel-card">
                     <h2 class="panel-title">Diff Viewer</h2>
                     <p class="panel-subtitle">Review changes from the last extraction run.</p>
+                    <div class="form-actions" style="margin-bottom: 12px;">
+                        <button class="btn btn-secondary" id="clear-diff">Clear diff</button>
+                    </div>
                     <div id="diff-content">
                         <p class="empty-state">Run an extraction first.</p>
                     </div>
@@ -166,9 +241,16 @@
                     <p class="panel-subtitle">Add a screenshot for a material so the Jade browser can show it.</p>
 
                     <div class="form-row">
+                        <label class="form-label">Champion</label>
+                        <select id="preview-champion-select">
+                            <option value="">— Select a champion —</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
                         <label class="form-label">Material</label>
-                        <select id="preview-material-select">
-                            <option value="">— Select a material —</option>
+                        <select id="preview-material-select" disabled>
+                            <option value="">— Pick a champion first —</option>
                         </select>
                     </div>
 
@@ -199,12 +281,13 @@
                 </div>
 
                 <div class="panel-card">
-                    <h2 class="panel-title">Material Editor</h2>
-                    <p class="panel-subtitle">Browse all materials and edit their metadata directly.</p>
+                    <h2 class="panel-title">Materials</h2>
+                    <p class="panel-subtitle">Select materials and assign categories. Shift-click or use the checkbox to multi-select.</p>
 
-                    <div class="form-row">
-                        <label class="form-label">Filter</label>
-                        <input type="text" id="manage-filter" placeholder="e.g. ahri, skin77, fur..." />
+                    <div class="manage-toolbar">
+                        <input type="text" id="manage-filter" placeholder="Filter: ahri, skin77, fur..." />
+                        <label class="manage-select-all"><input type="checkbox" id="select-all" /> All</label>
+                        <span class="manage-selection-count" id="selection-count"></span>
                     </div>
 
                     <div class="manage-split">
@@ -213,7 +296,7 @@
                         </div>
 
                         <div class="manage-editor" id="manage-editor">
-                            <div class="empty-state">Select a material to edit</div>
+                            <div class="empty-state">Select materials to edit</div>
                         </div>
                     </div>
                 </div>

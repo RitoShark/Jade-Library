@@ -17,13 +17,13 @@
 import { getConfig, isConfigComplete, saveConfig } from './config.js';
 import { wadExtract, ritobinBatchDir } from './toolRunner.js';
 import { findMaterials } from './materialWalker.js';
-import { dedupeMaterials } from './deduper.js';
+import { dedupeMaterials, fingerprint } from './deduper.js';
 import { repathMaterial } from './repather.js';
 import { emitSnippet } from './snippetEmitter.js';
 import { diffAgainstExisting } from './differ.js';
 import { rebuildIndex } from './indexBuilder.js';
 
-let progressEl, progressTextEl, logEl, startBtn, leaguePathEl, championFilterEl;
+let progressEl, progressTextEl, logEl, startBtn, leaguePathEl, championFilterEl, wadExcludeEl;
 let isRunning = false;
 
 export function initExtractTab() {
@@ -33,6 +33,7 @@ export function initExtractTab() {
     startBtn = document.getElementById('start-extract');
     leaguePathEl = document.getElementById('league-path');
     championFilterEl = document.getElementById('champion-filter');
+    wadExcludeEl = document.getElementById('wad-exclude');
 
     // Restore the last-used League install path from config.
     const saved = getConfig().leaguePath;
@@ -93,6 +94,10 @@ async function startExtraction() {
     }
     await saveConfig({ leaguePath });
     const championFilter = championFilterEl.value.trim().toLowerCase();
+    const wadExcludeTerms = (wadExcludeEl?.value || '')
+        .split(',')
+        .map(s => s.trim().toLowerCase())
+        .filter(Boolean);
 
     isRunning = true;
     startBtn.disabled = true;
@@ -101,7 +106,7 @@ async function startExtraction() {
     setFooterStatus('Extraction: discovering WAD files…');
 
     try {
-        await runPipeline(leaguePath, championFilter, cfg);
+        await runPipeline(leaguePath, championFilter, wadExcludeTerms, cfg);
         setProgress(100, 'Done');
         setFooterStatus('Extraction complete');
         logLine('Pipeline completed.', 'success');
@@ -115,7 +120,7 @@ async function startExtraction() {
     }
 }
 
-async function runPipeline(leaguePath, championFilter, cfg) {
+async function runPipeline(leaguePath, championFilter, wadExcludeTerms, cfg) {
     if (typeof Neutralino === 'undefined') {
         throw new Error('Neutralino not available — extraction needs filesystem and exec APIs');
     }
@@ -144,19 +149,56 @@ async function runPipeline(leaguePath, championFilter, cfg) {
         wads = wads.filter(w => w.toLowerCase().includes(championFilter));
     }
 
+    if (wadExcludeTerms && wadExcludeTerms.length > 0) {
+        const beforeCount = wads.length;
+        wads = wads.filter(w => {
+            const nameLower = w.split(/[\\/]/).pop().toLowerCase();
+            return !wadExcludeTerms.some(term => nameLower.includes(term));
+        });
+        const excluded = beforeCount - wads.length;
+        if (excluded > 0) {
+            logLine(`Excluded ${excluded} WAD(s) matching: ${wadExcludeTerms.join(', ')}`);
+        }
+    }
+
     logLine(`Found ${wads.length} champion WADs`);
     if (wads.length === 0) return;
 
     const tempDir = `${NL_PATH}/temp/extract-${Date.now()}`;
     await Neutralino.filesystem.createDirectory(tempDir).catch(() => {});
 
-    const allMaterials = [];
+    // Streaming pipeline: for each champion WAD we extract, collect its
+    // materials, emit any NEW ones (fingerprint-deduped against everything
+    // seen before), then wipe the temp extraction for that champion so the
+    // temp folder never grows past one champion's WAD worth of files.
+    //
+    // Global state across all champions:
+    //   globalFingerprints: fingerprint → emitted material (for dedup)
+    //   extractedWads:      names of champion WADs currently on-disk in
+    //                       tempDir (reset after each champion wipe)
+    //   allUniqueMaterials: collected list used for the final diff step
+    const globalFingerprints = new Map();
+    const extractedWads = new Set();
+    const allUniqueMaterials = [];
+    let totalCollected = 0;
+    let emitted = 0;
+
+    const ctx = {
+        tempDir,
+        repoPath: cfg.repoPath,
+        leaguePath,
+        extractedWads,
+        logFn: logLine,
+    };
 
     for (let i = 0; i < wads.length; i++) {
         const wad = wads[i];
         const champName = wad.split(/[\\/]/).pop().replace(/\.wad\.client$/i, '');
         const progressLabel = `(${i + 1}/${wads.length}) ${champName}`;
+        // Reserve 90% of the bar for the per-champion loop; diff + index split the last 10%.
         setProgress((i / wads.length) * 90, progressLabel);
+
+        const champMaterials = [];
 
         try {
             // 2. Extract this WAD into temp
@@ -164,10 +206,13 @@ async function runPipeline(leaguePath, championFilter, cfg) {
             const wadOut = `${tempDir}/${champName}`;
             await Neutralino.filesystem.createDirectory(wadOut).catch(() => {});
             await wadExtract(wad, wadOut);
+            // Store lowercase — resolveTargetWad returns lowercase champ
+            // names extracted from asset paths, so the Set lookup has to
+            // be case-insensitive or cross-ref fallback fires uselessly.
+            extractedWads.add(champName.toLowerCase());
 
             // 3. Batch-convert every .bin in the extracted tree with one
-            //    ritobin invocation. Hashes only get loaded once, so this
-            //    is orders of magnitude faster than spawning ritobin per bin.
+            //    ritobin invocation.
             setFooterStatus(`${progressLabel} — batch converting bins…`);
             try {
                 await ritobinBatchDir(wadOut);
@@ -175,8 +220,7 @@ async function runPipeline(leaguePath, championFilter, cfg) {
                 logLine(`  ${champName}: batch convert failed: ${e}`, 'warning');
             }
 
-            // 4. Walk the tree for material JSONs. Filter out animation bins
-            //    and read each JSON that ritobin produced.
+            // 4. Walk the tree for material JSONs.
             setFooterStatus(`${progressLabel} — scanning materials…`);
             const bins = await findAllBins(wadOut);
             logLine(`  ${champName}: ${bins.length} bins`);
@@ -184,7 +228,6 @@ async function runPipeline(leaguePath, championFilter, cfg) {
             for (let b = 0; b < bins.length; b++) {
                 const binPath = bins[b];
                 const binName = binPath.split(/[\\/]/).pop().replace(/\.bin$/i, '');
-                // Relative path from the wad root, for snippet.json traceability.
                 const relBin = binPath.startsWith(wadOut)
                     ? binPath.slice(wadOut.length + 1)
                     : binPath;
@@ -197,66 +240,74 @@ async function runPipeline(leaguePath, championFilter, cfg) {
                     const tree = await readBinJson(binPath);
                     if (!tree) continue;
                     const found = findMaterials(tree, champName, binName, relBin);
-                    allMaterials.push(...found);
+                    champMaterials.push(...found);
                 } catch (e) {
                     logLine(`    ${binPath}: ${e}`, 'warning');
+                }
+            }
+
+            totalCollected += champMaterials.length;
+
+            // 5. Dedupe within the champion first (skins often share materials)
+            //    then merge into the global fingerprint map. New fingerprints
+            //    get emitted right here so we can delete the temp data.
+            const champUnique = dedupeMaterials(champMaterials);
+            logLine(`  ${champName}: ${champMaterials.length} entries → ${champUnique.length} unique`);
+
+            setFooterStatus(`${progressLabel} — emitting snippets…`);
+            for (let m = 0; m < champUnique.length; m++) {
+                const mat = champUnique[m];
+                const fp = fingerprint(mat);
+                const existing = globalFingerprints.get(fp);
+                if (existing) {
+                    // Already emitted from a previous champion. Append the
+                    // usage trace and re-write just snippet.json metadata so
+                    // the usedBy list stays accurate. Textures already copied.
+                    const usage = { champion: mat.sourceChampion, skin: mat.sourceSkin, bin: mat.sourceBin };
+                    existing.usedBy.push(usage);
+                    try {
+                        await emitSnippet(existing, cfg.repoPath);
+                    } catch (e) {
+                        logLine(`    ${mat.name}: usedBy update failed: ${e}`, 'warning');
+                    }
+                    continue;
+                }
+
+                // New material — repath, emit, copy textures, store in map.
+                try {
+                    const repathed = repathMaterial(mat);
+                    repathed.relPath = resolveRelPath(repathed);
+                    repathed.usedBy = [{ champion: mat.sourceChampion, skin: mat.sourceSkin, bin: mat.sourceBin }];
+                    setFooterStatus(`${progressLabel} — writing ${repathed.relPath}`);
+                    await emitSnippet(repathed, cfg.repoPath);
+                    await copyReferencedTextures(repathed, ctx);
+                    globalFingerprints.set(fp, repathed);
+                    allUniqueMaterials.push(repathed);
+                    emitted++;
+                } catch (e) {
+                    logLine(`    ${mat.name}: emit failed: ${e}`, 'warning');
                 }
             }
         } catch (e) {
             logLine(`  ${champName}: ${e}`, 'error');
         }
-    }
 
-    logLine(`\nCollected ${allMaterials.length} StaticMaterialDef entries`);
-    setProgress(90, 'Deduplicating…');
-    setFooterStatus('Deduplicating materials…');
-
-    // 6. Dedupe
-    const unique = dedupeMaterials(allMaterials);
-    logLine(`Reduced to ${unique.length} unique materials`);
-
-    setProgress(92, 'Repathing & emitting snippets…');
-    setFooterStatus('Repathing & emitting snippets…');
-
-    // Track which champion WADs we've already extracted into tempDir so the
-    // cross-champion texture lookup can trigger on-demand extractions without
-    // re-running the same WAD twice.
-    const extractedWads = new Set(
-        wads.map(w => w.split(/[\\/]/).pop().replace(/\.wad\.client$/i, ''))
-    );
-    const ctx = {
-        tempDir,
-        repoPath: cfg.repoPath,
-        leaguePath,
-        extractedWads,
-        logFn: logLine,
-    };
-
-    // 7-9. For each unique material: repath, resolve its repo-relative path
-    //      (champion/skin or champion), emit, copy referenced textures.
-    let emitted = 0;
-    for (let m = 0; m < unique.length; m++) {
-        const mat = unique[m];
+        // 6. Wipe the tempDir contents (current champ + any on-demand
+        //    cross-champ extracts). Recreate the tempDir for the next iteration.
+        setFooterStatus(`${progressLabel} — cleaning temp…`);
         try {
-            const repathed = repathMaterial(mat);
-            repathed.relPath = resolveRelPath(repathed);
-            setFooterStatus(
-                `Writing snippet (${m + 1}/${unique.length}) ${repathed.relPath}`
-            );
-            await emitSnippet(repathed, cfg.repoPath);
-            setFooterStatus(
-                `Copying textures (${m + 1}/${unique.length}) ${repathed.relPath}`
-            );
-            await copyReferencedTextures(repathed, ctx);
-            emitted++;
+            await Neutralino.filesystem.remove(tempDir);
         } catch (e) {
-            logLine(`Failed to emit ${mat.name}: ${e}`, 'warning');
+            // Ignore — next iteration will recreate.
         }
+        await Neutralino.filesystem.createDirectory(tempDir).catch(() => {});
+        extractedWads.clear();
     }
-    logLine(`Wrote ${emitted}/${unique.length} snippet folders`);
 
-    // Clean up the temp wad-extract dump — we only wanted the referenced
-    // textures, which are now copied into the material output folders.
+    logLine(`\nCollected ${totalCollected} StaticMaterialDef entries across all champions`);
+    logLine(`Emitted ${emitted} unique snippet folders`, 'success');
+
+    setProgress(92, 'Cleaning up temp files…');
     setFooterStatus('Cleaning up temp files…');
     try {
         await Neutralino.filesystem.remove(tempDir);
@@ -267,7 +318,7 @@ async function runPipeline(leaguePath, championFilter, cfg) {
     setProgress(96, 'Diffing against existing library…');
     setFooterStatus('Diffing against existing library…');
     try {
-        const diff = await diffAgainstExisting(cfg.repoPath, unique);
+        const diff = await diffAgainstExisting(cfg.repoPath, allUniqueMaterials);
         logLine(`Diff: +${diff.added.length} new, ~${diff.changed.length} changed, -${diff.removed.length} removed`, 'success');
     } catch (e) {
         logLine(`Diff failed: ${e}`, 'warning');
@@ -336,7 +387,19 @@ async function copyReferencedTextures(mat, ctx) {
 // original-case and lowercased variants of the game path.
 async function findTextureInTemp(tempDir, originalGamePath) {
     const rel = originalGamePath.replace(/\\/g, '/');
-    const variants = [rel, rel.toLowerCase()];
+
+    // Some bin entries contain a double-extension path like
+    //   foo_tx_cm.SKINS_Ahri_Skin88.tex
+    // but the physical file is just foo_tx_cm.tex — strip the
+    // `.SKINS_...` segment between the real extension and .tex.
+    const cleaned = rel.replace(/\.SKINS_[^./]+(\.(?:tex|dds))$/i, '$1');
+
+    const variants = new Set([rel, rel.toLowerCase()]);
+    if (cleaned !== rel) {
+        variants.add(cleaned);
+        variants.add(cleaned.toLowerCase());
+    }
+
     let roots = [];
     try {
         const entries = await Neutralino.filesystem.readDirectory(tempDir);
