@@ -25842,7 +25842,9 @@
         "glow"
       ],
       "hasPreview": true,
-      "userSlots": [],
+      "userSlots": [
+        "Diffuse_Texture"
+      ],
       "featured": true,
       "version": 1,
       "updatedAt": "2026-04-18T10:46:46.212Z",
